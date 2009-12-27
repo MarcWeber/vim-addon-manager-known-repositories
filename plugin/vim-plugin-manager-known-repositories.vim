@@ -1,0 +1,6 @@
+exec scriptmanager#DefineAndBind('s:c','g:vim_script_manager','{}')
+let s:c['plugin_sources'] = get(s:c,'plugin_sources', {})
+let s:plugin_sources = s:c['plugin_sources']
+
+" drop me an email to get you repository added
+let s:plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
