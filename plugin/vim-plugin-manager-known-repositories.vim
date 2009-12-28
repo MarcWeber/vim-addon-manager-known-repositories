@@ -7,3 +7,4 @@ let s:plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/M
 let s:plugin_sources['vim-plugin-cached-interpretation-of-file'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-plugin-cached-interpretation-of-file.git' }
 let s:plugin_sources['vim-plugin-funcref'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-plugin-funcref.git' }
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
+let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
