@@ -4,17 +4,17 @@
 
 " usage: insert mode: <c-r>=www_vim_org#List()
 fun! www_vim_org#List()
-  let nr=40000
+  let nr=1
   let list = []
 
-  while 1
+  while nr < 2001
     let page_url = 'http://www.vim.org/scripts/script.php?script_id='.nr
 
     echo "getting ".page_url
     let str = system('curl '.shellescape(page_url,":?='").' 2>/dev/null')
 
     let nr = nr +1
-    if str ~= 'Vim Online Error' || v:shell_error != 0
+    if str =~ 'Vim Online Error' || v:shell_error != 0
      if (nr -1) > 2900 || v:shell_error != 0
       echo "end reached? script nr ".(nr -1)
       return list
@@ -36,7 +36,11 @@ fun! www_vim_org#List()
     let date = matchstr(lines[2], '<i>\zs[^<]*\ze')
     let vim_version = matchstr(lines[3], 'nowrap>\zs[^<]*\ze')
 
-    call add(list, "let s:plugin_sources['".title."'] = ".string({ 'type' : 'archive',
+    " remove spaces : and ' from names
+    let title2=substitute(title,"[+:'()\/]",'','g')
+    let title2=substitute(title," ",'_','g')
+
+    call add(list, "let s:plugin_sources['".title2."'] = ".string({ 'type' : 'archive',
                    \ 'archive_name' : archive_name,
                    \ 'url' : url,
                    \ 'version' : v,
