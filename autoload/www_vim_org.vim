@@ -7,15 +7,25 @@ fun! www_vim_org#List()
   let nr=1
   let list = []
 
-  while nr < 2001
+  if !exists('g:www_vim_org_cache')
+    let g:www_vim_org_cache = {}
+  endif
+
+  while 1
     let page_url = 'http://www.vim.org/scripts/script.php?script_id='.nr
 
-    echo "getting ".page_url
-    let str = system('curl '.shellescape(page_url,":?='").' 2>/dev/null')
+    "echo "getting ".page_url
+    if has_key(g:www_vim_org_cache, page_url)
+      let str = g:www_vim_org_cache[page_url]
+      let shell_error1 = 0
+    else
+      let str = system('curl '.shellescape(page_url,":?='").' 2>/dev/null')
+      let shell_error1 = v:shell_error
+    endif
 
     let nr = nr +1
-    if str =~ 'Vim Online Error' || v:shell_error != 0
-     if (nr -1) > 2900 || v:shell_error != 0
+    if str =~ 'Vim Online Error' || shell_error1 != 0
+     if (nr -1) > 2900 || shell_error1 != 0
       echo "end reached? script nr ".(nr -1)
       return list
       else
@@ -24,6 +34,8 @@ fun! www_vim_org#List()
     endif
 
     let lines = split(str,"\n")
+
+    let g:www_vim_org_cache[page_url] = str
 
     let title = matchstr(lines[5], '<title>\zs[^-]*\ze -')
     while len(lines) > 0 && lines[0] !~ 'download_script.php'
@@ -37,8 +49,10 @@ fun! www_vim_org#List()
     let vim_version = matchstr(lines[3], 'nowrap>\zs[^<]*\ze')
 
     " remove spaces : and ' from names
-    let title2=substitute(title,"[+:'()\/]",'','g')
-    let title2=substitute(title," ",'_','g')
+    let title2=substitute(title,"[+:'()\\/]",'','g')
+    let title2=substitute(title2," ",'_','g')
+    " also remove trailing .vim
+    let title2=substitute(title2,"\.vim$",'','g')
 
     call add(list, "let s:plugin_sources['".title2."'] = ".string({ 'type' : 'archive',
                    \ 'archive_name' : archive_name,
@@ -50,3 +64,7 @@ fun! www_vim_org#List()
                    \ }))
   endwhile
 endf
+
+
+
+
