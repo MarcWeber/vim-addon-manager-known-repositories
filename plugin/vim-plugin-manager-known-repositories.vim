@@ -2747,3 +2747,6 @@ let s:plugin_sources['vim-plugin-fcsh'] = { 'type' : 'git', 'url' : 'git://githu
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
 let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
+
+" this is only the vimfiles subdirectory:
+let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
