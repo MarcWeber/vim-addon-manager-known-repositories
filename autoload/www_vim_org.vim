@@ -1,6 +1,6 @@
 " get list of all availible packages on www.vim.org
 " The result can be pasted into
-" plugin/vim-plugin-manager-known-repositories.vim
+" plugin/vim-addon-manager-known-repositories.vim
 
 " usage: insert mode: <c-r>=www_vim_org#List()
 fun! www_vim_org#List()
