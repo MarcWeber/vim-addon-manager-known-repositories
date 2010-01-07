@@ -2747,7 +2747,11 @@ let s:plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://gi
 let s:plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
 let s:plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-views.git' }
 let s:plugin_sources['vim-addon-goto-thing-at-cursor'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor.git' }
+
+" Shougo
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
+let s:plugin_sources['vimshell'] = {'type':'git', 'url': 'git://github.com/Shougo/vimshell.git' }
+let s:plugin_sources['vimproc'] = {'type':'git', 'url': 'git://github.com/Shougo/vimproc.git' }
 
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
@@ -2756,3 +2760,4 @@ let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.co
 
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
+
