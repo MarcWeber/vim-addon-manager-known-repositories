@@ -2747,6 +2747,7 @@ let s:plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://gi
 let s:plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
 let s:plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-views.git' }
 let s:plugin_sources['vim-addon-goto-thing-at-cursor'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor.git' }
+let s:plugin_sources['scion-backend-vim'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/scion-backend-vim.git' }
 
 " Shougo
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
