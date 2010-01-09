@@ -6,6 +6,7 @@
 fun! www_vim_org#Script(nr, cached)
   let nr = a:nr
   let page_url = 'http://www.vim.org/scripts/script.php?script_id='.nr
+  let error = {'title2': 'error', 'script_nr': nr}
 
   if !exists('g:www_vim_org_cache')
     let g:www_vim_org_cache = {}
@@ -24,7 +25,7 @@ fun! www_vim_org#Script(nr, cached)
     echo "end reached? script nr ".(nr -1)
       throw "fine"
     else
-      continue
+      return error
     endif
   endif
 
@@ -37,6 +38,9 @@ fun! www_vim_org#Script(nr, cached)
   while len(lines) > 0 && lines[0] !~ 'class="prompt">script type</td>'
     let lines = lines[1:]
   endwhile
+  if (empty(lines))
+    return error
+  endif
 
   let type = matchstr(lines[1], 'td>\zs[^<]*\ze')
 
@@ -44,6 +48,9 @@ fun! www_vim_org#Script(nr, cached)
     let lines = lines[1:]
   endwhile
 
+  if (empty(lines))
+    return error
+  endif
   let url = 'http://www.vim.org/scripts/download_script.php?src_id='.matchstr(lines[0], '.*src_id=\zs\d\+\ze')
   let archive_name = matchstr(lines[0], '">\zs[^<]*\ze')
   let v = matchstr(lines[1], '<b>\zs[^<]*\ze')
@@ -71,12 +78,13 @@ endf
 
 " usage: insert mode: <c-r>=www_vim_org#List()
 fun! www_vim_org#List()
-  let nr=2910
+  let nr=1
   let list = []
 
   while 1
 
     let nr = nr +1
+    echo nr
 
     try
       let dict = www_vim_org#Script(nr, 1)
