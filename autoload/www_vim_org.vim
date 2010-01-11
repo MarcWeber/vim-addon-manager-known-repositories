@@ -6,7 +6,7 @@
 fun! www_vim_org#Script(nr, cached)
   let nr = a:nr
   let page_url = 'http://www.vim.org/scripts/script.php?script_id='.nr
-  let error = {'title2': 'error', 'script_nr': nr}
+  let error = {'title2': 'error', 'vim_script_nr': nr}
 
   if !exists('g:www_vim_org_cache')
     let g:www_vim_org_cache = {}
@@ -85,7 +85,7 @@ fun! www_vim_org#List()
 
   while 1
     let nr = nr +1
-    echo nr
+    "echo nr
 
     try
       let dict = www_vim_org#Script(nr, 1)
@@ -104,8 +104,8 @@ fun! www_vim_org#List()
   let list = []
   for [k,v] in items(d)
     if len(v) > 1
-      for i in v2
-        call add(list, "let s:plugin_sources['".k.v2['vim_script_nr']."'] = ".string(v2))
+      for v2 in v
+        call add(list, "let s:plugin_sources['". k . v2['vim_script_nr']."'] = ".string(v2))
       endfor
     else
       call add(list, "let s:plugin_sources['".k."'] = ".string(v[0]))
