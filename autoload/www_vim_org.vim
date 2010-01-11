@@ -33,7 +33,7 @@ fun! www_vim_org#Script(nr, cached)
 
   let g:www_vim_org_cache[page_url] = str
 
-  let title = matchstr(lines[5], '<title>\zs.*\ze -.*<\/title')
+  let title = matchstr(lines[5], '<title>\zs.*\ze -')
 
   while len(lines) > 0 && lines[0] !~ 'class="prompt">script type</td>'
     let lines = lines[1:]
