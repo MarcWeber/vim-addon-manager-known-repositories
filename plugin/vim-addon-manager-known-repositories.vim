@@ -2949,15 +2949,16 @@ let s:plugin_sources['scion-backend-vim'] = { 'type' : 'git', 'url' : 'git://git
 let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
 let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/marcweber/vim-addon-actions.git' }
 
-" Shougo
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
+
+" Shougo
+let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 let s:plugin_sources['vimshell'] = {'type':'git', 'url': 'git://github.com/Shougo/vimshell.git' }
 let s:plugin_sources['vimproc'] = {'type':'git', 'url': 'git://github.com/Shougo/vimproc.git' }
 
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
-let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
