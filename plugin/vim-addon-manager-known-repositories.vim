@@ -776,7 +776,7 @@ let s:plugin_sources['PreviewDialog'] = {'version': '0.1', 'url': 'http://www.vi
 let s:plugin_sources['prettyprint'] = {'version': '0.3.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11772', 'vim_version': '7.2', 'date': '2009-11-20', 'vim_script_nr': 2860, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vim-prettyprint-0.3.0.zip'}
 let s:plugin_sources['VS_like_Class_Completion'] = {'version': '0.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2073', 'vim_version': '6.0', 'date': '2003-06-12', 'vim_script_nr': 675, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'classcmpl.vim'}
 let s:plugin_sources['nant_compiler_script'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3052', 'vim_version': '6.0', 'date': '2004-05-23', 'vim_script_nr': 995, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'nant.vim'}
-let s:plugin_sources['rfc_syntax'] = {'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12124', 'vim_version': '6.0', 'date': '2010-01-19', 'vim_script_nr': 2930, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'rfc.zip'}
+let s:plugin_sources['rfc_syntax'] = {'version': '0.2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12147', 'vim_version': '6.0', 'date': '2010-01-21', 'vim_script_nr': 2930, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'rfc.zip'}
 let s:plugin_sources['Fruidle'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9947', 'vim_version': '7.0', 'date': '2009-02-10', 'vim_script_nr': 2494, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'fruidle.vim'}
 let s:plugin_sources['greputil'] = {'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1524', 'vim_version': '6.0', 'date': '2002-12-02', 'vim_script_nr': 506, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'greputil.vim'}
 let s:plugin_sources['openssl'] = {'version': '3.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=8564', 'vim_version': '7.0', 'date': '2008-04-15', 'vim_script_nr': 2012, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'openssl.vim'}
@@ -814,6 +814,7 @@ let s:plugin_sources['error714'] = {'vim_script_nr': 714}
 let s:plugin_sources['error715'] = {'vim_script_nr': 715}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
+let s:plugin_sources['error1452'] = {'vim_script_nr': 1452}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
@@ -2167,7 +2168,6 @@ let s:plugin_sources['shymenu'] = {'version': '0.3', 'url': 'http://www.vim.org/
 let s:plugin_sources['buffoptions'] = {'version': '2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17', 'vim_version': '5.7', 'date': '2001-06-07', 'vim_script_nr': 9, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'buffoptions.vim'}
 let s:plugin_sources['Emacs_outline_mode'] = {'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6852', 'vim_version': '6.0', 'date': '2007-03-10', 'vim_script_nr': 1266, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'outline.vim'}
 let s:plugin_sources['Cisco_ACL_syntax_highlighting_rules'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3651', 'vim_version': '6.0', 'date': '2004-11-23', 'vim_script_nr': 1141, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'ciscoacl.vim'}
-let s:plugin_sources['testing'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=5010', 'vim_version': '6.0', 'date': '2006-01-29', 'vim_script_nr': 1452, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'testaaaing.txt'}
 let s:plugin_sources['FormatBlock'] = {'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2689', 'vim_version': '6.0', 'date': '2004-01-28', 'vim_script_nr': 885, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'FormatBlock.vim'}
 let s:plugin_sources['AutoScrollMode'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7772', 'vim_version': '7.0', 'date': '2007-10-10', 'vim_script_nr': 2041, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'AutoScrollMode.vim'}
 let s:plugin_sources['hcc'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3803', 'vim_version': '6.0', 'date': '2005-01-28', 'vim_script_nr': 1190, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'hcc.vim'}
