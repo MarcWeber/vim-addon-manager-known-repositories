@@ -619,7 +619,7 @@ let s:plugin_sources['kwbdi.vim_-_Keep_Window_on_Buffer_Delete'] = {'version': '
 let s:plugin_sources['bufmap'] = {'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4867', 'vim_version': '6.0', 'date': '2005-12-06', 'vim_script_nr': 1422, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'bufmap.vim'}
 let s:plugin_sources['vst_with_syn'] = {'version': '1.4.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6548', 'vim_version': '7.0', 'date': '2006-12-24', 'vim_script_nr': 1743, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vst-v1.4[.1]-and-rest[.1]--bugfixed-for-zhcn-by-oxsama.rar'}
 let s:plugin_sources['html_improved_indentation'] = {'version': '37', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6885', 'vim_version': '7.0', 'date': '2007-03-16', 'vim_script_nr': 1830, 'type': 'archive', 'script-type': 'indent', 'archive_name': 'html.vim'}
-let s:plugin_sources['Color_Sampler_Pack'] = {'version': '7.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10775', 'vim_version': '7.0', 'date': '2009-06-08', 'vim_script_nr': 625, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'ColorSamplerPack.zip'}
+let s:plugin_sources['Color_Sampler_Pack'] = {'version': '8.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12149', 'vim_version': '7.0', 'date': '2010-01-21', 'vim_script_nr': 625, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'ColorSamplerPack.zip'}
 let s:plugin_sources['autosession'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2836', 'vim_version': '6.0', 'date': '2004-03-16', 'vim_script_nr': 937, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'autosession.vim'}
 let s:plugin_sources['tidy'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4509', 'vim_version': '6.0', 'date': '2005-08-22', 'vim_script_nr': 1332, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'tidy.vim'}
 let s:plugin_sources['Duplicated'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9219', 'vim_version': '7.0', 'date': '2008-09-03', 'vim_script_nr': 2370, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vimmp-0.1.tgz'}
@@ -814,7 +814,6 @@ let s:plugin_sources['error714'] = {'vim_script_nr': 714}
 let s:plugin_sources['error715'] = {'vim_script_nr': 715}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
-let s:plugin_sources['error1452'] = {'vim_script_nr': 1452}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
@@ -2168,6 +2167,7 @@ let s:plugin_sources['shymenu'] = {'version': '0.3', 'url': 'http://www.vim.org/
 let s:plugin_sources['buffoptions'] = {'version': '2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17', 'vim_version': '5.7', 'date': '2001-06-07', 'vim_script_nr': 9, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'buffoptions.vim'}
 let s:plugin_sources['Emacs_outline_mode'] = {'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6852', 'vim_version': '6.0', 'date': '2007-03-10', 'vim_script_nr': 1266, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'outline.vim'}
 let s:plugin_sources['Cisco_ACL_syntax_highlighting_rules'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3651', 'vim_version': '6.0', 'date': '2004-11-23', 'vim_script_nr': 1141, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'ciscoacl.vim'}
+let s:plugin_sources['testing'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=5010', 'vim_version': '6.0', 'date': '2006-01-29', 'vim_script_nr': 1452, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'testaaaing.txt'}
 let s:plugin_sources['FormatBlock'] = {'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2689', 'vim_version': '6.0', 'date': '2004-01-28', 'vim_script_nr': 885, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'FormatBlock.vim'}
 let s:plugin_sources['AutoScrollMode'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7772', 'vim_version': '7.0', 'date': '2007-10-10', 'vim_script_nr': 2041, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'AutoScrollMode.vim'}
 let s:plugin_sources['hcc'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3803', 'vim_version': '6.0', 'date': '2005-01-28', 'vim_script_nr': 1190, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'hcc.vim'}
