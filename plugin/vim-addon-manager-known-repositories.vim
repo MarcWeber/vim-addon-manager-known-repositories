@@ -812,7 +812,6 @@ let s:plugin_sources['error712'] = {'vim_script_nr': 712}
 let s:plugin_sources['error713'] = {'vim_script_nr': 713}
 let s:plugin_sources['error714'] = {'vim_script_nr': 714}
 let s:plugin_sources['error715'] = {'vim_script_nr': 715}
-let s:plugin_sources['error1033'] = {'vim_script_nr': 1033}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
@@ -2401,7 +2400,7 @@ let s:plugin_sources['localColorSchemes'] = {'version': '1.2', 'url': 'http://ww
 let s:plugin_sources['preview'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2413', 'vim_version': '6.0', 'date': '2003-10-18', 'vim_script_nr': 797, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'preview.vim'}
 let s:plugin_sources['autoload_cscope'] = {'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=516', 'vim_version': '6.0', 'date': '2002-01-28', 'vim_script_nr': 157, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'autoload_cscope.vim'}
 let s:plugin_sources['Utility'] = {'version': '1.02', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6549', 'vim_version': '6.0', 'date': '2006-12-24', 'vim_script_nr': 1742, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vert.txt'}
-let s:plugin_sources['automated-rafb.net_uploader_plugin'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7076', 'vim_version': '7.0', 'date': '2007-05-07', 'vim_script_nr': 1889, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'post_rafb.pl'}
+let s:plugin_sources['commenter'] = {'version': '0.8.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4662', 'vim_version': '6.0', 'date': '2005-10-10', 'vim_script_nr': 1033, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'commenter.vim'}
 let s:plugin_sources['cobol.zip'] = {'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11936', 'vim_version': '6.0', 'date': '2009-12-22', 'vim_script_nr': 1655, 'type': 'archive', 'script-type': 'indent', 'archive_name': 'cobol.zip'}
 let s:plugin_sources['random'] = {'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2335', 'vim_version': '6.0', 'date': '2003-09-14', 'vim_script_nr': 668, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'random.vim'}
 let s:plugin_sources['Txtfmt_The_Vim_Highlighter'] = {'version': '2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11802', 'vim_version': '6.0', 'date': '2009-11-26', 'vim_script_nr': 2208, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'txtfmt_v2.1.tar.gz'}
@@ -2618,6 +2617,7 @@ let s:plugin_sources['SrchRplcHiGrp'] = {'version': '4.0', 'url': 'http://www.vi
 let s:plugin_sources['timestamp923'] = {'version': '1.21', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10283', 'vim_version': '7.0', 'date': '2009-03-25', 'vim_script_nr': 923, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'timestamp-1.21.tbz2'}
 let s:plugin_sources['timestamp2159'] = {'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9480', 'vim_version': '7.0', 'date': '2008-11-10', 'vim_script_nr': 2159, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'timestamp.vim'}
 let s:plugin_sources['doctest_syntax'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7002', 'vim_version': '7.0', 'date': '2007-04-19', 'vim_script_nr': 1867, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'doctest.vim'}
+let s:plugin_sources['automated-rafb.net_uploader_plugin'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7076', 'vim_version': '7.0', 'date': '2007-05-07', 'vim_script_nr': 1889, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'post_rafb.pl'}
 let s:plugin_sources['Cfengine_version_3_syntax'] = {'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11965', 'vim_version': '5.7', 'date': '2009-12-27', 'vim_script_nr': 2904, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'cf3.vim'}
 let s:plugin_sources['tinymode'] = {'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9130', 'vim_version': '7.0', 'date': '2008-08-15', 'vim_script_nr': 2223, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tinymode_0.5.zip'}
 let s:plugin_sources['darkdot'] = {'version': '2.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6097', 'vim_version': '7.0', 'date': '2006-08-25', 'vim_script_nr': 573, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'darkdot.vim'}
