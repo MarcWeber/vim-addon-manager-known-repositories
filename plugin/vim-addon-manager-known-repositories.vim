@@ -2947,7 +2947,9 @@ let s:plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://githu
 let s:plugin_sources['vim-addon-goto-thing-at-cursor'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor.git' }
 let s:plugin_sources['scion-backend-vim'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/scion-backend-vim.git' }
 let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
-let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/marcweber/vim-addon-actions.git' }
+let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-actions.git' }
+let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
+
 
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
