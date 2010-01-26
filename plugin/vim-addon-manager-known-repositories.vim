@@ -820,7 +820,6 @@ let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
-let s:plugin_sources['error2154'] = {'vim_script_nr': 2154}
 let s:plugin_sources['tagselect'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4356', 'vim_version': '6.0', 'date': '2005-06-11', 'vim_script_nr': 1282, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tagselect.vim'}
 let s:plugin_sources['fitnesse'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10658', 'vim_version': '7.0', 'date': '2009-05-22', 'vim_script_nr': 2651, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'fitnesse.vim.zip'}
 let s:plugin_sources['sign-diff'] = {'version': '0.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11065', 'vim_version': '7.0', 'date': '2009-07-26', 'vim_script_nr': 2712, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'sign-diff.vim'}
@@ -1036,6 +1035,7 @@ let s:plugin_sources['esperanto'] = {'version': '0.1', 'url': 'http://www.vim.or
 let s:plugin_sources['sessmgr'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=831', 'vim_version': '6.0', 'date': '2002-05-01', 'vim_script_nr': 286, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'sessmgr.vim'}
 let s:plugin_sources['bufmenu2'] = {'version': '1.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2893', 'vim_version': '6.0', 'date': '2004-03-30', 'vim_script_nr': 921, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'bufmenu2.vim'}
 let s:plugin_sources['rotate'] = {'version': '1.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3856', 'vim_version': '6.0', 'date': '2005-02-11', 'vim_script_nr': 1186, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'rotate.vim'}
+let s:plugin_sources['ma'] = {'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9289', 'vim_version': '7.0', 'date': '2008-09-28', 'vim_script_nr': 2154, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'marvim.tar.gz'}
 let s:plugin_sources['verilog2091'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=8061', 'vim_version': '7.0', 'date': '2007-12-16', 'vim_script_nr': 2091, 'type': 'archive', 'script-type': 'indent', 'archive_name': 'verilog.vim'}
 let s:plugin_sources['verilog2840'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11659', 'vim_version': '6.0', 'date': '2009-11-05', 'vim_script_nr': 2840, 'type': 'archive', 'script-type': 'ftplugin', 'archive_name': 'verilog.vim'}
 let s:plugin_sources['srecord'] = {'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1079', 'vim_version': '6.0', 'date': '2002-08-05', 'vim_script_nr': 322, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'srecord.vim'}
