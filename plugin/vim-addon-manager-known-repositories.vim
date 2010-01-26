@@ -815,6 +815,7 @@ let s:plugin_sources['error712'] = {'vim_script_nr': 712}
 let s:plugin_sources['error713'] = {'vim_script_nr': 713}
 let s:plugin_sources['error714'] = {'vim_script_nr': 714}
 let s:plugin_sources['error715'] = {'vim_script_nr': 715}
+let s:plugin_sources['error1153'] = {'vim_script_nr': 1153}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
@@ -1889,7 +1890,6 @@ let s:plugin_sources['Posting878'] = {'version': '1.31', 'url': 'http://www.vim.
 let s:plugin_sources['bayQua'] = {'version': '1.2b', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=5317', 'vim_version': '6.0', 'date': '2006-02-24', 'vim_script_nr': 1468, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'bayQua.vim'}
 let s:plugin_sources['Destructive_Paste'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2601', 'vim_version': '6.0', 'date': '2003-12-15', 'vim_script_nr': 859, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'destpaste.vim'}
 let s:plugin_sources['Tailf_-_Tails_a_log_file_continuously,_like_using_tail'] = {'version': '1.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7687', 'vim_version': '7.0', 'date': '2007-09-17', 'vim_script_nr': 2022, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tailf.vim'}
-let s:plugin_sources['xbl'] = {'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6225', 'vim_version': '6.0', 'date': '2006-09-25', 'vim_script_nr': 1153, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'xbl.vim'}
 let s:plugin_sources['hungarian_to_english'] = {'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=961', 'vim_version': '6.0', 'date': '2002-06-28', 'vim_script_nr': 320, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'hungarian_to_english.vim'}
 let s:plugin_sources['php_getset'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6413', 'vim_version': '7.0', 'date': '2006-11-14', 'vim_script_nr': 1707, 'type': 'archive', 'script-type': 'ftplugin', 'archive_name': 'php_getset.vim'}
 let s:plugin_sources['Textile_for_VIM'] = {'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9427', 'vim_version': '7.0', 'date': '2008-11-03', 'vim_script_nr': 2305, 'type': 'archive', 'script-type': 'ftplugin', 'archive_name': 'textile-0.3.zip'}
