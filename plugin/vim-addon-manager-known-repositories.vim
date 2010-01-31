@@ -2996,5 +2996,7 @@ let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, 
 let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
 
 
+" deprecations {{{1
+let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
 
 " vim:fdm=marker
