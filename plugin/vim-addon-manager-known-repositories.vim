@@ -2972,6 +2972,8 @@ let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/v
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
 
+let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vim-dev-plugin.git' }
+
 " }}}
 
 " plugin infos - written if the plugin doesn't ship one itself {{{
@@ -2979,6 +2981,9 @@ let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.s
 " this is mainly used to add missing dependencies
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
 " }}}
+
+" fix target directories {{{1
+let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
 
 
 
