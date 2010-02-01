@@ -822,6 +822,7 @@ let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
+let s:plugin_sources['error2277'] = {'vim_script_nr': 2277}
 let s:plugin_sources['tagselect'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4356', 'vim_version': '6.0', 'date': '2005-06-11', 'vim_script_nr': 1282, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tagselect.vim'}
 let s:plugin_sources['fitnesse'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10658', 'vim_version': '7.0', 'date': '2009-05-22', 'vim_script_nr': 2651, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'fitnesse.vim.zip'}
 let s:plugin_sources['sign-diff'] = {'version': '0.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11065', 'vim_version': '7.0', 'date': '2009-07-26', 'vim_script_nr': 2712, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'sign-diff.vim'}
@@ -2548,7 +2549,6 @@ let s:plugin_sources['bwUtility'] = {'version': '1.3', 'url': 'http://www.vim.or
 let s:plugin_sources['quickrun'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11077', 'vim_version': '6.0', 'date': '2009-07-28', 'vim_script_nr': 2419, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'quickrun.vim'}
 let s:plugin_sources['VIMEN'] = {'version': '0.00.0002a', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4133', 'vim_version': '6.0', 'date': '2005-04-07', 'vim_script_nr': 1254, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vimen_0_00_0002a.zip'}
 let s:plugin_sources['seashell'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7235', 'vim_version': '7.0', 'date': '2007-06-13', 'vim_script_nr': 589, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'seashell.vim'}
-let s:plugin_sources['DevEiate_theme'] = {'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=8869', 'vim_version': '7.0', 'date': '2008-06-29', 'vim_script_nr': 2277, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'deveiate.vim'}
 let s:plugin_sources['outputz'] = {'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9544', 'vim_version': '7.0', 'date': '2008-11-22', 'vim_script_nr': 2455, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vim-outputz-0.0.1.zip'}
 let s:plugin_sources['CommentAnyWay'] = {'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10088', 'vim_version': '7.0', 'date': '2009-03-03', 'vim_script_nr': 2554, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'CommentAnyWay.vim'}
 let s:plugin_sources['guepardo'] = {'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10274', 'vim_version': '6.0', 'date': '2009-03-23', 'vim_script_nr': 2512, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'guepardo.vim'}
