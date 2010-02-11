@@ -826,7 +826,6 @@ let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
-let s:plugin_sources['error2967'] = {'vim_script_nr': 2967}
 let s:plugin_sources['tagselect'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4356', 'vim_version': '6.0', 'date': '2005-06-11', 'vim_script_nr': 1282, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tagselect.vim'}
 let s:plugin_sources['fitnesse'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10658', 'vim_version': '7.0', 'date': '2009-05-22', 'vim_script_nr': 2651, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'fitnesse.vim.zip'}
 let s:plugin_sources['sign-diff'] = {'version': '0.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11065', 'vim_version': '7.0', 'date': '2009-07-26', 'vim_script_nr': 2712, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'sign-diff.vim'}
@@ -2646,6 +2645,7 @@ let s:plugin_sources['automated-rafb.net_uploader_plugin'] = {'version': '0.1', 
 let s:plugin_sources['Cfengine_version_3_syntax'] = {'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11965', 'vim_version': '5.7', 'date': '2009-12-27', 'vim_script_nr': 2904, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'cf3.vim'}
 let s:plugin_sources['tinymode'] = {'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9130', 'vim_version': '7.0', 'date': '2008-08-15', 'vim_script_nr': 2223, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tinymode_0.5.zip'}
 let s:plugin_sources['darkdot'] = {'version': '2.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6097', 'vim_version': '7.0', 'date': '2006-08-25', 'vim_script_nr': 573, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'darkdot.vim'}
+let s:plugin_sources['daemon_saver'] = {'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12356', 'vim_version': '7.0', 'date': '2010-02-11', 'vim_script_nr': 2967, 'type': 'archive', 'script-type': 'game', 'archive_name': 'daemon_saver.vim'}
 let s:plugin_sources['blinking_cursor'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7550', 'vim_version': '7.0', 'date': '2007-08-23', 'vim_script_nr': 2000, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'blinking_cursor.tar.gz'}
 let s:plugin_sources['closeb'] = {'version': '0.2a', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=646', 'vim_version': '6.0', 'date': '2002-02-27', 'vim_script_nr': 226, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'closeb.vim'}
 let s:plugin_sources['nicotine'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6915', 'vim_version': '7.0', 'date': '2007-03-28', 'vim_script_nr': 1841, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'nicotine.vim'}
