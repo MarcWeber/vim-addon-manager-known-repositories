@@ -824,6 +824,7 @@ let s:plugin_sources['error715'] = {'vim_script_nr': 715}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
+let s:plugin_sources['error1777'] = {'vim_script_nr': 1777}
 let s:plugin_sources['error1907'] = {'vim_script_nr': 1907}
 let s:plugin_sources['error1949'] = {'vim_script_nr': 1949}
 let s:plugin_sources['tagselect'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4356', 'vim_version': '6.0', 'date': '2005-06-11', 'vim_script_nr': 1282, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'tagselect.vim'}
@@ -2881,8 +2882,7 @@ let s:plugin_sources['htmlmap'] = {'version': '1.01pl4', 'url': 'http://www.vim.
 let s:plugin_sources['vimUnit'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3614', 'vim_version': '6.0', 'date': '2004-11-09', 'vim_script_nr': 1125, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'vim_unit.vim'}
 let s:plugin_sources['idf'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2998', 'vim_version': '6.0', 'date': '2004-05-06', 'vim_script_nr': 979, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'idf.vim'}
 let s:plugin_sources['ASL'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6136', 'vim_version': '6.0', 'date': '2006-09-02', 'vim_script_nr': 1648, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'asl.vim'}
-let s:plugin_sources['cvsdiff1214'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3897', 'vim_version': '6.0', 'date': '2005-02-23', 'vim_script_nr': 1214, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cvsdiff.vim'}
-let s:plugin_sources['cvsdiff1777'] = {'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6655', 'vim_version': '6.0', 'date': '2007-01-24', 'vim_script_nr': 1777, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cvsdiff'}
+let s:plugin_sources['cvsdiff'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3897', 'vim_version': '6.0', 'date': '2005-02-23', 'vim_script_nr': 1214, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cvsdiff.vim'}
 let s:plugin_sources['DOS_Commands'] = {'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2003', 'vim_version': '6.0', 'date': '2003-05-21', 'vim_script_nr': 647, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'doshelp.txt'}
 let s:plugin_sources['hypergit'] = {'version': '2.08', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12295', 'vim_version': '7.2', 'date': '2010-02-03', 'vim_script_nr': 2954, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'hypergit-vim-2.08.tar.gz'}
 let s:plugin_sources['CSS_2.1_Specification'] = {'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4596', 'vim_version': '6.0', 'date': '2005-09-19', 'vim_script_nr': 918, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'css21.zip'}
