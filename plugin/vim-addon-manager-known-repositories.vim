@@ -821,7 +821,6 @@ let s:plugin_sources['error712'] = {'vim_script_nr': 712}
 let s:plugin_sources['error713'] = {'vim_script_nr': 713}
 let s:plugin_sources['error714'] = {'vim_script_nr': 714}
 let s:plugin_sources['error715'] = {'vim_script_nr': 715}
-let s:plugin_sources['error1024'] = {'vim_script_nr': 1024}
 let s:plugin_sources['error1263'] = {'vim_script_nr': 1263}
 let s:plugin_sources['error1342'] = {'vim_script_nr': 1342}
 let s:plugin_sources['error1630'] = {'vim_script_nr': 1630}
@@ -1876,7 +1875,8 @@ let s:plugin_sources['ProvideX_Syntax'] = {'version': '1.1', 'url': 'http://www.
 let s:plugin_sources['runVimTests'] = {'version': '1.13', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10702', 'vim_version': '7.0', 'date': '2009-05-29', 'vim_script_nr': 2565, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'runVimTests.zip'}
 let s:plugin_sources['spring'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9257', 'vim_version': '7.0', 'date': '2008-09-16', 'vim_script_nr': 2303, 'type': 'archive', 'script-type': 'color scheme', 'archive_name': 'spring.vim'}
 let s:plugin_sources['isi2bib'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2150', 'vim_version': '6.0', 'date': '2003-07-15', 'vim_script_nr': 704, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'isi2bib.vim'}
-let s:plugin_sources['IndentHL'] = {'version': '2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6753', 'vim_version': '7.0', 'date': '2007-02-18', 'vim_script_nr': 1800, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'indenthl.vim.gz'}
+let s:plugin_sources['IndentHL1024'] = {'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3210', 'vim_version': '6.0', 'date': '2004-07-07', 'vim_script_nr': 1024, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'IndentHL.vim'}
+let s:plugin_sources['IndentHL1800'] = {'version': '2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6753', 'vim_version': '7.0', 'date': '2007-02-18', 'vim_script_nr': 1800, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'indenthl.vim.gz'}
 let s:plugin_sources['java_checkstyle'] = {'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2147', 'vim_version': '6.0', 'date': '2003-07-14', 'vim_script_nr': 448, 'type': 'archive', 'script-type': 'ftplugin', 'archive_name': 'java_checkstyle.tar.gz'}
 let s:plugin_sources['tcl_itcl'] = {'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6610', 'vim_version': '6.0', 'date': '2007-01-11', 'vim_script_nr': 1765, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'tcl_itcl.vim'}
 let s:plugin_sources['perl-mauke'] = {'version': '0.11', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9087', 'vim_version': '6.0', 'date': '2008-08-07', 'vim_script_nr': 2300, 'type': 'archive', 'script-type': 'syntax', 'archive_name': 'perl.vim'}
