@@ -2989,21 +2989,22 @@ let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'gi
 let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-actions.git' }
 let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
 
-let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url', 'git://github.com/MarcWeber/snipmate.vim.git' }
+let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
 
 
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
 " Shougo
 let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
-let s:plugin_sources['vimshell'] = {'type':'git', 'url': 'git://github.com/Shougo/vimshell.git' }
-let s:plugin_sources['vimproc'] = {'type':'git', 'url': 'git://github.com/Shougo/vimproc.git' }
+let s:plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
+let s:plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
 
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
 let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby.git' }
 let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
+let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
 
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
