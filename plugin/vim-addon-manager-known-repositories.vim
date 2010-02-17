@@ -3024,6 +3024,7 @@ let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.co
 
 " this is mainly used to add missing dependencies
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
+let s:missing_addon_infos["vim-ruby-debugger"] = '{ "dependencies" : {}, "runtimepath": "vim" }'
 " }}}
 
 " fix target directories {{{1
