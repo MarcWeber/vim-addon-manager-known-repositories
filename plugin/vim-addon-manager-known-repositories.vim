@@ -3009,7 +3009,7 @@ let s:plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shoug
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
-let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby.git' }
+let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
 let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
 let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
 
@@ -3024,7 +3024,6 @@ let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.co
 
 " this is mainly used to add missing dependencies
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
-let s:missing_addon_infos["vim-ruby-debugger"] = '{ "dependencies" : {}, "runtimepath": "vim" }'
 " }}}
 
 " fix target directories {{{1
