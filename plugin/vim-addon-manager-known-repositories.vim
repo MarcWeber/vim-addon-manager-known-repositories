@@ -3063,6 +3063,9 @@ let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/Mar
 let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
 let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
 
+" Raimondi:
+let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
+
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
 
