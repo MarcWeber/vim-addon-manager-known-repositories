@@ -3035,6 +3035,7 @@ let s:plugin_sources['buffer-status-menu'] = {'version': '1.0', 'url': 'http://w
 
 " my plugins:
 let s:plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
+let s:plugin_sources['vim-addon-swfmill'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-swfmill.git' }
 let s:plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-mw-utils.git' }
 let s:plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
 let s:plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-views.git' }
