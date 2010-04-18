@@ -3081,6 +3081,7 @@ let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://git
 let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
 let s:plugin_sources['vim-addon-completion'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-completion.git' }
 let s:plugin_sources['vim-addon-haskell'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell.git' }
+let s:plugin_sources['vim-addon-nix'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-nix.git' }
 
 let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
 
