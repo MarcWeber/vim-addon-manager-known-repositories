@@ -3124,6 +3124,7 @@ let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/v
 let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
 let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
 let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
+let s:plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/SmartTag.git' }
 
 " Raimondi:
 let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
