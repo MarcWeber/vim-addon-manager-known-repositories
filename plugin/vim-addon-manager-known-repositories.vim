@@ -3178,6 +3178,9 @@ let s:plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/M
 let s:plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
 let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
 
+" Daniel Hofstetter
+let s:plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim.git' }
+
 " Raimondi:
 let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
 
