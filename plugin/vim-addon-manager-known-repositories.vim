@@ -3177,6 +3177,15 @@ let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.co
 let s:plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
 let s:plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
 
+" ZyX
+let s:plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
+let s:plugin_sources['translit3'] = { 'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3' }
+let s:plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.sourceforge.net:8000/hgroot/jsonvim/jsonvim' }
+let s:plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargumentchec.hg.sourceforge.net:8000/hgroot/vimargumentchec/vimargumentchec' }
+let s:plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
+let s:plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
+let s:plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
+
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
