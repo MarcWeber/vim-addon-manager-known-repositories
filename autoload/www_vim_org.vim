@@ -35,6 +35,13 @@ fun! www_vim_org#Script(nr, cached)
 
   let title = matchstr(lines[5], '<title>\zs.*\ze -')
 
+
+  let match_author = '<tr><td><a href="/account/profile.php?user_id=\d*">\([^<]\+\)</a></td></tr>'
+  while len(lines) > 0 && lines[0] !~ match_author
+    let lines = lines[1:]
+  endwhile
+  let author = matchlist(lines[0], match_author)[1]
+
   while len(lines) > 0 && lines[0] !~ 'class="prompt">script type</td>'
     let lines = lines[1:]
   endwhile
@@ -72,7 +79,8 @@ fun! www_vim_org#Script(nr, cached)
     \ 'vim_script_nr' : nr,
     \ 'script-type' : type,
     \ 'vim_version' : vim_version,
-    \ 'title2' : title2
+    \ 'title2' : title2,
+    \ 'author' : author
     \ } 
 endf
 
