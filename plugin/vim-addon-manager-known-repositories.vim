@@ -3213,6 +3213,8 @@ let s:plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargu
 let s:plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
 let s:plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
 let s:plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
+let s:plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
+let s:plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
 
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
