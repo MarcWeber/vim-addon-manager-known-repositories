@@ -3263,6 +3263,18 @@ let s:plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/M
 let s:plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
 let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
 
+let s:plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish.git'}
+let s:plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
+let s:plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive.git'}
+let s:plugin_sources['nerd_commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
+let s:plugin_sources['nerd_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
+let s:plugin_sources['pathogen'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen.git'}
+let s:plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
+let s:plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-repeat.git'}
+let s:plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/ervandew/supertab.git'}
+let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
+let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
+
 " Daniel Hofstetter
 let s:plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim.git' }
 
