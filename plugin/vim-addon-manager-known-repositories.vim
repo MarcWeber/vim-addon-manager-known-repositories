@@ -3288,7 +3288,7 @@ let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Ra
 " this is only the vimfiles subdirectory:
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
 
-let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vim-dev-plugin.git' }
+let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vimomni.vim.git' }
 
 " }}}
 
