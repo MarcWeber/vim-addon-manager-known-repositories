@@ -3276,6 +3276,17 @@ let s:plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/erva
 let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
 let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
 let s:plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
+
+" contributed by creidiki:
+let s:plugin_sources['fuzzyfinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
+let s:plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty.git'}
+let s:plugin_sources['php1571']['strip-components'] = 0
+let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
+let s:plugin_sources['pythoncomplete']['target_dir'] = 'autoload'
+let s:plugin_sources['pythoncomplete']['script-type'] = 'autoload'
+let s:plugin_sources['ack']['strip-components'] = 0
+let s:plugin_sources['autocorrect']['strip-components'] = 0
+
 " Daniel Hofstetter
 let s:plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim.git' }
 
