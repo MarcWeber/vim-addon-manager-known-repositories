@@ -3237,6 +3237,7 @@ let s:plugin_sources['buffer-status-menu'] = {'version': '1.0', 'url': 'http://w
 " this source seems to be more up to date then the www.vim.org version:
 let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
 let s:plugin_sources['Command-T'] = { 'type' : 'git', 'url' : 'git://git.wincent.com/command-t.git' }
+let s:plugin_sources['pyinteractive'] = { 'type' : 'hg', 'url' : 'https://vim-pyinteractive-plugin.googlecode.com/hg/' }
 
 " my plugins:
 let s:plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
