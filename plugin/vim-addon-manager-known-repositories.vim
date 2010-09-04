@@ -3257,6 +3257,8 @@ let s:plugin_sources['vim-addon-sbt'] = { 'type' : 'git', 'url': 'git://github.c
 let s:plugin_sources['vim-addon-scala'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala.git' }
 let s:plugin_sources['vim-addon-git'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git.git' }
 let s:plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-povray.git' }
+let s:plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffe.git' }
+let s:plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffe.git' }
 
 
 let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
@@ -3294,7 +3296,6 @@ endfor
 
 " others:
 let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
-let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimtlib.git'}
 let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
 let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
 let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
@@ -3338,6 +3339,47 @@ let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Ra
 let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
 
 let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vimomni.vim.git' }
+
+" Tom Link
+
+" Tom Link
+let s:plugin_sources['checksyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/checksyntax_vim.git' }
+let s:plugin_sources['cmdlinehelp'] = {'type': 'git', 'url': 'git://github.com/tomtom/cmdlinehelp_vim.git' }
+let s:plugin_sources['hookcursormoved'] = {'type': 'git', 'url': 'git://github.com/tomtom/hookcursormoved_vim.git' }
+let s:plugin_sources['linglang'] = {'type': 'git', 'url': 'git://github.com/tomtom/linglang_vim.git' }
+let s:plugin_sources['presets'] = {'type': 'git', 'url': 'git://github.com/tomtom/presets_vim.git' }
+let s:plugin_sources['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim.git' }
+let s:plugin_sources['quickfixsigns'] = {'type': 'git', 'url': 'git://github.com/tomtom/quickfixsigns_vim.git' }
+let s:plugin_sources['rcom'] = {'type': 'git', 'url': 'git://github.com/tomtom/rcom_vim.git' }
+let s:plugin_sources['scalefont'] = {'type': 'git', 'url': 'git://github.com/tomtom/scalefont_vim.git' }
+let s:plugin_sources['setsyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/setsyntax_vim.git' }
+let s:plugin_sources['shymenu'] = {'type': 'git', 'url': 'git://github.com/tomtom/shymenu_vim.git' }
+let s:plugin_sources['spec'] = {'type': 'git', 'url': 'git://github.com/tomtom/spec_vim.git' }
+let s:plugin_sources['startup_profile'] = {'type': 'git', 'url': 'git://github.com/tomtom/startup_profile_vim.git' }
+let s:plugin_sources['tassert'] = {'type': 'git', 'url': 'git://github.com/tomtom/tassert_vim.git' }
+let s:plugin_sources['tbibtools'] = {'type': 'git', 'url': 'git://github.com/tomtom/tbibtools_vim.git' }
+let s:plugin_sources['tcalc'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcalc_vim.git' }
+let s:plugin_sources['tcommand'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcommand_vim.git' }
+let s:plugin_sources['tcomment'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcomment_vim.git' }
+let s:plugin_sources['tgpg'] = {'type': 'git', 'url': 'git://github.com/tomtom/tgpg_vim.git' }
+let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/tlib_vim.git' }
+let s:plugin_sources['tmarks'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmarks_vim.git' }
+let s:plugin_sources['tmru'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmru_vim.git' }
+let s:plugin_sources['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_vim.git' }
+let s:plugin_sources['TortoiseSVN'] = {'type': 'git', 'url': 'git://github.com/tomtom/TortoiseSVN_vim.git' }
+let s:plugin_sources['tplugin'] = {'type': 'git', 'url': 'git://github.com/tomtom/tplugin_vim.git' }
+let s:plugin_sources['trag'] = {'type': 'git', 'url': 'git://github.com/tomtom/trag_vim.git' }
+let s:plugin_sources['tregisters'] = {'type': 'git', 'url': 'git://github.com/tomtom/tregisters_vim.git' }
+let s:plugin_sources['tselectbuffer'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectbuffer_vim.git' }
+let s:plugin_sources['tselectfiles'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectfiles_vim.git' }
+let s:plugin_sources['tskeleton'] = {'type': 'git', 'url': 'git://github.com/tomtom/tskeleton_vim.git' }
+let s:plugin_sources['ttagecho'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttagecho_vim.git' }
+let s:plugin_sources['ttags'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttags_vim.git' }
+let s:plugin_sources['ttoc'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttoc_vim.git' }
+let s:plugin_sources['viki'] = {'type': 'git', 'url': 'git://github.com/tomtom/viki_vim.git' }
+let s:plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com/tomtom/vikitasks_vim.git' }
+let s:plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
+let s:plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
 
 " }}}
 
