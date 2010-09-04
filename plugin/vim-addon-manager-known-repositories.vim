@@ -3256,6 +3256,8 @@ let s:plugin_sources['vim-addon-nix'] = { 'type' : 'git', 'url': 'git://github.c
 let s:plugin_sources['vim-addon-sbt'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sbt.git' }
 let s:plugin_sources['vim-addon-scala'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala.git' }
 let s:plugin_sources['vim-addon-git'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git.git' }
+let s:plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-povray.git' }
+
 
 let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
 
