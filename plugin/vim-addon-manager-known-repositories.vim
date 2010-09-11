@@ -3268,8 +3268,8 @@ let s:plugin_sources['vim-addon-sbt'] = { 'type' : 'git', 'url': 'git://github.c
 let s:plugin_sources['vim-addon-scala'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala.git' }
 let s:plugin_sources['vim-addon-git'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git.git' }
 let s:plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-povray.git' }
-let s:plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffe.git' }
-let s:plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffe.git' }
+let s:plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffer.git' }
+let s:plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-other.git' }
 
 
 let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
