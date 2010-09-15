@@ -3292,6 +3292,10 @@ let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com
 let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 let s:plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
 let s:plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
+let s:plugin_sources['unite'] = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim.git'}
+let s:plugin_sources['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler.git'}
+let s:plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise.git'}
+let s:plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
 
 " ZyX
 let s:plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
