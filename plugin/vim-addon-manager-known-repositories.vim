@@ -3278,6 +3278,16 @@ let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/Ma
 
 let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
+" " xolox
+" " Commented until author puts vim files in proper directories or somebody implements postinstall hooks
+" let s:plugin_sources['shell'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-shell' }
+" let s:plugin_sources['easytags'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-easytags' }
+" let s:plugin_sources['publish'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-publish' }
+" let s:plugin_sources['session'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-session' }
+" let s:plugin_sources['luainspect'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-inspect' }
+" let s:plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
+" let s:plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
+
 " Shougo
 let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 let s:plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
