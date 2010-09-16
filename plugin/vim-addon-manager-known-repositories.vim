@@ -3343,6 +3343,10 @@ let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpop
 let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
 let s:plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
 
+"tiagofalcao asked me to add the svn source:
+let s:plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
+ 
+
 " contributed by creidiki:
 let s:plugin_sources['fuzzyfinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
 let s:plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty.git'}
