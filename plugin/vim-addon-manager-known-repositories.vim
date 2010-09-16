@@ -3296,6 +3296,7 @@ let s:plugin_sources['unite'] = {'type': 'git', 'url': 'git://github.com/Shougo/
 let s:plugin_sources['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler.git'}
 let s:plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise.git'}
 let s:plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
+let s:missing_addon_infos["vimshell"] = '{ "dependencies" : {"vimproc":{}}}'
 
 " ZyX
 let s:plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
