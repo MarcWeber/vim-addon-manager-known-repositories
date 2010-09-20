@@ -3343,6 +3343,14 @@ let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpop
 let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
 let s:plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
 
+" Luc Hermitte
+" Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
+let s:plugin_sources['lh-vim-lib'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk' }
+let s:plugin_sources['Map_Tools'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk' }
+let s:plugin_sources['lh-cpp-ftplugins'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk' }
+let s:plugin_sources['searchInRuntime'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk' }
+" Others were not included as they are absent on www.vim.org
+
 "tiagofalcao asked me to add the svn source:
 let s:plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
  
