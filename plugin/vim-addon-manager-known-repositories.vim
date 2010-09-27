@@ -3454,6 +3454,7 @@ let s:plugin_sources['xptemplate']['strip-components'] = 0
 
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
+let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
 
