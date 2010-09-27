@@ -3358,6 +3358,7 @@ let s:plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/
 let s:plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/ervandew/supertab.git'}
 let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
 let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
+let s:plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sql.git' }
 let s:plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
 let s:plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url': 'git://github.com/ervandew/screen.git' }
 
