@@ -3433,14 +3433,13 @@ let s:scm_plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
 let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
 
-if !(exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm==2)
+if !(get(s:c, 'forbid_scm', '')=~?'all')
     call extend(s:plugin_sources, s:scm_plugin_sources,
-                \((exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm)?
+                \((get(s:c, 'forbid_scm', '')=~?'released')?
                 \   ("keep"):
                 \   ("force")))
-else
-    unlet s:scm_plugin_sources
 endif
+unlet s:scm_plugin_sources
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
