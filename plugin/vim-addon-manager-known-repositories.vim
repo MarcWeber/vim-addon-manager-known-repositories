@@ -3489,4 +3489,5 @@ let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using 
 call call(get(s:c,'MergeSources',function('s:MergeSources')),
       \ [s:c['plugin_sources'], s:plugin_sources, s:scm_plugin_sources], {})
 
+unlet s:scm_plugin_sources s:plugin_sources
 " vim:fdm=marker
