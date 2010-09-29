@@ -3258,188 +3258,199 @@ let s:plugin_sources['ShowLine'] = {'version': '1.1', 'url': 'http://www.vim.org
 let s:plugin_sources['buffer-status-menu'] = {'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7614', 'vim_version': '7.0', 'date': '2007-09-01', 'vim_script_nr': 2008, 'type': 'archive', 'script-type': 'utility', 'archive_name': 'buffer-status-menu.vim', 'author': 'Thomas Matysik'}
 " }}}
 
-
-" custom plugins - drop me an email to get you repository added {{{
-
+" custom plugins - drop me an email to get you repository added
+" SCM plugin sources {{{
 " this source seems to be more up to date then the www.vim.org version:
-let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
-let s:plugin_sources['Command-T'] = { 'type' : 'git', 'url' : 'git://git.wincent.com/command-t.git' }
-let s:plugin_sources['Conque_Shell'] = { 'type': 'svn', 'url': 'http://conque.googlecode.com/svn/trunk/' }
-let s:plugin_sources['pyinteractive'] = { 'type' : 'hg', 'url' : 'https://vim-pyinteractive-plugin.googlecode.com/hg/' }
-let s:plugin_sources['Vim-R-plugin2'] = { 'type': 'git', 'url' : 'git://github.com/jimmyharris/vim-r-plugin2.git' }
+let s:scm_plugin_sources = {}
+let s:scm_plugin_sources['Command-T'] = { 'type' : 'git', 'url' : 'git://git.wincent.com/command-t.git' }
+let s:scm_plugin_sources['Conque_Shell'] = { 'type': 'svn', 'url': 'http://conque.googlecode.com/svn/trunk/' }
+let s:scm_plugin_sources['pyinteractive'] = { 'type' : 'hg', 'url' : 'https://vim-pyinteractive-plugin.googlecode.com/hg/' }
+let s:scm_plugin_sources['Vim-R-plugin2'] = { 'type': 'git', 'url' : 'git://github.com/jimmyharris/vim-r-plugin2.git' }
 
 " my plugins:
-let s:plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
-let s:plugin_sources['vim-addon-swfmill'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-swfmill.git' }
-let s:plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-mw-utils.git' }
-let s:plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
-let s:plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-views.git' }
-let s:plugin_sources['vim-addon-goto-thing-at-cursor'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor.git' }
-let s:plugin_sources['scion-backend-vim'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/scion-backend-vim.git' }
-let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
-let s:plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-actions.git' }
-let s:plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
-let s:plugin_sources['vim-addon-completion'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-completion.git' }
-let s:plugin_sources['vim-addon-haskell'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell.git' }
-let s:plugin_sources['vim-addon-nix'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-nix.git' }
-let s:plugin_sources['vim-addon-sbt'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sbt.git' }
-let s:plugin_sources['vim-addon-scala'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala.git' }
-let s:plugin_sources['vim-addon-git'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git.git' }
-let s:plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-povray.git' }
-let s:plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffer.git' }
-let s:plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-other.git' }
+let s:scm_plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
+let s:scm_plugin_sources['vim-addon-swfmill'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-swfmill.git' }
+let s:scm_plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-mw-utils.git' }
+let s:scm_plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
+let s:scm_plugin_sources['vim-addon-views'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-views.git' }
+let s:scm_plugin_sources['vim-addon-goto-thing-at-cursor'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor.git' }
+let s:scm_plugin_sources['scion-backend-vim'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/scion-backend-vim.git' }
+let s:scm_plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
+let s:scm_plugin_sources['vim-addon-actions'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-actions.git' }
+let s:scm_plugin_sources['vim-addon-background-cmd'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-background-cmd.git' }
+let s:scm_plugin_sources['vim-addon-completion'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-completion.git' }
+let s:scm_plugin_sources['vim-addon-haskell'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell.git' }
+let s:scm_plugin_sources['vim-addon-nix'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-nix.git' }
+let s:scm_plugin_sources['vim-addon-sbt'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sbt.git' }
+let s:scm_plugin_sources['vim-addon-scala'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala.git' }
+let s:scm_plugin_sources['vim-addon-git'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git.git' }
+let s:scm_plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-povray.git' }
+let s:scm_plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffer.git' }
+let s:scm_plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-other.git' }
 
 
-let s:plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
+let s:scm_plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
 
 
-let s:plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
+let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
 " " xolox
 " " Commented until author puts vim files in proper directories or somebody implements postinstall hooks
-" let s:plugin_sources['shell'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-shell' }
-" let s:plugin_sources['easytags'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-easytags' }
-" let s:plugin_sources['publish'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-publish' }
-" let s:plugin_sources['session'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-session' }
-" let s:plugin_sources['luainspect'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-inspect' }
-" let s:plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
-" let s:plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
+" let s:scm_plugin_sources['shell'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-shell' }
+" let s:scm_plugin_sources['easytags'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-easytags' }
+" let s:scm_plugin_sources['publish'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-publish' }
+" let s:scm_plugin_sources['session'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-session' }
+" let s:scm_plugin_sources['luainspect'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-inspect' }
+" let s:scm_plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
+" let s:scm_plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
 
 " Shougo
-let s:plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
-let s:plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
-let s:plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
-let s:plugin_sources['unite'] = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim.git'}
-let s:plugin_sources['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler.git'}
-let s:plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise.git'}
-let s:plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
-let s:missing_addon_infos["vimshell"] = '{ "dependencies" : {"vimproc":{}}}'
+let s:scm_plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
+
+let s:scm_plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
+let s:missing_addon_infos["vimshell"] = '{ "dependencies" : {"vimproc": {} } }'
+
+let s:scm_plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
+let s:scm_plugin_sources['unite'] = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim.git'}
+let s:scm_plugin_sources['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler.git'}
+let s:scm_plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise.git'}
+let s:scm_plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
 
 " ZyX
-let s:plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
-let s:plugin_sources['translit3'] = { 'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3' }
-let s:plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.sourceforge.net:8000/hgroot/jsonvim/jsonvim' }
-let s:plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargumentchec.hg.sourceforge.net:8000/hgroot/vimargumentchec/vimargumentchec' }
-let s:plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
-let s:plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
-let s:plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
-let s:plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
-let s:plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
+let s:scm_plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
+let s:scm_plugin_sources['translit3'] = { 'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3' }
+let s:scm_plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.sourceforge.net:8000/hgroot/jsonvim/jsonvim' }
+let s:scm_plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargumentchec.hg.sourceforge.net:8000/hgroot/vimargumentchec/vimargumentchec' }
+let s:scm_plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
+let s:scm_plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
+let s:scm_plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
+let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
+let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
 
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
 " support them all.
 for n in split("vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-altercmd vim-fakeclip vim-operator-user vim-vspec vim-wwwsearch vim-textobj-syntax vim-textobj-indent vim-operator-replace vim-grex vim-xml-move vim-xml-autons vim-vcsi vim-textobj-lastpat vim-textobj-jabraces vim-textobj-function vim-textobj-fold vim-textobj-entire vim-textobj-diff vim-surround vim-submode vim-smartword vim-smarttill vim-smartchr vim-skeleton vim-scratch vim-repeat vim-narrow vim-metarw vim-metarw-git vim-flydiff vim-exjumplist vim-bundle vim-textobj-datetime vim-textobj-django-template chat.vim-users.jp-log-converter jkramer-vim-narrow kuy-vim-fuzzyjump thinca-vim-qfreplace mootoh-vim-refe2 thinca-vim-ku-file_mru ujihisa-vim-quickrun vim-flymake vim-perproject vim-stackreg vim-outputz vim-ctxabbr vim-advice vim-ku-quickfix vim-ku-metarw vim-ku-bundle vim-ku-args vim-ku", " ")
   let na = substitute(n,'^vim-','','')
-  let s:plugin_sources[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n.'.git' }
+  let s:scm_plugin_sources[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n.'.git' }
   if n =~ 'vim-textobj-\%(user\)\@!'
-    let s:missing_addon_infos[na] = '{ "dependencies" : {"textobj-user":{}}}'
+    let s:missing_addon_infos[na] = '{ "dependencies" : {"textobj-user": {} }}'
   endif
   unlet na
 endfor
 
 " others:
-let s:plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
-let s:plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
-let s:plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
-let s:plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
-let s:plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/SmartTag.git' }
-let s:plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
+let s:scm_plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
+let s:scm_plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
+let s:scm_plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
+let s:scm_plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
+let s:scm_plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/SmartTag.git' }
+
+let s:scm_plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
 let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
 
-let s:plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish.git'}
-let s:plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
-let s:plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive.git'}
-let s:plugin_sources['nerd_commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
-let s:plugin_sources['nerd_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
-let s:plugin_sources['pathogen'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen.git'}
-let s:plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
-let s:plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-repeat.git'}
-let s:plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/ervandew/supertab.git'}
-let s:plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
-let s:plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
-let s:plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sql.git' }
-let s:plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
-let s:plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url': 'git://github.com/ervandew/screen.git' }
+let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish.git'}
+let s:scm_plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
+let s:scm_plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive.git'}
+let s:scm_plugin_sources['nerd_commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
+let s:scm_plugin_sources['nerd_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
+let s:scm_plugin_sources['pathogen'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen.git'}
+let s:scm_plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
+let s:scm_plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-repeat.git'}
+let s:scm_plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/ervandew/supertab.git'}
+let s:scm_plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
+let s:scm_plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
+let s:scm_plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sql.git' }
+let s:scm_plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
+let s:scm_plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url': 'git://github.com/ervandew/screen.git' }
 
 " Luc Hermitte
 " Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
-let s:plugin_sources['lh-vim-lib'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk' }
-let s:plugin_sources['Map_Tools'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk' }
-let s:plugin_sources['lh-cpp-ftplugins'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk' }
-let s:plugin_sources['searchInRuntime'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk' }
+let s:scm_plugin_sources['lh-vim-lib'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk' }
+let s:scm_plugin_sources['Map_Tools'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk' }
+let s:scm_plugin_sources['lh-cpp-ftplugins'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk' }
+let s:scm_plugin_sources['searchInRuntime'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk' }
 " Others were not included as they are absent on www.vim.org
 
 "tiagofalcao asked me to add the svn source:
-let s:plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
+let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
  
 
 " contributed by creidiki:
-let s:plugin_sources['fuzzyfinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
-let s:plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty.git'}
+let s:scm_plugin_sources['fuzzyfinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
+let s:scm_plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty.git'}
+
+" Daniel Hofstetter
+let s:scm_plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim.git' }
+
+" Barry Arthur
+let s:scm_plugin_sources['VimLint'] = { 'type' : 'git', 'url' : 'git://github.com/dahu/VimLint.git' }
+
+" Raimondi:
+let s:scm_plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
+
+" this is only the vimfiles subdirectory:
+let s:scm_plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
+
+let s:scm_plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vim-dev-plugin.git' }
+
+" Tom Link
+let s:scm_plugin_sources['checksyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/checksyntax_vim.git' }
+let s:scm_plugin_sources['cmdlinehelp'] = {'type': 'git', 'url': 'git://github.com/tomtom/cmdlinehelp_vim.git' }
+let s:scm_plugin_sources['hookcursormoved'] = {'type': 'git', 'url': 'git://github.com/tomtom/hookcursormoved_vim.git' }
+let s:scm_plugin_sources['linglang'] = {'type': 'git', 'url': 'git://github.com/tomtom/linglang_vim.git' }
+let s:scm_plugin_sources['presets'] = {'type': 'git', 'url': 'git://github.com/tomtom/presets_vim.git' }
+let s:scm_plugin_sources['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim.git' }
+let s:scm_plugin_sources['quickfixsigns'] = {'type': 'git', 'url': 'git://github.com/tomtom/quickfixsigns_vim.git' }
+let s:scm_plugin_sources['rcom'] = {'type': 'git', 'url': 'git://github.com/tomtom/rcom_vim.git' }
+let s:scm_plugin_sources['scalefont'] = {'type': 'git', 'url': 'git://github.com/tomtom/scalefont_vim.git' }
+let s:scm_plugin_sources['setsyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/setsyntax_vim.git' }
+let s:scm_plugin_sources['shymenu'] = {'type': 'git', 'url': 'git://github.com/tomtom/shymenu_vim.git' }
+let s:scm_plugin_sources['spec'] = {'type': 'git', 'url': 'git://github.com/tomtom/spec_vim.git' }
+let s:scm_plugin_sources['startup_profile'] = {'type': 'git', 'url': 'git://github.com/tomtom/startup_profile_vim.git' }
+let s:scm_plugin_sources['tassert'] = {'type': 'git', 'url': 'git://github.com/tomtom/tassert_vim.git' }
+let s:scm_plugin_sources['tbibtools'] = {'type': 'git', 'url': 'git://github.com/tomtom/tbibtools_vim.git' }
+let s:scm_plugin_sources['tcalc'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcalc_vim.git' }
+let s:scm_plugin_sources['tcommand'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcommand_vim.git' }
+let s:scm_plugin_sources['tcomment'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcomment_vim.git' }
+let s:scm_plugin_sources['tgpg'] = {'type': 'git', 'url': 'git://github.com/tomtom/tgpg_vim.git' }
+let s:scm_plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/tlib_vim.git' }
+let s:scm_plugin_sources['tmarks'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmarks_vim.git' }
+let s:scm_plugin_sources['tmru'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmru_vim.git' }
+let s:scm_plugin_sources['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_vim.git' }
+let s:scm_plugin_sources['TortoiseSVN'] = {'type': 'git', 'url': 'git://github.com/tomtom/TortoiseSVN_vim.git' }
+let s:scm_plugin_sources['tplugin'] = {'type': 'git', 'url': 'git://github.com/tomtom/tplugin_vim.git' }
+let s:scm_plugin_sources['trag'] = {'type': 'git', 'url': 'git://github.com/tomtom/trag_vim.git' }
+let s:scm_plugin_sources['tregisters'] = {'type': 'git', 'url': 'git://github.com/tomtom/tregisters_vim.git' }
+let s:scm_plugin_sources['tselectbuffer'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectbuffer_vim.git' }
+let s:scm_plugin_sources['tselectfiles'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectfiles_vim.git' }
+let s:scm_plugin_sources['tskeleton'] = {'type': 'git', 'url': 'git://github.com/tomtom/tskeleton_vim.git' }
+let s:scm_plugin_sources['ttagecho'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttagecho_vim.git' }
+let s:scm_plugin_sources['ttags'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttags_vim.git' }
+let s:scm_plugin_sources['ttoc'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttoc_vim.git' }
+let s:scm_plugin_sources['viki'] = {'type': 'git', 'url': 'git://github.com/tomtom/viki_vim.git' }
+let s:scm_plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com/tomtom/vikitasks_vim.git' }
+let s:scm_plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
+let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
+
+if !(exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm==2)
+    call extend(s:plugin_sources, s:scm_plugin_sources,
+                \((exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm)?
+                \   ("keep"):
+                \   ("force")))
+else
+    unlet s:scm_plugin_sources
+endif
+"}}}
+"Additional sources information {{{
+let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
+
 let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
 let s:plugin_sources['pythoncomplete']['target_dir'] = 'autoload'
 let s:plugin_sources['pythoncomplete']['script-type'] = 'autoload'
 let s:plugin_sources['ack']['strip-components'] = 0
 let s:plugin_sources['autocorrect']['strip-components'] = 0
-
-" Daniel Hofstetter
-let s:plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim.git' }
-
-" Barry Arthur
-let s:plugin_sources['VimLint'] = { 'type' : 'git', 'url' : 'git://github.com/dahu/VimLint.git' }
-
-" Raimondi:
-let s:plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
-
-" this is only the vimfiles subdirectory:
-let s:plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
-
-let s:plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vim-dev-plugin.git' }
-
-" Tom Link
-
-" Tom Link
-let s:plugin_sources['checksyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/checksyntax_vim.git' }
-let s:plugin_sources['cmdlinehelp'] = {'type': 'git', 'url': 'git://github.com/tomtom/cmdlinehelp_vim.git' }
-let s:plugin_sources['hookcursormoved'] = {'type': 'git', 'url': 'git://github.com/tomtom/hookcursormoved_vim.git' }
-let s:plugin_sources['linglang'] = {'type': 'git', 'url': 'git://github.com/tomtom/linglang_vim.git' }
-let s:plugin_sources['presets'] = {'type': 'git', 'url': 'git://github.com/tomtom/presets_vim.git' }
-let s:plugin_sources['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim.git' }
-let s:plugin_sources['quickfixsigns'] = {'type': 'git', 'url': 'git://github.com/tomtom/quickfixsigns_vim.git' }
-let s:plugin_sources['rcom'] = {'type': 'git', 'url': 'git://github.com/tomtom/rcom_vim.git' }
-let s:plugin_sources['scalefont'] = {'type': 'git', 'url': 'git://github.com/tomtom/scalefont_vim.git' }
-let s:plugin_sources['setsyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/setsyntax_vim.git' }
-let s:plugin_sources['shymenu'] = {'type': 'git', 'url': 'git://github.com/tomtom/shymenu_vim.git' }
-let s:plugin_sources['spec'] = {'type': 'git', 'url': 'git://github.com/tomtom/spec_vim.git' }
-let s:plugin_sources['startup_profile'] = {'type': 'git', 'url': 'git://github.com/tomtom/startup_profile_vim.git' }
-let s:plugin_sources['tassert'] = {'type': 'git', 'url': 'git://github.com/tomtom/tassert_vim.git' }
-let s:plugin_sources['tbibtools'] = {'type': 'git', 'url': 'git://github.com/tomtom/tbibtools_vim.git' }
-let s:plugin_sources['tcalc'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcalc_vim.git' }
-let s:plugin_sources['tcommand'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcommand_vim.git' }
-let s:plugin_sources['tcomment'] = {'type': 'git', 'url': 'git://github.com/tomtom/tcomment_vim.git' }
-let s:plugin_sources['tgpg'] = {'type': 'git', 'url': 'git://github.com/tomtom/tgpg_vim.git' }
-let s:plugin_sources['tlib'] = {'type': 'git', 'url': 'git://github.com/tomtom/tlib_vim.git' }
-let s:plugin_sources['tmarks'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmarks_vim.git' }
-let s:plugin_sources['tmru'] = {'type': 'git', 'url': 'git://github.com/tomtom/tmru_vim.git' }
-let s:plugin_sources['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_vim.git' }
-let s:plugin_sources['TortoiseSVN'] = {'type': 'git', 'url': 'git://github.com/tomtom/TortoiseSVN_vim.git' }
-let s:plugin_sources['tplugin'] = {'type': 'git', 'url': 'git://github.com/tomtom/tplugin_vim.git' }
-let s:plugin_sources['trag'] = {'type': 'git', 'url': 'git://github.com/tomtom/trag_vim.git' }
-let s:plugin_sources['tregisters'] = {'type': 'git', 'url': 'git://github.com/tomtom/tregisters_vim.git' }
-let s:plugin_sources['tselectbuffer'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectbuffer_vim.git' }
-let s:plugin_sources['tselectfiles'] = {'type': 'git', 'url': 'git://github.com/tomtom/tselectfiles_vim.git' }
-let s:plugin_sources['tskeleton'] = {'type': 'git', 'url': 'git://github.com/tomtom/tskeleton_vim.git' }
-let s:plugin_sources['ttagecho'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttagecho_vim.git' }
-let s:plugin_sources['ttags'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttags_vim.git' }
-let s:plugin_sources['ttoc'] = {'type': 'git', 'url': 'git://github.com/tomtom/ttoc_vim.git' }
-let s:plugin_sources['viki'] = {'type': 'git', 'url': 'git://github.com/tomtom/viki_vim.git' }
-let s:plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com/tomtom/vikitasks_vim.git' }
-let s:plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
-let s:plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
-
-" }}}
 
 " plugin infos - written if the plugin doesn't ship one itself {{{
 
@@ -3457,5 +3468,5 @@ let s:plugin_sources['scala']['script-type'] = 'syntax'
 let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
-
+"}}}
 " vim:fdm=marker
