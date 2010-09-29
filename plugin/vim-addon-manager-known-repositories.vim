@@ -3433,13 +3433,13 @@ let s:scm_plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
 let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
 
-if !(exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm==2)
-    call extend(s:plugin_sources, s:scm_plugin_sources,
-                \((exists('g:vamkr_forbid_scm') && g:vamkr_forbid_scm)?
-                \   ("keep"):
-                \   ("force")))
-else
-    unlet s:scm_plugin_sources
+" g:vim_script_manager['scm_merge_strategy'] options:
+" force: prefer scm version over www.vim.org
+" keep:  only add scm version which have no released versions on www.vim.org
+" never: Don't add scm versions to list of known sources
+let s:merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
+if s:merge_strategy != 'never'
+    call extend(s:plugin_sources, s:scm_plugin_sources, s:merge_strategy)
 endif
 "}}}
 "Additional sources information {{{
@@ -3469,4 +3469,11 @@ let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
 "}}}
+
+" allow user overriding everything:
+if has_key(s:c,'known-repos-hook')
+  call call(s:c['known-repos-hook'], [s:plugin_sources, s:scm_plugin_sources])
+endif
+
+unlet s:merge_strategy s:scm_plugin_sources
 " vim:fdm=marker
