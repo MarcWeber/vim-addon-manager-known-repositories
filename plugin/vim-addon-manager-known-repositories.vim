@@ -3390,8 +3390,6 @@ let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
 let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish.git'}
 let s:scm_plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
 let s:scm_plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive.git'}
-let s:scm_plugin_sources['nerd_commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
-let s:scm_plugin_sources['nerd_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
 let s:scm_plugin_sources['pathogen'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen.git'}
 let s:scm_plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
 let s:scm_plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-repeat.git'}
@@ -3401,6 +3399,11 @@ let s:scm_plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://gi
 let s:scm_plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sql.git' }
 let s:scm_plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
 let s:scm_plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url': 'git://github.com/ervandew/screen.git' }
+
+" Marty Grenfell
+let s:scm_plugin_sources['The_NERD_Commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
+let s:scm_plugin_sources['The_NERD_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
+let s:scm_plugin_sources['Syntastic'] = {'type': 'git', 'url': 'git://github.com/scrooloose/syntastic.git'}
 
 " Luc Hermitte
 " Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
