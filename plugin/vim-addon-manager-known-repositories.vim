@@ -3496,6 +3496,7 @@ let s:plugin_sources['autocorrect']['strip-components'] = 0
 
 " this is mainly used to add missing dependencies
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
+let s:missing_addon_infos["FuzzyFinder"]  = '{ "dependencies" : {"L9":{}}}'
 " }}}
 
 " fix target directories {{{1
