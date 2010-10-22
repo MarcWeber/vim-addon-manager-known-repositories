@@ -3514,12 +3514,14 @@ let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}
 let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
 
 let s:plugin_sources['xptemplate']['strip-components'] = 0
+let s:plugin_sources['ZenCoding']['script-type'] = 'plugin'
 
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
 let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
+let s:plugin_sources['snipmate']['deprecated'] = "Consider using my fork snipMate because it autoreloads your snippet files and automatically fixes indentation (visually select snippet then <cr>)"
 "}}}
 
 call call(get(s:c,'MergeSources',function('s:MergeSources')),
