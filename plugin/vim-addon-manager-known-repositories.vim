@@ -3423,6 +3423,9 @@ let s:scm_plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://gith
 let s:scm_plugin_sources['space'] = { 'type': 'git', 'url': 'git://github.com/spiiph/vim-space.git'}
 let s:scm_plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url': 'git://github.com/ervandew/screen.git' }
 
+let s:scm_plugin_sources['vcscommand'] = {'type': 'git', 'url': 'git://repo.or.cz/vcscommand'}
+let s:scm_plugin_sources['eregex'] = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim.git'}
+
 " Marty Grenfell
 let s:scm_plugin_sources['The_NERD_Commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
 let s:scm_plugin_sources['The_NERD_tree'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree.git'}
@@ -3526,7 +3529,7 @@ let s:plugin_sources['scala']['script-type'] = 'syntax'
 let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
-let s:plugin_sources['snipmate']['deprecated'] = "Consider using my fork snipMate because it autoreloads your snippet files and automatically fixes indentation (visually select snippet then <cr>)"
+let s:scm_plugin_sources['snipmate']['deprecated'] = "Consider using my fork snipMate because it autoreloads your snippet files and automatically fixes indentation (visually select snippet then <cr>)"
 "}}}
 
 call call(get(s:c,'MergeSources',function('s:MergeSources')),
