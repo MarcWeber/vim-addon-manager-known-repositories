@@ -3360,6 +3360,11 @@ let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github
 " let s:scm_plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
 " let s:scm_plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
 
+" Ciaran McCreesh
+let s:scm_plugin_sources['securemodelines'] = { 'type': 'git', 'url': 'git://github.com/ciaranm/securemodelines' }
+let s:scm_plugin_sources['inkpot'] = { 'type': 'git', 'url': 'git://github.com/ciaranm/inkpot' }
+let s:scm_plugin_sources['DetectIndent'] = { 'type': 'git', 'url': 'git://github.com/ciaranm/detectindent' }
+
 " Shougo
 let s:scm_plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 
