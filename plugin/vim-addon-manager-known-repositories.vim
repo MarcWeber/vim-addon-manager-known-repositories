@@ -3523,6 +3523,7 @@ let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
 
 let s:plugin_sources['xptemplate']['strip-components'] = 0
 let s:plugin_sources['ZenCoding']['script-type'] = 'plugin'
+let s:plugin_sources['imaps']['script-type'] = 'plugin'
 
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
