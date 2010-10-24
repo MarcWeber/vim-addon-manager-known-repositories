@@ -3461,6 +3461,11 @@ let s:scm_plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-lat
 
 let s:scm_plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://github.com/c9s/vim-dev-plugin.git' }
 
+" intuited - Ted
+" this name could possibly change when its uploaded to www.vim.org ?
+let s:scm_plugin_sources['vim-vamoose'] = {'type': 'git', 'url': 'git://github.com/intuited/vim-vamoose.git' }
+
+
 " Tom Link
 let s:scm_plugin_sources['checksyntax'] = {'type': 'git', 'url': 'git://github.com/tomtom/checksyntax_vim.git' }
 let s:scm_plugin_sources['cmdlinehelp'] = {'type': 'git', 'url': 'git://github.com/tomtom/cmdlinehelp_vim.git' }
