@@ -70,8 +70,11 @@ fun! www_vim_org#Script(nr, cached)
   let date = matchstr(lines[2], '<i>\zs[^<]*\ze')
   let vim_version = matchstr(lines[3], 'nowrap>\zs[^<]*\ze')
 
-  " remove spaces : and ' from names
-  let title2=substitute(title,"[+:'()\\/]",'','g')
+  " keep names simple. Eg ',' can be quoted in runtimepath. Yet I think KISS
+  " is better for all. Also keeping '.' so that less names break
+  " old line was :let title2=substitute(title,"[+:'()\\/]",'','g')
+  " If UTF-8 chars are used in the futures this has to change.
+  let title2=substitute(title,'[^ a-zA-Z0-9_\-]','','g')
   let title2=substitute(title2," ",'_','g')
   " also remove trailing .vim
   let title2=substitute(title2,"\.vim$",'','g')
@@ -85,6 +88,7 @@ fun! www_vim_org#Script(nr, cached)
     \ 'vim_script_nr' : nr,
     \ 'script-type' : type,
     \ 'vim_version' : vim_version,
+    \ 'title'  : title,
     \ 'title2' : title2,
     \ 'author' : author
     \ } 
