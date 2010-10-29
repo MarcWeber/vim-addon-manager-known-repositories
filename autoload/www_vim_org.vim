@@ -74,10 +74,10 @@ fun! www_vim_org#Script(nr, cached)
   " is better for all. Also keeping '.' so that less names break
   " old line was :let title2=substitute(title,"[+:'()\\/]",'','g')
   " If UTF-8 chars are used in the futures this has to change.
-  let title2=substitute(title,'[^ a-zA-Z0-9_\-]','','g')
+  let title2=substitute(title,'[^ a-zA-Z0-9_\-.]','','g')
   let title2=substitute(title2," ",'_','g')
   " also remove trailing .vim
-  let title2=substitute(title2,"\.vim$",'','g')
+  let title2=substitute(title2,'\.vim$','','g')
 
   return {
     \ 'type' : 'archive',
