@@ -3558,6 +3558,7 @@ let s:plugin_sources['imaps']['script-type'] = 'plugin'
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
 let s:plugin_sources['bufkill']['script-type'] = 'plugin'
+let s:plugin_sources['minibufexpl.vim_-_Elegant_buffer_explorer']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
 let s:scm_plugin_sources['snipmate']['deprecated'] = "Consider using my fork snipMate because it autoreloads your snippet files and automatically fixes indentation (visually select snippet then <cr>)"
