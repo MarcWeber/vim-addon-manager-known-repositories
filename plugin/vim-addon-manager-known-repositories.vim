@@ -3370,6 +3370,7 @@ let s:scm_plugin_sources['vim-addon-povray'] = { 'type' : 'git', 'url': 'git://g
 let s:scm_plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toggle-buffer.git' }
 let s:scm_plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-other.git' }
 let s:scm_plugin_sources['vim-addon-async'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-async.git' }
+let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout.git' }
 
 
 let s:scm_plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
