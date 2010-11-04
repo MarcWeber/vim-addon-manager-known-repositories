@@ -3450,6 +3450,7 @@ let s:scm_plugin_sources['Screen_vim__gnu_screentmux'] = { 'type': 'git', 'url':
 
 let s:scm_plugin_sources['vcscommand'] = {'type': 'git', 'url': 'git://repo.or.cz/vcscommand'}
 let s:scm_plugin_sources['eregex'] = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim.git'}
+let s:scm_plugin_sources['ack'] = {'type': 'git', 'url': 'git://github.com/mileszs/ack.vim.git'}
 
 " Marty Grenfell
 let s:scm_plugin_sources['The_NERD_Commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
