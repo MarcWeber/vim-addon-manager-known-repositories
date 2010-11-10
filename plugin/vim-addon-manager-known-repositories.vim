@@ -3351,6 +3351,7 @@ let s:scm_plugin_sources['Vim-R-plugin2'] = { 'type': 'git', 'url' : 'git://gith
 
 " my plugins:
 let s:scm_plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
+let s:scm_plugin_sources['vim-addon-json-encoding'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-json-encoding.git' }
 let s:scm_plugin_sources['vim-addon-swfmill'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-swfmill.git' }
 let s:scm_plugin_sources['vim-addon-mw-utils'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-mw-utils.git' }
 let s:scm_plugin_sources['vim-addon-fcsh'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-fcsh.git' }
