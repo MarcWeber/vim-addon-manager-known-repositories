@@ -3481,6 +3481,9 @@ let s:scm_plugin_sources['searchInRuntime'] = { 'type': 'svn', 'url': 'http://lh
 "tiagofalcao asked me to add the svn source:
 let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
  
+" mattn
+let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim.git'}
+
 
 " contributed by creidiki:
 let s:scm_plugin_sources['fuzzyfinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
