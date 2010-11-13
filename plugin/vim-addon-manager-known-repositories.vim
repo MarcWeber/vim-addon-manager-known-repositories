@@ -3381,6 +3381,8 @@ let s:scm_plugin_sources['vim-addon-toggle-buffer'] = { 'type' : 'git', 'url': '
 let s:scm_plugin_sources['vim-addon-other'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-other.git' }
 let s:scm_plugin_sources['vim-addon-async'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-async.git' }
 let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout.git' }
+let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug.git' }
+let s:scm_plugin_sources['webapi-vim'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/webapi-vim.git' }
 
 
 let s:scm_plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
@@ -3482,7 +3484,8 @@ let s:scm_plugin_sources['searchInRuntime'] = { 'type': 'svn', 'url': 'http://lh
 let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
  
 " mattn
-let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim.git'}
+" my version contains a patch mattn should pull
+" let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim.git'}
 
 
 " contributed by creidiki:
