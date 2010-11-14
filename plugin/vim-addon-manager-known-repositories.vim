@@ -3427,6 +3427,8 @@ let s:scm_plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcomp
 let s:scm_plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
 let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
 let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
+let s:scm_plugin_sources['vim-fileutils'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/vim-fileutils' }
+let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/zvim' }
 
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
