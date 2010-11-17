@@ -3584,15 +3584,9 @@ let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}
 let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
 
 let s:plugin_sources['xptemplate']['strip-components'] = 0
-let s:plugin_sources['ZenCoding']['script-type'] = 'plugin'
-let s:plugin_sources['imaps']['script-type'] = 'plugin'
 
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
-let s:plugin_sources['increment156']['script-type'] = 'plugin'
-
-let s:plugin_sources['bufkill']['script-type'] = 'plugin'
-let s:plugin_sources['minibufexpl.vim_-_Elegant_buffer_explorer']['script-type'] = 'plugin'
 " deprecations {{{1
 let s:plugin_sources['scala']['deprecated'] = "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
