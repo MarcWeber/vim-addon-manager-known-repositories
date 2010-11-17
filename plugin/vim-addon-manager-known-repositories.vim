@@ -3589,6 +3589,8 @@ let s:plugin_sources['imaps']['script-type'] = 'plugin'
 
 let s:plugin_sources['scala']['script-type'] = 'syntax'
 
+let s:plugin_sources['increment156']['script-type'] = 'plugin'
+
 let s:plugin_sources['bufkill']['script-type'] = 'plugin'
 let s:plugin_sources['minibufexpl.vim_-_Elegant_buffer_explorer']['script-type'] = 'plugin'
 " deprecations {{{1
