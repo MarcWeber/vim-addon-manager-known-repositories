@@ -3508,6 +3508,7 @@ let s:scm_plugin_sources['eregex'] = {'type': 'git', 'url': 'git://github.com/ot
 let s:scm_plugin_sources['ack'] = {'type': 'git', 'url': 'git://github.com/mileszs/ack.vim.git'}
 
 let s:scm_plugin_sources['clang_complete'] = {'type': 'git', 'url': 'git://github.com/Rip-Rip/clang_complete.git'}
+let s:scm_plugin_sources['visualstar'] = {'type': 'git', 'url': 'https://github.com/thinca/vim-visualstar.git'}
 
 " Marty Grenfell
 let s:scm_plugin_sources['The_NERD_Commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
