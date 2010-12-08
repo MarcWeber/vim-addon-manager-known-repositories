@@ -3593,6 +3593,8 @@ let s:plugin_sources['autocorrect']['strip-components'] = 0
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
 let s:missing_addon_infos["FuzzyFinder"]  = '{ "dependencies" : {"L9":{}}}'
 let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}'
+
+let s:missing_addon_infos["VimDebug"] = '{ "runtimepath": "vim" }'
 " }}}
 
 " fix target directories {{{1
