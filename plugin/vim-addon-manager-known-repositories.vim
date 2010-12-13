@@ -3403,6 +3403,7 @@ let s:scm_plugin_sources['pyinteractive'] = { 'type' : 'hg', 'url' : 'https://vi
 let s:scm_plugin_sources['Vim-R-plugin2'] = { 'type': 'git', 'url' : 'git://github.com/jimmyharris/vim-r-plugin2.git' }
 
 " my plugins:
+let s:scm_plugin_sources['vim-addon-urweb'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-urweb.git' }
 let s:scm_plugin_sources['vim-haxe'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-haxe.git' }
 let s:scm_plugin_sources['vim-addon-json-encoding'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-json-encoding.git' }
 let s:scm_plugin_sources['vim-addon-signs'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/vim-addon-signs.git' }
