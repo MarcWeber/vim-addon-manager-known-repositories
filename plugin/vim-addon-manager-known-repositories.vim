@@ -3588,8 +3588,14 @@ let s:scm_plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.c
 " Barry Arthur
 let s:scm_plugin_sources['VimLint'] = { 'type' : 'git', 'url' : 'git://github.com/dahu/VimLint.git' }
 
-" Raimondi:
+" Raimondi (Israel Chauca Fuentes):
 let s:scm_plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor' }
+let s:scm_plugin_sources['delimitMate'] = {'type': 'git', 'url': 'git://github.com/Raimondi/delimitMate.git' }
+" " The following plugins are not present on vim.org
+" let s:scm_plugin_sources['bufring'] = {'type': 'git', 'url': 'git://github.com/Raimondi/bufring' }
+" " Raimondi is not the author of the following plugin, but there is no other 
+" " git repo for it
+" let s:scm_plugin_sources['TVO_The_Vim_Outliner'] = {'type': 'git', 'url': 'git://github.com/Raimondi/vimoutliner' }
 
 " this is only the vimfiles subdirectory:
 let s:scm_plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
@@ -3642,6 +3648,8 @@ let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
+" " Not present on vim.org:
+" let s:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
 
 let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
