@@ -3515,14 +3515,9 @@ let s:scm_plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.c
 let s:scm_plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
 let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
 
-let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish.git'}
 let s:scm_plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
-let s:scm_plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive.git'}
-let s:scm_plugin_sources['pathogen'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen.git'}
 let s:scm_plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
-let s:scm_plugin_sources['repeat'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-repeat.git'}
 let s:scm_plugin_sources['supertab'] = {'type': 'git', 'url': 'git://github.com/ervandew/supertab.git'}
-let s:scm_plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround.git'}
 let s:scm_plugin_sources['vim-addon-ocaml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ocaml.git' }
 let s:scm_plugin_sources['vim-addon-sql'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sql.git' }
 let s:scm_plugin_sources['ensime'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/ensime.git', 'branch': 'master-vim-cleaned-up' }
@@ -3539,6 +3534,29 @@ let s:scm_plugin_sources['visualstar'] = {'type': 'git', 'url': 'git://github.co
 let s:scm_plugin_sources['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim.git'}
 let s:scm_plugin_sources['trailing-whitespace'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-trailing-whitespace.git'}
 let s:missing_addon_infos['ideone'] = '{ "dependencies" : {"webapi-vim":{}}}'
+
+" Tim Pope
+let s:scm_plugin_sources['unimpaired'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-unimpaired' }
+let s:scm_plugin_sources['endwise'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-endwise' }
+let s:scm_plugin_sources['surround'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-surround' }
+let s:scm_plugin_sources['cucumber.zip'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-cucumber' }
+let s:scm_plugin_sources['rails'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rails' }
+let s:scm_plugin_sources['fugitive'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fugitive' }
+let s:scm_plugin_sources['haml.zip'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-haml' }
+let s:scm_plugin_sources['git.zip'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-git' }
+let s:scm_plugin_sources['pathogen.zip'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen' }
+let s:scm_plugin_sources['ragtag'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-ragtag' }
+let s:scm_plugin_sources['vividchalk'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-vividchalk' }
+let s:scm_plugin_sources['speeddating'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-speeddating' }
+let s:scm_plugin_sources['afterimage'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-afterimage' }
+let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish' }
+let s:scm_plugin_sources['pastie'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pastie' }
+" " The following plugin is present on vim.org, but does not belong to Tim Pope
+" let s:scm_plugin_sources['liquid'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid' }
+" " The following plugins are not present on vim.org
+" let s:scm_plugin_sources['markdown'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown' }
+" let s:scm_plugin_sources['rake'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake' }
+" let s:scm_plugin_sources['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot' }
 
 " Marty Grenfell
 let s:scm_plugin_sources['The_NERD_Commenter'] = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter.git'}
