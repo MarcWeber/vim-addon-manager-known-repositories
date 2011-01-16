@@ -3609,6 +3609,8 @@ let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enl
 " mattn
 let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim.git'}
 
+" Steve Losh
+let s:scm_plugin_sources['Gundo'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
 
 " contributed by creidiki:
 let s:scm_plugin_sources['FuzzyFinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
