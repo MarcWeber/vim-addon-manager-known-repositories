@@ -3709,6 +3709,7 @@ let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
 let s:plugin_sources['pythoncomplete']['target_dir'] = 'autoload'
 let s:plugin_sources['pythoncomplete']['script-type'] = 'autoload'
+let s:plugin_sources['Tango_colour_scheme']['script-type'] = 'colors'
 let s:plugin_sources['ack']['strip-components'] = 0
 let s:plugin_sources['autocorrect']['strip-components'] = 0
 
