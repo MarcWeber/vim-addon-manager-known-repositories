@@ -3601,6 +3601,7 @@ let s:scm_plugin_sources['clang_complete'] = {'type': 'git', 'url': 'git://githu
 let s:scm_plugin_sources['visualstar'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-visualstar.git'}
 let s:scm_plugin_sources['cmakeref'] = {'type': 'git', 'url': 'git://github.com/vim-scripts/cmakeref.git'}
 let s:scm_plugin_sources['tabular'] = {'type': 'git', 'url': 'git://github.com/godlygeek/tabular.git'}
+let s:scm_plugin_sources['UltiSnips'] = {'type': 'bzr', 'url': 'lp:ultisnips'}
 let s:scm_plugin_sources['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim.git'}
 let s:missing_addon_infos['ideone'] = '{ "dependencies" : {"webapi-vim":{}}}'
 let s:scm_plugin_sources['textobj-rubyblock'] = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-textobj-rubyblock.git'}
