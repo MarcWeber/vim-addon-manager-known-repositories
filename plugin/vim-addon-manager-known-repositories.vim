@@ -1,18 +1,18 @@
-exec scriptmanager#DefineAndBind('s:c','g:vim_script_manager','{}')
+exec vam#DefineAndBind('s:c','g:vim_addon_manager','{}')
 
 " arguments:
 "   plugin_sources: the global dict you can define in your .vimrc found in
-"         g:vim_script_manager['plugin_sources']
+"         g:vim_addon_manager['plugin_sources']
 "   www_vim_org: the sources found on www.vim.org which are defined in this file
 "   scm_plugin_sources: additional sources which use a version control system
 " You can override this function by assigning
-" g:vim_script_manager['MergeSources']
+" g:vim_addon_manager['MergeSources']
 fun! s:MergeSources(plugin_sources, www_vim_org, scm_plugin_sources)
 
   " merge www.vim.org sources
   call extend(a:plugin_sources, a:www_vim_org, 'keep')
 
-  " g:vim_script_manager['scm_merge_strategy'] options:
+  " g:vim_addon_manager['scm_merge_strategy'] options:
   " force: prefer scm version over www.vim.org
   " keep:  only add scm version which have no released versions on www.vim.org
   " never: Don't add scm versions to list of known sources
