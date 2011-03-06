@@ -18,8 +18,11 @@ fun! s:MergeSources(plugin_sources, www_vim_org, scm_plugin_sources)
   " never: Don't add scm versions to list of known sources
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
   if merge_strategy != 'never'
-    for scm in ['hg', 'git', 'svn']
+    for scm in ['hg', 'git', 'svn', 'bzr']
       if !executable(scm)
+        echohl ErrorMsg
+        echomsg scm." executable is not found. Removing sources that depend on it"
+        echohl None
         call filter(a:scm_plugin_sources, 'v:val.type!=#"'.scm.'"')
       endif
     endfor
