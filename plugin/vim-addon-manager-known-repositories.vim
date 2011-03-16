@@ -3589,7 +3589,6 @@ for n in split("vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-alterc
 endfor
 
 " others:
-let s:scm_plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:scm_plugin_sources['vim-ruby'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby.git' }
 let s:scm_plugin_sources['liftweb-vim'] = { 'type': 'git', 'url' : 'git://github.com/Shadowfiend/liftweb-vim' }
 let s:scm_plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git://github.com/astashov/vim-ruby-debugger.git' }
@@ -3739,6 +3738,14 @@ let s:scm_plugin_sources['viki'] = {'type': 'git', 'url': 'git://github.com/tomt
 let s:scm_plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com/tomtom/vikitasks_vim.git' }
 let s:scm_plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
 let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
+
+" Nathanael Kane
+let s:scm_plugin_sources['Indent_Guides'] = {'type': 'git', 'url': 'git://github.com/nathanaelkane/vim-indent-guides.git' }
+
+" Michael Sanders
+let s:scm_plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
+let s:scm_plugin_sources['cocoa'] = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim.git'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
