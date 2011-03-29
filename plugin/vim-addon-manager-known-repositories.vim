@@ -3684,9 +3684,7 @@ let s:scm_plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.co
 let s:scm_plugin_sources['delimitMate'] = {'type': 'git', 'url': 'git://github.com/Raimondi/delimitMate.git' }
 " " The following plugins are not present on vim.org
 " let s:scm_plugin_sources['bufring'] = {'type': 'git', 'url': 'git://github.com/Raimondi/bufring' }
-" " Raimondi is not the author of the following plugin, but there is no other
-" " git repo for it
-" let s:scm_plugin_sources['TVO_The_Vim_Outliner'] = {'type': 'git', 'url': 'git://github.com/Raimondi/vimoutliner' }
+let s:scm_plugin_sources['TVO_The_Vim_Outliner'] = {'type': 'git', 'url': 'git://github.com/vimoutliner/vimoutliner.git' }
 
 " this is only the vimfiles subdirectory:
 let s:scm_plugin_sources['vim-latex'] = { 'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
