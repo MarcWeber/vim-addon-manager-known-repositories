@@ -3669,6 +3669,9 @@ let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.co
 " Steve Losh
 let s:scm_plugin_sources['Gundo'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
 
+" this name may change if the author uploads it to vim.sf.net..
+let s:scm_plugin_sources['vim_easymotion'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion.git'}
+
 " contributed by creidiki:
 let s:scm_plugin_sources['FuzzyFinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
 let s:scm_plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty.git'}
