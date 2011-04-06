@@ -3697,6 +3697,7 @@ let s:scm_plugin_sources["vim-dev-plugin"] = { 'type': 'git', 'url':'git://githu
 " intuited - Ted
 " this name could possibly change when its uploaded to www.vim.org ?
 let s:scm_plugin_sources['vim-vamoose'] = {'type': 'git', 'url': 'git://github.com/intuited/vim-vamoose.git' }
+let s:scm_plugin_sources['visdo'] = {'type': 'git', 'url': 'git://github.com/intuited/visdo.git' }
 
 " beyondwords (github)
 let s:scm_plugin_sources['vim-twig'] = {'type': 'git', 'url': 'git://github.com/beyondwords/vim-twig.git'}
