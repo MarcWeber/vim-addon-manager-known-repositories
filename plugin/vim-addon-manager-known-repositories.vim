@@ -3610,7 +3610,11 @@ let s:scm_plugin_sources['vcscommand'] = {'type': 'git', 'url': 'git://repo.or.c
 let s:scm_plugin_sources['eregex'] = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim.git'}
 let s:scm_plugin_sources['ack'] = {'type': 'git', 'url': 'git://github.com/mileszs/ack.vim.git'}
 
-" Silex
+" Plugins sources added by Silex
+let s:scm_plugin_sources['gitv'] = {'type': 'git', 'url': 'git://github.com/gregsexton/gitv.git'}
+let s:missing_addon_infos['gitv'] = '{ "dependencies" : {"fugitive":{}}}'
+let s:scm_plugin_sources['extradite'] = {'type': 'git', 'url': 'git://github.com/int3/vim-extradite.git'}
+let s:missing_addon_infos['extradite'] = '{ "dependencies" : {"fugitive":{}}}'
 let s:scm_plugin_sources['up'] = {'type': 'git', 'url': 'git://github.com/kossnocorp/up.vim.git'}
 let s:scm_plugin_sources['clang_complete'] = {'type': 'git', 'url': 'git://github.com/Rip-Rip/clang_complete.git'}
 let s:scm_plugin_sources['visualstar'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-visualstar.git'}
