@@ -3752,6 +3752,9 @@ let s:scm_plugin_sources['Indent_Guides'] = {'type': 'git', 'url': 'git://github
 let s:scm_plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:scm_plugin_sources['cocoa'] = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim.git'}
 
+" Devin Weaver (sukima)
+let s:scm_plugin_sources['xmledit'] = {'type': 'git', 'url': 'git://github.com/sukima/xmledit.git'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
