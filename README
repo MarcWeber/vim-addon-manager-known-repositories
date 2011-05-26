@@ -4,3 +4,8 @@ It is the "default source" of descriptions where to get which addons for vim-add
 
 You should use the special function vam#install#LoadKnownRepos() to activate
 this plugin whenever you need it. For speed reasons it is only loaded when needed.
+
+
+BUGS:
+There are two plugins: one called align an done called Align. This will cause
+trouble on Windows !
