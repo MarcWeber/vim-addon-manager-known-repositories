@@ -3910,6 +3910,21 @@ let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope
 " " Not present on vim.org:
 " let s:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
 
+" Luc Hermitte
+" Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
+let s:scm_plugin_sources['lh-vim-lib'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk' }
+let s:scm_plugin_sources['lh-brackets'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk' }
+let s:scm_plugin_sources['build-tools-wrapper'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/BTW/trunk" }
+let s:scm_plugin_sources['lh-tags'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/tags/trunk"}
+let s:scm_plugin_sources['lh-dev'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/dev/trunk"}
+let s:scm_plugin_sources['mu-template'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/mu-template/trunk"}
+let s:scm_plugin_sources['lh-cpp'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk' }
+let s:scm_plugin_sources['lh-refactor'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/refactor/trunk"}
+let s:scm_plugin_sources['search-in-runtime'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk' }
+let s:scm_plugin_sources['system-tools'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/system-tools/trunk"}
+let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/BTW/trunk"}
+
+" add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
 let s:plugin_sources['pythoncomplete']['target_dir'] = 'autoload'
