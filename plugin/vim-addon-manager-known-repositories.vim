@@ -3679,7 +3679,10 @@ let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://g
 let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sml.git' }
 
 
-let s:scm_plugin_sources['snipMate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
+" override snipmate. There is really no reason anymore to use the old version
+" snipMate could be dropped. Keep alias
+let s:scm_plugin_sources['snipmate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
+let s:scm_plugin_sources['snipMate'] = s:scm_plugin_sources['snipmate']
 
 
 let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
@@ -3897,7 +3900,6 @@ let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['Indent_Guides'] = {'type': 'git', 'url': 'git://github.com/nathanaelkane/vim-indent-guides.git' }
 
 " Michael Sanders
-let s:scm_plugin_sources['snipmate'] = {'type': 'git', 'url': 'git://github.com/msanders/snipmate.vim.git'}
 let s:scm_plugin_sources['cocoa'] = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim.git'}
 
 " Devin Weaver (sukima)
@@ -3954,7 +3956,10 @@ let s:plugin_sources['scala']['script-type'] = 'syntax'
 let s:plugin_sources['scala']['deprecated'] = "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"
 let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using ruby-vim instead"
 let s:plugin_sources['idutils']['deprecated'] = "greputils supersedes this plugin"
-let s:scm_plugin_sources['snipmate']['deprecated'] = "Consider using my fork snipMate because it autoreloads your snippet files and automatically fixes indentation (visually select snippet then <cr>)"
+
+let s:scm_plugin_sources['snipMate']['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
+let s:scm_plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
+
 "}}}
 
 call call(get(s:c,'MergeSources',function('s:MergeSources')),
