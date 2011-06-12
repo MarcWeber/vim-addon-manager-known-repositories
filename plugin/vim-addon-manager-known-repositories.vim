@@ -3958,7 +3958,7 @@ let s:plugin_sources['rubycomplete']['deprecated'] = "you should consider using 
 let s:plugin_sources['idutils']['deprecated'] = "greputils supersedes this plugin"
 
 let s:scm_plugin_sources['snipMate']['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
-let s:scm_plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
+let s:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
 
 "}}}
 
