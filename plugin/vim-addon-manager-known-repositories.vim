@@ -3682,7 +3682,7 @@ let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://gith
 " override snipmate. There is really no reason anymore to use the old version
 " snipMate could be dropped. Keep alias
 let s:scm_plugin_sources['snipmate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
-let s:scm_plugin_sources['snipMate'] = s:scm_plugin_sources['snipmate']
+let s:scm_plugin_sources['snipMate'] = copy(s:scm_plugin_sources['snipmate'])
 
 
 let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
