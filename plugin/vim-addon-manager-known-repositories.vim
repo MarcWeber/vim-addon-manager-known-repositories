@@ -3683,7 +3683,8 @@ let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://gith
 " snipMate could be dropped. Keep alias
 let s:scm_plugin_sources['snipmate'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim.git' }
 let s:scm_plugin_sources['snipMate'] = copy(s:scm_plugin_sources['snipmate'])
-
+" snipmate-snippets depends on snipmate so installing the snippets should be enough
+let s:scm_plugin_sources['snipmate-snippets'] = { 'type' : 'git', 'url': 'git://github.com/honza/snipmate-snippets.git' }
 
 let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
