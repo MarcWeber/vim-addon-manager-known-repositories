@@ -3927,6 +3927,10 @@ let s:scm_plugin_sources['search-in-runtime'] = { 'type': 'svn', 'url': 'http://
 let s:scm_plugin_sources['system-tools'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/system-tools/trunk"}
 let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/BTW/trunk"}
 
+" Rok Garbas
+" http://www.vim.org/scripts/script.php?script_id=3617
+let s:scm_plugin_sources['quicksilver'] = { 'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim.git' }
+
 " add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
