@@ -3931,7 +3931,7 @@ let s:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is j
 
 "}}}
 
-call call(get(s:c,'MergeSources',function('vam_know_repositories#MergeSources')),
+call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
       \ [s:c['plugin_sources'], s:plugin_sources, s:scm_plugin_sources], {})
 
 unlet s:scm_plugin_sources s:plugin_sources
