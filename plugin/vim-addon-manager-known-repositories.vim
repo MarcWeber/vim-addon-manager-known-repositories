@@ -3925,7 +3925,7 @@ let s:scm_plugin_sources['lh-cpp'] = { 'type': 'svn', 'url': 'http://lh-vim.goog
 let s:scm_plugin_sources['lh-refactor'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/refactor/trunk"}
 let s:scm_plugin_sources['search-in-runtime'] = { 'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk' }
 let s:scm_plugin_sources['system-tools'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/system-tools/trunk"}
-let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/BTW/trunk"}
+let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/UT/trunk"}
 
 " add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
