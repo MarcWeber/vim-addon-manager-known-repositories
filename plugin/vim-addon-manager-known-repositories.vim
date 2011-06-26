@@ -3684,16 +3684,11 @@ let s:scm_plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/
 let s:scm_plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
 
 " ZyX
-let s:scm_plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
 let s:scm_plugin_sources['translit3'] = { 'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3' }
 let s:scm_plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.sourceforge.net:8000/hgroot/jsonvim/jsonvim' }
-let s:scm_plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargumentchec.hg.sourceforge.net:8000/hgroot/vimargumentchec/vimargumentchec' }
 let s:scm_plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
-let s:scm_plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
-let s:scm_plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
 let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
 let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
-let s:scm_plugin_sources['vim-fileutils'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/vim-fileutils' }
 let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/zvim' }
 
 " kana (most can be found on www.vim.org. However they all have a different
@@ -3929,6 +3924,11 @@ let s:plugin_sources['idutils']['deprecated'] = "greputils supersedes this plugi
 let s:scm_plugin_sources['snipMate']['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
 let s:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
 
+let s:plugin_sources['vimpluginloader']['deprecated'] = "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"
+let s:plugin_sources['vim-fileutils']['deprecated'] = "All functions from this plugin are available through `os' resource of @/os frawor module"
+let s:plugin_sources['vimargumentchec']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
+let s:plugin_sources['vimcompcrtr']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
+let s:plugin_sources['vimstuff']['deprecated'] = "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"
 "}}}
 
 call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
