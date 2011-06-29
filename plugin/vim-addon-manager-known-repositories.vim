@@ -3645,6 +3645,7 @@ let s:scm_plugin_sources['vim-addon-async'] = { 'type' : 'git', 'url': 'git://gi
 let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout.git' }
 let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug.git' }
 let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sml.git' }
+let s:scm_plugin_sources['vim-addon-php-manual'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-manual.git' }
 
 
 " override snipmate. There is really no reason anymore to use the old version
