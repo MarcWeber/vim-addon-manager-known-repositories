@@ -3852,6 +3852,9 @@ let s:scm_plugin_sources['cocoa'] = {'type': 'git', 'url': 'git://github.com/msa
 " Devin Weaver (sukima)
 let s:scm_plugin_sources['xmledit'] = {'type': 'git', 'url': 'git://github.com/sukima/xmledit.git'}
 
+" Thiago Alves
+let s:scm_plugin_sources['AutoClose'] = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose.git', 'author': 'Thiago Alves'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
