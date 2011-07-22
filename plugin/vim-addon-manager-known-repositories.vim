@@ -3850,6 +3850,9 @@ let s:scm_plugin_sources['xmledit'] = {'type': 'git', 'url': 'git://github.com/s
 " Thiago Alves
 let s:scm_plugin_sources['AutoClose'] = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose.git', 'author': 'Thiago Alves'}
 
+" Ethan Schoonover
+let s:scm_plugin_sources['Solarized'] = {'type': 'git', 'url': 'git://github.com/altercation/vim-colors-solarized.git', 'author': 'Ethan Schoonover'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
