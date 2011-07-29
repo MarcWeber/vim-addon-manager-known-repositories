@@ -3623,6 +3623,7 @@ let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://git
 let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug.git' }
 let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sml.git' }
 let s:scm_plugin_sources['vim-addon-php-manual'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-manual.git' }
+let s:scm_plugin_sources['syntastic2'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/syntastic2.git' }
 
 
 " override snipmate. There is really no reason anymore to use the old version
@@ -3907,6 +3908,7 @@ let s:plugin_sources['idutils']['deprecated'] = "greputils supersedes this plugi
 
 let s:scm_plugin_sources['snipMate']['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
 let s:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
+let s:plugin_sources['Syntastic']['deprecated'] = "consider using syntastic2 because it is easier to adopt its behaviour to your needs"
 
 let s:plugin_sources['vimpluginloader']['deprecated'] = "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"
 let s:plugin_sources['vim-fileutils']['deprecated'] = "All functions from this plugin are available through `os' resource of @/os frawor module"
