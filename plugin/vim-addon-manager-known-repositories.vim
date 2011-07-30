@@ -3722,6 +3722,10 @@ let s:scm_plugin_sources['textobj-rubyblock'] = {'type': 'git', 'url': 'git://gi
 let s:missing_addon_infos['textobj-rubyblock'] = '{ "dependencies" : {"matchit.zip":{}, "textobj-user":{}}}'
 let s:scm_plugin_sources['trailing-whitespace'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-trailing-whitespace.git'}
 
+
+
+let s:scm_plugin_sources['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup.git'}
+
 " Tim Pope
 let s:scm_plugin_sources['unimpaired'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-unimpaired' }
 let s:scm_plugin_sources['endwise'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-endwise' }
@@ -3890,6 +3894,7 @@ let s:plugin_sources['autocorrect']['strip-components'] = 0
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
 let s:missing_addon_infos["FuzzyFinder"]  = '{ "dependencies" : {"L9":{}}}'
 let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}'
+let s:missing_addon_infos['sparkup'] = '{ "runtimepath": "vim" }'
 
 let s:missing_addon_infos["VimDebug"] = '{ "runtimepath": "vim" }'
 " }}}
