@@ -3623,6 +3623,7 @@ let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://git
 let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug.git' }
 let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sml.git' }
 let s:scm_plugin_sources['vim-addon-php-manual'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-manual.git' }
+let s:scm_plugin_sources['vim-addon-local-vimrc'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-local-vimrc.git' }
 let s:scm_plugin_sources['syntastic2'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/syntastic2.git' }
 
 
@@ -3920,6 +3921,10 @@ let s:plugin_sources['vim-fileutils']['deprecated'] = "All functions from this p
 let s:plugin_sources['vimargumentchec']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
 let s:plugin_sources['vimcompcrtr']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
 let s:plugin_sources['vimstuff']['deprecated'] = "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"
+
+let s:plugin_sources['local_vimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
+let s:plugin_sources['localvimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
+let s:plugin_sources['localrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
 "}}}
 
 call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
