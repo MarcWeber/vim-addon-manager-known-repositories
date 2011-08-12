@@ -21,7 +21,7 @@ fun! www_vim_org#Script(nr, cached)
   endif
 
   if str =~ 'Vim Online Error' || shell_error1 != 0
-   if (nr -1) > 2900 || shell_error1 != 0
+   if (nr -1) > 4000 || shell_error1 != 0
     echo "end reached? script nr ".(nr -1)
       throw "fine"
     else
