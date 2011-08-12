@@ -3623,6 +3623,8 @@ let s:scm_plugin_sources['vim-addon-lout'] = { 'type' : 'git', 'url': 'git://git
 let s:scm_plugin_sources['vim-addon-xdebug'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug.git' }
 let s:scm_plugin_sources['vim-addon-sml'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-sml.git' }
 let s:scm_plugin_sources['vim-addon-php-manual'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-manual.git' }
+let s:scm_plugin_sources['vim-addon-local-vimrc'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/vim-addon-local-vimrc.git' }
+let s:scm_plugin_sources['syntastic2'] = { 'type' : 'git', 'url': 'git://github.com/MarcWeber/syntastic2.git' }
 
 
 " override snipmate. There is really no reason anymore to use the old version
@@ -3662,16 +3664,11 @@ let s:scm_plugin_sources['vimarise'] = {'type': 'git', 'url': 'git://github.com/
 let s:scm_plugin_sources['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui.git'}
 
 " ZyX
-let s:scm_plugin_sources['vimstuff'] = { 'type': 'hg', 'url': 'http://vimstuff.hg.sourceforge.net:8000/hgroot/vimstuff/vimstuff' }
 let s:scm_plugin_sources['translit3'] = { 'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3' }
 let s:scm_plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.sourceforge.net:8000/hgroot/jsonvim/jsonvim' }
-let s:scm_plugin_sources['vimargumentchec'] = { 'type': 'hg', 'url': 'http://vimargumentchec.hg.sourceforge.net:8000/hgroot/vimargumentchec/vimargumentchec' }
 let s:scm_plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
-let s:scm_plugin_sources['vimcompcrtr'] = { 'type': 'hg', 'url': 'http://vimcompcrtr.hg.sourceforge.net:8000/hgroot/vimcompcrtr/vimcompcrtr' }
-let s:scm_plugin_sources['vimpluginloader'] = { 'type': 'hg', 'url': 'http://vimpluginloader.hg.sourceforge.net:8000/hgroot/vimpluginloader/vimpluginloader' }
 let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
 let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
-let s:scm_plugin_sources['vim-fileutils'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/vim-fileutils' }
 let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/zvim' }
 
 " kana (most can be found on www.vim.org. However they all have a different
@@ -3725,6 +3722,10 @@ let s:missing_addon_infos['ideone'] = '{ "dependencies" : {"webapi-vim":{}}}'
 let s:scm_plugin_sources['textobj-rubyblock'] = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-textobj-rubyblock.git'}
 let s:missing_addon_infos['textobj-rubyblock'] = '{ "dependencies" : {"matchit.zip":{}, "textobj-user":{}}}'
 let s:scm_plugin_sources['trailing-whitespace'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-trailing-whitespace.git'}
+
+
+
+let s:scm_plugin_sources['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup.git'}
 
 " Tim Pope
 let s:scm_plugin_sources['unimpaired'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-unimpaired' }
@@ -3852,6 +3853,12 @@ let s:scm_plugin_sources['cocoa'] = {'type': 'git', 'url': 'git://github.com/msa
 " Devin Weaver (sukima)
 let s:scm_plugin_sources['xmledit'] = {'type': 'git', 'url': 'git://github.com/sukima/xmledit.git'}
 
+" Thiago Alves
+let s:scm_plugin_sources['AutoClose'] = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose.git', 'author': 'Thiago Alves'}
+
+" Ethan Schoonover
+let s:scm_plugin_sources['Solarized'] = {'type': 'git', 'url': 'git://github.com/altercation/vim-colors-solarized.git', 'author': 'Ethan Schoonover'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
@@ -3873,6 +3880,10 @@ let s:scm_plugin_sources['search-in-runtime'] = { 'type': 'svn', 'url': 'http://
 let s:scm_plugin_sources['system-tools'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/system-tools/trunk"}
 let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/UT/trunk"}
 
+" Rok Garbas
+" http://www.vim.org/scripts/script.php?script_id=3617
+let s:scm_plugin_sources['quicksilver'] = { 'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim.git' }
+
 " add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
@@ -3888,6 +3899,7 @@ let s:plugin_sources['autocorrect']['strip-components'] = 0
 let s:missing_addon_infos["browser_4025"] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
 let s:missing_addon_infos["FuzzyFinder"]  = '{ "dependencies" : {"L9":{}}}'
 let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}'
+let s:missing_addon_infos['sparkup'] = '{ "runtimepath": "vim" }'
 
 let s:missing_addon_infos["VimDebug"] = '{ "runtimepath": "vim" }'
 " }}}
@@ -3906,7 +3918,17 @@ let s:plugin_sources['idutils']['deprecated'] = "greputils supersedes this plugi
 
 let s:scm_plugin_sources['snipMate']['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
 let s:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate's update is just snipmate"
+let s:plugin_sources['Syntastic']['deprecated'] = "consider using syntastic2 because it is easier to adopt its behaviour to your needs"
 
+let s:plugin_sources['vimpluginloader']['deprecated'] = "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"
+let s:plugin_sources['vim-fileutils']['deprecated'] = "All functions from this plugin are available through `os' resource of @/os frawor module"
+let s:plugin_sources['vimargumentchec']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
+let s:plugin_sources['vimcompcrtr']['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
+let s:plugin_sources['vimstuff']['deprecated'] = "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"
+
+let s:plugin_sources['local_vimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
+let s:plugin_sources['localvimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
+let s:plugin_sources['localrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
 "}}}
 
 call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
