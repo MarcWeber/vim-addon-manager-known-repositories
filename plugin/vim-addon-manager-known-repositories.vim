@@ -4165,6 +4165,8 @@ let s:scm_plugin_sources['speeddating'] = {'type': 'git', 'url': 'git://github.c
 let s:scm_plugin_sources['afterimage'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-afterimage' }
 let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-abolish' }
 let s:scm_plugin_sources['pastie'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pastie' }
+let s:scm_plugin_sources['commentary'] = { 'type': 'git', 'url': 'git://github.com/tpope/vim-commentary' }
+
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
 " let s:scm_plugin_sources['liquid'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid' }
 " " The following plugins are not present on vim.org
