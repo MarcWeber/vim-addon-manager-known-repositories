@@ -4311,6 +4311,7 @@ let s:scm_plugin_sources['quicksilver'] = { 'type': 'git', 'url': 'git://github.
 " thet
 let s:scm_plugin_sources['pep83160'] = { 'type' : 'git', 'url' : 'git://github.com/nvie/vim-pep8.git' }
 let s:scm_plugin_sources['pyflakes2441'] = { 'type' : 'git', 'url' : 'git://github.com/kevinw/pyflakes-vim.git' }
+let s:scm_plugin_sources['git-vim'] = { 'type' : 'git', 'url' : 'git://github.com/motemen/git-vim.git' }
 
 " add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
