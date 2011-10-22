@@ -4092,6 +4092,7 @@ let s:scm_plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim
 let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
 let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
 let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/zvim' }
+let s:scm_plugin_sources['aurum'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/aurum' }
 
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
