@@ -4304,6 +4304,19 @@ let s:scm_plugin_sources['patchreview'] = {'type': 'hg', 'url': 'git://github.co
 " Ryan Mechelke
 let s:scm_plugin_sources['diff-fold'] = {'type': 'hg', 'url': 'https://bitbucket.org/thetoast/diff-fold' }
 
+" Maxim Kim
+" Using hg here because we need to alter runtimepath, but only for mercurial 
+" source
+let s:scm_plugin_sources['vimwiki@hg'] = {'type': 'hg', 'url': 'https://code.google.com/p/vimwiki/' }
+
+" Christian Ebert
+let s:scm_plugin_sources['screenpaste'] = {'type': 'hg', 'url': 'http://www.blacktrash.org/hg/screenpaste' }
+
+" Ted Pavlic
+" Note: it is not an actual vim script, it is a command-line (shell 
+" command-line) utility
+let s:scm_plugin_sources['vimlatex'] = {'type': 'hg', 'url': 'http://hg.tedpavlic.com/vimlatex/' }
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
@@ -4352,6 +4365,7 @@ let s:missing_addon_infos["AutoAlign"]    = '{ "dependencies" : {"Align294":{}}}
 let s:missing_addon_infos['sparkup'] = '{ "runtimepath": "vim" }'
 
 let s:missing_addon_infos["VimDebug"] = '{ "runtimepath": "vim" }'
+let s:missing_addon_infos["vimwiki@hg"] = '{ "runtimepath": "src" }'
 " }}}
 
 " fix target directories {{{1
