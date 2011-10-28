@@ -4269,6 +4269,9 @@ let s:scm_plugin_sources['vikitasks'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['vimform'] = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim.git' }
 let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim.git' }
 
+" Robert Gleeson
+let s:scm_plugin_sources['hammer.vim'] = {'type': 'git', 'url': 'git://github.com/robgleeson/hammer.vim.git' }
+
 " Nathanael Kane
 let s:scm_plugin_sources['Indent_Guides'] = {'type': 'git', 'url': 'git://github.com/nathanaelkane/vim-indent-guides.git' }
 
