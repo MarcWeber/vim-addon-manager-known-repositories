@@ -4196,6 +4196,9 @@ let s:scm_plugin_sources['webapi-vim'] = {'type': 'git', 'url': 'git://github.co
 
 " Steve Losh
 let s:scm_plugin_sources['Gundo'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
+let s:scm_plugin_sources['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/strftimedammit.vim' }
+" This is error3721 script
+let s:scm_plugin_sources['Threesome'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/threesome.vim' }
 
 " this name may change if the author uploads it to vim.sf.net..
 let s:scm_plugin_sources['vim_easymotion'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion.git'}
@@ -4286,6 +4289,20 @@ let s:scm_plugin_sources['AutoClose'] = {'type': 'git', 'url': 'git://github.com
 
 " Ethan Schoonover
 let s:scm_plugin_sources['Solarized'] = {'type': 'git', 'url': 'git://github.com/altercation/vim-colors-solarized.git', 'author': 'Ethan Schoonover'}
+
+" Manpreet Singh
+let s:scm_plugin_sources['patchreview'] = {'type': 'hg', 'url': 'git://github.com/junkblocker/patchreview-vim' }
+
+" Peter Hosey
+" Following repository does not contain correct directory tree
+" let s:scm_plugin_sources['ini_syntax_definition'] = {'type': 'hg', 'url': 'https://bitbucket.org/boredzo/vim-ini-syntax' }
+
+" Jochen Bartl
+" Following repository does not contain correct directory tree
+" let s:scm_plugin_sources['grsecurity2479'] = {'type': 'hg', 'url': 'https://bitbucket.org/lobo/grsecurityvim' }
+
+" Ryan Mechelke
+let s:scm_plugin_sources['diff-fold'] = {'type': 'hg', 'url': 'https://bitbucket.org/thetoast/diff-fold' }
 
 "}}}
 "Additional sources information {{{
