@@ -326,7 +326,7 @@ let s:scm_plugin_sources['narrow2446'] = {'type': 'git', 'url': 'git://github.co
 " let s:scm_plugin_sources['jptemplate'] = {'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate.git' }
 
 " Mick Koch
-let s:scm_plugin_sources['vim-coffee-script'] = {'type': 'git': 'url': 'git://github.com/kchmck/vim-coffee-script' }
+let s:scm_plugin_sources['vim-coffee-script'] = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script' }
 
 " Rykka Krin
 let s:scm_plugin_sources['ColorV'] = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV' }
