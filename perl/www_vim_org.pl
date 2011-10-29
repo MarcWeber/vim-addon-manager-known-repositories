@@ -23,6 +23,7 @@ my $base="http://www.vim.org/scripts";
 my $maxattempts=3;
 my $threads=20;
 my $vimtarget="plugin/vim.org-scripts.vim";
+my $yamltarget="scripts.yaml";
 
 my %children;
 
@@ -259,21 +260,6 @@ sub getAllScripts() {
         $script->{"id"}=$_;
         $scriptnames{$_}=$script;
     }
-    my $YAML;
-    if($dumpall) {
-        open $YAML, '>:utf8', 'scripts.yaml'
-            or die $!;
-    }
-    my $VIM;
-    open $VIM, '>:utf8', $vimtarget
-        or die $!;
-    print $VIM "if !exists('g:vim_addon_manager')\n";
-    print $VIM "    let g:vim_addon_manager={}\n";
-    print $VIM "endif\n";
-    print $VIM "if !has_key(g:vim_addon_manager, 'plugin_sources')\n";
-    print $VIM "    let g:vim_addon_manager.plugin_sources={}\n";
-    print $VIM "endif\n";
-    print $VIM "let s:p=g:vim_addon_manager.plugin_sources\n";
     my $i=0;
     my $numscripts=((scalar @$scripts)/$threads);
     if(($threads*$numscripts)<(scalar @$scripts)) {
@@ -285,11 +271,54 @@ sub getAllScripts() {
             $i++;
         }
         else {
+            my $VIM;
+            open $VIM, '>:utf8', "$vimtarget.$i"
+                or die $!;
+            my $YAML;
+            if($dumpall) {
+                open $YAML, '>:utf8', "$yamltarget.$i"
+                    or die $!; }
             formatScripts($VIM, $YAML,
                 [@$scripts[($i*$numscripts)..((($i+1)*$numscripts)-1)]]);
-            last;
+            return;
         }
     }
     map {waitpid $_, 0} (keys %children);
+    my $YAML;
+    if($dumpall) {
+        open $YAML, '>:utf8', $yamltarget
+            or die $!; }
+    my $VIM;
+    open $VIM, '>:utf8', $vimtarget
+        or die $!;
+    print $VIM "if !exists('g:vim_addon_manager')\n";
+    print $VIM "    let g:vim_addon_manager={}\n";
+    print $VIM "endif\n";
+    print $VIM "if !has_key(g:vim_addon_manager, 'vim_org_sources')\n";
+    print $VIM "    let g:vim_addon_manager.vim_org_sources={}\n";
+    print $VIM "endif\n";
+    print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
+    $i=0;
+    while($i<$threads) {
+        my $VIM2;
+        open $VIM2, '<:utf8', "$vimtarget.$i"
+            or die $!;
+        while(<$VIM2>) {
+            print $VIM $_; }
+        close $VIM2;
+        unlink "$vimtarget.$i";
+        if($dumpall) {
+            my $YAML2;
+            open $YAML2, '<:utf8', "$yamltarget.$i"
+                or die $!;
+            while(<$YAML2>) {
+                print $YAML $_; }
+            close $YAML2;
+            unlink "$yamltarget.$i";
+        }
+        $i++;
+    }
+    close $VIM;
+    close $YAML;
 }
 getAllScripts();

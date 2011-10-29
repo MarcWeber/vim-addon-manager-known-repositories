@@ -4,9 +4,10 @@ let s:c['plugin_sources'] = get(s:c,'plugin_sources', {})
 let s:c['missing_addon_infos'] = get(s:c,'missing_addon_infos', {})
 let s:missing_addon_infos = s:c['missing_addon_infos']
 
-let s:plugin_sources = {}
+execute 'source' expand('<sfile>:p:h').'/vim.org-scripts.vim'
 
-source <sfile>:p:h/vim.org-scripts.vim
+let s:plugin_sources = s:c.vim_org_sources
+unlet s:c.vim_org_sources
 
 " custom plugins - drop me an email to get you repository added
 " SCM plugin sources {{{
@@ -77,7 +78,7 @@ let s:scm_plugin_sources['DetectIndent'] = { 'type': 'git', 'url': 'git://github
 let s:scm_plugin_sources['neocomplcache'] = { 'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache.git'}
 
 let s:scm_plugin_sources['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell.git' }
-let s:missing_addon_infos["vimshell"] = '{ "dependencies" : {"vimproc": {} } }'
+let s:missing_addon_infos['vimshell'] = '{ "dependencies" : {"vimproc": {} } }'
 
 let s:scm_plugin_sources['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc.git' }
 let s:scm_plugin_sources['unite'] = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim.git'}
@@ -97,7 +98,7 @@ let s:scm_plugin_sources['aurum'] = { 'type': 'hg', 'url': 'http://bitbucket.org
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
 " support them all.
-for n in split("vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-altercmd vim-fakeclip vim-operator-user vim-vspec vim-wwwsearch vim-textobj-syntax vim-textobj-indent vim-operator-replace vim-grex vim-xml-move vim-xml-autons vim-vcsi vim-textobj-lastpat vim-textobj-jabraces vim-textobj-function vim-textobj-fold vim-textobj-entire vim-textobj-diff vim-surround vim-submode vim-smartword vim-smarttill vim-smartchr vim-skeleton vim-scratch vim-repeat vim-narrow vim-metarw vim-metarw-git vim-flydiff vim-exjumplist vim-bundle vim-textobj-datetime vim-textobj-django-template chat.vim-users.jp-log-converter jkramer-vim-narrow kuy-vim-fuzzyjump thinca-vim-qfreplace mootoh-vim-refe2 thinca-vim-ku-file_mru ujihisa-vim-quickrun vim-flymake vim-perproject vim-stackreg vim-outputz vim-ctxabbr vim-advice vim-ku-quickfix vim-ku-metarw vim-ku-bundle vim-ku-args vim-ku", " ")
+for n in split('vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-altercmd vim-fakeclip vim-operator-user vim-vspec vim-wwwsearch vim-textobj-syntax vim-textobj-indent vim-operator-replace vim-grex vim-xml-move vim-xml-autons vim-vcsi vim-textobj-lastpat vim-textobj-jabraces vim-textobj-function vim-textobj-fold vim-textobj-entire vim-textobj-diff vim-surround vim-submode vim-smartword vim-smarttill vim-smartchr vim-skeleton vim-scratch vim-repeat vim-narrow vim-metarw vim-metarw-git vim-flydiff vim-exjumplist vim-bundle vim-textobj-datetime vim-textobj-django-template chat.vim-users.jp-log-converter jkramer-vim-narrow kuy-vim-fuzzyjump thinca-vim-qfreplace mootoh-vim-refe2 thinca-vim-ku-file_mru ujihisa-vim-quickrun vim-flymake vim-perproject vim-stackreg vim-outputz vim-ctxabbr vim-advice vim-ku-quickfix vim-ku-metarw vim-ku-bundle vim-ku-args vim-ku', ' ')
   let na = substitute(n,'^vim-','','')
   let s:scm_plugin_sources[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n.'.git' }
   if n =~ 'vim-textobj-\%(user\)\@!'
@@ -113,7 +114,7 @@ let s:scm_plugin_sources['vim-ruby-debugger'] = { 'type' : 'git', 'url' : 'git:/
 let s:scm_plugin_sources['SmartTag'] = { 'type' : 'git', 'url' : 'git://github.com/MarcWeber/SmartTag.git' }
 
 let s:scm_plugin_sources['codefellow'] = { 'type' : 'git', 'url' : 'git://github.com/romanroe/codefellow.git' }
-let s:missing_addon_infos["codefellow"] = '{ "runtimepath": "vim" }'
+let s:missing_addon_infos['codefellow'] = '{ "runtimepath": "vim" }'
 
 let s:scm_plugin_sources['bookmarking'] = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking.git'}
 let s:scm_plugin_sources['rdoc'] = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc.git'}
@@ -472,9 +473,10 @@ let s:scm_plugin_sources['SonicTemplate'] = {'type': 'git', 'url': 'git://github
 " Following repository does not contain correct directory tree
 " let s:scm_plugin_sources['Better_CSS_Syntax_for_Vim'] = {'type': 'git', 'url': 'git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim' }
 
+let s:scm_plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
+
 "}}}
 "Additional sources information {{{
-let s:plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
 let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
 " " Not present on vim.org:
 " let s:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
@@ -515,8 +517,8 @@ let s:plugin_sources['autocorrect']['strip-components'] = 0
 
 " this is mainly used to add missing dependencies
 let s:missing_addon_infos['browser_4025'] = '{ "dependencies" : {"synmark":{}}, "runtimepath": "vim" }'
-let s:missing_addon_infos['FuzzyFinder']  = '{ "dependencies" : {"L9":{}}}'
-let s:missing_addon_infos['AutoAlign']    = '{ "dependencies" : {"Align294":{}}}'
+let s:missing_addon_infos['FuzzyFinder']  = '{ "dependencies" : {"L9":{} } }'
+let s:missing_addon_infos['AutoAlign']    = '{ "dependencies" : {"Align294":{} } }'
 
 let s:missing_addon_infos['sparkup'] = '{ "runtimepath": "vim" }'
 let s:missing_addon_infos['VimDebug'] = '{ "runtimepath": "vim" }'
@@ -527,7 +529,7 @@ let s:missing_addon_infos['pod-helper'] = '{"runtimepath": "vimlib"}'
 " }}}
 
 " fix target directories {{{1
-let s:plugin_sources["rubycomplete"]["target_dir"] = "autoload"
+let s:plugin_sources['rubycomplete']['target_dir'] = 'autoload'
 
 let s:plugin_sources['xptemplate']['strip-components'] = 0
 
