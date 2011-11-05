@@ -11,6 +11,8 @@ use utf8;
 use Data::Dumper;
 use YAML::XS;
 use JSON;
+use Date::Parse;
+use HTML::Entities;
 
 my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
@@ -340,7 +342,7 @@ sub getAllScripts_parseHTML() {
 }
 #▶1 getAllScripts
 sub getAllScripts() {
-    return getAllScripts_parseHTML();
+    # return getAllScripts_parseHTML();
     my $url="$vimorg/script-info.php";
     print "Processing $url\n" if($verbose);
     my $response=get($url);
@@ -352,15 +354,17 @@ sub getAllScripts() {
         return getAllScripts_parseHTML();
     }
     local $_;
-    my $scripts=[sort {$a->{"snr"} <=> $b->{"snr"}}
+    my $scripts=[sort {$b->{"snr"} <=> $a->{"snr"}}
                       (map {{snr => +$_->{"script_id"},
-                            name => $_->{"script_name"},
+                            name => decode_entities($_->{"script_name"}),
                             type => $_->{"script_type"},
-                         sources => [map {{srcnr => +$_->{"script_id"},
+                         sources => [map {{srcnr => +$_->{"src_id"},
                                          archive => $_->{"package"},
                                          version => $_->{"script_version"},
                                      vim_version => $_->{"vim_version"},}}
-                                         (reverse @{$_->{"releases"}})],
+                                         (sort {str2time($b->{"creation_date"})
+                                            <=> str2time($a->{"creation_date"})}
+                                               @{$_->{"releases"}})],
                             }} values %$json)];
     addScriptID($scripts);
     my $VIM=openScript();
