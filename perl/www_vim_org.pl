@@ -9,6 +9,7 @@ use Fcntl qw(:DEFAULT :flock);
 use Time::HiRes;
 use utf8;
 use Data::Dumper;
+use YAML::XS;
 
 my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
@@ -19,7 +20,8 @@ my $ua=LWP::UserAgent->new(cookie_jar => {},
                               timeout => 30,
                                 agent => "www_vim_org.pl");
 
-my $base="http://www.vim.org/scripts";
+my $vimorg="http://www.vim.org";
+my $base="$vimorg/scripts";
 my $maxattempts=3;
 my $threads=20;
 my $vimtarget="plugin/vim.org-scripts.vim";
@@ -27,6 +29,19 @@ my $yamltarget="scripts.yaml";
 
 my %children;
 
+#▶1 get :: url → response
+sub get($) {
+    my $url     = shift;
+    my $attempt = 0;
+    my $response=shift;
+    while($attempt<$maxattempts) {
+        $response=$ua->get($url);
+        return $response if($response->is_success);
+        $maxattempts++;
+        print STDERR "Failed to get $url, attempt $attempt";
+    }
+    die "Failed to get $url";
+}
 #▶1 getHTML :: response → tree
 sub getHTML($) {
     my $response=shift;
@@ -43,12 +58,7 @@ sub getScripts(;$$) {
     my $attempt=shift || 0;
     my $url="$base/script_search_results.php$urlargs";
     print "Processing $url\n" if($verbose);
-    my $response=$ua->get($url);
-    if($response->is_error) {
-        print STDERR "Failed to get scripts list from $url, attempt $attempt\n";
-        die $response->status_line if($attempt > $maxattempts);
-        return getScripts($urlargs, $attempt+1);
-    }
+    my $response=get($url);
     my $tree=getHTML($response);
     my $table=$tree->look_down(_tag => 'table',
                                sub {
@@ -91,12 +101,7 @@ sub processScript($;$) {
     my $attempt = shift || 0;
     my $url="$base/script.php?script_id=".$script->{"snr"};
     print "Processing $url\n" if($verbose);
-    my $response=$ua->get($url);
-    if($response->is_error) {
-        print STDERR "Failed to get script info from $url, attempt $attempt\n";
-        die $response->status_line if($attempt > $maxattempts);
-        return processScript($script, $attempt+1);
-    }
+    my $response=get($url);
     my $tree=getHTML($response);
     my $ktr=[$tree->look_down(_tag => 'table',
                               sub {
@@ -226,19 +231,33 @@ sub formatScripts($$$) {
             # XXX Relying on name generator not outputting strings with \n or '
             $line.="['".$script->{"id"}."']"; }
         $line.="={".formatKey("title", $script->{"name"}).
+                    formatKey("script-type", $script->{"type"}).
                     formatKey("version", $lastsrc->{"version"}).
                     formatKey("url", "$base/download_script.php?src_id=".$lastsrc->{"srcnr"}).
                     formatKey("archive_name", $lastsrc->{"archive"}).
                     "'type': 'archive'}\n";
         WL($VIM, $line);
         if($dumpall) {
-            use YAML::Any;
-            WL($YAML, YAML::Any::Dump($script));
+            WL($YAML, YAML::XS::Dump($script));
         }
     }
 }
-#▶1 getAllScripts :: () → + …
-sub getAllScripts() {
+#▶1 openScript :: () → FD + …
+sub openScript() {
+    my $VIM;
+    open $VIM, '>:utf8', $vimtarget
+        or die $!;
+    print $VIM "if !exists('g:vim_addon_manager')\n";
+    print $VIM "    let g:vim_addon_manager={}\n";
+    print $VIM "endif\n";
+    print $VIM "if !has_key(g:vim_addon_manager, 'vim_org_sources')\n";
+    print $VIM "    let g:vim_addon_manager.vim_org_sources={}\n";
+    print $VIM "endif\n";
+    print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
+    return $VIM;
+}
+#▶1 getAllScripts_parseHTML :: () → + …
+sub getAllScripts_parseHTML() {
     local $_;
     my $scripts=[getScripts("?show_me=4000")];
     my %scriptnames;
@@ -288,16 +307,7 @@ sub getAllScripts() {
     if($dumpall) {
         open $YAML, '>:utf8', $yamltarget
             or die $!; }
-    my $VIM;
-    open $VIM, '>:utf8', $vimtarget
-        or die $!;
-    print $VIM "if !exists('g:vim_addon_manager')\n";
-    print $VIM "    let g:vim_addon_manager={}\n";
-    print $VIM "endif\n";
-    print $VIM "if !has_key(g:vim_addon_manager, 'vim_org_sources')\n";
-    print $VIM "    let g:vim_addon_manager.vim_org_sources={}\n";
-    print $VIM "endif\n";
-    print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
+    my $VIM=openScript();
     $i=0;
     while($i<$threads) {
         my $VIM2;
@@ -320,5 +330,36 @@ sub getAllScripts() {
     }
     close $VIM;
     close $YAML;
+}
+#▶1 getAllScripts
+sub getAllScripts();
+sub getAllScripts() {
+    return getAllScripts_parseHTML();
+    my $response=get("$vimorg/script-info.php");
+    return getAllScripts_parseHTML() unless $response;
+    my $json;
+    eval {$json=YAML::XS::Load($response->decoded_content())};
+    unless(defined $json) {
+        print STDERR "Failed to parse json: $@";
+        return getAllScripts_parseHTML();
+    }
+    print YAML::XS::Dump($json);
+    return;
+    my $VIM=openScript();
+    local $_;
+    my $scripts=(map {{snr => +$_->{"script_id"},
+                      name => $_->{"script_name"},
+                      type => $_->{"script_type"},
+                   sources => map {{scrnr => +$_->{"script_id"},
+                                  archive => }} @{$_->{"releases"}}
+                      }} values %$json);
+    for my $script (values %$json) {
+        my $line="let s:p";
+        if($script->{"id"} =~ /^[a-zA-Z0-9_]+$/) {
+            $line.=".".$script->{"id"}; }
+        else {
+            # XXX Relying on name generator not outputting strings with \n or '
+            $line.="['".$script->{"id"}."']"; }
+    }
 }
 getAllScripts();
