@@ -10,6 +10,7 @@ use Time::HiRes;
 use utf8;
 use Data::Dumper;
 use YAML::XS;
+use JSON;
 
 my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
@@ -50,12 +51,11 @@ sub getHTML($) {
         die "$!\nFailed to parse ".$response->decoded_content;
     return $tree;
 }
-#▶1 getScripts :: [ urlargs[, numtries]] → [script]
+#▶1 getScripts :: [ urlargs] → [script]
 # This will give us a list of all scripts
-sub getScripts(;$$);
-sub getScripts(;$$) {
+sub getScripts(;$);
+sub getScripts(;$) {
     my $urlargs=shift || "";
-    my $attempt=shift || 0;
     my $url="$base/script_search_results.php$urlargs";
     print "Processing $url\n" if($verbose);
     my $response=get($url);
@@ -94,11 +94,9 @@ sub getScripts(;$$) {
     }
     return @scripts;
 }
-#▶1 processScript :: script[, numtries] → + script
-sub processScript($;$);
-sub processScript($;$) {
+#▶1 processScript :: script → + script
+sub processScript($) {
     my $script  = shift;
-    my $attempt = shift || 0;
     my $url="$base/script.php?script_id=".$script->{"snr"};
     print "Processing $url\n" if($verbose);
     my $response=get($url);
@@ -204,24 +202,27 @@ sub formatKey($$) {
     return $r;
 }
 #▶1 formatScripts :: fh, fh, [script] → + FS: scripts.yaml, scripts.dat
-sub formatScripts($$$) {
+sub formatScripts($$$;$) {
     my $VIM     = shift;
     my $YAML    = shift;
     my $scripts = shift;
+    my $nodl    = defined shift;
     for my $script (@$scripts) {
-        eval {processScript($script);};
-        if($@) {
-            print STDERR "Failed to process script ".$script->{"snr"}.": $@";
-            next;
-        }
-        elsif(not ref $script->{"sources"}) {
-            print STDERR "sources is not a reference:\n";
-            print STDERR Data::Dumper->Dump([$script], ['script']);
-            next;
-        }
-        elsif(not scalar @{$script->{"sources"}}) {
-            print STDERR "No sources for script ".$script->{"snr"}."\n";
-            next;
+        unless($nodl) {
+            eval {processScript($script);};
+            if($@) {
+                print STDERR "Failed to process script ".$script->{"snr"}.": $@";
+                next;
+            }
+            elsif(not ref $script->{"sources"}) {
+                print STDERR "sources is not a reference:\n";
+                print STDERR Data::Dumper->Dump([$script], ['script']);
+                next;
+            }
+            elsif(not scalar @{$script->{"sources"}}) {
+                print STDERR "No sources for script ".$script->{"snr"}."\n";
+                next;
+            }
         }
         my $lastsrc=$script->{"sources"}->[0];
         my $line="let s:p";
@@ -256,10 +257,10 @@ sub openScript() {
     print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
     return $VIM;
 }
-#▶1 getAllScripts_parseHTML :: () → + …
-sub getAllScripts_parseHTML() {
+#▶1 addScriptID :: [script] → + [script]
+sub addScriptID($) {
+    my $scripts=shift;
     local $_;
-    my $scripts=[getScripts("?show_me=4000")];
     my %scriptnames;
     for my $script (@$scripts) {
         $_=$script->{"name"};
@@ -279,10 +280,16 @@ sub getAllScripts_parseHTML() {
         $script->{"id"}=$_;
         $scriptnames{$_}=$script;
     }
-    my $i=0;
+}
+#▶1 getAllScripts_parseHTML :: () → + …
+sub getAllScripts_parseHTML() {
+    local $_;
+    my $scripts=[getScripts("?show_me=4000")];
+    addScriptID($scripts);
     my $numscripts=((scalar @$scripts)/$threads);
     if(($threads*$numscripts)<(scalar @$scripts)) {
         $threads++; }
+    my $i=0;
     while($i<$threads) {
         my $pid=fork;
         if($pid) {
@@ -332,34 +339,32 @@ sub getAllScripts_parseHTML() {
     close $YAML;
 }
 #▶1 getAllScripts
-sub getAllScripts();
 sub getAllScripts() {
     return getAllScripts_parseHTML();
-    my $response=get("$vimorg/script-info.php");
+    my $url="$vimorg/script-info.php";
+    print "Processing $url\n" if($verbose);
+    my $response=get($url);
     return getAllScripts_parseHTML() unless $response;
     my $json;
-    eval {$json=YAML::XS::Load($response->decoded_content())};
+    eval {$json=JSON::decode_json($response->decoded_content())};
     unless(defined $json) {
         print STDERR "Failed to parse json: $@";
         return getAllScripts_parseHTML();
     }
-    print YAML::XS::Dump($json);
-    return;
-    my $VIM=openScript();
     local $_;
-    my $scripts=(map {{snr => +$_->{"script_id"},
-                      name => $_->{"script_name"},
-                      type => $_->{"script_type"},
-                   sources => map {{scrnr => +$_->{"script_id"},
-                                  archive => }} @{$_->{"releases"}}
-                      }} values %$json);
-    for my $script (values %$json) {
-        my $line="let s:p";
-        if($script->{"id"} =~ /^[a-zA-Z0-9_]+$/) {
-            $line.=".".$script->{"id"}; }
-        else {
-            # XXX Relying on name generator not outputting strings with \n or '
-            $line.="['".$script->{"id"}."']"; }
-    }
+    my $scripts=[sort {$a->{"snr"} <=> $b->{"snr"}}
+                      (map {{snr => +$_->{"script_id"},
+                            name => $_->{"script_name"},
+                            type => $_->{"script_type"},
+                         sources => [map {{srcnr => +$_->{"script_id"},
+                                         archive => $_->{"package"},
+                                         version => $_->{"script_version"},
+                                     vim_version => $_->{"vim_version"},}}
+                                         (reverse @{$_->{"releases"}})],
+                            }} values %$json)];
+    addScriptID($scripts);
+    my $VIM=openScript();
+    formatScripts($VIM, undef, $scripts, 0);
+    return;
 }
 getAllScripts();
