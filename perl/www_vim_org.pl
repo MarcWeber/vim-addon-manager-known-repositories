@@ -336,7 +336,7 @@ sub getAllScripts_parseHTML() {
         $i++;
     }
     close $VIM;
-    close $YAML;
+    close $YAML if($dumpall);
 }
 #▶1 getAllScripts
 sub getAllScripts() {
