@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p['node.js']={'title': 'node.js', 'script-type': 'utility', 'version': '1.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16813', 'archive_name': 'node.js.vim', 'type': 'archive'}
 let s:p.C11_Syntax_Support={'title': 'C++11 Syntax Support', 'script-type': 'syntax', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16806', 'archive_name': 'cpp11.tgz', 'type': 'archive'}
 let s:p.php_doc_={'title': 'php doc ', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16803', 'archive_name': 'phpdoc.7z', 'type': 'archive'}
 let s:p.codepaper={'title': 'codepaper', 'script-type': 'color scheme', 'version': '1,0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16785', 'archive_name': 'codepaper.vim', 'type': 'archive'}
@@ -66,7 +67,7 @@ let s:p.gccsingle={'title': 'gccsingle.vim', 'script-type': 'utility', 'version'
 let s:p.blue_sky={'title': 'blue_sky', 'script-type': 'color scheme', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16522', 'archive_name': 'blue_sky.vim', 'type': 'archive'}
 let s:p.TagmaTips={'title': 'TagmaTips', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16499', 'archive_name': 'TagmaTips.zip', 'type': 'archive'}
 let s:p['sexy-railscasts']={'title': 'sexy-railscasts', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16498', 'archive_name': 'sexy-railscasts.vim', 'type': 'archive'}
-let s:p.ctrlp={'title': 'ctrlp.vim', 'script-type': 'utility', 'version': '1.5.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16729', 'archive_name': 'ctrlp.zip', 'type': 'archive'}
+let s:p.ctrlp={'title': 'ctrlp.vim', 'script-type': 'utility', 'version': '1.5.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16814', 'archive_name': 'ctrlp.zip', 'type': 'archive'}
 let s:p['bad-whitespace']={'title': 'bad-whitespace', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16488', 'archive_name': 'vim-bad-whitespace-0.2.tar.gz', 'type': 'archive'}
 let s:p.statusline={'title': 'statusline.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16487', 'archive_name': 'statusline.vim', 'type': 'archive'}
 let s:p.olga_key={'title': 'olga_key', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16478', 'archive_name': 'olga_key.vim', 'type': 'archive'}
