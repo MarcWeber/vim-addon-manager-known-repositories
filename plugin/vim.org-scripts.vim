@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.anwolib={'title': 'anwolib', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16831', 'archive_name': 'anwolib.zip', 'type': 'archive'}
 let s:p.Cleanroom={'title': 'Cleanroom', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16820', 'archive_name': 'cleanroom.vim', 'type': 'archive'}
 let s:p['node.js']={'title': 'node.js', 'script-type': 'utility', 'version': '1.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16813', 'archive_name': 'node.js.vim', 'type': 'archive'}
 let s:p.C11_Syntax_Support={'title': 'C++11 Syntax Support', 'script-type': 'syntax', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16806', 'archive_name': 'cpp11.tgz', 'type': 'archive'}
@@ -14,7 +15,7 @@ let s:p['html-source-explorer']={'title': 'html-source-explorer', 'script-type':
 let s:p['desert-warm-256']={'title': 'desert-warm-256', 'script-type': 'color scheme', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16771', 'archive_name': 'desert-warm-256.tar.gz', 'type': 'archive'}
 let s:p.Tagma_Buffer_Manager={'title': 'Tagma Buffer Manager', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16808', 'archive_name': 'TagmaBufMgr.zip', 'type': 'archive'}
 let s:p['vim-mnml']={'title': 'vim-mnml', 'script-type': 'syntax', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16767', 'archive_name': 'vim-mnml-1.0.0.tar.gz', 'type': 'archive'}
-let s:p.SonicTemplate={'title': 'SonicTemplate.vim', 'script-type': 'utility', 'version': '0.06', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16783', 'archive_name': 'sonictemplate-vim.zip', 'type': 'archive'}
+let s:p.SonicTemplate={'title': 'SonicTemplate.vim', 'script-type': 'utility', 'version': '0.08', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16826', 'archive_name': 'sonictemplate-vim.zip', 'type': 'archive'}
 let s:p.shutdown_abort_file_={'title': 'shutdown abort file ', 'script-type': 'utility', 'version': 'alpha', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16758', 'archive_name': 'shutdown.rar', 'type': 'archive'}
 let s:p.shutdown={'title': 'shutdown', 'script-type': 'utility', 'version': 'beta', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16757', 'archive_name': 'shutdown.rar', 'type': 'archive'}
 let s:p.free4all={'title': 'free4all', 'script-type': 'patch', 'version': 'beta', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16754', 'archive_name': 'patch.rar', 'type': 'archive'}
@@ -34,7 +35,7 @@ let s:p.abbott={'title': 'abbott.vim', 'script-type': 'color scheme', 'version':
 let s:p.Lyrics={'title': 'Lyrics', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16690', 'archive_name': 'lyrics.tar.gz', 'type': 'archive'}
 let s:p.rainbow_parentheses={'title': 'rainbow_parentheses.vim', 'script-type': 'utility', 'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16744', 'archive_name': 'rainbow_parentheses.zip', 'type': 'archive'}
 let s:p.tagfinder={'title': 'tagfinder.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16667', 'archive_name': 'tagfinder.zip', 'type': 'archive'}
-let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.3.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16772', 'archive_name': 'klen-python-mode-0.3.3-0-g668eb8d.zip', 'type': 'archive'}
+let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.4.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16828', 'archive_name': 'klen-python-mode-0.4.0-0-g4d15d1c.zip', 'type': 'archive'}
 let s:p.ahkcomplete={'title': 'ahkcomplete', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16648', 'archive_name': 'autohotkey.vim', 'type': 'archive'}
 let s:p.mappingmanager={'title': 'mappingmanager', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16647', 'archive_name': 'mappingmanager-v1.0.tar.gz', 'type': 'archive'}
 let s:p.MapFinder={'title': 'MapFinder', 'script-type': 'utility', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16641', 'archive_name': 'MapFinder.vmb', 'type': 'archive'}
@@ -57,9 +58,9 @@ let s:p.google_prettify={'title': 'google_prettify.vim', 'script-type': 'color s
 let s:p.TclShell={'title': 'TclShell', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16756', 'archive_name': 'TclShell-Vim.zip', 'type': 'archive'}
 let s:p.NagelfarVim={'title': 'NagelfarVim', 'script-type': 'utility', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16550', 'archive_name': 'Nagelfar-Vim_0.3.zip', 'type': 'archive'}
 let s:p['pylint-mode']={'title': 'pylint-mode', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16535', 'archive_name': 'klen-pylint-mode-bc884af.zip', 'type': 'archive'}
-let s:p.syntaxdosini={'title': 'syntax/dosini.vim', 'script-type': 'syntax', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16531', 'archive_name': 'syntax-dosini.zip', 'type': 'archive'}
+let s:p.syntaxdosini={'title': 'syntax/dosini.vim', 'script-type': 'syntax', 'version': '2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16830', 'archive_name': 'syntax-dosini.zip', 'type': 'archive'}
 let s:p.watchdog={'title': 'watchdog.vim', 'script-type': 'utility', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16565', 'archive_name': 'vim-watchdog.zip', 'type': 'archive'}
-let s:p.linediff={'title': 'linediff.vim', 'script-type': 'utility', 'version': '0.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16527', 'archive_name': 'linediff.zip', 'type': 'archive'}
+let s:p.linediff={'title': 'linediff.vim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16823', 'archive_name': 'linediff.zip', 'type': 'archive'}
 let s:p.MarkdownFootnotes={'title': 'MarkdownFootnotes', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16517', 'archive_name': 'vim-markdownfootnotes-1.0.0.zip', 'type': 'archive'}
 let s:p.Vimerl={'title': 'Vimerl', 'script-type': 'utility', 'version': '1.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16564', 'archive_name': 'vimerl-1.1.1.tar.gz', 'type': 'archive'}
 let s:p.mediawiki={'title': 'mediawiki', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16511', 'archive_name': 'mediawiki.tar.gz', 'type': 'archive'}
@@ -130,7 +131,7 @@ let s:p.rfc5424={'title': 'rfc5424', 'script-type': 'syntax', 'version': '0.1.0'
 let s:p.baobaozhu={'title': 'baobaozhu', 'script-type': 'color scheme', 'version': '0.99', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16182', 'archive_name': 'baobaozhu.vim', 'type': 'archive'}
 let s:p['copy-as-rtf']={'title': 'copy-as-rtf', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16174', 'archive_name': 'vim-copy-as-rtf-0.0.1.tgz', 'type': 'archive'}
 let s:p.cab={'title': 'cab.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16159', 'archive_name': 'cab.vba', 'type': 'archive'}
-let s:p['univresal-blue_scheme']={'title': 'univresal-blue scheme', 'script-type': 'color scheme', 'version': '1.3.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16766', 'archive_name': 'universal-blue.vim', 'type': 'archive'}
+let s:p['univresal-blue_scheme']={'title': 'univresal-blue scheme', 'script-type': 'color scheme', 'version': '1.4.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16822', 'archive_name': 'universal-blue.vim', 'type': 'archive'}
 let s:p.aldmeris={'title': 'aldmeris', 'script-type': 'color scheme', 'version': '1.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16672', 'archive_name': 'aldmeris.vim', 'type': 'archive'}
 let s:p.textgenshi={'title': 'textgenshi.vim', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16255', 'archive_name': 'textgenshi.vim', 'type': 'archive'}
 let s:p.cdevframework={'title': 'cdevframework', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16153', 'archive_name': 'cdevframework.vim', 'type': 'archive'}
@@ -156,7 +157,7 @@ let s:p.googleclosurevim={'title': 'googleclosurevim', 'script-type': 'utility',
 let s:p.cakephp={'title': 'cakephp.vim', 'script-type': 'utility', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16058', 'archive_name': 'cakephp.zip', 'type': 'archive'}
 let s:p.simpleRGB={'title': 'simpleRGB', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16005', 'archive_name': 'simpleRGB.vim', 'type': 'archive'}
 let s:p.AutoCpp={'title': 'AutoCpp', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16011', 'archive_name': 'autocpp.vim', 'type': 'archive'}
-let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.6.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16751', 'archive_name': 'VimLite-455.tar.bz2', 'type': 'archive'}
+let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16829', 'archive_name': 'VimLite-460.tar.bz2', 'type': 'archive'}
 let s:p.Filesearch={'title': 'Filesearch', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16040', 'archive_name': 'vim-filesearch-v1.2.0.tar.gz', 'type': 'archive'}
 let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16256', 'archive_name': 'gnupg.vim', 'type': 'archive'}
 let s:p.vimgtd={'title': 'vimgtd', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16333', 'archive_name': 'vimgtd.zip', 'type': 'archive'}
@@ -172,7 +173,7 @@ let s:p.WinFastFind={'title': 'WinFastFind', 'script-type': 'utility', 'version'
 let s:p.widl={'title': 'widl.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15945', 'archive_name': 'widl.vim', 'type': 'archive'}
 let s:p['snipmate-snippets']={'title': 'snipmate-snippets', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15944', 'archive_name': 'snipmate-snippets.tar.gz', 'type': 'archive'}
 let s:p.git_patch_tags={'title': 'git_patch_tags.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15938', 'archive_name': 'git_patch_tags.vim', 'type': 'archive'}
-let s:p.frawor={'title': 'frawor', 'script-type': 'utility', 'version': '0.1.14', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16335', 'archive_name': 'frawor-0.1.14.tar.gz', 'type': 'archive'}
+let s:p.frawor={'title': 'frawor', 'script-type': 'utility', 'version': '0.1.16', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16833', 'archive_name': 'frawor-0.1.16.tar.gz', 'type': 'archive'}
 let s:p.IDSearch={'title': 'IDSearch', 'script-type': 'utility', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15918', 'archive_name': 'IDsearch.vim', 'type': 'archive'}
 let s:p.tangolight={'title': 'tangolight', 'script-type': 'color scheme', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15907', 'archive_name': 'tangolight.vim', 'type': 'archive'}
 let s:p.cpp_gnuchlog={'title': 'cpp_gnuchlog.vim', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15904', 'archive_name': 'cpp_gnuchlog.vim', 'type': 'archive'}
@@ -821,7 +822,7 @@ let s:p.BUGS_language={'title': 'BUGS language', 'script-type': 'syntax', 'versi
 let s:p.R_syntax_highlighting={'title': 'R syntax highlighting', 'script-type': 'syntax', 'version': '1.002', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12808', 'archive_name': 'r.vim', 'type': 'archive'}
 let s:p['qmake--syntax']={'title': 'qmake--syntax.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12449', 'archive_name': 'qmake.vim', 'type': 'archive'}
 let s:p.jumphl={'title': 'jumphl.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12428', 'archive_name': 'jumphl.vim', 'type': 'archive'}
-let s:p.ZenCoding={'title': 'ZenCoding.vim', 'script-type': 'utility', 'version': '0.55', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16737', 'archive_name': 'zencoding-vim.zip', 'type': 'archive'}
+let s:p.ZenCoding={'title': 'ZenCoding.vim', 'script-type': 'utility', 'version': '0.56', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16824', 'archive_name': 'zencoding-vim.zip', 'type': 'archive'}
 let s:p['php-doc_upgrade']={'title': 'php-doc upgrade', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12411', 'archive_name': 'php-doc.vim', 'type': 'archive'}
 let s:p.Parameter_Text_Objects={'title': 'Parameter Text Objects', 'script-type': 'utility', 'version': '0.2a', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12640', 'archive_name': 'parameter_objects.vim', 'type': 'archive'}
 let s:p.trogdor={'title': 'trogdor', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12397', 'archive_name': 'trogdor.vim', 'type': 'archive'}
