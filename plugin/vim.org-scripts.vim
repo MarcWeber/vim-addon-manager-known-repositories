@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.fontforge_script={'title': 'fontforge_script.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16842', 'archive_name': 'fontforge_script.vim', 'type': 'archive'}
 let s:p.anwolib={'title': 'anwolib', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16831', 'archive_name': 'anwolib.zip', 'type': 'archive'}
 let s:p.Cleanroom={'title': 'Cleanroom', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16820', 'archive_name': 'cleanroom.vim', 'type': 'archive'}
 let s:p['node.js']={'title': 'node.js', 'script-type': 'utility', 'version': '1.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16813', 'archive_name': 'node.js.vim', 'type': 'archive'}
@@ -94,7 +95,7 @@ let s:p.numlist={'title': 'numlist.vim', 'script-type': 'utility', 'version': '1
 let s:p.light2011={'title': 'light2011', 'script-type': 'color scheme', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16410', 'archive_name': 'light2011.vim', 'type': 'archive'}
 let s:p.tabasco={'title': 'tabasco', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16366', 'archive_name': 'tabasco.vim', 'type': 'archive'}
 let s:p.tabpage={'title': 'tabpage.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16362', 'archive_name': 'tabpage.vim', 'type': 'archive'}
-let s:p.chinachess={'title': 'chinachess.vim', 'script-type': 'ftplugin', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16636', 'archive_name': 'chinachess.vim', 'type': 'archive'}
+let s:p.chinachess={'title': 'chinachess.vim', 'script-type': 'ftplugin', 'version': '1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16845', 'archive_name': 'vim-chess.rar', 'type': 'archive'}
 let s:p.EasyPeasy={'title': 'EasyPeasy', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16359', 'archive_name': 'easypeasy.tar.gz', 'type': 'archive'}
 let s:p['vim-ipython']={'title': 'vim-ipython', 'script-type': 'ftplugin', 'version': '20110825', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16348', 'archive_name': 'vim-ipython2011-08-25.zip', 'type': 'archive'}
 let s:p.swapcol={'title': 'swapcol.vim', 'script-type': 'utility', 'version': '2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16370', 'archive_name': 'swapcol.vim', 'type': 'archive'}
@@ -461,7 +462,7 @@ let s:p.screen_line_jumper={'title': 'screen_line_jumper', 'script-type': 'utili
 let s:p.inccomplete={'title': 'inccomplete', 'script-type': 'utility', 'version': '1.5.21', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16657', 'archive_name': 'vim-inccomplete-1.5.21.zip', 'type': 'archive'}
 let s:p.preview3344={'title': 'preview', 'script-type': 'utility', 'version': '0.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16798', 'archive_name': 'vim-preview-0.8.zip', 'type': 'archive'}
 let s:p.stackoverflow={'title': 'stackoverflow.vim', 'script-type': 'color scheme', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14391', 'archive_name': 'stackoverflow.vim', 'type': 'archive'}
-let s:p.VimOrganizer={'title': 'VimOrganizer', 'script-type': 'ftplugin', 'version': '0.31', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16837', 'archive_name': 'VimOrganizer_v031.zip', 'type': 'archive'}
+let s:p.VimOrganizer={'title': 'VimOrganizer', 'script-type': 'ftplugin', 'version': '0.312', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16846', 'archive_name': 'VimOrganizer_v0312.zip', 'type': 'archive'}
 let s:p.auto_={'title': 'auto ', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15434', 'archive_name': 'auto.vim', 'type': 'archive'}
 let s:p.zenesque={'title': 'zenesque.vim', 'script-type': 'color scheme', 'version': '1.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14642', 'archive_name': 'zenesque.vim', 'type': 'archive'}
 let s:p['rdist-syntax']={'title': 'rdist-syntax', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14393', 'archive_name': 'vim-rdist.zip', 'type': 'archive'}
@@ -1297,7 +1298,7 @@ let s:p.proton={'title': 'proton', 'script-type': 'color scheme', 'version': '0.
 let s:p.Spiderhawk={'title': 'Spiderhawk', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9769', 'archive_name': 'spiderhawk.vim', 'type': 'archive'}
 let s:p.DBGp_Remote_Debugger_Interface={'title': 'DBGp Remote Debugger Interface', 'script-type': 'utility', 'version': '1.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9793', 'archive_name': 'debugger.tar.gz', 'type': 'archive'}
 let s:p.0scan={'title': '0scan', 'script-type': 'utility', 'version': '0.5.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9916', 'archive_name': '0scan.zip', 'type': 'archive'}
-let s:p.VimIM={'title': 'VimIM', 'script-type': 'utility', 'version': '0.9.9.9.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16646', 'archive_name': 'vimim.vim', 'type': 'archive'}
+let s:p.VimIM={'title': 'VimIM', 'script-type': 'utility', 'version': '0.9.9.9.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16843', 'archive_name': 'vimim.vim', 'type': 'archive'}
 let s:p.tetragrammaton={'title': 'tetragrammaton', 'script-type': 'color scheme', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9745', 'archive_name': 'tetragrammaton.vim', 'type': 'archive'}
 let s:p.vanzan_color={'title': 'vanzan_color', 'script-type': 'color scheme', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9863', 'archive_name': 'vanzan_color.vim', 'type': 'archive'}
 let s:p.lightcolors={'title': 'lightcolors', 'script-type': 'color scheme', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9742', 'archive_name': 'lightcolors.vim', 'type': 'archive'}
