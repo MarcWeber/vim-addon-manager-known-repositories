@@ -12,7 +12,8 @@ let s:c['missing_addon_infos'] = get(s:c,'missing_addon_infos', {})
 " g:vim_addon_manager['MergeSources']
 fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin_sources)
   " merge www.vim.org sources
-  call extend(a:plugin_sources, a:www_vim_org, 'keep')
+
+  let d = {}
 
   " g:vim_addon_manager['scm_merge_strategy'] options:
   " force: prefer scm version over www.vim.org
@@ -28,7 +29,9 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
         call filter(a:scm_plugin_sources, 'v:val.type!=#"'.scm.'"')
       endif
     endfor
-    call extend(a:plugin_sources, a:scm_plugin_sources, merge_strategy)
+    call extend(d, a:scm_plugin_sources, merge_strategy)
   endif
 
+  " always keep what the user has set:
+  call extend(a:plugin_sources, d, 'keep')
 endf
