@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p['vim-symbols-scripts']={'title': 'vim-symbols-scripts', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16857', 'archive_name': 'rorymckinley-vim-symbols-strings-V1.0.0-0-g56327b2.tar.gz', 'type': 'archive'}
 let s:p.prop={'title': 'prop.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16852', 'archive_name': 'prop.vim', 'type': 'archive'}
 let s:p.fontforge_script={'title': 'fontforge_script.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16842', 'archive_name': 'fontforge_script.vim', 'type': 'archive'}
 let s:p.anwolib={'title': 'anwolib', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16831', 'archive_name': 'anwolib.zip', 'type': 'archive'}
@@ -207,7 +208,7 @@ let s:p.calm={'title': 'calm', 'script-type': 'color scheme', 'version': '1.0', 
 let s:p['reorder-columns']={'title': 'reorder-columns', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15719', 'archive_name': 'vim-reorder-columns.zip', 'type': 'archive'}
 let s:p['cmdline-insertdatetime']={'title': 'cmdline-insertdatetime', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15718', 'archive_name': 'vim-cmdline-insertdatetime.zip', 'type': 'archive'}
 let s:p.octave3600={'title': 'octave.vim', 'script-type': 'syntax', 'version': '3.4.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16658', 'archive_name': 'octave.vim', 'type': 'archive'}
-let s:p.Auto_Pairs={'title': 'Auto Pairs', 'script-type': 'utility', 'version': '1.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16469', 'archive_name': 'auto-pairs-v1.1.1.tar.gz', 'type': 'archive'}
+let s:p.Auto_Pairs={'title': 'Auto Pairs', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16858', 'archive_name': 'auto-pairs-v1.1.2.tar.gz', 'type': 'archive'}
 let s:p.Advancer_Abbreviation={'title': 'Advancer Abbreviation', 'script-type': 'utility', 'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15836', 'archive_name': 'advancer-abbreviation-v1.0.3.tar.gz', 'type': 'archive'}
 let s:p.ColorV={'title': 'ColorV', 'script-type': 'utility', 'version': '2.5.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16500', 'archive_name': 'ColorV_2.5.3.tar.gz', 'type': 'archive'}
 let s:p.Fanfou={'title': 'Fanfou.vim', 'script-type': 'utility', 'version': '0.50', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16326', 'archive_name': 'fanfou_0.50.zip', 'type': 'archive'}
@@ -401,7 +402,7 @@ let s:p.JellyX={'title': 'JellyX', 'script-type': 'color scheme', 'version': '0.
 let s:p.headerGatesAdd={'title': 'headerGatesAdd.vim', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14800', 'archive_name': 'headerGatesAdd.vim', 'type': 'archive'}
 let s:p.update_perl_line_directives={'title': 'update_perl_line_directives', 'script-type': 'ftplugin', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14931', 'archive_name': 'update_perl_line_directives.vba', 'type': 'archive'}
 let s:p['auto-kk']={'title': 'auto-kk', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14891', 'archive_name': 'auto-kk.vim', 'type': 'archive'}
-let s:p.Google_translator={'title': 'Google translator', 'script-type': 'utility', 'version': '1.3.0b', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16776', 'archive_name': 'goog-translator.vim', 'type': 'archive'}
+let s:p.Google_translator={'title': 'Google translator', 'script-type': 'utility', 'version': '1.3.1b', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16860', 'archive_name': 'goog-translator.vim', 'type': 'archive'}
 let s:p.mophiaDark={'title': 'mophiaDark', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14751', 'archive_name': 'mophiaDark.vim', 'type': 'archive'}
 let s:p.mophiaSmoke={'title': 'mophiaSmoke', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14750', 'archive_name': 'mophiaSmoke.vim', 'type': 'archive'}
 let s:p.Search_Google={'title': 'Search Google', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14733', 'archive_name': 'googlesearch.vim', 'type': 'archive'}
@@ -1279,7 +1280,7 @@ let s:p.po2530={'title': 'po.vim', 'script-type': 'ftplugin', 'version': '1.1', 
 let s:p.IndentCommentPrefix={'title': 'IndentCommentPrefix', 'script-type': 'utility', 'version': '1.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15338', 'archive_name': 'IndentCommentPrefix.vba.gz', 'type': 'archive'}
 let s:p.Thesaurus={'title': 'Thesaurus', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11075', 'archive_name': 'thesaurus.vim', 'type': 'archive'}
 let s:p.jpythonfold={'title': 'jpythonfold.vim', 'script-type': 'syntax', 'version': '3.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10034', 'archive_name': 'jpythonfold.vim', 'type': 'archive'}
-let s:p.Perl_MooseXDeclare_Syntax={'title': 'Perl MooseX::Declare Syntax', 'script-type': 'syntax', 'version': '0.16', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15500', 'archive_name': 'perl_vim.zip', 'type': 'archive'}
+let s:p.Perl_MooseXDeclare_Syntax={'title': 'Perl MooseX::Declare Syntax', 'script-type': 'syntax', 'version': '0.17', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16856', 'archive_name': 'perl_vim.zip', 'type': 'archive'}
 let s:p.Thousand_separator={'title': 'Thousand separator', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9864', 'archive_name': 'number_thousands_separator.vim', 'type': 'archive'}
 let s:p.Scratch={'title': 'Scratch*', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9859', 'archive_name': 'scratch.vim', 'type': 'archive'}
 let s:p.Jifty_syntax={'title': 'Jifty syntax', 'script-type': 'syntax', 'version': '0.22', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9868', 'archive_name': 'jifty.tar.gz', 'type': 'archive'}
@@ -2077,9 +2078,9 @@ let s:p.Templeet={'title': 'Templeet', 'script-type': 'syntax', 'version': '0.1.
 let s:p.ruby_imaps={'title': 'ruby_imaps', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6508', 'archive_name': 'ruby_imaps.zip', 'type': 'archive'}
 let s:p.capslock={'title': 'capslock.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6505', 'archive_name': 'capslock.vim', 'type': 'archive'}
 let s:p.pyljvim={'title': 'pyljvim', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14312', 'archive_name': 'pyljvim-0.4.zip', 'type': 'archive'}
-let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.5.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16134', 'archive_name': 'vimpager', 'type': 'archive'}
+let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.5.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16859', 'archive_name': 'vimpager', 'type': 'archive'}
 let s:p.cf1722={'title': 'cf.vim', 'script-type': 'syntax', 'version': '0.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6780', 'archive_name': 'cf.vim', 'type': 'archive'}
-let s:p.renamer={'title': 'renamer.vim', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13165', 'archive_name': 'renamer.vim', 'type': 'archive'}
+let s:p.renamer={'title': 'renamer.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16861', 'archive_name': 'renamer.vim', 'type': 'archive'}
 let s:p['gvimext.dll_support_tabs_under_VIM_7']={'title': 'gvimext.dll: support tabs under VIM 7', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7239', 'archive_name': 'GvimExt_tab_V2.zip', 'type': 'archive'}
 let s:p.WLS_Mode={'title': 'WLS Mode', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6464', 'archive_name': 'wls-0.1.0.tar.bz2', 'type': 'archive'}
 let s:p.tabula={'title': 'tabula.vim', 'script-type': 'color scheme', 'version': '1.4.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12787', 'archive_name': 'tabula.zip', 'type': 'archive'}
