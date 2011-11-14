@@ -12,6 +12,7 @@ let s:c['missing_addon_infos'] = get(s:c,'missing_addon_infos', {})
 " g:vim_addon_manager['MergeSources']
 fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin_sources)
   " merge www.vim.org sources
+  call extend(a:plugin_sources, a:www_vim_org, 'keep')
 
   let d = {}
 
