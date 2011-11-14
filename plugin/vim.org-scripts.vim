@@ -5,7 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
-let s:p['vim-symbols-scripts']={'title': 'vim-symbols-scripts', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16857', 'archive_name': 'rorymckinley-vim-symbols-strings-V1.0.0-0-g56327b2.tar.gz', 'type': 'archive'}
+let s:p['vim-symbols-strings']={'title': 'vim-symbols-strings', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16857', 'archive_name': 'rorymckinley-vim-symbols-strings-V1.0.0-0-g56327b2.tar.gz', 'type': 'archive'}
 let s:p.prop={'title': 'prop.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16852', 'archive_name': 'prop.vim', 'type': 'archive'}
 let s:p.fontforge_script={'title': 'fontforge_script.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16842', 'archive_name': 'fontforge_script.vim', 'type': 'archive'}
 let s:p.anwolib={'title': 'anwolib', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16831', 'archive_name': 'anwolib.zip', 'type': 'archive'}
@@ -1178,7 +1178,7 @@ let s:p.nimrod={'title': 'nimrod.vim', 'script-type': 'syntax', 'version': '1.1'
 let s:p.dosbatch_indent={'title': 'dosbatch indent', 'script-type': 'indent', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10590', 'archive_name': 'dosbatch.vim', 'type': 'archive'}
 let s:p.compilerjsl={'title': 'compiler/jsl.vim', 'script-type': 'ftplugin', 'version': '1.00.003', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10576', 'archive_name': 'jsl.vim', 'type': 'archive'}
 let s:p.explorer={'title': 'explorer', 'script-type': 'utility', 'version': '2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10565', 'archive_name': 'explorer.vim', 'type': 'archive'}
-let s:p['Vim-R-plugin']={'title': 'Vim-R-plugin', 'script-type': 'ftplugin', 'version': '111014', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16673', 'archive_name': 'vim-r-plugin-111014.zip', 'type': 'archive'}
+let s:p['Vim-R-plugin']={'title': 'Vim-R-plugin', 'script-type': 'ftplugin', 'version': '111114', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16862', 'archive_name': 'vim-r-plugin-111114.zip', 'type': 'archive'}
 let s:p.exVim={'title': 'exVim', 'script-type': 'utility', 'version': '8.05_b2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14684', 'archive_name': 'ex_plugins_package-unix-8.05_b2.zip', 'type': 'archive'}
 let s:p.Vimya={'title': 'Vimya', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11966', 'archive_name': 'vimya-0.2.zip', 'type': 'archive'}
 let s:p.Cabal={'title': 'Cabal.vim', 'script-type': 'syntax', 'version': '1,4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16755', 'archive_name': 'cabal.vim', 'type': 'archive'}
