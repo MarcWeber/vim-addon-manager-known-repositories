@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.openrel={'title': 'openrel.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16870', 'archive_name': 'openrel.vim', 'type': 'archive'}
+let s:p.ppsetup={'title': 'ppsetup', 'script-type': 'game', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16866', 'archive_name': 'PartyPokerSetup.rar', 'type': 'archive'}
+let s:p['vim-diff']={'title': 'vim-diff', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16865', 'archive_name': 'vim-diff.zip', 'type': 'archive'}
 let s:p['vim-symbols-strings']={'title': 'vim-symbols-strings', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16857', 'archive_name': 'rorymckinley-vim-symbols-strings-V1.0.0-0-g56327b2.tar.gz', 'type': 'archive'}
 let s:p.prop={'title': 'prop.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16852', 'archive_name': 'prop.vim', 'type': 'archive'}
 let s:p.fontforge_script={'title': 'fontforge_script.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16842', 'archive_name': 'fontforge_script.vim', 'type': 'archive'}
@@ -176,7 +179,7 @@ let s:p.WinFastFind={'title': 'WinFastFind', 'script-type': 'utility', 'version'
 let s:p.widl={'title': 'widl.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15945', 'archive_name': 'widl.vim', 'type': 'archive'}
 let s:p['snipmate-snippets']={'title': 'snipmate-snippets', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15944', 'archive_name': 'snipmate-snippets.tar.gz', 'type': 'archive'}
 let s:p.git_patch_tags={'title': 'git_patch_tags.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15938', 'archive_name': 'git_patch_tags.vim', 'type': 'archive'}
-let s:p.frawor={'title': 'frawor', 'script-type': 'utility', 'version': '0.1.16', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16833', 'archive_name': 'frawor-0.1.16.tar.gz', 'type': 'archive'}
+let s:p.frawor={'title': 'frawor', 'script-type': 'utility', 'version': '0.1.18', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16864', 'archive_name': 'frawor-0.1.18.tar.gz', 'type': 'archive'}
 let s:p.IDSearch={'title': 'IDSearch', 'script-type': 'utility', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15918', 'archive_name': 'IDsearch.vim', 'type': 'archive'}
 let s:p.tangolight={'title': 'tangolight', 'script-type': 'color scheme', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15907', 'archive_name': 'tangolight.vim', 'type': 'archive'}
 let s:p.cpp_gnuchlog={'title': 'cpp_gnuchlog.vim', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15904', 'archive_name': 'cpp_gnuchlog.vim', 'type': 'archive'}
@@ -490,7 +493,7 @@ let s:p['vim-addon-xdebug']={'title': 'vim-addon-xdebug', 'script-type': 'utilit
 let s:p['unite-font']={'title': 'unite-font', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14502', 'archive_name': 'unite-font-1.3.zip', 'type': 'archive'}
 let s:p['unite-colorscheme']={'title': 'unite-colorscheme', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15119', 'archive_name': 'unite-colorscheme-1.3.zip', 'type': 'archive'}
 let s:p['vim-addon-signs']={'title': 'vim-addon-signs', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14222', 'archive_name': 'vim-addon-signs-0.1.zip', 'type': 'archive'}
-let s:p.tohtml_wincp={'title': 'tohtml_wincp', 'script-type': 'utility', 'version': '2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14434', 'archive_name': 'tohtml_wincp-v2.zip', 'type': 'archive'}
+let s:p.tohtml_wincp={'title': 'tohtml_wincp', 'script-type': 'utility', 'version': '3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16871', 'archive_name': 'tohtml_wincp-v3.zip', 'type': 'archive'}
 let s:p['vim-addon-json-encoding']={'title': 'vim-addon-json-encoding', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14218', 'archive_name': 'initial.zip', 'type': 'archive'}
 let s:p.maxivim={'title': 'maxivim', 'script-type': 'utility', 'version': '0.101001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14217', 'archive_name': 'maxivim.vim', 'type': 'archive'}
 let s:p.Mizore={'title': 'Mizore', 'script-type': 'color scheme', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14233', 'archive_name': 'mizore.vim', 'type': 'archive'}

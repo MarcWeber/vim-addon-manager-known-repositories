@@ -259,28 +259,35 @@ sub openScript() {
     print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
     return $VIM;
 }
+#▶1 genName :: name, snr, scriptnames → sname + scriptnames
+sub genName($$$) {
+    local $_=shift;
+    my $snr=shift;
+    my $scriptnames=shift;
+    s/\.vim$//g;
+    # XXX That must purge at least ' and \n
+    s/[^ a-zA-Z0-9_\-.]//g;
+    s/ /_/g;
+    while(defined $scriptnames->{$_}) {
+        my $s=$scriptnames->{$_};
+        if(ref $s) {
+            $s->{"id"}.=$s->{"snr"};
+            $scriptnames->{$s->{"id"}}=$s;
+            $scriptnames->{$_}=1;
+        }
+        $_.=$snr;
+    }
+    return $_;
+}
 #▶1 addScriptID :: [script] → + [script]
 sub addScriptID($) {
     my $scripts=shift;
     local $_;
-    my %scriptnames;
+    my $scriptnames={};
     for my $script (@$scripts) {
-        $_=$script->{"name"};
-        s/\.vim$//g;
-        # XXX That must purge at least ' and \n
-        s/[^ a-zA-Z0-9_\-.]//g;
-        s/ /_/g;
-        if(defined $scriptnames{$_}) {
-            my $s=$scriptnames{$_};
-            if(ref $s) {
-                $s->{"id"}.=$s->{"snr"};
-                $scriptnames{$s->{"id"}}=$s;
-                $scriptnames{$_}=1;
-            }
-            $_.=$script->{"snr"};
-        }
-        $script->{"id"}=$_;
-        $scriptnames{$_}=$script;
+        $script->{"id"}=genName($script->{"name"}, $script->{"snr"},
+                                $scriptnames);
+        $scriptnames->{$script->{"id"}}=$script;
     }
 }
 #▶1 getAllScripts_parseHTML :: () → + …
