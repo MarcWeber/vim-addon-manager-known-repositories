@@ -434,7 +434,7 @@ let s:p.JumpNextLongLine={'title': 'JumpNextLongLine', 'script-type': 'utility',
 let s:p.vcslogdiff={'title': 'vcslogdiff', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14612', 'archive_name': 'vcslogdiff.vim', 'type': 'archive'}
 let s:p.Vimblr={'title': 'Vimblr', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14609', 'archive_name': 'vimblr.zip', 'type': 'archive'}
 let s:p.FanVim={'title': 'FanVim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14685', 'archive_name': 'fanvim0.1-final.zip', 'type': 'archive'}
-let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.12.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16797', 'archive_name': 'notes.zip', 'type': 'archive'}
+let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.12.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16872', 'archive_name': 'notes.zip', 'type': 'archive'}
 let s:p.ColorSelect={'title': 'ColorSelect', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15042', 'archive_name': 'ColorSelect.zip', 'type': 'archive'}
 let s:p.blockle={'title': 'blockle.vim', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15538', 'archive_name': 'blockle.tar.gz', 'type': 'archive'}
 let s:p.A_Silly_Girl={'title': 'A Silly Girl', 'script-type': 'patch', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14556', 'archive_name': 'A Silly Girl.fdx', 'type': 'archive'}
