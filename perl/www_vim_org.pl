@@ -11,7 +11,6 @@ use utf8;
 use Data::Dumper;
 use YAML::XS;
 use JSON;
-use Date::Parse;
 use HTML::Entities;
 
 my $verbose=shift @ARGV;
@@ -369,8 +368,8 @@ sub getAllScripts() {
                                          archive => $_->{"package"},
                                          version => $_->{"script_version"},
                                      vim_version => $_->{"vim_version"},}}
-                                         (sort {str2time($b->{"creation_date"})
-                                            <=> str2time($a->{"creation_date"})}
+                                         (sort {$b->{"creation_date"} <=>
+                                                $a->{"creation_date"}}
                                                @{$_->{"releases"}})],
                             }} values %$json)];
     addScriptID($scripts);
