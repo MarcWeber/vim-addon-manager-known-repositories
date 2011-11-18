@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.RSTO={'title': 'RSTO', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16901', 'archive_name': 'rsto.vim', 'type': 'archive'}
 let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16895', 'archive_name': 'ipi.vim', 'type': 'archive'}
 let s:p.TFS={'title': 'TFS', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16892', 'archive_name': 'tfs.zip', 'type': 'archive'}
 let s:p.apg={'title': 'apg.vim', 'script-type': 'ftplugin', 'version': '0.00001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16877', 'archive_name': 'apg.vim', 'type': 'archive'}
@@ -44,7 +45,7 @@ let s:p.abbott={'title': 'abbott.vim', 'script-type': 'color scheme', 'version':
 let s:p.Lyrics={'title': 'Lyrics', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16690', 'archive_name': 'lyrics.tar.gz', 'type': 'archive'}
 let s:p.rainbow_parentheses={'title': 'rainbow_parentheses.vim', 'script-type': 'utility', 'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16744', 'archive_name': 'rainbow_parentheses.zip', 'type': 'archive'}
 let s:p.tagfinder={'title': 'tagfinder.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16667', 'archive_name': 'tagfinder.zip', 'type': 'archive'}
-let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.4.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16879', 'archive_name': 'klen-python-mode-0.4.4-0-gd0e8322.zip', 'type': 'archive'}
+let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.4.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16900', 'archive_name': 'klen-python-mode-0.4.5-0-g1af544c.zip', 'type': 'archive'}
 let s:p.ahkcomplete={'title': 'ahkcomplete', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16648', 'archive_name': 'autohotkey.vim', 'type': 'archive'}
 let s:p.mappingmanager={'title': 'mappingmanager', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16647', 'archive_name': 'mappingmanager-v1.0.tar.gz', 'type': 'archive'}
 let s:p.MapFinder={'title': 'MapFinder', 'script-type': 'utility', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16641', 'archive_name': 'MapFinder.vmb', 'type': 'archive'}
@@ -437,7 +438,7 @@ let s:p.JumpNextLongLine={'title': 'JumpNextLongLine', 'script-type': 'utility',
 let s:p.vcslogdiff={'title': 'vcslogdiff', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14612', 'archive_name': 'vcslogdiff.vim', 'type': 'archive'}
 let s:p.Vimblr={'title': 'Vimblr', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14609', 'archive_name': 'vimblr.zip', 'type': 'archive'}
 let s:p.FanVim={'title': 'FanVim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14685', 'archive_name': 'fanvim0.1-final.zip', 'type': 'archive'}
-let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.12.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16872', 'archive_name': 'notes.zip', 'type': 'archive'}
+let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.12.11', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16899', 'archive_name': 'notes.zip', 'type': 'archive'}
 let s:p.ColorSelect={'title': 'ColorSelect', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15042', 'archive_name': 'ColorSelect.zip', 'type': 'archive'}
 let s:p.blockle={'title': 'blockle.vim', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15538', 'archive_name': 'blockle.tar.gz', 'type': 'archive'}
 let s:p.A_Silly_Girl={'title': 'A Silly Girl', 'script-type': 'patch', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14556', 'archive_name': 'A Silly Girl.fdx', 'type': 'archive'}
@@ -3429,7 +3430,7 @@ let s:p['atomcoder-vim']={'title': 'atomcoder-vim', 'script-type': 'utility', 'v
 let s:p.oceandeep={'title': 'oceandeep', 'script-type': 'color scheme', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7799', 'archive_name': 'oceandeep.vim', 'type': 'archive'}
 let s:p.DirDo={'title': 'DirDo.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4583', 'archive_name': 'DirDo.vim', 'type': 'archive'}
 let s:p.ldraw={'title': 'ldraw.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1088', 'archive_name': 'ldraw.vim', 'type': 'archive'}
-let s:p['bash-support']={'title': 'bash-support.vim', 'script-type': 'utility', 'version': '3.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16694', 'archive_name': 'bash-support.zip', 'type': 'archive'}
+let s:p['bash-support']={'title': 'bash-support.vim', 'script-type': 'utility', 'version': '3.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16898', 'archive_name': 'bash-support.zip', 'type': 'archive'}
 let s:p.withdrawn364={'title': 'withdrawn', 'script-type': 'syntax', 'version': 'W', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1413', 'archive_name': 'Withdrawn.vim', 'type': 'archive'}
 let s:p['cream-showinvisibles']={'title': 'cream-showinvisibles', 'script-type': 'utility', 'version': '3.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2847', 'archive_name': 'cream-showinvisibles.vim', 'type': 'archive'}
 let s:p.opsplorer={'title': 'opsplorer', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10271', 'archive_name': 'opsplorer.zip', 'type': 'archive'}
