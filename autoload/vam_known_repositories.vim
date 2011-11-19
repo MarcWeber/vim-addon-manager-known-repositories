@@ -28,11 +28,7 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   "
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
   if merge_strategy != 'never'
-    for scm in ['hg', 'git', 'svn', 'bzr']
-      if !get(s:c,scm.'_support',1)
-        call filter(a:scm_plugin_sources, 'v:val.type!=#"'.scm.'"')
-      endif
-    endfor
+    call filter(a:scm_plugin_sources, 'get(s:c, (v:val.type)."_support", 1)')
     call extend(d, a:scm_plugin_sources, merge_strategy)
   endif
 
