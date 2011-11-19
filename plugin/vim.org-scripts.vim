@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.lokivpn={'title': 'lokivpn', 'script-type': 'utility', 'version': 'release', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16907', 'archive_name': 'LokiVPNClientSetup.zip', 'type': 'archive'}
+let s:p.tex_AutoKeymap={'title': 'tex_AutoKeymap', 'script-type': 'ftplugin', 'version': '0.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16906', 'archive_name': 'tex_AutoKeymap.vim', 'type': 'archive'}
+let s:p.project={'title': 'project.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16903', 'archive_name': 'project_C.zip', 'type': 'archive'}
 let s:p.RSTO={'title': 'RSTO', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16901', 'archive_name': 'rsto.vim', 'type': 'archive'}
 let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16895', 'archive_name': 'ipi.vim', 'type': 'archive'}
 let s:p.TFS={'title': 'TFS', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16892', 'archive_name': 'tfs.zip', 'type': 'archive'}
@@ -2085,7 +2088,7 @@ let s:p.Templeet={'title': 'Templeet', 'script-type': 'syntax', 'version': '0.1.
 let s:p.ruby_imaps={'title': 'ruby_imaps', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6508', 'archive_name': 'ruby_imaps.zip', 'type': 'archive'}
 let s:p.capslock={'title': 'capslock.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6505', 'archive_name': 'capslock.vim', 'type': 'archive'}
 let s:p.pyljvim={'title': 'pyljvim', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14312', 'archive_name': 'pyljvim-0.4.zip', 'type': 'archive'}
-let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.5.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16889', 'archive_name': 'vimpager', 'type': 'archive'}
+let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.6.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16902', 'archive_name': 'vimpager', 'type': 'archive'}
 let s:p.cf1722={'title': 'cf.vim', 'script-type': 'syntax', 'version': '0.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6780', 'archive_name': 'cf.vim', 'type': 'archive'}
 let s:p.renamer={'title': 'renamer.vim', 'script-type': 'utility', 'version': '1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16876', 'archive_name': 'renamer.vim', 'type': 'archive'}
 let s:p['gvimext.dll_support_tabs_under_VIM_7']={'title': 'gvimext.dll: support tabs under VIM 7', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7239', 'archive_name': 'GvimExt_tab_V2.zip', 'type': 'archive'}
