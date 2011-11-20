@@ -19,7 +19,7 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   call extend(d, a:www_vim_org)
 
   " (2) merge in SCM sources only if support isn't disabled
-  "     (See VAMs documentation 4. Options -> {scm}_support)
+  "     (See VAMs documentation 4. Options -> drop_{scm}_soucres)
   "
   " g:vim_addon_manager['scm_merge_strategy'] options:
   " force: prefer scm version over www.vim.org
@@ -28,7 +28,12 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   "
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
   if merge_strategy != 'never'
+
+    call filter(a:scm_plugin_sources, '!get(s:c, "drop_".(v:val.type)."_sources", 0)')
+
+    " old code, will be dropped: scm_support was renamed to drop_scm_sources
     call filter(a:scm_plugin_sources, 'get(s:c, (v:val.type)."_support", 1)')
+
     call extend(d, a:scm_plugin_sources, merge_strategy)
   endif
 
