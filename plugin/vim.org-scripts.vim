@@ -5,11 +5,12 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.log3814={'title': 'log.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16908', 'archive_name': 'log.vim', 'type': 'archive'}
 let s:p.lokivpn={'title': 'lokivpn', 'script-type': 'utility', 'version': 'release', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16907', 'archive_name': 'LokiVPNClientSetup.zip', 'type': 'archive'}
 let s:p.tex_AutoKeymap={'title': 'tex_AutoKeymap', 'script-type': 'ftplugin', 'version': '0.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16906', 'archive_name': 'tex_AutoKeymap.vim', 'type': 'archive'}
 let s:p.project={'title': 'project.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16903', 'archive_name': 'project_C.zip', 'type': 'archive'}
-let s:p.RSTO={'title': 'RSTO', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16901', 'archive_name': 'rsto.vim', 'type': 'archive'}
-let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16895', 'archive_name': 'ipi.vim', 'type': 'archive'}
+let s:p.RSTO={'title': 'RSTO', 'script-type': 'utility', 'version': '0.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16910', 'archive_name': 'rsto.vim', 'type': 'archive'}
+let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16909', 'archive_name': 'ipi.vim', 'type': 'archive'}
 let s:p.TFS={'title': 'TFS', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16892', 'archive_name': 'tfs.zip', 'type': 'archive'}
 let s:p.apg={'title': 'apg.vim', 'script-type': 'ftplugin', 'version': '0.00001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16877', 'archive_name': 'apg.vim', 'type': 'archive'}
 let s:p.openrel={'title': 'openrel.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16870', 'archive_name': 'openrel.vim', 'type': 'archive'}
