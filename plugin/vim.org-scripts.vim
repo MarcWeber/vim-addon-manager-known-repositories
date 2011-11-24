@@ -5,6 +5,8 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.splatter={'title': 'splatter', 'script-type': 'utility', 'version': 'release', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16956', 'archive_name': 'splatter.tar', 'type': 'archive'}
+let s:p['vim-ocaml-conceal']={'title': 'vim-ocaml-conceal', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16955', 'archive_name': 'vim-ocaml-conceal-1.0.zip', 'type': 'archive'}
 let s:p.Dart={'title': 'Dart', 'script-type': 'syntax', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16950', 'archive_name': 'vim-dart.tar.gz', 'type': 'archive'}
 let s:p.Lisper={'title': 'Lisper.vim', 'script-type': 'utility', 'version': '0.02', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16937', 'archive_name': 'lisper-vim.zip', 'type': 'archive'}
 let s:p.MatchTag={'title': 'MatchTag', 'script-type': 'ftplugin', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16921', 'archive_name': 'html.vim', 'type': 'archive'}
@@ -178,7 +180,7 @@ let s:p.simpleRGB={'title': 'simpleRGB', 'script-type': 'color scheme', 'version
 let s:p.AutoCpp={'title': 'AutoCpp', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16011', 'archive_name': 'autocpp.vim', 'type': 'archive'}
 let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16829', 'archive_name': 'VimLite-460.tar.bz2', 'type': 'archive'}
 let s:p.Filesearch={'title': 'Filesearch', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16040', 'archive_name': 'vim-filesearch-v1.2.0.tar.gz', 'type': 'archive'}
-let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16256', 'archive_name': 'gnupg.vim', 'type': 'archive'}
+let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16952', 'archive_name': 'gnupg.vim', 'type': 'archive'}
 let s:p.vimgtd={'title': 'vimgtd', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16333', 'archive_name': 'vimgtd.zip', 'type': 'archive'}
 let s:p.Vimper_IDE={'title': 'Vimper IDE', 'script-type': 'utility', 'version': '0.1.3b', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16059', 'archive_name': 'vimper-0.1.3b.tgz', 'type': 'archive'}
 let s:p['vim-orgmode']={'title': 'vim-orgmode', 'script-type': 'ftplugin', 'version': '0.4.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16683', 'archive_name': 'orgmode.vba', 'type': 'archive'}
@@ -1101,7 +1103,7 @@ let s:p.translit_converter={'title': 'translit_converter', 'script-type': 'utili
 let s:p.Rename2={'title': 'Rename2', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11097', 'archive_name': 'Rename2.vim', 'type': 'archive'}
 let s:p.math={'title': 'math', 'script-type': 'utility', 'version': '3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12554', 'archive_name': 'math.vba.gz', 'type': 'archive'}
 let s:p.cssvar={'title': 'cssvar', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11078', 'archive_name': 'cssvar.zip', 'type': 'archive'}
-let s:p.AutoFenc={'title': 'AutoFenc.vim', 'script-type': 'utility', 'version': '1.3.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16129', 'archive_name': 'AutoFenc.vim', 'type': 'archive'}
+let s:p.AutoFenc={'title': 'AutoFenc.vim', 'script-type': 'utility', 'version': '1.3.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16954', 'archive_name': 'AutoFenc.vim', 'type': 'archive'}
 let s:p.arc={'title': 'arc.vim', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11135', 'archive_name': 'arc-vim.tar.gz', 'type': 'archive'}
 let s:p.Proj={'title': 'Proj', 'script-type': 'utility', 'version': '1.5.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14001', 'archive_name': 'proj.tgz', 'type': 'archive'}
 let s:p['mutt-canned']={'title': 'mutt-canned', 'script-type': 'utility', 'version': '0.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11042', 'archive_name': 'mutt-canned.vim', 'type': 'archive'}
@@ -2590,7 +2592,7 @@ let s:p['crontab.freebsd']={'title': 'crontab.freebsd.vim', 'script-type': 'synt
 let s:p.recent1228={'title': 'recent.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4002', 'archive_name': 'recent-1.3.tar.gz', 'type': 'archive'}
 let s:p.explorerreader={'title': 'explorer+reader.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3941', 'archive_name': 'explorer+reader.vim.zip', 'type': 'archive'}
 let s:p.Vim_klip_for_Serence_Klipfolio_Windows={'title': 'Vim klip for Serence Klipfolio (Windows', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3940', 'archive_name': 'gvim.klip', 'type': 'archive'}
-let s:p.DotOutlineTree={'title': 'DotOutlineTree', 'script-type': 'utility', 'version': '1.2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16393', 'archive_name': 'dot.vim', 'type': 'archive'}
+let s:p.DotOutlineTree={'title': 'DotOutlineTree', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16953', 'archive_name': 'dot.vim', 'type': 'archive'}
 let s:p.my__vimrc_for_Windows_2000XP7_users={'title': 'my _vimrc (for Windows 2000/XP/7 users)', 'script-type': 'utility', 'version': '1.0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15848', 'archive_name': '_vimrc', 'type': 'archive'}
 let s:p.plist={'title': 'plist.vim', 'script-type': 'syntax', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4063', 'archive_name': 'plist.vim', 'type': 'archive'}
 let s:p.OCaml_instructions_signature__parser={'title': 'OCaml instructions signature + parser', 'script-type': 'utility', 'version': '0.81', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4210', 'archive_name': 'OCamlSig.vim', 'type': 'archive'}
