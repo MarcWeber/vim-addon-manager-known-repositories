@@ -129,6 +129,7 @@ let s:scm_plugin_sources['vcscommand'] = {'type': 'git', 'url': 'git://repo.or.c
 let s:scm_plugin_sources['eregex'] = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim.git'}
 let s:scm_plugin_sources['ack'] = {'type': 'git', 'url': 'git://github.com/mileszs/ack.vim.git'}
 let s:scm_plugin_sources['ctrlp'] = {'type': 'git', 'url': 'git://github.com/kien/ctrlp.vim.git'}
+let s:scm_plugin_sources['vim-comment-object'] = {'type': 'git', 'url': 'git://github.com/ConradIrwin/vim-comment-object' }
 
 " Plugins sources added by Silex
 let s:scm_plugin_sources['gitv'] = {'type': 'git', 'url': 'git://github.com/gregsexton/gitv.git'}
