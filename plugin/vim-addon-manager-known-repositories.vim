@@ -59,15 +59,20 @@ let s:scm_plugin_sources['snipmate-snippets'] = { 'type' : 'git', 'url': 'git://
 
 let s:scm_plugin_sources['theonevimlib'] = { 'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib.git' }
 
+" Peter Odding
+let s:scm_plugin_sources['publish'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-publish' }
+let s:scm_plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
+let s:scm_plugin_sources['session3150'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-session' }
+let s:scm_plugin_sources['easytags'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-easytags' }
+let s:scm_plugin_sources['shell'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-shell' }
+let s:scm_plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
+let s:scm_plugin_sources['luainspect'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-inspect' }
+let s:scm_plugin_sources['notes'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-notes' }
+let s:scm_plugin_sources['lua'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-ftplugin' }
+
 " " xolox
 " " Commented until author puts vim files in proper directories or somebody implements postinstall hooks
-" let s:scm_plugin_sources['shell'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-shell' }
-" let s:scm_plugin_sources['easytags'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-easytags' }
-" let s:scm_plugin_sources['publish'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-publish' }
-" let s:scm_plugin_sources['session'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-session' }
-" let s:scm_plugin_sources['luainspect'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-lua-inspect' }
-" let s:scm_plugin_sources['reload'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-reload' }
-" let s:scm_plugin_sources['pyref'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-pyref' }
+" let s:scm_plugin_sources['Open_associated_programs'] = { 'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs' }
 
 " Ciaran McCreesh
 let s:scm_plugin_sources['securemodelines'] = { 'type': 'git', 'url': 'git://github.com/ciaranm/securemodelines' }
