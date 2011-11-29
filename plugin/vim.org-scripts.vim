@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.Aurum={'title': 'Aurum', 'script-type': 'utility', 'version': '0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16993', 'archive_name': 'dummy', 'type': 'archive'}
+let s:p['modeleasy-vim-plugin']={'title': 'modeleasy-vim-plugin', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16992', 'archive_name': 'modeleasy-vim-plugin-26-11-11.vba', 'type': 'archive'}
+let s:p.simple_bookmarks={'title': 'simple_bookmarks.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16991', 'archive_name': 'simple_bookmarks.zip', 'type': 'archive'}
 let s:p['Colour_theme_neon-pk']={'title': 'Colour theme (neon-pk)', 'script-type': 'color scheme', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16981', 'archive_name': 'neon-PK.vim', 'type': 'archive'}
 let s:p.nu42dark_color_scheme={'title': 'nu42dark color scheme', 'script-type': 'color scheme', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16976', 'archive_name': 'nu42dark.vim', 'type': 'archive'}
 let s:p.csslint={'title': 'csslint.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16975', 'archive_name': 'csslint.vim', 'type': 'archive'}
@@ -1095,7 +1098,7 @@ let s:p.translit_converter={'title': 'translit_converter', 'script-type': 'utili
 let s:p.Rename2={'title': 'Rename2', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11097', 'archive_name': 'Rename2.vim', 'type': 'archive'}
 let s:p.math={'title': 'math', 'script-type': 'utility', 'version': '3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12554', 'archive_name': 'math.vba.gz', 'type': 'archive'}
 let s:p.cssvar={'title': 'cssvar', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11078', 'archive_name': 'cssvar.zip', 'type': 'archive'}
-let s:p.AutoFenc={'title': 'AutoFenc.vim', 'script-type': 'utility', 'version': '1.3.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16954', 'archive_name': 'AutoFenc.vim', 'type': 'archive'}
+let s:p.AutoFenc={'title': 'AutoFenc.vim', 'script-type': 'utility', 'version': '1.3.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16994', 'archive_name': 'AutoFenc.vim', 'type': 'archive'}
 let s:p.arc={'title': 'arc.vim', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11135', 'archive_name': 'arc-vim.tar.gz', 'type': 'archive'}
 let s:p.Proj={'title': 'Proj', 'script-type': 'utility', 'version': '1.5.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14001', 'archive_name': 'proj.tgz', 'type': 'archive'}
 let s:p['mutt-canned']={'title': 'mutt-canned', 'script-type': 'utility', 'version': '0.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11042', 'archive_name': 'mutt-canned.vim', 'type': 'archive'}
@@ -2088,7 +2091,7 @@ let s:p.Templeet={'title': 'Templeet', 'script-type': 'syntax', 'version': '0.1.
 let s:p.ruby_imaps={'title': 'ruby_imaps', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6508', 'archive_name': 'ruby_imaps.zip', 'type': 'archive'}
 let s:p.capslock={'title': 'capslock.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6505', 'archive_name': 'capslock.vim', 'type': 'archive'}
 let s:p.pyljvim={'title': 'pyljvim', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14312', 'archive_name': 'pyljvim-0.4.zip', 'type': 'archive'}
-let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.6.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16940', 'archive_name': 'vimpager', 'type': 'archive'}
+let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.6.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16990', 'archive_name': 'vimpager', 'type': 'archive'}
 let s:p.cf1722={'title': 'cf.vim', 'script-type': 'syntax', 'version': '0.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6780', 'archive_name': 'cf.vim', 'type': 'archive'}
 let s:p.renamer={'title': 'renamer.vim', 'script-type': 'utility', 'version': '1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16876', 'archive_name': 'renamer.vim', 'type': 'archive'}
 let s:p['gvimext.dll_support_tabs_under_VIM_7']={'title': 'gvimext.dll: support tabs under VIM 7', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7239', 'archive_name': 'GvimExt_tab_V2.zip', 'type': 'archive'}
