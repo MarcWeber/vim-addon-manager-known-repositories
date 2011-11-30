@@ -5,7 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
-let s:p.Aurum={'title': 'Aurum', 'script-type': 'utility', 'version': '0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16993', 'archive_name': 'dummy', 'type': 'archive'}
+let s:p['better-snipmate-snippet']={'title': 'better-snipmate-snippet', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16997', 'archive_name': 'better-snipmate-snippets.tar.gz', 'type': 'archive'}
+let s:p.inline_edit={'title': 'inline_edit.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16996', 'archive_name': 'inline_edit.zip', 'type': 'archive'}
+let s:p.aurum={'title': 'aurum', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16995', 'archive_name': 'aurum-1.0.tar.gz', 'type': 'archive'}
 let s:p['modeleasy-vim-plugin']={'title': 'modeleasy-vim-plugin', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16992', 'archive_name': 'modeleasy-vim-plugin-26-11-11.vba', 'type': 'archive'}
 let s:p.simple_bookmarks={'title': 'simple_bookmarks.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16991', 'archive_name': 'simple_bookmarks.zip', 'type': 'archive'}
 let s:p['Colour_theme_neon-pk']={'title': 'Colour theme (neon-pk)', 'script-type': 'color scheme', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16981', 'archive_name': 'neon-PK.vim', 'type': 'archive'}
@@ -55,7 +57,7 @@ let s:p.abbott={'title': 'abbott.vim', 'script-type': 'color scheme', 'version':
 let s:p.Lyrics={'title': 'Lyrics', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16690', 'archive_name': 'lyrics.tar.gz', 'type': 'archive'}
 let s:p.rainbow_parentheses={'title': 'rainbow_parentheses.vim', 'script-type': 'utility', 'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16744', 'archive_name': 'rainbow_parentheses.zip', 'type': 'archive'}
 let s:p.tagfinder={'title': 'tagfinder.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16667', 'archive_name': 'tagfinder.zip', 'type': 'archive'}
-let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.4.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16951', 'archive_name': 'klen-python-mode-0.4.6-0-gdaad0ca.zip', 'type': 'archive'}
+let s:p['Python-mode-klen']={'title': 'Python-mode-klen', 'script-type': 'ftplugin', 'version': '0.5.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16998', 'archive_name': 'klen-python-mode-0.5.0-0-g3562021.zip', 'type': 'archive'}
 let s:p.ahkcomplete={'title': 'ahkcomplete', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16648', 'archive_name': 'autohotkey.vim', 'type': 'archive'}
 let s:p.mappingmanager={'title': 'mappingmanager', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16647', 'archive_name': 'mappingmanager-v1.0.tar.gz', 'type': 'archive'}
 let s:p.MapFinder={'title': 'MapFinder', 'script-type': 'utility', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16641', 'archive_name': 'MapFinder.vmb', 'type': 'archive'}
@@ -763,7 +765,7 @@ let s:p.Manuals={'title': 'Manuals', 'script-type': 'utility', 'version': '0.1a'
 let s:p.lastpos={'title': 'lastpos.vim', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12839', 'archive_name': 'lastpos.vim', 'type': 'archive'}
 let s:p.tex_mini={'title': 'tex_mini.vim', 'script-type': 'ftplugin', 'version': '1e', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12838', 'archive_name': 'tex_mini.vim', 'type': 'archive'}
 let s:p.vimsizer={'title': 'vimsizer', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12836', 'archive_name': 'vimsizer.tgz', 'type': 'archive'}
-let s:p.Translit3={'title': 'Translit3', 'script-type': 'utility', 'version': '3.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15977', 'archive_name': 'translit3-3.0.tar.gz', 'type': 'archive'}
+let s:p.translit3={'title': 'translit3', 'script-type': 'utility', 'version': '3.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15977', 'archive_name': 'translit3-3.0.tar.gz', 'type': 'archive'}
 let s:p.ciscoasa={'title': 'ciscoasa.vim', 'script-type': 'syntax', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12823', 'archive_name': 'ciscoasa.tar.gz', 'type': 'archive'}
 let s:p.Otter={'title': 'Otter.vim', 'script-type': 'syntax', 'version': '4.12.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12821', 'archive_name': 'otter[1].vim', 'type': 'archive'}
 let s:p.Maynard={'title': 'Maynard', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12811', 'archive_name': 'maynard.zip', 'type': 'archive'}
