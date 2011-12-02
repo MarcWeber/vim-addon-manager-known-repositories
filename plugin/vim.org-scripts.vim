@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.SchemeXp={'title': 'SchemeXp', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17011', 'archive_name': 'scheme.xpt.vim', 'type': 'archive'}
 let s:p.LastBuf={'title': 'LastBuf.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17004', 'archive_name': 'lastbuf.vim.tar.gz', 'type': 'archive'}
 let s:p['better-snipmate-snippet']={'title': 'better-snipmate-snippet', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16997', 'archive_name': 'better-snipmate-snippets.tar.gz', 'type': 'archive'}
 let s:p.inline_edit={'title': 'inline_edit.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16996', 'archive_name': 'inline_edit.zip', 'type': 'archive'}
@@ -237,7 +238,7 @@ let s:p.pdub={'title': 'pdub', 'script-type': 'utility', 'version': '0.1', 'url'
 let s:p.jovial={'title': 'jovial.vim', 'script-type': 'syntax', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15922', 'archive_name': 'jovial_syntax-1.2.tar.gz', 'type': 'archive'}
 let s:p.browserprint={'title': 'browserprint', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15674', 'archive_name': 'browserprint.zip', 'type': 'archive'}
 let s:p['vim-coffee-script']={'title': 'vim-coffee-script', 'script-type': 'utility', 'version': 'v001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16701', 'archive_name': 'vim-coffee-script-v001.zip', 'type': 'archive'}
-let s:p.cake={'title': 'cake.vim', 'script-type': 'utility', 'version': '1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16801', 'archive_name': 'cake.tar.gz', 'type': 'archive'}
+let s:p.cake={'title': 'cake.vim', 'script-type': 'utility', 'version': '2.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17012', 'archive_name': 'cake.zip', 'type': 'archive'}
 let s:p.Find_XML_Tags={'title': 'Find XML Tags', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15713', 'archive_name': 'FindXmlTag.vba', 'type': 'archive'}
 let s:p['vim-soy']={'title': 'vim-soy', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15653', 'archive_name': 'vim-soy-1.0.zip', 'type': 'archive'}
 let s:p.Redhawk_Vim_Plugin={'title': 'Redhawk Vim Plugin', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15649', 'archive_name': 'redhawk-vim.tar.gz', 'type': 'archive'}
@@ -449,7 +450,7 @@ let s:p.JumpNextLongLine={'title': 'JumpNextLongLine', 'script-type': 'utility',
 let s:p.vcslogdiff={'title': 'vcslogdiff', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14612', 'archive_name': 'vcslogdiff.vim', 'type': 'archive'}
 let s:p.Vimblr={'title': 'Vimblr', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14609', 'archive_name': 'vimblr.zip', 'type': 'archive'}
 let s:p.FanVim={'title': 'FanVim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14685', 'archive_name': 'fanvim0.1-final.zip', 'type': 'archive'}
-let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.12', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16985', 'archive_name': 'notes.zip', 'type': 'archive'}
+let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.14', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17006', 'archive_name': 'notes.zip', 'type': 'archive'}
 let s:p.ColorSelect={'title': 'ColorSelect', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15042', 'archive_name': 'ColorSelect.zip', 'type': 'archive'}
 let s:p.blockle={'title': 'blockle.vim', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15538', 'archive_name': 'blockle.tar.gz', 'type': 'archive'}
 let s:p.hdl_plugin3371={'title': 'hdl_plugin', 'script-type': 'ftplugin', 'version': 'v2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14648', 'archive_name': 'hdl_plugin.vim', 'type': 'archive'}
@@ -1086,7 +1087,7 @@ let s:p.vimper={'title': 'vimper', 'script-type': 'utility', 'version': '0.1.1',
 let s:p.bclear={'title': 'bclear', 'script-type': 'color scheme', 'version': '20101017', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14069', 'archive_name': 'bclear.vim', 'type': 'archive'}
 let s:p.v2={'title': 'v2.vim', 'script-type': 'syntax', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11209', 'archive_name': 'v2.vim', 'type': 'archive'}
 let s:p.bib_autocomp={'title': 'bib_autocomp.vim', 'script-type': 'ftplugin', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11194', 'archive_name': 'bib_autocomp.vim', 'type': 'archive'}
-let s:p.Syntastic={'title': 'Syntastic', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14139', 'archive_name': 'syntastic.zip', 'type': 'archive'}
+let s:p.Syntastic={'title': 'Syntastic', 'script-type': 'utility', 'version': '2.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17007', 'archive_name': 'syntastic.zip', 'type': 'archive'}
 let s:p.Logcat_syntax_highlighter={'title': 'Logcat syntax highlighter', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11179', 'archive_name': 'logcat.vim', 'type': 'archive'}
 let s:p.PreviewDialog={'title': 'PreviewDialog', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11163', 'archive_name': 'preview_dialog.vba', 'type': 'archive'}
 let s:p.Buffer_Reminder_Remake={'title': 'Buffer Reminder Remake', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16052', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive'}
