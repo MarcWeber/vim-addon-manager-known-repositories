@@ -204,7 +204,6 @@ let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enl
 " Steve Losh
 let s:scm_plugin_sources['Gundo'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
 let s:scm_plugin_sources['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/strftimedammit.vim' }
-" This is error3721 script
 let s:scm_plugin_sources['Threesome'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/threesome.vim' }
 
 " this name may change if the author uploads it to vim.sf.net..
@@ -302,7 +301,7 @@ let s:scm_plugin_sources['AutoClose'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['Solarized'] = {'type': 'git', 'url': 'git://github.com/altercation/vim-colors-solarized.git', 'author': 'Ethan Schoonover'}
 
 " Manpreet Singh
-let s:scm_plugin_sources['patchreview'] = {'type': 'hg', 'url': 'git://github.com/junkblocker/patchreview-vim' }
+let s:scm_plugin_sources['patchreview'] = {'type': 'git', 'url': 'git://github.com/junkblocker/patchreview-vim' }
 
 " Peter Hosey
 " Following repository does not contain correct directory tree
@@ -340,14 +339,11 @@ let s:scm_plugin_sources['vim-coffee-script'] = {'type': 'git', 'url': 'git://gi
 
 " Rykka Krin
 let s:scm_plugin_sources['ColorV'] = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV' }
-" This is error3729 script
 let s:scm_plugin_sources['Galaxy'] = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy' }
 
 " Andrew Radev
 let s:scm_plugin_sources['splitjoin'] = {'type': 'git', 'url': 'git://github.com/AndrewRadev/splitjoin.vim.git' }
-" This is error3771 script
 let s:scm_plugin_sources['tagfinder'] = {'type': 'git', 'url': 'git://github.com/AndrewRadev/tagfinder.vim.git' }
-" This is error3745 script
 let s:scm_plugin_sources['linediff'] = {'type': 'git', 'url': 'git://github.com/AndrewRadev/linediff.vim' }
 
 " Radek Kowalski
@@ -393,15 +389,10 @@ let s:scm_plugin_sources['VimLocalHistory'] = {'type': 'git', 'url': 'git://gith
 
 " Kien Nguyen
 let s:scm_plugin_sources['AutoSaveSetting'] = {'type': 'git', 'url': 'git://github.com/kien/autosavesetting.vim' }
-" This is error3699 script
 let s:scm_plugin_sources['Premailer'] = {'type': 'git', 'url': 'git://github.com/kien/premailer.vim' }
-" This is error3696 script
 let s:scm_plugin_sources['prefixer'] = {'type': 'git', 'url': 'git://github.com/kien/prefixer.vim' }
-" This is error3697 script
 let s:scm_plugin_sources['cssbaseline'] = {'type': 'git', 'url': 'git://github.com/kien/cssbaseline.vim' }
-" This is error3698 script
 let s:scm_plugin_sources['html_emogrifier'] = {'type': 'git', 'url': 'git://github.com/kien/html_emogrifier.vim' }
-" This is error3772 script
 let s:scm_plugin_sources['rainbow_parenthsis'] = {'type': 'git', 'url': 'git://github.com/kien/rainbow_parentheses.vim' }
 
 " Andy Dawson
@@ -437,9 +428,7 @@ let s:scm_plugin_sources['ikiwiki-nav'] = {'type': 'git', 'url': 'git://git.devn
 let s:scm_plugin_sources['ikiwiki-syntax'] = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-syntax.git/' }
 
 " Taylor Hedberg
-" This is error3723 script
 let s:scm_plugin_sources['SimpylFold'] = {'type': 'git', 'url': 'git://github.com/tmhedberg/SimpylFold' }
-" This is error3724 script
 let s:scm_plugin_sources['indent-motion'] = {'type': 'git', 'url': 'git://github.com/tmhedberg/indent-motion' }
 
 " Susan Potter
@@ -456,11 +445,9 @@ let s:scm_plugin_sources['toggle_mouse'] = {'type': 'git', 'url': 'git://github.
 let s:scm_plugin_sources['scrnpipe'] = {'type': 'git', 'url': 'git://github.com/bundacia/ScreenPipe' }
 
 " Enlil Dubenstein
-" This is error3763 script
 let s:scm_plugin_sources['vim-google-scribe'] = {'type': 'git', 'url': 'git://github.com/dubenstein/vim-google-scribe' }
 
 " Miller Medeiros
-" This is error3786 script
 let s:scm_plugin_sources['statline'] = {'type': 'git', 'url': 'git://github.com/millermedeiros/vim-statline' }
 
 " Yasuhiro Matsumoto
@@ -475,12 +462,13 @@ let s:scm_plugin_sources['plugins-update-vim'] = {'type': 'git', 'url': 'git://g
 let s:scm_plugin_sources['googletasks-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/googletasks-vim.git'}
 " XXX Requires postupdate hook // though non-SCM source does also
 let s:scm_plugin_sources['VimTweak'] = {'type': 'git', 'url': 'git://github.com/mattn/vimtweak.git'}
-" This is error3790 script
 let s:scm_plugin_sources['SonicTemplate'] = {'type': 'git', 'url': 'git://github.com/mattn/sonictemplate-vim.git' }
 
 " Chris Yip
 " Following repository does not contain correct directory tree
 " let s:scm_plugin_sources['Better_CSS_Syntax_for_Vim'] = {'type': 'git', 'url': 'git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim' }
+
+let s:scm_plugin_sources['vimroom'] = {'type': 'git', 'url': 'git://github.com/mikewest/vimroom.git'}
 
 let s:scm_plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
 
