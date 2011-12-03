@@ -5,6 +5,8 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.yankstack={'title': 'yankstack', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17015', 'archive_name': 'yankstack.tar', 'type': 'archive'}
+let s:p.TVO_The_Vim_Outliner_with_asciidoc_supp={'title': 'TVO: The Vim Outliner with asciidoc supp', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17014', 'archive_name': 'otl.vim', 'type': 'archive'}
 let s:p.SchemeXp={'title': 'SchemeXp', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17011', 'archive_name': 'scheme.xpt.vim', 'type': 'archive'}
 let s:p.LastBuf={'title': 'LastBuf.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17004', 'archive_name': 'lastbuf.vim.tar.gz', 'type': 'archive'}
 let s:p['better-snipmate-snippet']={'title': 'better-snipmate-snippet', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16997', 'archive_name': 'better-snipmate-snippets.tar.gz', 'type': 'archive'}
@@ -469,7 +471,7 @@ let s:p.Figlet={'title': 'Figlet.vim', 'script-type': 'utility', 'version': '2.0
 let s:p.tabpagecolorscheme={'title': 'tabpagecolorscheme', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15118', 'archive_name': 'tabpagecolorscheme-1.3.zip', 'type': 'archive'}
 let s:p.NERD_Tree__ack={'title': 'NERD_Tree & ack', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14469', 'archive_name': 'NERD_tree_ACK.vim', 'type': 'archive'}
 let s:p['unite-yarm']={'title': 'unite-yarm', 'script-type': 'utility', 'version': '0.1.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14493', 'archive_name': 'unite-yarm.zip', 'type': 'archive'}
-let s:p.UnconditionalPaste={'title': 'UnconditionalPaste', 'script-type': 'utility', 'version': '1.11', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15829', 'archive_name': 'UnconditionalPaste.vba.gz', 'type': 'archive'}
+let s:p.UnconditionalPaste={'title': 'UnconditionalPaste', 'script-type': 'utility', 'version': '1.20', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17013', 'archive_name': 'UnconditionalPaste.vba.gz', 'type': 'archive'}
 let s:p.wesnothcfg={'title': 'wesnothcfg.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14459', 'archive_name': 'wesnothcfg.vim', 'type': 'archive'}
 let s:p.jbosslog={'title': 'jbosslog', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14457', 'archive_name': 'jbosslog.vim', 'type': 'archive'}
 let s:p.auto_mkdir={'title': 'auto_mkdir', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14454', 'archive_name': 'auto_mkdir.vim', 'type': 'archive'}
