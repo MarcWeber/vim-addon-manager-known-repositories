@@ -393,7 +393,7 @@ let s:scm_plugin_sources['Premailer'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['prefixer'] = {'type': 'git', 'url': 'git://github.com/kien/prefixer.vim' }
 let s:scm_plugin_sources['cssbaseline'] = {'type': 'git', 'url': 'git://github.com/kien/cssbaseline.vim' }
 let s:scm_plugin_sources['html_emogrifier'] = {'type': 'git', 'url': 'git://github.com/kien/html_emogrifier.vim' }
-let s:scm_plugin_sources['rainbow_parenthsis'] = {'type': 'git', 'url': 'git://github.com/kien/rainbow_parentheses.vim' }
+let s:scm_plugin_sources['rainbow_parentheses'] = {'type': 'git', 'url': 'git://github.com/kien/rainbow_parentheses.vim' }
 
 " Andy Dawson
 let s:scm_plugin_sources['activity-log'] = {'type': 'git', 'url': 'git://github.com/AD7six/vim-activity-log' }
@@ -468,6 +468,7 @@ let s:scm_plugin_sources['SonicTemplate'] = {'type': 'git', 'url': 'git://github
 " Following repository does not contain correct directory tree
 " let s:scm_plugin_sources['Better_CSS_Syntax_for_Vim'] = {'type': 'git', 'url': 'git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim' }
 
+" Mike West
 let s:scm_plugin_sources['vimroom'] = {'type': 'git', 'url': 'git://github.com/mikewest/vimroom.git'}
 
 let s:scm_plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod.git'}
