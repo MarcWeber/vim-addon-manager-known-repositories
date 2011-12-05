@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.ChickenSetupXp={'title': 'ChickenSetupXp', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17023', 'archive_name': 'chickensetup.xpt.vim', 'type': 'archive'}
+let s:p.ChickenMetaXp={'title': 'ChickenMetaXp', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17024', 'archive_name': 'chickenmeta.xpt.vim', 'type': 'archive'}
+let s:p['vim-octopress']={'title': 'vim-octopress', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17021', 'archive_name': 'vim-octopress.zip', 'type': 'archive'}
 let s:p.yankstack={'title': 'yankstack', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17018', 'archive_name': 'yankstack.tar', 'type': 'archive'}
 let s:p.TVO_The_Vim_Outliner_with_asciidoc_supp={'title': 'TVO: The Vim Outliner with asciidoc supp', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17014', 'archive_name': 'otl.vim', 'type': 'archive'}
 let s:p.SchemeXp={'title': 'SchemeXp', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17011', 'archive_name': 'scheme.xpt.vim', 'type': 'archive'}
@@ -239,7 +242,7 @@ let s:p.ucompleteme={'title': 'ucompleteme', 'script-type': 'utility', 'version'
 let s:p.pdub={'title': 'pdub', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15679', 'archive_name': 'pdub.py', 'type': 'archive'}
 let s:p.jovial={'title': 'jovial.vim', 'script-type': 'syntax', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15922', 'archive_name': 'jovial_syntax-1.2.tar.gz', 'type': 'archive'}
 let s:p.browserprint={'title': 'browserprint', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15674', 'archive_name': 'browserprint.zip', 'type': 'archive'}
-let s:p['vim-coffee-script']={'title': 'vim-coffee-script', 'script-type': 'utility', 'version': 'v001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16701', 'archive_name': 'vim-coffee-script-v001.zip', 'type': 'archive'}
+let s:p['vim-coffee-script']={'title': 'vim-coffee-script', 'script-type': 'utility', 'version': 'v002', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17028', 'archive_name': 'vim-coffee-script-v002.zip', 'type': 'archive'}
 let s:p.cake={'title': 'cake.vim', 'script-type': 'utility', 'version': '2.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17012', 'archive_name': 'cake.zip', 'type': 'archive'}
 let s:p.Find_XML_Tags={'title': 'Find XML Tags', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15713', 'archive_name': 'FindXmlTag.vba', 'type': 'archive'}
 let s:p['vim-soy']={'title': 'vim-soy', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15653', 'archive_name': 'vim-soy-1.0.zip', 'type': 'archive'}
@@ -1402,7 +1405,7 @@ let s:p.code_complete_new_update={'title': 'code_complete (new update)', 'script
 let s:p.nour={'title': 'nour.vim', 'script-type': 'color scheme', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9437', 'archive_name': 'nour.vim', 'type': 'archive'}
 let s:p.arpeggio={'title': 'arpeggio', 'script-type': 'utility', 'version': '0.0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12873', 'archive_name': 'vim-arpeggio-0.0.6.zip', 'type': 'archive'}
 let s:p.Transmit_FTP={'title': 'Transmit FTP', 'script-type': 'utility', 'version': '1.0a', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9431', 'archive_name': 'TransmitFTP.zip', 'type': 'archive'}
-let s:p.Gist={'title': 'Gist.vim', 'script-type': 'utility', 'version': '5.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16938', 'archive_name': 'gist-vim.zip', 'type': 'archive'}
+let s:p.Gist={'title': 'Gist.vim', 'script-type': 'utility', 'version': '5.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17027', 'archive_name': 'gist-vim.zip', 'type': 'archive'}
 let s:p.Wordnet={'title': 'Wordnet.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9428', 'archive_name': 'wordnet-0.1.zip', 'type': 'archive'}
 let s:p.PySmell={'title': 'PySmell', 'script-type': 'utility', 'version': '0.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9423', 'archive_name': 'pysmell-0.7.tar.gz', 'type': 'archive'}
 let s:p.gadgetxml={'title': 'gadgetxml.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9422', 'archive_name': 'gadgetxml.vim', 'type': 'archive'}
@@ -2605,7 +2608,7 @@ let s:p.Perldoc_from_VIM={'title': 'Perldoc from VIM', 'script-type': 'ftplugin'
 let s:p.cool={'title': 'cool.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3900', 'archive_name': 'cool.vim', 'type': 'archive'}
 let s:p.Super_Shell_Indent={'title': 'Super Shell Indent', 'script-type': 'indent', 'version': '1.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4371', 'archive_name': 'sh.vim', 'type': 'archive'}
 let s:p.cvsdiff1214={'title': 'cvsdiff.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3897', 'archive_name': 'cvsdiff.vim', 'type': 'archive'}
-let s:p.Vim_JDE={'title': 'Vim JDE', 'script-type': 'utility', 'version': '2.6.17', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16253', 'archive_name': 'vjde.tgz', 'type': 'archive'}
+let s:p.Vim_JDE={'title': 'Vim JDE', 'script-type': 'utility', 'version': '2.6.18', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17026', 'archive_name': 'vjde.tgz', 'type': 'archive'}
 let s:p.AddIfndefGuard={'title': 'AddIfndefGuard', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3895', 'archive_name': 'AddIfndefGuard.zip', 'type': 'archive'}
 let s:p.XML_Indent={'title': 'XML Indent', 'script-type': 'indent', 'version': '0.993', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4174', 'archive_name': 'xml.vim', 'type': 'archive'}
 let s:p.latexmenu={'title': 'latexmenu', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3889', 'archive_name': 'latexmenu.vim', 'type': 'archive'}
