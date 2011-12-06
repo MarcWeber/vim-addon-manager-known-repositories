@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.nscripter={'title': 'nscripter.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17029', 'archive_name': 'nscripter.vim', 'type': 'archive'}
 let s:p.ChickenSetupXp={'title': 'ChickenSetupXp', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17023', 'archive_name': 'chickensetup.xpt.vim', 'type': 'archive'}
 let s:p.ChickenMetaXp={'title': 'ChickenMetaXp', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17024', 'archive_name': 'chickenmeta.xpt.vim', 'type': 'archive'}
 let s:p['vim-octopress']={'title': 'vim-octopress', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17021', 'archive_name': 'vim-octopress.zip', 'type': 'archive'}
@@ -98,7 +99,7 @@ let s:p.gccsingle={'title': 'gccsingle.vim', 'script-type': 'utility', 'version'
 let s:p.blue_sky={'title': 'blue_sky', 'script-type': 'color scheme', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16522', 'archive_name': 'blue_sky.vim', 'type': 'archive'}
 let s:p.TagmaTips={'title': 'TagmaTips', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16499', 'archive_name': 'TagmaTips.zip', 'type': 'archive'}
 let s:p['sexy-railscasts']={'title': 'sexy-railscasts', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16498', 'archive_name': 'sexy-railscasts.vim', 'type': 'archive'}
-let s:p.ctrlp={'title': 'ctrlp.vim', 'script-type': 'utility', 'version': '1.6.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16944', 'archive_name': 'ctrlp.zip', 'type': 'archive'}
+let s:p.ctrlp={'title': 'ctrlp.vim', 'script-type': 'utility', 'version': '1.6.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17030', 'archive_name': 'ctrlp.zip', 'type': 'archive'}
 let s:p['bad-whitespace']={'title': 'bad-whitespace', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16488', 'archive_name': 'vim-bad-whitespace-0.2.tar.gz', 'type': 'archive'}
 let s:p.statusline={'title': 'statusline.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16487', 'archive_name': 'statusline.vim', 'type': 'archive'}
 let s:p.olga_key={'title': 'olga_key', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16478', 'archive_name': 'olga_key.vim', 'type': 'archive'}
@@ -3718,7 +3719,7 @@ let s:p.express={'title': 'express.vim', 'script-type': 'syntax', 'version': '1.
 let s:p.tex93={'title': 'tex.vim', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=418', 'archive_name': 'tex.vim', 'type': 'archive'}
 let s:p.borland92={'title': 'borland.vim', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=188', 'archive_name': 'borland.vim', 'type': 'archive'}
 let s:p.nsis={'title': 'nsis.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=184', 'archive_name': 'nsis.vim', 'type': 'archive'}
-let s:p.vcscommand={'title': 'vcscommand.vim', 'script-type': 'utility', 'version': '1.99.45', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16705', 'archive_name': 'vcscommand-1.99.45.zip', 'type': 'archive'}
+let s:p.vcscommand={'title': 'vcscommand.vim', 'script-type': 'utility', 'version': '1.99.46', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17031', 'archive_name': 'vcscommand-1.99.46.zip', 'type': 'archive'}
 let s:p.savevers={'title': 'savevers.vim', 'script-type': 'utility', 'version': '0.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=261', 'archive_name': 'savevers.vim', 'type': 'archive'}
 let s:p['vimtips.zip']={'title': 'vimtips.zip', 'script-type': 'utility', 'version': '2.2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=5969', 'archive_name': 'vimtips.zip', 'type': 'archive'}
 let s:p.plkeyb={'title': 'plkeyb.vim', 'script-type': 'utility', 'version': '2.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2022', 'archive_name': 'polish_keymap.zip', 'type': 'archive'}
