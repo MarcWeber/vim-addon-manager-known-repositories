@@ -5,17 +5,18 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.weibo={'title': 'weibo.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17035', 'archive_name': 'weibo.vim', 'type': 'archive'}
 let s:p.nscripter={'title': 'nscripter.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17029', 'archive_name': 'nscripter.vim', 'type': 'archive'}
 let s:p.ChickenSetupXp={'title': 'ChickenSetupXp', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17023', 'archive_name': 'chickensetup.xpt.vim', 'type': 'archive'}
 let s:p.ChickenMetaXp={'title': 'ChickenMetaXp', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17024', 'archive_name': 'chickenmeta.xpt.vim', 'type': 'archive'}
 let s:p['vim-octopress']={'title': 'vim-octopress', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17021', 'archive_name': 'vim-octopress.zip', 'type': 'archive'}
-let s:p.yankstack={'title': 'yankstack', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17018', 'archive_name': 'yankstack.tar', 'type': 'archive'}
+let s:p.yankstack={'title': 'yankstack', 'script-type': 'utility', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17033', 'archive_name': 'yankstack.tar', 'type': 'archive'}
 let s:p.TVO_The_Vim_Outliner_with_asciidoc_supp={'title': 'TVO: The Vim Outliner with asciidoc supp', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17014', 'archive_name': 'otl.vim', 'type': 'archive'}
 let s:p.SchemeXp={'title': 'SchemeXp', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17011', 'archive_name': 'scheme.xpt.vim', 'type': 'archive'}
 let s:p.LastBuf={'title': 'LastBuf.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17004', 'archive_name': 'lastbuf.vim.tar.gz', 'type': 'archive'}
 let s:p['better-snipmate-snippet']={'title': 'better-snipmate-snippet', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17020', 'archive_name': 'better-snipmate-snippets.tar.gz', 'type': 'archive'}
 let s:p.inline_edit={'title': 'inline_edit.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16996', 'archive_name': 'inline_edit.zip', 'type': 'archive'}
-let s:p.aurum={'title': 'aurum', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16995', 'archive_name': 'aurum-1.0.tar.gz', 'type': 'archive'}
+let s:p.aurum={'title': 'aurum', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17034', 'archive_name': 'aurum-1.1.tar.gz', 'type': 'archive'}
 let s:p['modeleasy-vim-plugin']={'title': 'modeleasy-vim-plugin', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16992', 'archive_name': 'modeleasy-vim-plugin-26-11-11.vba', 'type': 'archive'}
 let s:p.simple_bookmarks={'title': 'simple_bookmarks.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16991', 'archive_name': 'simple_bookmarks.zip', 'type': 'archive'}
 let s:p['Colour_theme_neon-pk']={'title': 'Colour theme (neon-pk)', 'script-type': 'color scheme', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16981', 'archive_name': 'neon-PK.vim', 'type': 'archive'}
@@ -83,7 +84,7 @@ let s:p.scribble={'title': 'scribble.vim', 'script-type': 'syntax', 'version': '
 let s:p.racket={'title': 'racket.vim', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16597', 'archive_name': 'racket.vim', 'type': 'archive'}
 let s:p.baancomplete={'title': 'baancomplete', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16575', 'archive_name': 'baancomplete.tar.gz', 'type': 'archive'}
 let s:p['vim-pad']={'title': 'vim-pad', 'script-type': 'utility', 'version': '0.5.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16848', 'archive_name': 'vim-pad_0.5.3.zip', 'type': 'archive'}
-let s:p.Vimpy={'title': 'Vimpy', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16559', 'archive_name': 'vimpy.zip', 'type': 'archive'}
+let s:p.Vimpy={'title': 'Vimpy', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17036', 'archive_name': 'vimpy.zip', 'type': 'archive'}
 let s:p.google_prettify={'title': 'google_prettify.vim', 'script-type': 'color scheme', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16556', 'archive_name': 'google_prettify.tar.gz', 'type': 'archive'}
 let s:p.TclShell={'title': 'TclShell', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16756', 'archive_name': 'TclShell-Vim.zip', 'type': 'archive'}
 let s:p.NagelfarVim={'title': 'NagelfarVim', 'script-type': 'utility', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16550', 'archive_name': 'Nagelfar-Vim_0.3.zip', 'type': 'archive'}
