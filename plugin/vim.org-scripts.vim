@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.cue={'title': 'cue.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17053', 'archive_name': 'cue.vim', 'type': 'archive'}
 let s:p.lrc={'title': 'lrc.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17049', 'archive_name': 'lrc.vim', 'type': 'archive'}
 let s:p.SpellCheck={'title': 'SpellCheck', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17044', 'archive_name': 'SpellCheck.vba.gz', 'type': 'archive'}
 let s:p.nodeunit={'title': 'nodeunit.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17040', 'archive_name': 'nodeunit.vim.tar.gz', 'type': 'archive'}
@@ -463,7 +464,7 @@ let s:p.JumpNextLongLine={'title': 'JumpNextLongLine', 'script-type': 'utility',
 let s:p.vcslogdiff={'title': 'vcslogdiff', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14612', 'archive_name': 'vcslogdiff.vim', 'type': 'archive'}
 let s:p.Vimblr={'title': 'Vimblr', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14609', 'archive_name': 'vimblr.zip', 'type': 'archive'}
 let s:p.FanVim={'title': 'FanVim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14685', 'archive_name': 'fanvim0.1-final.zip', 'type': 'archive'}
-let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.14', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17006', 'archive_name': 'notes.zip', 'type': 'archive'}
+let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.15', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17056', 'archive_name': 'notes.zip', 'type': 'archive'}
 let s:p.ColorSelect={'title': 'ColorSelect', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15042', 'archive_name': 'ColorSelect.zip', 'type': 'archive'}
 let s:p.blockle={'title': 'blockle.vim', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15538', 'archive_name': 'blockle.tar.gz', 'type': 'archive'}
 let s:p.hdl_plugin3371={'title': 'hdl_plugin', 'script-type': 'ftplugin', 'version': 'v2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14648', 'archive_name': 'hdl_plugin.vim', 'type': 'archive'}
@@ -687,7 +688,7 @@ let s:p.vorax={'title': 'vorax', 'script-type': 'utility', 'version': '2.8', 'ur
 let s:p['CSS_one-line__multi-line_folding']={'title': 'CSS one-line / multi-line folding', 'script-type': 'ftplugin', 'version': '0.''', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13344', 'archive_name': 'css_folding.vim', 'type': 'archive'}
 let s:p.sablecc={'title': 'sablecc.vim', 'script-type': 'syntax', 'version': 'July, 15th', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13983', 'archive_name': 'sablecc.vim', 'type': 'archive'}
 let s:p.pytestator={'title': 'pytestator', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13335', 'archive_name': 'pytestator.vim', 'type': 'archive'}
-let s:p.session3150={'title': 'session.vim', 'script-type': 'utility', 'version': '1.4.24', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16973', 'archive_name': 'session.zip', 'type': 'archive'}
+let s:p.session3150={'title': 'session.vim', 'script-type': 'utility', 'version': '1.4.25', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17055', 'archive_name': 'session.zip', 'type': 'archive'}
 let s:p.Smooth_Center={'title': 'Smooth Center', 'script-type': 'utility', 'version': '1.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13848', 'archive_name': 'SmoothCenter.vim', 'type': 'archive'}
 let s:p.reload={'title': 'reload.vim', 'script-type': 'utility', 'version': '0.6.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17005', 'archive_name': 'reload.zip', 'type': 'archive'}
 let s:p.wmgraphviz={'title': 'wmgraphviz', 'script-type': 'ftplugin', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14529', 'archive_name': 'wmgraphviz.vim.tgz', 'type': 'archive'}
@@ -891,7 +892,7 @@ let s:p.The_Max_Impact_Experiment={'title': 'The Max Impact Experiment', 'script
 let s:p.GoogleSuggest_Complete={'title': 'GoogleSuggest Complete', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12221', 'archive_name': 'googlesuggest-complete.vim', 'type': 'archive'}
 let s:p.bvemu={'title': 'bvemu.vim', 'script-type': 'color scheme', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12201', 'archive_name': 'bvemu.vim', 'type': 'archive'}
 let s:p.AGTD={'title': 'AGTD', 'script-type': 'utility', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15259', 'archive_name': 'agtd.vba', 'type': 'archive'}
-let s:p.AutomaticLaTexPlugin={'title': 'AutomaticLaTexPlugin', 'script-type': 'ftplugin', 'version': '10.6.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17050', 'archive_name': 'AutomaticTexPlugin_10.6.2.vmb', 'type': 'archive'}
+let s:p.AutomaticLaTexPlugin={'title': 'AutomaticLaTexPlugin', 'script-type': 'ftplugin', 'version': '10.6.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17054', 'archive_name': 'AutomaticTexPlugin_10.6.3.vmb', 'type': 'archive'}
 let s:p.visualstar={'title': 'visualstar.vim', 'script-type': 'utility', 'version': '0.2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12891', 'archive_name': 'vim-visualstar-0.2.1.zip', 'type': 'archive'}
 let s:p.ccvext={'title': 'ccvext.vim', 'script-type': 'ftplugin', 'version': '4.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16390', 'archive_name': 'ccvext.vim', 'type': 'archive'}
 let s:p.RubySinatra={'title': 'Ruby/Sinatra', 'script-type': 'syntax', 'version': '0.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12222', 'archive_name': 'ruby-sinatra-0.2.0.vba.gz', 'type': 'archive'}
