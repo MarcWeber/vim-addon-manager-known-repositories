@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p['bonusbonusbonus.cn']={'title': 'bonusbonusbonus.cn', 'script-type': 'utility', 'version': 'alpha', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17058', 'archive_name': 'bonusbonusbonus.cn.rar', 'type': 'archive'}
 let s:p.cue={'title': 'cue.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17053', 'archive_name': 'cue.vim', 'type': 'archive'}
 let s:p.lrc={'title': 'lrc.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17049', 'archive_name': 'lrc.vim', 'type': 'archive'}
 let s:p.SpellCheck={'title': 'SpellCheck', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17044', 'archive_name': 'SpellCheck.vba.gz', 'type': 'archive'}
@@ -12,7 +13,7 @@ let s:p.nodeunit={'title': 'nodeunit.vim', 'script-type': 'utility', 'version': 
 let s:p.nose={'title': 'nose.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17039', 'archive_name': 'nose.vim.tar.gz', 'type': 'archive'}
 let s:p['vim-django-support']={'title': 'vim-django-support', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17038', 'archive_name': 'vim-django-support.tar.gz', 'type': 'archive'}
 let s:p['vim-python-virtualenv']={'title': 'vim-python-virtualenv', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17037', 'archive_name': 'vim-python-virtualenv.tar.gz', 'type': 'archive'}
-let s:p.weibo={'title': 'weibo.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17035', 'archive_name': 'weibo.vim', 'type': 'archive'}
+let s:p.weibo={'title': 'weibo.vim', 'script-type': 'utility', 'version': '0.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17057', 'archive_name': 'weibo.vim', 'type': 'archive'}
 let s:p.nscripter={'title': 'nscripter.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17029', 'archive_name': 'nscripter.vim', 'type': 'archive'}
 let s:p.ChickenSetupXp={'title': 'ChickenSetupXp', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17023', 'archive_name': 'chickensetup.xpt.vim', 'type': 'archive'}
 let s:p.ChickenMetaXp={'title': 'ChickenMetaXp', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17024', 'archive_name': 'chickenmeta.xpt.vim', 'type': 'archive'}
