@@ -5,10 +5,10 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
-let s:p['bonusbonusbonus.cn']={'title': 'bonusbonusbonus.cn', 'script-type': 'utility', 'version': 'alpha', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17058', 'archive_name': 'bonusbonusbonus.cn.rar', 'type': 'archive'}
+let s:p.visualrepeat={'title': 'visualrepeat', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17062', 'archive_name': 'visualrepeat.vba.gz', 'type': 'archive'}
 let s:p.cue={'title': 'cue.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17053', 'archive_name': 'cue.vim', 'type': 'archive'}
 let s:p.lrc={'title': 'lrc.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17049', 'archive_name': 'lrc.vim', 'type': 'archive'}
-let s:p.SpellCheck={'title': 'SpellCheck', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17044', 'archive_name': 'SpellCheck.vba.gz', 'type': 'archive'}
+let s:p.SpellCheck={'title': 'SpellCheck', 'script-type': 'utility', 'version': '1.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17063', 'archive_name': 'SpellCheck.vba.gz', 'type': 'archive'}
 let s:p.nodeunit={'title': 'nodeunit.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17040', 'archive_name': 'nodeunit.vim.tar.gz', 'type': 'archive'}
 let s:p.nose={'title': 'nose.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17039', 'archive_name': 'nose.vim.tar.gz', 'type': 'archive'}
 let s:p['vim-django-support']={'title': 'vim-django-support', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17038', 'archive_name': 'vim-django-support.tar.gz', 'type': 'archive'}
@@ -116,7 +116,7 @@ let s:p['vim-rpsl']={'title': 'vim-rpsl', 'script-type': 'syntax', 'version': '0
 let s:p.putcmd={'title': 'putcmd.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16526', 'archive_name': 'putcmd.vim', 'type': 'archive'}
 let s:p['vim-pandoc']={'title': 'vim-pandoc', 'script-type': 'ftplugin', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16532', 'archive_name': 'vim-pandoc-2.0.zip', 'type': 'archive'}
 let s:p.Galaxy={'title': 'Galaxy', 'script-type': 'color scheme', 'version': '1.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16501', 'archive_name': 'vim-galaxy_1.1.0.tar.gz', 'type': 'archive'}
-let s:p.right_align={'title': 'right_align', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16941', 'archive_name': 'right_align.vim', 'type': 'archive'}
+let s:p.right_align={'title': 'right_align', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17060', 'archive_name': 'right_align.vim', 'type': 'archive'}
 let s:p.easychair={'title': 'easychair', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16452', 'archive_name': 'easychair-1.0.tar.gz', 'type': 'archive'}
 let s:p.mcabberlog={'title': 'mcabberlog.vim', 'script-type': 'syntax', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16468', 'archive_name': 'mcabberlog.vim', 'type': 'archive'}
 let s:p['indent-motion']={'title': 'indent-motion', 'script-type': 'patch', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16440', 'archive_name': 'indent-motion.vim', 'type': 'archive'}
@@ -332,7 +332,7 @@ let s:p.Scala_Java_Edit={'title': 'Scala Java Edit', 'script-type': 'utility', '
 let s:p.text_object_left_and_right={'title': 'text object left and right', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15328', 'archive_name': 'left_right_text_object.vim', 'type': 'archive'}
 let s:p.VimRepress={'title': 'VimRepress', 'script-type': 'utility', 'version': '2.1.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16490', 'archive_name': 'vimpress-stable_2.1.5_r81_13e8413bc8e7.zip', 'type': 'archive'}
 let s:p.extradite={'title': 'extradite.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15239', 'archive_name': 'extradite.zip', 'type': 'archive'}
-let s:p.TeX_9={'title': 'TeX 9', 'script-type': 'ftplugin', 'version': '1.1.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16025', 'archive_name': 'tex_nine-1.1.5.tar.gz', 'type': 'archive'}
+let s:p.TeX_9={'title': 'TeX 9', 'script-type': 'ftplugin', 'version': '1.1.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17064', 'archive_name': 'tex_nine-1.1.6.tar.gz', 'type': 'archive'}
 let s:p.scrnpipe={'title': 'scrnpipe.vim', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15236', 'archive_name': 'scrnpipe.vim', 'type': 'archive'}
 let s:p.compilerpcc={'title': 'compiler/pcc.vim', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15232', 'archive_name': 'compiler-pcc.zip', 'type': 'archive'}
 let s:p.PasteBin={'title': 'PasteBin.vim', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15283', 'archive_name': 'pastebin.vim', 'type': 'archive'}
@@ -465,7 +465,7 @@ let s:p.JumpNextLongLine={'title': 'JumpNextLongLine', 'script-type': 'utility',
 let s:p.vcslogdiff={'title': 'vcslogdiff', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14612', 'archive_name': 'vcslogdiff.vim', 'type': 'archive'}
 let s:p.Vimblr={'title': 'Vimblr', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14609', 'archive_name': 'vimblr.zip', 'type': 'archive'}
 let s:p.FanVim={'title': 'FanVim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14685', 'archive_name': 'fanvim0.1-final.zip', 'type': 'archive'}
-let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.15', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17056', 'archive_name': 'notes.zip', 'type': 'archive'}
+let s:p.notes={'title': 'notes.vim', 'script-type': 'utility', 'version': '0.16.16', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17065', 'archive_name': 'notes.zip', 'type': 'archive'}
 let s:p.ColorSelect={'title': 'ColorSelect', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15042', 'archive_name': 'ColorSelect.zip', 'type': 'archive'}
 let s:p.blockle={'title': 'blockle.vim', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15538', 'archive_name': 'blockle.tar.gz', 'type': 'archive'}
 let s:p.hdl_plugin3371={'title': 'hdl_plugin', 'script-type': 'ftplugin', 'version': 'v2.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14648', 'archive_name': 'hdl_plugin.vim', 'type': 'archive'}
@@ -1102,7 +1102,7 @@ let s:p.vimper={'title': 'vimper', 'script-type': 'utility', 'version': '0.1.1',
 let s:p.bclear={'title': 'bclear', 'script-type': 'color scheme', 'version': '20101017', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14069', 'archive_name': 'bclear.vim', 'type': 'archive'}
 let s:p.v2={'title': 'v2.vim', 'script-type': 'syntax', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11209', 'archive_name': 'v2.vim', 'type': 'archive'}
 let s:p.bib_autocomp={'title': 'bib_autocomp.vim', 'script-type': 'ftplugin', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11194', 'archive_name': 'bib_autocomp.vim', 'type': 'archive'}
-let s:p.Syntastic={'title': 'Syntastic', 'script-type': 'utility', 'version': '2.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17007', 'archive_name': 'syntastic.zip', 'type': 'archive'}
+let s:p.Syntastic={'title': 'Syntastic', 'script-type': 'utility', 'version': '2.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17061', 'archive_name': 'syntastic.zip', 'type': 'archive'}
 let s:p.Logcat_syntax_highlighter={'title': 'Logcat syntax highlighter', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11179', 'archive_name': 'logcat.vim', 'type': 'archive'}
 let s:p.PreviewDialog={'title': 'PreviewDialog', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11163', 'archive_name': 'preview_dialog.vba', 'type': 'archive'}
 let s:p.Buffer_Reminder_Remake={'title': 'Buffer Reminder Remake', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16052', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive'}
@@ -1210,7 +1210,7 @@ let s:p.nimrod={'title': 'nimrod.vim', 'script-type': 'syntax', 'version': '1.1'
 let s:p.dosbatch_indent={'title': 'dosbatch indent', 'script-type': 'indent', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10590', 'archive_name': 'dosbatch.vim', 'type': 'archive'}
 let s:p.compilerjsl={'title': 'compiler/jsl.vim', 'script-type': 'ftplugin', 'version': '1.00.003', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10576', 'archive_name': 'jsl.vim', 'type': 'archive'}
 let s:p.explorer={'title': 'explorer', 'script-type': 'utility', 'version': '2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10565', 'archive_name': 'explorer.vim', 'type': 'archive'}
-let s:p['Vim-R-plugin']={'title': 'Vim-R-plugin', 'script-type': 'ftplugin', 'version': '0.9.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17032', 'archive_name': 'vim-r-plugin-0.9.5.zip', 'type': 'archive'}
+let s:p['Vim-R-plugin']={'title': 'Vim-R-plugin', 'script-type': 'ftplugin', 'version': '0.9.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17059', 'archive_name': 'vim-r-plugin-0.9.6.zip', 'type': 'archive'}
 let s:p.exVim={'title': 'exVim', 'script-type': 'utility', 'version': '8.05_b2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14684', 'archive_name': 'ex_plugins_package-unix-8.05_b2.zip', 'type': 'archive'}
 let s:p.Vimya={'title': 'Vimya', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11966', 'archive_name': 'vimya-0.2.zip', 'type': 'archive'}
 let s:p.Cabal={'title': 'Cabal.vim', 'script-type': 'syntax', 'version': '1,4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16755', 'archive_name': 'cabal.vim', 'type': 'archive'}
