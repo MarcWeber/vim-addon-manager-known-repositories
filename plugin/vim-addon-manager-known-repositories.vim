@@ -13,6 +13,7 @@ unlet s:c.vim_org_sources
 " SCM plugin sources {{{
 " this source seems to be more up to date then the www.vim.org version:
 let s:scm_plugin_sources = {}
+let s:scm_plugin_sources['mustache'] = { 'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim' }
 let s:scm_plugin_sources['Command-T'] = { 'type' : 'git', 'url' : 'git://git.wincent.com/command-t.git' }
 let s:scm_plugin_sources['Conque_Shell'] = { 'type': 'svn', 'url': 'http://conque.googlecode.com/svn/trunk/' }
 let s:scm_plugin_sources['pyinteractive'] = { 'type' : 'hg', 'url' : 'https://vim-pyinteractive-plugin.googlecode.com/hg/' }
