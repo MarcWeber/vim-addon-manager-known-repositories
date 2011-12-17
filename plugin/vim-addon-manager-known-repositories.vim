@@ -504,7 +504,7 @@ let s:scm_plugin_sources['pyflakes2441'] = { 'type' : 'git', 'url' : 'git://gith
 let s:scm_plugin_sources['git-vim'] = { 'type' : 'git', 'url' : 'git://github.com/motemen/git-vim.git' }
 
 " Gunther Groenewege
-let s:scm_plugin_sources['vim-less'] = { 'type' : 'git', 'url':  'https://github.com/groenewege/vim-less' }
+let s:scm_plugin_sources['vim-less'] = { 'type' : 'git', 'url':  'git://github.com/groenewege/vim-less' }
 
 " add / correct some types:
 let s:plugin_sources['php1571']['strip-components'] = 0
