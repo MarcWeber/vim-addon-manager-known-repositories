@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p['git-time-lapse']={'title': 'git-time-lapse', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17077', 'archive_name': 'time-lapse.vim', 'type': 'archive'}
 let s:p.visualrepeat={'title': 'visualrepeat', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17062', 'archive_name': 'visualrepeat.vba.gz', 'type': 'archive'}
 let s:p.cue={'title': 'cue.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17053', 'archive_name': 'cue.vim', 'type': 'archive'}
 let s:p.lrc={'title': 'lrc.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17049', 'archive_name': 'lrc.vim', 'type': 'archive'}
@@ -23,7 +24,7 @@ let s:p.TVO_The_Vim_Outliner_with_asciidoc_supp={'title': 'TVO: The Vim Outliner
 let s:p.SchemeXp={'title': 'SchemeXp', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17011', 'archive_name': 'scheme.xpt.vim', 'type': 'archive'}
 let s:p.LastBuf={'title': 'LastBuf.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17004', 'archive_name': 'lastbuf.vim.tar.gz', 'type': 'archive'}
 let s:p['better-snipmate-snippet']={'title': 'better-snipmate-snippet', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17020', 'archive_name': 'better-snipmate-snippets.tar.gz', 'type': 'archive'}
-let s:p.inline_edit={'title': 'inline_edit.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16996', 'archive_name': 'inline_edit.zip', 'type': 'archive'}
+let s:p.inline_edit={'title': 'inline_edit.vim', 'script-type': 'utility', 'version': '0.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17079', 'archive_name': 'inline_edit.zip', 'type': 'archive'}
 let s:p.aurum={'title': 'aurum', 'script-type': 'utility', 'version': '1.2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17047', 'archive_name': 'aurum-1.2.2.tar.gz', 'type': 'archive'}
 let s:p['modeleasy-vim-plugin']={'title': 'modeleasy-vim-plugin', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16992', 'archive_name': 'modeleasy-vim-plugin-26-11-11.vba', 'type': 'archive'}
 let s:p.simple_bookmarks={'title': 'simple_bookmarks.vim', 'script-type': 'utility', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16991', 'archive_name': 'simple_bookmarks.zip', 'type': 'archive'}
@@ -40,7 +41,7 @@ let s:p.log3814={'title': 'log.vim', 'script-type': 'syntax', 'version': '0.1', 
 let s:p.tex_AutoKeymap={'title': 'tex_AutoKeymap', 'script-type': 'ftplugin', 'version': '0.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16906', 'archive_name': 'tex_AutoKeymap.vim', 'type': 'archive'}
 let s:p.project={'title': 'project.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17002', 'archive_name': 'project.vim', 'type': 'archive'}
 let s:p.RSTO={'title': 'RSTO', 'script-type': 'utility', 'version': '0.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16910', 'archive_name': 'rsto.vim', 'type': 'archive'}
-let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16909', 'archive_name': 'ipi.vim', 'type': 'archive'}
+let s:p.ipi={'title': 'ipi', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17078', 'archive_name': 'ipi.vim', 'type': 'archive'}
 let s:p.TFS={'title': 'TFS', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16892', 'archive_name': 'tfs.zip', 'type': 'archive'}
 let s:p.apg={'title': 'apg.vim', 'script-type': 'ftplugin', 'version': '0.00001', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16877', 'archive_name': 'apg.vim', 'type': 'archive'}
 let s:p.openrel={'title': 'openrel.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16870', 'archive_name': 'openrel.vim', 'type': 'archive'}
@@ -195,7 +196,7 @@ let s:p.googleclosurevim={'title': 'googleclosurevim', 'script-type': 'utility',
 let s:p.cakephp={'title': 'cakephp.vim', 'script-type': 'utility', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16058', 'archive_name': 'cakephp.zip', 'type': 'archive'}
 let s:p.simpleRGB={'title': 'simpleRGB', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16005', 'archive_name': 'simpleRGB.vim', 'type': 'archive'}
 let s:p.AutoCpp={'title': 'AutoCpp', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16011', 'archive_name': 'autocpp.vim', 'type': 'archive'}
-let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17052', 'archive_name': 'win32bin.zip', 'type': 'archive'}
+let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.8.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17080', 'archive_name': 'VimLite-515.tar.bz2', 'type': 'archive'}
 let s:p.Filesearch={'title': 'Filesearch', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16040', 'archive_name': 'vim-filesearch-v1.2.0.tar.gz', 'type': 'archive'}
 let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16952', 'archive_name': 'gnupg.vim', 'type': 'archive'}
 let s:p.vimgtd={'title': 'vimgtd', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16333', 'archive_name': 'vimgtd.zip', 'type': 'archive'}
@@ -921,7 +922,7 @@ let s:p.FirstEffectiveLine={'title': 'FirstEffectiveLine.vim', 'script-type': 'u
 let s:p.Mercury_compiler_support={'title': 'Mercury compiler support', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12025', 'archive_name': 'Mercury.vba', 'type': 'archive'}
 let s:p.Preamble={'title': 'Preamble', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12021', 'archive_name': 'Preamble.vba', 'type': 'archive'}
 let s:p.SpitVspit={'title': 'SpitVspit', 'script-type': 'utility', 'version': '2.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14940', 'archive_name': 'SpitVspit_2_1_1.tar.gz', 'type': 'archive'}
-let s:p.tplugin={'title': 'tplugin', 'script-type': 'utility', 'version': '0.12', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15733', 'archive_name': 'tplugin.vba', 'type': 'archive'}
+let s:p.tplugin={'title': 'tplugin', 'script-type': 'utility', 'version': '0.13', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17075', 'archive_name': 'tplugin.vba', 'type': 'archive'}
 let s:p.extended_help={'title': 'extended help', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12029', 'archive_name': 'extended_help.vim', 'type': 'archive'}
 let s:p.startup_profile={'title': 'startup_profile', 'script-type': 'patch', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12036', 'archive_name': 'startup_profile.vba.gz', 'type': 'archive'}
 let s:p.pep82914={'title': 'pep8', 'script-type': 'utility', 'version': '0.3.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14366', 'archive_name': 'pep8.vim', 'type': 'archive'}
@@ -2671,7 +2672,7 @@ let s:p.EditJava={'title': 'EditJava', 'script-type': 'utility', 'version': '1.4
 let s:p.html_danish={'title': 'html_danish', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3723', 'archive_name': 'html_da.vim', 'type': 'archive'}
 let s:p.jexplorer={'title': 'jexplorer', 'script-type': 'utility', 'version': '0.5beta', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3721', 'archive_name': 'jexplorer.zip', 'type': 'archive'}
 let s:p.foldcol={'title': 'foldcol.vim', 'script-type': 'utility', 'version': '2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3720', 'archive_name': 'foldcol.vim.gz', 'type': 'archive'}
-let s:p.tSkeleton={'title': 'tSkeleton', 'script-type': 'utility', 'version': '4.11', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15993', 'archive_name': 'tskeleton.vba', 'type': 'archive'}
+let s:p.tSkeleton={'title': 'tSkeleton', 'script-type': 'utility', 'version': '4.12', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17076', 'archive_name': 'tskeleton.vba', 'type': 'archive'}
 let s:p.pagemaker6={'title': 'pagemaker6', 'script-type': 'syntax', 'version': '20010730', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3712', 'archive_name': 'pagemaker.vim', 'type': 'archive'}
 let s:p.unhtml={'title': 'unhtml', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3709', 'archive_name': 'unhtml.vim', 'type': 'archive'}
 let s:p.txt2tags={'title': 'txt2tags', 'script-type': 'syntax', 'version': '20040714', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=3708', 'archive_name': 'txt2tags.vim', 'type': 'archive'}
