@@ -5,7 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
-let s:p.Mark_Ring={'title': 'Mark Ring', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17091', 'archive_name': 'mark_ring.tgz', 'type': 'archive'}
+let s:p['Mark-Ring']={'title': 'Mark-Ring', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17091', 'archive_name': 'mark_ring.tgz', 'type': 'archive'}
 let s:p.boolpat={'title': 'boolpat.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17087', 'archive_name': 'boolpat.vim', 'type': 'archive'}
 let s:p['git-time-lapse']={'title': 'git-time-lapse', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17077', 'archive_name': 'time-lapse.vim', 'type': 'archive'}
 let s:p.visualrepeat={'title': 'visualrepeat', 'script-type': 'utility', 'version': '1.00', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17062', 'archive_name': 'visualrepeat.vba.gz', 'type': 'archive'}
@@ -198,7 +198,7 @@ let s:p.googleclosurevim={'title': 'googleclosurevim', 'script-type': 'utility',
 let s:p.cakephp={'title': 'cakephp.vim', 'script-type': 'utility', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16058', 'archive_name': 'cakephp.zip', 'type': 'archive'}
 let s:p.simpleRGB={'title': 'simpleRGB', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16005', 'archive_name': 'simpleRGB.vim', 'type': 'archive'}
 let s:p.AutoCpp={'title': 'AutoCpp', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16011', 'archive_name': 'autocpp.vim', 'type': 'archive'}
-let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.8.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17082', 'archive_name': 'VimLite-515.tar.bz2', 'type': 'archive'}
+let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17093', 'archive_name': 'win32bin.zip', 'type': 'archive'}
 let s:p.Filesearch={'title': 'Filesearch', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16040', 'archive_name': 'vim-filesearch-v1.2.0.tar.gz', 'type': 'archive'}
 let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16952', 'archive_name': 'gnupg.vim', 'type': 'archive'}
 let s:p.vimgtd={'title': 'vimgtd', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16333', 'archive_name': 'vimgtd.zip', 'type': 'archive'}
