@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.Festoon={'title': 'Festoon', 'script-type': 'color scheme', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17094', 'archive_name': 'festoon.vim', 'type': 'archive'}
 let s:p['Mark-Ring']={'title': 'Mark-Ring', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17091', 'archive_name': 'mark_ring.tgz', 'type': 'archive'}
 let s:p.boolpat={'title': 'boolpat.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17087', 'archive_name': 'boolpat.vim', 'type': 'archive'}
 let s:p['git-time-lapse']={'title': 'git-time-lapse', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17077', 'archive_name': 'time-lapse.vim', 'type': 'archive'}
@@ -141,7 +142,7 @@ let s:p['vim-ipython']={'title': 'vim-ipython', 'script-type': 'ftplugin', 'vers
 let s:p.swapcol={'title': 'swapcol.vim', 'script-type': 'utility', 'version': '2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16370', 'archive_name': 'swapcol.vim', 'type': 'archive'}
 let s:p.lemon256={'title': 'lemon256', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16344', 'archive_name': 'lemon256.vim', 'type': 'archive'}
 let s:p['obvious-resize']={'title': 'obvious-resize', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16405', 'archive_name': 'obvious-resize-1.1.zip', 'type': 'archive'}
-let s:p.Rcode={'title': 'Rcode', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16339', 'archive_name': 'rcode.vim', 'type': 'archive'}
+let s:p.Rcode={'title': 'Rcode', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17095', 'archive_name': 'rcode.vim', 'type': 'archive'}
 let s:p.Transcription_Name_Helper={'title': 'Transcription Name Helper', 'script-type': 'ftplugin', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16432', 'archive_name': 'tra.zip', 'type': 'archive'}
 let s:p['zim-syntax']={'title': 'zim-syntax', 'script-type': 'syntax', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17085', 'archive_name': 'zim.tar.gz', 'type': 'archive'}
 let s:p.sql3702={'title': 'sql.vim', 'script-type': 'syntax', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16325', 'archive_name': 'sql.vim', 'type': 'archive'}
@@ -198,7 +199,7 @@ let s:p.googleclosurevim={'title': 'googleclosurevim', 'script-type': 'utility',
 let s:p.cakephp={'title': 'cakephp.vim', 'script-type': 'utility', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16058', 'archive_name': 'cakephp.zip', 'type': 'archive'}
 let s:p.simpleRGB={'title': 'simpleRGB', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16005', 'archive_name': 'simpleRGB.vim', 'type': 'archive'}
 let s:p.AutoCpp={'title': 'AutoCpp', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16011', 'archive_name': 'autocpp.vim', 'type': 'archive'}
-let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17093', 'archive_name': 'win32bin.zip', 'type': 'archive'}
+let s:p.VimLite={'title': 'VimLite', 'script-type': 'utility', 'version': '0.8.9.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17096', 'archive_name': 'VimLite-526.tar.bz2', 'type': 'archive'}
 let s:p.Filesearch={'title': 'Filesearch', 'script-type': 'utility', 'version': '1.2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16040', 'archive_name': 'vim-filesearch-v1.2.0.tar.gz', 'type': 'archive'}
 let s:p.gnupg3645={'title': 'gnupg.vim', 'script-type': 'utility', 'version': '2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16952', 'archive_name': 'gnupg.vim', 'type': 'archive'}
 let s:p.vimgtd={'title': 'vimgtd', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16333', 'archive_name': 'vimgtd.zip', 'type': 'archive'}
@@ -819,7 +820,7 @@ let s:p.PickAColor={'title': 'PickAColor.vim', 'script-type': 'utility', 'versio
 let s:p['Command-T']={'title': 'Command-T', 'script-type': 'utility', 'version': '1.3.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17084', 'archive_name': 'command-t-1.3.1.vba', 'type': 'archive'}
 let s:p.vimake={'title': 'vimake', 'script-type': 'color scheme', 'version': '1-18', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15501', 'archive_name': 'vimake-1.18.tar.gz', 'type': 'archive'}
 let s:p.tslime={'title': 'tslime.vim', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14151', 'archive_name': 'tslime.vim', 'type': 'archive'}
-let s:p.Bookmarking={'title': 'Bookmarking', 'script-type': 'utility', 'version': '2.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16885', 'archive_name': 'bookmarking.vba', 'type': 'archive'}
+let s:p.Bookmarking={'title': 'Bookmarking', 'script-type': 'utility', 'version': '2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17097', 'archive_name': 'bookmarking.vba', 'type': 'archive'}
 let s:p.Find_files={'title': 'Find files', 'script-type': 'utility', 'version': '1.02', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12657', 'archive_name': 'findfiles.vim', 'type': 'archive'}
 let s:p.EasyOpts={'title': 'EasyOpts', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12794', 'archive_name': 'easyopts.tar.gz', 'type': 'archive'}
 let s:p.spin={'title': 'spin.vim', 'script-type': 'syntax', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14662', 'archive_name': 'spin.vim', 'type': 'archive'}
