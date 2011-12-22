@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.ide={'title': 'ide', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17101', 'archive_name': 'ide.tar', 'type': 'archive'}
+let s:p['unite-scriptenames']={'title': 'unite-scriptenames', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17099', 'archive_name': 'unite-scriptnames.zip', 'type': 'archive'}
+let s:p.dokuwiki3853={'title': 'dokuwiki', 'script-type': 'utility', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17098', 'archive_name': 'dokuwiki-1.tar', 'type': 'archive'}
 let s:p.Festoon={'title': 'Festoon', 'script-type': 'color scheme', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17094', 'archive_name': 'festoon.vim', 'type': 'archive'}
 let s:p['Mark-Ring']={'title': 'Mark-Ring', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17091', 'archive_name': 'mark_ring.tgz', 'type': 'archive'}
 let s:p.boolpat={'title': 'boolpat.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17087', 'archive_name': 'boolpat.vim', 'type': 'archive'}
@@ -247,7 +250,7 @@ let s:p.calm={'title': 'calm', 'script-type': 'color scheme', 'version': '1.0', 
 let s:p['reorder-columns']={'title': 'reorder-columns', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15719', 'archive_name': 'vim-reorder-columns.zip', 'type': 'archive'}
 let s:p['cmdline-insertdatetime']={'title': 'cmdline-insertdatetime', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15718', 'archive_name': 'vim-cmdline-insertdatetime.zip', 'type': 'archive'}
 let s:p.octave3600={'title': 'octave.vim', 'script-type': 'syntax', 'version': '3.4.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16658', 'archive_name': 'octave.vim', 'type': 'archive'}
-let s:p.Auto_Pairs={'title': 'Auto Pairs', 'script-type': 'utility', 'version': '1.1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16858', 'archive_name': 'auto-pairs-v1.1.2.tar.gz', 'type': 'archive'}
+let s:p.Auto_Pairs={'title': 'Auto Pairs', 'script-type': 'utility', 'version': '1.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17100', 'archive_name': 'auto-pairs-v1.1.3.tar.gz', 'type': 'archive'}
 let s:p.Advancer_Abbreviation={'title': 'Advancer Abbreviation', 'script-type': 'utility', 'version': '1.0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15836', 'archive_name': 'advancer-abbreviation-v1.0.3.tar.gz', 'type': 'archive'}
 let s:p.ColorV={'title': 'ColorV', 'script-type': 'utility', 'version': '2.5.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16500', 'archive_name': 'ColorV_2.5.3.tar.gz', 'type': 'archive'}
 let s:p.Fanfou={'title': 'Fanfou.vim', 'script-type': 'utility', 'version': '0.50', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16326', 'archive_name': 'fanfou_0.50.zip', 'type': 'archive'}
@@ -982,7 +985,7 @@ let s:p.NSIS_syntax_highlighting={'title': 'NSIS syntax highlighting', 'script-t
 let s:p.GNU_as_syntax={'title': 'GNU as syntax', 'script-type': 'syntax', 'version': '0.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11980', 'archive_name': 'gas.vim', 'type': 'archive'}
 let s:p.JumpInCode_new_update={'title': 'JumpInCode (new update)', 'script-type': 'ftplugin', 'version': '1.03', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11954', 'archive_name': 'JumpInCode_Plus.vim', 'type': 'archive'}
 let s:p.zzzi_cant_delete_this={'title': 'zzz(i can''t delete this)', 'script-type': 'utility', 'version': '1.7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11821', 'archive_name': 'fastgit-vim-1.7.tar.gz', 'type': 'archive'}
-let s:p.prettyprint={'title': 'prettyprint.vim', 'script-type': 'utility', 'version': '0.3.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13769', 'archive_name': 'vim-prettyprint-0.3.1.zip', 'type': 'archive'}
+let s:p.prettyprint={'title': 'prettyprint.vim', 'script-type': 'utility', 'version': '0.3.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17102', 'archive_name': 'vim-prettyprint-0.3.2.zip', 'type': 'archive'}
 let s:p.grey2={'title': 'grey2', 'script-type': 'color scheme', 'version': '2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12379', 'archive_name': 'grey2.vim', 'type': 'archive'}
 let s:p['textobj-fatpack']={'title': 'textobj-fatpack', 'script-type': 'utility', 'version': '0.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11764', 'archive_name': 'vim-textobj-fatpack-0.0.0.zip', 'type': 'archive'}
 let s:p.exjumplist={'title': 'exjumplist', 'script-type': 'utility', 'version': '0.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11763', 'archive_name': 'vim-exjumplist-0.0.0.zip', 'type': 'archive'}
@@ -1083,7 +1086,7 @@ let s:p.falcon2763={'title': 'falcon.vim', 'script-type': 'ftplugin', 'version':
 let s:p.falcon2762={'title': 'falcon.vim', 'script-type': 'ftplugin', 'version': '0.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11292', 'archive_name': 'falcon.vim', 'type': 'archive'}
 let s:p.qtmplsel={'title': 'qtmplsel.vim', 'script-type': 'utility', 'version': '1.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12046', 'archive_name': 'qtmplsel.vim', 'type': 'archive'}
 let s:p.Tortoise={'title': 'Tortoise', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11285', 'archive_name': 'tortoise-1.0.zip', 'type': 'archive'}
-let s:p.Quich_Filter={'title': 'Quich Filter', 'script-type': 'utility', 'version': '2.0alpha3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16249', 'archive_name': 'filtering2.zip', 'type': 'archive'}
+let s:p.Quich_Filter={'title': 'Quich Filter', 'script-type': 'utility', 'version': '2.0beta1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17103', 'archive_name': 'filtering2.zip', 'type': 'archive'}
 let s:p.Mustang2={'title': 'Mustang2', 'script-type': 'color scheme', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11274', 'archive_name': 'Mustang.vim', 'type': 'archive'}
 let s:p.forneus={'title': 'forneus', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11248', 'archive_name': 'forneus.vim', 'type': 'archive'}
 let s:p['color-chooser']={'title': 'color-chooser.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11242', 'archive_name': 'color-chooser.vim', 'type': 'archive'}
@@ -1468,7 +1471,7 @@ let s:p.mlint2378={'title': 'mlint.vim', 'script-type': 'ftplugin', 'version': '
 let s:p.htmlspecialchars={'title': 'htmlspecialchars', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9255', 'archive_name': 'htmlspecialchars.vba', 'type': 'archive'}
 let s:p['vim-addon-sql']={'title': 'vim-addon-sql', 'script-type': 'utility', 'version': '0.2.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15618', 'archive_name': 'vim-addon-sql-0.2.4.zip', 'type': 'archive'}
 let s:p.if_v8={'title': 'if_v8', 'script-type': 'game', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13343', 'archive_name': 'if_v8.zip', 'type': 'archive'}
-let s:p.dokuwiki={'title': 'dokuwiki.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9241', 'archive_name': 'dokuwiki.vim', 'type': 'archive'}
+let s:p.dokuwiki2374={'title': 'dokuwiki.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9241', 'archive_name': 'dokuwiki.vim', 'type': 'archive'}
 let s:p.ClosePairs={'title': 'ClosePairs', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9239', 'archive_name': 'closepairs.vim', 'type': 'archive'}
 let s:p.automatic_for_Verilog={'title': 'automatic for Verilog', 'script-type': 'ftplugin', 'version': '1.55', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9296', 'archive_name': 'automatic.vim', 'type': 'archive'}
 let s:p.sqloracle={'title': 'sqloracle.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9226', 'archive_name': 'sqloracle.vim', 'type': 'archive'}
