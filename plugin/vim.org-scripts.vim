@@ -5,6 +5,9 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.rmvim={'title': 'rmvim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17106', 'archive_name': 'rmvim-v1.0.vim.tgz', 'type': 'archive'}
+let s:p.Word_Fuzzy_Completion_={'title': 'Word Fuzzy Completion ', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17111', 'archive_name': 'vim-wordfuzzycompletion-plugin-v0.5.zip', 'type': 'archive'}
+let s:p.tocdown={'title': 'tocdown', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17104', 'archive_name': 'tocdown.zip', 'type': 'archive'}
 let s:p.ide={'title': 'ide', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17101', 'archive_name': 'ide.tar', 'type': 'archive'}
 let s:p['unite-scriptenames']={'title': 'unite-scriptenames', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17099', 'archive_name': 'unite-scriptnames.zip', 'type': 'archive'}
 let s:p.dokuwiki3853={'title': 'dokuwiki', 'script-type': 'utility', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17098', 'archive_name': 'dokuwiki-1.tar', 'type': 'archive'}
@@ -1191,7 +1194,7 @@ let s:p.Changing_color_script={'title': 'Changing color script', 'script-type': 
 let s:p.VOoM={'title': 'VOoM', 'script-type': 'utility', 'version': '4.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16986', 'archive_name': 'VOoM-4.1.zip', 'type': 'archive'}
 let s:p.Simple_R_Omni_Completion={'title': 'Simple R Omni Completion', 'script-type': 'ftplugin', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10676', 'archive_name': 'r_omni.vim', 'type': 'archive'}
 let s:p.squirrel={'title': 'squirrel.vim', 'script-type': 'syntax', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=12575', 'archive_name': 'squirrel.0.2.tar.gz', 'type': 'archive'}
-let s:p.Arduino_syntax_file={'title': 'Arduino syntax file', 'script-type': 'syntax', 'version': '7', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15821', 'archive_name': 'arduino.vim', 'type': 'archive'}
+let s:p.Arduino_syntax_file={'title': 'Arduino syntax file', 'script-type': 'syntax', 'version': '8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17108', 'archive_name': 'arduino.vim', 'type': 'archive'}
 let s:p.cuteErrorMarker={'title': 'cuteErrorMarker', 'script-type': 'utility', 'version': '1.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14050', 'archive_name': 'cuteErrorMarker.zip', 'type': 'archive'}
 let s:p.bblean={'title': 'bblean.vim', 'script-type': 'syntax', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10669', 'archive_name': 'bblean.vim', 'type': 'archive'}
 let s:p.fitnesse={'title': 'fitnesse.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10658', 'archive_name': 'fitnesse.vim.zip', 'type': 'archive'}
@@ -1314,7 +1317,7 @@ let s:p.cca={'title': 'cca.vim', 'script-type': 'utility', 'version': '0.2', 'ur
 let s:p.d2534={'title': 'd.vim', 'script-type': 'ftplugin', 'version': '0.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9896', 'archive_name': 'd-0.0.1.tar.bz2', 'type': 'archive'}
 let s:p.muttaliasescomplete={'title': 'muttaliasescomplete.vim', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11299', 'archive_name': 'muttaliasescomplete.vim', 'type': 'archive'}
 let s:p.nxc={'title': 'nxc.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9893', 'archive_name': 'nxc.vim', 'type': 'archive'}
-let s:p.slimv={'title': 'slimv.vim', 'script-type': 'utility', 'version': '0.9.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16821', 'archive_name': 'slimv092.zip', 'type': 'archive'}
+let s:p.slimv={'title': 'slimv.vim', 'script-type': 'utility', 'version': '0.9.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17107', 'archive_name': 'slimv093.zip', 'type': 'archive'}
 let s:p.po2530={'title': 'po.vim', 'script-type': 'ftplugin', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11839', 'archive_name': 'po.tar', 'type': 'archive'}
 let s:p.IndentCommentPrefix={'title': 'IndentCommentPrefix', 'script-type': 'utility', 'version': '1.10', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15338', 'archive_name': 'IndentCommentPrefix.vba.gz', 'type': 'archive'}
 let s:p.Thesaurus={'title': 'Thesaurus', 'script-type': 'utility', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11075', 'archive_name': 'thesaurus.vim', 'type': 'archive'}
@@ -1454,7 +1457,7 @@ let s:p.Fly_Between_Projects2395={'title': 'Fly Between Projects', 'script-type'
 let s:p.darkeclipse={'title': 'darkeclipse.vim', 'script-type': 'color scheme', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10979', 'archive_name': 'darkeclipse.vim', 'type': 'archive'}
 let s:p.QuickTemplate={'title': 'QuickTemplate', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9319', 'archive_name': '_vim_Template_20081008.7z', 'type': 'archive'}
 let s:p.Django_Projects={'title': 'Django Projects', 'script-type': 'utility', 'version': '0.1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9318', 'archive_name': 'django_projects.vim', 'type': 'archive'}
-let s:p.MPC_syntax={'title': 'MPC syntax', 'script-type': 'syntax', 'version': '0.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14632', 'archive_name': 'mpc.vim', 'type': 'archive'}
+let s:p.MPC_syntax={'title': 'MPC syntax', 'script-type': 'syntax', 'version': '0.1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17110', 'archive_name': 'mpc.vim', 'type': 'archive'}
 let s:p.CSApprox={'title': 'CSApprox', 'script-type': 'utility', 'version': '3.50', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10336', 'archive_name': 'CSApprox.zip', 'type': 'archive'}
 let s:p.pdc={'title': 'pdc.vim', 'script-type': 'syntax', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9430', 'archive_name': 'pdc.vim', 'type': 'archive'}
 let s:p.conomode={'title': 'conomode.vim', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13637', 'archive_name': 'conomode.vim', 'type': 'archive'}
