@@ -514,6 +514,7 @@ let s:plugin_sources['pythoncomplete']['script-type'] = 'autoload'
 let s:plugin_sources['Tango_colour_scheme']['script-type'] = 'colors'
 let s:plugin_sources['ack']['strip-components'] = 0
 let s:plugin_sources['autocorrect']['strip-components'] = 0
+let s:plugin_sources['css_color']['script-type'] = 'after/syntax'
 
 " plugin infos - written if the plugin doesn't ship one itself {{{
 
