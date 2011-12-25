@@ -106,7 +106,7 @@ let s:scm_plugin_sources['aurum'] = { 'type': 'hg', 'url': 'http://bitbucket.org
 " support them all.
 for n in split('vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-altercmd vim-fakeclip vim-operator-user vim-vspec vim-wwwsearch vim-textobj-syntax vim-textobj-indent vim-operator-replace vim-grex vim-xml-move vim-xml-autons vim-vcsi vim-textobj-lastpat vim-textobj-jabraces vim-textobj-function vim-textobj-fold vim-textobj-entire vim-textobj-diff vim-surround vim-submode vim-smartword vim-smarttill vim-smartchr vim-skeleton vim-scratch vim-repeat vim-narrow vim-metarw vim-metarw-git vim-flydiff vim-exjumplist vim-bundle vim-textobj-datetime vim-textobj-django-template chat.vim-users.jp-log-converter jkramer-vim-narrow kuy-vim-fuzzyjump thinca-vim-qfreplace mootoh-vim-refe2 thinca-vim-ku-file_mru ujihisa-vim-quickrun vim-flymake vim-perproject vim-stackreg vim-outputz vim-ctxabbr vim-advice vim-ku-quickfix vim-ku-metarw vim-ku-bundle vim-ku-args vim-ku', ' ')
   let na = substitute(n,'^vim-','','')
-  let s:scm_plugin_sources[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n.'' }
+  let s:scm_plugin_sources[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n }
   if n =~ 'vim-textobj-\%(user\)\@!'
     let s:missing_addon_infos[na] = '{ "dependencies" : {"textobj-user": {} }}'
   endif

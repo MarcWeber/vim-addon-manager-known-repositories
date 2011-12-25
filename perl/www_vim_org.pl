@@ -237,6 +237,7 @@ sub formatScripts($$$;$) {
                     formatKey("version", $lastsrc->{"version"}).
                     formatKey("url", "$base/download_script.php?src_id=".$lastsrc->{"srcnr"}).
                     formatKey("archive_name", $lastsrc->{"archive"}).
+                    "'vim_script_nr': ".$script->{"snr"}.", ".
                     "'type': 'archive'}\n";
         WL($VIM, $line);
         if($dumpall) {
