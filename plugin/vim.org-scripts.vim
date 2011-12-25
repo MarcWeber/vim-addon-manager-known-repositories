@@ -7,7 +7,7 @@ endif
 let s:p=g:vim_addon_manager.vim_org_sources
 let s:p.Xoria256m={'title': 'Xoria256m', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17113', 'archive_name': 'xoria256m.vim', 'type': 'archive'}
 let s:p.rmvim={'title': 'rmvim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17106', 'archive_name': 'rmvim-v1.0.vim.tgz', 'type': 'archive'}
-let s:p.Word_Fuzzy_Completion_={'title': 'Word Fuzzy Completion ', 'script-type': 'utility', 'version': '0.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17111', 'archive_name': 'vim-wordfuzzycompletion-plugin-v0.5.zip', 'type': 'archive'}
+let s:p.Word_Fuzzy_Completion_={'title': 'Word Fuzzy Completion ', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17117', 'archive_name': 'vim-wordfuzzycompletion-plugin-v0.6.zip', 'type': 'archive'}
 let s:p.tocdown={'title': 'tocdown', 'script-type': 'utility', 'version': '1.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17104', 'archive_name': 'tocdown.zip', 'type': 'archive'}
 let s:p.ide={'title': 'ide', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17101', 'archive_name': 'ide.tar', 'type': 'archive'}
 let s:p['unite-scriptenames']={'title': 'unite-scriptenames', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17099', 'archive_name': 'unite-scriptnames.zip', 'type': 'archive'}
@@ -233,7 +233,7 @@ let s:p.indsas={'title': 'indsas', 'script-type': 'utility', 'version': 'V1.1', 
 let s:p.chef={'title': 'chef.vim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16247', 'archive_name': 'vim-chef-1.0.zip', 'type': 'archive'}
 let s:p['beautiful-pastebin']={'title': 'beautiful-pastebin', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15839', 'archive_name': 'beautiful-pastebin.zip', 'type': 'archive'}
 let s:p['ri-viewer']={'title': 'ri-viewer', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15903', 'archive_name': 'ri-viewer.tar.gz', 'type': 'archive'}
-let s:p.Buffersaurus={'title': 'Buffersaurus', 'script-type': 'utility', 'version': '1.2.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16039', 'archive_name': 'vim-buffersaurus-v1.2.3.tar.gz', 'type': 'archive'}
+let s:p.Buffersaurus={'title': 'Buffersaurus', 'script-type': 'utility', 'version': '2.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17116', 'archive_name': 'vim-buffersaurus-v2.0.1.tar.gz', 'type': 'archive'}
 let s:p.Buffergator={'title': 'Buffergator', 'script-type': 'utility', 'version': '2.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16816', 'archive_name': 'vim-buffergator-v2.1.1.tar.gz', 'type': 'archive'}
 let s:p.wikilink={'title': 'wikilink', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16549', 'archive_name': 'wikilink.vim', 'type': 'archive'}
 let s:p.Quicksilver={'title': 'Quicksilver.vim', 'script-type': 'utility', 'version': '0.3.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=15842', 'archive_name': 'quicksilver.vim', 'type': 'archive'}
@@ -949,7 +949,7 @@ let s:p.Cfengine_version_3_syntax={'title': 'Cfengine version 3 syntax', 'script
 let s:p.Cfengine_3_ftplugin={'title': 'Cfengine 3 ftplugin', 'script-type': 'ftplugin', 'version': '20111219', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17088', 'archive_name': 'cf3.vim', 'type': 'archive'}
 let s:p.AuthorInfo={'title': 'AuthorInfo', 'script-type': 'ftplugin', 'version': '1.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16295', 'archive_name': 'authorinfo.vim', 'type': 'archive'}
 let s:p.ShowFunc2901={'title': 'ShowFunc.vim', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11962', 'archive_name': 'ShowFunc.vim', 'type': 'archive'}
-let s:p.gitolite={'title': 'gitolite.vim', 'script-type': 'syntax', 'version': '12', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16982', 'archive_name': 'gitolite.vba.gz', 'type': 'archive'}
+let s:p.gitolite={'title': 'gitolite.vim', 'script-type': 'syntax', 'version': '13', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17118', 'archive_name': 'gitolite.vba.gz', 'type': 'archive'}
 let s:p.TxtBrowser={'title': 'TxtBrowser', 'script-type': 'syntax', 'version': '1.3.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16207', 'archive_name': 'txtbrowser-1.3.5.zip', 'type': 'archive'}
 let s:p.circos={'title': 'circos.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11950', 'archive_name': 'circos.vim', 'type': 'archive'}
 let s:p.Chrysoprase={'title': 'Chrysoprase', 'script-type': 'color scheme', 'version': '0.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=11951', 'archive_name': 'chrysoprase.vim', 'type': 'archive'}
