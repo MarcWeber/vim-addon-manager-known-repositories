@@ -556,6 +556,8 @@ let s:plugin_sources['vimstuff']['deprecated'] = "Functions from this plugin wer
 let s:plugin_sources['local_vimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
 let s:plugin_sources['localvimrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
 let s:plugin_sources['localrc']['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
+
+let s:plugin_sources['snippetsEmu']['deprecated'] = "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"
 "}}}
 
 call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
