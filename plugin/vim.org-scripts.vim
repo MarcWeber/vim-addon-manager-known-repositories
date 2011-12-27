@@ -5,6 +5,7 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.shelp={'title': 'shelp', 'script-type': 'utility', 'version': '0.9.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17121', 'archive_name': 'shelp.zip', 'vim_script_nr': 3860, 'type': 'archive'}
 let s:p.Xoria256m={'title': 'Xoria256m', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17113', 'archive_name': 'xoria256m.vim', 'vim_script_nr': 3859, 'type': 'archive'}
 let s:p.rmvim={'title': 'rmvim', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17106', 'archive_name': 'rmvim-v1.0.vim.tgz', 'vim_script_nr': 3858, 'type': 'archive'}
 let s:p.Word_Fuzzy_Completion_={'title': 'Word Fuzzy Completion ', 'script-type': 'utility', 'version': '0.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17117', 'archive_name': 'vim-wordfuzzycompletion-plugin-v0.6.zip', 'vim_script_nr': 3857, 'type': 'archive'}
@@ -2560,7 +2561,7 @@ let s:p.tabs={'title': 'tabs.vim', 'script-type': 'utility', 'version': '1.0a', 
 let s:p['sadic.tgz']={'title': 'sadic.tgz', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4306', 'archive_name': 'sadic.tgz', 'vim_script_nr': 1286, 'type': 'archive'}
 let s:p.nasl1285={'title': 'nasl.vim', 'script-type': 'syntax', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4313', 'archive_name': 'nasl.vim', 'vim_script_nr': 1285, 'type': 'archive'}
 let s:p.TortoiseSVN={'title': 'TortoiseSVN.vim', 'script-type': 'utility', 'version': '0.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4506', 'archive_name': 'TortoiseSVN.zip', 'vim_script_nr': 1284, 'type': 'archive'}
-let s:p.TinyBufferExplorer={'title': 'TinyBufferExplorer', 'script-type': 'utility', 'version': '2.0b1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=13030', 'archive_name': 'tbe.vim', 'vim_script_nr': 1283, 'type': 'archive'}
+let s:p.TinyBufferExplorer={'title': 'TinyBufferExplorer', 'script-type': 'utility', 'version': '2.0b2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17119', 'archive_name': 'tbe.vim', 'vim_script_nr': 1283, 'type': 'archive'}
 let s:p.tagselect={'title': 'tagselect', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4356', 'archive_name': 'tagselect.vim', 'vim_script_nr': 1282, 'type': 'archive'}
 let s:p.crontab={'title': 'crontab.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4267', 'archive_name': 'crontab.vim', 'vim_script_nr': 1281, 'type': 'archive'}
 let s:p.obsoleteToggleOnly={'title': '[obsolete]ToggleOnly.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4353', 'archive_name': 'ToggleOnly.vim', 'vim_script_nr': 1280, 'type': 'archive'}
@@ -3466,7 +3467,7 @@ let s:p['atomcoder-vim']={'title': 'atomcoder-vim', 'script-type': 'utility', 'v
 let s:p.oceandeep={'title': 'oceandeep', 'script-type': 'color scheme', 'version': '1.2.5', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7799', 'archive_name': 'oceandeep.vim', 'vim_script_nr': 368, 'type': 'archive'}
 let s:p.DirDo={'title': 'DirDo.vim', 'script-type': 'utility', 'version': '1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=4583', 'archive_name': 'DirDo.vim', 'vim_script_nr': 367, 'type': 'archive'}
 let s:p.ldraw={'title': 'ldraw.vim', 'script-type': 'syntax', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1088', 'archive_name': 'ldraw.vim', 'vim_script_nr': 366, 'type': 'archive'}
-let s:p['bash-support']={'title': 'bash-support.vim', 'script-type': 'utility', 'version': '3.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16898', 'archive_name': 'bash-support.zip', 'vim_script_nr': 365, 'type': 'archive'}
+let s:p['bash-support']={'title': 'bash-support.vim', 'script-type': 'utility', 'version': '3.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17122', 'archive_name': 'bash-support.zip', 'vim_script_nr': 365, 'type': 'archive'}
 let s:p.withdrawn364={'title': 'withdrawn', 'script-type': 'syntax', 'version': 'W', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=1413', 'archive_name': 'Withdrawn.vim', 'vim_script_nr': 364, 'type': 'archive'}
 let s:p['cream-showinvisibles']={'title': 'cream-showinvisibles', 'script-type': 'utility', 'version': '3.01', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=2847', 'archive_name': 'cream-showinvisibles.vim', 'vim_script_nr': 363, 'type': 'archive'}
 let s:p.opsplorer={'title': 'opsplorer', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=10271', 'archive_name': 'opsplorer.zip', 'vim_script_nr': 362, 'type': 'archive'}
