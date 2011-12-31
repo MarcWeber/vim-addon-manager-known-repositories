@@ -5,6 +5,8 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.epegzz={'title': 'epegzz.vim', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17138', 'archive_name': 'epegzz.zip', 'vim_script_nr': 3863, 'type': 'archive'}
+let s:p.grads={'title': 'grads.vim', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17136', 'archive_name': 'grads.tar.gz', 'vim_script_nr': 3862, 'type': 'archive'}
 let s:p.Lawrencium={'title': 'Lawrencium', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17129', 'archive_name': 'lawrencium.tar.gz', 'vim_script_nr': 3861, 'type': 'archive'}
 let s:p.shelp={'title': 'shelp', 'script-type': 'utility', 'version': '0.9.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17121', 'archive_name': 'shelp.zip', 'vim_script_nr': 3860, 'type': 'archive'}
 let s:p.Xoria256m={'title': 'Xoria256m', 'script-type': 'color scheme', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17131', 'archive_name': 'xoria256m.vim', 'vim_script_nr': 3859, 'type': 'archive'}
@@ -114,7 +116,7 @@ let s:p.syntaxdosini={'title': 'syntax/dosini.vim', 'script-type': 'syntax', 've
 let s:p.watchdog={'title': 'watchdog.vim', 'script-type': 'utility', 'version': '1.0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16565', 'archive_name': 'vim-watchdog.zip', 'vim_script_nr': 3746, 'type': 'archive'}
 let s:p.linediff={'title': 'linediff.vim', 'script-type': 'utility', 'version': '0.1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16823', 'archive_name': 'linediff.zip', 'vim_script_nr': 3745, 'type': 'archive'}
 let s:p.MarkdownFootnotes={'title': 'MarkdownFootnotes', 'script-type': 'utility', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16517', 'archive_name': 'vim-markdownfootnotes-1.0.0.zip', 'vim_script_nr': 3744, 'type': 'archive'}
-let s:p.Vimerl={'title': 'Vimerl', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17132', 'archive_name': 'vimerl-1.2.tar.gz', 'vim_script_nr': 3743, 'type': 'archive'}
+let s:p.Vimerl={'title': 'Vimerl', 'script-type': 'utility', 'version': '1.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17137', 'archive_name': 'vimerl-1.2.tar.gz', 'vim_script_nr': 3743, 'type': 'archive'}
 let s:p.mediawiki={'title': 'mediawiki', 'script-type': 'syntax', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16511', 'archive_name': 'mediawiki.tar.gz', 'vim_script_nr': 3742, 'type': 'archive'}
 let s:p.kiwi={'title': 'kiwi.vim', 'script-type': 'utility', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16510', 'archive_name': 'kiwi.zip', 'vim_script_nr': 3741, 'type': 'archive'}
 let s:p.gccsingle={'title': 'gccsingle.vim', 'script-type': 'utility', 'version': '1.6', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16524', 'archive_name': 'gccsingle.vim', 'vim_script_nr': 3740, 'type': 'archive'}
@@ -2123,7 +2125,7 @@ let s:p.Templeet={'title': 'Templeet', 'script-type': 'syntax', 'version': '0.1.
 let s:p.ruby_imaps={'title': 'ruby_imaps', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6508', 'archive_name': 'ruby_imaps.zip', 'vim_script_nr': 1726, 'type': 'archive'}
 let s:p.capslock={'title': 'capslock.vim', 'script-type': 'utility', 'version': '1.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6505', 'archive_name': 'capslock.vim', 'vim_script_nr': 1725, 'type': 'archive'}
 let s:p.pyljvim={'title': 'pyljvim', 'script-type': 'utility', 'version': '0.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=14312', 'archive_name': 'pyljvim-0.4.zip', 'vim_script_nr': 1724, 'type': 'archive'}
-let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.6.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17043', 'archive_name': 'vimpager', 'vim_script_nr': 1723, 'type': 'archive'}
+let s:p.vimpager={'title': 'vimpager', 'script-type': 'utility', 'version': '1.6.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17135', 'archive_name': 'vimpager', 'vim_script_nr': 1723, 'type': 'archive'}
 let s:p.cf1722={'title': 'cf.vim', 'script-type': 'syntax', 'version': '0.1.3', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=6780', 'archive_name': 'cf.vim', 'vim_script_nr': 1722, 'type': 'archive'}
 let s:p.renamer={'title': 'renamer.vim', 'script-type': 'utility', 'version': '1.4', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16876', 'archive_name': 'renamer.vim', 'vim_script_nr': 1721, 'type': 'archive'}
 let s:p['gvimext.dll_support_tabs_under_VIM_7']={'title': 'gvimext.dll: support tabs under VIM 7', 'script-type': 'utility', 'version': '2.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=7239', 'archive_name': 'GvimExt_tab_V2.zip', 'vim_script_nr': 1720, 'type': 'archive'}
