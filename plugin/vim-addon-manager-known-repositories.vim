@@ -98,8 +98,8 @@ let s:scm_plugin_sources['jsonvim'] = { 'type': 'hg', 'url': 'http://jsonvim.hg.
 let s:scm_plugin_sources['formatvim'] = { 'type': 'hg', 'url': 'http://formatvim.hg.sourceforge.net:8000/hgroot/formatvim/formatvim' }
 let s:scm_plugin_sources['vimoop'] = { 'type': 'hg', 'url': 'http://vimoop.hg.sourceforge.net:8000/hgroot/vimoop/vimoop' }
 let s:scm_plugin_sources['yamlvim'] = { 'type': 'hg', 'url': 'http://yamlvim.hg.sourceforge.net:8000/hgroot/yamlvim/yamlvim' }
-let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/zvim' }
-let s:scm_plugin_sources['aurum'] = { 'type': 'hg', 'url': 'http://bitbucket.org/ZyX_I/aurum' }
+let s:scm_plugin_sources['zvim'] = { 'type': 'hg', 'url': 'https://bitbucket.org/ZyX_I/zvim' }
+let s:scm_plugin_sources['aurum'] = { 'type': 'hg', 'url': 'https://bitbucket.org/ZyX_I/aurum' }
 
 " kana (most can be found on www.vim.org. However they all have a different
 " subdirectories - So checking out from git seems to be easier to me to
@@ -211,7 +211,7 @@ let s:scm_plugin_sources['Threesome'] = {'type': 'hg', 'url': 'https://bitbucket
 let s:scm_plugin_sources['vim_easymotion'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion'}
 
 " contributed by creidiki:
-let s:scm_plugin_sources['FuzzyFinder'] = {'type': 'hg', 'url': 'http://bitbucket.org/ns9tks/vim-fuzzyfinder'}
+let s:scm_plugin_sources['FuzzyFinder'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'}
 let s:scm_plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty'}
 
 " Daniel Hofstetter
@@ -473,6 +473,9 @@ let s:scm_plugin_sources['SonicTemplate'] = {'type': 'git', 'url': 'git://github
 let s:scm_plugin_sources['vimroom'] = {'type': 'git', 'url': 'git://github.com/mikewest/vimroom'}
 
 let s:scm_plugin_sources['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod'}
+
+" Takeshi NISHIDA
+let s:scm_plugin_sources['ScmFrontEnd_former_name_MinSCM'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-scmfrontend/'}
 
 "}}}
 "Additional sources information {{{
