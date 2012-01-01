@@ -271,7 +271,7 @@ sub genName($$$) {
     while(defined $scriptnames->{$_}) {
         my $s=$scriptnames->{$_};
         if(ref $s) {
-            $s->{"id"}.=$s->{"snr"};
+            $s->{"id"}.="%".$s->{"snr"};
             $scriptnames->{$s->{"id"}}=$s;
             $scriptnames->{$_}=1;
         }
