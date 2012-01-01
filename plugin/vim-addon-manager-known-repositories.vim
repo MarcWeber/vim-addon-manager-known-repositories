@@ -177,7 +177,7 @@ let s:scm_plugin_sources['abolish'] = {'type': 'git', 'url': 'git://github.com/t
 let s:scm_plugin_sources['pastie'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-pastie'}
 let s:scm_plugin_sources['commentary'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-commentary'}
 let s:scm_plugin_sources['rake'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
-" The following plugin is not present on vim.org
+" The following plugin is not present on vim.org:
 let s:scm_plugin_sources['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
@@ -204,14 +204,62 @@ let s:scm_plugin_sources['edc_support'] = {'type': 'svn', 'url': 'http://svn.enl
 
 " Steve Losh
 let s:scm_plugin_sources['Gundo'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
-let s:scm_plugin_sources['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/strftimedammit.vim'}
 let s:scm_plugin_sources['Threesome'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/threesome.vim'}
+" The following plugin is not present on vim.org:
+let s:scm_plugin_sources['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/strftimedammit.vim'}
 
-" this name may change if the author uploads it to vim.sf.net..
-let s:scm_plugin_sources['vim_easymotion'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion'}
+" Kim Silkebækken
+let s:scm_plugin_sources['EasyMotion'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion'}
+let s:scm_plugin_sources['Distinguished'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-distinguished'}
+" The following plugin is not present on vim.org:
+let s:scm_plugin_sources['powerline'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-powerline'}
 
-" contributed by creidiki:
-let s:scm_plugin_sources['lusty'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty'}
+" H Xu
+let s:scm_plugin_sources['SingleCompile'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/singlecompile'}
+let s:scm_plugin_sources['ProjectTag'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/projecttag'}
+let s:scm_plugin_sources['TrimBlank'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/trimblank'}
+let s:scm_plugin_sources['IniParser'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/iniparser'}
+let s:scm_plugin_sources['compilerg95'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-g95.vim'}
+let s:scm_plugin_sources['compilergfortran'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-gfortran.vim'}
+let s:scm_plugin_sources['compilerifort'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-ifort.vim'}
+let s:scm_plugin_sources['compilerpcc'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-pcc.vim'}
+let s:scm_plugin_sources['syntaxdosini'] = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/syntax-dosini.vim'}
+" The following is not a vim plugin, but it is posted on vim.org:
+let s:scm_plugin_sources['nautilus-py-vim'] = {'type': 'git', 'url': 'git://github.com/xuhdev/nautilus-py-vim'}
+
+" Vincent T.
+let s:scm_plugin_sources['Diablo3'] = {'type': 'hg', 'url': 'https://bitbucket.org/vayn/colorschemes'}
+let s:scm_plugin_sources['lemon256'] = {'type': 'hg', 'url': 'https://bitbucket.org/vayn/colorschemes'}
+let s:scm_plugin_sources['Fanfou'] = {'type': 'git', 'url': 'git://github.com/Vayn/Fanfou'}
+
+" Shuhei Kubota
+" The following plugins do not have normal directory structure:
+let s:scm_plugin_sources['StarRange'] = {'url': 'https://bitbucket.org/shu/starrange/raw/default/starrange.vim', 'archive_name': 'starrange.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'StarRange'}
+let s:scm_plugin_sources['TinyBufferExplorer'] = {'url': 'https://bitbucket.org/shu/tinybufferexplorer/raw/default/tbe.vim', 'archive_name': 'tbe.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'TinyBufferExplorer'}
+let s:scm_plugin_sources['Modeliner'] = {'url': 'https://bitbucket.org/shu/modeliner/raw/default/modeliner.vim', 'archive_name': 'modeliner.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'Modeliner'}
+let s:scm_plugin_sources['CoremoSearch'] = {'url': 'https://bitbucket.org/shu/coremosearch/raw/default/coremo_search.vim', 'archive_name': 'coremo_search.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'CoremoSearch'}
+let s:scm_plugin_sources['tabops'] = {'url': 'https://bitbucket.org/shu/tabops/raw/default/tabops.vim', 'archive_name': 'tabops.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'tabops'}
+let s:scm_plugin_sources['Changed'] = {'url': 'https://bitbucket.org/shu/changed/raw/default/changed.vim', 'archive_name': 'changed.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'Changed'}
+let s:scm_plugin_sources['FlipLR'] = {'url': 'https://bitbucket.org/shu/fliplr/raw/default/fliplr.vim', 'archive_name': 'fliplr.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'FlipLR'}
+let s:scm_plugin_sources['The_Old_Ones'] = {'url': 'https://bitbucket.org/shu/theoldones/raw/default/theoldones.vim', 'archive_name': 'theoldones.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'The Old Ones'}
+
+" Michael Hart
+let s:scm_plugin_sources['LycosaExplorer'] = {'type': 'hg', 'url': 'https://bitbucket.org/mikehart/lycosaexplorer'}
+
+" Preston Masion
+let s:scm_plugin_sources['VimRepress'] = {'type': 'hg', 'url': 'https://bitbucket.org/pentie/vimrepress'}
+
+" Dejan Noveski
+" This plugin has both mercurial and github repository. I have chosen to use 
+" first one, but I have no idea which is original and which is generated 
+" automatically
+let s:scm_plugin_sources['w3cvalidator'] = {'type': 'hg', 'url': 'https://bitbucket.org/dekomote/w3cvalidate.vim'}
+
+" AJ V
+let s:scm_plugin_sources['arc'] = {'type': 'hg', 'url': 'https://bitbucket.org/fallintothis/arc-vim'}
+
+" Stephen Bach
+let s:scm_plugin_sources['LustyExplorer'] = {'type': 'git', 'url': 'git://github.com/sjbach/lusty'}
 
 " Daniel Hofstetter
 let s:scm_plugin_sources['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim'}
@@ -222,7 +270,7 @@ let s:scm_plugin_sources['VimLint'] = {'type' : 'git', 'url' : 'git://github.com
 " Raimondi (Israel Chauca Fuentes):
 let s:scm_plugin_sources['PickAColor'] = {'type': 'git', 'url': 'git://github.com/Raimondi/PickAColor'}
 let s:scm_plugin_sources['delimitMate'] = {'type': 'git', 'url': 'git://github.com/Raimondi/delimitMate'}
-" " The following plugins are not present on vim.org
+" The following plugins are not present on vim.org:
 " let s:scm_plugin_sources['bufring'] = {'type': 'git', 'url': 'git://github.com/Raimondi/bufring'}
 let s:scm_plugin_sources['TVO_The_Vim_Outliner'] = {'type': 'git', 'url': 'git://github.com/vimoutliner/vimoutliner'}
 
@@ -304,18 +352,51 @@ let s:scm_plugin_sources['Solarized'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['patchreview'] = {'type': 'git', 'url': 'git://github.com/junkblocker/patchreview-vim'}
 
 " Peter Hosey
-" Following repository does not contain correct directory tree
-" let s:scm_plugin_sources['ini_syntax_definition'] = {'type': 'hg', 'url': 'https://bitbucket.org/boredzo/vim-ini-syntax'}
+" The following plugin does not have normal directory structure:
+let s:scm_plugin_sources['ini_syntax_definition'] = {'url': 'https://bitbucket.org/boredzo/vim-ini-syntax/raw/default/ini.vim', 'archive_name': 'ini.vim', 'type': 'archive', 'script-type': 'syntax', 'title': 'ini syntax definition'}
 
 " Jochen Bartl
-" Following repository does not contain correct directory tree
-" let s:scm_plugin_sources['grsecurity2479'] = {'type': 'hg', 'url': 'https://bitbucket.org/lobo/grsecurityvim'}
+" The following plugin does not have normal directory structure:
+let s:scm_plugin_sources['grsecurity2479'] = {'url': 'https://bitbucket.org/lobo/grsecurityvim/raw/default/grsecurity.vim', 'archive_name': 'grsecurity.vim', 'type': 'archive', 'script-type': 'syntax', 'title': 'grsecurity.vim'}
+
+" Weakish Jiang
+" The following repository does not have normal directory structure:
+" let s:scm_plugin_sources['rc'] = {'type': 'git', 'url': 'git://gist.github.com/986788'}
+
+" jonathan hartley
+let s:scm_plugin_sources['vim_run_python_tests'] = {'type': 'hg', 'url': 'https://bitbucket.org/tartley/vim_run_python_tests'}
+
+" Shrikant Sharat Kandula
+let s:scm_plugin_sources['looks'] = {'type': 'hg', 'url': 'https://bitbucket.org/sharat87/vim-looks'}
+" The following plugins are not present on vim.org:
+let s:scm_plugin_sources['t-syntax'] = {'type': 'hg', 'url': 'https://bitbucket.org/sharat87/t-syntax'}
+" There is already another “gotofile” plugin on vim.org
+let s:scm_plugin_sources['gotofile@sharat87'] = {'type': 'hg', 'url': 'https://bitbucket.org/sharat87/vim-gotofile'}
+
+" ali va
+" Yes, these are git repositories on bitbucket. Unfortunately, git:// URLs are 
+" not supported.
+let s:scm_plugin_sources['dokuwiki'] = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-dokuwiki'}
+" The following plugin is not present on vim.org:
+let s:scm_plugin_sources['toggletoolbar'] = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-toggletoolbar'}
 
 " Ryan Mechelke
 let s:scm_plugin_sources['diff-fold'] = {'type': 'hg', 'url': 'https://bitbucket.org/thetoast/diff-fold'}
 
+" Roman Dobosz
+let s:scm_plugin_sources['vimblogger_ft'] = {'type': 'hg', 'url': 'https://bitbucket.org/gryf/vimblogger_ft'}
+
+" shellholic
+let s:scm_plugin_sources['vim-creole'] = {'type': 'hg', 'url': 'https://bitbucket.org/shellholic/vim-creole'}
+
+" Ludovic Chabant
+let s:scm_plugin_sources['Lawrencium'] = {'type': 'hg', 'url': 'https://bitbucket.org/ludovicchabant/vim-lawrencium'}
+
+" Kosei Kitahara
+let s:scm_plugin_sources['RTM'] = {'type': 'hg', 'url': 'https://bitbucket.org/Surgo/rtm.vim'}
+
 " Maxim Kim
-" Using hg here because we need to alter runtimepath, but only for mercurial 
+" Using “@hg” here because we need to alter runtimepath, but only for mercurial 
 " source
 let s:scm_plugin_sources['vimwiki@hg'] = {'type': 'hg', 'url': 'https://code.google.com/p/vimwiki/'}
 
@@ -479,7 +560,7 @@ let s:scm_plugin_sources['AutoComplPop'] = {'type': 'hg', 'url': 'https://bitbuc
 let s:scm_plugin_sources['FuzzyFinder'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'}
 let s:scm_plugin_sources['gauref'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-gauref'}
 let s:scm_plugin_sources['L9'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-l9'}
-" Following plugins are not present on vim.org:
+" The following plugins are not present on vim.org:
 let s:scm_plugin_sources['abolish#doc-ja'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-abolish-ja'}
 let s:scm_plugin_sources['dsary'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-dsary'}
 let s:scm_plugin_sources['fteval'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-fteval'}
@@ -487,29 +568,31 @@ let s:scm_plugin_sources['jabeige'] = {'type': 'hg', 'url': 'https://bitbucket.o
 let s:scm_plugin_sources['luciusmod'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-luciusmod'}
 let s:scm_plugin_sources['scriproject'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim-scriproject'}
 
+" Tamas Kovacs
+let s:scm_plugin_sources['slimv'] = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
+
 "}}}
 "Additional sources information {{{
 let s:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
-" " Not present on vim.org:
-" let s:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
+" The following plugin is not present on vim.org:
+let s:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
 
 " Luc Hermitte
 " Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
 let s:scm_plugin_sources['lh-vim-lib'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
 let s:scm_plugin_sources['lh-brackets'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
-let s:scm_plugin_sources['build-tools-wrapper'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/BTW/trunk"}
-let s:scm_plugin_sources['lh-tags'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/tags/trunk"}
-let s:scm_plugin_sources['lh-dev'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/dev/trunk"}
-let s:scm_plugin_sources['mu-template'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/mu-template/trunk"}
+let s:scm_plugin_sources['build-tools-wrapper'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/BTW/trunk'}
+let s:scm_plugin_sources['lh-tags'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/tags/trunk'}
+let s:scm_plugin_sources['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev/trunk'}
+let s:scm_plugin_sources['mu-template'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 let s:scm_plugin_sources['lh-cpp'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
-let s:scm_plugin_sources['lh-refactor'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/refactor/trunk"}
+let s:scm_plugin_sources['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
 let s:scm_plugin_sources['search-in-runtime'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
-let s:scm_plugin_sources['system-tools'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/system-tools/trunk"}
-let s:scm_plugin_sources['UT'] = {"type": "svn", "url": "http://lh-vim.googlecode.com/svn/UT/trunk"}
+let s:scm_plugin_sources['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
+let s:scm_plugin_sources['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
 
 " Rok Garbas
-" http://www.vim.org/scripts/script.php?script_id=3617
-let s:scm_plugin_sources['quicksilver'] = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
+let s:scm_plugin_sources['Quicksilver'] = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
 
 " thet
 let s:scm_plugin_sources['pep83160'] = {'type' : 'git', 'url' : 'git://github.com/nvie/vim-pep8'}
