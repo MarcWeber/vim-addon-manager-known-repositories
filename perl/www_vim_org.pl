@@ -275,7 +275,7 @@ sub genName($$$) {
             $scriptnames->{$s->{"id"}}=$s;
             $scriptnames->{$_}=1;
         }
-        $_.=$snr;
+        $_.="\%$snr";
     }
     return $_;
 }

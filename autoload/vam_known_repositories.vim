@@ -27,7 +27,7 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   " never: Don't add scm versions to list of known sources
   "
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
-  if merge_strategy != 'never'
+  if merge_strategy isnot# 'never'
 
     call filter(a:scm_plugin_sources, '!get(s:c, "drop_".(v:val.type)."_sources", 0)')
 
