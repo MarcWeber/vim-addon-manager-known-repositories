@@ -603,7 +603,6 @@ let s:scm_plugin_sources['git-vim'] = {'type' : 'git', 'url' : 'git://github.com
 let s:scm_plugin_sources['vim-less'] = {'type' : 'git', 'url':  'git://github.com/groenewege/vim-less'}
 
 " add / correct some types:
-let s:plugin_sources['php1571']['strip-components'] = 0
 let s:plugin_sources['jpythonfold']['script-type'] = 'ftplugin'
 let s:plugin_sources['pythoncomplete']['target_dir'] = 'autoload'
 let s:plugin_sources['pythoncomplete']['script-type'] = 'autoload'
