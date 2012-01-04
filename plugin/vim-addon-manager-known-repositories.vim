@@ -553,7 +553,14 @@ let s:scm_plugin_sources['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecod
 " let s:scm_vim_org_sources.222 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 
 " Rok Garbas
+" 
+let s:scm_vim_org_sources.2150 = { 'type': 'git', 'url': 'git://github.com/skammer/vim-css-color.git' }
 let s:scm_vim_org_sources.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
+let s:scm_vim_org_sources.3465 = { 'type': 'git', 'url': 'git://github.com/majutsushi/tagbar.git' }
+let s:scm_vim_org_sources.3619 = { 'type': 'git', 'url': 'git://github.com/jeetsukumaran/vim-buffergator.git' }
+let s:scm_vim_org_sources.2719 = { 'type': 'git', 'url': 'git://github.com/tmallen/proj-vim.git' }
+let s:scm_vim_org_sources.3504 = { 'type': 'git', 'url': 'git://github.com/int3/vim-taglist-plus.git' }
+let s:scm_plugin_sources['flake8'] = { 'type': 'git', 'url': 'git://github.com/avidal/flake8.vim.git' }
 
 " @kevinwatters
 let s:scm_vim_org_sources.2441 = {'type': 'git', 'url': 'git://github.com/kevinw/pyflakes-vim'}
