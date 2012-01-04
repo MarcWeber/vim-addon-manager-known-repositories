@@ -24,7 +24,6 @@ my $ua=LWP::UserAgent->new(cookie_jar => {},
 my $vimorg="http://www.vim.org";
 my $base="$vimorg/scripts";
 my $maxattempts=3;
-my $threads=20;
 my $vimtarget="plugin/vim.org-scripts.vim";
 my $nrndbtarget="db/nrnameshist.json";
 my $nnrdbtarget="db/namenrshist.json";
@@ -32,22 +31,21 @@ my $nnrdbtarget="db/namenrshist.json";
 my %children;
 
 #▶1 get :: url → response
-sub get($) {
-    my $url     = shift;
+sub get {
+    my ($url)=@_;
     my $attempt = 0;
-    my $response=shift;
+    my $response;
     while($attempt<$maxattempts) {
         $response=$ua->get($url);
         return $response if($response->is_success);
-        $maxattempts++;
+        $attempt++;
         print STDERR "Failed to get $url, attempt $attempt";
     }
     die "Failed to get $url";
 }
 #▶1 WL :: filehandle, line → + FS
-sub WL($$) {
-    my $F=shift;
-    my $l=shift;
+sub WL {
+    my ($F, $l)=@_;
     while(1) {
         flock $F, LOCK_EX and last;
         print STDERR "Lock failed";
@@ -59,9 +57,8 @@ sub WL($$) {
         or die "Failed to unlock file: $!";
 }
 #▶1 formatKey :: name, value → string
-sub formatKey($$) {
-    my $key=shift;
-    my $val=shift;
+sub formatKey {
+    my ($key, $val)=@_;
     my $r="'$key': ";
     if($val=~/\n/) {
         $val=~s/(["\\])/\\$1/g;
@@ -75,22 +72,23 @@ sub formatKey($$) {
     $r.=", ";
     return $r;
 }
+#▶1 copyScalar :: a → a
+sub copyScalar {
+    my ($a)=@_;
+    return $a;
+}
 #▶1 addToDct :: dict, key, value → + dict
-sub addToDct($$$) {
+sub addToDct {
     my ($dict, $key, $value)=@_;
     if(not defined $dict->{$key}) {
         $dict->{$key}=[$value]; }
-    else {
-        my $ov=$dict->{$key}[0];
-        my $nv=$value;
-        if($ov ne $nv) {
-            unshift @{$dict->{$key}}, $value; }
-    }
+    elsif(copyScalar($dict->{$key}[0]) ne copyScalar($value)) {
+        unshift @{$dict->{$key}}, $value; }
 }
 #▶1 formatScripts :: [script], fh, fh, fh → + FS: scripts.yaml, scripts.dat, db/
-sub formatScripts($@) {
-    my $scripts=shift;
-    my ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb) = @_;
+sub formatScripts {
+    my ($scripts)=@_;
+    my ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb) = openDBs();
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
         my $line="let s:p";
@@ -146,10 +144,9 @@ sub openDBs() {
     return ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb);
 }
 #▶1 genName :: name, snr, scriptnames → sname + scriptnames
-sub genName($$$) {
-    local $_=shift;
-    my $snr=shift;
-    my $scriptnames=shift;
+sub genName {
+    local $_;
+    my ($_, $snr, $scriptnames)=@_;
     s/\.vim$//g;
     # XXX That must purge at least ' and \n
     s/[^ a-zA-Z0-9_\-.]//g;
@@ -166,8 +163,8 @@ sub genName($$$) {
     return $_;
 }
 #▶1 addScriptID :: [script] → + [script]
-sub addScriptID($) {
-    my $scripts=shift;
+sub addScriptID {
+    my ($scripts)=@_;
     local $_;
     my $scriptnames={};
     for my $script (@$scripts) {
@@ -200,7 +197,7 @@ sub getAllScripts() {
                                                @{$_->{"releases"}})],
                             }} values %$json)];
     addScriptID($scripts);
-    formatScripts($scripts, openDBs());
+    formatScripts($scripts);
     return;
 }
 getAllScripts();
