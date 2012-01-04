@@ -709,7 +709,7 @@ let s:missing_addon_infos['ideone'] = {'dependencies': {"webapi-vim": { } } }
 let s:scm_plugin_sources['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup'}
 let s:missing_addon_infos['sparkup'] = {'runtimepath': 'vim'}
 let s:scm_plugin_sources['flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
-let s:scm_plugin_sources['ncss@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
+let s:scm_plugin_sources['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
 
 " this is only the vimfiles subdirectory:
 let s:scm_plugin_sources['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
