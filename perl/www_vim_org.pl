@@ -9,7 +9,7 @@ use Fcntl qw(:DEFAULT :flock);
 use Time::HiRes;
 use utf8;
 use Data::Dumper;
-use JSON;
+use JSON::PP;
 use HTML::Entities;
 
 my $verbose=shift @ARGV;
@@ -26,7 +26,8 @@ my $base="$vimorg/scripts";
 my $maxattempts=3;
 my $threads=20;
 my $vimtarget="plugin/vim.org-scripts.vim";
-my $yamltarget="scripts.yaml";
+my $nrndbtarget="db/nrnameshist.json";
+my $nnrdbtarget="db/namenrshist.json";
 
 my %children;
 
@@ -74,13 +75,29 @@ sub formatKey($$) {
     $r.=", ";
     return $r;
 }
+#▶1 addToDct :: dict, key, value → + dict
+sub addToDct($$$) {
+    my ($dict, $key, $value)=@_;
+    if(not defined $dict->{$key}) {
+        $dict->{$key}=[$value]; }
+    else {
+        my $ov=$dict->{$key}[0];
+        my $nv=$value;
+        if($ov ne $nv) {
+            unshift @{$dict->{$key}}, $value; }
+    }
+}
 #▶1 formatScripts :: [script], fh, fh, fh → + FS: scripts.yaml, scripts.dat, db/
 sub formatScripts($@) {
     my $scripts=shift;
-    my ($VIM, $NrNDB, $NNrDB) = @_;
+    my ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb) = @_;
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
         my $line="let s:p";
+        my $snr=$script->{"snr"};
+        my $sid=$script->{"id"};
+        addToDct($nrndb, $snr, $sid);
+        addToDct($nnrdb, $sid, 0+$snr);
         if($script->{"id"} =~ /^[a-zA-Z0-9_]+$/) {
             $line.=".".$script->{"id"}; }
         else {
@@ -95,6 +112,16 @@ sub formatScripts($@) {
                     "'type': 'archive'}\n";
         WL($VIM, $line);
     }
+    my $nrjson = JSON::PP->new()->utf8()
+                                ->pretty()
+                                ->indent(1)
+                                ->sort_by(sub {$JSON::PP::a <=> $JSON::PP::b});
+    my  $njson = JSON::PP->new()->utf8()
+                                ->pretty()
+                                ->indent(1)
+                                ->canonical();
+    print $NrNDB $nrjson->encode($nrndb);
+    print $NNrDB  $njson->encode($nnrdb);
 }
 #▶1 openDBs :: () → FD + …
 sub openDBs() {
@@ -108,7 +135,15 @@ sub openDBs() {
     print $VIM "    let g:vim_addon_manager.vim_org_sources={}\n";
     print $VIM "endif\n";
     print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
-    return ($VIM, undef, undef);
+    my $NrNDB;
+    open $NrNDB, '+<:utf8', $nrndbtarget;
+    my $nrndb=JSON::PP->new()->utf8()->decode(join "", <$NrNDB>);
+    truncate $NrNDB, 0;
+    my $NNrDB;
+    open $NNrDB, '+<:utf8', $nnrdbtarget;
+    my $nnrdb=JSON::PP->new()->utf8()->decode(join "", <$NNrDB>);
+    truncate $NNrDB, 0;
+    return ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb);
 }
 #▶1 genName :: name, snr, scriptnames → sname + scriptnames
 sub genName($$$) {
@@ -147,13 +182,13 @@ sub getAllScripts() {
     print "Processing $url\n" if($verbose);
     my $response=get($url);
     my $json;
-    eval {$json=JSON::decode_json($response->decoded_content())};
+    eval {$json=JSON::PP->new()->utf8()->decode($response->decoded_content())};
     unless(defined $json) {
         die "Failed to parse json: $@";
     }
     local $_;
     my $scripts=[sort {$b->{"snr"} <=> $a->{"snr"}}
-                      (map {{snr => +$_->{"script_id"},
+                      (map {{snr => 0+$_->{"script_id"},
                             name => decode_entities($_->{"script_name"}),
                             type => $_->{"script_type"},
                          sources => [map {{srcnr => +$_->{"src_id"},
