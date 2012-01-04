@@ -777,7 +777,7 @@ endfor
 unlet s:snr s:deps s:mai_snr_deps
 call map(s:mai_snr, 'extend(s:missing_addon_infos, {s:snr_to_name[v:key] : v:val})')
 unlet s:mai_snr
-call map(s:missing_addon_infos, 'substitute(string(v:val), "''", ''"'', "g")')
+call map(s:missing_addon_infos, 'tr(string(v:val), "''", ''"'')')
 unlet s:missing_addon_infos
 
 for s:name in filter(keys(s:scm_plugin_sources), 'has_key(s:plugin_sources, v:val)')
