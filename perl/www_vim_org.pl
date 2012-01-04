@@ -8,6 +8,7 @@ use Fcntl qw(:DEFAULT :flock);
 use Time::HiRes;
 use utf8;
 use JSON::PP;
+use HTML::Entities;
 
 my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
