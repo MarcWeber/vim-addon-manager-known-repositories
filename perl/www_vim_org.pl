@@ -134,13 +134,15 @@ sub openDBs() {
     print $VIM "endif\n";
     print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
     my $NrNDB;
-    open $NrNDB, '+<:utf8', $nrndbtarget;
+    open $NrNDB, '<:utf8', $nrndbtarget;
     my $nrndb=JSON::PP->new()->utf8()->decode(join "", <$NrNDB>);
-    truncate $NrNDB, 0;
+    close $NrNDB;
+    open $NrNDB, '>:utf8', $nrndbtarget;
     my $NNrDB;
-    open $NNrDB, '+<:utf8', $nnrdbtarget;
+    open $NNrDB, '<:utf8', $nnrdbtarget;
     my $nnrdb=JSON::PP->new()->utf8()->decode(join "", <$NNrDB>);
-    truncate $NNrDB, 0;
+    close $NNrDB;
+    open $NNrDB, '>:utf8', $nnrdbtarget;
     return ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb);
 }
 #▶1 genName :: name, snr, scriptnames → sname + scriptnames
