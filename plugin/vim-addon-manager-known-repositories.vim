@@ -151,7 +151,7 @@ let s:scm_vim_org_sources.229 = {'type': 'svn', 'url': 'http://lh-vim.googlecode
 let s:scm_vim_org_sources.1702 = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
 
 " Wincent Colaiuta
-let s:scm_vim_org_sources.3025 = {'type': 'git', 'url': 'git://git.wincent.com/command-t.git'}
+let s:scm_vim_org_sources.3025 = {'type': 'git', 'url': 'git://git.wincent.com/command-t'}
 
 " Antonio Salazar Cardozo
 let s:scm_vim_org_sources.2962 = {'type': 'git', 'url': 'git://github.com/Shadowfiend/liftweb-vim'}
@@ -291,7 +291,7 @@ let s:scm_plugin_sources['worksheet'] = {'type': 'git', 'url': 'git://github.com
 let s:scm_plugin_sources['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim'}
 
 " Jakson Aquino
-let s:scm_vim_org_sources.2628 = {'type': 'git', 'url': 'git://github.com/jcfaria/Vim-R-plugin.git'}
+let s:scm_vim_org_sources.2628 = {'type': 'git', 'url': 'git://github.com/jcfaria/Vim-R-plugin'}
 
 " Robert Gleeson
 " The following plugin is not present on vim.org:
@@ -366,7 +366,7 @@ let s:scm_vim_org_sources.2446 = {'type': 'git', 'url': 'git://github.com/jkrame
 
 " Jannis Pohlmann
 " Following repository does not contain correct directory tree
-" let s:scm_vim_org_sources.2278 = {'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate.git'}
+" let s:scm_vim_org_sources.2278 = {'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}
 
 " Mick Koch
 let s:scm_vim_org_sources.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
@@ -388,6 +388,7 @@ let s:scm_vim_org_sources.3673 = {'type': 'git', 'url': 'git://github.com/veloce
 
 " Bogdan Popa
 let s:scm_vim_org_sources.3484 = {'type': 'git', 'url': 'git://github.com/Bogdanp/pyrepl.vim'}
+let s:scm_vim_org_sources.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
 
 " Yo-An Lin
 let s:scm_vim_org_sources.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
@@ -470,8 +471,8 @@ let s:scm_vim_org_sources.3243 = {'type': 'git', 'url': 'git://github.com/bryant
 let s:scm_vim_org_sources.3650 = {'type': 'git', 'url': 'git://github.com/ndreynolds/vim-cakephp'}
 
 " Javier Rojas
-let s:scm_vim_org_sources.2968 = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-nav.git/'}
-let s:scm_vim_org_sources.3156 = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-syntax.git/'}
+let s:scm_vim_org_sources.2968 = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-nav'}
+let s:scm_vim_org_sources.3156 = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-syntax'}
 
 " Taylor Hedberg
 let s:scm_vim_org_sources.3723 = {'type': 'git', 'url': 'git://github.com/tmhedberg/SimpylFold'}
@@ -552,15 +553,14 @@ let s:scm_plugin_sources['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecod
 " Not owned by Luc Hermitte
 " let s:scm_vim_org_sources.222 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 
-" Rok Garbas
-" 
-let s:scm_vim_org_sources.2150 = { 'type': 'git', 'url': 'git://github.com/skammer/vim-css-color.git' }
-let s:scm_vim_org_sources.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
-let s:scm_vim_org_sources.3465 = { 'type': 'git', 'url': 'git://github.com/majutsushi/tagbar.git' }
-let s:scm_vim_org_sources.3619 = { 'type': 'git', 'url': 'git://github.com/jeetsukumaran/vim-buffergator.git' }
-let s:scm_vim_org_sources.2719 = { 'type': 'git', 'url': 'git://github.com/tmallen/proj-vim.git' }
-let s:scm_vim_org_sources.3504 = { 'type': 'git', 'url': 'git://github.com/int3/vim-taglist-plus.git' }
-let s:scm_plugin_sources['flake8'] = { 'type': 'git', 'url': 'git://github.com/avidal/flake8.vim.git' }
+" Jan Larres
+let s:scm_vim_org_sources.3465 = {'type': 'git', 'url': 'git://github.com/majutsushi/tagbar'}
+
+" Jeet Sukumaran
+let s:scm_vim_org_sources.3619 = {'type': 'git', 'url': 'git://github.com/jeetsukumaran/vim-buffergator'}
+
+" Thomas Allen
+let s:scm_vim_org_sources.2719 = {'type': 'git', 'url': 'git://github.com/tmallen/proj-vim'}
 
 " @kevinwatters
 let s:scm_vim_org_sources.2441 = {'type': 'git', 'url': 'git://github.com/kevinw/pyflakes-vim'}
@@ -708,6 +708,8 @@ let s:scm_plugin_sources['ideone'] = {'type': 'git', 'url': 'git://github.com/ma
 let s:missing_addon_infos['ideone'] = {'dependencies': {"webapi-vim": { } } }
 let s:scm_plugin_sources['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup'}
 let s:missing_addon_infos['sparkup'] = {'runtimepath': 'vim'}
+let s:scm_plugin_sources['flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
+let s:scm_plugin_sources['ncss@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
 
 " this is only the vimfiles subdirectory:
 let s:scm_plugin_sources['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
