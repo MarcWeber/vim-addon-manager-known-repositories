@@ -4,13 +4,10 @@ use strict;
 use warnings;
 
 use LWP::UserAgent;
-use HTML::TreeBuilder;
 use Fcntl qw(:DEFAULT :flock);
 use Time::HiRes;
 use utf8;
-use Data::Dumper;
 use JSON::PP;
-use HTML::Entities;
 
 my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
