@@ -5,6 +5,8 @@ if !has_key(g:vim_addon_manager, 'vim_org_sources')
     let g:vim_addon_manager.vim_org_sources={}
 endif
 let s:p=g:vim_addon_manager.vim_org_sources
+let s:p.dsa={'title': 'dsa', 'script-type': 'utility', 'version': 'rc', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17151', 'archive_name': 'www_RegieLive_ro_NATIONAL_TREASURE_BOOK_OF_SECRETS_AXXO_1CD.zip', 'vim_script_nr': 3867, 'type': 'archive'}
+let s:p.phidgets={'title': 'phidgets.vim', 'script-type': 'syntax', 'version': '0.0.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17149', 'archive_name': 'phidgets.tar.gz', 'vim_script_nr': 3866, 'type': 'archive'}
 let s:p['behat.zip']={'title': 'behat.zip', 'script-type': 'ftplugin', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17146', 'archive_name': 'vim-behat-1.0.zip', 'vim_script_nr': 3865, 'type': 'archive'}
 let s:p.Eddie={'title': 'Eddie.vim', 'script-type': 'color scheme', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17140', 'archive_name': 'vim-eddie.zip', 'vim_script_nr': 3864, 'type': 'archive'}
 let s:p.epegzz={'title': 'epegzz.vim', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17138', 'archive_name': 'epegzz.zip', 'vim_script_nr': 3863, 'type': 'archive'}
@@ -1349,7 +1351,7 @@ let s:p.proton={'title': 'proton', 'script-type': 'color scheme', 'version': '0.
 let s:p.Spiderhawk={'title': 'Spiderhawk', 'script-type': 'color scheme', 'version': '1.0', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9769', 'archive_name': 'spiderhawk.vim', 'vim_script_nr': 2509, 'type': 'archive'}
 let s:p.DBGp_Remote_Debugger_Interface={'title': 'DBGp Remote Debugger Interface', 'script-type': 'utility', 'version': '1.0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9793', 'archive_name': 'debugger.tar.gz', 'vim_script_nr': 2508, 'type': 'archive'}
 let s:p.0scan={'title': '0scan', 'script-type': 'utility', 'version': '0.5.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9916', 'archive_name': '0scan.zip', 'vim_script_nr': 2507, 'type': 'archive'}
-let s:p.VimIM={'title': 'VimIM', 'script-type': 'utility', 'version': '0.9.9.9.8', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=16843', 'archive_name': 'vimim.vim', 'vim_script_nr': 2506, 'type': 'archive'}
+let s:p.VimIM={'title': 'VimIM', 'script-type': 'utility', 'version': '0.9.9.9.9', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=17150', 'archive_name': 'vimim.vim', 'vim_script_nr': 2506, 'type': 'archive'}
 let s:p.tetragrammaton={'title': 'tetragrammaton', 'script-type': 'color scheme', 'version': '1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9745', 'archive_name': 'tetragrammaton.vim', 'vim_script_nr': 2505, 'type': 'archive'}
 let s:p.vanzan_color={'title': 'vanzan_color', 'script-type': 'color scheme', 'version': '0.2', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9863', 'archive_name': 'vanzan_color.vim', 'vim_script_nr': 2504, 'type': 'archive'}
 let s:p.lightcolors={'title': 'lightcolors', 'script-type': 'color scheme', 'version': '0.1', 'url': 'http://www.vim.org/scripts/download_script.php?src_id=9742', 'archive_name': 'lightcolors.vim', 'vim_script_nr': 2503, 'type': 'archive'}
