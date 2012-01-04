@@ -722,7 +722,6 @@ endfor
 "Additional sources information {{{
 
 " add / correct some types:
-let s:plugin_sources[s:snr_to_name[1571]]['strip-components'] = 0
 let s:plugin_sources[s:snr_to_name[2527]]['script-type'] = 'ftplugin'
 let s:plugin_sources[s:snr_to_name[1542]]['target_dir'] = 'autoload'
 let s:plugin_sources[s:snr_to_name[1542]]['script-type'] = 'autoload'
