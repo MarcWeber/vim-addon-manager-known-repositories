@@ -54,22 +54,6 @@ sub WL {
     flock $F, LOCK_UN
         or die "Failed to unlock file: $!";
 }
-#▶1 formatKey :: name, value → string
-sub formatKey {
-    my ($key, $val)=@_;
-    my $r="'$key': ";
-    if($val=~/\n/) {
-        $val=~s/(["\\])/\\$1/g;
-        $val=~s/\n/\\n/g;
-        $r.="\"$val\"";
-    }
-    else {
-        $val=~s/'/''/g;
-        $r.="'$val'";
-    }
-    $r.=", ";
-    return $r;
-}
 #▶1 copyScalar :: a → a
 sub copyScalar {
     my ($a)=@_;
@@ -88,20 +72,21 @@ sub formatScripts {
     my ($scripts)=@_;
     my ($VODB, $NrNDB, $NNrDB, $nrndb, $nnrdb) = openDBs();
     WL($VODB, "{\n");
+    my $json=JSON::PP->new()->utf8()->canonical();
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
         my $snr=$script->{"snr"};
         my $sid=$script->{"id"};
         addToDct($nrndb, $snr, $sid);
         addToDct($nnrdb, $sid, 0+$snr);
-        WL($VODB, "'".$script->{"id"}."':{".
-                  formatKey("title", $script->{"name"}).
-                  formatKey("script-type", $script->{"type"}).
-                  formatKey("version", $lastsrc->{"version"}).
-                  formatKey("url", "$base/download_script.php?src_id=".$lastsrc->{"srcnr"}).
-                  formatKey("archive_name", $lastsrc->{"archive"}).
-                  "'vim_script_nr': ".$script->{"snr"}.", ".
-                  "'type': 'archive'},\n");
+        WL($VODB, '"'.$script->{"id"}.'":'.
+                  $json->encode({"script-type" => $script->{"type"},
+                                         title => $script->{"name"},
+                                 vim_script_nr => $script->{"snr"},
+                                       version => $lastsrc->{"version"},
+                                  archive_name => $lastsrc->{"archive"},
+                                           url => "$base/download_script.php?src_id=".$lastsrc->{"srcnr"},
+                                          type => "archive"}).",\n");
     }
     WL($VODB, "}");
     my $nrjson = JSON::PP->new()->utf8()
