@@ -7341,6 +7341,9 @@
    "gtags" : [
       893
    ],
+   "gtags_multiwindow_browsing" : [
+      3868
+   ],
    "gtd" : [
       1566
    ],
@@ -8255,6 +8258,9 @@
    ],
    "lightcolors" : [
       2503
+   ],
+   "lightdiff" : [
+      3869
    ],
    "lighttpd_syntax" : [
       2597
