@@ -597,6 +597,9 @@ let s:scm_vim_org_sources.3574 = {'type': 'git', 'url': 'git://github.com/gregse
 let s:mai_snr_deps.3574 = [2975]
 let s:scm_vim_org_sources.3818 = {'type': 'git', 'url': 'git://github.com/gregsexton/MatchTag'}
 
+" Andreas Wålm
+let s:scm_vim_org_sources.3576 = {'type': 'git', 'url': 'git://github.com/walm/jshint.vim.git'}
+
 " Jezreel Ng
 let s:scm_vim_org_sources.3509 = {'type': 'git', 'url': 'git://github.com/int3/vim-extradite'}
 let s:mai_snr_deps.3509 = [2975]
@@ -663,6 +666,9 @@ let s:scm_vim_org_sources.2611 = {'type': 'git', 'url': 'git://github.com/drming
 
 " Holger Rapp
 let s:scm_vim_org_sources.2715 = {'type': 'bzr', 'url': 'lp:ultisnips'}
+
+" Bruno Michel
+let s:scm_vim_org_sources.2416 = {'type': 'git', 'url': 'git://github.com/nono/jquery.vim.git'}
 
 " Drew Neil
 let s:scm_vim_org_sources.3382 = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-textobj-rubyblock'}
