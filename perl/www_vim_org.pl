@@ -22,7 +22,7 @@ my $ua=LWP::UserAgent->new(cookie_jar => {},
 my $vimorg="http://www.vim.org";
 my $base="$vimorg/scripts";
 my $maxattempts=3;
-my $vimtarget="plugin/vim.org-scripts.vim";
+my $vodbtarget="db/vimorgsources.json";
 my $nrndbtarget="db/nrnameshist.json";
 my $nnrdbtarget="db/namenrshist.json";
 
@@ -86,28 +86,24 @@ sub addToDct {
 #▶1 formatScripts :: [script], fh, fh, fh → + FS: scripts.yaml, scripts.dat, db/
 sub formatScripts {
     my ($scripts)=@_;
-    my ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb) = openDBs();
+    my ($VODB, $NrNDB, $NNrDB, $nrndb, $nnrdb) = openDBs();
+    WL($VODB, "{\n");
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
-        my $line="let s:p";
         my $snr=$script->{"snr"};
         my $sid=$script->{"id"};
         addToDct($nrndb, $snr, $sid);
         addToDct($nnrdb, $sid, 0+$snr);
-        if($script->{"id"} =~ /^[a-zA-Z0-9_]+$/) {
-            $line.=".".$script->{"id"}; }
-        else {
-            # XXX Relying on name generator not outputting strings with \n or '
-            $line.="['".$script->{"id"}."']"; }
-        $line.="={".formatKey("title", $script->{"name"}).
-                    formatKey("script-type", $script->{"type"}).
-                    formatKey("version", $lastsrc->{"version"}).
-                    formatKey("url", "$base/download_script.php?src_id=".$lastsrc->{"srcnr"}).
-                    formatKey("archive_name", $lastsrc->{"archive"}).
-                    "'vim_script_nr': ".$script->{"snr"}.", ".
-                    "'type': 'archive'}\n";
-        WL($VIM, $line);
+        WL($VODB, "'".$script->{"id"}."':{".
+                  formatKey("title", $script->{"name"}).
+                  formatKey("script-type", $script->{"type"}).
+                  formatKey("version", $lastsrc->{"version"}).
+                  formatKey("url", "$base/download_script.php?src_id=".$lastsrc->{"srcnr"}).
+                  formatKey("archive_name", $lastsrc->{"archive"}).
+                  "'vim_script_nr': ".$script->{"snr"}.", ".
+                  "'type': 'archive'},\n");
     }
+    WL($VODB, "}");
     my $nrjson = JSON::PP->new()->utf8()
                                 ->pretty()
                                 ->indent(1)
@@ -116,21 +112,14 @@ sub formatScripts {
                                 ->pretty()
                                 ->indent(1)
                                 ->canonical();
-    print $NrNDB $nrjson->encode($nrndb);
-    print $NNrDB  $njson->encode($nnrdb);
+    WL($NrNDB, $nrjson->encode($nrndb));
+    WL($NNrDB,  $njson->encode($nnrdb));
 }
 #▶1 openDBs :: () → FD + …
 sub openDBs() {
-    my $VIM;
-    open $VIM, '>:utf8', $vimtarget
+    my $VODB;
+    open $VODB, '>:utf8', $vodbtarget
         or die $!;
-    print $VIM "if !exists('g:vim_addon_manager')\n";
-    print $VIM "    let g:vim_addon_manager={}\n";
-    print $VIM "endif\n";
-    print $VIM "if !has_key(g:vim_addon_manager, 'vim_org_sources')\n";
-    print $VIM "    let g:vim_addon_manager.vim_org_sources={}\n";
-    print $VIM "endif\n";
-    print $VIM "let s:p=g:vim_addon_manager.vim_org_sources\n";
     my $NrNDB;
     open $NrNDB, '<:utf8', $nrndbtarget;
     my $nrndb=JSON::PP->new()->utf8()->decode(join "", <$NrNDB>);
@@ -141,7 +130,7 @@ sub openDBs() {
     my $nnrdb=JSON::PP->new()->utf8()->decode(join "", <$NNrDB>);
     close $NNrDB;
     open $NNrDB, '>:utf8', $nnrdbtarget;
-    return ($VIM, $NrNDB, $NNrDB, $nrndb, $nnrdb);
+    return ($VODB, $NrNDB, $NNrDB, $nrndb, $nnrdb);
 }
 #▶1 genName :: name, snr, scriptnames → sname + scriptnames
 sub genName {

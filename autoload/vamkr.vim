@@ -10,3 +10,6 @@ endfunction
 function! vamkr#GetNrsDb()
     return s:GetJSON('nrnameshist')
 endfunction
+function! vamkr#GetVOSources()
+    return s:GetJSON('vimorgsources')
+endfunction

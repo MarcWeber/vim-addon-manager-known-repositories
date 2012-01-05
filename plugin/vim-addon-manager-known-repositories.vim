@@ -6,10 +6,7 @@ let s:missing_addon_infos = s:c['missing_addon_infos']
 let s:mai_snr = {}
 let s:mai_snr_deps={}
 
-execute 'source' expand('<sfile>:p:h').'/vim.org-scripts.vim'
-
-let s:plugin_sources = s:c.vim_org_sources
-unlet s:c.vim_org_sources
+let s:plugin_sources = vamkr#GetVOSources()
 
 let s:snr_to_name={}
 call map(copy(s:plugin_sources), 'extend(s:snr_to_name, {v:val.vim_script_nr : v:key})')
