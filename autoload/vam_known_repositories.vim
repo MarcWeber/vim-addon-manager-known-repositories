@@ -39,13 +39,4 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
 
   " always keep what the user has set:
   call extend(a:plugin_sources, d, 'keep')
-
-  " hack: if script_id is known set script_id for SCM sources.
-  " This way the name can be found by :AddonInfo
-  for k in keys(a:www_vim_org)
-    let s_id = get(get(a:www_vim_org, k, {}),'vim_script_nr', 0)
-    if s_id != 0
-      let a:plugin_sources[k]['vim_script_nr'] = get(a:plugin_sources[k], 'vim_script_nr', s_id)
-    endif
-  endfor
 endf

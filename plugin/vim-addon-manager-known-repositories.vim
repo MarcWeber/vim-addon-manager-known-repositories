@@ -803,7 +803,7 @@ endfor
 call extend(s:scm_plugin_sources, s:scm_kana_sources)
 unlet s:scm_kana_sources
 
-call map(s:scm_vim_org_sources, 'extend(s:scm_plugin_sources, {s:snr_to_name[v:key] : v:val})')
+call map(s:scm_vim_org_sources, 'extend(s:scm_plugin_sources, {s:snr_to_name[v:key] : extend(v:val, {"vim_script_nr": v:key})})')
 unlet s:scm_vim_org_sources
 
 
