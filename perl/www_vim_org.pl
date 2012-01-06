@@ -1,4 +1,7 @@
 #!/usr/bin/perl
+# www_vim_org.pl fetches current set of known plugins and sources from www.vim.org
+# It updates db/vimorgsources.json and
+# db/names_and_historical_names_by_script_id.json
 
 use strict;
 use warnings;
