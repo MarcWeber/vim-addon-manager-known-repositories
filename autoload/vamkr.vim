@@ -13,7 +13,7 @@ endfunction
 " You must not use commands here that take “|” as a part of 
 " theirs command line, as they also consume newline
 function! vamkr#GetVim(filepart)
-    execute join(map(readfile(s:dbdir.'/'.a:filepart.'.vim'), 'v:val[0] !~ '.string('^\s*"')), "\n")
+    execute join(filter(readfile(s:dbdir.'/'.a:filepart.'.vim'), 'v:val[0] isnot# "\""'), "\n")
     return r
 endfunction
 
@@ -21,18 +21,36 @@ function! vamkr#GetNrNamesHist()
     return vamkr#GetJSON('names_and_historical_names_by_script_id')
 endfunction
 
-function! vamkr#GetNameNrOrNewNameMap()
-    let nrnameshist=vamkr#GetNrNamesHist()
+function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     let r={}
-    for [nr, names] in map(items(nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
+    for [nr, names] in map(items(a:nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
         for name in names
             let r.name=nr
         endfor
     endfor
-    " XXX Non-nr renaming should go to db/renames.json that looks like 
+    " XXX Non-nr renaming should go to db/scmrenames.json that looks like 
     " {old_name:new_name}. It is absent so code is commented
-    " call extend(r, vamkr#GetJSON("renames"))
+    " call extend(r, vamkr#GetJSON("scmrenames"))
     return r
+endfunction
+
+function s:NormalizeName(name)
+    return substitute(tolower(a:name), '[_/\-]*', '', 'g')
+endfunction
+function! vamkr#SuggestNewName(name)
+    let nrnameshist=vamkr#GetNrNamesHist()
+    let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
+    let r=[]
+    if has_key(namemap, a:name)
+        let r+=[namemap[a:name]]
+    endif
+    let r+=[values(filter(copy(namemap), 's:NormalizeName(v:val) is# '.string(s:NormalizeName(a:name))))]
+    call map(r, 'type(v:val)=='.type(0).'? nrnameshist[v:val][0] : v:val')
+    return r
+endfunction
+
+function! vamkr#GetVOSources()
+    return vamkr#GetJSON('vimorgsources')
 endfunction
 
 " read scm sources: rewrite script_nr keys as names
@@ -64,3 +82,4 @@ function! vamkr#PatchSources(sources, snr_to_name)
     call map(filter(add_by_name, 'has_key(a:sources, v:key)'), 'extend(a:sources[v:key], v:val)')
     return a:sources
 endfunction
+" vim: ft=vim ts=4 sts=4 sw=4 et fmr=▶,▲
