@@ -21,12 +21,27 @@ function! vamkr#GetNrNamesHist()
     return vamkr#GetJSON('names_and_historical_names_by_script_id')
 endfunction
 
+function! vamkr#GetNameNrOrNewNameMap()
+    let nrnameshist=vamkr#GetNrNamesHist()
+    let r={}
+    for [nr, names] in map(items(nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
+        for name in names
+            let r.name=nr
+        endfor
+    endfor
+    " XXX Non-nr renaming should go to db/renames.json that looks like 
+    " {old_name:new_name}. It is absent so code is commented
+    " call extend(r, vamkr#GetJSON("renames"))
+    return r
+endfunction
+
+" read scm sources: rewrite script_nr keys as names
 function! vamkr#GetSCMSources(snr_to_name)
     let [scm, scmnr]=vamkr#GetVim('scmsources')
-    let bad_keys = copy(scmnr)
-    call filter(bad_keys, '!has_key(a:snr_to_name, v:key)')
+    let bad_keys=[]
+    call filter(scmnr, 'has_key(a:snr_to_name, v:key) ? 1 : [0, add(bad_keys, v:key)][0]')
     if !empty(bad_keys)
-      throw "bad script numbers in scmsources.vim: ".string(keys(bad_keys))
+        call vam#Log('There are bad keys inside scmnr dictionary: '.string(bad_keys))
     endif
     " merge scmnr sources into scm. But first add vim_script_nr key so that
     " AddonInfo still finds the plugin even if scm overwrites www_vim_org
