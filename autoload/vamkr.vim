@@ -37,15 +37,21 @@ endfunction
 function s:NormalizeName(name)
     return substitute(tolower(a:name), '[_/\-]*', '', 'g')
 endfunction
+function s:GetName(nameOrNr, nrnameshist)
+    return type(a:nameOrNr)==type(0) ? a:nrnameshist[a:nameOrNr] : a:nameOrNr
+endfunction
+" It will return 2-tuple: (new_name, [corrected_name])
 function! vamkr#SuggestNewName(name)
     let nrnameshist=vamkr#GetNrNamesHist()
     let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
     let r=[]
     if has_key(namemap, a:name)
-        let r+=[namemap[a:name]]
+        let r+=[s:GetName(namemap[a:name])]
+    else
+        let r+=[0]
     endif
     let r+=[values(filter(copy(namemap), 's:NormalizeName(v:val) is# '.string(s:NormalizeName(a:name))))]
-    call map(r, 'type(v:val)=='.type(0).'? nrnameshist[v:val][0] : v:val')
+    call map(r[1], 's:GetName(v:val)')
     return r
 endfunction
 
