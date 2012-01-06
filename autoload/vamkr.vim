@@ -21,6 +21,7 @@ function! vamkr#GetNrNamesHist()
     return vamkr#GetJSON('names_and_historical_names_by_script_id')
 endfunction
 
+" can be removed?
 function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     let r={}
     for [nr, names] in map(items(a:nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
@@ -40,23 +41,42 @@ endfunction
 function s:GetName(nameOrNr, nrnameshist)
     return type(a:nameOrNr)==type(0) ? a:nrnameshist[a:nameOrNr] : a:nameOrNr
 endfunction
-" It will return 2-tuple: (new_name, [corrected_name])
-function! vamkr#SuggestNewName(name)
-    let nrnameshist=vamkr#GetNrNamesHist()
-    let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
-    let r=[]
-    if has_key(namemap, a:name)
-        let r+=[s:GetName(namemap[a:name], nrnameshist)]
-    else
-        let r+=[0]
-    endif
-    let r+=[keys(filter(copy(namemap), 's:NormalizeName(v:key) is# '.string(s:NormalizeName(a:name))))]
-    call map(r[1], 's:GetName(v:val, nrnameshist)')
-    return r
+
+function! vamkr#SuggestNewName(unkown_name)
+    let messages = []
+    for [nr, names] in items(vamkr#GetJSON('names_and_historical_names_by_script_id'))
+        if index(names, a:unkown_name) > 0
+            call add(messages, a:unkown_name." was renamed to ".names[0]
+        endif
+    endfor
+    return messages
 endfunction
 
-function! vamkr#GetVOSources()
-    return vamkr#GetJSON('vimorgsources')
+" It will return 2-tuple: (new_name, [corrected_name])
+" why do we need GetNameNrOrNewNameMap here? Isn't the implementation above
+" enough?
+" function! vamkr#SuggestNewName(name)
+"     let nrnameshist=vamkr#GetNrNamesHist()
+"     let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
+"     let r=[]
+"     if has_key(namemap, a:name)
+"         let r+=[s:GetName(namemap[a:name], nrnameshist)]
+"     else
+"         let r+=[0]
+"     endif
+"     let r+=[keys(filter(copy(namemap), 's:NormalizeName(v:key) is# '.string(s:NormalizeName(a:name))))]
+"     call map(r[1], 's:GetName(v:val, nrnameshist)')
+"     return r
+" endfunction
+
+function! vamkr#SuggestNewName(unkown_name)
+    let renamed = []
+    for [nr, names] in items(vamkr#GetJSON('names_and_historical_names_by_script_id'))
+      if index(names, a:unkown_name) > 0
+        call add(renamed, names[0])
+      endif
+    endfor
+    return map(renamed, string(a:unkown_name).'." was renamed to ".v:val')
 endfunction
 
 " read scm sources: rewrite script_nr keys as names
