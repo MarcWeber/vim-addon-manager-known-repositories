@@ -6,8 +6,8 @@ function! vamkr#GetJSON(filepart)
   " from 35 to 33ms ..
   let body = 
         \ executable('cat')
-        \ ? join(split(system('cat '.shellescape(file)),"\n"),"")
-        \ : join(readfile(file),"")
+        \ ? substitute(system('cat '.shellescape(file)), "\n", '', 'g')
+        \ : join(readfile(file, 'b'),"")
     return eval(body)
 endfunction
 
