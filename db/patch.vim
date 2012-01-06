@@ -1,7 +1,4 @@
-" XXX This file is intended for sourcing by :execute inside vamkr#GetVim()
-"     It means that you must not use commands here that take “|” as a part of 
-"     theirs command line, as they also consume newline
-"     It also means that all comments must start at the start of the line
+" See documentation at vamkr#GetVim
 let add_by_snr={}
 let add_by_name={}
 let mai_snr = {}
