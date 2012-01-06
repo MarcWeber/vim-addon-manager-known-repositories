@@ -1,6 +1,12 @@
 let s:dbdir=expand('<sfile>:h:h').'/db'
 function! vamkr#GetJSON(filepart)
-    return eval(join(readfile(s:dbdir.'/'.a:filepart.'.json')))
+  let file = s:dbdir.'/'.a:filepart.'.json'
+  " don't ask me why system and cat is much much faster !
+  let body = 
+        \ executable('cat')
+        \ ? join(split(system('cat '.shellescape(file)),"\n"),"")
+        \ : join(readfile(file),"")
+    return eval(body)
 endfunction
 
 " GetVim executes content of a .vim file returning the r var which should be
