@@ -6,12 +6,12 @@ function! vamkr#GetVim(filepart)
     execute join(filter(readfile(s:dbdir.'/'.a:filepart.'.vim'), 'v:val[0] isnot# "\""'), "\n")
     return r
 endfunction
-function! vamkr#GetNamesDb()
+function! vamkr#GetNameNrsHist()
     let r=vamkr#GetJSON('namenrshist')
     " TODO Add non-nr renaming
     return r
 endfunction
-function! vamkr#GetNrsDb()
+function! vamkr#GetNrNamesHist()
     return vamkr#GetJSON('nrnameshist')
 endfunction
 function! vamkr#GetVOSources()
