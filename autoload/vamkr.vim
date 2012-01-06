@@ -25,7 +25,7 @@ function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     let r={}
     for [nr, names] in map(items(a:nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
         for name in names
-            let r.name=nr
+            let r[name]=nr
         endfor
     endfor
     " XXX Non-nr renaming should go to db/scmrenames.json that looks like 
@@ -46,12 +46,12 @@ function! vamkr#SuggestNewName(name)
     let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
     let r=[]
     if has_key(namemap, a:name)
-        let r+=[s:GetName(namemap[a:name])]
+        let r+=[s:GetName(namemap[a:name], nrnameshist)]
     else
         let r+=[0]
     endif
-    let r+=[values(filter(copy(namemap), 's:NormalizeName(v:val) is# '.string(s:NormalizeName(a:name))))]
-    call map(r[1], 's:GetName(v:val)')
+    let r+=[keys(filter(copy(namemap), 's:NormalizeName(v:key) is# '.string(s:NormalizeName(a:name))))]
+    call map(r[1], 's:GetName(v:val, nrnameshist)')
     return r
 endfunction
 
@@ -75,7 +75,7 @@ function! vamkr#GetSCMSources(snr_to_name)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, add_by_name, mai_snr]=vamkr#GetVim('patch')
+    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#GetVim('patch')
     for [snr, deps] in items(mai_snr_deps)
       if !has_key(mai_snr, snr)
         let mai_snr[snr]={}

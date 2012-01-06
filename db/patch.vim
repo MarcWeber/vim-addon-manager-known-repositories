@@ -57,5 +57,5 @@ for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
   endif
 endfor
 "}}}1
-let r=[add_by_snr, add_by_name, mai_snr]
+let r=[add_by_snr, add_by_name, mai_snr, mai_snr_deps]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr={{{,}}}
