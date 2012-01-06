@@ -8,7 +8,7 @@ function! vamkr#GetJSON(filepart)
   let body = 
         \ executable('cat') && executable('tr')
         \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
-        \ : join(readfile(file),"")
+        \ : join(readfile(file,'b'),"")
     return eval(body)
 endfunction
 
