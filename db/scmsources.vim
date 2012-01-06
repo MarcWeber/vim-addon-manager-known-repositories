@@ -109,11 +109,9 @@ let scmnr.3695 = {'type': 'git', 'url': 'git://github.com/tpope/vim-commentary'}
 let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 " The following plugin is not present on vim.org:
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
+let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
-" " The following plugin has the same name as one of vim.org ones, but different 
-" " author
-" let scm['markdown'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 
 " Marty Grenfell
 let scmnr.1218 = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter'}
