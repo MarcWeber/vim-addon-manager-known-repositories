@@ -23,7 +23,7 @@ my $vimorg="http://www.vim.org";
 my $base="$vimorg/scripts";
 my $maxattempts=3;
 my $vodbtarget="db/vimorgsources.json";
-my $nrndbtarget="db/nrnameshist.json";
+my $nrndbtarget="db/names_and_historical_names_by_script_id.json";
 
 my %children;
 

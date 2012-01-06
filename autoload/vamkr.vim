@@ -7,7 +7,7 @@ function! vamkr#GetVim(filepart)
     return r
 endfunction
 function! vamkr#GetNrNamesHist()
-    return vamkr#GetJSON('nrnameshist')
+    return vamkr#GetJSON('names_and_historical_names_by_script_id')
 endfunction
 function! vamkr#GetVOSources()
     return vamkr#GetJSON('vimorgsources')
