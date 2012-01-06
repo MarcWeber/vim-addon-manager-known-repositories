@@ -2,7 +2,6 @@
 "     It means that you must not use commands here that take “|” as a part of 
 "     theirs command line, as they also consume newline
 "     It also means that all comments must start at the start of the line
-let kana_names=vamkr#GetJSON('_kana')
 " custom plugins - drop me an email to get you repository added
 let scm = {}
 let scmnr = {}
@@ -702,7 +701,7 @@ let scm['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge
 " subdirectories - So checking out from git seems to be easier to me to
 " support them all.
 let scmkana = {}
-for [n, na] in kana_names
+for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
   let scmkana[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n}
 endfor
 call extend(scm, scmkana)

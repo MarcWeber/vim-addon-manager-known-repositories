@@ -6,7 +6,6 @@ let add_by_snr={}
 let add_by_name={}
 let mai_snr = {}
 let mai_snr_deps = {}
-let kana_names=vamkr#GetJSON('_kana')
 "{{{1 Additional sources information, type corrections
 let add_by_snr.2527={'script-type'      : 'ftplugin'}
 let add_by_snr.1542={'target_dir'       : 'autoload'}
@@ -55,7 +54,7 @@ let add_by_name['codefellow'] = {'addon-info': {'runtimepath': 'vim'} }
 let add_by_name['ideone'] = {'addon-info': {'dependencies': {"webapi-vim": { } } } }
 let add_by_name['sparkup'] = {'addon-info': {'runtimepath': 'vim'} }
 "{{{1 Missing information for kana sources
-for [n, na] in kana_names
+for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
   if n =~ 'vim-textobj-\%(user\)\@!'
     let add_by_name[na] = {'addon-info': {'dependencies': {'textobj-user': { } } } }
   endif
