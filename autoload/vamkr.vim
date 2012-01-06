@@ -6,13 +6,21 @@ function! vamkr#GetVim(filepart)
     execute join(filter(readfile(s:dbdir.'/'.a:filepart.'.vim'), 'v:val[0] isnot# "\""'), "\n")
     return r
 endfunction
-function! vamkr#GetNameNrsHist()
-    let r=vamkr#GetJSON('namenrshist')
-    " TODO Add non-nr renaming
-    return r
-endfunction
 function! vamkr#GetNrNamesHist()
     return vamkr#GetJSON('nrnameshist')
+endfunction
+function! vamkr#GetNameNrOrNewNameMap()
+    let nrnameshist=vamkr#GetNrNamesHist()
+    let r={}
+    for [nr, names] in map(items(nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
+        for name in names
+            let r.name=nr
+        endfor
+    endfor
+    " XXX Non-nr renaming should go to db/renames.json that looks like 
+    " {old_name:new_name}. It is absent so code is commented
+    " call extend(r, vamkr#GetJSON("renames"))
+    return r
 endfunction
 function! vamkr#GetVOSources()
     return vamkr#GetJSON('vimorgsources')

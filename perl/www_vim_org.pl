@@ -24,7 +24,6 @@ my $base="$vimorg/scripts";
 my $maxattempts=3;
 my $vodbtarget="db/vimorgsources.json";
 my $nrndbtarget="db/nrnameshist.json";
-my $nnrdbtarget="db/namenrshist.json";
 
 my %children;
 
@@ -70,7 +69,7 @@ sub addToDct {
 #▶1 formatScripts :: [script], fh, fh, fh → + FS: scripts.yaml, scripts.dat, db/
 sub formatScripts {
     my ($scripts)=@_;
-    my ($VODB, $NrNDB, $NNrDB, $nrndb, $nnrdb) = openDBs();
+    my ($VODB, $NrNDB, $nrndb) = openDBs();
     WL($VODB, "{\n");
     my $json=JSON::PP->new()->utf8()->canonical();
     for my $script (@$scripts) {
@@ -78,7 +77,6 @@ sub formatScripts {
         my $snr=$script->{"snr"};
         my $sid=$script->{"id"};
         addToDct($nrndb, $snr, $sid);
-        addToDct($nnrdb, $sid, 0+$snr);
         WL($VODB, '"'.$script->{"id"}.'":'.
                   $json->encode({"script-type" => $script->{"type"},
                                          title => $script->{"name"},
@@ -98,7 +96,6 @@ sub formatScripts {
                                 ->indent(1)
                                 ->canonical();
     WL($NrNDB, $nrjson->encode($nrndb));
-    WL($NNrDB,  $njson->encode($nnrdb));
 }
 #▶1 openDBs :: () → FD + …
 sub openDBs() {
@@ -110,12 +107,7 @@ sub openDBs() {
     my $nrndb=JSON::PP->new()->utf8()->decode(join "", <$NrNDB>);
     close $NrNDB;
     open $NrNDB, '>:utf8', $nrndbtarget;
-    my $NNrDB;
-    open $NNrDB, '<:utf8', $nnrdbtarget;
-    my $nnrdb=JSON::PP->new()->utf8()->decode(join "", <$NNrDB>);
-    close $NNrDB;
-    open $NNrDB, '>:utf8', $nnrdbtarget;
-    return ($VODB, $NrNDB, $NNrDB, $nrndb, $nnrdb);
+    return ($VODB, $NrNDB, $nrndb);
 }
 #▶1 genName :: name, snr, scriptnames → sname + scriptnames
 sub genName {
