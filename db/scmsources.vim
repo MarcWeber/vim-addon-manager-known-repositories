@@ -347,9 +347,6 @@ let scmnr.2446 = {'type': 'git', 'url': 'git://github.com/jkramer/vim-narrow'}
 " Following repository does not contain correct directory tree
 " let scmnr.2278 = {'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}
 
-" Mick Koch
-let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
-
 " Rykka Krin
 let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV'}
 let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy'}
