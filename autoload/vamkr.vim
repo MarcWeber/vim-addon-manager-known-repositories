@@ -3,11 +3,12 @@ function! vamkr#GetJSON(filepart)
   let file = s:dbdir.'/'.a:filepart.'.json'
   " don't ask me why system and cat is much much faster for very large files
   " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
-  " from 35 to 33ms ..
+  " from 35 to 5ms  ..
+  " windows users: provide your own hack ..
   let body = 
-        \ executable('cat')
-        \ ? substitute(system('cat '.shellescape(file)), "\n", '', 'g')
-        \ : join(readfile(file, 'b'),"")
+        \ executable('cat') && executable('tr')
+        \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
+        \ : join(readfile(file),"")
     return eval(body)
 endfunction
 
