@@ -11,6 +11,7 @@ if($ARGV[0] eq "--help") {
     print "Do not forget to run\n";
     print "    curl 'http://www.vim.org/script-info.php' > vodb.json\n";
     print "before running this script.\n";
+    exit 0;
 }
 
 binmode STDOUT, ':utf8';

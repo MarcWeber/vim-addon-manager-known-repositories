@@ -45,3 +45,4 @@ nnoremap ,gv :call AddGHUrl(@+, +GetSNR())<CR>j
 nnoremap ,gg :call AddGHUrl(@+, 0)<CR>j
 nnoremap ,ge :call AddGHUrl(@+, )<Left>
 nnoremap ,ga :call append('.', ['', '" '.GetAuthor()])<CR>2j
+nmap     ,gn ,ga,gv
