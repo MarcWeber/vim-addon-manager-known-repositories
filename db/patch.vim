@@ -38,6 +38,7 @@ let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported 
 let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so use 'snipmate'"}
 
 let add_by_snr.1272={'deprecated' : "Superseeded by vimscript #1431 (checksyntax)"}
+let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpope's vim-rvm"}
 
 let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
 
@@ -48,11 +49,13 @@ let mai_snr_deps.3574 = [2975]
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3382 = [39, 2100]
 let mai_snr_deps.2665 = [3464]
+let mai_snr_deps.2972 = [2806, 2971]
 " Unite.vim plugins
 let mai_snr_deps.3318 = [3396]
 let mai_snr_deps.3319 = [3396]
 let mai_snr_deps.3330 = [3396]
 let mai_snr_deps.3348 = [3396]
+let mai_snr_deps.3356 = [3396, 3133, 'webapi-vim']
 " Neocemplcache plugins
 let mai_snr_deps.3423 = [2620]
 let mai_snr_deps.3440 = [2620]
@@ -61,6 +64,8 @@ let mai_snr_deps.3046 = [2692]
 let mai_snr_deps.3610 = [2692, 2944]
 let mai_snr_deps.3312 = [2692]
 let mai_snr_deps.3211 = [2692]
+" snipMate dependents
+let mai_snr_deps.3249 = [2540]
 "{{{1 Missing runtimepath information for vim.org plugins
 let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}

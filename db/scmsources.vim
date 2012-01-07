@@ -114,6 +114,7 @@ let scmnr.3695 = {'type': 'git', 'url': 'git://github.com/tpope/vim-commentary'}
 let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 " The following plugin is not present on vim.org:
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
+let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
@@ -580,6 +581,7 @@ let scmnr.2878 = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc'}
 let scmnr.2573 = {'type': 'git', 'url': 'git://github.com/hallison/vim-darkdevel'}
 let scmnr.2882 = {'type': 'git', 'url': 'git://github.com/hallison/vim-markdown'}
 let scmnr.2942 = {'type': 'git', 'url': 'git://github.com/hallison/vim-ruby-sinatra'}
+let scmnr.3091 = {'type': 'git', 'url': 'git://github.com/edsono/vim-sessions'}
 
 " Eric Van Dewoestine
 let scmnr.1643 = {'type': 'git', 'url': 'git://github.com/ervandew/supertab'}
@@ -707,7 +709,7 @@ let scmnr.1120 = {'type': 'git', 'url': 'git://github.com/2072/PHP-Indenting-for
 " Anders Thøgersen
 let scmnr.1167 = {'type': 'git', 'url': 'git://github.com/aklt/vim-substitute'}
 let scmnr.2564 = {'type': 'git', 'url': 'git://github.com/aklt/vim-simple_comments'}
-let scmnr.3528 = {'type': 'git', 'url': 'git://github.com/aklt/plantuml-syntax'}
+let scmnr.3538 = {'type': 'git', 'url': 'git://github.com/aklt/plantuml-syntax'}
 
 " Ben Williams
 let scmnr.1242 = {'type': 'git', 'url': 'git://github.com/plasticboy/vim-markdown'}
@@ -771,16 +773,16 @@ let scmnr.3423 = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-ghc'}
 let scmnr.3440 = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-look'}
 " The following plugins are not present on vim.org:
 let scm['vital'] = {'type': 'git', 'url': 'git://github.com/ujihisa/vital.vim'}
-let scm['unite-haskellimport'] = {'type': 'git', 'url': 'git://github.com/ujihisa/unite-haskellimport', 'addon-info': {'dependencies': {'unite': { } } } }
+let scm['unite-haskellimport'] = {'type': 'git', 'url': 'git://github.com/ujihisa/unite-haskellimport', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['vimshell-ssh'] = {'type': 'git', 'url': 'git://github.com/ujihisa/vimshell-ssh'}
-let scm['neco-rubymf'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-rubymf', 'addon-info': {'dependencies': {'neocomplcache': { } } } }
-let scm['neco-rake'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-rake', 'addon-info': {'dependencies': {'neocomplcache': { } } } }
-let scm['repl'] = {'type': 'git', 'url': 'git://github.com/ujihisa/repl.vim', 'addon-info': {'dependencies': {'quickrun%2419': {}, 'vimshell': {} } } }
-let scm['neco-drikin'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-drikin', 'addon-info': {'dependencies': {'neocomplcache': { } } } }
-let scm['unite-launch'] = {'type': 'git', 'url': 'git://github.com/ujihisa/unite-launch', 'addon-info': {'dependencies': {'unite': {}, 'quickrun%2419': {} } } }
+let scm['neco-rubymf'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-rubymf', 'addon-info': {'dependencies': {'%2620': {}}}}
+let scm['neco-rake'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-rake', 'addon-info': {'dependencies': {'%2620': {}}}}
+let scm['repl'] = {'type': 'git', 'url': 'git://github.com/ujihisa/repl.vim', 'addon-info': {'dependencies': {'%2419': {}, 'vimshell': {}}}}
+let scm['neco-drikin'] = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-drikin', 'addon-info': {'dependencies': {'%2620': {}}}}
+let scm['unite-launch'] = {'type': 'git', 'url': 'git://github.com/ujihisa/unite-launch', 'addon-info': {'dependencies': {'%3396': {}, '%2419': {}}}}
 let scm['rdoc@ujihisa'] = {'type': 'git', 'url': 'git://github.com/ujihisa/rdoc.vim'}
 let scm['correr'] = {'type': 'git', 'url': 'git://github.com/ujihisa/correr'}
-let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'unite': { } } } }
+let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['nclipper'] = {'type': 'git', 'url': 'git://github.com/ujihisa/nclipper.vim'}
 let scm['ref-hoogle'] = {'type': 'git', 'url': 'git://github.com/ujihisa/ref-hoogle'}
 let scm['vimshell-repl'] = {'type': 'git', 'url': 'git://github.com/ujihisa/vimshell-repl'}
@@ -820,9 +822,9 @@ let scm['banban'] = {'type': 'git', 'url': 'git://github.com/tyru/banban.vim'}
 let scm['emap'] = {'type': 'git', 'url': 'git://github.com/tyru/emap.vim'}
 let scm['pacman'] = {'type': 'git', 'url': 'git://github.com/tyru/pacman.vim'}
 let scm['ohmygrep'] = {'type': 'git', 'url': 'git://github.com/tyru/ohmygrep.vim'}
-let scm['unite-cmdwin'] = {'type': 'git', 'url': 'git://github.com/tyru/unite-cmdwin', 'addon-info': {'dependencies': {'unite': { } } } }
-let scm['skkdict'] = {'type': 'git', 'url': 'git://github.com/tyru/skkdict.vim', 'addon-info': {'dependencies': {'skk%3118': { } } } }
-let scm['simpletap'] = {'type': 'git', 'url': 'git://github.com/tyru/simpletap.vim', 'addon-info': {'dependencies': {'openbuf': { } } } }
+let scm['unite-cmdwin'] = {'type': 'git', 'url': 'git://github.com/tyru/unite-cmdwin', 'addon-info': {'dependencies': {'%3396': {}}}}
+let scm['skkdict'] = {'type': 'git', 'url': 'git://github.com/tyru/skkdict.vim', 'addon-info': {'dependencies': {'%3118': {}}}}
+let scm['simpletap'] = {'type': 'git', 'url': 'git://github.com/tyru/simpletap.vim', 'addon-info': {'dependencies': {'openbuf': {}}}}
 let scm['cul'] = {'type': 'git', 'url': 'git://github.com/tyru/cul.vim'}
 let scm['vice'] = {'type': 'git', 'url': 'git://github.com/tyru/vice.vim'}
 let scm['quickey'] = {'type': 'git', 'url': 'git://github.com/tyru/quickey.vim'}
@@ -836,8 +838,8 @@ let scm['detect-coding-style'] = {'type': 'git', 'url': 'git://github.com/tyru/d
 let scm['tjs'] = {'type': 'git', 'url': 'git://github.com/tyru/tjs.vim'}
 let scm['syslib'] = {'type': 'git', 'url': 'git://github.com/tyru/syslib.vim'}
 let scm['undoclosewin'] = {'type': 'git', 'url': 'git://github.com/tyru/undoclosewin.vim'}
-let scm['cmdwincomplete'] = {'type': 'git', 'url': 'git://github.com/tyru/cmdwincomplete.vim', 'addon-info': {'dependencies': {'neocomplcache': { } } } }
-let scm['wim'] = {'type': 'git', 'url': 'git://github.com/tyru/wim', 'addon-info': {'dependencies': {'wwwrenderer-vim': {}, 'openbuf': {} } } }
+let scm['cmdwincomplete'] = {'type': 'git', 'url': 'git://github.com/tyru/cmdwincomplete.vim', 'addon-info': {'dependencies': {'%2620': {}}}}
+let scm['wim'] = {'type': 'git', 'url': 'git://github.com/tyru/wim', 'addon-info': {'dependencies': {'wwwrenderer-vim': {}, 'openbuf': {}}}}
 
 " Marcin Sztolcman
 let scmnr.2492 = {'type': 'git', 'url': 'git://github.com/mysz/viblip'}
@@ -881,10 +883,15 @@ let scmnr.3216 = {'type': 'git', 'url': 'git://github.com/chrisbra/Replay'}
 let scmnr.2992 = {'type': 'git', 'url': 'git://github.com/chrisbra/SaveSigns.vim'}
 let scmnr.3052 = {'type': 'git', 'url': 'git://github.com/chrisbra/changesPlugin'}
 let scmnr.2766 = {'type': 'git', 'url': 'git://github.com/chrisbra/Join'}
+let scmnr.3298 = {'type': 'git', 'url': 'git://github.com/chrisbra/vim_faq'}
 " The following plugin does not have normal directory structure:
 let scmnr.2998 = {'url': 'https://github.com/chrisbra/BackgroundColor.vim/raw/master/backgroundColor.vim', 'archive_name': 'backgroundColor.vim', 'type': 'archive', 'script-type': 'utility'}
 " The following plugins are not present on vim.org:
 let scm['improvedft'] = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
+
+" Francisco Garcia
+let scmnr.2946 = {'type': 'git', 'url': 'git://github.com/fgarcia/agtd'}
+let scmnr.3098 = {'type': 'git', 'url': 'git://github.com/fgarcia/pnote'}
 
 " lilydjwg
 let scmnr.3567 = {'type': 'git', 'url': 'git://github.com/lilydjwg/colorizer'}
@@ -906,6 +913,315 @@ let scmnr.3162 = {'url': 'https://bitbucket.org/shu/tabops/raw/default/tabops.vi
 let scmnr.2496 = {'url': 'https://bitbucket.org/shu/changed/raw/default/changed.vim', 'archive_name': 'changed.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'Changed'}
 let scmnr.2843 = {'url': 'https://bitbucket.org/shu/fliplr/raw/default/fliplr.vim', 'archive_name': 'fliplr.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'FlipLR'}
 let scmnr.3640 = {'url': 'https://bitbucket.org/shu/theoldones/raw/default/theoldones.vim', 'archive_name': 'theoldones.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'The Old Ones'}
+
+" Liam Cooke
+let scmnr.3011 = {'type': 'git', 'url': 'git://github.com/inky/tumblr'}
+
+" Michael Smith
+let scmnr.3037 = {'type': 'git', 'url': 'git://github.com/michaeljsmith/vim-indent-object'}
+" The following plugins are not present on vim.org:
+let scm['vim-colours-dark-lord'] = {'type': 'git', 'url': 'git://github.com/michaeljsmith/vim-colours-dark-lord'}
+let scm['vimdbg'] = {'type': 'git', 'url': 'git://github.com/michaeljsmith/vimdbg', 'addon-info': {'runtimepath': 'src'}}
+
+" Robby Colvin
+let scmnr.3077 = {'type': 'git', 'url': 'git://github.com/geetarista/ego.vim'}
+
+" Clayton Parker
+let scmnr.3057 = {'type': 'git', 'url': 'git://github.com/claytron/vimsizer'}
+let scmnr.3290 = {'type': 'git', 'url': 'git://github.com/claytron/RevealExtends'}
+
+" dos Santos
+let scmnr.3092 = {'url': 'https://github.com/andre-luiz-dos-santos/autocomp/raw/master/autocomp.vim', 'archive_name': 'autocomp.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" Silas Silva
+" The following is not a vim plugin, but it is posted on vim.org:
+let scmnr.3102 = {'type': 'git', 'url': 'git://github.com/silasdb/vplinst'}
+let scmnr.3173 = {'type': 'hg', 'url': 'https://code.google.com/p/vimgcwsyntax'}
+
+" David Munger
+let scmnr.3108 = {'type': 'bzr', 'url': 'lp:vim-gui-box'}
+let scmnr.3109 = {'type': 'bzr', 'url': 'lp:vim-latex-box'}
+
+" Finlay Cannon
+let scmnr.3110 = {'type': 'git', 'url': 'git://github.com/findango/mdxdotvim'}
+
+" Steve Francia
+let scmnr.3125 = {'type': 'git', 'url': 'git://github.com/spf13/PIV'}
+" The following plugin is not present on vim.org:
+let scm['Autostamp'] = {'type': 'git', 'url': 'git://github.com/spf13/Autostamp'}
+
+" mihaly himics
+let scmnr.3127 = {'url': 'https://github.com/trialsolution/gamsvim/raw/master/gams.vim', 'archive_name': 'gams.vim', 'type': 'archive', 'script-type': 'syntax'}
+
+" Mario Gutierrez
+" All following two plugins are bundled inside one github repository
+let scmnr.3132 = {'type': 'git', 'url': 'git://github.com/mgutz/vim-colors'}
+let scmnr.3347 = {'type': 'git', 'url': 'git://github.com/mgutz/vim-colors'}
+
+" Christopher Sexton
+let scmnr.3134 = {'type': 'git', 'url': 'git://github.com/csexton/rvm.vim'}
+" The following plugins are not present on vim.org:
+let scm['jekyll'] = {'type': 'git', 'url': 'git://github.com/csexton/jekyll.vim'}
+let scm['trailertrash'] = {'type': 'git', 'url': 'git://github.com/csexton/trailertrash.vim'}
+let scm['viceroy'] = {'type': 'git', 'url': 'git://github.com/csexton/viceroy'}
+
+" Wannes Meert
+let scmnr.3147 = {'type': 'git', 'url': 'git://github.com/wannesm/wmgraphviz.vim'}
+let scmnr.3858 = {'type': 'git', 'url': 'git://github.com/wannesm/rmvim.vim'}
+" The following plugins are not present on vim.org:
+let scm['wmnusmv'] = {'type': 'git', 'url': 'git://github.com/wannesm/wmnusmv.vim'}
+let scm['wmnotes'] = {'type': 'git', 'url': 'git://github.com/wannesm/wmnotes.vim'}
+let scm['wmpycalc'] = {'type': 'git', 'url': 'git://github.com/wannesm/wmpycalc.vim'}
+
+" Yaroslav Korshak
+let scmnr.3168 = {'type': 'git', 'url': 'git://github.com/yko/mojo.vim'}
+
+" Shawn Biddle
+let scmnr.3171 = {'type': 'git', 'url': 'git://github.com/shawncplus/phpcomplete.vim'}
+
+" Miao Jiang
+let scmnr.3227 = {'type': 'git', 'url': 'git://github.com/jiangmiao/simple-javascript-indenter'}
+let scmnr.3598 = {'type': 'git', 'url': 'git://github.com/jiangmiao/advancer-abbreviation'}
+let scmnr.3599 = {'type': 'git', 'url': 'git://github.com/jiangmiao/auto-pairs'}
+
+" Mitchell Bowden
+let scmnr.3228 = {'type': 'git', 'url': 'git://github.com/msbmsb/porter-stem.vim'}
+let scmnr.3229 = {'type': 'git', 'url': 'git://github.com/msbmsb/stem-search.vim'}
+
+" Dimitar Dimitrov
+let scmnr.3237 = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vim-blockinsert'}
+let scmnr.3250 = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vim-swap'}
+let scmnr.3255 = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vim-sequence'}
+let scmnr.3284 = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vim-quotes'}
+" The following plugin does not have a separate repository:
+let scmnr.3456 = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vimfiles', 'addon-info': {'runtimepath': 'bundle/pgn'}}
+" The following plugin is not present on vim.org:
+let scm['vim-blanklines'] = {'type': 'git', 'url': 'git://github.com/kurkale6ka/vim-blanklines'}
+
+" Oliver Uvman
+let scmnr.3239 = {'type': 'git', 'url': 'git://github.com/fholgado/minibufexpl.vim'}
+
+" Ton van den Heuvel
+let scmnr.3241 = {'type': 'git', 'url': 'git://github.com/ton/vim-bufsurf'}
+
+" Mark Harrison
+let scmnr.3264 = {'type': 'git', 'url': 'git://github.com/mivok/vimtodo'}
+
+" Mohammad Satrio
+let scmnr.3324 = {'type': 'git', 'url': 'git://github.com/tyok/js-mask'}
+
+" Herbert Sitz
+let scmnr.3327 = {'type': 'git', 'url': 'git://github.com/hsitz/PyScratch'}
+let scmnr.3342 = {'type': 'git', 'url': 'git://github.com/hsitz/VimOrganizer'}
+
+" Dan Lowe
+let scmnr.3339 = {'type': 'git', 'url': 'git://github.com/tangledhelix/vim-rdist'}
+let scmnr.3817 = {'type': 'git', 'url': 'git://github.com/tangledhelix/vim-kickstart'}
+let scmnr.3835 = {'type': 'git', 'url': 'git://github.com/tangledhelix/vim-octopress'}
+
+" Sergey Potapov
+let scmnr.3344 = {'type': 'git', 'url': 'git://github.com/greyblake/vim-preview'}
+
+" x aizek
+let scmnr.3345 = {'type': 'git', 'url': 'git://github.com/xaizek/vim-inccomplete'}
+let scmnr.3351 = {'type': 'git', 'url': 'git://github.com/xaizek/vim-qthelp'}
+
+" Johannes Holzfuß
+let scmnr.3352 = {'type': 'git', 'url': 'git://github.com/DataWraith/auto_mkdir'}
+
+" basyura
+let scmnr.3356 = {'type': 'git', 'url': 'git://github.com/basyura/unite-yarm', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}, 'webapi-vim':{}}}}
+let scmnr.3476 = {'type': 'git', 'url': 'git://github.com/basyura/bitly.vim'}
+" The following plugins are not present on vim.org:
+let scm['twibill'] = {'type': 'git', 'url': 'git://github.com/basyura/twibill.vim', 'addon-info': {'dependencies': {'%3133':{}, 'webapi-vim':{}}}}
+let scm['TweetVim'] = {'type': 'git', 'url': 'git://github.com/basyura/TweetVim', 'addon-info': {'dependencies': {'%3396':{}, '%3476':{}, '%3133':{}, 'twibill':{}, 'unite-outline':{}}}}
+let scm['outline-cs'] = {'type': 'git', 'url': 'git://github.com/basyura/outline-cs', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['unite-uiki'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-uiki', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}}}}
+let scm['unite-twitter'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-twitter', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['unite-converter-erase-bufnr'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-converter-erase-bufnr', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['unite-hiki'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-hiki', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}}}}
+let scm['unite-rails'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-rails', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['outline-cobol'] = {'type': 'git', 'url': 'git://github.com/basyura/outline-cobol', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['rubytter'] = {'type': 'git', 'url': 'git://github.com/basyura/rubytter.vim'}
+let scm['unite-oreore'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-oreore', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scm['b@basyura'] = {'type': 'git', 'url': 'git://github.com/basyura/b.vim'}
+
+" Chris Pickel
+let scmnr.3381 = {'type': 'git', 'url': 'git://github.com/sfiera/vim-emacsmodeline'}
+
+" Alfredo Deza
+let scmnr.3395 = {'type': 'git', 'url': 'git://github.com/alfredodeza/chapa.vim'}
+let scmnr.3424 = {'type': 'git', 'url': 'git://github.com/alfredodeza/pytest.vim'}
+let scmnr.3549 = {'type': 'git', 'url': 'git://github.com/alfredodeza/plexer.vim'}
+" The following plugins are not present on vim.org:
+let scm['coveragepy'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/coveragepy.vim'}
+let scm['konira'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/konira.vim'}
+
+" Magnus Woldrich
+let scmnr.3397 = {'type': 'git', 'url': 'git://github.com/trapd00r/neverland-vim-theme'}
+" The following plugins are not present on vim.org:
+let scm['todo-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-syntax-todo'}
+let scm['perldoc-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/perldoc.vim'}
+let scm['irc-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/irc.vim'}
+let scm['ratpoison-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-syntax-ratpoison'}
+let scm['github-recent-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-syntax-github-recent'}
+let scm['vidir-ls-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-syntax-vidir-ls'}
+let scm['vim-extendedcolors'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-extendedcolors'}
+let scm['vim-highlight-default-highlight-groups'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-highlight-default-highlight-groups'}
+
+" Maksim Ryzhikov
+let scmnr.3404 = {'type': 'git', 'url': 'git://github.com/maksimr/vim-translator'}
+
+" Sung Pae
+let scmnr.3408 = {'type': 'git', 'url': 'git://github.com/guns/jellyx.vim'}
+let scmnr.3412 = {'type': 'git', 'url': 'git://github.com/guns/xterm-color-table.vim'}
+
+" Aydar Khabibullin
+let scmnr.3428 = {'url': 'https://github.com/abra/obsidian2/raw/master/obsidian2.vim', 'archive_name': 'obsidian2.vim', 'type': 'archive', 'script-type': 'color scheme'}
+
+" MURAOKA Yusuke
+let scmnr.3430 = {'type': 'git', 'url': 'git://github.com/jbking/vim-pep8'}
+
+" David Briscoe
+let scmnr.3431 = {'type': 'git', 'url': 'git://github.com/pydave/AsyncCommand'}
+" The following plugin does not have a separate repository:
+let scmnr.3540 = {'url': 'https://github.com/pydave/daveconfig/raw/master/multi/vim/.vim/plugin/save_current_font.vim', 'archive_name': 'save_current_font.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" Tom Stuart
+let scmnr.3443 = {'type': 'git', 'url': 'git://github.com/mortice/pbcopy.vim'}
+
+" Lars Smit
+let scmnr.3445 = {'type': 'git', 'url': 'git://github.com/larssmit/Getafe'}
+
+" jelle vandebeeck
+let scmnr.3454 = {'type': 'git', 'url': 'git://github.com/fousa/vim-flog'}
+
+" Mohammed Badran
+let scmnr.3455 = {'type': 'git', 'url': 'git://github.com/mbadran/headlights'}
+
+" Yukihiro Nakadaira
+let scmnr.3804 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-diff'}
+let scmnr.3517 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-iconv'}
+let scmnr.3457 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-paint'}
+let scmnr.1939 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/autofmt'}
+let scmnr.2193 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/fpdf-vim'}
+let scmnr.2375 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/if_v8'}
+" The following is not a vim plugin, but it is posted on vim.org:
+let scmnr.3482 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-remote'}
+" The following plugin does not have a separate repository:
+let scmnr.2972 = {'url': 'https://github.com/ynkdir/vim-funlib/raw/master/autoload/hmac.vim', 'archive_name': 'hmac.vim', 'type': 'archive', 'script-type': 'utility'}
+" The following plugins are not present on vim.org:
+let scm['vim-patch'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-patch'}
+let scm['vim-samegame'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-samegame'}
+let scm['vim-print'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-print'}
+let scm['vim-funlib'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-funlib'}
+let scm['vim-guess'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-guess'}
+
+" gmarik gmarik
+let scmnr.3458 = {'type': 'git', 'url': 'git://github.com/gmarik/vundle'}
+
+" Maycon Sambinelli
+let scmnr.3462 = {'type': 'git', 'url': 'git://github.com/msambinelli/Compile'}
+
+" Brian Wigginton
+let scmnr.3474 = {'type': 'git', 'url': 'git://github.com/bawigga/vim-neopro'}
+
+" t9 md
+let scmnr.3485 = {'type': 'git', 'url': 'git://github.com/t9md/vim-phrase', 'addon-info': {'dependencies': {'%3396':{}}}}
+let scmnr.3700 = {'type': 'git', 'url': 'git://github.com/t9md/vim-tryit'}
+let scmnr.3494 = {'type': 'git', 'url': 'git://github.com/t9md/vim-underlinetag'}
+let scmnr.3491 = {'type': 'git', 'url': 'git://github.com/t9md/vim-textmanip'}
+let scmnr.3623 = {'type': 'git', 'url': 'git://github.com/t9md/vim-chef'}
+let scmnr.3692 = {'type': 'git', 'url': 'git://github.com/t9md/vim-quickhl'}
+let scmnr.3627 = {'type': 'git', 'url': 'git://github.com/t9md/vim-resizewin'}
+let scmnr.3701 = {'type': 'git', 'url': 'git://github.com/t9md/vim-fthook'}
+" The following plugins are not present on vim.org:
+let scm['textobj-function-ruby'] = {'type': 'git', 'url': 'git://github.com/t9md/vim-textobj-function-ruby'}
+let scm['quicktag'] = {'type': 'git', 'url': 'git://github.com/t9md/vim-quicktag'}
+let scm['ruby_eval'] = {'type': 'git', 'url': 'git://github.com/t9md/vim-ruby_eval'}
+let scm['surround_custom_mapping'] = {'type': 'git', 'url': 'git://github.com/t9md/vim-surround_custom_mapping'}
+let scm['unite-ack'] = {'type': 'git', 'url': 'git://github.com/t9md/vim-unite-ack', 'addon-info': {'dependencies': {'%3396':{}}}}
+
+" adam rutkowski
+let scmnr.3503 = {'type': 'git', 'url': 'git://github.com/aerosol/vim-erlang-skeletons'}
+
+" Marc Harter
+let scmnr.3513 = {'type': 'git', 'url': 'git://github.com/wavded/vim-stylus'}
+
+" Vim Outliner
+let scmnr.3515 = {'type': 'git', 'url': 'git://github.com/vimoutliner/vimoutliner'}
+
+" Bill Odom
+let scmnr.3518 = {'type': 'git', 'url': 'git://github.com/wnodom/vim-accentuate'}
+
+" Guten Ye
+let scmnr.3523 = {'type': 'git', 'url': 'git://github.com/GutenYe/gem.vim'}
+
+" Samson Wu
+let scmnr.3535 = {'type': 'git', 'url': 'git://github.com/samsonw/vim-task'}
+
+" Dave Aitken
+let scmnr.3537 = {'type': 'git', 'url': 'git://github.com/actionshrimp/vim-xpath'}
+
+" William Estoque
+let scmnr.3546 = {'type': 'git', 'url': 'git://github.com/westoque/molly.vim'}
+
+" Houtsnip -
+let scmnr.3554 = {'type': 'git', 'url': 'git://github.com/houtsnip/vim-emacscommandline'}
+
+" Jan Christoph Ebersbach
+let scmnr.3557 = {'type': 'git', 'url': 'git://github.com/jceb/vim-editqf'}
+let scmnr.3564 = {'type': 'git', 'url': 'git://github.com/jceb/vim-hier'}
+let scmnr.3642 = {'type': 'git', 'url': 'git://github.com/jceb/vim-orgmode'}
+let scmnr.3809 = {'type': 'git', 'url': 'git://github.com/jceb/vim-ipi'}
+" The following plugins are not present on vim.org:
+let scm['vim-fastwordcompleter'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-fastwordcompleter'}
+let scm['vim-multiedit'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-multiedit'}
+let scm['vim-cd'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-cd'}
+let scm['vim-qf_toggle'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-qf_toggle'}
+let scm['vim-rfc'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-rfc'}
+let scm['vim-visualsearch'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-visualsearch'}
+let scm['vim-helpwrapper'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-helpwrapper'}
+
+" Matej Svec
+let scmnr.3558 = {'type': 'git', 'url': 'git://github.com/triglav/vim-visual-increment'}
+
+" wang yicuan
+let scmnr.3559 = {'type': 'git', 'url': 'git://github.com/bolasblack/gtrans.vim'}
+let scmnr.3823 = {'type': 'git', 'url': 'git://github.com/bolasblack/csslint.vim'}
+
+" Jose Elera Campana
+" The following plugins do not have a separate repository:
+let scmnr.3425 = {'url': 'https://github.com/jelera/dotfiles/raw/master/vim/syntax/javascript.vim', 'archive_name': 'javascript.vim', 'type': 'archive', 'script-type': 'syntax'}
+let scmnr.3427 = {'url': 'https://github.com/jelera/dotfiles/raw/master/vim/colors/nazca.vim', 'archive_name': 'nazca.vim', 'type': 'archive', 'script-type': 'color scheme'}
+
+" tien le
+" The following plugin does not have normal directory structure:
+let scmnr.3414 = {'url': 'https://github.com/tienle/bocau/raw/master/bocau.vim', 'archive_name': 'bocau.vim', 'type': 'archive', 'script-type': 'color scheme'}
+
+" Jiri Kratochvil
+" The following plugin does not have normal directory structure:
+let scmnr.3399 = {'url': 'https://github.com/klokane/vim-phpunit/raw/master/phpunit.vim', 'archive_name': 'phpunit.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" Daniel B
+" The following plugins do not have normal directory structure:
+let scmnr.3140 = {'url': 'https://github.com/dbb/vim/raw/master/obsidian.vim', 'archive_name': 'obsidian.vim', 'type': 'archive', 'script-type': 'color scheme'}
+let scmnr.3470 = {'url': 'https://github.com/dbb/vim/raw/master/tidydiff.vim', 'archive_name': 'tidydiff.vim', 'type': 'archive', 'script-type': 'ftplugin'}
+let scmnr.3693 = {'url': 'https://github.com/dbb/vim/raw/master/FixCSS.vim', 'archive_name': 'FixCSS.vim', 'type': 'archive', 'script-type': 'ftplugin'}
+
+" Steffen Siering
+" The following plugin does not have a separate repository:
+let scmnr.3034 = {'url': 'https://github.com/urso/dotrc/raw/master/vim/syntax/haskell.vim', 'archive_name': 'haskell.vim', 'type': 'archive', 'script-type': 'syntax'}
+
+" C. Coutinho
+" The following plugin does not have normal directory structure:
+let scmnr.3023 = {'url': 'https://github.com/kikijump/tslime.vim/raw/master/tslime.vim', 'archive_name': 'tslime.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" joseph wecker
+" The following plugins do not have normal directory structure:
+let scmnr.2964 = {'url': 'https://github.com/josephwecker/neutron.vim/raw/master/neutron.vim', 'archive_name': 'neutron.vim', 'type': 'archive', 'script-type': 'color scheme'}
+" The following plugin is not present on vim.org:
+let scm['murphytango'] = {'url': 'https://github.com/josephwecker/murphytango.vim/raw/master/murphytango.vim', 'archive_name': 'murphytango.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " Einar Lielmanis
 " The following plugin does not have normal directory structure:
@@ -960,12 +1276,13 @@ let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim'}
 let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup'}
 let scm['flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
 let scm['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
+let scm['vim-ruby-complexity'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-ruby-complexity'}
 let scm['vim-objc'] = {'type': 'git', 'url': 'git://github.com/b4winckler/vim-objc'}
 let scm['vimUnit@dsummersl'] = {'type': 'git', 'url': 'git://github.com/dsummersl/vimunit'}
 let scm['Processing@sophacles'] = {'type': 'git', 'url': 'git://github.com/sophacles/vim-processing'}
-let scm['unite-mark'] = {'type': 'git', 'url': 'git://github.com/tacroe/unite-mark', 'addon-info': {'dependencies': {'unite': { } } } }
-let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'unite': { } } } }
-let scm['unite-outline'] = {'type': 'git', 'url': 'git://github.com/h1mesuke/unite-outline', 'addon-info': {'dependencies': {'unite': { } } } }
+let scm['unite-mark'] = {'type': 'git', 'url': 'git://github.com/tacroe/unite-mark', 'addon-info': {'dependencies': {'%3396': {}}}}
+let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'%3396': {}}}}
+let scm['unite-outline'] = {'type': 'git', 'url': 'git://github.com/h1mesuke/unite-outline', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/unicode-haskell'}
 
 " Single files under SCM control without proper directory structure
@@ -986,4 +1303,4 @@ for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
 endfor
 call extend(scm, scmkana)
 let r=[scm, scmnr]
-" vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr={{{,}}}
+" vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲

@@ -5,10 +5,10 @@ function! vamkr#GetJSON(filepart)
   " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
   " from 35 to 5ms  ... the reason is join being slow
   " windows users: provide your own hack ..
-  let body = 
-        \ executable('cat') && executable('tr')
+  let body =
+        \ (executable('cat') && executable('tr'))
         \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
-        \ : join(readfile(file,'b'),"")
+        \ : join(readfile(file, 'b'), '')
     return eval(body)
 endfunction
 
@@ -100,6 +100,15 @@ function! vamkr#GetSCMSources(snr_to_name)
     " AddonInfo still finds the plugin even if scm overwrites www_vim_org
     " sources
     call map(scmnr, 'extend(scm, {a:snr_to_name[v:key] : extend(v:val, {"vim_script_nr": v:key})})')
+    " Transform names like %{snr} in dependencies dictionary into names used by 
+    " VAM
+    for repository in filter(values(scm), 'has_key(v:val, "addon-info") && has_key(v:val["addon-info"], "dependencies")')
+        let depdict=repository['addon-info'].dependencies
+        for depname in filter(keys(depdict), 'v:val[0] is# "%"')
+            call remove(depdict, depname)
+            let depdict[a:snr_to_name[depname[1:]]]={}
+        endfor
+    endfor
     return scm
 endfunction
 
@@ -109,7 +118,7 @@ function! vamkr#PatchSources(sources, snr_to_name)
       if !has_key(mai_snr, snr)
         let mai_snr[snr]={}
       endif
-      call map(deps, 'extend(mai_snr.'.snr.', {"dependencies": {a:snr_to_name[v:val] : { } } })')
+      call map(deps, 'extend(mai_snr.'.snr.', {"dependencies": {((type(v:val)=='.type(0).')?(a:snr_to_name[v:val]):(v:val)) : { } } })')
     endfor
     call filter(mai_snr, 'has_key(a:snr_to_name, v:key)')
     call map(mai_snr, 'extend(add_by_snr, {v:key : extend(get(add_by_snr, v:key, {}), {"addon-info": v:val})})')
