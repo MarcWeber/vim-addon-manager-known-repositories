@@ -3,7 +3,7 @@ function! vamkr#GetJSON(filepart)
   let file = s:dbdir.'/'.a:filepart.'.json'
   " don't ask me why system and cat is much much faster for very large files
   " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
-  " from 35 to 5ms  ... the reason is fold being slow
+  " from 35 to 5ms  ... the reason is join being slow
   " windows users: provide your own hack ..
   let body = 
         \ executable('cat') && executable('tr')
