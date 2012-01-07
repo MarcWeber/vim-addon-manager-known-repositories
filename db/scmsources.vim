@@ -509,6 +509,9 @@ let scm['scriproject'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim
 " Tamas Kovacs
 let scmnr.2531 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
 
+" Alessio Bolognino
+let scmnr.3871 = {'type': 'git', 'url': 'git://github.com/molok/vim-smartusline'}
+
 " Mick Koch
 let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
 
