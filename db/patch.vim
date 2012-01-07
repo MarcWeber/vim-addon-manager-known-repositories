@@ -11,6 +11,7 @@ let add_by_snr.1686={'script-type'      : 'colors'}
 let add_by_snr.2572={'strip-components' : 0}
 let add_by_snr.2429={'strip-components' : 0}
 let add_by_snr.2150={'script-type'      : 'after/syntax'}
+let add_by_snr.2548={'script-type'      : 'after/syntax'}
 let add_by_snr.1780={'script-type'      : 'syntax'}
 "{{{1 Fixing target directories
 let add_by_snr.1662={'target_dir' : 'autoload'}
@@ -35,15 +36,36 @@ let add_by_snr.3393={'deprecated' : "consider using vim-addon-local-vimrc cause 
 
 let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so use 'snipmate'"}
+
+let add_by_snr.1272={'deprecated' : "Superseeded by vimscript #1431 (checksyntax)"}
+
+let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
+
+let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
 "{{{1 Missing dependencies
 let mai_snr_deps.1984  = [3252]
 let mai_snr_deps.3574 = [2975]
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3382 = [39, 2100]
+let mai_snr_deps.2665 = [3464]
+" Unite.vim plugins
+let mai_snr_deps.3318 = [3396]
+let mai_snr_deps.3319 = [3396]
+let mai_snr_deps.3330 = [3396]
+let mai_snr_deps.3348 = [3396]
+" Neocemplcache plugins
+let mai_snr_deps.3423 = [2620]
+let mai_snr_deps.3440 = [2620]
+" Operator-user dependents
+let mai_snr_deps.3046 = [2692]
+let mai_snr_deps.3610 = [2692, 2944]
+let mai_snr_deps.3312 = [2692]
+let mai_snr_deps.3211 = [2692]
 "{{{1 Missing runtimepath information for vim.org plugins
 let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
 let mai_snr.2847 = {'runtimepath': 'vimlib'}
+let mai_snr.663  = {'runtimepath': 'vim'}
 "{{{1 Missing information for SCM sources
 let add_by_name['vimshell'] = {'addon-info': {'dependencies': {'vimproc': { } } } }
 let add_by_name['vimwiki@hg'] = {'addon-info': {'runtimepath': 'src'} }
