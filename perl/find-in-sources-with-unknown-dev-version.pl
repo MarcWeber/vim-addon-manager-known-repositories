@@ -17,6 +17,7 @@ if($ARGV[0] eq "--help") {
 binmode STDOUT, ':utf8';
 
 my $scmdb="db/scmsources.vim";
+my $ignorelist="ignore.lst";
 my $vimorg="http://www.vim.org";
 my $vodburl="$vimorg/script-info.php";
 
@@ -38,6 +39,16 @@ while(<$VIM>) {
 }
 close $VIM;
 
+if(-e $ignorelist) {
+    my $IGNORE;
+    open $IGNORE, '<:utf8', $ignorelist;
+    local $_;
+    while(<$IGNORE>) {
+        $knownsources{0+$_}=$_;
+    }
+    close $IGNORE;
+}
+
 # my %vo=%{JSON::decode_json(LWP::Simple::get($vodburl))};
 my $VODB;
 open $VODB, '<:utf8', "vodb.json";
@@ -50,6 +61,7 @@ sub PrintWithPrefix {
     $text=~s/\r//g;
     local $_;
     my @lines=split /\n/, $text;
+    return unless @lines;
     print (shift @lines);
     print "\n";
     for my $line (map {"$prefix$_"} @lines) {
