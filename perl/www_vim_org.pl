@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 # www_vim_org.pl fetches current set of known plugins and sources from www.vim.org
-# It updates db/vimorgsources.json and
-# db/names_and_historical_names_by_script_id.json
+# It updates db/vimorgsources.json and db/script-id-to-name-log.json
 
 use strict;
 use warnings;
@@ -26,7 +25,7 @@ my $vimorg="http://www.vim.org";
 my $base="$vimorg/scripts";
 my $maxattempts=3;
 my $vodbtarget="db/vimorgsources.json";
-my $nrndbtarget="db/names_and_historical_names_by_script_id.json";
+my $nrndbtarget="db/script-id-to-name-log.json";
 
 my %children;
 

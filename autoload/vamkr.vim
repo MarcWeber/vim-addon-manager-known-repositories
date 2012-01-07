@@ -27,7 +27,7 @@ function! vamkr#GetVim(filepart)
 endfunction
 
 function! vamkr#GetNrNamesHist()
-    return vamkr#GetJSON('names_and_historical_names_by_script_id')
+    return vamkr#GetJSON('script-id-to-name-log')
 endfunction
 
 " can be removed?
