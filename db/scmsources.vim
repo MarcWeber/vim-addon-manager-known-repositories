@@ -1,20 +1,5 @@
-exec vam#DefineAndBind('s:c','g:vim_addon_manager','{}')
-
-let s:c['plugin_sources'] = get(s:c,'plugin_sources', {})
-let s:c['missing_addon_infos'] = get(s:c,'missing_addon_infos', {})
-let s:missing_addon_infos = s:c['missing_addon_infos']
-
-let s:plugin_sources = vamkr#GetVOSources()
-
-let s:snr_to_name={}
-call map(copy(s:plugin_sources), 'extend(s:snr_to_name, {v:val.vim_script_nr : v:key})')
-
-let s:kana_names=split('vim-exfiletype vim-xire vim-arpeggio vim-textobj-user vim-altercmd vim-fakeclip vim-operator-user vim-vspec vim-wwwsearch vim-textobj-syntax vim-textobj-indent vim-operator-replace vim-grex vim-xml-move vim-xml-autons vim-vcsi vim-textobj-lastpat vim-textobj-jabraces vim-textobj-function vim-textobj-fold vim-textobj-entire vim-textobj-diff vim-surround vim-submode vim-smartword vim-smarttill vim-smartchr vim-skeleton vim-scratch vim-repeat vim-narrow vim-metarw vim-metarw-git vim-flydiff vim-exjumplist vim-bundle vim-textobj-datetime vim-textobj-django-template chat.vim-users.jp-log-converter jkramer-vim-narrow kuy-vim-fuzzyjump thinca-vim-qfreplace mootoh-vim-refe2 thinca-vim-ku-file_mru ujihisa-vim-quickrun vim-flymake vim-perproject vim-stackreg vim-outputz vim-ctxabbr vim-advice vim-ku-quickfix vim-ku-metarw vim-ku-bundle vim-ku-args vim-ku', ' ')
-call map(s:kana_names, '[v:val, substitute(v:val, "^vim-", "", "")]')
+" See documentation at vamkr#GetVim
 " custom plugins - drop me an email to get you repository added
-function! s:GetScmSources()
-" SCM plugin sources {{{
-" this source seems to be more up to date then the www.vim.org version:
 let scm = {}
 let scmnr = {}
 
@@ -124,11 +109,9 @@ let scmnr.3695 = {'type': 'git', 'url': 'git://github.com/tpope/vim-commentary'}
 let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 " The following plugin is not present on vim.org:
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
+let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 " " The following plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
-" " The following plugin has the same name as one of vim.org ones, but different 
-" " author
-" let scm['markdown'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 
 " Marty Grenfell
 let scmnr.1218 = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcommenter'}
@@ -364,9 +347,6 @@ let scmnr.2446 = {'type': 'git', 'url': 'git://github.com/jkramer/vim-narrow'}
 " Following repository does not contain correct directory tree
 " let scmnr.2278 = {'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}
 
-" Mick Koch
-let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
-
 " Rykka Krin
 let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV'}
 let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy'}
@@ -528,6 +508,12 @@ let scm['scriproject'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim
 
 " Tamas Kovacs
 let scmnr.2531 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
+
+" Alessio Bolognino
+let scmnr.3871 = {'type': 'git', 'url': 'git://github.com/molok/vim-smartusline'}
+
+" Mick Koch
+let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
 
 " Luc Hermitte
 " Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
@@ -699,6 +685,13 @@ let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim'}
 let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup'}
 let scm['flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
 let scm['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
+let scm['vim-objc'] = {'type': 'git', 'url': 'git://github.com/b4winckler/vim-objc'}
+
+" Single files under SCM control without proper directory structure
+let scm['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
+
+" Not sure where it should really go
+let scm['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
 
 " this is only the vimfiles subdirectory:
 let scm['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
@@ -707,109 +700,9 @@ let scm['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge
 " subdirectories - So checking out from git seems to be easier to me to
 " support them all.
 let scmkana = {}
-for [n, na] in s:kana_names
+for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
   let scmkana[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n}
 endfor
-
-"}}}
-let scmnr.2540['deprecated'] = "snipMate is an alias to snipmate now - so use 'snipmate'"
-
-for s:name in filter(keys(scm), 'has_key(s:plugin_sources, v:val)')
-    echohl Error
-    echom 'Removed conflicting (present both in scm_plugin_sources and vim_org_sources) name: '.s:name
-    echohl None
-    unlet scm[s:name]
-    unlet s:name
-endfor
-
 call extend(scm, scmkana)
-
-call map(scmnr, 'extend(scm, {s:snr_to_name[v:key] : extend(v:val, {"vim_script_nr": v:key})})')
-return scm
-endfunction
-"{{{1 Add more information to plugin_sources
-function! s:PatchPluginSources(plugin_sources)
-"{{{2 Additional sources
-let a:plugin_sources['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'date': '2007-09-02', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
-let a:plugin_sources['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
-"{{{2 Additional sources information, type corrections
-let a:plugin_sources[s:snr_to_name[1571]]['strip-components'] = 0
-let a:plugin_sources[s:snr_to_name[2527]]['script-type'] = 'ftplugin'
-let a:plugin_sources[s:snr_to_name[1542]]['target_dir'] = 'autoload'
-let a:plugin_sources[s:snr_to_name[1542]]['script-type'] = 'autoload'
-let a:plugin_sources[s:snr_to_name[1686]]['script-type'] = 'colors'
-let a:plugin_sources[s:snr_to_name[2572]]['strip-components'] = 0
-let a:plugin_sources[s:snr_to_name[2429]]['strip-components'] = 0
-let a:plugin_sources[s:snr_to_name[2150]]['script-type'] = 'after/syntax'
-let a:plugin_sources[s:snr_to_name[1780]]['script-type'] = 'syntax'
-"{{{2 Fixing target directories
-let a:plugin_sources[s:snr_to_name[1662]]['target_dir'] = 'autoload'
-let a:plugin_sources[s:snr_to_name[2611]]['strip-components'] = 0
-"{{{2 Deprecations
-let a:plugin_sources[s:snr_to_name[1780]]['deprecated'] = "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"
-let a:plugin_sources[s:snr_to_name[1662]]['deprecated'] = "you should consider using ruby-vim instead"
-let a:plugin_sources[s:snr_to_name[113]]['deprecated'] = "greputils supersedes this plugin"
-
-let a:plugin_sources['lazysnipmate']['deprecated'] = "lazysnipmate’s update is just snipmate"
-let a:plugin_sources[s:snr_to_name[2736]]['deprecated'] = "consider using syntastic2 because it is easier to adopt its behaviour to your needs"
-
-let a:plugin_sources[s:snr_to_name[3184]]['deprecated'] = "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"
-let a:plugin_sources[s:snr_to_name[3325]]['deprecated'] = "All functions from this plugin are available through `os' resource of @/os frawor module"
-let a:plugin_sources[s:snr_to_name[3187]]['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
-let a:plugin_sources[s:snr_to_name[3188]]['deprecated'] = "Deprecated in favour of FWC DSL defined in frawor plugin"
-let a:plugin_sources[s:snr_to_name[3186]]['deprecated'] = "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"
-
-let a:plugin_sources[s:snr_to_name[727]]['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
-let a:plugin_sources[s:snr_to_name[441]]['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
-let a:plugin_sources[s:snr_to_name[3393]]['deprecated'] = "consider using vim-addon-local-vimrc cause it provides simple hash protection"
-
-let a:plugin_sources[s:snr_to_name[1318]]['deprecated'] = "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"
-"}}}2
-endfunction
-"{{{1 Populate missing_addon_infos dictionary
-function! s:PopulateMissingAddonInfos()
-  let misinfos = {}
-  let mai_snr = {}
-  let mai_snr_deps = {}
-  "{{{2 Dependencies
-  let mai_snr_deps.1984  = [3252]
-  let mai_snr_deps.3574 = [2975]
-  let mai_snr_deps.3509 = [2975]
-  let mai_snr_deps.3382 = [39, 2100]
-  "{{{2 Missing runtimepath information for vim.org plugins
-  let mai_snr.2883 = {'runtimepath': 'vimlib'}
-  let mai_snr.2824 = {'runtimepath': 'vimlib'}
-  let mai_snr.2847 = {'runtimepath': 'vimlib'}
-  "{{{2 Missing information for SCM sources
-  let misinfos['vimshell'] = {'dependencies': {'vimproc': { } } }
-  let misinfos['vimwiki@hg'] = {'runtimepath': 'src'}
-  let misinfos['codefellow'] = {'runtimepath': 'vim'}
-  let misinfos['ideone'] = {'dependencies': {"webapi-vim": { } } }
-  let misinfos['sparkup'] = {'runtimepath': 'vim'}
-  "{{{2 Missing information for kana sources
-  for [n, na] in s:kana_names
-    if n =~ 'vim-textobj-\%(user\)\@!'
-      let misinfos[na] = {'dependencies': {'textobj-user': { } } }
-    endif
-  endfor
-  "}}}2
-  for [snr, deps] in items(mai_snr_deps)
-    if !has_key(mai_snr, snr)
-      let mai_snr[snr]={}
-    endif
-    call map(deps, 'extend(mai_snr.'.snr.', {"dependencies": {s:snr_to_name[v:val] : { } } })')
-  endfor
-  call map(mai_snr, 'extend(misinfos, {s:snr_to_name[v:key] : v:val})')
-  call map(misinfos, 'tr(string(v:val), "''", ''"'')')
-  call extend(s:c.missing_addon_infos, misinfos)
-endfunction
-"}}}1
-
-call s:PopulateMissingAddonInfos()
-call s:PatchPluginSources(s:plugin_sources)
-
-call call(get(s:c,'MergeSources',function('vam_known_repositories#MergeSources')),
-      \ [s:c['plugin_sources'], s:plugin_sources, s:GetScmSources()], {})
-
-unlet s:plugin_sources s:snr_to_name
+let r=[scm, scmnr]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr={{{,}}}
