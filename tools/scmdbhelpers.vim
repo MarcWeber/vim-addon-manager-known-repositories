@@ -47,4 +47,5 @@ nnoremap ,ge :call AddGHUrl(@+, )<Left>
 nnoremap ,ga :call append('.', ['', '" '.GetAuthor()])<CR>2j
 nmap     ,gn ,ga,gv
 inoremap ,gs <C-r>=GetSNR()<CR>
-nnoremap ,gd olet mai_snr_deps.<C-r>=GetSNR()<CR> = []<Left>
+nnoremap ,gd olet mai_snr_deps.<C-r>=printf("%-4u", +GetSNR())<CR> = []<Left>
+nnoremap ,gD olet add_by_snr.<C-r>=printf("%-4u", +GetSNR())<CR>={'deprecated' : ""}<Left><Left>

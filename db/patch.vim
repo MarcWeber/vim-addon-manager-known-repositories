@@ -30,8 +30,8 @@ let add_by_snr.3187={'deprecated' : "Deprecated in favour of FWC DSL defined in 
 let add_by_snr.3188={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
 let add_by_snr.3186={'deprecated' : "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
-let add_by_snr.727={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
-let add_by_snr.441={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
+let add_by_snr.727 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
+let add_by_snr.441 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
 let add_by_snr.3393={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
 
 let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
@@ -40,10 +40,13 @@ let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so u
 let add_by_snr.1272={'deprecated' : "Superseeded by vimscript #1431 (checksyntax)"}
 let add_by_snr.3233={'deprecated' : "Superseeded by Buffersaurus (vimscript #3620)"}
 let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpope's vim-rvm"}
+let add_by_snr.108 ={'deprecated' : "Superseeded by vimscript #197 (genutils)"}
 
 let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
 
 let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
+
+let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
@@ -52,6 +55,57 @@ let mai_snr_deps.3382 = [39, 2100]
 let mai_snr_deps.2665 = [3464]
 let mai_snr_deps.2972 = [2806, 2971]
 let mai_snr_deps.884  = [294]
+let mai_snr_deps.337  = [338]
+let mai_snr_deps.746  = [745]
+let mai_snr_deps.788  = [166]
+let mai_snr_deps.1145 = [5]
+let mai_snr_deps.1236 = [1235, 935]
+let mai_snr_deps.1380 = [31]
+let mai_snr_deps.1717 = [1603]
+let mai_snr_deps.2561 = [353]
+let mai_snr_deps.2742 = [1839]
+let mai_snr_deps.2997 = [293]
+let mai_snr_deps.1829 = [1828]
+let mai_snr_deps.3107 = [1828]
+let mai_snr_deps.3729 = [3597]
+" Non-tom link tlib dependants
+let mai_snr_deps.2141 = [1863]
+" CountJump dependants
+let mai_snr_deps.3179 = [3130]
+let mai_snr_deps.3180 = [3130]
+let mai_snr_deps.3181 = [3130]
+let mai_snr_deps.3182 = [3130]
+let mai_snr_deps.3719 = [3130]
+" VxLib dependants
+let mai_snr_deps.2606 = [3061]
+let mai_snr_deps.3060 = [3061]
+" vsutil dependants
+let mai_snr_deps.1038 = [1056]
+let mai_snr_deps.1039 = [1056]
+let mai_snr_deps.1054 = [1056]
+let mai_snr_deps.1060 = [1056]
+let mai_snr_deps.1091 = [1056]
+" genutils dependants
+let mai_snr_deps.107  = [197]
+let mai_snr_deps.129  = [197]
+let mai_snr_deps.171  = [197]
+let mai_snr_deps.598  = [197]
+let mai_snr_deps.745  = [197]
+let mai_snr_deps.900  = [197]
+let mai_snr_deps.953  = [197]
+let mai_snr_deps.1014 = [197]
+let mai_snr_deps.153  = [197, 166]
+" genutils+multvals
+let mai_snr_deps.113  = [197, 171]
+let mai_snr_deps.158  = [197, 171]
+let mai_snr_deps.533  = [197, 171]
+let mai_snr_deps.568  = [197, 171]
+let mai_snr_deps.1062 = [197, 171]
+" multvals
+let mai_snr_deps.564  = [171]
+let mai_snr_deps.1321 = [171]
+let mai_snr_deps.1386 = [171]
+" let mai_snr_deps.889  = [171]
 " Unite.vim plugins
 let mai_snr_deps.3318 = [3396]
 let mai_snr_deps.3319 = [3396]
