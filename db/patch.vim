@@ -45,12 +45,13 @@ let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not
 
 let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
 "▶1 Missing dependencies
-let mai_snr_deps.1984  = [3252]
+let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3382 = [39, 2100]
 let mai_snr_deps.2665 = [3464]
 let mai_snr_deps.2972 = [2806, 2971]
+let mai_snr_deps.884  = [294]
 " Unite.vim plugins
 let mai_snr_deps.3318 = [3396]
 let mai_snr_deps.3319 = [3396]
@@ -66,6 +67,7 @@ let mai_snr_deps.3046 = [2692]
 let mai_snr_deps.3610 = [2692, 2944]
 let mai_snr_deps.3312 = [2692]
 let mai_snr_deps.3211 = [2692]
+let mai_snr_deps.2782 = [2692]
 " snipMate dependents
 let mai_snr_deps.3249 = [2540]
 let mai_snr_deps.3664 = [2540]
@@ -80,6 +82,13 @@ let add_by_name['codefellow'] = {'addon-info': {'runtimepath': 'vim'}}
 let add_by_name['ideone'] = {'addon-info': {'dependencies': {"webapi-vim": {}}}}
 let add_by_name['sparkup'] = {'addon-info': {'runtimepath': 'vim'}}
 "▶1 Missing information for kana sources
+let mai_snr_deps.2336 = [2335]
+let mai_snr_deps.2343 = [2338, 2337]
+let mai_snr_deps.2344 = [2335, 2336, 2337]
+let mai_snr_deps.2403 = [2402]
+let mai_snr_deps.2410 = [2337]
+let mai_snr_deps.2622 = [2337]
+" Script 2782 above, in operator-user dependants
 for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
   if n =~ 'vim-textobj-\%(user\)\@!'
     let add_by_name[na] = {'addon-info': {'dependencies': {'textobj-user': {}}}}

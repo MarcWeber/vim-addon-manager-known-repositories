@@ -3,57 +3,76 @@ use strict;
 use warnings;
 
 use JSON;
-use LWP::Simple;
 
+#▶1 Help
 if($ARGV[0] eq "--help") {
-    print "Usage: $0 regex\n";
+    print "Usage: $0 [--all] [--nomaisnrdeps] regex\n";
+    print "  It uses db/scmsources.vim, vodb.json (dump of script-info)\n";
+    print "    and ignore.lst file (file which contains list of numbers, \n";
+    print "    each on its own line)\n";
+    print "  --all will make script omit parsing db/scmsources.vim,\n";
+    print "    but not ignore.lst file\n";
+    print "  --nomaisnrdeps will make script also ignore plugins that have\n";
+    print "    missing dependency information located in db/patch.vim\n";
     print "You must run this with current directory set to vam-kr root.\n";
     print "Do not forget to run\n";
     print "    curl 'http://www.vim.org/script-info.php' > vodb.json\n";
-    print "before running this script.\n";
+    print "before running this script unless you want make this script\n";
+    print "download this file (requires libwww-perl).\n";
     exit 0;
 }
-
+#▶1 Define global constants
 binmode STDOUT, ':utf8';
-
 my $scmdb="db/scmsources.vim";
+my $patchdb="db/patch.vim";
 my $ignorelist="ignore.lst";
 my $vimorg="http://www.vim.org";
 my $vodburl="$vimorg/script-info.php";
-
-my $regex=shift @ARGV;
-$regex=qr($regex);
+#▶1 Define variables that depend on arguments
+my $all          = ($ARGV[0] eq "--all"         ); shift @ARGV if $all;
+my $nomaisnrdeps = ($ARGV[0] eq "--nomaisnrdeps"); shift @ARGV if $nomaisnrdeps;
+my $regex=shift @ARGV; $regex=qr($regex);
 
 my $sumreg=$regex;
 my $descreg=$regex;
 my $instreg=$regex;
-
-my $VIM;
-open $VIM, '<:utf8', $scmdb;
-
-my %knownsources=();
-local $_;
-while(<$VIM>) {
-    next unless /^(?:" )?let scmnr\.(\d+)\s*=/;
-    $knownsources{$1}=$_;
+#▶1 ignoreFromFile :: fname, varname, (ignoredsnrs :: {}) → + ignoredsnrs
+sub ignoreFromFile {
+    my ($fname, $varname, $ignoredsnrs)=@_;
+    my $VIM;
+    open $VIM, '<:utf8', $fname;
+    while(<$VIM>) {
+        next unless /^(?:" )?let $varname\.(\d+)\s*=/;
+        $ignoredsnrs->{$1}=$_;
+    }
+    close $VIM;
 }
-close $VIM;
-
+#▶1 Populate ignoredsnrs
+my %ignoredsnrs=();
+ignoreFromFile($scmdb,   "scmnr",        \%ignoredsnrs) unless $all;
+ignoreFromFile($patchdb, "mai_snr_deps", \%ignoredsnrs) if $nomaisnrdeps;
 if(-e $ignorelist) {
     my $IGNORE;
     open $IGNORE, '<:utf8', $ignorelist;
     local $_;
     while(<$IGNORE>) {
-        $knownsources{0+$_}=$_;
+        $ignoredsnrs{0+$_}=$_;
     }
     close $IGNORE;
 }
-
-# my %vo=%{JSON::decode_json(LWP::Simple::get($vodburl))};
-my $VODB;
-open $VODB, '<:utf8', "vodb.json";
-my %vo=%{JSON::decode_json(join "", <$VODB>)};
-close $VODB;
+#▶1 Get vim.org database
+my %vo;
+if(-e "vodb.json") {
+    my $VODB;
+    open $VODB, '<:utf8', "vodb.json";
+    %vo=%{JSON::decode_json(join "", <$VODB>)};
+    close $VODB;
+}
+else {
+    use LWP::Simple;
+    %vo=%{JSON::decode_json(LWP::Simple::get($vodburl))};
+}
+#▶1 PrintWithPrefix :: prefix, text → + stdout
 sub PrintWithPrefix {
     my ($prefix, $text)=@_;
     print $prefix;
@@ -68,6 +87,7 @@ sub PrintWithPrefix {
         print "$line\n";
     }
 }
+#▶1 PrintSinfo :: sinfo → + stdout
 sub PrintSinfo {
     my ($sinfo)=@_;
     print "Script type: ".$sinfo->{"script_type"}."\n";
@@ -80,7 +100,8 @@ sub PrintSinfo {
     PrintWithPrefix("Description: ", $sinfo->{"description"});
     PrintWithPrefix("Install details: ", $sinfo->{"install_details"});
 }
-for my $snr (sort {$a<=>$b} (grep {not defined $knownsources{$_}} (keys %vo))) {
+#▲1
+for my $snr (sort {$a<=>$b} (grep {not defined $ignoredsnrs{$_}} (keys %vo))) {
     my $sinfo=$vo{$snr};
     if(defined $sumreg and $sinfo->{"summary"} =~ $sumreg) {
         print "Summary matches for $snr:\n";
@@ -95,3 +116,4 @@ for my $snr (sort {$a<=>$b} (grep {not defined $knownsources{$_}} (keys %vo))) {
         PrintSinfo($sinfo);
     }
 }
+# vim: ft=perl tw=80 ts=4 sts=4 sw=4 et fmr=▶,▲
