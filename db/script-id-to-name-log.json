@@ -10179,6 +10179,7 @@
       "SyntaxComplete"
    ],
    "3173" : [
+      "vimgcwsyntax",
       "Vim_Syntax_File_for_Google_Code_Wiki"
    ],
    "3174" : [
@@ -12288,5 +12289,8 @@
    ],
    "3873" : [
       "turbux"
+   ],
+   "3874" : [
+      "html-xml-tag-matcher"
    ]
 }
