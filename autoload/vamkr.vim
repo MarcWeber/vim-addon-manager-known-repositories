@@ -5,11 +5,18 @@ function! vamkr#GetJSON(filepart)
   " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
   " from 35 to 5ms  ... the reason is join being slow
   " windows users: provide your own hack ..
+  if !filereadable(file)
+      throw "json file ".file.' does not exist'
+  endif
   let body =
         \ (executable('cat') && executable('tr'))
         \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
         \ : join(readfile(file, 'b'), '')
+  try
     return eval(body)
+  catch /.*/
+    throw "error while reading json file ".file
+  endtry
 endfunction
 
 " GetVim executes content of a .vim file returning the r var which should be
@@ -26,9 +33,9 @@ function! vamkr#GetVim(filepart)
     return r
 endfunction
 
-function! vamkr#GetNrNamesHist()
-    return vamkr#GetJSON('script-id-to-name-log')
-endfunction
+" function! vamkr#GetNrNamesHist()
+"     return vamkr#GetJSON('script-id-to-name-log')
+" endfunction
 
 " can be removed?
 function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
@@ -53,7 +60,7 @@ endfunction
 
 function! vamkr#SuggestNewName(unkown_name)
     let messages = []
-    for [nr, names] in items(vamkr#GetJSON('names_and_historical_names_by_script_id'))
+    for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log'))
         if index(names, a:unkown_name) > 0
             call add(messages, a:unkown_name." was renamed to ".names[0]
         endif
@@ -77,16 +84,6 @@ endfunction
 "     call map(r[1], 's:GetName(v:val, nrnameshist)')
 "     return r
 " endfunction
-
-function! vamkr#SuggestNewName(unkown_name)
-    let renamed = []
-    for [nr, names] in items(vamkr#GetJSON('names_and_historical_names_by_script_id'))
-      if index(names, a:unkown_name) > 0
-        call add(renamed, names[0])
-      endif
-    endfor
-    return map(renamed, string(a:unkown_name).'." was renamed to ".v:val')
-endfunction
 
 " read scm sources: rewrite script_nr keys as names
 function! vamkr#GetSCMSources(snr_to_name)
