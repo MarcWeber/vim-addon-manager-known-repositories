@@ -1,4 +1,6 @@
 {
+"alternosfera":{"archive_name":"alternosfera.rar","script-type":"game","title":"alternosfera","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17186","version":"release","vim_script_nr":3876},
+"git_diff":{"archive_name":"gitdiff.vim","script-type":"ftplugin","title":"git diff","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17185","version":"0.01","vim_script_nr":3875},
 "html-xml-tag-matcher":{"archive_name":"tagmatch.vim","script-type":"utility","title":"html-xml-tag-matcher","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17182","version":"1.0","vim_script_nr":3874},
 "turbux":{"archive_name":"vim-turbux.zip","script-type":"utility","title":"turbux.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17179","version":"1.0","vim_script_nr":3873},
 "vimprj":{"archive_name":"vimprj-1.03.tar.gz","script-type":"utility","title":"vimprj","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17180","version":"1.03","vim_script_nr":3872},
@@ -743,7 +745,7 @@
 "skk%3118":{"archive_name":"skk.zip","script-type":"utility","title":"skk.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15190","version":"0.27.0","vim_script_nr":"3118"},
 "fu":{"archive_name":"fu.vim","script-type":"color scheme","title":"fu","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13152","version":"1.1","vim_script_nr":3117},
 "CFWheels_Dictionary":{"archive_name":"CFWheels.dict","script-type":"syntax","title":"CFWheels Dictionary","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13142","version":"1","vim_script_nr":3116},
-"SingleCompile":{"archive_name":"SingleCompile-2.9.2.zip","script-type":"utility","title":"SingleCompile","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16914","version":"2.9.2","vim_script_nr":3115},
+"SingleCompile":{"archive_name":"SingleCompile-2.9.3.zip","script-type":"utility","title":"SingleCompile","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17187","version":"2.9.3","vim_script_nr":3115},
 "easytags":{"archive_name":"easytags.zip","script-type":"utility","title":"easytags.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17157","version":"2.7.6","vim_script_nr":3114},
 "formatvim":{"archive_name":"formatvim-3.0.tar.gz","script-type":"utility","title":"formatvim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15935","version":"3.0","vim_script_nr":3113},
 "RemoveFile":{"archive_name":"RemoveFile.vim","script-type":"utility","title":"RemoveFile.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13114","version":"0.1","vim_script_nr":3112},
