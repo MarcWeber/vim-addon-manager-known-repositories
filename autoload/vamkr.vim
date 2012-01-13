@@ -62,7 +62,7 @@ function! vamkr#SuggestNewName(unkown_name)
     let messages = []
     for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log'))
         if index(names, a:unkown_name) > 0
-            call add(messages, a:unkown_name." was renamed to ".names[0]
+            call add(messages, a:unkown_name." was renamed to ".names[0])
         endif
     endfor
     return messages
