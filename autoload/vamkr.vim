@@ -58,11 +58,11 @@ function s:GetName(nameOrNr, nrnameshist)
     return type(a:nameOrNr)==type(0) ? a:nrnameshist[a:nameOrNr] : a:nameOrNr
 endfunction
 
-function! vamkr#SuggestNewName(unkown_name)
+function! vamkr#SuggestNewName(name)
     let messages = []
     for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log'))
-        if index(names, a:unkown_name) > 0
-            call add(messages, a:unkown_name." was renamed to ".names[0])
+        if index(names, a:name) > 0
+            call add(messages, a:name." was renamed to ".names[0])
         endif
     endfor
     return messages
