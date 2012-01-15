@@ -12313,5 +12313,17 @@
    ],
    "3881" : [
       "Powerline"
+   ],
+   "3882" : [
+      "EasyDigraph"
+   ],
+   "3883" : [
+      "autosess"
+   ],
+   "3884" : [
+      "DfrankUtil"
+   ],
+   "3885" : [
+      "ruscmd"
    ]
 }
