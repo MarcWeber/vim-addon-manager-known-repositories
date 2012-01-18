@@ -12334,5 +12334,17 @@
    ],
    "3888" : [
       "qtpy"
+   ],
+   "3889" : [
+      "switch_buffer_quickly"
+   ],
+   "3890" : [
+      "simple-dark"
+   ],
+   "3891" : [
+      "gf-user"
+   ],
+   "3892" : [
+      "gf-diff"
    ]
 }
