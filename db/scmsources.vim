@@ -1390,6 +1390,11 @@ let scmnr.3071 = {'type': 'git', 'url': 'git://github.com/wilhelmtell/reimin'}
 " Caio Romão
 let scmnr.3379 = {'type': 'git', 'url': 'git://github.com/caio/jumpnextlongline.vim'}
 
+" Alex Efros
+let scmnr.3883 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-autosess'}
+let scmnr.3885 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-ruscmd'}
+let scmnr.3893 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-viewdoc'}
+
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
 let scmnr.3851 = {'url': 'https://github.com/michaelnussbaum08/Mark-Ring/raw/master/mark_ring.vim', 'archive_name': 'mark_ring.vim', 'type': 'archive', 'script-type': 'utility'}
