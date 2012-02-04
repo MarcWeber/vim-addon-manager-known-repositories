@@ -5,11 +5,13 @@
 use strict;
 use warnings;
 
+$ENV{"PERL_JSON_BACKEND"}="JSON::PP";
+
 use LWP::UserAgent;
 use Fcntl qw(:DEFAULT :flock);
 use Time::HiRes;
 use utf8;
-use JSON::PP;
+use JSON;
 use HTML::Entities;
 
 my $verbose=shift @ARGV;
@@ -73,7 +75,7 @@ sub formatScripts {
     my ($scripts)=@_;
     my ($VODB, $NrNDB, $nrndb) = openDBs();
     WL($VODB, "{\n");
-    my $json=JSON::PP->new()->utf8()->canonical();
+    my $json=JSON->new()->utf8()->canonical();
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
         my $snr=$script->{"snr"};
@@ -89,14 +91,14 @@ sub formatScripts {
                                           type => "archive"}).",\n");
     }
     WL($VODB, "}");
-    my $nrjson = JSON::PP->new()->utf8()
-                                ->pretty()
-                                ->indent(1)
-                                ->sort_by(sub {$JSON::PP::a <=> $JSON::PP::b});
-    my  $njson = JSON::PP->new()->utf8()
-                                ->pretty()
-                                ->indent(1)
-                                ->canonical();
+    my $nrjson = JSON->new()->utf8()
+                            ->pretty()
+                            ->indent(1)
+                            ->sort_by(sub {$JSON::PP::a <=> $JSON::PP::b});
+    my  $njson = JSON->new()->utf8()
+                            ->pretty()
+                            ->indent(1)
+                            ->canonical();
     WL($NrNDB, $nrjson->encode($nrndb));
 }
 #▶1 openDBs :: () → FD + …
@@ -106,7 +108,7 @@ sub openDBs() {
         or die $!;
     my $NrNDB;
     open $NrNDB, '<:utf8', $nrndbtarget;
-    my $nrndb=JSON::PP->new()->utf8()->decode(join "", <$NrNDB>);
+    my $nrndb=JSON->new()->utf8()->decode(join "", <$NrNDB>);
     close $NrNDB;
     open $NrNDB, '>:utf8', $nrndbtarget;
     return ($VODB, $NrNDB, $nrndb);
@@ -147,7 +149,7 @@ sub getAllScripts() {
     print "Processing $url\n" if($verbose);
     my $response=get($url);
     my $json;
-    eval {$json=JSON::PP->new()->utf8()->decode($response->decoded_content())};
+    eval {$json=JSON->new()->utf8()->decode($response->decoded_content())};
     unless(defined $json) {
         die "Failed to parse json: $@";
     }
