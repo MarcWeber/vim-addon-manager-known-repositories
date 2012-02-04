@@ -19,7 +19,7 @@ let add_by_snr.2611={'strip-components' : 0}
 "▶1 Deprecations
 let add_by_snr.1780={'deprecated' : "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"}
 let add_by_snr.1662={'deprecated' : "you should consider using ruby-vim instead"}
-let add_by_snr.113={'deprecated' : "greputils supersedes this plugin"}
+let add_by_snr.113 ={'deprecated' : "greputils supersedes this plugin"}
 
 let add_by_name['lazysnipmate']={'deprecated' : "lazysnipmate’s update is just snipmate"}
 let add_by_snr.2736={'deprecated' : "consider using syntastic2 because it is easier to adopt its behaviour to your needs"}
@@ -42,11 +42,15 @@ let add_by_snr.3233={'deprecated' : "Superseeded by Buffersaurus (vimscript #362
 let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpope's vim-rvm"}
 let add_by_snr.108 ={'deprecated' : "Superseeded by vimscript #197 (genutils)"}
 
+let add_by_snr.3874={'deprecated' : "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
+
 let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
 
 let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
 
 let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
+
+let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
@@ -68,8 +72,13 @@ let mai_snr_deps.2997 = [293]
 let mai_snr_deps.1829 = [1828]
 let mai_snr_deps.3107 = [1828]
 let mai_snr_deps.3729 = [3597]
+let mai_snr_deps.3915 = [3914]
+let mai_snr_deps.3873 = [3023]
 " Non-tom link tlib dependants
 let mai_snr_deps.2141 = [1863]
+" DfrankUtil dependants
+let mai_snr_deps.3872 = [3884]
+let mai_snr_deps.3221 = [3884, 3872]
 " CountJump dependants
 let mai_snr_deps.3179 = [3130]
 let mai_snr_deps.3180 = [3130]

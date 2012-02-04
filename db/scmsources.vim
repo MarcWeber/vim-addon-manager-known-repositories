@@ -157,8 +157,7 @@ let scm['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/str
 " Kim Silkebækken
 let scmnr.3526 = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion'}
 let scmnr.3529 = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-distinguished'}
-" The following plugin is not present on vim.org:
-let scm['powerline'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-powerline'}
+let scmnr.3881 = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-powerline'}
 
 " H Xu
 let scmnr.3115 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/singlecompile'}
@@ -170,6 +169,7 @@ let scmnr.3496 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-gf
 let scmnr.3497 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-ifort.vim'}
 let scmnr.3506 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/compiler-pcc.vim'}
 let scmnr.3747 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/syntax-dosini.vim'}
+let scmnr.3899 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/indent-java.vim'}
 " The following is not a vim plugin, but it is posted on vim.org:
 let scmnr.3608 = {'type': 'git', 'url': 'git://github.com/xuhdev/nautilus-py-vim'}
 
@@ -369,6 +369,7 @@ let scmnr.2446 = {'type': 'git', 'url': 'git://github.com/jkramer/vim-narrow'}
 let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV'}
 let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy'}
 let scmnr.3831 = {'type': 'git', 'url': 'git://github.com/Rykka/lastbuf.vim'}
+let scmnr.3882 = {'type': 'git', 'url': 'git://github.com/Rykka/easydigraph.vim'}
 
 " Andrew Radev
 let scmnr.3613 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/splitjoin.vim'}
@@ -419,6 +420,7 @@ let scmnr.3282 = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim'}
 let scmnr.3236 = {'type': 'git', 'url': 'git://github.com/othree/html5.vim'}
 let scmnr.3232 = {'type': 'git', 'url': 'git://github.com/othree/html5-syntax.vim'}
 let scmnr.3453 = {'type': 'git', 'url': 'git://github.com/othree/fecompressor.vim'}
+let scmnr.3900 = {'type': 'git', 'url': 'git://github.com/othree/coffee-check.vim'}
 
 " Rene de Zwart
 let scmnr.1397 = {'type': 'git', 'url': 'git://github.com/othree/xml.vim'}
@@ -441,6 +443,7 @@ let scmnr.3736 = {'type': 'git', 'url': 'git://github.com/kien/ctrlp.vim'}
 
 " Andy Dawson
 let scmnr.3447 = {'type': 'git', 'url': 'git://github.com/AD7six/vim-activity-log'}
+let scmnr.3887 = {'type': 'git', 'url': 'git://github.com/AD7six/vim-independence'}
 
 " Caleb Cushing
 " Following repository does not contain correct directory tree
@@ -538,6 +541,7 @@ let scmnr.2531 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
 
 " Alessio Bolognino
 let scmnr.3871 = {'type': 'git', 'url': 'git://github.com/molok/vim-smartusline'}
+let scmnr.3905 = {'type': 'git', 'url': 'git://github.com/molok/vim-vombato-colorscheme'}
 
 " Mick Koch
 let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-script'}
@@ -893,10 +897,9 @@ let scmnr.2992 = {'type': 'git', 'url': 'git://github.com/chrisbra/SaveSigns.vim
 let scmnr.3052 = {'type': 'git', 'url': 'git://github.com/chrisbra/changesPlugin'}
 let scmnr.2766 = {'type': 'git', 'url': 'git://github.com/chrisbra/Join'}
 let scmnr.3298 = {'type': 'git', 'url': 'git://github.com/chrisbra/vim_faq'}
+let scmnr.3877 = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
 " The following plugin does not have normal directory structure:
 let scmnr.2998 = {'url': 'https://github.com/chrisbra/BackgroundColor.vim/raw/master/backgroundColor.vim', 'archive_name': 'backgroundColor.vim', 'type': 'archive', 'script-type': 'utility'}
-" The following plugins are not present on vim.org:
-let scm['improvedft'] = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
 
 " Francisco Garcia
 let scmnr.2946 = {'type': 'git', 'url': 'git://github.com/fgarcia/agtd'}
@@ -1395,6 +1398,34 @@ let scmnr.3883 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-au
 let scmnr.3885 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-ruscmd'}
 let scmnr.3893 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-viewdoc'}
 
+" Roman Podolyaka
+let scmnr.3903 = {'type': 'git', 'url': 'git://github.com/bloodeclipse/vim-xsnippet'}
+
+" Dmitry Frank
+let scm['indexer.tar.gz@development'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_development'}
+let scmnr.3221 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_stable'}
+let scmnr.3872 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/vimprj'}
+let scmnr.3884 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/dfrank_util'}
+let scmnr.3911 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/vim-punto-switcher'}
+" The following plugin is not present on vim.org:
+let scm['envcontrol'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/envcontrol'}
+
+" adam r
+let scmnr.3902 = {'type': 'git', 'url': 'git://github.com/aerosol/vim-compot'}
+
+" Sandeep CR
+let scmnr.3896 = {'type': 'git', 'url': 'git://github.com/sandeepcr529/Buffet.vim'}
+
+" Zefei Xuan
+let scmnr.3890 = {'type': 'git', 'url': 'git://github.com/zefei/simple-dark'}
+
+" Alex Meade
+let scmnr.3888 = {'type': 'git', 'url': 'git://github.com/ameade/qtpy-vim'}
+
+" Phui-Hock Chang
+" The following plugin does not have normal directory structure:
+let scmnr.3917 = {'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}
+
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
 let scmnr.3851 = {'url': 'https://github.com/michaelnussbaum08/Mark-Ring/raw/master/mark_ring.vim', 'archive_name': 'mark_ring.vim', 'type': 'archive', 'script-type': 'utility'}
@@ -1421,10 +1452,11 @@ let scmnr.3414 = {'url': 'https://github.com/tienle/bocau/raw/master/bocau.vim',
 let scmnr.3399 = {'url': 'https://github.com/klokane/vim-phpunit/raw/master/phpunit.vim', 'archive_name': 'phpunit.vim', 'type': 'archive', 'script-type': 'utility'}
 
 " Daniel B
-" The following plugins do not have normal directory structure:
+" The following plugins do not have a separate repository:
 let scmnr.3140 = {'url': 'https://github.com/dbb/vim/raw/master/obsidian.vim', 'archive_name': 'obsidian.vim', 'type': 'archive', 'script-type': 'color scheme'}
 let scmnr.3470 = {'url': 'https://github.com/dbb/vim/raw/master/tidydiff.vim', 'archive_name': 'tidydiff.vim', 'type': 'archive', 'script-type': 'ftplugin'}
 let scmnr.3693 = {'url': 'https://github.com/dbb/vim/raw/master/FixCSS.vim', 'archive_name': 'FixCSS.vim', 'type': 'archive', 'script-type': 'ftplugin'}
+let scmnr.3913 = {'url': 'https://github.com/dbb/vim/raw/master/CapsulaPigmentorum.vim', 'archive_name': 'CapsulaPigmentorum.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " Steffen Siering
 " The following plugin does not have a separate repository:
