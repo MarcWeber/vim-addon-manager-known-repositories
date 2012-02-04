@@ -55,7 +55,6 @@ let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
 let mai_snr_deps.3509 = [2975]
-let mai_snr_deps.3382 = [39, 2100]
 let mai_snr_deps.2665 = [3464]
 let mai_snr_deps.2972 = [2806, 2971]
 let mai_snr_deps.884  = [294]
@@ -74,6 +73,8 @@ let mai_snr_deps.3107 = [1828]
 let mai_snr_deps.3729 = [3597]
 let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.3873 = [3023]
+" Non-Kana textobj-user dependants
+let mai_snr_deps.3382 = [2100, 39]
 " Non-tom link tlib dependants
 let mai_snr_deps.2141 = [1863]
 " DfrankUtil dependants
@@ -146,17 +147,25 @@ let add_by_name['ideone'] = {'addon-info': {'dependencies': {"webapi-vim": {}}}}
 let add_by_name['sparkup'] = {'addon-info': {'runtimepath': 'vim'}}
 "▶1 Missing information for kana sources
 let mai_snr_deps.2336 = [2335]
-let mai_snr_deps.2343 = [2338, 2337]
-let mai_snr_deps.2344 = [2335, 2336, 2337]
 let mai_snr_deps.2403 = [2402]
+let mai_snr_deps.3892 = [3891]
+" Script 2782 above, in operator-user dependants
+"▶2 ku dependants
 let mai_snr_deps.2410 = [2337]
 let mai_snr_deps.2622 = [2337]
-" Script 2782 above, in operator-user dependants
-for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
-  if n =~ 'vim-textobj-\%(user\)\@!'
-    let add_by_name[na] = {'addon-info': {'dependencies': {'textobj-user': {}}}}
-  endif
-endfor
+let mai_snr_deps.2343 = [2337, 2338]
+let mai_snr_deps.2344 = [2337, 2335, 2336]
+"▶2 textobj-user dependants
+let mai_snr_deps.2716 = [2100]
+let mai_snr_deps.2484 = [2100]
+let mai_snr_deps.2355 = [2100]
+let mai_snr_deps.2276 = [2100]
+let mai_snr_deps.2619 = [2100]
+let mai_snr_deps.2275 = [2100]
+let mai_snr_deps.2610 = [2100]
+let mai_snr_deps.2415 = [2100]
+let mai_snr_deps.2101 = [2100]
+let mai_snr_deps.3886 = [2100]
 "▲1
 let r=[add_by_snr, add_by_name, mai_snr, mai_snr_deps]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲

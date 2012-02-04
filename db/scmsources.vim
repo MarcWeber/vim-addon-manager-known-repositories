@@ -45,6 +45,60 @@ let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime', 
 " snipMate could be dropped. Keep alias
 let scmnr.2540 = copy(scm['snipmate'])
 
+" Kana Natsuno
+let scmnr.2425 = {'type': 'git', 'url': 'git://github.com/kana/vim-arpeggio'}
+let scmnr.2100 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-user'}
+let scmnr.2675 = {'type': 'git', 'url': 'git://github.com/kana/vim-altercmd'}
+let scmnr.2098 = {'type': 'git', 'url': 'git://github.com/kana/vim-fakeclip'}
+let scmnr.2692 = {'type': 'git', 'url': 'git://github.com/kana/vim-operator-user'}
+let scmnr.3012 = {'type': 'git', 'url': 'git://github.com/kana/vim-vspec'}
+let scmnr.2785 = {'type': 'git', 'url': 'git://github.com/kana/vim-wwwsearch'}
+let scmnr.2716 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-syntax'}
+let scmnr.2484 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-indent'}
+let scmnr.2782 = {'type': 'git', 'url': 'git://github.com/kana/vim-operator-replace'}
+let scmnr.2773 = {'type': 'git', 'url': 'git://github.com/kana/vim-grex'}
+let scmnr.2355 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-lastpat'}
+let scmnr.2276 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-jabraces'}
+let scmnr.2619 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-function'}
+let scmnr.2275 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-fold'}
+let scmnr.2610 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-entire'}
+let scmnr.2415 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-diff'}
+let scmnr.1697 = {'type': 'git', 'url': 'git://github.com/kana/vim-surround'}
+let scmnr.2467 = {'type': 'git', 'url': 'git://github.com/kana/vim-submode'}
+let scmnr.2470 = {'type': 'git', 'url': 'git://github.com/kana/vim-smartword'}
+let scmnr.2673 = {'type': 'git', 'url': 'git://github.com/kana/vim-smarttill'}
+let scmnr.2290 = {'type': 'git', 'url': 'git://github.com/kana/vim-smartchr'}
+let scmnr.2291 = {'type': 'git', 'url': 'git://github.com/kana/vim-skeleton'}
+let scmnr.2136 = {'type': 'git', 'url': 'git://github.com/kana/vim-repeat'}
+let scmnr.2335 = {'type': 'git', 'url': 'git://github.com/kana/vim-metarw'}
+let scmnr.2336 = {'type': 'git', 'url': 'git://github.com/kana/vim-metarw-git'}
+let scmnr.2274 = {'type': 'git', 'url': 'git://github.com/kana/vim-flydiff'}
+let scmnr.2857 = {'type': 'git', 'url': 'git://github.com/kana/vim-exjumplist'}
+let scmnr.2338 = {'type': 'git', 'url': 'git://github.com/kana/vim-bundle'}
+let scmnr.2101 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-datetime'}
+let scmnr.2403 = {'type': 'git', 'url': 'git://github.com/kana/vim-stackreg'}
+let scmnr.2455 = {'type': 'git', 'url': 'git://github.com/kana/vim-outputz'}
+let scmnr.2514 = {'type': 'git', 'url': 'git://github.com/kana/vim-ctxabbr'}
+let scmnr.2402 = {'type': 'git', 'url': 'git://github.com/kana/vim-advice'}
+let scmnr.2622 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku-quickfix'}
+let scmnr.2344 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku-metarw'}
+let scmnr.2343 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku-bundle'}
+let scmnr.2410 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku-args'}
+let scmnr.2337 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku'}
+let scmnr.2097 = {'type': 'git', 'url': 'git://github.com/kana/vim-narrow'}
+let scmnr.2099 = {'type': 'git', 'url': 'git://github.com/kana/vim-xml-autons'}
+let scmnr.2107 = {'type': 'git', 'url': 'git://github.com/kana/vim-scratch'}
+let scmnr.2858 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-fatpack'}
+let scmnr.3886 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-line'}
+let scmnr.3891 = {'type': 'git', 'url': 'git://github.com/kana/vim-gf-user'}
+let scmnr.3892 = {'type': 'git', 'url': 'git://github.com/kana/vim-gf-diff'}
+" The following plugins are not present on vim.org:
+let scm['exfiletype'] = {'type': 'git', 'url': 'git://github.com/kana/vim-exfiletype'}
+let scm['xml-move'] = {'type': 'git', 'url': 'git://github.com/kana/vim-xml-move'}
+let scm['vcsi'] = {'type': 'git', 'url': 'git://github.com/kana/vim-vcsi'}
+let scm['textobj-django-template'] = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-django-template', 'dependencies': {'%2100': {}}}
+let scm['flymake'] = {'type': 'git', 'url': 'git://github.com/kana/vim-flymake'}
+
 " Honza Pokorny
 " snipmate-snippets depends on snipmate so installing the snippets should be 
 " enough
@@ -652,16 +706,17 @@ let scm['openbuf'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-openbuf
 let scm['vim-vcs'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-vcs'}
 let scm['vim-ft-markdown_fold'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ft-markdown_fold'}
 let scm['vim-ft-svn_diff'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ft-svn_diff'}
-let scm['textobj-function-perl'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-function-perl'}
-let scm['textobj-function-javascript'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-function-javascript'}
-let scm['textobj-between'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-between'}
+let scm['textobj-function-perl'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-function-perl', 'dependencies': {'%2619': {}}}
+let scm['textobj-function-javascript'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-function-javascript', 'dependencies': {'%2619': {}}}
+let scm['textobj-between'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-between', 'dependencies': {'%2100': {}}}
 let scm['vim-ft-rst_header'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ft-rst_header'}
 let scm['vim-ft-diff_fold'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ft-diff_fold'}
 let scm['befunge'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-befunge'}
-let scm['textobj-plugins'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-plugins'}
+let scm['textobj-plugins'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-plugins', 'dependencies': {'%2619': {}, '%2100': {}}}
 let scm['vparsec'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-vparsec'}
 let scm['tabrecent'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-tabrecent'}
 let scm['qfreplace'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-qfreplace'}
+let scm['ku_source'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ku_source', 'dependencies': {'%2337': {}}}
 let scm['guicolorscheme@thinca'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-guicolorscheme'}
 
 " Josh Adams
@@ -1566,13 +1621,5 @@ let scm['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.
 " this is only the vimfiles subdirectory:
 let scm['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
 
-" kana (most can be found on www.vim.org. However they all have a different
-" subdirectories - So checking out from git seems to be easier to me to
-" support them all.
-let scmkana = {}
-for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
-  let scmkana[na] = {'type': 'git', 'url': 'git://github.com/kana/'.n}
-endfor
-call extend(scm, scmkana)
 let r=[scm, scmnr]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲

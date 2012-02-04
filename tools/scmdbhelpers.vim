@@ -20,6 +20,30 @@ function! GetScriptType(nr)
     let vodb=vamkr#GetJSON('vimorgsources')
     return get(get(vodb, name, {}), 'script-type', 'utility')
 endfunction
+function! AddKanaSources()
+    let a=[]
+    let vodb=vamkr#GetJSON('vimorgsources')
+    for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
+        if has_key(vodb, na)
+            let a+=['let scmnr.'.vodb[na].vim_script_nr.' = '.
+                        \"{'type': 'git', 'url': 'git://github.com/kana/".n."'}"]
+        else
+            let a+=['let scm['.string(na).'] = '.
+                        \"{'type': 'git', 'url': 'git://github.com/kana/".n."'}"]
+        endif
+    endfor
+    call append('.', a)
+endfunction
+function! AddKanaPatch()
+    let a=[]
+    let vodb=vamkr#GetJSON('vimorgsources')
+    for [n, na] in vamkr#GetJSON('_kana_github_vimorg_name')
+        if has_key(vodb, na) && n=~#'vim-textobj-\%(user\)\@!'
+            let a+=['let mai_snr_deps.'.vodb[na].vim_script_nr.' = [2100]']
+        endif
+    endfor
+    call append('.', a)
+endfunction
 fun! AddGHUrl(url, nr)
     let nr=a:nr
     if nr is 0 | let nr=substitute(matchstr(a:url, '\v^(\w+\:\/\/)?[^/]+\/[^/]+\/\zs[^/]+'), '\v(\.vim)?(\.git)?/*$', '', '') | endif
