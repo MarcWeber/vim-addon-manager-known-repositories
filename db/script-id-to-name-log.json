@@ -11414,6 +11414,7 @@
       "ro-when-swapfound"
    ],
    "3573" : [
+      "quit-another-window",
       "quit_another_window"
    ],
    "3574" : [
@@ -12376,5 +12377,62 @@
    ],
    "3902" : [
       "compot"
+   ],
+   "3903" : [
+      "xsnippet"
+   ],
+   "3904" : [
+      "nsl"
+   ],
+   "3905" : [
+      "vombato-colorscheme"
+   ],
+   "3906" : [
+      "ocamlMultiAnnot"
+   ],
+   "3907" : [
+      "mozpp"
+   ],
+   "3908" : [
+      "mozjs"
+   ],
+   "3909" : [
+      "e2.lua"
+   ],
+   "3910" : [
+      "gmlua"
+   ],
+   "3911" : [
+      "vim-punto-switcher"
+   ],
+   "3912" : [
+      "toggle_comment"
+   ],
+   "3913" : [
+      "CapsulaPigmentorum"
+   ],
+   "3914" : [
+      "CompleteHelper"
+   ],
+   "3915" : [
+      "CamelCaseComplete"
+   ],
+   "3916" : [
+      "vim-addon-haskell"
+   ],
+   "3917" : [
+      "tagport"
+   ],
+   "3918" : [
+      "cd-hook"
+   ],
+   "3919" : [
+      "pfldap"
+   ],
+   "3920" : [
+      "WhiteWash"
+   ],
+   "3921" : [
+      "TagmaLast"
    ]
 }
