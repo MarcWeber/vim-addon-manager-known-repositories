@@ -1477,6 +1477,9 @@ let scmnr.3890 = {'type': 'git', 'url': 'git://github.com/zefei/simple-dark'}
 " Alex Meade
 let scmnr.3888 = {'type': 'git', 'url': 'git://github.com/ameade/qtpy-vim'}
 
+" Kamil Dworakowski
+let scmnr.2032 = {'type': 'svn', 'url': 'http://swap-params-for-vim.googlecode.com/svn/trunk'}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}
