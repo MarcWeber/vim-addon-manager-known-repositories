@@ -4,6 +4,7 @@ let add_by_name={}
 let mai_snr = {}
 let mai_snr_deps = {}
 "▶1 Additional sources information, type corrections
+let add_by_snr.1638={'script-type'      : 'plugin'}
 let add_by_snr.2527={'script-type'      : 'ftplugin'}
 let add_by_snr.1542={'target_dir'       : 'autoload'}
 let add_by_snr.1542={'script-type'      : 'autoload'}
