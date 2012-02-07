@@ -1480,6 +1480,11 @@ let scmnr.3888 = {'type': 'git', 'url': 'git://github.com/ameade/qtpy-vim'}
 " Kamil Dworakowski
 let scmnr.2032 = {'type': 'svn', 'url': 'http://swap-params-for-vim.googlecode.com/svn/trunk'}
 
+" Jose Elera Campana
+let scmnr.3922 = {'type': 'git', 'url': 'git://github.com/jelera/vim-gummybears-colorscheme'}
+let scmnr.3425 = {'type': 'git', 'url': 'git://github.com/jelera/vim-javascript-syntax'}
+let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-colorscheme'}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}
@@ -1495,11 +1500,6 @@ let scmnr.3674 = {'url': 'github.com/graudeejs/dot.vim/raw/master/colors/univers
 " Jevgeni Tarasov
 " The following plugin does not have normal directory structure:
 let scmnr.3571 = {'url': 'https://github.com/wolfsund/terse/raw/DEPLOY/terse.vim', 'archive_name': 'terse.vim', 'type': 'archive', 'script-type': 'utility'}
-
-" Jose Elera Campana
-" The following plugins do not have a separate repository:
-let scmnr.3425 = {'url': 'https://github.com/jelera/dotfiles/raw/master/vim/syntax/javascript.vim', 'archive_name': 'javascript.vim', 'type': 'archive', 'script-type': 'syntax'}
-let scmnr.3427 = {'url': 'https://github.com/jelera/dotfiles/raw/master/vim/colors/nazca.vim', 'archive_name': 'nazca.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " tien le
 " The following plugin does not have normal directory structure:
