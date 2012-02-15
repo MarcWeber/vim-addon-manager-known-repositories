@@ -201,6 +201,7 @@
       "dtags"
    ],
    "60" : [
+      "delphi",
       "delphi%60",
       "delphi60"
    ],
@@ -4746,6 +4747,7 @@
       "maude"
    ],
    "1476" : [
+      "_%1476",
       "delphi%1476",
       "delphi1476"
    ],
@@ -5375,6 +5377,7 @@
       "Deleted"
    ],
    "1670" : [
+      "_%1670",
       "lazarus"
    ],
    "1671" : [
@@ -12481,5 +12484,11 @@
    ],
    "3936" : [
       "Coverity_compiler_plugin"
+   ],
+   "3937" : [
+      "vim-wmfs"
+   ],
+   "3938" : [
+      "Trailer_Trash"
    ]
 }
