@@ -1027,9 +1027,9 @@ let scmnr.3347 = {'type': 'git', 'url': 'git://github.com/mgutz/vim-colors'}
 
 " Christopher Sexton
 let scmnr.3134 = {'type': 'git', 'url': 'git://github.com/csexton/rvm.vim'}
+let scmnr.3938 = {'type': 'git', 'url': 'git://github.com/csexton/trailertrash.vim'}
 " The following plugins are not present on vim.org:
 let scm['jekyll'] = {'type': 'git', 'url': 'git://github.com/csexton/jekyll.vim'}
-let scm['trailertrash'] = {'type': 'git', 'url': 'git://github.com/csexton/trailertrash.vim'}
 let scm['viceroy'] = {'type': 'git', 'url': 'git://github.com/csexton/viceroy'}
 
 " Wannes Meert
