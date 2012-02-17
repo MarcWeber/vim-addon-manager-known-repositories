@@ -70,13 +70,15 @@ let mai_snr_deps.1717 = [1603]
 let mai_snr_deps.2561 = [353]
 let mai_snr_deps.2742 = [1839]
 let mai_snr_deps.2997 = [293]
-let mai_snr_deps.1829 = [1828]
-let mai_snr_deps.3107 = [1828]
 let mai_snr_deps.3729 = [3597]
 let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.3873 = [3023]
 " Non-Kana textobj-user dependants
 let mai_snr_deps.3382 = [2100, 39]
+" Writebackup dependants
+let mai_snr_deps.1829 = [1828]
+let mai_snr_deps.3107 = [1828]
+let mai_snr_deps.3940 = [1828, 1829]
 " Non-tom link tlib dependants
 let mai_snr_deps.2141 = [1863]
 " DfrankUtil dependants
