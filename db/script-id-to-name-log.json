@@ -12496,5 +12496,11 @@
    ],
    "3940" : [
       "writebackupAutomator"
+   ],
+   "3941" : [
+      "CodeCommenter"
+   ],
+   "3942" : [
+      "sandbox_hg"
    ]
 }
