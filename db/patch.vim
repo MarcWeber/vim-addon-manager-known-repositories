@@ -28,7 +28,8 @@ let add_by_snr.1662={'deprecated' : "you should consider using ruby-vim instead"
 let add_by_snr.113 ={'deprecated' : "greputils supersedes this plugin"}
 
 let add_by_name['lazysnipmate']={'deprecated' : "lazysnipmate’s update is just snipmate"}
-let add_by_snr.2736={'deprecated' : "consider using syntastic2 because it is easier to adopt its behaviour to your needs"}
+" I'm not sure its fair deprecating the plugin - because behavior differs
+" let add_by_snr.2736={'deprecated' : "consider using syntastic2 because it is easier to adopt its behaviour to your needs"}
 
 let add_by_snr.3184={'deprecated' : "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"}
 let add_by_snr.3325={'deprecated' : "All functions from this plugin are available through `os' resource of @/os frawor module"}
