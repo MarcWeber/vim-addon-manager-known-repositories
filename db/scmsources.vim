@@ -1485,6 +1485,10 @@ let scmnr.3922 = {'type': 'git', 'url': 'git://github.com/jelera/vim-gummybears-
 let scmnr.3425 = {'type': 'git', 'url': 'git://github.com/jelera/vim-javascript-syntax'}
 let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-colorscheme'}
 
+" Michael Härtl
+let scmnr.3943 = {'type': 'git', 'url': 'git://github.com/mikehaertl/pdv-standalone'}
+let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim'}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}

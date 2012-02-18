@@ -20,9 +20,27 @@ function! GetScriptType(nr)
     let vodb=vamkr#GetJSON('vimorgsources')
     return get(get(vodb, name, {}), 'script-type', 'utility')
 endfunction
-fun! AddGHUrl(url, nr)
+function! GetPrevSNR()
+    if exists('s:prevsnr')
+        let psnr=s:prevsnr
+        while psnr%10==9
+            let psnr=psnr/10
+        endwhile
+        if psnr==0
+            return ''
+        else
+            return ''.(psnr/10)
+        endif
+    else
+        return ''
+    endif
+endfunction
+function! AddGHUrl(url, nr)
     let nr=a:nr
     if nr is 0 | let nr=substitute(matchstr(a:url, '\v^(\w+\:\/\/)?[^/]+\/[^/]+\/\zs[^/]+'), '\v(\.vim)?(\.git)?/*$', '', '') | endif
+    if type(nr)==type(0)
+        let s:prevsnr=nr
+    endif
     call append('.', ((type(nr)==type(0))?
                 \       ('let scmnr.'.nr):
                 \       ('let scm['.string(nr).']')).' = '.
@@ -47,7 +65,8 @@ function! GetSNR()
 endfunction
 nnoremap ,gv :call AddGHUrl(@+, +GetSNR())<CR>j
 nnoremap ,gg :call AddGHUrl(@+, 0)<CR>j
-nnoremap ,ge :call AddGHUrl(@+, )<Left>
+nnoremap ,ge :call AddGHUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
+nnoremap ,gc :call AddGHUrl(@+, +@*)<CR>
 nnoremap ,ga :call append('.', ['', '" '.GetAuthor()])<CR>2j
 nnoremap ,gA :call append('.', ['', '" '.@*])<CR>2j
 nmap     ,gn ,ga,gv
