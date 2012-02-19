@@ -3,6 +3,10 @@ let add_by_snr={}
 let add_by_name={}
 let mai_snr = {}
 let mai_snr_deps = {}
+"▶1 Hooks
+let mai_snr.3025={'post-install-hook': 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'}
+let mai_snr.3025['post-update-hook']=mai_snr.3025['post-install-hook']
+let mai_snr.3025['post-scms-update-hook']=mai_snr.3025['post-install-hook']
 "▶1 Additional sources information, type corrections
 let add_by_snr.2368={'script-type'      : 'plugin'}
 let add_by_snr.1638={'script-type'      : 'plugin'}
