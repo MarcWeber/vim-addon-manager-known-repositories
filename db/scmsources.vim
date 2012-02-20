@@ -1489,9 +1489,16 @@ let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-color
 let scmnr.3943 = {'type': 'git', 'url': 'git://github.com/mikehaertl/pdv-standalone'}
 let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim'}
 
+" Sergey Vakulenko
+" The following plugins do not have a separate repository:
+let scmnr.2733 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/vimfiles/plugin/bufReminderRemake.vim', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/hop.zip', 'archive_name': 'hop.zip', 'type': 'archive', 'script-type': 'utility'}
+" You can use the following to pull all his plugins:
+let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
-let scmnr.3917 = {'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}
+let scmnr.3917 = {'url': 'https://github.com/phuihock/tagport.vim/raw/master/tagport.vim', 'archive_name': 'tagport.vim', 'type': 'archive', 'script-type': 'ftplugin'}
 
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
