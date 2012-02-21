@@ -1633,7 +1633,7 @@ let scm['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.v
 let scm['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
 
 " this is only the vimfiles subdirectory:
-let scm['vim-latex'] = {'type': 'svn', 'url': 'https://vim-latex.svn.sourceforge.net/svnroot/vim-latex/trunk/vimfiles'}
+let scm['vim-latex'] = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
 
 let r=[scm, scmnr]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
