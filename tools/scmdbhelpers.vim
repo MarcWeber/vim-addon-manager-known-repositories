@@ -63,12 +63,21 @@ function! GetSNR()
     wincmd p
     return matchstr(a, '\d\+\ze:$')
 endfunction
+function! AddAuthor(author)
+    if search('\V\^" '.escape(a:author, '\').'\$', 'w')
+        normal! ')k
+        return
+    else
+        call append('.', ['', '" '.a:author])
+        normal! 2j
+    endif
+endfunction
 nnoremap ,gv :call AddGHUrl(@+, +GetSNR())<CR>j
 nnoremap ,gg :call AddGHUrl(@+, 0)<CR>j
 nnoremap ,ge :call AddGHUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
 nnoremap ,gc :call AddGHUrl(@+, +@*)<CR>
-nnoremap ,ga :call append('.', ['', '" '.GetAuthor()])<CR>2j
-nnoremap ,gA :call append('.', ['', '" '.@*])<CR>2j
+nnoremap ,ga :call AddAuthor(GetAuthor())<CR>
+nnoremap ,gA :call AddAuthor(@*)<CR>
 nmap     ,gn ,ga,gv
 nmap     ,gN ,gA,ge
 inoremap ,gs <C-r>=GetSNR()<CR>

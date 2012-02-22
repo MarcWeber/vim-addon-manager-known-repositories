@@ -1045,6 +1045,8 @@ let scmnr.3168 = {'type': 'git', 'url': 'git://github.com/yko/mojo.vim'}
 
 " Shawn Biddle
 let scmnr.3171 = {'type': 'git', 'url': 'git://github.com/shawncplus/phpcomplete.vim'}
+let scmnr.3947 = {'type': 'git', 'url': 'git://github.com/shawncplus/skittles_berry'}
+let scmnr.2924 = {'type': 'git', 'url': 'git://github.com/shawncplus/Vim-toCterm'}
 
 " Miao Jiang
 let scmnr.3227 = {'type': 'git', 'url': 'git://github.com/jiangmiao/simple-javascript-indenter'}
@@ -1426,6 +1428,8 @@ let scmnr.3840 = {'type': 'git', 'url': 'git://github.com/lambdalisue/vim-python
 let scmnr.3841 = {'type': 'git', 'url': 'git://github.com/lambdalisue/vim-django-support'}
 let scmnr.3842 = {'type': 'git', 'url': 'git://github.com/lambdalisue/nose.vim'}
 let scmnr.3843 = {'type': 'git', 'url': 'git://github.com/lambdalisue/nodeunit.vim'}
+let scmnr.3948 = {'type': 'git', 'url': 'git://github.com/lambdalisue/django.vim'}
+let scmnr.3949 = {'type': 'git', 'url': 'git://github.com/lambdalisue/pyunit.vim'}
 
 " Zhao Cai
 let scmnr.3854 = {'type': 'git', 'url': 'git://github.com/zhaocai/unite-scriptnames'}
@@ -1625,6 +1629,7 @@ let scm['unite-mark'] = {'type': 'git', 'url': 'git://github.com/tacroe/unite-ma
 let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['unite-outline'] = {'type': 'git', 'url': 'git://github.com/h1mesuke/unite-outline', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/unicode-haskell'}
+let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-makegreen'}
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
