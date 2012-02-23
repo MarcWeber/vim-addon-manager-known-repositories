@@ -1,6 +1,8 @@
 " See documentation at vamkr#GetVim
 " custom plugins - drop me an email to get you repository added
 let scm = {}
+
+" scmnr: add version controlled sources to plugins also known by www.vim.org
 let scmnr = {}
 
 " Marc Weber
