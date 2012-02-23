@@ -7,21 +7,21 @@ let mai_snr_deps = {}
 let mai_snr.3025={'post-install-hook': 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'}
 let mai_snr.3025['post-update-hook']=mai_snr.3025['post-install-hook']
 let mai_snr.3025['post-scms-update-hook']=mai_snr.3025['post-install-hook']
-"▶1 Additional sources information, type corrections
-let add_by_snr.2368={'script-type'      : 'plugin'}
-let add_by_snr.1638={'script-type'      : 'plugin'}
-let add_by_snr.2527={'script-type'      : 'ftplugin'}
-let add_by_snr.1542={'target_dir'       : 'autoload'}
-let add_by_snr.1542={'script-type'      : 'autoload'}
-let add_by_snr.1686={'script-type'      : 'colors'}
+"▶1 Type corrections
+let add_by_snr.2368={'script-type': 'plugin'}
+let add_by_snr.1638={'script-type': 'plugin'}
+let add_by_snr.2527={'script-type': 'ftplugin'}
+let add_by_snr.1542={'script-type': 'autoload'}
+let add_by_snr.1686={'script-type': 'colors'}
+let add_by_snr.2150={'script-type': 'after/syntax'}
+let add_by_snr.2548={'script-type': 'after/syntax'}
+let add_by_snr.1780={'script-type': 'syntax'}
+"▶1 Fixing target directories
+let add_by_snr.1542={'target_dir': 'autoload'}
+let add_by_snr.1662={'target_dir': 'autoload'}
+let add_by_snr.2611={'strip-components' : 0}
 let add_by_snr.2572={'strip-components' : 0}
 let add_by_snr.2429={'strip-components' : 0}
-let add_by_snr.2150={'script-type'      : 'after/syntax'}
-let add_by_snr.2548={'script-type'      : 'after/syntax'}
-let add_by_snr.1780={'script-type'      : 'syntax'}
-"▶1 Fixing target directories
-let add_by_snr.1662={'target_dir' : 'autoload'}
-let add_by_snr.2611={'strip-components' : 0}
 "▶1 Deprecations
 let add_by_snr.1780={'deprecated' : "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"}
 let add_by_snr.1662={'deprecated' : "you should consider using ruby-vim instead"}
@@ -149,11 +149,6 @@ let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
 let mai_snr.2847 = {'runtimepath': 'vimlib'}
 let mai_snr.663  = {'runtimepath': 'vim'}
-"▶1 Missing information for SCM sources
-let add_by_name['vimshell'] = {'addon-info': {'dependencies': {'vimproc': {}}}}
-let add_by_name['codefellow'] = {'addon-info': {'runtimepath': 'vim'}}
-let add_by_name['ideone'] = {'addon-info': {'dependencies': {"webapi-vim": {}}}}
-let add_by_name['sparkup'] = {'addon-info': {'runtimepath': 'vim'}}
 "▶1 Missing information for kana sources
 let mai_snr_deps.2336 = [2335]
 let mai_snr_deps.2403 = [2402]

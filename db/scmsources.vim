@@ -124,7 +124,7 @@ let scmnr.1171 = {'type': 'git', 'url': 'git://github.com/ciaranm/detectindent'}
 let scmnr.2620 = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache'}
 let scmnr.3396 = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim'}
 " The following plugins are not present on vim.org:
-let scm['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell'}
+let scm['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell', 'addon-info': {'dependencies': {'vimproc': {}}}}
 let scm['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc'}
 let scm['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler'}
 let scm['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise'}
@@ -568,7 +568,7 @@ let scm['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vi
 let scm['plugins-update-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/plugins-update-vim'}
 let scm['googletasks-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/googletasks-vim'}
 let scm['wwwrenderer-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/wwwrenderer-vim'}
-let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim'}
+let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim', 'addon-info': {'dependencies': {'webapi-vim': {}}}}
 
 " Chris Yip
 " Following repository does not contain correct directory tree
@@ -1614,12 +1614,12 @@ let scmnr.2479 = {'url': 'https://bitbucket.org/lobo/grsecurityvim/raw/default/g
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
 let scm['Vim-R-plugin2'] = {'type': 'git', 'url': 'git://github.com/jimmyharris/vim-r-plugin2'}
 let scm['vim-ruby-debugger'] = {'type': 'git', 'url': 'git://github.com/astashov/vim-ruby-debugger'}
-let scm['codefellow'] = {'type': 'git', 'url': 'git://github.com/romanroe/codefellow'}
+let scm['codefellow'] = {'type': 'git', 'url': 'git://github.com/romanroe/codefellow', 'addon-info': {'runtimepath': 'vim'}}
 let scm['space'] = {'type': 'git', 'url': 'git://github.com/spiiph/vim-space'}
 let scm['vim-comment-object'] = {'type': 'git', 'url': 'git://github.com/ConradIrwin/vim-comment-object'}
 let scm['git-vim'] = {'type': 'git', 'url': 'git://github.com/motemen/git-vim'}
 let scm['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod'}
-let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup'}
+let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup', 'addon-info': {'runtimepath': 'vim'}}
 let scm['flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
 let scm['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
 let scm['vim-ruby-complexity'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-ruby-complexity'}
