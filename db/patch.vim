@@ -7,6 +7,10 @@ let mai_snr_deps = {}
 let mai_snr.3025={'post-install-hook': 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'}
 let mai_snr.3025['post-update-hook']=mai_snr.3025['post-install-hook']
 let mai_snr.3025['post-scms-update-hook']=mai_snr.3025['post-install-hook']
+"▶1 Wrong archive names
+" Author wrote that contents of vert.txt should go to vimrc, but it should work 
+" fine as a script in plugin directory
+let mai_snr.1742={'archive_name': 'vert.vim'}
 "▶1 Type corrections
 let add_by_snr.2368={'script-type': 'plugin'}
 let add_by_snr.1638={'script-type': 'plugin'}
@@ -50,6 +54,7 @@ let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpo
 let add_by_snr.108 ={'deprecated' : "Superseeded by vimscript #197 (genutils)"}
 
 let add_by_snr.3874={'deprecated' : "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
+let add_by_snr.287 ={'deprecated' : "This script has been retired. You should use #273"}
 
 let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
 

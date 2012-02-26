@@ -250,6 +250,7 @@ let scmnr.2627 = {'type': 'git', 'url': 'git://github.com/jwu/exvim'}
 
 " Al Budden
 let scmnr.2646 = {'type': 'git', 'url': 'git://github.com/abudden/TagHighlight'}
+let scmnr.3950 = {'type': 'git', 'url': 'git://github.com/abudden/EasyColour'}
 
 " Darrick Wiebe
 let scmnr.2765 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascript'}
