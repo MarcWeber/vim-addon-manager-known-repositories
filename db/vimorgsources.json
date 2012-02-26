@@ -160,7 +160,7 @@
 "Python_Syntax":{"archive_name":"python.vim","script-type":"syntax","title":"Python Syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16721","version":"1.0","vim_script_nr":3782},
 "Twilight_for_python":{"archive_name":"twilight.vim","script-type":"color scheme","title":"Twilight for python","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16720","version":"1.0","vim_script_nr":3781},
 "indentfolds":{"archive_name":"indentfolds.vba","script-type":"utility","title":"indentfolds","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16714","version":"0.1","vim_script_nr":3780},
-"mango":{"archive_name":"mango.vim","script-type":"color scheme","title":"mango.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17202","version":"1.2","vim_script_nr":3779},
+"mango":{"archive_name":"mango.vim","script-type":"color scheme","title":"mango.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17530","version":"1.4.5","vim_script_nr":3779},
 "utags":{"archive_name":"utags.tbz","script-type":"utility","title":"utags","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16710","version":"1.0","vim_script_nr":3778},
 "RST_Tables_CJK":{"archive_name":"rst.vim","script-type":"ftplugin","title":"RST Tables (CJK)","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16708","version":"1.0","vim_script_nr":3777},
 "todotxt":{"archive_name":"Lejdborg-todotxt.vim-69fbf57.zip","script-type":"syntax","title":"todotxt.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16704","version":"0.1","vim_script_nr":3776},
