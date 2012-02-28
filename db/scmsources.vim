@@ -131,6 +131,7 @@ let scm['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc'}
 let scm['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler'}
 let scm['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise'}
 let scm['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui'}
+let scm['neocomplcache-snippets-complete'] = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache-snippets-complete'}
 
 " ZyX
 let scmnr.3056 = {'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3'}
