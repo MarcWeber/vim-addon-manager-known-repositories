@@ -75,7 +75,7 @@ sub formatScripts {
     my ($scripts)=@_;
     my ($VODB, $NrNDB, $nrndb) = openDBs();
     WL($VODB, "{\n");
-    my $json=JSON->new()->utf8()->canonical();
+    my $json=JSON->new()->canonical();
     for my $script (@$scripts) {
         my $lastsrc=$script->{"sources"}->[0];
         my $snr=$script->{"snr"};
@@ -91,14 +91,10 @@ sub formatScripts {
                                           type => "archive"}).",\n");
     }
     WL($VODB, "}");
-    my $nrjson = JSON->new()->utf8()
-                            ->pretty()
-                            ->indent(1)
-                            ->sort_by(sub {$JSON::PP::a <=> $JSON::PP::b});
-    my  $njson = JSON->new()->utf8()
-                            ->pretty()
-                            ->indent(1)
-                            ->canonical();
+    my $nrjson=JSON->new()->utf8()
+                          ->pretty()
+                          ->indent(1)
+                          ->sort_by(sub {$JSON::PP::a <=> $JSON::PP::b});
     WL($NrNDB, $nrjson->encode($nrndb));
 }
 #▶1 openDBs :: () → FD + …
@@ -159,9 +155,9 @@ sub getAllScripts() {
                             name => decode_entities($_->{"script_name"}),
                             type => $_->{"script_type"},
                          sources => [map {{srcnr => +$_->{"src_id"},
-                                         archive => $_->{"package"},
-                                         version => $_->{"script_version"},
-                                     vim_version => $_->{"vim_version"},}}
+                                         archive => decode_entities($_->{"package"}),
+                                         version => decode_entities($_->{"script_version"}),
+                                     vim_version => decode_entities($_->{"vim_version"}),}}
                                          (sort {$b->{"creation_date"} <=>
                                                 $a->{"creation_date"}}
                                                @{$_->{"releases"}})],
