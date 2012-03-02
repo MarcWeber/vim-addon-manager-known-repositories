@@ -1498,10 +1498,17 @@ let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-color
 let scmnr.3943 = {'type': 'git', 'url': 'git://github.com/mikehaertl/pdv-standalone'}
 let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim'}
 
+" Derek Wyatt
+" Script page and the only download suggest using git, but referenced repository 
+" is absent. Adding it here so that VAM users will get error from git if they 
+" ignore deprecation instead of “Don’t know how to unpack” error.
+let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/ewiplayer/vim-scala'}
+
 " Sergey Vakulenko
 " The following plugins do not have a separate repository:
 let scmnr.2733 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/vimfiles/plugin/bufReminderRemake.vim', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive', 'script-type': 'utility'}
-let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/hop.zip', 'archive_name': 'hop.zip', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/hop.zip',       'archive_name': 'hop.zip',       'type': 'archive', 'script-type': 'utility'}
+let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
 

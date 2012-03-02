@@ -63,6 +63,8 @@ let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in 
 let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
 
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
+
+let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
