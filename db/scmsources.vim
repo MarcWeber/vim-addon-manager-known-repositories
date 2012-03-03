@@ -1498,6 +1498,9 @@ let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-color
 let scmnr.3943 = {'type': 'git', 'url': 'git://github.com/mikehaertl/pdv-standalone'}
 let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim'}
 
+" Łukasz Korecki
+let scmnr.3959 = {'type': 'git', 'url': 'git://github.com/lukaszkorecki/workflowish'}
+
 " Derek Wyatt
 " Script page and the only download suggest using git, but referenced repository 
 " is absent. Adding it here so that VAM users will get error from git if they 
