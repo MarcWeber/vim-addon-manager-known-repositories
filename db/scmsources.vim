@@ -391,9 +391,9 @@ let scm['gotofile@sharat87'] = {'type': 'hg', 'url': 'https://bitbucket.org/shar
 " ali va
 " Yes, these are git repositories on bitbucket. Unfortunately, git:// URLs are 
 " not supported.
-let scmnr.3853 = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-dokuwiki'}
+let scmnr.3853 = {'type': 'git', 'url': 'git@bitbucket.org:aliva/vim-dokuwiki'}
 " The following plugin is not present on vim.org:
-let scm['toggletoolbar'] = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-toggletoolbar'}
+let scm['toggletoolbar'] = {'type': 'git', 'url': 'git@bitbucket.org:aliva/vim-toggletoolbar'}
 
 " Ryan Mechelke
 let scmnr.3262 = {'type': 'hg', 'url': 'https://bitbucket.org/thetoast/diff-fold'}
