@@ -1,4 +1,5 @@
 {
+"tabman":{"archive_name":"tabman.zip","script-type":"utility","title":"tabman.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17560","version":"1.2","vim_script_nr":3960},
 "workflowish":{"archive_name":"workflowish.zip","script-type":"utility","title":"workflowish","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17558","version":"0.0.1","vim_script_nr":3959},
 "mystatusinfo":{"archive_name":"mystatusinfo.vim","script-type":"utility","title":"mystatusinfo.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17556","version":"1.10","vim_script_nr":3958},
 "calendar%3957":{"archive_name":"calendar.vim","script-type":"utility","title":"calendar.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17550","version":"1.0","vim_script_nr":"3957"},
@@ -186,7 +187,7 @@
 "vim-google-scribe":{"archive_name":"googlescribe.vim","script-type":"utility","title":"vim-google-scribe","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16627","version":"0.1.0","vim_script_nr":3763},
 "Speech":{"archive_name":"speech.vim","script-type":"utility","title":"Speech","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16624","version":"0.1","vim_script_nr":3762},
 "slide_show":{"archive_name":"SlideShow.vim","script-type":"utility","title":"slide show","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16621","version":"1.0","vim_script_nr":3761},
-"vim-dokuwiki":{"archive_name":"dokuwiki.vim","script-type":"syntax","title":"vim-dokuwiki","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17144","version":"0.2","vim_script_nr":3760},
+"vim-dokuwiki":{"archive_name":"dokuwiki.vim","script-type":"syntax","title":"vim-dokuwiki","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17561","version":"0.3","vim_script_nr":3760},
 "White":{"archive_name":"white.vim","script-type":"color scheme","title":"White","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16606","version":"0.5","vim_script_nr":3759},
 "Ambient_Theme":{"archive_name":"ambient_theme.tar.gz","script-type":"utility","title":"Ambient Theme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16605","version":"0.1","vim_script_nr":3758},
 "racket-auto-keywords":{"archive_name":"racket-auto-keywords.vim","script-type":"utility","title":"racket-auto-keywords.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16604","version":"1.1","vim_script_nr":3757},
