@@ -68,6 +68,12 @@ function! vamkr#SuggestNewName(name)
     return messages
 endfunction
 
+function! s:FilterConflicts(from, with, bang)
+    let r=[]
+    call filter(a:from, a:bang.'has_key(a:with, v:key) ? 1 : [0, add(r, v:key)][0]')
+    return r
+endfunction
+
 " It will return 2-tuple: (new_name, [corrected_name])
 " why do we need GetNameNrOrNewNameMap here? Isn't the implementation above
 " enough?
@@ -86,17 +92,22 @@ endfunction
 " endfunction
 
 " read scm sources: rewrite script_nr keys as names
-function! vamkr#GetSCMSources(snr_to_name)
+function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
     let [scm, scmnr]=vamkr#GetVim('scmsources')
-    let bad_keys=[]
-    call filter(scmnr, 'has_key(a:snr_to_name, v:key) ? 1 : [0, add(bad_keys, v:key)][0]')
-    if !empty(bad_keys)
-        call vam#Log('There are bad keys inside scmnr dictionary: '.string(bad_keys))
+    let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
+    if !empty(scmvoconflicts)
+        call vam#Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
+                    \'These plugins should either be renamed or put into scmnr dictionary.')
+    endif
+    let missingscmnr=s:FilterConflicts(scmnr, a:snr_to_name, '')
+    if !empty(missingscmnr)
+        call vam#Log('The following scmnr keys are not known: '.join(missingscmnr, ', ').'.')
     endif
     " merge scmnr sources into scm. But first add vim_script_nr key so that
     " AddonInfo still finds the plugin even if scm overwrites www_vim_org
     " sources
     call map(scmnr, 'extend(scm, {a:snr_to_name[v:key] : extend(v:val, {"vim_script_nr": v:key})})')
+    unlet scmnr
     " Transform names like %{snr} in dependencies dictionary into names used by 
     " VAM
     for repository in filter(values(scm), 'has_key(v:val, "addon-info") && has_key(v:val["addon-info"], "dependencies")')

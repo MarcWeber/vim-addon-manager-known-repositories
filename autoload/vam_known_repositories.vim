@@ -47,7 +47,7 @@ fun! vam_known_repositories#Pool()
   let www_vim_org = vamkr#GetJSON('vimorgsources')
   let snr_to_name={}
   call map(copy(www_vim_org), 'extend(snr_to_name, {v:val.vim_script_nr : v:key})')
-  let scm         = vamkr#GetSCMSources(snr_to_name)
+  let scm         = vamkr#GetSCMSources(snr_to_name, www_vim_org)
 
   " build vim_script_nr to name lookup dictionary:
   " nr_to_name is not exposed to the user (can only be accessed via function
