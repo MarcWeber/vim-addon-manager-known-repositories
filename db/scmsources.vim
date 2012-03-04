@@ -22,6 +22,7 @@ let scmnr.3315 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-js
 let scmnr.3317 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-signs'}
 let scmnr.3320 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug'}
 let scmnr.3432 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate.git'}
+let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell'}
 let scm['theonevimlib'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-urweb'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-urweb'}
@@ -29,7 +30,6 @@ let scm['vim-addon-swfmill'] = {'type': 'git', 'url': 'git://github.com/MarcWebe
 let scm['vim-addon-views'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-views'}
 let scm['vim-addon-goto-thing-at-cursor'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-goto-thing-at-cursor'}
 let scm['scion-backend-vim'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/scion-backend-vim'}
-let scm['vim-addon-haskell'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell'}
 let scm['vim-addon-nix'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-nix'}
 let scm['vim-addon-scala'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-scala'}
 let scm['vim-addon-git'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-git'}
@@ -693,9 +693,9 @@ let scmnr.2944 = {'type': 'git', 'url': 'git://github.com/thinca/vim-visualstar'
 let scmnr.3067 = {'type': 'git', 'url': 'git://github.com/thinca/vim-ref'}
 let scmnr.3146 = {'type': 'git', 'url': 'git://github.com/thinca/vim-quickrun'}
 let scmnr.3393 = {'type': 'git', 'url': 'git://github.com/thinca/vim-localrc'}
+let scmnr.3879 = {'type': 'git', 'url': 'git://github.com/thinca/vim-ambicmd'}
 " The following plugins are not present on vim.org:
 let scm['rtputil'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-rtputil'}
-let scm['ambicmd'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ambicmd'}
 let scm['logcat'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-logcat'}
 let scm['editvar'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-editvar'}
 let scm['partedit'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-partedit'}
@@ -856,7 +856,6 @@ let scm['unite-launch'] = {'type': 'git', 'url': 'git://github.com/ujihisa/unite
 let scm['rdoc@ujihisa'] = {'type': 'git', 'url': 'git://github.com/ujihisa/rdoc.vim'}
 let scm['correr'] = {'type': 'git', 'url': 'git://github.com/ujihisa/correr'}
 let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'%3396': {}}}}
-let scm['nclipper'] = {'type': 'git', 'url': 'git://github.com/ujihisa/nclipper.vim'}
 let scm['ref-hoogle'] = {'type': 'git', 'url': 'git://github.com/ujihisa/ref-hoogle'}
 let scm['vimshell-repl'] = {'type': 'git', 'url': 'git://github.com/ujihisa/vimshell-repl'}
 " The following plugin does not have normal directory structure:
@@ -1501,6 +1500,9 @@ let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim
 " Łukasz Korecki
 let scmnr.3959 = {'type': 'git', 'url': 'git://github.com/lukaszkorecki/workflowish'}
 
+" Jason Duell
+let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archive_name': 'cscope_maps.vim', 'type': 'archive', 'script-type': 'utility'}
+
 " Derek Wyatt
 " Script page and the only download suggest using git, but referenced repository 
 " is absent. Adding it here so that VAM users will get error from git if they 
@@ -1648,9 +1650,6 @@ let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-ma
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
-
-" Not sure where it should really go
-let scm['cscope_macros'] = {'version': '1.0', 'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'vim_version': '6.0', 'type': 'archive', 'script-type': 'utility', 'archive_name': 'cscope_maps.vim', 'author': 'Jason Duell'}
 
 " this is only the vimfiles subdirectory:
 let scm['vim-latex'] = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
