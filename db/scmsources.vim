@@ -1504,6 +1504,9 @@ let scmnr.3959 = {'type': 'git', 'url': 'git://github.com/lukaszkorecki/workflow
 " Jason Duell
 let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archive_name': 'cscope_maps.vim', 'type': 'archive', 'script-type': 'utility'}
 
+" Peter Provost
+let scmnr.1327 = {'type': 'git', 'url': 'git://github.com/PProvost/vim-ps1'}
+
 " Derek Wyatt
 " Script page and the only download suggest using git, but referenced repository 
 " is absent. Adding it here so that VAM users will get error from git if they 
