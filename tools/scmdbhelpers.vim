@@ -78,6 +78,7 @@ nnoremap ,ge :call AddGHUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
 nnoremap ,gc :call AddGHUrl(@+, +@*)<CR>
 nnoremap ,ga :call AddAuthor(GetAuthor())<CR>
 nnoremap ,gA :call AddAuthor(@*)<CR>
+nnoremap ,g- :call search('\V"'.repeat('-', 119), 'w')<CR>
 nmap     ,gn ,ga,gv
 nmap     ,gN ,gA,ge
 inoremap ,gs <C-r>=GetSNR()<CR>

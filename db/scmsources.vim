@@ -1507,6 +1507,11 @@ let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archi
 " Peter Provost
 let scmnr.1327 = {'type': 'git', 'url': 'git://github.com/PProvost/vim-ps1'}
 
+" Endel Dreyer
+let scmnr.3961 = {'type': 'git', 'url': 'git://github.com/endel/flashdevelop.vim'}
+
+"-----------------------------------------------------------------------------------------------------------------------
+
 " Derek Wyatt
 " Script page and the only download suggest using git, but referenced repository 
 " is absent. Adding it here so that VAM users will get error from git if they 
@@ -1651,6 +1656,7 @@ let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-h
 let scm['unite-outline'] = {'type': 'git', 'url': 'git://github.com/h1mesuke/unite-outline', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/unicode-haskell'}
 let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-makegreen'}
+let scm['vim-rooter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = {'url': 'https://github.com/Raimondi/pgnvim/raw/master/pgn.vim', 'archive_name': 'pgn.vim', 'author': 'Israel Chauca Fuentes', 'type': 'archive', 'script-type': 'syntax', 'title': 'pgnvim'}
