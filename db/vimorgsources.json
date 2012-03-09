@@ -1,4 +1,5 @@
 {
+"color_highlight":{"archive_name":"color_highlight-0.2.vmb","script-type":"ftplugin","title":"color_highlight","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17577","version":"0.2","vim_script_nr":3963},
 "hammer":{"archive_name":"hammer.vim.zip","script-type":"utility","title":"hammer.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17573","version":"1.0.0","vim_script_nr":3962},
 "flashdevelop":{"archive_name":"endel-flashdevelop.vim-479a143.zip","script-type":"ftplugin","title":"flashdevelop.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17568","version":"0.1","vim_script_nr":3961},
 "tabman":{"archive_name":"tabman.zip","script-type":"utility","title":"tabman.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17560","version":"1.2","vim_script_nr":3960},
@@ -225,7 +226,7 @@
 "easychair":{"archive_name":"easychair-1.0.tar.gz","script-type":"syntax","title":"easychair","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16452","version":"1.0","vim_script_nr":3727},
 "mcabberlog":{"archive_name":"mcabberlog.vim","script-type":"syntax","title":"mcabberlog.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16468","version":"0.5","vim_script_nr":3726},
 "indent-motion":{"archive_name":"indent-motion.vim","script-type":"patch","title":"indent-motion","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16440","version":"1.0.1","vim_script_nr":3724},
-"SimpylFold":{"archive_name":"SimpylFold.vim","script-type":"ftplugin","title":"SimpylFold","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17083","version":"1.0.2","vim_script_nr":3723},
+"SimpylFold":{"archive_name":"SimpylFold.zip","script-type":"ftplugin","title":"SimpylFold","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17576","version":"1.1","vim_script_nr":3723},
 "quickfixstatus":{"archive_name":"quickfixstatus.vim","script-type":"utility","title":"quickfixstatus.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16438","version":"1.01","vim_script_nr":3722},
 "Threesome":{"archive_name":"threesome.zip","script-type":"utility","title":"Threesome","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16435","version":"0.2.0","vim_script_nr":3721},
 "noweboutline":{"archive_name":"noweboutline.vim","script-type":"utility","title":"noweboutline.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16777","version":"0.14","vim_script_nr":3720},
