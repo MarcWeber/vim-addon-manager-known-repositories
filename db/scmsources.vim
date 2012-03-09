@@ -958,6 +958,7 @@ let scmnr.3052 = {'type': 'git', 'url': 'git://github.com/chrisbra/changesPlugin
 let scmnr.2766 = {'type': 'git', 'url': 'git://github.com/chrisbra/Join'}
 let scmnr.3298 = {'type': 'git', 'url': 'git://github.com/chrisbra/vim_faq'}
 let scmnr.3877 = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
+let scmnr.3963 = {'type': 'git', 'url': 'git://github.com/chrisbra/color_highlight'}
 " The following plugin does not have normal directory structure:
 let scmnr.2998 = {'url': 'https://github.com/chrisbra/BackgroundColor.vim/raw/master/backgroundColor.vim', 'archive_name': 'backgroundColor.vim', 'type': 'archive', 'script-type': 'utility'}
 
