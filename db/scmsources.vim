@@ -1441,6 +1441,7 @@ let scmnr.3854 = {'type': 'git', 'url': 'git://github.com/zhaocai/unite-scriptna
 
 " Matthias Guenther
 let scmnr.3856 = {'type': 'git', 'url': 'git://github.com/matthias-guenther/tocdown'}
+let scmnr.3962 = {'type': 'git', 'url': 'git://github.com/robgleeson/hammer.vim'}
 
 " Jonatan Anauati
 let scmnr.3857 = {'type': 'git', 'url': 'git://github.com/jaanauati/vim-wordfuzzycompletion-plugin'}
