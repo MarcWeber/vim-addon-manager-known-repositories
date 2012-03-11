@@ -1512,6 +1512,17 @@ let scmnr.1327 = {'type': 'git', 'url': 'git://github.com/PProvost/vim-ps1'}
 " Endel Dreyer
 let scmnr.3961 = {'type': 'git', 'url': 'git://github.com/endel/flashdevelop.vim'}
 
+" Jeremy Cantrell
+let scmnr.2158 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-diffchanges'}
+let scmnr.3487 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-reporoot'}
+" let scmnr.2152 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-snippets'}
+let scmnr.2251 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-journal'}
+let scmnr.3578 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-lastmod'}
+let scmnr.3293 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-numbered'}
+let scmnr.3486 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-virtualenv'}
+let scmnr.3541 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-fatrat'}
+let scmnr.3543 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-opener'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
