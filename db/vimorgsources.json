@@ -1,4 +1,5 @@
 {
+"less%3964":{"archive_name":"less.vim","script-type":"syntax","title":"less","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17588","version":"1.0","vim_script_nr":"3964"},
 "color_highlight":{"archive_name":"color_highlight-0.2.vmb","script-type":"ftplugin","title":"color_highlight","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17577","version":"0.2","vim_script_nr":3963},
 "hammer":{"archive_name":"hammer.vim.zip","script-type":"utility","title":"hammer.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17573","version":"1.0.0","vim_script_nr":3962},
 "flashdevelop":{"archive_name":"endel-flashdevelop.vim-479a143.zip","script-type":"ftplugin","title":"flashdevelop.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17568","version":"0.1","vim_script_nr":3961},
@@ -359,7 +360,7 @@
 "jovial":{"archive_name":"jovial_syntax-1.2.tar.gz","script-type":"syntax","title":"jovial.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15922","version":"1.2","vim_script_nr":3592},
 "browserprint":{"archive_name":"browserprint.zip","script-type":"utility","title":"browserprint","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15674","version":"0.1","vim_script_nr":3591},
 "vim-coffee-script":{"archive_name":"vim-coffee-script-v002.zip","script-type":"utility","title":"vim-coffee-script","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17028","version":"v002","vim_script_nr":3590},
-"cake":{"archive_name":"cake.zip","script-type":"utility","title":"cake.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17426","version":"2.3.1","vim_script_nr":3589},
+"cake":{"archive_name":"cake.zip","script-type":"utility","title":"cake.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17587","version":"2.3.2","vim_script_nr":3589},
 "Find_XML_Tags":{"archive_name":"FindXmlTag.vba","script-type":"utility","title":"Find XML Tags","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15713","version":"2.0","vim_script_nr":3588},
 "vim-soy":{"archive_name":"vim-soy-1.0.zip","script-type":"syntax","title":"vim-soy","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15653","version":"1.0","vim_script_nr":3587},
 "Redhawk_Vim_Plugin":{"archive_name":"redhawk-vim.tar.gz","script-type":"utility","title":"Redhawk Vim Plugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15649","version":"0.1","vim_script_nr":3586},
@@ -3078,7 +3079,7 @@
 "table_format":{"archive_name":"table_format.vim","script-type":"utility","title":"table_format.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2594","version":"1.0","vim_script_nr":857},
 "NSIS_2.0_Syntax":{"archive_name":"nsis.vim","script-type":"syntax","title":"NSIS 2.0+ Syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2591","version":"1.3","vim_script_nr":856},
 "FX_HLSL":{"archive_name":"fx.vim","script-type":"syntax","title":"FX HLSL","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2587","version":"1","vim_script_nr":855},
-"less":{"archive_name":"less.vim","script-type":"color scheme","title":"less.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3715","version":"1.1","vim_script_nr":854},
+"less%854":{"archive_name":"less.vim","script-type":"color scheme","title":"less.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3715","version":"1.1","vim_script_nr":854},
 "File-local_variables":{"archive_name":"localvariables.zip","script-type":"utility","title":"File-local variables","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2834","version":"2.0","vim_script_nr":853},
 "Gothic":{"archive_name":"gothic.vim","script-type":"color scheme","title":"Gothic","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=5958","version":"2.0","vim_script_nr":852},
 "Posting%851":{"archive_name":"posting.vim","script-type":"utility","title":"Posting","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3173","version":"1.4","vim_script_nr":851},
