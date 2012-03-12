@@ -6,7 +6,7 @@ function! vamkr#GetJSON(filepart)
   " from 35 to 5ms  ... the reason is join being slow
   " windows users: provide your own hack ..
   if !filereadable(file)
-      throw "json file ".file.' does not exist'
+    throw 'File “'.file.'” not found'
   endif
   let body =
         \ (executable('cat') && executable('tr'))
@@ -15,7 +15,7 @@ function! vamkr#GetJSON(filepart)
   try
     return eval(body)
   catch /.*/
-    throw "error while reading json file ".file
+    throw 'Failed to read json file “'.file.'”: '.v:exception
   endtry
 endfunction
 
@@ -25,11 +25,11 @@ endfunction
 " details - I don't know. Its ZyX idea and gets the job done. Little bit
 " uncommon :)
 "
-" limitations:
-" You must not use commands here that take “|” as a part of 
-" theirs command line, as they also consume newline
+" limitations: You can’t use line continuation here
 function! vamkr#GetVim(filepart)
-    execute join(filter(readfile(s:dbdir.'/'.a:filepart.'.vim'), 'v:val[0] isnot# "\""'), "\n")
+    execute "function s:Vim()\n".join(readfile(s:dbdir.'/'.a:filepart.'.vim', 'b'), "\n")."\nreturn r\nendfunction"
+    let r=s:Vim()
+    delfunction s:Vim
     return r
 endfunction
 
