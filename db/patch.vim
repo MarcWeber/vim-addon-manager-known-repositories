@@ -41,9 +41,9 @@ let add_by_snr.3187={'deprecated' : "Deprecated in favour of FWC DSL defined in 
 let add_by_snr.3188={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
 let add_by_snr.3186={'deprecated' : "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
-let add_by_snr.727 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
-let add_by_snr.441 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
-let add_by_snr.3393={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection"}
+let add_by_snr.727 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
+let add_by_snr.441 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
+let add_by_snr.3393={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
 
 let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so use 'snipmate'"}
@@ -67,6 +67,20 @@ let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johanne
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
 let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
+let s:prefer_flake8 = "According to github its superseded by https://github.com/nvie/vim-flake8. You probably want to prefer syntastic anyway"
+
+" superseded by flake8 
+let add_by_snr.2914={'deprecated': s:prefer_flake8 }
+let add_by_snr.3160={'deprecated': s:prefer_flake8 }
+let add_by_snr.3430={'deprecated': s:prefer_flake8 }
+
+let add_by_snr.2441={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
+let add_by_snr.3161={'deprecated': s:prefer_flake8}
+
+let add_by_snr.3927={'deprecated': 'Also pay attention to alternative syntastic which runs flake and can do much more'}
+
+unlet s:prefer_flake8
+
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
