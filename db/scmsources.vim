@@ -738,7 +738,7 @@ let scm['windowlayout'] = {'type': 'git', 'url': 'git://github.com/godlygeek/win
 let scmnr.2611 = {'type': 'git', 'url': 'git://github.com/drmingdrmer/xptemplate'}
 
 " Holger Rapp
-let scmnr.2715 = {'type': 'bzr', 'url': 'git://github.com/SirVer/ultisnips'}
+let scmnr.2715 = {'type': 'git', 'url': 'git://github.com/SirVer/ultisnips'}
 
 " Bruno Michel
 let scmnr.2416 = {'type': 'git', 'url': 'git://github.com/nono/jquery.vim'}
