@@ -41,9 +41,10 @@ let add_by_snr.3187={'deprecated' : "Deprecated in favour of FWC DSL defined in 
 let add_by_snr.3188={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
 let add_by_snr.3186={'deprecated' : "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
-let add_by_snr.727 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
-let add_by_snr.441 ={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
-let add_by_snr.3393={'deprecated' : "consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
+let consider_valv="Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"
+let add_by_snr.727 ={'deprecated' : consider_valv}
+let add_by_snr.441 ={'deprecated' : consider_valv}
+let add_by_snr.3393={'deprecated' : consider_valv}
 
 let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so use 'snipmate'"}
