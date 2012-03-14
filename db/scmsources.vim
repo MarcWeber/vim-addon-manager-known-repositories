@@ -547,6 +547,7 @@ let scmnr.3258 = {'type': 'git', 'url': 'git://github.com/nvie/vim-pyunit'}
 let scmnr.3160 = {'type': 'git', 'url': 'git://github.com/nvie/vim-pep8'}
 let scmnr.3161 = {'type': 'git', 'url': 'git://github.com/nvie/vim-pyflakes'}
 let scmnr.3166 = {'type': 'git', 'url': 'git://github.com/nvie/vim-togglemouse'}
+let scmnr.3927 = {'type': 'git', 'url': 'git://github.com/nvie/vim-flake8'}
 
 " Trevor Little
 let scmnr.3507 = {'type': 'git', 'url': 'git://github.com/bundacia/ScreenPipe'}
@@ -1658,7 +1659,7 @@ let scm['vim-comment-object'] = {'type': 'git', 'url': 'git://github.com/ConradI
 let scm['git-vim'] = {'type': 'git', 'url': 'git://github.com/motemen/git-vim'}
 let scm['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod'}
 let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup', 'addon-info': {'runtimepath': 'vim'}}
-let scm['vim-flake8'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
+let scm['flake8@avidal'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
 let scm['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
 let scm['vim-ruby-complexity'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-ruby-complexity'}
 let scm['vim-objc'] = {'type': 'git', 'url': 'git://github.com/b4winckler/vim-objc'}

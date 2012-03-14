@@ -67,20 +67,16 @@ let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johanne
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
 let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
-let s:prefer_flake8 = "According to github its superseded by https://github.com/nvie/vim-flake8. You probably want to prefer syntastic anyway"
 
-" superseded by flake8 
-let add_by_snr.2914={'deprecated': s:prefer_flake8 }
-let add_by_snr.3160={'deprecated': s:prefer_flake8 }
-let add_by_snr.3430={'deprecated': s:prefer_flake8 }
+let prefer_flake8 = "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"
+let add_by_snr.3160={'deprecated': prefer_flake8}
+let add_by_snr.3161={'deprecated': prefer_flake8}
 
-let add_by_snr.2441={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
-let add_by_snr.3161={'deprecated': s:prefer_flake8}
-
+let suggest_syntastic="Consider giving syntastic a try instead. It supports more backends"
+let add_by_snr.2441={'deprecated': suggest_syntastic}
+let add_by_snr.2914={'deprecated': suggest_syntastic}
+let add_by_snr.3430={'deprecated': suggest_syntastic}
 let add_by_snr.3927={'deprecated': 'Also pay attention to alternative syntastic which runs flake and can do much more'}
-
-unlet s:prefer_flake8
-
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
