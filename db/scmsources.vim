@@ -960,6 +960,7 @@ let scmnr.2766 = {'type': 'git', 'url': 'git://github.com/chrisbra/Join'}
 let scmnr.3298 = {'type': 'git', 'url': 'git://github.com/chrisbra/vim_faq'}
 let scmnr.3877 = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
 let scmnr.3963 = {'type': 'git', 'url': 'git://github.com/chrisbra/color_highlight'}
+let scmnr.3965 = {'type': 'git', 'url': 'git://github.com/chrisbra/DynamicSigns'}
 " The following plugin does not have normal directory structure:
 let scmnr.2998 = {'url': 'https://github.com/chrisbra/BackgroundColor.vim/raw/master/backgroundColor.vim', 'archive_name': 'backgroundColor.vim', 'type': 'archive', 'script-type': 'utility'}
 
@@ -1523,6 +1524,9 @@ let scmnr.3293 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-numbere
 let scmnr.3486 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-virtualenv'}
 let scmnr.3541 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-fatrat'}
 let scmnr.3543 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-opener'}
+
+" Jon Suderman
+let scmnr.3969 = {'type': 'git', 'url': 'git://github.com/suderman/source.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 

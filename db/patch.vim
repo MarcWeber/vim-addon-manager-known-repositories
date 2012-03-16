@@ -116,6 +116,7 @@ let mai_snr_deps.3180 = [3130]
 let mai_snr_deps.3181 = [3130]
 let mai_snr_deps.3182 = [3130]
 let mai_snr_deps.3719 = [3130]
+let mai_snr_deps.3968 = [3130]
 " VxLib dependants
 let mai_snr_deps.2606 = [3061]
 let mai_snr_deps.3060 = [3061]
