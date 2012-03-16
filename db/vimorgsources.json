@@ -1,4 +1,9 @@
 {
+"source":{"archive_name":"source.vim","script-type":"utility","title":"source.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17600","version":"1.0","vim_script_nr":3969},
+"JumpToTrailingWhitespace":{"archive_name":"JumpToTrailingWhitespace.vba.gz","script-type":"utility","title":"JumpToTrailingWhitespace","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17598","version":"1.00","vim_script_nr":3968},
+"DeleteTrailingWhitespace":{"archive_name":"DeleteTrailingWhitespace.vba.gz","script-type":"utility","title":"DeleteTrailingWhitespace","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17597","version":"1.00","vim_script_nr":3967},
+"ShowTrailingWhitespace":{"archive_name":"ShowTrailingWhitespace.vba.gz","script-type":"utility","title":"ShowTrailingWhitespace","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17596","version":"1.00","vim_script_nr":3966},
+"DynamicSigns":{"archive_name":"DynamicSigns.zip","script-type":"ftplugin","title":"DynamicSigns","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17595","version":"0.2","vim_script_nr":3965},
 "less%3964":{"archive_name":"less.vim","script-type":"syntax","title":"less","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17588","version":"1.0","vim_script_nr":"3964"},
 "color_highlight":{"archive_name":"color_highlight-0.3.vmb","script-type":"ftplugin","title":"color_highlight","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17594","version":"3","vim_script_nr":3963},
 "hammer":{"archive_name":"hammer.vim.zip","script-type":"utility","title":"hammer.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17573","version":"1.0.0","vim_script_nr":3962},
@@ -186,7 +191,7 @@
 "mappingmanager":{"archive_name":"mappingmanager-v1.0.tar.gz","script-type":"utility","title":"mappingmanager","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16647","version":"1.0","vim_script_nr":3768},
 "MapFinder":{"archive_name":"MapFinder.vmb","script-type":"utility","title":"MapFinder","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16641","version":"1","vim_script_nr":3767},
 "vimroom":{"archive_name":"mikewest-vimroom-v0.7-0-ga39a90f.tar.gz","script-type":"utility","title":"vimroom.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16640","version":"v0.7","vim_script_nr":3766},
-"TagmaTasks":{"archive_name":"TagmaTasks.zip","script-type":"utility","title":"TagmaTasks","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17269","version":"0.2","vim_script_nr":3765},
+"TagmaTasks":{"archive_name":"TagmaTasks.zip","script-type":"utility","title":"TagmaTasks","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17599","version":"0.3","vim_script_nr":3765},
 "fcitx":{"archive_name":"fcitx.zip","script-type":"utility","title":"fcitx.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16632","version":"1.0","vim_script_nr":3764},
 "vim-google-scribe":{"archive_name":"googlescribe.vim","script-type":"utility","title":"vim-google-scribe","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16627","version":"0.1.0","vim_script_nr":3763},
 "Speech":{"archive_name":"speech.vim","script-type":"utility","title":"Speech","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16624","version":"0.1","vim_script_nr":3762},

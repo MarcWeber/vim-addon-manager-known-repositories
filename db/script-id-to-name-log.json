@@ -12571,5 +12571,20 @@
    ],
    "3964" : [
       "less%3964"
+   ],
+   "3965" : [
+      "DynamicSigns"
+   ],
+   "3966" : [
+      "ShowTrailingWhitespace"
+   ],
+   "3967" : [
+      "DeleteTrailingWhitespace"
+   ],
+   "3968" : [
+      "JumpToTrailingWhitespace"
+   ],
+   "3969" : [
+      "source"
    ]
 }
