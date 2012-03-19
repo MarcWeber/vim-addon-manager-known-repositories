@@ -12590,5 +12590,11 @@
    ],
    "3970" : [
       "mediawiki%3970"
+   ],
+   "3971" : [
+      "regexroute"
+   ],
+   "3972" : [
+      "css3_syntax_file_addon"
    ]
 }
