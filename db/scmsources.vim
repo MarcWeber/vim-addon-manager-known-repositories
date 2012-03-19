@@ -1528,6 +1528,9 @@ let scmnr.3543 = {'type': 'git', 'url': 'git://github.com/jmcantrell/vim-opener'
 " Jon Suderman
 let scmnr.3969 = {'type': 'git', 'url': 'git://github.com/suderman/source.vim'}
 
+" Jean-Denis Vauguet
+let scmnr.3970 = {'type': 'git', 'url': 'git://github.com/chikamichi/mediawiki.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
