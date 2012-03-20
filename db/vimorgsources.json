@@ -1,5 +1,6 @@
 {
-"css3_syntax_file_addon":{"archive_name":"css3_syntax_file.tar","script-type":"syntax","title":"css3 syntax file addon","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17611","version":"0.1","vim_script_nr":3972},
+"diff-toggle":{"archive_name":"diff_toggle.vim","script-type":"ftplugin","title":"diff-toggle","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17613","version":"0.1","vim_script_nr":3973},
+"css3_syntax_file_addon":{"archive_name":"CSS3-syntax-file.tar","script-type":"syntax","title":"css3 syntax file addon","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17614","version":"0.2","vim_script_nr":3972},
 "regexroute":{"archive_name":"yate-vim.tar.gz","script-type":"syntax","title":"regexroute.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17610","version":"0.1","vim_script_nr":3971},
 "mediawiki%3970":{"archive_name":"mediawiki.vim.tar.gz","script-type":"syntax","title":"mediawiki.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17609","version":"0.1","vim_script_nr":"3970"},
 "source":{"archive_name":"source.vim","script-type":"utility","title":"source.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17600","version":"1.0","vim_script_nr":3969},
@@ -310,7 +311,7 @@
 "cakephp":{"archive_name":"cakephp.zip","script-type":"utility","title":"cakephp.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16058","version":"1.2.5","vim_script_nr":3650},
 "simpleRGB":{"archive_name":"simpleRGB.vim","script-type":"color scheme","title":"simpleRGB","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16005","version":"1.0","vim_script_nr":3649},
 "AutoCpp":{"archive_name":"autocpp.vim","script-type":"utility","title":"AutoCpp","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16011","version":"0.1.1","vim_script_nr":3648},
-"VimLite":{"archive_name":"ctags58m.tar.bz2","script-type":"utility","title":"VimLite","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17612","version":"1.01","vim_script_nr":3647},
+"VimLite":{"archive_name":"ctags58m.tar.bz2","script-type":"utility","title":"VimLite","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17615","version":"1.02","vim_script_nr":3647},
 "Filesearch":{"archive_name":"vim-filesearch-v1.2.0.tar.gz","script-type":"utility","title":"Filesearch","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16040","version":"1.2.0","vim_script_nr":3646},
 "gnupg%3645":{"archive_name":"gnupg.vim","script-type":"utility","title":"gnupg.vim","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16952","version":"2.3","vim_script_nr":"3645"},
 "vimgtd":{"archive_name":"vimgtd.zip","script-type":"utility","title":"vimgtd","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16333","version":"1.2","vim_script_nr":3644},

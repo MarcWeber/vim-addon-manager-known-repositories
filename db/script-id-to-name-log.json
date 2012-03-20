@@ -12596,5 +12596,8 @@
    ],
    "3972" : [
       "css3_syntax_file_addon"
+   ],
+   "3973" : [
+      "diff-toggle"
    ]
 }
