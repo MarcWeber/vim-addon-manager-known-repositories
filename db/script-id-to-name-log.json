@@ -12599,5 +12599,11 @@
    ],
    "3973" : [
       "diff-toggle"
+   ],
+   "3974" : [
+      "showmarks2"
+   ],
+   "3975" : [
+      "Finder_for_vim"
    ]
 }
