@@ -1534,6 +1534,9 @@ let scmnr.3970 = {'type': 'git', 'url': 'git://github.com/chikamichi/mediawiki.v
 " Junqing Wang
 let scmnr.3972 = {'type': 'git', 'url': 'git://github.com/kight/CSS3-syntax-file-for-vim'}
 
+" Odin Dutton
+let scmnr.3973 = {'type': 'git', 'url': 'git://github.com/twe4ked/vim-diff-toggle'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
