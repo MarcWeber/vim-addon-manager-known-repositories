@@ -1537,6 +1537,9 @@ let scmnr.3972 = {'type': 'git', 'url': 'git://github.com/kight/CSS3-syntax-file
 " Odin Dutton
 let scmnr.3973 = {'type': 'git', 'url': 'git://github.com/twe4ked/vim-diff-toggle'}
 
+" yu xie
+let scmnr.3975 = {'type': 'git', 'url': 'git://github.com/xieyu/Finder'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
