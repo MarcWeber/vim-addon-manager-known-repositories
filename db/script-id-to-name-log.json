@@ -12595,6 +12595,7 @@
       "regexroute"
    ],
    "3972" : [
+      "css3_syntax_plus",
       "css3_syntax_file_addon"
    ],
    "3973" : [
@@ -12605,5 +12606,11 @@
    ],
    "3975" : [
       "Finder_for_vim"
+   ],
+   "3976" : [
+      "vim-human-dates"
+   ],
+   "3977" : [
+      "vim-addon-commenting"
    ]
 }
