@@ -1541,6 +1541,9 @@ let scmnr.3973 = {'type': 'git', 'url': 'git://github.com/twe4ked/vim-diff-toggl
 " yu xie
 let scmnr.3975 = {'type': 'git', 'url': 'git://github.com/xieyu/Finder'}
 
+" Maximilian Nickel
+let scmnr.3979 = {'type': 'git', 'url': 'git://github.com/mnick/vim-pomodoro'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
