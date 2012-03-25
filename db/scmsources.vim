@@ -183,14 +183,6 @@ let scmnr.1218 = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdcomment
 let scmnr.1658 = {'type': 'git', 'url': 'git://github.com/scrooloose/nerdtree'}
 let scmnr.2736 = {'type': 'git', 'url': 'git://github.com/scrooloose/syntastic'}
 
-" Luc Hermitte
-let scmnr.214 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
-let scmnr.50 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
-let scmnr.336 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
-let scmnr.229 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
-" Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
-" Others were not included as they are absent on www.vim.org
-
 " Viktor Kojouharov
 "tiagofalcao asked me to add the svn source:
 let scmnr.1702 = {'type': 'svn', 'url': 'http://svn.enlightenment.org/svn/e/trunk/edje/data/vim/'}
@@ -610,19 +602,26 @@ let scmnr.3590 = {'type': 'git', 'url': 'git://github.com/kchmck/vim-coffee-scri
 
 " Luc Hermitte
 " Some plugins are bundled in one repository http://lh-vim.googlecode.com/svn/misc/trunk. They are not included here
+" Others were not included as they are absent on www.vim.org
+let scmnr.50  = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
 let scmnr.214 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
+let scmnr.229 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
 let scmnr.336 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
 " The following plugins are not present on vim.org:
-let scm['lh-brackets'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
+" let scm['lh-vim-lib']          = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
+let scm['lh-cpp']              = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
 let scm['build-tools-wrapper'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/BTW/trunk'}
 let scm['lh-tags'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/tags/trunk'}
 let scm['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev/trunk'}
 let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
-let scm['search-in-runtime'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
-" Not owned by Luc Hermitte
+" fixing the json file does help for those two...
+let scm['lh-brackets']         = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
+let scm['search-in-runtime']   = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
+" Not owned by Luc Hermitte, but forked and enhanced...
 " let scmnr.222 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
+let scm['mu-template.lh'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 
 " Jan Larres
 let scmnr.3465 = {'type': 'git', 'url': 'git://github.com/majutsushi/tagbar'}

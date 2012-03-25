@@ -165,8 +165,7 @@
       "Mail_cc.set"
    ],
    "50" : [
-      "Map_Tools",
-      "error50",
+      "lh-brackets",
       "Map_Tools"
    ],
    "51" : [
@@ -750,6 +749,7 @@
       "Expand_Template"
    ],
    "229" : [
+      "search-in-runtime",
       "searchInRuntime"
    ],
    "230" : [
@@ -1088,8 +1088,7 @@
       "bw"
    ],
    "336" : [
-      "lh-cpp",
-      "lh-cpp-ftplugins"
+      "lh-cpp"
    ],
    "337" : [
       "vtags"
