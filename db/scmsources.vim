@@ -616,7 +616,6 @@ let scm['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev
 let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
-" fixing the json file does help for those two...
 let scm['lh-brackets']         = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-tools/trunk'}
 let scm['search-in-runtime']   = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
 " Not owned by Luc Hermitte, but forked and enhanced...
