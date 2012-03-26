@@ -617,7 +617,7 @@ let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/s
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
 " Not owned by Luc Hermitte, but forked and enhanced...
 " let scmnr.222 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
-let scm['mu-template.lh'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
+let scm['mu-template@lh'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 
 " Jan Larres
 let scmnr.3465 = {'type': 'git', 'url': 'git://github.com/majutsushi/tagbar'}
