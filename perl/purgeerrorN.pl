@@ -45,7 +45,12 @@ for my $key (keys %$nrndb) {
         $prevwaserror=0;
         push @newval, $name;
     }
-    $nrndb->{$key}=\@newval;
+    if(scalar @newval and $newval[0] eq "error$key") {
+        delete $nrndb->{$key};
+    }
+    else {
+        $nrndb->{$key}=\@newval;
+    }
 }
 my $nrjson=JSON->new()->utf8()
                       ->pretty()

@@ -101,9 +101,6 @@
       "a",
       "a.vim_-_Alternate_Files_quickly_.c"
    ],
-   "32" : [
-      "error32"
-   ],
    "33" : [
       "vimrc.tcl"
    ],
@@ -438,9 +435,6 @@
    "137" : [
       "ada%137",
       "ada137"
-   ],
-   "138" : [
-      "error138"
    ],
    "139" : [
       "which"
@@ -1046,9 +1040,6 @@
    "330" : [
       "code2html"
    ],
-   "331" : [
-      "error331"
-   ],
    "332" : [
       "prt_hdr"
    ],
@@ -1341,15 +1332,6 @@
    ],
    "424" : [
       "midnight2"
-   ],
-   "425" : [
-      "error425"
-   ],
-   "426" : [
-      "error426"
-   ],
-   "427" : [
-      "error427"
    ],
    "428" : [
       "smlisp"
@@ -2239,30 +2221,6 @@
    ],
    "707" : [
       "msp"
-   ],
-   "708" : [
-      "error708"
-   ],
-   "709" : [
-      "error709"
-   ],
-   "710" : [
-      "error710"
-   ],
-   "711" : [
-      "error711"
-   ],
-   "712" : [
-      "error712"
-   ],
-   "713" : [
-      "error713"
-   ],
-   "714" : [
-      "error714"
-   ],
-   "715" : [
-      "error715"
    ],
    "716" : [
       "brainfuck_syntax"
@@ -3997,9 +3955,6 @@
    "1262" : [
       "tex_umlaute"
    ],
-   "1263" : [
-      "error1263"
-   ],
    "1264" : [
       "Quick_access_file_Menu"
    ],
@@ -4245,9 +4200,6 @@
    "1341" : [
       "last_change%1341",
       "last_change1341"
-   ],
-   "1342" : [
-      "error1342"
    ],
    "1343" : [
       "AutoTag"
@@ -6024,9 +5976,6 @@
       "tmboxbrowser",
       "tmboxbrowser_-_A_mbox_browser"
    ],
-   "1907" : [
-      "error1907"
-   ],
    "1908" : [
       "snipper"
    ],
@@ -6046,7 +5995,6 @@
       "perlhelp"
    ],
    "1914" : [
-      "error1914",
       "phphaxor"
    ],
    "1915" : [
@@ -6130,16 +6078,6 @@
    "1940" : [
       "drools"
    ],
-   "1941" : [
-      "error1941",
-      "deletethis",
-      "inc-python"
-   ],
-   "1942" : [
-      "error1942",
-      "deletethistoothanks",
-      "automatic_cscope_db_include"
-   ],
    "1943" : [
       "fx"
    ],
@@ -6157,9 +6095,6 @@
    ],
    "1948" : [
       "Dictionary"
-   ],
-   "1949" : [
-      "error1949"
    ],
    "1950" : [
       "VimExplorer",
