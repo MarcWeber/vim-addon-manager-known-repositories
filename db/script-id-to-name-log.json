@@ -20,8 +20,6 @@
    ],
    "7" : [
       "ifdef_highlighting",
-      "ifdef",
-      "error7",
       "ifdef"
    ],
    "8" : [
@@ -65,8 +63,6 @@
       "dl"
    ],
    "20" : [
-      "jcommenter",
-      "error20",
       "jcommenter"
    ],
    "21" : [
@@ -85,14 +81,10 @@
       "mailbrowser"
    ],
    "26" : [
-      "vimmailr.zip",
-      "error26",
       "vimmailr.zip"
    ],
    "27" : [
       "format",
-      "format.vim_-_formats_the_current_paragraph",
-      "error27",
       "format.vim_-_formats_the_current_paragraph"
    ],
    "28" : [
@@ -166,8 +158,6 @@
    ],
    "50" : [
       "lh-brackets",
-      "Map_Tools",
-      "error50",
       "Map_Tools"
    ],
    "51" : [
@@ -185,8 +175,6 @@
       "ConvertBase"
    ],
    "55" : [
-      "TagsMenu.zip",
-      "error55",
       "TagsMenu.zip"
    ],
    "56" : [
@@ -244,13 +232,9 @@
       "foo"
    ],
    "73" : [
-      "word_complete",
-      "error73",
       "word_complete"
    ],
    "74" : [
-      "aux2tags",
-      "error74",
       "aux2tags"
    ],
    "75" : [
@@ -263,8 +247,6 @@
       "incfiles"
    ],
    "78" : [
-      "functags",
-      "error78",
       "functags"
    ],
    "79" : [
@@ -274,8 +256,6 @@
       "files2menu.pm"
    ],
    "81" : [
-      "translate",
-      "error81",
       "translate"
    ],
    "82" : [
@@ -288,8 +268,6 @@
       "gdbvim.tar.gz"
    ],
    "85" : [
-      "Mkcolorscheme",
-      "error85",
       "Mkcolorscheme"
    ],
    "86" : [
@@ -300,16 +278,12 @@
       "plkeyb"
    ],
    "88" : [
-      "vimtips.zip",
-      "error88",
       "vimtips.zip"
    ],
    "89" : [
       "savevers"
    ],
    "90" : [
-      "vcscommand",
-      "error90",
       "vcscommand"
    ],
    "91" : [
@@ -1042,8 +1016,6 @@
       "hungarian_to_english"
    ],
    "321" : [
-      "Buffer_Search",
-      "error321",
       "Buffer_Search"
    ],
    "322" : [
@@ -1234,8 +1206,6 @@
       "PreviewTag"
    ],
    "381" : [
-      "ShowLine",
-      "error381",
       "ShowLine"
    ],
    "382" : [
@@ -1367,8 +1337,6 @@
       "eukleides"
    ],
    "423" : [
-      "jcl",
-      "error423",
       "jcl"
    ],
    "424" : [
@@ -1666,8 +1634,6 @@
       "sr"
    ],
    "517" : [
-      "TVO_The_Vim_Outliner",
-      "error517",
       "TVO_The_Vim_Outliner"
    ],
    "518" : [
@@ -1705,8 +1671,6 @@
       "mh"
    ],
    "529" : [
-      "blockquote",
-      "error529",
       "blockquote"
    ],
    "530" : [
@@ -1742,8 +1706,6 @@
       "FavEx"
    ],
    "540" : [
-      "apdl",
-      "error540",
       "apdl"
    ],
    "541" : [
@@ -1829,8 +1791,6 @@
       "HTML_-_insert"
    ],
    "566" : [
-      "ctrlax",
-      "error566",
       "ctrlax"
    ],
    "567" : [
@@ -2125,8 +2085,6 @@
       "headers"
    ],
    "659" : [
-      "sip",
-      "error659",
       "sip"
    ],
    "660" : [
@@ -2135,8 +2093,6 @@
    "661" : [
       "gnupg%661",
       "gnupg661",
-      "gnupg",
-      "error661",
       "gnupg"
    ],
    "662" : [
@@ -2153,8 +2109,6 @@
       "FeralToggleCommentify"
    ],
    "666" : [
-      "hexman",
-      "error666",
       "hexman"
    ],
    "667" : [
@@ -2204,8 +2158,6 @@
       "blockhl2"
    ],
    "682" : [
-      "cschemerotate",
-      "error682",
       "cschemerotate"
    ],
    "683" : [
@@ -2360,8 +2312,6 @@
       "co"
    ],
    "731" : [
-      "xmidas",
-      "error731",
       "xmidas"
    ],
    "732" : [
@@ -2509,8 +2459,6 @@
       "ntp"
    ],
    "779" : [
-      "php_console",
-      "error779",
       "php_console"
    ],
    "780" : [
@@ -2533,8 +2481,6 @@
       "vartabs"
    ],
    "786" : [
-      "delek",
-      "error786",
       "delek"
    ],
    "787" : [
@@ -2804,8 +2750,6 @@
       "allout"
    ],
    "872" : [
-      "Syntax_context_abbreviations",
-      "error872",
       "Syntax_context_abbreviations"
    ],
    "873" : [
@@ -3279,8 +3223,6 @@
       "revolutions"
    ],
    "1021" : [
-      "feralstub",
-      "error1021",
       "feralstub"
    ],
    "1022" : [
@@ -3291,8 +3233,6 @@
    ],
    "1024" : [
       "IndentHL%1024",
-      "IndentHL1024",
-      "error1024",
       "IndentHL1024"
    ],
    "1025" : [
@@ -3322,8 +3262,6 @@
       "cream-iso639-2"
    ],
    "1033" : [
-      "commenter",
-      "error1033",
       "commenter"
    ],
    "1034" : [
@@ -3345,13 +3283,9 @@
       "array"
    ],
    "1040" : [
-      "vimtabs",
-      "error1040",
       "vimtabs"
    ],
    "1041" : [
-      "CodeReviewer",
-      "error1041",
       "CodeReviewer"
    ],
    "1042" : [
@@ -3393,8 +3327,6 @@
    ],
    "1053" : [
       "browser%1053",
-      "browser1053",
-      "error1053",
       "browser1053"
    ],
    "1054" : [
@@ -3441,8 +3373,6 @@
       "mingw"
    ],
    "1068" : [
-      "abap",
-      "error1068",
       "abap"
    ],
    "1069" : [
@@ -3500,8 +3430,6 @@
       "Black_Angus"
    ],
    "1087" : [
-      "tpp",
-      "error1087",
       "tpp"
    ],
    "1088" : [
@@ -3718,8 +3646,6 @@
       "remote_PHP_debugger"
    ],
    "1153" : [
-      "xbl",
-      "error1153",
       "xbl"
    ],
    "1154" : [
@@ -3921,8 +3847,6 @@
       "cvsdiff1214"
    ],
    "1215" : [
-      "Super_Shell_Indent",
-      "error1215",
       "Super_Shell_Indent"
    ],
    "1216" : [
@@ -4083,8 +4007,6 @@
       "IComplete"
    ],
    "1266" : [
-      "Emacs_outline_mode",
-      "error1266",
       "Emacs_outline_mode"
    ],
    "1267" : [
@@ -4247,8 +4169,6 @@
       "bwHomeEndAdv"
    ],
    "1317" : [
-      "bwUtility",
-      "error1317",
       "bwUtility"
    ],
    "1318" : [
@@ -4623,8 +4543,6 @@
       "withdrawn1436"
    ],
    "1437" : [
-      "Compiler_Plugin_for_msbuild_csc",
-      "error1437",
       "Compiler_Plugin_for_msbuild_csc"
    ],
    "1438" : [
@@ -4674,8 +4592,6 @@
       "svn_commit"
    ],
    "1452" : [
-      "testing",
-      "error1452",
       "testing"
    ],
    "1453" : [
@@ -4716,8 +4632,6 @@
       "moria"
    ],
    "1465" : [
-      "Ant",
-      "error1465",
       "Ant"
    ],
    "1466" : [
@@ -4782,8 +4696,6 @@
       "spectro"
    ],
    "1485" : [
-      "StickyCursor",
-      "error1485",
       "StickyCursor"
    ],
    "1486" : [
@@ -4851,8 +4763,6 @@
       "jbase1505"
    ],
    "1506" : [
-      "LargeFile",
-      "error1506",
       "LargeFile"
    ],
    "1507" : [
@@ -4910,13 +4820,9 @@
       "cmaxx"
    ],
    "1524" : [
-      "magic",
-      "error1524",
       "magic"
    ],
    "1525" : [
-      "vbnet",
-      "error1525",
       "vbnet"
    ],
    "1526" : [
@@ -5205,8 +5111,6 @@
       "phps"
    ],
    "1614" : [
-      "Satori_Color_Scheme",
-      "error1614",
       "Satori_Color_Scheme"
    ],
    "1615" : [
@@ -5258,8 +5162,7 @@
    ],
    "1630" : [
       "netdict%1630",
-      "netdict1630",
-      "error1630"
+      "netdict1630"
    ],
    "1631" : [
       "gnuchangelog"
@@ -5277,8 +5180,6 @@
       "candycode"
    ],
    "1636" : [
-      "JDL_syntax_file",
-      "error1636",
       "JDL_syntax_file"
    ],
    "1637" : [
@@ -5617,8 +5518,6 @@
       "amifmt"
    ],
    "1746" : [
-      "compilerflex",
-      "error1746",
       "compilerflex"
    ],
    "1747" : [
@@ -5716,10 +5615,6 @@
    ],
    "1777" : [
       "cvsdiff%1777",
-      "cvsdiff1777",
-      "error1777",
-      "cvsdiff1777",
-      "error1777",
       "cvsdiff1777"
    ],
    "1778" : [
@@ -5742,8 +5637,6 @@
       "cscope_wrapper"
    ],
    "1784" : [
-      "apachestyle",
-      "error1784",
       "apachestyle"
    ],
    "1785" : [
@@ -5903,8 +5796,6 @@
       "des3"
    ],
    "1834" : [
-      "st",
-      "error1834",
       "st"
    ],
    "1835" : [
@@ -6068,13 +5959,9 @@
       "scmCloseParens"
    ],
    "1886" : [
-      "nginx",
-      "error1886",
       "nginx"
    ],
    "1887" : [
-      "AnyPrinter",
-      "error1887",
       "AnyPrinter"
    ],
    "1888" : [
@@ -6538,8 +6425,6 @@
       "trag"
    ],
    "2034" : [
-      "colorful256",
-      "error2034",
       "colorful256"
    ],
    "2035" : [
@@ -6598,8 +6483,6 @@
       "idlang"
    ],
    "2053" : [
-      "asmc54xx",
-      "error2053",
       "asmc54xx"
    ],
    "2054" : [
@@ -6808,8 +6691,6 @@
       "gcov"
    ],
    "2119" : [
-      "webpreview",
-      "error2119",
       "webpreview"
    ],
    "2120" : [
@@ -6921,8 +6802,6 @@
    ],
    "2154" : [
       "marvim",
-      "ma",
-      "error2154",
       "ma"
    ],
    "2155" : [
@@ -7078,8 +6957,6 @@
       "Boost_Build_v2_BBv2_syntax"
    ],
    "2203" : [
-      "vimgen",
-      "error2203",
       "vimgen"
    ],
    "2204" : [
@@ -7098,8 +6975,6 @@
       "Txtfmt_The_Vim_Highlighter"
    ],
    "2209" : [
-      "pyrex",
-      "error2209",
       "pyrex"
    ],
    "2210" : [
@@ -7134,8 +7009,6 @@
       "Limp"
    ],
    "2220" : [
-      "bensday",
-      "error2220",
       "bensday"
    ],
    "2221" : [
@@ -7259,8 +7132,6 @@
       "Named_Buffers"
    ],
    "2260" : [
-      "Contrasty",
-      "error2260",
       "Contrasty"
    ],
    "2261" : [
@@ -7307,16 +7178,12 @@
       "flydiff"
    ],
    "2275" : [
-      "textobj-fold",
-      "error2275",
       "textobj-fold"
    ],
    "2276" : [
       "textobj-jabraces"
    ],
    "2277" : [
-      "DevEiate_theme",
-      "error2277",
       "DevEiate_theme"
    ],
    "2278" : [
@@ -7425,8 +7292,6 @@
       "GoogleSearchVIM"
    ],
    "2312" : [
-      "Indent_Highlight",
-      "error2312",
       "Indent_Highlight"
    ],
    "2313" : [
@@ -7518,8 +7383,6 @@
       "molokai"
    ],
    "2341" : [
-      "postmail",
-      "error2341",
       "postmail"
    ],
    "2342" : [
@@ -7544,8 +7407,6 @@
       "Chimp"
    ],
    "2349" : [
-      "indentgenie",
-      "error2349",
       "indentgenie"
    ],
    "2350" : [
@@ -7609,8 +7470,6 @@
       "CCTree_-_C_Call-Tree_Explorer"
    ],
    "2369" : [
-      "vimmp",
-      "error2369",
       "vimmp"
    ],
    "2370" : [
@@ -7648,16 +7507,12 @@
       "_win9xblueback"
    ],
    "2380" : [
-      "Verilog_constructs_plugin",
-      "error2380",
       "Verilog_constructs_plugin"
    ],
    "2381" : [
       "RemoveIfdef"
    ],
    "2382" : [
-      "Note_Maker",
-      "error2382",
       "Note_Maker"
    ],
    "2383" : [
@@ -7723,8 +7578,6 @@
       "Russian_PLansliterated"
    ],
    "2402" : [
-      "advice",
-      "error2402",
       "advice"
    ],
    "2403" : [
@@ -7789,8 +7642,6 @@
       "PySmell"
    ],
    "2422" : [
-      "Wordnet",
-      "error2422",
       "Wordnet"
    ],
    "2423" : [
@@ -7852,8 +7703,6 @@
    "2441" : [
       "pyflakes%2441",
       "pyflakes2441",
-      "pyflakes",
-      "error2441",
       "pyflakes"
    ],
    "2442" : [
@@ -7923,8 +7772,6 @@
    ],
    "2461" : [
       "AutoTmpl%2461",
-      "AutoTmpl2461",
-      "error2461",
       "AutoTmpl2461"
    ],
    "2462" : [
@@ -7990,8 +7837,6 @@
       "pygtk_syntax"
    ],
    "2482" : [
-      "Quagmire",
-      "error2482",
       "Quagmire"
    ],
    "2483" : [
@@ -8093,8 +7938,6 @@
       "ctxabbr"
    ],
    "2515" : [
-      "widower",
-      "error2515",
       "widower"
    ],
    "2516" : [
@@ -8110,10 +7953,6 @@
       "Dpaste.com_Plugin"
    ],
    "2520" : [
-      "reorder_tabs",
-      "error2520",
-      "reorder_tabs",
-      "error2520",
       "reorder_tabs"
    ],
    "2521" : [
@@ -8447,8 +8286,6 @@
       "Vimya"
    ],
    "2627" : [
-      "exVim",
-      "error2627",
       "exVim"
    ],
    "2628" : [
@@ -8556,8 +8393,7 @@
    ],
    "2658" : [
       "Changing_color_script",
-      "Changing_colour_script",
-      "error2658"
+      "Changing_colour_script"
    ],
    "2659" : [
       "g15vim",
@@ -8600,8 +8436,6 @@
       "TuttiColori_Colorscheme"
    ],
    "2671" : [
-      "tango-desert",
-      "error2671",
       "tango-desert"
    ],
    "2672" : [
@@ -8808,8 +8642,6 @@
       "v2"
    ],
    "2739" : [
-      "bclear",
-      "error2739",
       "bclear"
    ],
    "2740" : [
@@ -9012,8 +8844,6 @@
       "JavaScript_syntax_add_E4X_support"
    ],
    "2803" : [
-      "php_localvarcheck",
-      "error2803",
       "php_localvarcheck"
    ],
    "2804" : [
@@ -9032,8 +8862,6 @@
       "haxe_plugin"
    ],
    "2809" : [
-      "fontsize",
-      "error2809",
       "fontsize"
    ],
    "2810" : [
@@ -9120,8 +8948,6 @@
       "wikinotes"
    ],
    "2837" : [
-      "powershellCall",
-      "error2837",
       "powershellCall"
    ],
    "2838" : [
@@ -9327,10 +9153,6 @@
       "ShowFunc2901"
    ],
    "2902" : [
-      "AuthorInfo",
-      "error2902",
-      "AuthorInfo",
-      "error2902",
       "AuthorInfo"
    ],
    "2903" : [
@@ -9512,8 +9334,6 @@
    ],
    "2959" : [
       "emoticon%2959",
-      "emoticon2959",
-      "error2959",
       "emoticon2959"
    ],
    "2960" : [
@@ -9538,8 +9358,6 @@
       "Doxia_APT"
    ],
    "2967" : [
-      "daemon_saver",
-      "error2967",
       "daemon_saver"
    ],
    "2968" : [
@@ -9635,8 +9453,6 @@
       "utlx_interwiki"
    ],
    "2998" : [
-      "BackgroundColor",
-      "error2998",
       "BackgroundColor"
    ],
    "2999" : [
@@ -9942,8 +9758,6 @@
       "cvsdiff.vim_-_visual_cvs_diff"
    ],
    "3096" : [
-      "yaifa",
-      "error3096",
       "yaifa"
    ],
    "3097" : [
@@ -10228,8 +10042,7 @@
       "jso"
    ],
    "3186" : [
-      "vimstuff",
-      "error3186"
+      "vimstuff"
    ],
    "3187" : [
       "vimargumentchec"
@@ -10468,8 +10281,6 @@
       "diff-fold"
    ],
    "3263" : [
-      "Bird_Syntax",
-      "error3263",
       "Bird_Syntax"
    ],
    "3264" : [
