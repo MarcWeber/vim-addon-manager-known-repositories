@@ -83,7 +83,6 @@ sub formatScripts {
         addToDct($nrndb, $snr, $sid);
         WL($VODB, '"'.$script->{"id"}.'":'.
                   $json->encode({"script-type" => $script->{"type"},
-                                         title => $script->{"name"},
                                  vim_script_nr => $script->{"snr"},
                                        version => $lastsrc->{"version"},
                                   archive_name => $lastsrc->{"archive"},
