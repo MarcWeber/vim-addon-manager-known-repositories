@@ -1399,9 +1399,6 @@ let scmnr.3760 = {'type': 'git', 'url': 'git://github.com/nblock/vim-dokuwiki'}
 " Jonathan Rascher
 let scmnr.3774 = {'type': 'git', 'url': 'git://github.com/bcat/abbott.vim'}
 
-" Christoffer Lejdborg
-let scmnr.3776 = {'type': 'git', 'url': 'git://github.com/Lejdborg/todotxt.vim'}
-
 " Josh Perez
 let scmnr.3779 = {'type': 'git', 'url': 'git://github.com/goatslacker/mango.vim'}
 
