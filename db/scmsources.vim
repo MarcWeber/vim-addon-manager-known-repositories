@@ -1538,6 +1538,7 @@ let scmnr.3979 = {'type': 'git', 'url': 'git://github.com/mnick/vim-pomodoro'}
 
 " Jon Cairns
 let scmnr.3780 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpqa'}
+let scmnr.3992 = {'type': 'git', 'url': 'git://github.com/joonty/vim-sauce'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
