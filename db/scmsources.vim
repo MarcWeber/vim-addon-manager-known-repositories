@@ -1543,6 +1543,9 @@ let scmnr.3992 = {'type': 'git', 'url': 'git://github.com/joonty/vim-sauce'}
 " Suan Yeo
 let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markdown'}
 
+" Mike Skalnik
+let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
