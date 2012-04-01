@@ -1,4 +1,6 @@
 {
+"paredit":{"archive_name":"paredit096.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17699","version":"0.9.6","vim_script_nr":3998},
+"spacebox":{"archive_name":"spacebox.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17698","version":"1.0","vim_script_nr":3997},
 "portmon":{"archive_name":"portmon.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17693","version":"0.1","vim_script_nr":3996},
 "vroom":{"archive_name":"skalnik-vim-vroom-1.0.1-0-g7b83254.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17692","version":"1.0.1","vim_script_nr":3995},
 "instant-markdown":{"archive_name":"instant-markdown.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17688","version":"0.0.2","vim_script_nr":3994},
