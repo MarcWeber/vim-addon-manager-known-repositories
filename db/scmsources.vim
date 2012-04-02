@@ -1550,6 +1550,9 @@ let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
 " G Ltis
 let scmnr.3997 = {'type': 'git', 'url': 'git://github.com/glts/vim-spacebox'}
 
+" lorry lee
+let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
