@@ -592,6 +592,7 @@ let scm['scriproject'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim
 
 " Tamas Kovacs
 let scmnr.2531 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
+let scmnr.3998 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/paredit'}
 
 " Alessio Bolognino
 let scmnr.3871 = {'type': 'git', 'url': 'git://github.com/molok/vim-smartusline'}
@@ -1545,6 +1546,9 @@ let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markd
 
 " Mike Skalnik
 let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
+
+" G Ltis
+let scmnr.3997 = {'type': 'git', 'url': 'git://github.com/glts/vim-spacebox'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
