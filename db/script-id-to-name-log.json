@@ -12401,5 +12401,20 @@
    ],
    "3999" : [
       "Ayumi"
+   ],
+   "4000" : [
+      "Clam"
+   ],
+   "4001" : [
+      "facebook.html"
+   ],
+   "4002" : [
+      "vim_movement"
+   ],
+   "4003" : [
+      "vbs_movement"
+   ],
+   "4004" : [
+      "dosbatch_movement"
    ]
 }
