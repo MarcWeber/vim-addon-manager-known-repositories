@@ -12416,5 +12416,11 @@
    ],
    "4004" : [
       "dosbatch_movement"
+   ],
+   "4005" : [
+      "TextTransform"
+   ],
+   "4006" : [
+      "HyperList"
    ]
 }
