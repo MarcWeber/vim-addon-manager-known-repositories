@@ -55,6 +55,7 @@ let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpo
 let add_by_snr.108 ={'deprecated' : "Superseeded by vimscript #197 (genutils)"}
 let add_by_snr.1815={'deprecated' : "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
 let add_by_snr.1816={'deprecated' : "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
+let add_by_snr.2518={'deprecated' : "This plugin has been replaced with the HyperList plugin (vimscript #4006)"}
 
 let add_by_snr.3874={'deprecated' : "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
 let add_by_snr.287 ={'deprecated' : "This script has been retired. You should use #273"}
