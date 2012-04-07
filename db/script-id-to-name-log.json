@@ -12422,5 +12422,8 @@
    ],
    "4006" : [
       "HyperList"
+   ],
+   "4007" : [
+      "vim-python-imports"
    ]
 }
