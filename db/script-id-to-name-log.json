@@ -12425,5 +12425,11 @@
    ],
    "4007" : [
       "vim-python-imports"
+   ],
+   "4008" : [
+      "youdao.dict"
+   ],
+   "4009" : [
+      "XDebug_DBGp_client_for_PHP"
    ]
 }
