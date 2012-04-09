@@ -1570,6 +1570,10 @@ let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
 
+" Phillip Berndt
+" The following plugin does not have a separate repository:
+let scmnr.4007 = {'url': 'https://github.com/phillipberndt/vimconfig/raw/master/bundle/vim-python-imports/ftplugin/python.vim', 'archive_name': 'python.vim', 'type': 'archive', 'script-type': 'ftplugin'}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'url': 'https://github.com/phuihock/tagport.vim/raw/master/tagport.vim', 'archive_name': 'tagport.vim', 'type': 'archive', 'script-type': 'ftplugin'}
