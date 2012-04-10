@@ -12424,6 +12424,7 @@
       "HyperList"
    ],
    "4007" : [
+      "python-imports",
       "vim-python-imports"
    ],
    "4008" : [
@@ -12431,5 +12432,8 @@
    ],
    "4009" : [
       "XDebug_DBGp_client_for_PHP"
+   ],
+   "4010" : [
+      "Vim-Gromacs"
    ]
 }
