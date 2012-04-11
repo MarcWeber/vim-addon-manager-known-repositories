@@ -1557,6 +1557,12 @@ let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
 " hubert santuz
 let scmnr.4010 = {'type': 'git', 'url': 'git://github.com/HubLot/vim-gromacs'}
 
+" Phillip Berndt
+let scmnr.4007 = {'type': 'git', 'url': 'git://github.com/phillipberndt/python-imports.vim'}
+
+" ben mills
+let scmnr.4011 = {'type': 'git', 'url': 'git://github.com/benmills/vimux'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1572,10 +1578,6 @@ let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
-
-" Phillip Berndt
-" The following plugin does not have a separate repository:
-let scmnr.4007 = {'url': 'https://github.com/phillipberndt/vimconfig/raw/master/bundle/vim-python-imports/ftplugin/python.vim', 'archive_name': 'python.vim', 'type': 'archive', 'script-type': 'ftplugin'}
 
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
