@@ -12451,5 +12451,11 @@
    ],
    "4015" : [
       "close-duplicate-tabs"
+   ],
+   "4016" : [
+      "StripWhiteSpaces"
+   ],
+   "4017" : [
+      "vim-jsbeautify"
    ]
 }
