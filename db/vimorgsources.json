@@ -12,7 +12,7 @@
 "XDebug_DBGp_client_for_PHP":{"archive_name":"debugger.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17766","version":"0.55","vim_script_nr":4009},
 "youdao.dict":{"archive_name":"youdao.dict.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17741","version":"0.1","vim_script_nr":4008},
 "python-imports":{"archive_name":"python.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17735","version":"1.0","vim_script_nr":4007},
-"HyperList":{"archive_name":"hyperlist.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17728","version":"2.0","vim_script_nr":4006},
+"HyperList":{"archive_name":"hyperlist.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17782","version":"2.1","vim_script_nr":4006},
 "TextTransform":{"archive_name":"TextTransform.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17726","version":"1.01","vim_script_nr":4005},
 "dosbatch_movement":{"archive_name":"dosbatch_movement.vba.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17716","version":"1.00","vim_script_nr":4004},
 "vbs_movement":{"archive_name":"vbs_movement.vba.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17715","version":"1.00","vim_script_nr":4003},
