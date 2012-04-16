@@ -1106,7 +1106,7 @@ let scmnr.3351 = {'type': 'git', 'url': 'git://github.com/xaizek/vim-qthelp'}
 let scmnr.3352 = {'type': 'git', 'url': 'git://github.com/DataWraith/auto_mkdir'}
 
 " basyura
-let scmnr.3356 = {'type': 'git', 'url': 'git://github.com/basyura/unite-yarm', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}, '%4019':{}}}}
+let scmnr.3356 = {'type': 'git', 'url': 'git://github.com/basyura/unite-yarm'}
 let scmnr.3476 = {'type': 'git', 'url': 'git://github.com/basyura/bitly.vim'}
 " The following plugins are not present on vim.org:
 let scm['twibill'] = {'type': 'git', 'url': 'git://github.com/basyura/twibill.vim', 'addon-info': {'dependencies': {'%3133':{}, '%4019':{}}}}
