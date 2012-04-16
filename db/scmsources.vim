@@ -562,14 +562,14 @@ let scmnr.2948 = {'type': 'git', 'url': 'git://github.com/mattn/googlesuggest-co
 let scmnr.3505 = {'type': 'git', 'url': 'git://github.com/mattn/pastebin-vim'}
 let scmnr.3790 = {'type': 'git', 'url': 'git://github.com/mattn/sonictemplate-vim'}
 let scmnr.3819 = {'type': 'git', 'url': 'git://github.com/mattn/lisper-vim'}
+let scmnr.4019 = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim'}
 " Requires postupdate hook // though non-SCM source does also
 let scmnr.687 = {'type': 'git', 'url': 'git://github.com/mattn/vimtweak'}
 " The following plugins are not present on vim.org:
-let scm['webapi-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim'}
 let scm['plugins-update-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/plugins-update-vim'}
 let scm['googletasks-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/googletasks-vim'}
 let scm['wwwrenderer-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/wwwrenderer-vim'}
-let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim', 'addon-info': {'dependencies': {'webapi-vim': {}}}}
+let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim', 'addon-info': {'dependencies': {'%4019': {}}}}
 
 " Chris Yip
 " Following repository does not contain correct directory tree
@@ -1106,10 +1106,10 @@ let scmnr.3351 = {'type': 'git', 'url': 'git://github.com/xaizek/vim-qthelp'}
 let scmnr.3352 = {'type': 'git', 'url': 'git://github.com/DataWraith/auto_mkdir'}
 
 " basyura
-let scmnr.3356 = {'type': 'git', 'url': 'git://github.com/basyura/unite-yarm', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}, 'webapi-vim':{}}}}
+let scmnr.3356 = {'type': 'git', 'url': 'git://github.com/basyura/unite-yarm', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}, '%4019':{}}}}
 let scmnr.3476 = {'type': 'git', 'url': 'git://github.com/basyura/bitly.vim'}
 " The following plugins are not present on vim.org:
-let scm['twibill'] = {'type': 'git', 'url': 'git://github.com/basyura/twibill.vim', 'addon-info': {'dependencies': {'%3133':{}, 'webapi-vim':{}}}}
+let scm['twibill'] = {'type': 'git', 'url': 'git://github.com/basyura/twibill.vim', 'addon-info': {'dependencies': {'%3133':{}, '%4019':{}}}}
 let scm['TweetVim'] = {'type': 'git', 'url': 'git://github.com/basyura/TweetVim', 'addon-info': {'dependencies': {'%3396':{}, '%3476':{}, '%3133':{}, 'twibill':{}, 'unite-outline':{}}}}
 let scm['outline-cs'] = {'type': 'git', 'url': 'git://github.com/basyura/outline-cs', 'addon-info': {'dependencies': {'%3396':{}}}}
 let scm['unite-uiki'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-uiki', 'addon-info': {'dependencies': {'%3396':{}, '%3133':{}}}}
