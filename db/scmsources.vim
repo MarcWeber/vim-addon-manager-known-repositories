@@ -1147,6 +1147,7 @@ let scm['vim-highlight-default-highlight-groups'] = {'type': 'git', 'url': 'git:
 
 " Maksim Ryzhikov
 let scmnr.3404 = {'type': 'git', 'url': 'git://github.com/maksimr/vim-translator'}
+let scmnr.4017 = {'type': 'git', 'url': 'git://github.com/maksimr/vim-jsbeautify', 'addon-info': {'post-install-hook': 'execute "lcd" fnameescape(%d) | call vam#utils#RunShell("git submodule init && git submodule update") | lcd -', 'post-scms-update': 'execute "lcd" fnameescape(%d) | call vam#utils#RunShell("git submodule update") | lcd -'}}
 
 " Sung Pae
 let scmnr.3408 = {'type': 'git', 'url': 'git://github.com/guns/jellyx.vim'}
@@ -1563,6 +1564,9 @@ let scmnr.4007 = {'type': 'git', 'url': 'git://github.com/phillipberndt/python-i
 
 " ben mills
 let scmnr.4011 = {'type': 'git', 'url': 'git://github.com/benmills/vimux'}
+
+" German Frigerio
+let scmnr.4016 = {'type': 'git', 'url': 'git://github.com/gagoar/StripWhiteSpaces'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
