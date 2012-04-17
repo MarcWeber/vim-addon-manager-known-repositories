@@ -1568,6 +1568,10 @@ let scmnr.4011 = {'type': 'git', 'url': 'git://github.com/benmills/vimux'}
 " German Frigerio
 let scmnr.4016 = {'type': 'git', 'url': 'git://github.com/gagoar/StripWhiteSpaces'}
 
+" Marko Mahnič
+let scmnr.4020 = {'type': 'git', 'url': 'git://github.com/mmahnic/vim-flipwords'}
+let scmnr.2606 = {'type': 'svn', 'url': 'https://vimuiex.svn.sourceforge.net/svnroot/vimuiex/trunk'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
