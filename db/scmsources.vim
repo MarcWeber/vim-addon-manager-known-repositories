@@ -1568,10 +1568,14 @@ let scmnr.4011 = {'type': 'git', 'url': 'git://github.com/benmills/vimux'}
 
 " German Frigerio
 let scmnr.4016 = {'type': 'git', 'url': 'git://github.com/gagoar/StripWhiteSpaces'}
+let scmnr.4022 = {'type': 'git', 'url': 'git://github.com/gagoar/SpaceBetween'}
 
 " Marko Mahnič
 let scmnr.4020 = {'type': 'git', 'url': 'git://github.com/mmahnic/vim-flipwords'}
 let scmnr.2606 = {'type': 'svn', 'url': 'https://vimuiex.svn.sourceforge.net/svnroot/vimuiex/trunk'}
+
+" Adrian Sampson
+let scmnr.4023 = {'type': 'git', 'url': 'git://github.com/sampsyo/autolink.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
