@@ -12466,5 +12466,14 @@
    ],
    "4020" : [
       "flipwords"
+   ],
+   "4021" : [
+      "restore_view"
+   ],
+   "4022" : [
+      "SpaceBetween"
+   ],
+   "4023" : [
+      "autolink"
    ]
 }
