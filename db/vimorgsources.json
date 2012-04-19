@@ -1,4 +1,5 @@
 {
+"vim-addon-rdebug":{"archive_name":"vim-addon-rdebug-0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17793","version":"0.0","vim_script_nr":4024},
 "autolink":{"archive_name":"autolink.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17790","version":"0.1","vim_script_nr":4023},
 "SpaceBetween":{"archive_name":"SpaceBetween.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17789","version":"1.0","vim_script_nr":4022},
 "restore_view":{"archive_name":"restore_view.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17787","version":"1.1","vim_script_nr":4021},
@@ -45,7 +46,7 @@
 "mediawiki%3970":{"archive_name":"mediawiki.vim.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17609","version":"0.1","vim_script_nr":"3970"},
 "source":{"archive_name":"source.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17600","version":"1.0","vim_script_nr":3969},
 "JumpToTrailingWhitespace":{"archive_name":"JumpToTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17679","version":"1.01","vim_script_nr":3968},
-"DeleteTrailingWhitespace":{"archive_name":"DeleteTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17774","version":"1.02","vim_script_nr":3967},
+"DeleteTrailingWhitespace":{"archive_name":"DeleteTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17794","version":"1.03","vim_script_nr":3967},
 "ShowTrailingWhitespace":{"archive_name":"ShowTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17596","version":"1.00","vim_script_nr":3966},
 "DynamicSigns":{"archive_name":"DynamicSigns.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17595","version":"0.2","vim_script_nr":3965},
 "less%3964":{"archive_name":"less.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17588","version":"1.0","vim_script_nr":"3964"},
