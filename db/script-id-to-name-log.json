@@ -12478,5 +12478,11 @@
    ],
    "4024" : [
       "vim-addon-rdebug"
+   ],
+   "4025" : [
+      "DBGp_X_client"
+   ],
+   "4026" : [
+      "Splice"
    ]
 }
