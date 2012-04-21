@@ -2652,6 +2652,7 @@
       "File-local_variables"
    ],
    "854" : [
+      "less",
       "less%854",
       "less",
       "less.vim_-_Less_is_More"
@@ -12322,6 +12323,7 @@
       "color_highlight"
    ],
    "3964" : [
+      "less_syntax",
       "less%3964"
    ],
    "3965" : [
