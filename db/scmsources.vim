@@ -205,6 +205,7 @@ let scmnr.3304 = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/gundo.vim'}
 let scmnr.3721 = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/threesome.vim'}
 let scmnr.4000 = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/clam.vim'}
 let scmnr.4014 = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/vitality.vim'}
+let scmnr.4026 = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/splice.vim'}
 " The following plugin is not present on vim.org:
 let scm['strftimedammit'] = {'type': 'hg', 'url': 'https://bitbucket.org/sjl/strftimedammit.vim'}
 
