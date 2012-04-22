@@ -12486,5 +12486,11 @@
    ],
    "4026" : [
       "Splice"
+   ],
+   "4027" : [
+      "vim-htmldjango_omnicomplete"
+   ],
+   "4028" : [
+      "vim-addon-ruby-debug-ide"
    ]
 }
