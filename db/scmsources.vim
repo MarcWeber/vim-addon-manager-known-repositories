@@ -25,6 +25,7 @@ let scmnr.3432 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate.gi
 let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell'}
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
+let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
 let scm['theonevimlib'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-urweb'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-urweb'}
@@ -816,6 +817,7 @@ let scmnr.2999 = {'type': 'git', 'url': 'git://github.com/mjbrownie/django-templ
 let scmnr.3000 = {'type': 'git', 'url': 'git://github.com/mjbrownie/html-textobjects'}
 let scmnr.3010 = {'type': 'git', 'url': 'git://github.com/mjbrownie/delete-surround-html'}
 let scmnr.3533 = {'type': 'git', 'url': 'git://github.com/mjbrownie/GetFilePlus'}
+let scmnr.4027 = {'type': 'git', 'url': 'git://github.com/mjbrownie/vim-htmldjango_omnicomplete'}
 " The following plugins do not have normal directory structure:
 let scmnr.2780 = {'url': 'https://github.com/mjbrownie/Python-Tag-Import/raw/master/python_tag_import.vim', 'archive_name': 'python_tag_import.vim', 'type': 'archive', 'script-type': 'utility'}
 let scmnr.2781 = {'url': 'https://github.com/mjbrownie/django_helper.vim/raw/master/django_helper.vim', 'archive_name': 'django_helper.vim', 'type': 'archive', 'script-type': 'utility'}
