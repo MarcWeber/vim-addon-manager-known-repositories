@@ -1,8 +1,9 @@
 {
+"a_new_txt2tags_syntax":{"archive_name":"txt2tags.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17813","version":"2.1","vim_script_nr":4029},
 "vim-addon-ruby-debug-ide":{"archive_name":"rd.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17809","version":"0.0","vim_script_nr":4028},
 "vim-htmldjango_omnicomplete":{"archive_name":"mjbrownie-vim-htmldjango_omnicomplete-1bbcc09.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17808","version":"0.5","vim_script_nr":4027},
 "Splice":{"archive_name":"splice.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17800","version":"1.0.0","vim_script_nr":4026},
-"DBGp_X_client":{"archive_name":"debugger2.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17798","version":"2.0.1","vim_script_nr":4025},
+"DBGp_X_client":{"archive_name":"debugger2.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17812","version":"2.0.2","vim_script_nr":4025},
 "vim-addon-rdebug":{"archive_name":"vim-addon-rdebug-0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17793","version":"0.0","vim_script_nr":4024},
 "autolink":{"archive_name":"autolink.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17790","version":"0.1","vim_script_nr":4023},
 "SpaceBetween":{"archive_name":"SpaceBetween.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17789","version":"1.0","vim_script_nr":4022},
