@@ -1333,7 +1333,7 @@
 "fastlane":{"archive_name":"fastlane.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10860","version":"0.21","vim_script_nr":2669},
 "shell_it":{"archive_name":"shell_it.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10769","version":"1.0","vim_script_nr":2668},
 "setget":{"archive_name":"setget.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10768","version":"0.1","vim_script_nr":2667},
-"Mark%2666":{"archive_name":"mark.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17666","version":"2.6.3","vim_script_nr":"2666"},
+"Mark%2666":{"archive_name":"mark.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17810","version":"2.6.4","vim_script_nr":"2666"},
 "HtmlHelper":{"archive_name":"html.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13815","version":"2.2","vim_script_nr":2665},
 "mako%2663":{"archive_name":"mako.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12560","version":"0.4","vim_script_nr":"2663"},
 "ywvim":{"archive_name":"ywvim.vim_1.20.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11117","version":"1.20","vim_script_nr":2662},
