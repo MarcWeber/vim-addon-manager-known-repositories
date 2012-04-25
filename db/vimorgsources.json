@@ -1,4 +1,5 @@
 {
+"vim-cpp-auto-include":{"archive_name":"cpp_auto_include.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17814","version":"1.0","vim_script_nr":4030},
 "a_new_txt2tags_syntax":{"archive_name":"txt2tags.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17813","version":"2.1","vim_script_nr":4029},
 "vim-addon-ruby-debug-ide":{"archive_name":"rd.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17809","version":"0.0","vim_script_nr":4028},
 "vim-htmldjango_omnicomplete":{"archive_name":"mjbrownie-vim-htmldjango_omnicomplete-1bbcc09.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17808","version":"0.5","vim_script_nr":4027},
@@ -187,7 +188,7 @@
 "better-snipmate-snippet":{"archive_name":"better-snipmate-snippets.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17020","version":"0.2","vim_script_nr":3830},
 "inline_edit":{"archive_name":"inline_edit.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17079","version":"0.1.0","vim_script_nr":3829},
 "aurum":{"archive_name":"aurum-1.4.11.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17710","version":"1.4.11","vim_script_nr":3828},
-"modeleasy-vim-plugin":{"archive_name":"modeleasy-vim-plugin-26-11-11.vba","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16992","version":"1.0","vim_script_nr":3827},
+"modeleasy-vim-plugin":{"archive_name":"modeleasy-vim-plugin-1.1.vba","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17816","version":"1.1","vim_script_nr":3827},
 "simple_bookmarks":{"archive_name":"simple_bookmarks.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16991","version":"0.0.1","vim_script_nr":3826},
 "Colour_theme_neon-pk":{"archive_name":"neon-PK.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16981","version":"2.0","vim_script_nr":3825},
 "nu42dark_color_scheme":{"archive_name":"nu42dark.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16976","version":"0.1","vim_script_nr":3824},
