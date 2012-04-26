@@ -1580,6 +1580,9 @@ let scmnr.2606 = {'type': 'svn', 'url': 'https://vimuiex.svn.sourceforge.net/svn
 " Adrian Sampson
 let scmnr.4023 = {'type': 'git', 'url': 'git://github.com/sampsyo/autolink.vim'}
 
+" WU Jun
+let scmnr.4030 = {'type': 'git', 'url': 'git://github.com/quark-zju/vim-cpp-auto-include'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
