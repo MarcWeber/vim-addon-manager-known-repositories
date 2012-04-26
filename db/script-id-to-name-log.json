@@ -12498,5 +12498,14 @@
    ],
    "4030" : [
       "vim-cpp-auto-include"
+   ],
+   "4031" : [
+      "rstatusline"
+   ],
+   "4032" : [
+      "muxmate"
+   ],
+   "4033" : [
+      "vim4rally"
    ]
 }
