@@ -9222,6 +9222,7 @@
       "visualstar"
    ],
    "2945" : [
+      "AutomaticLaTeXPlugin",
       "AutomaticLaTexPlugin",
       "AutomaticTexPlugin"
    ],
@@ -11017,6 +11018,7 @@
       "Gravity"
    ],
    "3522" : [
+      "SAS_Syntax",
       "SAS_Syntax_File"
    ],
    "3523" : [
@@ -12507,5 +12509,8 @@
    ],
    "4033" : [
       "vim4rally"
+   ],
+   "4034" : [
+      "SAS_Indent"
    ]
 }
