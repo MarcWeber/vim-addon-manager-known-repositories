@@ -1583,6 +1583,13 @@ let scmnr.4023 = {'type': 'git', 'url': 'git://github.com/sampsyo/autolink.vim'}
 " WU Jun
 let scmnr.4030 = {'type': 'git', 'url': 'git://github.com/quark-zju/vim-cpp-auto-include'}
 
+" David Thomas
+let scmnr.2126 = {'type': 'git', 'url': 'git://github.com/davidpthomas/vim4accurev'}
+let scmnr.4033 = {'type': 'git', 'url': 'git://github.com/davidpthomas/vim4rally'}
+
+" Ross Timson
+let scmnr.4035 = {'type': 'git', 'url': 'git://github.com/rosstimson/modx.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
