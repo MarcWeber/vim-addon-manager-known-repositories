@@ -1590,6 +1590,12 @@ let scmnr.4033 = {'type': 'git', 'url': 'git://github.com/davidpthomas/vim4rally
 " Ross Timson
 let scmnr.4035 = {'type': 'git', 'url': 'git://github.com/rosstimson/modx.vim'}
 
+" Takahiro Yoshihara
+let scmnr.4037 = {'type': 'git', 'url': 'git://github.com/tacahiroy/vim-bestfriend'}
+
+" Pavan Kumar Sunkara
+let scmnr.4038 = {'type': 'git', 'url': 'git://github.com/pksunkara/vim-dasm'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
