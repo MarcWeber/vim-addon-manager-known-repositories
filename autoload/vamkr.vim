@@ -126,7 +126,9 @@ function! vamkr#PatchSources(sources, snr_to_name)
       if !has_key(mai_snr, snr)
         let mai_snr[snr]={}
       endif
-      call map(deps, 'extend(mai_snr.'.snr.', {"dependencies": {((type(v:val)=='.type(0).')?(a:snr_to_name[v:val]):(v:val)) : { } } })')
+      let ms = mai_snr[snr]
+      let ms.dependencies = get(mai_snr, 'dependencies', {})
+      call map(deps, 'extend( ms.dependencies, {(type(v:val) == type(0) ? a:snr_to_name[v:val] : v:val) : {}})')
     endfor
     call filter(mai_snr, 'has_key(a:snr_to_name, v:key)')
     call map(mai_snr, 'extend(add_by_snr, {v:key : extend(get(add_by_snr, v:key, {}), {"addon-info": v:val})})')
