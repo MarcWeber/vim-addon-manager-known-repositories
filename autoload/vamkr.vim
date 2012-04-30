@@ -27,7 +27,7 @@ endfunction
 "
 " limitations: You can’t use line continuation here
 function! vamkr#GetVim(filepart)
-    execute "function s:Vim()\n".join(readfile(s:dbdir.'/'.a:filepart.'.vim', 'b'), "\n")."\nreturn r\nendfunction"
+    execute "function s:Vim()\n".join(readfile(s:dbdir.'/'.a:filepart, 'b'), "\n")."\nreturn r\nendfunction"
     let r=s:Vim()
     delfunction s:Vim
     return r
@@ -93,7 +93,7 @@ endfunction
 
 " read scm sources: rewrite script_nr keys as names
 function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
-    let [scm, scmnr]=vamkr#GetVim('scmsources')
+    let [scm, scmnr]=vamkr#GetVim('scmsources.vim')
     let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
     if !empty(scmvoconflicts)
         call vam#Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
@@ -121,7 +121,7 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#GetVim('patch')
+    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#GetVim('patch.vim')
     for [snr, deps] in items(mai_snr_deps)
       if !has_key(mai_snr, snr)
         let mai_snr[snr]={}
