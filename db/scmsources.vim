@@ -1596,6 +1596,9 @@ let scmnr.4037 = {'type': 'git', 'url': 'git://github.com/tacahiroy/vim-bestfrie
 " Pavan Kumar Sunkara
 let scmnr.4038 = {'type': 'git', 'url': 'git://github.com/pksunkara/vim-dasm'}
 
+" kakkyz
+let scmnr.4039 = {'type': 'git', 'url': 'git://github.com/kakkyz81/evervim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
