@@ -1,8 +1,9 @@
 {
+"neocomplcache-snippets_complete":{"archive_name":"neocomplcache-snippets-complete-1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17861","version":"2.0","vim_script_nr":4043},
 "Ideone":{"archive_name":"ideone-vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17859","version":"0.01","vim_script_nr":4042},
 "VDBI":{"archive_name":"vdbi-vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17856","version":"0.01","vim_script_nr":4041},
 "Fortune_vimtips":{"archive_name":"vimtips-fortune.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17850","version":"0.1","vim_script_nr":4040},
-"evervim":{"archive_name":"evervim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17837","version":"0.3.0","vim_script_nr":4039},
+"evervim":{"archive_name":"evervim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17862","version":"0.3.5","vim_script_nr":4039},
 "vim-dasm":{"archive_name":"vim-dasm.tar","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17835","version":"1","vim_script_nr":4038},
 "bestfriend":{"archive_name":"bestfriend-0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17839","version":"0.0.2","vim_script_nr":4037},
 "ucpp-vim-syntax":{"archive_name":"ucpp-vim-syntax.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17828","version":"1.0","vim_script_nr":4036},
