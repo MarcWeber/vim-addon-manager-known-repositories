@@ -125,16 +125,16 @@ let scmnr.1876 = {'type': 'git', 'url': 'git://github.com/ciaranm/securemodeline
 let scmnr.1143 = {'type': 'git', 'url': 'git://github.com/ciaranm/inkpot'}
 let scmnr.1171 = {'type': 'git', 'url': 'git://github.com/ciaranm/detectindent'}
 
-" Shougo
+" Shougo Matsushita
 let scmnr.2620 = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache'}
 let scmnr.3396 = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim'}
+let scmnr.4043 = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache-snippets-complete'}
 " The following plugins are not present on vim.org:
 let scm['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell', 'addon-info': {'dependencies': {'vimproc': {}}}}
 let scm['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc'}
 let scm['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler'}
 let scm['vimarise'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimarise'}
 let scm['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui'}
-let scm['neocomplcache-snippets-complete'] = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache-snippets-complete', 'addon-info': {'dependencies': {'%2620': {}}}}
 
 " ZyX
 let scmnr.3056 = {'type': 'hg', 'url': 'http://translit3.hg.sourceforge.net:8000/hgroot/translit3/translit3'}
