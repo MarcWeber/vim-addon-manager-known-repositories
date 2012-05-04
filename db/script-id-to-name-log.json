@@ -12539,5 +12539,8 @@
    ],
    "4043" : [
       "neocomplcache-snippets_complete"
+   ],
+   "4047" : [
+      "RbREPL"
    ]
 }
