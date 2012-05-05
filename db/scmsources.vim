@@ -445,6 +445,7 @@ let scmnr.3865 = {'type': 'git', 'url': 'git://github.com/veloce/vim-behat'}
 " Bogdan Popa
 let scmnr.3484 = {'type': 'git', 'url': 'git://github.com/Bogdanp/pyrepl.vim'}
 let scmnr.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
+let scmnr.4047 = {'type': 'git', 'url': 'git://github.com/Bogdanp/rbrepl.vim'}
 
 " Yo-An Lin
 let scmnr.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
