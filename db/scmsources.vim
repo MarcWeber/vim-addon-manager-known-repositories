@@ -1606,6 +1606,9 @@ let scmnr.4049 = {'type': 'git', 'url': 'git://github.com/avelino/london.vim'}
 " yf liu
 let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vim'}
 
+" Mike Lue
+let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
