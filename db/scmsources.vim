@@ -1548,6 +1548,7 @@ let scmnr.3979 = {'type': 'git', 'url': 'git://github.com/mnick/vim-pomodoro'}
 " Jon Cairns
 let scmnr.3780 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpqa'}
 let scmnr.3992 = {'type': 'git', 'url': 'git://github.com/joonty/vim-sauce'}
+let scmnr.4054 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpunitqf'}
 
 " Suan Yeo
 let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markdown'}
@@ -1608,6 +1609,12 @@ let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vi
 
 " Mike Lue
 let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
+
+" Benoit Mortgat
+let scmnr.4053 = {'type': 'git', 'url': 'git://github.com/salsifis/vim-transpose'}
+
+" Rainer Borene
+let scmnr.4055 = {'type': 'git', 'url': 'git://github.com/rainerborene/vim-timetap'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
