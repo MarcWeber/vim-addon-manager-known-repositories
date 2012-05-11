@@ -427,6 +427,7 @@ let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV'}
 let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy'}
 let scmnr.3831 = {'type': 'git', 'url': 'git://github.com/Rykka/lastbuf.vim'}
 let scmnr.3882 = {'type': 'git', 'url': 'git://github.com/Rykka/easydigraph.vim'}
+let scmnr.4061 = {'type': 'git', 'url': 'git://github.com/Rykka/mathematic.vim'}
 
 " Andrew Radev
 let scmnr.3613 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/splitjoin.vim'}
@@ -1606,6 +1607,8 @@ let scmnr.4049 = {'type': 'git', 'url': 'git://github.com/avelino/london.vim'}
 
 " yf liu
 let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vim'}
+let scmnr.4056 = {'type': 'git', 'url': 'git://github.com/michalliu/jsoncodecs.vim'}
+let scmnr.4057 = {'type': 'git', 'url': 'git://github.com/michalliu/jsflakes.vim'}
 
 " Mike Lue
 let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
@@ -1615,6 +1618,9 @@ let scmnr.4053 = {'type': 'git', 'url': 'git://github.com/salsifis/vim-transpose
 
 " Rainer Borene
 let scmnr.4055 = {'type': 'git', 'url': 'git://github.com/rainerborene/vim-timetap'}
+
+" brook hong
+let scmnr.4059 = {'type': 'git', 'url': 'git://github.com/brookhong/DBGPavim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
