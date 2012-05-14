@@ -3154,6 +3154,7 @@
       "buflist"
    ],
    "1012" : [
+      "lingodirector%1012",
       "lingodirector"
    ],
    "1013" : [
@@ -12595,5 +12596,17 @@
    ],
    "4064" : [
       "license_loader"
+   ],
+   "4065" : [
+      "cmdpathup"
+   ],
+   "4066" : [
+      "matchindent"
+   ],
+   "4067" : [
+      "automatic_for_Verilog__Automatic_genera"
+   ],
+   "4068" : [
+      "lingodirector%4068"
    ]
 }
