@@ -1622,6 +1622,12 @@ let scmnr.4055 = {'type': 'git', 'url': 'git://github.com/rainerborene/vim-timet
 " brook hong
 let scmnr.4059 = {'type': 'git', 'url': 'git://github.com/brookhong/DBGPavim'}
 
+" Carsten Gräser
+let scmnr.4065 = {'type': 'git', 'url': 'git://github.com/cgraeser/vim-cmdpathup'}
+
+" Conor McDermottroe
+let scmnr.4066 = {'type': 'git', 'url': 'git://github.com/conormcd/matchindent.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
