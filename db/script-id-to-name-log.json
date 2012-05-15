@@ -7416,6 +7416,7 @@
       "sqloracle"
    ],
    "2372" : [
+      "automatic_for_Verilog%2372",
       "automatic_for_Verilog"
    ],
    "2373" : [
@@ -12604,9 +12605,16 @@
       "matchindent"
    ],
    "4067" : [
+      "automatic_for_Verilog%4067",
       "automatic_for_Verilog__Automatic_genera"
    ],
    "4068" : [
       "lingodirector%4068"
+   ],
+   "4069" : [
+      "Ubloh_Color_Scheme"
+   ],
+   "4070" : [
+      "html_FileCompletion"
    ]
 }
