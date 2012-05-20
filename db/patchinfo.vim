@@ -20,6 +20,7 @@ let add_by_snr.1686={'script-type': 'colors'}
 let add_by_snr.2150={'script-type': 'after/syntax'}
 let add_by_snr.2548={'script-type': 'after/syntax'}
 let add_by_snr.1780={'script-type': 'syntax'}
+let add_by_snr.3868={'script-type': 'plugin'}
 "▶1 Fixing target directories
 let add_by_snr.1542={'target_dir': 'autoload'}
 let add_by_snr.1662={'target_dir': 'autoload'}
