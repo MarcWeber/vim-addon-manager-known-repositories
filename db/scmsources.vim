@@ -933,7 +933,7 @@ let scmnr.2555 = {'type': 'git', 'url': 'git://github.com/nanotech/jellybeans.vi
 let scmnr.2570 = {'type': 'git', 'url': 'git://github.com/eddic/vimdecdef'}
 
 " Joe Stelmach
-let scmnr.2578 = {'type': 'git', 'url': 'git://github.com/joestelmach/javaScriptLint.vim'}
+let scmnr.2578 = {'type': 'git', 'url': 'git://github.com/joestelmach/lint.vim'}
 
 " Derek McLoughlin
 let scmnr.2596 = {'type': 'git', 'url': 'git://github.com/derekmcloughlin/gvimfullscreen_win32'}
