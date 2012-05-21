@@ -423,8 +423,8 @@ let scmnr.2182 = {'type': 'hg', 'url': 'http://hg.tedpavlic.com/vimlatex/'}
 let scmnr.2446 = {'type': 'git', 'url': 'git://github.com/jkramer/vim-narrow'}
 
 " Rykka Krin
-let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/ColorV'}
-let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/vim-galaxy'}
+let scmnr.3597 = {'type': 'git', 'url': 'git://github.com/Rykka/colorv.vim'}
+let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/galaxy.vim'}
 let scmnr.3831 = {'type': 'git', 'url': 'git://github.com/Rykka/lastbuf.vim'}
 let scmnr.3882 = {'type': 'git', 'url': 'git://github.com/Rykka/easydigraph.vim'}
 let scmnr.4061 = {'type': 'git', 'url': 'git://github.com/Rykka/mathematic.vim'}
