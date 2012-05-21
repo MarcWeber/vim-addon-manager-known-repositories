@@ -103,6 +103,7 @@ let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.3873 = [3023]
 let mai_snr_deps.3961 = ['vim-rooter']
 let mai_snr_deps.3979 = [3431]
+let mai_snr_deps.4079 = [4050, 4056]
 " Non-Kana textobj-user dependants
 let mai_snr_deps.3382 = [2100, 39]
 " Writebackup dependants

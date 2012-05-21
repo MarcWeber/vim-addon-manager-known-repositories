@@ -1609,6 +1609,7 @@ let scmnr.4049 = {'type': 'git', 'url': 'git://github.com/avelino/london.vim'}
 let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vim'}
 let scmnr.4056 = {'type': 'git', 'url': 'git://github.com/michalliu/jsoncodecs.vim'}
 let scmnr.4057 = {'type': 'git', 'url': 'git://github.com/michalliu/jsflakes.vim'}
+let scmnr.4079 = {'type': 'git', 'url': 'git://github.com/michalliu/sourcebeautify.vim'}
 
 " Mike Lue
 let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
