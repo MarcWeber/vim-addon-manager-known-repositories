@@ -1629,6 +1629,9 @@ let scmnr.4065 = {'type': 'git', 'url': 'git://github.com/cgraeser/vim-cmdpathup
 " Conor McDermottroe
 let scmnr.4066 = {'type': 'git', 'url': 'git://github.com/conormcd/matchindent.vim'}
 
+" Stéphane PY
+let scmnr.4083 = {'type': 'git', 'url': 'git://github.com/stephpy/vim-php-cs-fixer'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
