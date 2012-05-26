@@ -12660,5 +12660,14 @@
    ],
    "4084" : [
       "cst"
+   ],
+   "4085" : [
+      "OnSyntaxChange"
+   ],
+   "4086" : [
+      "python_fold_compact"
+   ],
+   "4087" : [
+      "EditPlus"
    ]
 }
