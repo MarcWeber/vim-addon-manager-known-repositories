@@ -1632,6 +1632,9 @@ let scmnr.4066 = {'type': 'git', 'url': 'git://github.com/conormcd/matchindent.v
 " Stéphane PY
 let scmnr.4083 = {'type': 'git', 'url': 'git://github.com/stephpy/vim-php-cs-fixer'}
 
+" sunsol zn
+let scmnr.4086 = {'type': 'git', 'url': 'git://github.com/sunsol/vim_python_fold_compact'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
