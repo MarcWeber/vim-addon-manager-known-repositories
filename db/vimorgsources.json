@@ -834,7 +834,7 @@
 "lodestone":{"archive_name":"lodestone.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16943","version":"4.1.1","vim_script_nr":3226},
 "Flex_4":{"archive_name":"mxml_as3.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13720","version":"1.0","vim_script_nr":3225},
 "VIM_Color_Picker":{"archive_name":"vim_color_picker_0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13715","version":"0.1","vim_script_nr":3224},
-"LanguageTool":{"archive_name":"LanguageTool.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17572","version":"1.15","vim_script_nr":3223},
+"LanguageTool":{"archive_name":"LanguageTool.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18064","version":"1.16","vim_script_nr":3223},
 "285colors-with-az-menu":{"archive_name":"285colors-with-az-menu.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13693","version":"0.1","vim_script_nr":3222},
 "indexer.tar.gz_":{"archive_name":"indexer-4.14.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17352","version":"4.14","vim_script_nr":3221},
 "Better_CSS_Syntax_for_Vim":{"archive_name":"css.vim.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18055","version":"2012/5/29","vim_script_nr":3220},
