@@ -1550,6 +1550,7 @@ let scmnr.3979 = {'type': 'git', 'url': 'git://github.com/mnick/vim-pomodoro'}
 let scmnr.3780 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpqa'}
 let scmnr.3992 = {'type': 'git', 'url': 'git://github.com/joonty/vim-sauce'}
 let scmnr.4054 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpunitqf'}
+let scmnr.4088 = {'type': 'git', 'url': 'git://github.com/joonty/vim-taggatron'}
 
 " Suan Yeo
 let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markdown'}
