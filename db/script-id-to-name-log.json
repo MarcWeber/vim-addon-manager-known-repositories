@@ -12043,6 +12043,7 @@
       "dsa"
    ],
    "3868" : [
+      "multiwindow_source_code_browsing",
       "gtags_multiwindow_browsing"
    ],
    "3869" : [
@@ -12677,5 +12678,11 @@
    ],
    "4089" : [
       "css3_mod"
+   ],
+   "4091" : [
+      "Difference_mode_color_settings"
+   ],
+   "4092" : [
+      "Vitra"
    ]
 }
