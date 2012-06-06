@@ -1636,6 +1636,9 @@ let scmnr.4083 = {'type': 'git', 'url': 'git://github.com/stephpy/vim-php-cs-fix
 " sunsol zn
 let scmnr.4086 = {'type': 'git', 'url': 'git://github.com/sunsol/vim_python_fold_compact'}
 
+" Nasimul Haque
+let scmnr.4092 = {'type': 'git', 'url': 'git://github.com/nsmgr8/vitra'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
