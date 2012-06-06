@@ -1,4 +1,5 @@
 {
+"shuffle":{"archive_name":"shuffle.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18093","version":"0.1","vim_script_nr":4093},
 "Vitra":{"archive_name":"vitra-0.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18092","version":"0.6","vim_script_nr":4092},
 "Difference_mode_color_settings":{"archive_name":"kamarali_diff.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18085","version":"0.1","vim_script_nr":4091},
 "css3_mod":{"archive_name":"css.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18076","version":"0.15","vim_script_nr":4089},
@@ -694,7 +695,7 @@
 "softbluev2":{"archive_name":"softbluev2.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14509","version":"1.2","vim_script_nr":3369},
 "List_File":{"archive_name":"listfile-1.2.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16143","version":"1.2.1","vim_script_nr":3368},
 "vimblogger_ft":{"archive_name":"vimblogger_ft.vba","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14619","version":"0.2","vim_script_nr":3367},
-"Shebang":{"archive_name":"shebang.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14496","version":"1.0","vim_script_nr":3366},
+"Shebang":{"archive_name":"shebang.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18095","version":"1.1","vim_script_nr":3366},
 "txt%3365":{"archive_name":"txt.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16392","version":"1.1","vim_script_nr":"3365"},
 "Ceasy":{"archive_name":"cease.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14486","version":"3","vim_script_nr":3364},
 "southwest-fog":{"archive_name":"southwest-fog.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14488","version":"0.2","vim_script_nr":3363},
