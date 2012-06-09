@@ -1642,6 +1642,9 @@ let scmnr.4092 = {'type': 'git', 'url': 'git://github.com/nsmgr8/vitra'}
 " Wei Zhu
 let scmnr.4094 = {'type': 'git', 'url': 'git://github.com/yesmeck/tips.vim'}
 
+" Colin Wood
+let scmnr.4095 = {'type': 'git', 'url': 'git://github.com/cwood/vim-django'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
