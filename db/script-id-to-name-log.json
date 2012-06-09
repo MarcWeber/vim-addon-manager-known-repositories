@@ -12696,5 +12696,8 @@
    ],
    "4096" : [
       "maven-ide"
+   ],
+   "4097" : [
+      "fisa-color-scheme"
    ]
 }
