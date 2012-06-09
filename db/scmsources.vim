@@ -1645,6 +1645,9 @@ let scmnr.4094 = {'type': 'git', 'url': 'git://github.com/yesmeck/tips.vim'}
 " Colin Wood
 let scmnr.4095 = {'type': 'git', 'url': 'git://github.com/cwood/vim-django'}
 
+" Juan Pedro Fisanotti
+let scmnr.4097 = {'type': 'git', 'url': 'git://github.com/fisadev/fisa-vim-colorscheme'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
