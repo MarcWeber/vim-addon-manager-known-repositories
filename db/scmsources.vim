@@ -1651,6 +1651,9 @@ let scmnr.4097 = {'type': 'git', 'url': 'git://github.com/fisadev/fisa-vim-color
 " Sam Simmons
 let scmnr.4098 = {'type': 'git', 'url': 'git://github.com/samiconductor/vim-sharefix'}
 
+" Lee Savide
+let scmnr.4100 = {'type': 'hg', 'url': 'https://bitbucket.org/laughingman182/abc-vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
