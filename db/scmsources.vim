@@ -1653,7 +1653,6 @@ let scmnr.4098 = {'type': 'git', 'url': 'git://github.com/samiconductor/vim-shar
 
 " Lee Savide
 let scmnr.4100 = {'type': 'hg', 'url': 'https://bitbucket.org/laughingman182/abc-vim'}
-
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1670,9 +1669,14 @@ let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
 
+" Andrew Lunny
+" The following plugin does not have normal directory structure:
+let scmnr.4101 = {'url': 'https://github.com/alunny/pegjs-vim/raw/master/pegjs.vim', 'archive_name': 'pegjs.vim', 'type': 'archive', 'script-type': 'utility'}
+
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'url': 'https://github.com/phuihock/tagport.vim/raw/master/tagport.vim', 'archive_name': 'tagport.vim', 'type': 'archive', 'script-type': 'ftplugin'}
+
 
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
