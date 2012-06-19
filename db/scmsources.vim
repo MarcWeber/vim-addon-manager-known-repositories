@@ -1653,6 +1653,13 @@ let scmnr.4098 = {'type': 'git', 'url': 'git://github.com/samiconductor/vim-shar
 
 " Lee Savide
 let scmnr.4100 = {'type': 'hg', 'url': 'https://bitbucket.org/laughingman182/abc-vim'}
+
+" David Richard
+let scmnr.4102 = {'type': 'git', 'url': 'git://github.com/drichard/vim-brunch'}
+
+" Fernando Castillo
+let scmnr.4103 = {'type': 'git', 'url': 'git://github.com/skibyte/gdb-from-vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1676,7 +1683,6 @@ let scmnr.4101 = {'url': 'https://github.com/alunny/pegjs-vim/raw/master/pegjs.v
 " Phui-Hock Chang
 " The following plugin does not have normal directory structure:
 let scmnr.3917 = {'url': 'https://github.com/phuihock/tagport.vim/raw/master/tagport.vim', 'archive_name': 'tagport.vim', 'type': 'archive', 'script-type': 'ftplugin'}
-
 
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
