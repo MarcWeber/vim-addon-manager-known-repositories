@@ -2830,6 +2830,7 @@
       "unicodeswitch"
    ],
    "910" : [
+      "python_pydoc",
       "pydoc%910",
       "pydoc910"
    ],
@@ -3472,6 +3473,7 @@
       "rcs"
    ],
    "1112" : [
+      "pydoc",
       "pydoc%1112",
       "pydoc1112"
    ],
@@ -12723,5 +12725,8 @@
    ],
    "4105" : [
       "pysource"
+   ],
+   "4106" : [
+      "fish-syntax"
    ]
 }
