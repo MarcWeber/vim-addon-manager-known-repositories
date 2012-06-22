@@ -979,10 +979,6 @@ let scmnr.3567 = {'type': 'git', 'url': 'git://github.com/lilydjwg/colorizer'}
 " The following plugin does not have a separate repository:
 let scmnr.2778 = {'type': 'git', 'url': 'git://github.com/lilydjwg/winterpy'}
 
-" Andrei Nicholson
-" The following plugin does not have normal directory structure:
-let scmnr.2548 = {'url': 'https://github.com/tetsuo13/Vim-PHP-Doc/raw/master/php.vim', 'archive_name': 'php.vim', 'type': 'archive', 'script-type': 'after/syntax'}
-
 " Shuhei Kubota
 " The following plugins do not have normal directory structure:
 let scmnr.2542 = {'url': 'https://bitbucket.org/shu/starrange/raw/default/starrange.vim', 'archive_name': 'starrange.vim', 'type': 'archive', 'script-type': 'utility', 'title': 'StarRange'}
@@ -1659,6 +1655,11 @@ let scmnr.4102 = {'type': 'git', 'url': 'git://github.com/drichard/vim-brunch'}
 
 " Fernando Castillo
 let scmnr.4103 = {'type': 'git', 'url': 'git://github.com/skibyte/gdb-from-vim'}
+
+" Andrei Nicholson
+let scmnr.4111 = {'type': 'git', 'url': 'git://github.com/tetsuo13/Vim-log4j'}
+" The following plugin does not have normal directory structure:
+let scmnr.2548 = {'url': 'https://github.com/tetsuo13/Vim-PHP-Doc/raw/master/php.vim', 'archive_name': 'php.vim', 'type': 'archive', 'script-type': 'after/syntax'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
