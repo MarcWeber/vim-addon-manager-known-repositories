@@ -428,6 +428,7 @@ let scmnr.3729 = {'type': 'git', 'url': 'git://github.com/Rykka/galaxy.vim'}
 let scmnr.3831 = {'type': 'git', 'url': 'git://github.com/Rykka/lastbuf.vim'}
 let scmnr.3882 = {'type': 'git', 'url': 'git://github.com/Rykka/easydigraph.vim'}
 let scmnr.4061 = {'type': 'git', 'url': 'git://github.com/Rykka/mathematic.vim'}
+let scmnr.4112 = {'type': 'git', 'url': 'git://github.com/Rykka/riv.vim'}
 
 " Andrew Radev
 let scmnr.3613 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/splitjoin.vim'}
@@ -1668,6 +1669,10 @@ let scmnr.2548 = {'url': 'https://github.com/tetsuo13/Vim-PHP-Doc/raw/master/php
 " is absent. Adding it here so that VAM users will get error from git if they 
 " ignore deprecation instead of “Don’t know how to unpack” error.
 let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/ewiplayer/vim-scala'}
+
+" hickop
+" The following plugin does not have a separate repository:
+let scmnr.4113 = {'url': 'https://github.com/hickop/home/raw/master/.vim/colors/hickop.vim', 'archive_name': 'hickop.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " Sergey Vakulenko
 " The following plugins do not have a separate repository:
