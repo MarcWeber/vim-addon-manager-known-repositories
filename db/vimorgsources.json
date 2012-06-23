@@ -1,5 +1,7 @@
 {
-"log4j":{"archive_name":"tetsuo13-Vim-log4j-0.1-0-gc88aeac.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18176","version":"0.1","vim_script_nr":4111},
+"hickop":{"archive_name":"hickop.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18182","version":"1.0","vim_script_nr":4113},
+"riv":{"archive_name":"riv.vim-0.64.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18183","version":"0.64","vim_script_nr":4112},
+"log4j":{"archive_name":"tetsuo13-Vim-log4j-0.2-0-g97df89f.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18180","version":"0.2","vim_script_nr":4111},
 "sml_polyml":{"archive_name":"sml_polyml.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18173","version":"0.1","vim_script_nr":4110},
 "autumnleaf_modified":{"archive_name":"autumnleaf_modified.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18172","version":"1.0","vim_script_nr":4109},
 "fish-syntax":{"archive_name":"vim-fish.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18168","version":"1","vim_script_nr":4106},
@@ -931,7 +933,7 @@
 "Smooth_Center":{"archive_name":"SmoothCenter.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13848","version":"1.7","vim_script_nr":3149},
 "reload":{"archive_name":"reload.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17005","version":"0.6.8","vim_script_nr":3148},
 "wmgraphviz":{"archive_name":"wmgraphviz.vim.tgz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14529","version":"1.1","vim_script_nr":3147},
-"quickrun%3146":{"archive_name":"vim-quickrun-0.5.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16715","version":"0.5.1","vim_script_nr":"3146"},
+"quickrun%3146":{"archive_name":"vim-quickrun-0.6.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18181","version":"0.6.0","vim_script_nr":"3146"},
 "zetavim":{"archive_name":"zetavim-0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13313","version":"0.1","vim_script_nr":3145},
 "hgrev":{"archive_name":"hgrev.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13307","version":"0.1","vim_script_nr":3144},
 "vim-haxe":{"archive_name":"vim-haxe-0.1.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13771","version":"0.1.3","vim_script_nr":3143},
