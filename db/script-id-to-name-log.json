@@ -12743,5 +12743,17 @@
    ],
    "4113" : [
       "hickop"
+   ],
+   "4114" : [
+      "LineMotion"
+   ],
+   "4115" : [
+      "BufferPersist"
+   ],
+   "4116" : [
+      "MessageRecall"
+   ],
+   "4117" : [
+      "VcsMessageRecall"
    ]
 }
