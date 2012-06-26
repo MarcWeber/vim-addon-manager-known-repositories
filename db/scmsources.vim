@@ -1662,6 +1662,9 @@ let scmnr.4111 = {'type': 'git', 'url': 'git://github.com/tetsuo13/Vim-log4j'}
 " The following plugin does not have normal directory structure:
 let scmnr.2548 = {'url': 'https://github.com/tetsuo13/Vim-PHP-Doc/raw/master/php.vim', 'archive_name': 'php.vim', 'type': 'archive', 'script-type': 'after/syntax'}
 
+" Handsome Cheung
+let scmnr.4114 = {'type': 'git', 'url': 'git://github.com/handsomecheung/vim-linemotion'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
