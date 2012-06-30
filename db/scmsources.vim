@@ -1665,6 +1665,9 @@ let scmnr.2548 = {'url': 'https://github.com/tetsuo13/Vim-PHP-Doc/raw/master/php
 " Handsome Cheung
 let scmnr.4114 = {'type': 'git', 'url': 'git://github.com/handsomecheung/vim-linemotion'}
 
+" K S
+let scmnr.4118 = {'type': 'git', 'url': 'git://github.com/kshenoy/vim-signature'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
