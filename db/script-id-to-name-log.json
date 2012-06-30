@@ -12755,5 +12755,8 @@
    ],
    "4117" : [
       "VcsMessageRecall"
+   ],
+   "4118" : [
+      "vim-signature"
    ]
 }
