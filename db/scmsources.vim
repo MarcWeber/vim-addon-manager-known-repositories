@@ -1668,6 +1668,9 @@ let scmnr.4114 = {'type': 'git', 'url': 'git://github.com/handsomecheung/vim-lin
 " K S
 let scmnr.4118 = {'type': 'git', 'url': 'git://github.com/kshenoy/vim-signature'}
 
+" takahiro sagara
+let scmnr.4120 = {'type': 'git', 'url': 'git://github.com/vimyum/viske'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
