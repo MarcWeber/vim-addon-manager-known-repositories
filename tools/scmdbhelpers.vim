@@ -35,6 +35,9 @@ function! GetPrevSNR()
         return ''
     endif
 endfunction
+function! s:GitUrl(url)
+    return 'git://'.substitute(substitute(substitute(substitute(a:url, '^\w\+://', '', ''), '/\(/\|$\)\@=', '', ''), '^\([^/]*/[^/]*/[^/]*\).*', '\1', ''), '\.git$', '', '')
+endfunction
 function! AddGHUrl(url, nr)
     let nr=a:nr
     if nr is 0 | let nr=substitute(matchstr(a:url, '\v^(\w+\:\/\/)?[^/]+\/[^/]+\/\zs[^/]+'), '\v(\.vim)?(\.git)?/*$', '', '') | endif
@@ -44,15 +47,15 @@ function! AddGHUrl(url, nr)
     call append('.', ((type(nr)==type(0))?
                 \       ('let scmnr.'.nr):
                 \       ('let scm['.string(nr).']')).' = '.
-                \    ((a:url=~#'\v\/(blob|raw)\/master\/.*\.vim$')?
-                \       ('{''url'': '.string(substitute(a:url, 'blob/master', 'raw/master', '')).', ''archive_name'': '.string(fnamemodify(a:url, ':t')).', ''type'': ''archive'', ''script-type'': '.string(GetScriptType(nr)).'}'):
+                \    ((a:url=~#'\v\/(blob|raw)\/[^/]+\/.*\.vim$')?
+                \       ('vamkr#AddCopyHook({''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}, {'.string(substitute(a:url, '\v^.{-}\/%(blob|raw)\/[^/]+\/(.*)$', '\1', '')).': '.string(vam#utils#GuessFixDir(GetScriptType(nr))).'})'):
                 \    ((a:url=~#'^lp:')?
                 \       ('{''type'': ''bzr'', ''url'': '.string(a:url).'}'):
                 \    ((a:url=~#'svn')?
                 \       ('{''type'': ''svn'', ''url'': '.string(a:url).'}'):
                 \    ((a:url=~#'bitbucket\.org' || match(a:url, '\v<hg>')!=-1)?
                 \       ('{''type'': ''hg'', ''url'': '.string(a:url).'}'):
-                \       ('{''type'': ''git'', ''url'': ''git://'.substitute(substitute(substitute(substitute(a:url, '^\w\+://', '', ''), '/\(/\|$\)\@=', '', ''), '^\([^/]*/[^/]*/[^/]*\).*', '\1', ''), '\.git$', '', '').'''}'))))))
+                \       ('{''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}'))))))
 endfunction
 function! GetSNR()
     wincmd k

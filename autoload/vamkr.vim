@@ -1,22 +1,22 @@
 let s:dbdir=expand('<sfile>:h:h').'/db'
 function! vamkr#GetJSON(filepart)
-  let file = s:dbdir.'/'.a:filepart.'.json'
-  " don't ask me why system and cat is much much faster for very large files
-  " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
-  " from 35 to 5ms  ... the reason is join being slow
-  " windows users: provide your own hack ..
-  if !filereadable(file)
-    throw 'File “'.file.'” not found'
-  endif
-  let body =
-        \ (executable('cat') && executable('tr'))
-        \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
-        \ : join(readfile(file, 'b'), '')
-  try
-    return eval(body)
-  catch /.*/
-    throw 'Failed to read json file “'.file.'”: '.v:exception
-  endtry
+    let file = s:dbdir.'/'.a:filepart.'.json'
+    " don't ask me why system and cat is much much faster for very large files
+    " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
+    " from 35 to 5ms  ... the reason is join being slow
+    " windows users: provide your own hack ..
+    if !filereadable(file)
+        throw 'File “'.file.'” not found'
+    endif
+    let body =
+                \ (executable('cat') && executable('tr'))
+                \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
+                \ : join(readfile(file, 'b'), '')
+    try
+        return eval(body)
+    catch /.*/
+        throw 'Failed to read json file “'.file.'”: '.v:exception
+    endtry
 endfunction
 
 " GetVim executes content of a .vim file returning the r var which should be
@@ -51,10 +51,10 @@ function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     return r
 endfunction
 
-function s:NormalizeName(name)
+function! s:NormalizeName(name)
     return substitute(tolower(a:name), '[_/\-]*', '', 'g')
 endfunction
-function s:GetName(nameOrNr, nrnameshist)
+function! s:GetName(nameOrNr, nrnameshist)
     return type(a:nameOrNr)==type(0) ? a:nrnameshist[a:nameOrNr] : a:nameOrNr
 endfunction
 
@@ -123,17 +123,32 @@ endfunction
 function! vamkr#PatchSources(sources, snr_to_name)
     let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#GetVim('patchinfo')
     for [snr, deps] in items(mai_snr_deps)
-      if !has_key(mai_snr, snr)
-        let mai_snr[snr]={}
-      endif
-      let ms = mai_snr[snr]
-      let ms.dependencies = get(mai_snr, 'dependencies', {})
-      call map(deps, 'extend( ms.dependencies, {(type(v:val) == type(0) ? a:snr_to_name[v:val] : v:val) : {}})')
+        if !has_key(mai_snr, snr)
+            let mai_snr[snr]={}
+        endif
+        let ms = mai_snr[snr]
+        let ms.dependencies = get(mai_snr, 'dependencies', {})
+        call map(deps, 'extend( ms.dependencies, {(type(v:val) == type(0) ? a:snr_to_name[v:val] : v:val) : {}})')
     endfor
     call filter(mai_snr, 'has_key(a:snr_to_name, v:key)')
     call map(mai_snr, 'extend(add_by_snr, {v:key : extend(get(add_by_snr, v:key, {}), {"addon-info": v:val})})')
     call map(add_by_snr, 'extend(add_by_name, {a:snr_to_name[v:key] : v:val})')
     call map(filter(add_by_name, 'has_key(a:sources, v:key)'), 'extend(a:sources[v:key], v:val)')
     return a:sources
+endfunction
+
+function! vamkr#AddCopyHook(repository, files)
+    let hook=[]
+    let dirs={}
+    for [file, dir] in items(a:files)
+        let dirs[dir]=1
+        " Assuming that no one is crazy enough to really have newlines in 
+        " filename
+        let hook+=['call vam#utils#CopyFile(%d.'.string('/'.file).', %d.'.string('/'.dir.'/'.file).')']
+    endfor
+    let a:repository['addon-info']={}
+    let a:repository['addon-info']['post-install-hook']=join(map(keys(dirs), '"call mkdir(%d.".string("/".v:val).(stridx(v:val, "/")==-1 ? "" : ", ''p''").")"')+hook, ' | ')
+    let a:repository['addon-info']['post-scms-update-hook']=join(hook, ' | ')
+    return a:repository " Make it possible to use let scmnr.XXXX = vamkr#AddCopyHook({...}, {...})
 endfunction
 " vim: ft=vim ts=4 sts=4 sw=4 et fmr=▶,▲
