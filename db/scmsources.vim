@@ -1689,6 +1689,10 @@ let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
 
+" Carlos Ruiz-Henestrosa
+" The following plugin does not have normal directory structure:
+let scmnr.4122 = vamkr#AddCopyHook({'type': 'darcs', 'url': 'http://darcsden.com/karl/vim-ptsc-header'}, {'ptsc-header.vim': 'plugin'})
+
 " mihaly himics
 " The following plugin does not have normal directory structure:
 let scmnr.3127 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/trialsolution/gamsvim'}, {'gams.vim': 'syntax'})
