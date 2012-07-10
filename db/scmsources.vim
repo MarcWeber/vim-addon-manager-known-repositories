@@ -1669,6 +1669,9 @@ let scmnr.4120 = {'type': 'git', 'url': 'git://github.com/vimyum/viske'}
 " Mathias Fussenegger
 let scmnr.3754 = {'type': 'git', 'url': 'git://github.com/mfussenegger/baancomplete'}
 
+" Techlive Zheng
+let scmnr.4125 = {'type': 'git', 'url': 'git://github.com/techlivezheng/tagbar-phpctags'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
