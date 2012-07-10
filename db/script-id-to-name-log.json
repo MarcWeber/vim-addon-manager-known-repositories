@@ -12706,6 +12706,7 @@
       "sharefix"
    ],
    "4099" : [
+      "Oh-l-l",
       "oh-l-l"
    ],
    "4100" : [
@@ -12767,5 +12768,17 @@
    ],
    "4121" : [
       "kickAssembler_syntax"
+   ],
+   "4122" : [
+      "ptsc-header"
+   ],
+   "4123" : [
+      "TaggedSearchPattern"
+   ],
+   "4124" : [
+      "oh-l_l_vim"
+   ],
+   "4125" : [
+      "tagbar-phpctags"
    ]
 }
