@@ -366,6 +366,7 @@ let scmnr.2674 = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim'}
 
 " Devin Weaver (sukima)
 let scmnr.301 = {'type': 'git', 'url': 'git://github.com/sukima/xmledit'}
+let scm['LSLvim'] = {'type': 'git', 'url': 'git://github.com/sukima/LSLvim.git'}
 
 " Thiago Alves
 let scmnr.2009 = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose'}
