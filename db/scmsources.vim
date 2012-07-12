@@ -366,6 +366,7 @@ let scmnr.2674 = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim'}
 
 " Devin Weaver (sukima)
 let scmnr.301 = {'type': 'git', 'url': 'git://github.com/sukima/xmledit'}
+let scm['LSLvim'] = {'type': 'git', 'url': 'git://github.com/sukima/LSLvim.git'}
 
 " Thiago Alves
 let scmnr.2009 = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose'}
@@ -1848,7 +1849,9 @@ let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/un
 let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-makegreen'}
 let scm['vim-rooter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 let scm['vim-scala@behaghel'] = {'type': 'git', 'url': 'git://github.com/behaghel/vim-scala'}
+let scm['factor'] = {'type': 'git', 'url': 'git://github.com/slavapestov/factor.git', 'addon-info': {'runtimepath': 'misc/vim'}}
 let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax.git'}
+let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang.git', 'addon-info': {'runtimepath': 'tools/editors/vim'}}
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
