@@ -1,6 +1,53 @@
 " See documentation at vamkr#GetVim
 " custom plugins - drop me an email to get you repository added
-let scm = {}
+
+" XXX Style:
+" Sample:
+" " Author Name
+" let scmnr.42 = {'type': 'hg', 'url': 'https://bitbucket.org/ZyX_I/frawor'}
+" " The following plugin does not have normal directory structure:
+" let scmnr.3242 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs'}, {'open.vim': 'autoload/xolox'})
+" " The following plugin does not have a separate repository:
+" let scmnr.3034 = {'url': 'https://github.com/urso/dotrc/raw/master/vim/syntax/haskell.vim', 'archive_name': 'haskell.vim', 'type': 'archive', 'script-type': 'syntax'}
+" " The following plugin is not present on vim.org:
+" let scm['vim-latex'] = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
+
+" Rules:
+" 1. Author name, as it is seen on www.vim.org, must be the first line in the 
+"    paragraph, prefixed with «" ».
+" 2. After author name there is a section with sources. It must not contain any 
+"    empty or indented lines.
+" 3. There may be comments inside sources section and these comments should 
+"    either be taken from the following list:
+"     - The following plugin is not present on vim.org:
+"     - The following plugins are not present on vim.org:
+"     - The following plugin does not have a separate repository:
+"     - The following plugins do not have a separate repository:
+"     - The following plugin does not have normal directory structure:
+"     - The following plugins do not have a separate repository:
+"     - The following is not a vim plugin, but it is posted on vim.org:
+"    , or not be started with “The following”.
+"    Comments started with “The following” stuck if followed by other comments 
+"    of this kind, but not with previous ones that were followed by sources.
+" 4. Sources must have form
+"        let {varname} = {dictionary}|{vamkr#* call}
+" 4.1. Spaces around equal sign must be present
+" 4.2. {varname} is either scmnr.{number} or scm['{plugin name}']
+" 4.3. String in dictionary must be single quoted, but for strings located 
+"      inside strings (in hooks) this rule does not apply
+" 4.4. Order of keys: 'type', 'url', 'addon-info', hooks
+" 4.5. Opening brace must not be followed by a space, closing must not be 
+"      preceded by it.
+" 4.6. Colons after keys and commas after values must be followed by at least 
+"      one space.
+" 4.7. No trailing comma.
+" 4.8. 'url' key value must not contain optional suffixes (like .git), git:// 
+"      URLs are prefered over https:// ones, https:// are prefered over http://.
+" 5. Sources not prefixed with comments must go first.
+" 6. Authors that have only sources prefixed by comments other then “… is not 
+"    a vim plugin …” must go beyond the “----…” line near some other author with 
+"    similar comment. Authors with at least one “normal” source must go above 
+"    this line.
 
 " scmnr: add version controlled sources to plugins also known by www.vim.org
 let scmnr = {}
@@ -21,7 +68,7 @@ let scmnr.3307 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-as
 let scmnr.3315 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-json-encoding'}
 let scmnr.3317 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-signs'}
 let scmnr.3320 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-xdebug'}
-let scmnr.3432 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate.git'}
+let scmnr.3432 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate'}
 let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell'}
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
@@ -177,7 +224,7 @@ let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
-" " The following plugin is present on vim.org, but does not belong to Tim Pope
+" " The below plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
 
 " Marty Grenfell
@@ -248,9 +295,8 @@ let scmnr.2686 = {'type': 'git', 'url': 'git://github.com/Twinside/vim-cuteTodoL
 let scmnr.2627 = {'type': 'git', 'url': 'git://github.com/jwu/exvim'}
 
 " Al Budden
-let scmnr.2646 = {'type': 'hg', 'url': 'https://bitbucket.org/abudden/taghighlight' }
-
-let scmnr.3950 = {'type': 'hg', 'url': 'https://bitbucket.org/abudden/easycolour' }
+let scmnr.2646 = {'type': 'hg', 'url': 'https://bitbucket.org/abudden/taghighlight'}
+let scmnr.3950 = {'type': 'hg', 'url': 'https://bitbucket.org/abudden/easycolour'}
 
 " Darrick Wiebe
 let scmnr.2765 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascript'}
@@ -300,18 +346,9 @@ let scmnr.2754 = {'type': 'git', 'url': 'git://github.com/Raimondi/delimitMate'}
 " Ned Konz
 let scmnr.517 = {'type': 'git', 'url': 'git://github.com/vimoutliner/vimoutliner'}
 
-" intuited - Ted
-" The following plugins are not present on vim.org:
-let scm['vim-vamoose'] = {'type': 'git', 'url': 'git://github.com/intuited/vim-vamoose'}
-let scm['visdo'] = {'type': 'git', 'url': 'git://github.com/intuited/visdo'}
-
-" beyondwords (github)
-" The following plugin is not present on vim.org:
-let scm['vim-twig'] = {'type': 'git', 'url': 'git://github.com/beyondwords/vim-twig'}
-
 " Tom Link
 let scmnr.2594 = {'type': 'git', 'url': 'git://github.com/tomtom/tmarks_vim'}
-let scmnr.861 = {'type': 'git', 'url': 'git://github.com/tomtom/viki_vim'}
+let scmnr.861  = {'type': 'git', 'url': 'git://github.com/tomtom/viki_vim'}
 let scmnr.2033 = {'type': 'git', 'url': 'git://github.com/tomtom/trag_vim'}
 let scmnr.2037 = {'type': 'git', 'url': 'git://github.com/tomtom/hookcursormoved_vim'}
 let scmnr.1030 = {'type': 'git', 'url': 'git://github.com/tomtom/scalefont_vim'}
@@ -355,10 +392,6 @@ let scm['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype
 " Jakson Aquino
 let scmnr.2628 = {'type': 'git', 'url': 'git://github.com/jcfaria/Vim-R-plugin'}
 
-" Robert Gleeson
-" The following plugin is not present on vim.org:
-let scm['hammer.vim'] = {'type': 'git', 'url': 'git://github.com/robgleeson/hammer.vim'}
-
 " Nathanael Kane
 let scmnr.3361 = {'type': 'git', 'url': 'git://github.com/nathanaelkane/vim-indent-guides'}
 
@@ -367,7 +400,8 @@ let scmnr.2674 = {'type': 'git', 'url': 'git://github.com/msanders/cocoa.vim'}
 
 " Devin Weaver (sukima)
 let scmnr.301 = {'type': 'git', 'url': 'git://github.com/sukima/xmledit'}
-let scm['LSLvim'] = {'type': 'git', 'url': 'git://github.com/sukima/LSLvim.git'}
+" The following plugin is not present on vim.org:
+let scm['LSLvim'] = {'type': 'git', 'url': 'git://github.com/sukima/LSLvim'}
 
 " Thiago Alves
 let scmnr.2009 = {'type': 'git', 'url': 'git://github.com/Townk/vim-autoclose'}
@@ -645,10 +679,6 @@ let scmnr.3163 = {'type': 'git', 'url': 'git://github.com/tmallen/endline-vim'}
 
 " @kevinwatters
 let scmnr.2441 = {'type': 'git', 'url': 'git://github.com/kevinw/pyflakes-vim'}
-
-" Gunther Groenewege
-" The following plugin is not present on vim.org:
-let scm['vim-less'] = {'type': 'git', 'url':  'git://github.com/groenewege/vim-less'}
 
 " Hallison Batista
 let scmnr.2878 = {'type': 'git', 'url': 'git://github.com/hallison/vim-rdoc'}
@@ -1009,14 +1039,10 @@ let scmnr.3077 = {'type': 'git', 'url': 'git://github.com/geetarista/ego.vim'}
 let scmnr.3057 = {'type': 'git', 'url': 'git://github.com/claytron/vimsizer'}
 let scmnr.3290 = {'type': 'git', 'url': 'git://github.com/claytron/RevealExtends'}
 
-" dos Santos
-" The following plugin does not have normal directory structure:
-let scmnr.3092 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/andre-luiz-dos-santos/autocomp'}, {'autocomp.vim': 'plugin'})
-
 " Silas Silva
+let scmnr.3173 = {'type': 'hg', 'url': 'https://code.google.com/p/vimgcwsyntax'}
 " The following is not a vim plugin, but it is posted on vim.org:
 let scmnr.3102 = {'type': 'git', 'url': 'git://github.com/silasdb/vplinst'}
-let scmnr.3173 = {'type': 'hg', 'url': 'https://code.google.com/p/vimgcwsyntax'}
 
 " David Munger
 let scmnr.3108 = {'type': 'bzr', 'url': 'lp:vim-gui-box'}
@@ -1031,7 +1057,8 @@ let scmnr.3125 = {'type': 'git', 'url': 'git://github.com/spf13/PIV'}
 let scm['Autostamp'] = {'type': 'git', 'url': 'git://github.com/spf13/Autostamp'}
 
 " Mario Gutierrez
-" All following two plugins are bundled inside one github repository
+" The following plugins do not have a separate repository:
+" (they are both bundled in one repository)
 let scmnr.3132 = {'type': 'git', 'url': 'git://github.com/mgutz/vim-colors'}
 let scmnr.3347 = {'type': 'git', 'url': 'git://github.com/mgutz/vim-colors'}
 
@@ -1459,9 +1486,9 @@ let scmnr.3071 = {'type': 'git', 'url': 'git://github.com/wilhelmtell/reimin'}
 let scmnr.3379 = {'type': 'git', 'url': 'git://github.com/caio/jumpnextlongline.vim'}
 
 " Alex Efros
-let scmnr.3883 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-autosess'}
-let scmnr.3885 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-ruscmd'}
-let scmnr.3893 = {'type': 'hg',  'url': 'https://code.google.com/p/vim-plugin-viewdoc'}
+let scmnr.3883 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-autosess'}
+let scmnr.3885 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-ruscmd'}
+let scmnr.3893 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-viewdoc'}
 
 " Roman Podolyaka
 let scmnr.3903 = {'type': 'git', 'url': 'git://github.com/bloodeclipse/vim-xsnippet'}
@@ -1694,6 +1721,10 @@ let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
 
+" dos Santos
+" The following plugin does not have normal directory structure:
+let scmnr.3092 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/andre-luiz-dos-santos/autocomp'}, {'autocomp.vim': 'plugin'})
+
 " Carlos Ruiz-Henestrosa
 " The following plugin does not have normal directory structure:
 let scmnr.4122 = vamkr#AddCopyHook({'type': 'darcs', 'url': 'http://darcsden.com/karl/vim-ptsc-header'}, {'ptsc-header.vim': 'plugin'})
@@ -1735,7 +1766,8 @@ let scmnr.3414 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/tien
 let scmnr.3399 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/klokane/vim-phpunit'}, {'phpunit.vim': 'plugin'})
 
 " Daniel B
-" The following plugins have neither a separate repository nor normal directory structure:
+" The following plugins do not have normal directory structure:
+" The following plugins do not have a separate repository:
 let scmnr.3140 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'obsidian.vim': 'colors'})
 let scmnr.3470 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'tidydiff.vim': 'plugin'})
 let scmnr.3693 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'FixCSS.vim': 'plugin'})
@@ -1785,43 +1817,60 @@ let scmnr.2475 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://bitbucket.org/b
 let scmnr.2479 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/lobo/grsecurityvim'}, {'grsecurity.vim': 'syntax'})
 
 " Leandro Penz
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 let scmnr.808 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/lpenz/vimcommander'}, {'vimcommander.vim': 'plugin', 'vimcommander.txt': 'doc'})
 
 " xolox
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 let scmnr.3242 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs'}, {'open.vim': 'autoload/xolox'})
 
 " Anders Schau Knatten
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 let scmnr.3733 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/knatten/olga_key'}, {'olga_key.vim': 'syntax'})
 
 " Dmitry Ermolov
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 let hook='execute "edit" fnameescape(%d."/Makefile") | %s@\V~/.vim@.@ | write! | execute "lcd" fnameescape(%d) | call mkdir("plugin") | call vam#utils#RunShell("make && make install") | lcd -'
 let scmnr.3648 = {'type': 'git', 'url': 'git://github.com/9uMaH/autocpp', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin") | ', '', '')}}
 unlet hook
 
 " lei fw
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 " XXX This probably won’t normally update.
 " let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("ctags_cache", "plugin/ctags_cache") | call vam#utils#CopyFile("c_complete.vim", "plugin/c_complete.vim") | call vam#utils#CopyFile("c_complete.py", "plugin/c_complete.py")'
 " let scmnr.3684 = {'type': 'git', 'url': 'git://github.com/abadcafe/ctags_cache', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/ctags_cache")', '')}}
 " unlet hook
 
 " Amit Ranjit
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 " let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("vimpy", "plugin/vimpy") | call vam#utils#CopyFile("vimpy.vim", "plugin/vimpy.vim")'
 " let scmnr.3752 = {'type': 'git', 'url': 'git://github.com/amitdev/vimpy', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/vimpy")', '')}}
 " unlet hook
 
 " Jannis Pohlmann
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 let scmnr.2278 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}, {'jptemplate.vim': 'plugin'})
 
 " Weakish Jiang
-" The following repository does not have normal directory structure:
+" The following plugin does not have normal directory structure:
 " let scm['rc'] = {'type': 'git', 'url': 'git://gist.github.com/986788'}
+
+" intuited - Ted
+" The following plugins are not present on vim.org:
+let scm['vim-vamoose'] = {'type': 'git', 'url': 'git://github.com/intuited/vim-vamoose'}
+let scm['visdo'] = {'type': 'git', 'url': 'git://github.com/intuited/visdo'}
+
+" beyondwords (github)
+" The following plugin is not present on vim.org:
+let scm['vim-twig'] = {'type': 'git', 'url': 'git://github.com/beyondwords/vim-twig'}
+
+" Robert Gleeson
+" The following plugin is not present on vim.org:
+let scm['hammer.vim'] = {'type': 'git', 'url': 'git://github.com/robgleeson/hammer.vim'}
+
+" Gunther Groenewege
+" The following plugin is not present on vim.org:
+let scm['vim-less'] = {'type': 'git', 'url': 'git://github.com/groenewege/vim-less'}
 
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
@@ -1850,9 +1899,9 @@ let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/un
 let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-makegreen'}
 let scm['vim-rooter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 let scm['vim-scala@behaghel'] = {'type': 'git', 'url': 'git://github.com/behaghel/vim-scala'}
-let scm['factor'] = {'type': 'git', 'url': 'git://github.com/slavapestov/factor.git', 'addon-info': {'runtimepath': 'misc/vim'}}
-let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax.git'}
-let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang.git', 'addon-info': {'runtimepath': 'tools/editors/vim'}}
+let scm['factor'] = {'type': 'git', 'url': 'git://github.com/slavapestov/factor', 'addon-info': {'runtimepath': 'misc/vim'}}
+let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax'}
+let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang', 'addon-info': {'runtimepath': 'tools/editors/vim'}}
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
