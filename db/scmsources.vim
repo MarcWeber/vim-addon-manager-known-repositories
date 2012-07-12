@@ -1848,6 +1848,7 @@ let scm['unicode-haskell'] = {'type': 'git', 'url': 'git://github.com/frerich/un
 let scm['vim-makegreen'] = {'type': 'git', 'url': 'git://github.com/reinh/vim-makegreen'}
 let scm['vim-rooter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 let scm['vim-scala@behaghel'] = {'type': 'git', 'url': 'git://github.com/behaghel/vim-scala'}
+let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax.git'}
 
 " Single files under SCM control without proper directory structure
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
