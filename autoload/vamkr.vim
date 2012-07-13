@@ -1,8 +1,8 @@
 let s:dbdir=expand('<sfile>:h:h').'/db'
 function! vamkr#GetJSON(filepart)
-    let file = s:dbdir.'/'.a:filepart.'.json'
+    let file = s:dbdir.'/'.a:filepart
     " don't ask me why system and cat is much much faster for very large files
-    " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources')") shows speed up
+    " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources.json')") shows speed up
     " from 35 to 5ms  ... the reason is join being slow
     " windows users: provide your own hack ..
     if !filereadable(file)
@@ -34,7 +34,7 @@ function! vamkr#GetVim(filepart)
 endfunction
 
 " function! vamkr#GetNrNamesHist()
-"     return vamkr#GetJSON('script-id-to-name-log')
+"     return vamkr#GetJSON('script-id-to-name-log.json')
 " endfunction
 
 " can be removed?
@@ -47,7 +47,7 @@ function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     endfor
     " XXX Non-nr renaming should go to db/scmrenames.json that looks like 
     " {old_name:new_name}. It is absent so code is commented
-    " call extend(r, vamkr#GetJSON("scmrenames"))
+    " call extend(r, vamkr#GetJSON("scmrenames.json"))
     return r
 endfunction
 
@@ -60,7 +60,7 @@ endfunction
 
 function! vamkr#SuggestNewName(name)
     let messages = []
-    for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log'))
+    for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log.json'))
         if index(names, a:name) > 0
             call add(messages, a:name." was renamed to ".names[0])
         endif
