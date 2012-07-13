@@ -1,55 +1,64 @@
-" See documentation at vamkr#GetVim
-" custom plugins - drop me an email to get you repository added
-
-" XXX Style:
-" Sample:
-" " Author Name
-" let scmnr.42 = {'type': 'hg', 'url': 'https://bitbucket.org/ZyX_I/frawor'}
-" let scmnr.3242 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs'}, {'open.vim': 'autoload/xolox'})
-" " The following plugin does not have a separate repository:
-" let scmnr.3034 = {'url': 'https://github.com/urso/dotrc/raw/master/vim/syntax/haskell.vim', 'archive_name': 'haskell.vim', 'type': 'archive', 'script-type': 'syntax'}
-" let scm['vim-latex'] = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
-
-" Rules:
-" 1. Author name, as it is seen on www.vim.org, must be the first line in the 
-"    paragraph, prefixed with «" ».
-" 2. After author name there is a section with sources. It must not contain any 
-"    empty or indented lines.
-" 3. There are sources subsections:
-" 3.1. Normal sources:
-"          let scmnr.{number} = {dictionary}
-" 3.2. Plugins without normal directory structure
-"          let scmnr.{number} = vamkr#AddCopyHook({dictionary}, {dictionary})
-" 3.3. Things that are not vim plugins but were nevertherless posted to vim.org 
-"      and also do have SC managed version. They must be prefixed with comment
-"        “The following is not a vim plugin, but it is posted on vim.org:”
-" 3.3. Plugins without a separate repository or with dev versions posted as 
-"      archives without any sign of SCM control:
-"          let scmnr.{number} = {dictionary}
-"      . In the first case they should be prefixed by one of the following comments:
-"       - “The following plugin does not have a separate repository:”
-"       - “The following plugins do not have a separate repository:”
-" 3.4. Plugins that were not posted on vim.org:
-"          let scm['key'] = {dictionary}
-"      then
-"          let scm['key'] = vamkr#AddCopyHook({dictionary}, {dictionary})
-" 4. Sources must have form
-"        let {varname} = {dictionary}|{vamkr#* call}
-" 4.1. Spaces around equal sign must be present
-" 4.2. {varname} is either scmnr.{number} or scm['{plugin name}']
-" 4.3. String in dictionary must be single quoted, but for strings located 
-"      inside strings (in hooks) this rule does not apply
-" 4.4. Order of keys: 'type', 'url', 'addon-info', hooks
-" 4.5. Opening brace must not be followed by a space, closing must not be 
-"      preceded by it.
-" 4.6. Colons after keys and commas after values must be followed by at least 
-"      one space.
-" 4.7. No trailing comma.
-" 4.8. 'url' key value must not contain optional suffixes (like .git), git:// 
-"      URLs are prefered over https:// ones, https:// are prefered over http://.
-" 5. Authors that have only sources with problems like absence of normal 
-"    directory structure (those with AddCopyHook), separate repository, vim.org 
-"    posts should go beyond the dashes line to plugins with similar problems.
+" CONTENTS:
+"   This file associates plugin names with manually maintained version control
+"   sources (eg github, bitbucket etc)
+"
+" HOWTO: 
+"   copy paste a line, consider taking care about the "author comment" and
+"   "SPACES" and you're ready to submit a "pull request" or "send" a small patch to
+"   "us". Trouble? "contact us", see "VAM docs".
+"
+"
+" Details:
+"
+" Plugin On: www.vim.org ?
+"
+" Yes:
+"   let scmnr.vim_script_nr = {dictionary}
+"     version control sources of plugins found on www.vim.org are associated by
+"     script id because the name happens to be changed more often than a script_id.
+"     The name is automatically generated from the title found on www.vim.org
+"     with some characters removed.
+" 
+" No:
+"    let scm['new-unique-name'] = {dictionary}
+"
+" KEYS: of {dictionary}:
+"   key order: 'type', 'url', 'addon-info', hooks, ...
+"   You can add your own keys if they are necessary for whatever reason.
+"   Description of known keys see VAM documentation (eg search for
+"   'runtimepath')
+"
+"
+" Author Comment Line:
+"   It is a nice habit to prefix plugin by a short comment line with the author
+"   name as seen on www.vim.org. Its not a policy because there are some plugins
+"   (such as snipmate) which nowadays are maintained by the community with some
+"   "core" developers. So it may make more sense to think about "maintainers"
+"   rather than authors. If in doubt keep maintenance low, keep as is and expect
+"   this information to be inaccurate.
+"
+" Copy Hooks:
+"   See samples using vamkr#AddCopyHook below, mind the dashes line
+"
+" NOTE: Authors that have only sources with problems like absence of normal 
+"   directory structure (those with AddCopyHook), separate repository, vim.org 
+"   posts should go beyond the dashes line to plugins with similar problems.
+"
+"   Annotation: by Marc about dashes line
+"   pro: 
+"     + its easier to spot them for future patching
+"   con:
+"     - authors are listed twice. People are unlikely to expect this
+"     - patches are harder to review because lines move
+"
+"   I'm applying the "keep as as" policy for now but this may change even
+"   though I strongly feel against the dashes line.
+"
+" Commenting:
+"   Everything which is useful to know should be put into a comment if it is non
+"   obvious
+"
+" Syntax Restrictions: See vamkr#GetVim
 
 let scm = {}
 " scmnr: add version controlled sources to plugins also known by www.vim.org
@@ -1837,5 +1846,6 @@ let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/R
 " this is only the vimfiles subdirectory:
 let scm['vim-latex'] = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
 
+" r: see vamkr#GetVim
 let r=[scm, scmnr]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
