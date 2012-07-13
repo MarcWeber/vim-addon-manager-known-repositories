@@ -104,7 +104,9 @@ let scm['vim-addon-syntax-checker'] = {'type': 'git', 'url': 'git://github.com/M
 let scm['snipmate'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
 let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-ruby'}
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
-let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime', 'branch': 'master-vim-cleaned-up'}
+" There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed 
+" anywhere thus removed
+let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
 " override snipmate. There is really no reason anymore to use the old version
 " snipMate could be dropped. Keep alias
 let scmnr.2540 = copy(scm['snipmate'])
@@ -1448,7 +1450,7 @@ let scmnr.3893 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-vie
 let scmnr.3903 = {'type': 'git', 'url': 'git://github.com/bloodeclipse/vim-xsnippet'}
 
 " Dmitry Frank
-let scm['indexer.tar.gz@development'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_development'}
+let scm['indexer@development'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_development'}
 let scmnr.3221 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_stable'}
 let scmnr.3872 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/vimprj'}
 let scmnr.3884 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/dfrank_util'}
@@ -1708,7 +1710,7 @@ let scmnr.3851 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mich
 
 " Aldis Berjoza
 " The following plugin does not have a separate repository:
-let scmnr.3674 = {'url': 'github.com/graudeejs/dot.vim/raw/master/colors/universal-blue.vim', 'archive_name': 'universal-blue.vim', 'type': 'archive', 'script-type': 'color scheme'}
+let scmnr.3674 = {'url': 'https://github.com/graudeejs/dot.vim/raw/master/colors/universal-blue.vim', 'archive_name': 'universal-blue.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " Jevgeni Tarasov
 let scmnr.3571 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wolfsund/terse'}, {'terse.vim': 'plugin'})
@@ -1796,9 +1798,6 @@ let scm['visdo'] = {'type': 'git', 'url': 'git://github.com/intuited/visdo'}
 
 " beyondwords (github)
 let scm['vim-twig'] = {'type': 'git', 'url': 'git://github.com/beyondwords/vim-twig'}
-
-" Robert Gleeson
-let scm['hammer.vim'] = {'type': 'git', 'url': 'git://github.com/robgleeson/hammer.vim'}
 
 " Gunther Groenewege
 let scm['vim-less'] = {'type': 'git', 'url': 'git://github.com/groenewege/vim-less'}
