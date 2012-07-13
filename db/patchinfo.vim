@@ -4,9 +4,18 @@ let add_by_name={}
 let mai_snr = {}
 let mai_snr_deps = {}
 "▶1 Hooks
-let mai_snr.3025={'post-install-hook': 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'}
-let mai_snr.3025['post-update-hook']=mai_snr.3025['post-install-hook']
-let mai_snr.3025['post-scms-update-hook']=mai_snr.3025['post-install-hook']
+let hook = 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'
+let mai_snr.3025 = {}
+let mai_snr.3025['post-install-hook']     = hook
+let mai_snr.3025['post-update-hook']      = hook
+let mai_snr.3025['post-scms-update-hook'] = hook
+" Assuming that system is used right and current user does not have priveleges 
+" to write to this directory by default
+let hook = 'echohl WarningMsg | echom "Copy vimtweak.dll to the same directory with gvim.exe" | echohl None'
+let mai_snr.687['post-install-hook']     = hook
+let mai_snr.687['post-update-hook']      = hook
+let mai_snr.687['post-scms-update-hook'] = hook
+unlet hook
 "▶1 Wrong archive names
 " Author wrote that contents of vert.txt should go to vimrc, but it should work 
 " fine as a script in plugin directory
