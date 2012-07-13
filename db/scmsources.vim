@@ -49,6 +49,7 @@
 "    similar comment. Authors with at least one “normal” source must go above 
 "    this line.
 
+let scm={}
 " scmnr: add version controlled sources to plugins also known by www.vim.org
 let scmnr = {}
 
