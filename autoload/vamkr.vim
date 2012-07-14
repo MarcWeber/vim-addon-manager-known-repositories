@@ -1,41 +1,34 @@
 let s:dbdir=expand('<sfile>:h:h').'/db'
-function! vamkr#GetJSON(filepart)
-    let file = s:dbdir.'/'.a:filepart
-    " don't ask me why system and cat is much much faster for very large files
-    " call tlib#cmd#Time("call vamkr#GetJSON('vimorgsources.json')") shows speed up
-    " from 35 to 5ms  ... the reason is join being slow
-    " windows users: provide your own hack ..
+function! vamkr#LoadDBFile(file) abort
+    let ext=fnamemodify(a:file, ':e')
+    let file=s:dbdir.'/'.a:file
     if !filereadable(file)
         throw 'File “'.file.'” not found'
     endif
-    let body =
-                \ (executable('cat') && executable('tr'))
-                \ ? system('cat '.shellescape(file).' |tr '.shellescape('\n').' '.shellescape(' '))
-                \ : join(readfile(file, 'b'), '')
-    try
-        return eval(body)
-    catch /.*/
-        throw 'Failed to read json file “'.file.'”: '.v:exception
-    endtry
+    if ext is# 'vim'
+        " The following code executes content of a .vim file returning the r var 
+        " which should be defined. Its similar to using autoload functions. 
+        " However autoload functions would not be garbage collected. Whether its 
+        " insane to think about this small details - I don't know. Its ZyX idea 
+        " and gets the job done. Little bit uncommon :)
+        "
+        " limitations: You can’t use line continuation here
+        execute "function s:Vim()\n".join(readfile(file, 'b'), "\n")."\nreturn r\nendfunction"
+        try
+            let r=s:Vim()
+        endtry
+        delfunction s:Vim
+        return r
+    elseif ext is# 'json'
+        try
+            return eval(join(readfile(file, 'b'), ''))
+        catch /.*/
+            throw 'Failed to read json file “'.file.'”: '.v:exception
+        endtry
+    else
+        throw 'Unknown file type: '.ext
+    endif
 endfunction
-
-" GetVim executes content of a .vim file returning the r var which should be
-" defined. Its similar to using autoload functions. However autoload functions
-" would not be garbage collected. Whether its insane to think about this small
-" details - I don't know. Its ZyX idea and gets the job done. Little bit
-" uncommon :)
-"
-" limitations: You can’t use line continuation here
-function! vamkr#GetVim(filepart)
-    execute "function s:Vim()\n".join(readfile(s:dbdir.'/'.a:filepart.'.vim', 'b'), "\n")."\nreturn r\nendfunction"
-    let r=s:Vim()
-    delfunction s:Vim
-    return r
-endfunction
-
-" function! vamkr#GetNrNamesHist()
-"     return vamkr#GetJSON('script-id-to-name-log.json')
-" endfunction
 
 " can be removed?
 function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
@@ -47,7 +40,7 @@ function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
     endfor
     " XXX Non-nr renaming should go to db/scmrenames.json that looks like 
     " {old_name:new_name}. It is absent so code is commented
-    " call extend(r, vamkr#GetJSON("scmrenames.json"))
+    " call extend(r, vamkr#LoadDBFile("scmrenames.json"))
     return r
 endfunction
 
@@ -60,7 +53,7 @@ endfunction
 
 function! vamkr#SuggestNewName(name)
     let messages = []
-    for [nr, names] in items(vamkr#GetJSON('script-id-to-name-log.json'))
+    for [nr, names] in items(vamkr#LoadDBFile('script-id-to-name-log.json'))
         if index(names, a:name) > 0
             call add(messages, a:name." was renamed to ".names[0])
         endif
@@ -93,7 +86,7 @@ endfunction
 
 " read scm sources: rewrite script_nr keys as names
 function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
-    let [scm, scmnr]=vamkr#GetVim('scmsources')
+    let [scm, scmnr]=vamkr#LoadDBFile('scmsources.vim')
     let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
     if !empty(scmvoconflicts)
         call vam#Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
@@ -121,7 +114,7 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#GetVim('patchinfo')
+    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#LoadDBFile('patchinfo.vim')
     for [snr, deps] in items(mai_snr_deps)
         if !has_key(mai_snr, snr)
             let mai_snr[snr]={}

@@ -44,7 +44,7 @@ endf
 " Its the default implementation for the one function returning the pool of
 " known addons.
 fun! vam_known_repositories#Pool()
-  let www_vim_org = vamkr#GetJSON('vimorgsources.json')
+  let www_vim_org = vamkr#LoadDBFile('vimorgsources.json')
   let snr_to_name={}
   call map(copy(www_vim_org), 'extend(snr_to_name, {v:val.vim_script_nr : v:key})')
   let scm         = vamkr#GetSCMSources(snr_to_name, www_vim_org)

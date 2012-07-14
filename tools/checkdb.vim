@@ -1,6 +1,6 @@
 try
     let passed=0
-    let www_vim_org=vamkr#GetJSON('vimorgsources.json')
+    let www_vim_org=vamkr#LoadDBFile('vimorgsources.json')
     let snr_to_name={}
     call map(copy(www_vim_org), 'extend(snr_to_name, {v:val.vim_script_nr : v:key})')
     redir => g:messages
@@ -9,7 +9,7 @@ try
     if match(g:messages, '\S')!=-1
         throw 'Not empty messages'
     endif
-    let scmsources=vamkr#GetVim('scmsources')
+    let scmsources=vamkr#LoadDBFile('scmsources.vim')
     let keys={'addon-info': {}, 'url': '', 'type': '',
                 \'archive_name': '', 'script-type': '',
                 \'dependencies': {}, 'archive': '',
@@ -50,7 +50,7 @@ try
         endif
         unlet src
     endfor
-    let patchinfo=vamkr#GetVim('patchinfo')
+    let patchinfo=vamkr#LoadDBFile('patchinfo.vim')
     let add_keys={'script-type': '', 'target_dir': '', 'strip-components': 0, 'deprecated': ''}
     call map(add_keys, 'type(v:val)')
     let checkid=numcheckid
@@ -95,6 +95,8 @@ try
             throw 'Invalid value '.s
         endif
     endfor
+    runtime! tools/vam.vim
+    call vam_known_repositories#Pool()
     let passed=1
     qall!
 finally
