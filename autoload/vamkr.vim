@@ -2,9 +2,6 @@ let s:dbdir=expand('<sfile>:h:h').'/db'
 function! vamkr#LoadDBFile(file) abort
     let ext=fnamemodify(a:file, ':e')
     let file=s:dbdir.'/'.a:file
-    if !filereadable(file)
-        throw 'File “'.file.'” not found'
-    endif
     if ext is# 'vim'
         " The following code executes content of a .vim file returning the r var 
         " which should be defined. Its similar to using autoload functions. 
@@ -30,27 +27,6 @@ function! vamkr#LoadDBFile(file) abort
     endif
 endfunction
 
-" can be removed?
-function! vamkr#GetNameNrOrNewNameMap(nrnameshist)
-    let r={}
-    for [nr, names] in map(items(a:nrnameshist), '[str2nr(v:val[0]), v:val[1]]')
-        for name in names
-            let r[name]=nr
-        endfor
-    endfor
-    " XXX Non-nr renaming should go to db/scmrenames.json that looks like 
-    " {old_name:new_name}. It is absent so code is commented
-    " call extend(r, vamkr#LoadDBFile("scmrenames.json"))
-    return r
-endfunction
-
-function! s:NormalizeName(name)
-    return substitute(tolower(a:name), '[_/\-]*', '', 'g')
-endfunction
-function! s:GetName(nameOrNr, nrnameshist)
-    return type(a:nameOrNr)==type(0) ? a:nrnameshist[a:nameOrNr] : a:nameOrNr
-endfunction
-
 function! vamkr#SuggestNewName(name)
     let messages = []
     for [nr, names] in items(vamkr#LoadDBFile('script-id-to-name-log.json'))
@@ -67,24 +43,6 @@ function! s:FilterConflicts(from, with, bang)
     return r
 endfunction
 
-" It will return 2-tuple: (new_name, [corrected_name])
-" why do we need GetNameNrOrNewNameMap here? Isn't the implementation above
-" enough?
-" function! vamkr#SuggestNewName(name)
-"     let nrnameshist=vamkr#GetNrNamesHist()
-"     let namemap=vamkr#GetNameNrOrNewNameMap(nrnameshist)
-"     let r=[]
-"     if has_key(namemap, a:name)
-"         let r+=[s:GetName(namemap[a:name], nrnameshist)]
-"     else
-"         let r+=[0]
-"     endif
-"     let r+=[keys(filter(copy(namemap), 's:NormalizeName(v:key) is# '.string(s:NormalizeName(a:name))))]
-"     call map(r[1], 's:GetName(v:val, nrnameshist)')
-"     return r
-" endfunction
-
-" read scm sources: rewrite script_nr keys as names
 function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
     let [scm, scmnr]=vamkr#LoadDBFile('scmsources.vim')
     let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
@@ -96,9 +54,9 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
     if !empty(missingscmnr)
         call vam#Log('The following scmnr keys are not known: '.join(missingscmnr, ', ').'.')
     endif
-    " merge scmnr sources into scm. But first add vim_script_nr key so that
-    " AddonInfo still finds the plugin even if scm overwrites www_vim_org
-    " sources
+    " Merge scmnr sources into scm, rewriting numbers as names. But first add 
+    " vim_script_nr key so that AddonInfo still finds the plugin even if scm 
+    " overwrites www_vim_org sources
     call map(scmnr, 'extend(scm, {a:snr_to_name[v:key] : extend(v:val, {"vim_script_nr": v:key})})')
     unlet scmnr
     " Transform names like %{snr} in dependencies dictionary into names used by 
