@@ -1656,6 +1656,15 @@ let scmnr.3754 = {'type': 'git', 'url': 'git://github.com/mfussenegger/baancompl
 " Techlive Zheng
 let scmnr.4125 = {'type': 'git', 'url': 'git://github.com/techlivezheng/tagbar-phpctags'}
 
+" Adrian LIkins
+let scmnr.4126 = {'type': 'git', 'url': 'git://github.com/alikins/vim-fix-git-diff-path'}
+
+" Kris Jenkins
+let scmnr.4130 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-pipe'}
+
+" Marcin Szamotulski
+let scmnr.2945 = {'type': 'svn', 'url': 'https://atp-vim.svn.sourceforge.net/svnroot/atp-vim/trunk'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
