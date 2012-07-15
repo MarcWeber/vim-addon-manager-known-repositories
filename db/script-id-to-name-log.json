@@ -12706,6 +12706,7 @@
       "sharefix"
    ],
    "4099" : [
+      "oh-l-l",
       "Oh-l-l",
       "oh-l-l"
    ],
@@ -12780,5 +12781,23 @@
    ],
    "4125" : [
       "tagbar-phpctags"
+   ],
+   "4126" : [
+      "fix-git-diff-path"
+   ],
+   "4127" : [
+      "slapd"
+   ],
+   "4128" : [
+      "log4perl"
+   ],
+   "4129" : [
+      "ConflictDetection"
+   ],
+   "4130" : [
+      "vim-pipe"
+   ],
+   "4131" : [
+      "bls"
    ]
 }
