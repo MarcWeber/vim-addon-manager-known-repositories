@@ -12799,5 +12799,8 @@
    ],
    "4131" : [
       "bls"
+   ],
+   "4132" : [
+      "QueryCommandComplete"
    ]
 }
