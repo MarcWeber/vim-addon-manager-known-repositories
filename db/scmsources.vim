@@ -1440,6 +1440,7 @@ let scmnr.3071 = {'type': 'git', 'url': 'git://github.com/wilhelmtell/reimin'}
 
 " Caio Romão
 let scmnr.3379 = {'type': 'git', 'url': 'git://github.com/caio/jumpnextlongline.vim'}
+let scmnr.4132 = {'type': 'git', 'url': 'git://github.com/caio/querycommandcomplete.vim'}
 
 " Alex Efros
 let scmnr.3883 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-autosess'}
