@@ -12802,5 +12802,11 @@
    ],
    "4132" : [
       "QueryCommandComplete"
+   ],
+   "4133" : [
+      "rainbow-end"
+   ],
+   "4134" : [
+      "spacepaste"
    ]
 }
