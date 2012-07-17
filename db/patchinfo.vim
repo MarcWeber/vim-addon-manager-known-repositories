@@ -116,6 +116,8 @@ let mai_snr_deps.3979 = [3431]
 let mai_snr_deps.4079 = [4050, 4056]
 let mai_snr_deps.4116 = [4115, 2544]
 let mai_snr_deps.4117 = [4116]
+" NERDTree plugins
+let mai_snr_deps.4138 = [1658]
 " Non-Kana textobj-user dependants
 let mai_snr_deps.3382 = [2100, 39]
 " Writebackup dependants
