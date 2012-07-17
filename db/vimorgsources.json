@@ -1,6 +1,10 @@
 {
+"Toggle_NERDTree_width":{"archive_name":"toggle_width.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18278","version":"1.0","vim_script_nr":4138},
+"refactor-rails":{"archive_name":"refactor-rails.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18277","version":"1.0","vim_script_nr":4137},
+"Briofita":{"archive_name":"briofita.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18275","version":"1.0","vim_script_nr":4136},
+"change-hash-syntax":{"archive_name":"change-hash-syntax.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18274","version":"0.01","vim_script_nr":4135},
 "spacepaste":{"archive_name":"jmcantrell-vim-spacepaste-71bf16b.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18270","version":"0.1","vim_script_nr":4134},
-"rainbow-end":{"archive_name":"rainbow-end.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18268","version":"0.1.0","vim_script_nr":4133},
+"rainbow-end":{"archive_name":"rainbow-end.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18276","version":"0.1.1","vim_script_nr":4133},
 "QueryCommandComplete":{"archive_name":"querycommandcomplete.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18266","version":"0.1","vim_script_nr":4132},
 "bls":{"archive_name":"bls","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18258","version":"1","vim_script_nr":4131},
 "vim-pipe":{"archive_name":"vim-pipe.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18254","version":"1.0.0","vim_script_nr":4130},

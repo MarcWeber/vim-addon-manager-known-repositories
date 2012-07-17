@@ -12808,5 +12808,17 @@
    ],
    "4134" : [
       "spacepaste"
+   ],
+   "4135" : [
+      "change-hash-syntax"
+   ],
+   "4136" : [
+      "Briofita"
+   ],
+   "4137" : [
+      "refactor-rails"
+   ],
+   "4138" : [
+      "Toggle_NERDTree_width"
    ]
 }
