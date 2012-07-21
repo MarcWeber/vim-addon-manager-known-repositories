@@ -12826,5 +12826,8 @@
    ],
    "4140" : [
       "LineJuggler"
+   ],
+   "4141" : [
+      "Freebasic_vim_syntax_file"
    ]
 }
