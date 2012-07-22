@@ -1,4 +1,5 @@
 {
+"FileFastSelector":{"archive_name":"fastfileselector.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18300","version":"0.2.0","vim_script_nr":4142},
 "Freebasic_vim_syntax_file":{"archive_name":"freebasic.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18297","version":"v5.7","vim_script_nr":4141},
 "LineJuggler":{"archive_name":"LineJuggler.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18292","version":"1.00","vim_script_nr":4140},
 "star":{"archive_name":"star.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18289","version":"1.0.0","vim_script_nr":4139},
@@ -19,7 +20,7 @@
 "oh-l_l_vim":{"archive_name":"oh-l_l_vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18238","version":"7.0","vim_script_nr":4124},
 "TaggedSearchPattern":{"archive_name":"TaggedSearchPattern.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18237","version":"1.00","vim_script_nr":4123},
 "ptsc-header":{"archive_name":"ptsc-header.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18234","version":"2012W27","vim_script_nr":4122},
-"kickAssembler_syntax":{"archive_name":"kickass.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18239","version":"1.1","vim_script_nr":4121},
+"kickAssembler_syntax":{"archive_name":"kickass.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18302","version":"1.2","vim_script_nr":4121},
 "viske":{"archive_name":"viske.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18212","version":"0.1","vim_script_nr":4120},
 "vktheming":{"archive_name":"vktheming-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18206","version":"0.1","vim_script_nr":4119},
 "vim-signature":{"archive_name":"vim-signature.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18290","version":"1.2","vim_script_nr":4118},
@@ -43,7 +44,7 @@
 "sharefix":{"archive_name":"sharefix.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18109","version":"1.0.0","vim_script_nr":4098},
 "fisa-color-scheme":{"archive_name":"fisa.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18104","version":"0.1","vim_script_nr":4097},
 "maven-ide":{"archive_name":"maven-ide-0.5.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18103","version":"0.5.0","vim_script_nr":4096},
-"vim-django":{"archive_name":"cwood-vim-django-0.2.1a-0-ge339a41 (1).zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18192","version":"0.2.1a","vim_script_nr":4095},
+"vim-django":{"archive_name":"cwood-vim-django-0.3.1a-0-gd3cac29.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18301","version":"0.3.1","vim_script_nr":4095},
 "tips":{"archive_name":"vim-tips.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18098","version":"1.0.0","vim_script_nr":4094},
 "shuffle":{"archive_name":"shuffle.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18093","version":"0.1","vim_script_nr":4093},
 "Vitra":{"archive_name":"vitra-1.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18267","version":"1.3","vim_script_nr":4092},

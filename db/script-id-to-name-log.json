@@ -12829,5 +12829,8 @@
    ],
    "4141" : [
       "Freebasic_vim_syntax_file"
+   ],
+   "4142" : [
+      "FileFastSelector"
    ]
 }
