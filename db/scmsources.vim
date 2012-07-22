@@ -1670,6 +1670,9 @@ let scmnr.2945 = {'type': 'svn', 'url': 'https://atp-vim.svn.sourceforge.net/svn
 " Sandeep Ravichandran
 let scmnr.4137 = {'type': 'git', 'url': 'git://github.com/sandeepravi/refactor-rails.vim'}
 
+" Evgeny Podjachev
+let scmnr.4142 = {'type': 'git', 'url': 'https://bitbucket.org/madevgeny/fastfileselector'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
