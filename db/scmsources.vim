@@ -1575,6 +1575,7 @@ let scmnr.4035 = {'type': 'git', 'url': 'git://github.com/rosstimson/modx.vim'}
 
 " Takahiro Yoshihara
 let scmnr.4037 = {'type': 'git', 'url': 'git://github.com/tacahiroy/vim-bestfriend'}
+let scmnr.4144 = {'type': 'git', 'url': 'git://github.com/tacahiroy/vim-logaling'}
 
 " Pavan Kumar Sunkara
 let scmnr.4038 = {'type': 'git', 'url': 'git://github.com/pksunkara/vim-dasm'}
@@ -1672,6 +1673,12 @@ let scmnr.4137 = {'type': 'git', 'url': 'git://github.com/sandeepravi/refactor-r
 
 " Evgeny Podjachev
 let scmnr.4142 = {'type': 'git', 'url': 'https://bitbucket.org/madevgeny/fastfileselector'}
+
+" ? (spaces instead of normal name)
+let scmnr.4143 = {'type': 'git', 'url': 'git://github.com/sanpii/seeks.vim'}
+
+" Andrew Stewart
+let scmnr.4145 = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
