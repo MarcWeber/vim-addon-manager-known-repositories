@@ -1683,6 +1683,13 @@ let scmnr.4145 = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
 " Srinath Avadhanula
 let scmnr.475 = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
 
+" richard emberson
+let scmnr.3047 = {'type': 'git', 'url': 'git://github.com/megaannum/scala_commenter'}
+let scmnr.3072 = {'type': 'git', 'url': 'git://github.com/megaannum/self'}
+let scmnr.3498 = {'type': 'git', 'url': 'git://github.com/megaannum/scala_format'}
+let scmnr.4149 = {'type': 'git', 'url': 'git://github.com/megaannum/tui'}
+let scmnr.4150 = {'type': 'git', 'url': 'git://github.com/megaannum/forms'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
