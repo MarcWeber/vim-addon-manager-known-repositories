@@ -6823,6 +6823,7 @@
       "cqml"
    ],
    "2179" : [
+      "srcexpl",
       "Source_Explorer_srcexpl.vim",
       "Source_Explorer_srcexpl"
    ],
@@ -12868,5 +12869,14 @@
    ],
    "4154" : [
       "allegro"
+   ],
+   "4155" : [
+      "AlignFromCursor"
+   ],
+   "4156" : [
+      "LogViewer"
+   ],
+   "4157" : [
+      "pb"
    ]
 }
