@@ -481,6 +481,10 @@ let scmnr.3484 = {'type': 'git', 'url': 'git://github.com/Bogdanp/pyrepl.vim'}
 let scmnr.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vim'}
 let scmnr.4047 = {'type': 'git', 'url': 'git://github.com/Bogdanp/rbrepl.vim'}
 
+" Brian Collins
+let scm['vim-jst'] = {'type': 'git', 'url': 'git://github.com/briancollins/vim-jst.git'}
+
+
 " Yo-An Lin
 let scmnr.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
 let scmnr.2885 = {'type': 'git', 'url': 'git://github.com/c9s/gsession.vim'}
