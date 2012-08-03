@@ -1,4 +1,5 @@
 {
+"bwm_color_scheme":{"archive_name":"bwn.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18365","version":"1.0","vim_script_nr":4158},
 "pb":{"archive_name":"pb.vim-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18360","version":"0.1","vim_script_nr":4157},
 "LogViewer":{"archive_name":"LogViewer.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18359","version":"1.00","vim_script_nr":4156},
 "AlignFromCursor":{"archive_name":"AlignFromCursor.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18362","version":"1.10","vim_script_nr":4155},
@@ -176,7 +177,7 @@
 "DeleteTrailingWhitespace":{"archive_name":"DeleteTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17794","version":"1.03","vim_script_nr":3967},
 "ShowTrailingWhitespace":{"archive_name":"ShowTrailingWhitespace.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17596","version":"1.00","vim_script_nr":3966},
 "DynamicSigns":{"archive_name":"DynamicSigns.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17595","version":"0.2","vim_script_nr":3965},
-"less_syntax":{"archive_name":"less.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17803","version":"1.1","vim_script_nr":3964},
+"vim_less":{"archive_name":"vim-less.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18366","version":"2.0","vim_script_nr":3964},
 "Colorizer":{"archive_name":"Colorizer-0.7.vmb","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18312","version":"7","vim_script_nr":3963},
 "hammer":{"archive_name":"hammer.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17573","version":"1.0.0","vim_script_nr":3962},
 "flashdevelop":{"archive_name":"endel-flashdevelop.vim-479a143.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17568","version":"0.1","vim_script_nr":3961},

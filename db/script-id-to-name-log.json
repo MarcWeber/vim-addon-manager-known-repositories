@@ -12337,6 +12337,7 @@
       "color_highlight"
    ],
    "3964" : [
+      "vim_less",
       "less_syntax",
       "less%3964"
    ],
@@ -12878,5 +12879,8 @@
    ],
    "4157" : [
       "pb"
+   ],
+   "4158" : [
+      "bwm_color_scheme"
    ]
 }
