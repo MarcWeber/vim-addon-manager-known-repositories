@@ -7421,6 +7421,7 @@
       "sqloracle"
    ],
    "2372" : [
+      "automatic_for_Verilog",
       "automatic_for_Verilog%2372",
       "automatic_for_Verilog"
    ],
@@ -12614,6 +12615,7 @@
       "matchindent"
    ],
    "4067" : [
+      "automatic_for_Verilog__RtlTree",
       "automatic_for_Verilog%4067",
       "automatic_for_Verilog__Automatic_genera"
    ],
