@@ -6823,6 +6823,7 @@
       "cqml"
    ],
    "2179" : [
+      "SrcExpl",
       "srcexpl",
       "Source_Explorer_srcexpl.vim",
       "Source_Explorer_srcexpl"
@@ -7343,6 +7344,7 @@
       "bufmru"
    ],
    "2347" : [
+      "Trinity",
       "trinity"
    ],
    "2348" : [
@@ -12887,5 +12889,8 @@
    ],
    "4159" : [
       "phpvim"
+   ],
+   "4160" : [
+      "Drupal"
    ]
 }
