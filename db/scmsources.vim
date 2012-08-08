@@ -1706,8 +1706,9 @@ let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/ewiplayer/vim-scala'}
 let scmnr.4113 = {'url': 'https://github.com/hickop/home/raw/master/.vim/colors/hickop.vim', 'archive_name': 'hickop.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " Sébastien
-" The following plugin does not have a separate repository:
-let scmnr.4113 = {'url': 'https://github.com/webastien/vim/blob/master/vim/plugin/drupal.vim', 'archive_name': 'drupal.vim', 'type': 'archive', 'script-type': 'utility'}
+" The following plugins do not have a separate repository:
+let scmnr.4160 = {'url': 'https://github.com/webastien/vim/blob/master/vim/plugin/drupal.vim', 'archive_name': 'drupal.vim', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.4162 = {'url': 'https://github.com/webastien/vim/blob/master/vim/plugin/SCSSA.vim', 'archive_name': 'SCSSA.vim', 'type': 'archive', 'script-type': 'utility'}
 
 " Sergey Vakulenko
 " The following plugins do not have a separate repository:
