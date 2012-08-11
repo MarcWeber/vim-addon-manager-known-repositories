@@ -22,7 +22,7 @@
 "rooter":{"archive_name":"rooter.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18307","version":"c5b3e00","vim_script_nr":4145},
 "vim-logaling":{"archive_name":"vim-logaling-v0.4.8-017.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18349","version":"0.4.8","vim_script_nr":4144},
 "seeks":{"archive_name":"seeks-vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18303","version":"1.0","vim_script_nr":4143},
-"FileFastSelector":{"archive_name":"fastfileselector.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18310","version":"0.2.1","vim_script_nr":4142},
+"FileFastSelector":{"archive_name":"fastfileselector.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18388","version":"0.2.2","vim_script_nr":4142},
 "Freebasic_vim_syntax_file":{"archive_name":"freebasic.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18297","version":"v5.7","vim_script_nr":4141},
 "LineJuggler":{"archive_name":"LineJuggler.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18325","version":"1.20","vim_script_nr":4140},
 "star":{"archive_name":"star.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18289","version":"1.0.0","vim_script_nr":4139},
