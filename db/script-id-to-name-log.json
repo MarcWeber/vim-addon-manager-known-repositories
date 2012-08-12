@@ -12907,5 +12907,11 @@
    ],
    "4165" : [
       "directoryBrowser"
+   ],
+   "4166" : [
+      "locator"
+   ],
+   "4167" : [
+      "area_search"
    ]
 }
