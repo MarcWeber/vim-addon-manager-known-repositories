@@ -5357,6 +5357,7 @@
       "php_getset"
    ],
    "1708" : [
+      "fencview",
       "FencView"
    ],
    "1709" : [
@@ -12912,6 +12913,10 @@
       "locator"
    ],
    "4167" : [
+      "Area_search",
       "area_search"
+   ],
+   "4168" : [
+      "SyntaxRange"
    ]
 }
