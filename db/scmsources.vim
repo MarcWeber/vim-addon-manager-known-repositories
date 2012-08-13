@@ -1857,7 +1857,7 @@ let scm['VimLint'] = {'type': 'git', 'url': 'git://github.com/dahu/VimLint'}
 let scm['vim-jst'] = {'type': 'git', 'url': 'git://github.com/briancollins/vim-jst'}
 
 " Luke Randall
-let scm['haskellmode-vim'] = {'type': 'git', 'url': 'git://github.com/lukerandall/haskellmode-vim.git'}
+let scm['haskellmode-vim'] = {'type': 'git', 'url': 'git://github.com/lukerandall/haskellmode-vim'}
 
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
