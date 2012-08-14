@@ -1,4 +1,6 @@
 {
+"Vdebug":{"archive_name":"vdebug-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18401","version":"1.0","vim_script_nr":4170},
+"VPSIONKI_DATA":{"archive_name":"Plugin_VIM_Contacts_CSV.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18400","version":"0.0099","vim_script_nr":4169},
 "SyntaxRange":{"archive_name":"SyntaxRange.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18399","version":"1.00","vim_script_nr":4168},
 "Area_search":{"archive_name":"area_search.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18396","version":"1.1","vim_script_nr":4167},
 "locator":{"archive_name":"locator.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18390","version":"1.01","vim_script_nr":4166},
