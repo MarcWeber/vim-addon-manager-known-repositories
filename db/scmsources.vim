@@ -526,11 +526,6 @@ let scmnr.2442 = {'type': 'git', 'url': 'git://github.com/hjdivad/vimlocalhistor
 
 " Kien Nguyen
 let scmnr.3772 = {'type': 'git', 'url': 'git://github.com/kien/rainbow_parentheses.vim'}
-let scmnr.3699 = {'type': 'git', 'url': 'git://github.com/kien/premailer.vim'}
-let scmnr.3626 = {'type': 'git', 'url': 'git://github.com/kien/autosavesetting.vim'}
-let scmnr.3696 = {'type': 'git', 'url': 'git://github.com/kien/prefixer.vim'}
-let scmnr.3697 = {'type': 'git', 'url': 'git://github.com/kien/cssbaseline.vim'}
-let scmnr.3698 = {'type': 'git', 'url': 'git://github.com/kien/html_emogrifier.vim'}
 let scmnr.3736 = {'type': 'git', 'url': 'git://github.com/kien/ctrlp.vim'}
 let scmnr.3960 = {'type': 'git', 'url': 'git://github.com/kien/tabman.vim'}
 
