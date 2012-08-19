@@ -10102,6 +10102,7 @@
       "Better_CSS_Syntax_for_Vim"
    ],
    "3221" : [
+      "indexer.tar.gz",
       "indexer.tar.gz_"
    ],
    "3222" : [
@@ -12945,5 +12946,17 @@
    ],
    "4177" : [
       "undotree"
+   ],
+   "4178" : [
+      "CursorLineCurrentWindow"
+   ],
+   "4179" : [
+      "X_Marks_the_Spot"
+   ],
+   "4180" : [
+      "vim-dict"
+   ],
+   "4181" : [
+      "omgrofl"
    ]
 }
