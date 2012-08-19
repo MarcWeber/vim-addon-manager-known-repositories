@@ -1697,6 +1697,12 @@ let scmnr.4164 = {'type': 'git', 'url': 'git://github.com/w0ng/vim-hybrid'}
 " Ming Bai
 let scmnr.4177 = {'type': 'git', 'url': 'git://github.com/mbbill/undotree'}
 
+" John Louis del Rosario
+let scmnr.4179 = {'type': 'git', 'url': 'git://github.com/john2x/x-marks-the-spot.vim'}
+
+" Szymon Wrozynski
+let scmnr.4180 = {'type': 'git', 'url': 'git://github.com/szw/vim-dict'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1721,6 +1727,9 @@ let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
+
+" Baptiste Fontaine
+let scmnr.4181 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
 
 " Shuhei Kubota
 let scmnr.2542 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/starrange'}, {'starrange.vim': 'plugin'})
