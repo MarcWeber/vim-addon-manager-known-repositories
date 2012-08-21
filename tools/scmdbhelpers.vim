@@ -12,12 +12,12 @@ function! GetAuthor()
     return matchstr(a, 'Author: \zs.*')
 endfunction
 function! GetScriptType(nr)
-    let nrnamesdb=vamkr#GetJSON('script-id-to-name-log.json')
+    let nrnamesdb=vamkr#LoadDBFile('script-id-to-name-log.json')
     let name=get(nrnamesdb, a:nr, [0])[0]
     if name is 0
         return 'utility'
     endif
-    let vodb=vamkr#GetJSON('vimorgsources.json')
+    let vodb=vamkr#LoadDBFile('vimorgsources.json')
     return get(get(vodb, name, {}), 'script-type', 'utility')
 endfunction
 function! GetPrevSNR()
