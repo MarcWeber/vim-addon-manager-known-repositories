@@ -12977,5 +12977,11 @@
    ],
    "4187" : [
       "cmd%4187"
+   ],
+   "4188" : [
+      "HybridText"
+   ],
+   "4189" : [
+      "Close_Location_List_Before_Quit"
    ]
 }
