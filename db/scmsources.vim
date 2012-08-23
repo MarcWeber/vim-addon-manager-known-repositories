@@ -1703,6 +1703,13 @@ let scmnr.4179 = {'type': 'git', 'url': 'git://github.com/john2x/x-marks-the-spo
 
 " Szymon Wrozynski
 let scmnr.4180 = {'type': 'git', 'url': 'git://github.com/szw/vim-dict'}
+let scmnr.4183 = {'type': 'git', 'url': 'git://github.com/szw/vim-g'}
+
+" Niklas Thörne
+let scmnr.4184 = {'type': 'git', 'url': 'git://github.com/nthorne/vim-pybreak'}
+
+" Stanislas Polu
+let scmnr.4186 = {'type': 'git', 'url': 'git://github.com/spolu/dwm.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
