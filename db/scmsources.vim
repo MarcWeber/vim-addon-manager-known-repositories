@@ -1714,6 +1714,9 @@ let scmnr.4186 = {'type': 'git', 'url': 'git://github.com/spolu/dwm.vim'}
 " Tudor Prodan
 let scmnr.4192 = {'type': 'git', 'url': 'git://github.com/tudorprodan/html_annoyance.vim'}
 
+" Niels Madan
+let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
