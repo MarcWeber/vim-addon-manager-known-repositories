@@ -45,7 +45,7 @@
 "stl":{"archive_name":"stl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18353","version":"0.1","vim_script_nr":4153},
 "ArgsAndMore":{"archive_name":"ArgsAndMore-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18504","version":"1.01","vim_script_nr":4152},
 "vlog_inst_gen":{"archive_name":"vlog_inst_gen.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18437","version":"1.4","vim_script_nr":4151},
-"forms":{"archive_name":"forms.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18507","version":"1.5","vim_script_nr":4150},
+"forms":{"archive_name":"forms.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18510","version":"1.6","vim_script_nr":4150},
 "tui":{"archive_name":"tui.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18331","version":"0.0","vim_script_nr":4149},
 "Teradata_13.10_syntax":{"archive_name":"teradata_13_10.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18322","version":"1.0","vim_script_nr":4148},
 "oldenglish":{"archive_name":"oldenglish.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18321","version":"1.0","vim_script_nr":4147},
