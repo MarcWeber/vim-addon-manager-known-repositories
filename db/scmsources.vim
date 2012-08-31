@@ -1691,6 +1691,7 @@ let scmnr.4150 = {'type': 'git', 'url': 'git://github.com/megaannum/forms'}
 " Dmitry Geurkov
 let scmnr.4157 = {'type': 'git', 'url': 'git://github.com/troydm/pb.vim'}
 let scmnr.4182 = {'type': 'git', 'url': 'git://github.com/troydm/shellasync.vim'}
+let scmnr.4198 = {'type': 'git', 'url': 'git://github.com/troydm/asyncfinder.vim'}
 
 " Andrew Wong
 let scmnr.4164 = {'type': 'git', 'url': 'git://github.com/w0ng/vim-hybrid'}
