@@ -384,6 +384,7 @@ let scmnr.3051 = {'type': 'git', 'url': 'git://github.com/tomtom/vimform_vim'}
 let scmnr.3214 = {'type': 'git', 'url': 'git://github.com/tomtom/presets_vim'}
 let scmnr.3326 = {'type': 'git', 'url': 'git://github.com/tomtom/stakeholders_vim'}
 let scmnr.3653 = {'type': 'git', 'url': 'git://github.com/tomtom/brep_vim'}
+let scmnr.4199 = {'type': 'git', 'url': 'git://github.com/tomtom/tinykeymap_vim'}
 let scm['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_vim'}
 let scm['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim'}
 let scm['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim'}
@@ -1717,6 +1718,9 @@ let scmnr.4192 = {'type': 'git', 'url': 'git://github.com/tudorprodan/html_annoy
 
 " Niels Madan
 let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
+
+" Fanael Linithien
+let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transliterate'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
