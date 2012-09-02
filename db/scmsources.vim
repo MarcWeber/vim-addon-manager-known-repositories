@@ -1724,6 +1724,9 @@ let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
 " Fanael Linithien
 let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transliterate'}
 
+" Hugo Pires
+let scmnr.4203 = {'type': 'git', 'url': 'git://github.com/blackgate/tropikos-vim-theme'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
