@@ -1728,7 +1728,7 @@ let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transli
 let scmnr.4203 = {'type': 'git', 'url': 'git://github.com/blackgate/tropikos-vim-theme'}
 
 " teramako
-let scm['jscomplete-vim'] = {'type': 'git': 'git://github.com/teramako/jscomplete-vim'}
+let scm['jscomplete-vim'] = {'type': 'git', 'url': 'git://github.com/teramako/jscomplete-vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
