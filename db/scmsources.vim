@@ -40,25 +40,25 @@
 " Copy Hooks:
 "   See samples using vamkr#AddCopyHook below, mind the dashes line
 "
-" NOTE: Authors that have only sources with problems like absence of normal 
-"   directory structure (those with AddCopyHook), separate repository, vim.org 
-"   posts should go beyond the dashes line to plugins with similar problems.
-"
-"   Annotation: by Marc about dashes line
-"   pro: 
-"     + its easier to spot them for future patching
-"   con:
-"     - authors are listed twice. People are unlikely to expect this
-"     - patches are harder to review because lines move
-"
-"   I'm applying the "keep as as" policy for now but this may change even
-"   though I strongly feel against the dashes line.
+" NOTE: Before the first line go authors having at least one SCM source without 
+"       any hooks that is also present on vim.org.
+"       Before the second line go authors whose sources all have hooks or are 
+"       non-SCM ones. Not very useful, just something like “shame on them” list.
+"       Before the third line go authors without any vim.org sources at all.
+"       After the third line go authors without working sources at all. It is 
+"       a list of what can be possibly improved in the future.
 "
 " Commenting:
 "   Everything which is useful to know should be put into a comment if it is non
 "   obvious
 "
-" Syntax Restrictions: See vamkr#GetVim
+" Syntax Restrictions: See tools/checkdb.vim. This file is made for using in 
+"                      hooks: if check fails vim will exit with non-zero status 
+"                      (:cquit). Prefered way of sourcing: while in the 
+"                      repository root directory (mercurial hooks are launched 
+"                      from there, don’t know about git ones) do
+"                         vim -u NONE -N -S tools/checkdb.vim
+"                      . If hook failed see *.fail files in the repository root.
 
 let scm = {}
 " scmnr: add version controlled sources to plugins also known by www.vim.org
@@ -85,6 +85,7 @@ let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ha
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
 let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
+let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
 let scm['theonevimlib'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/theonevimlib'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-urweb'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-urweb'}
@@ -101,7 +102,6 @@ let scm['vim-addon-other'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/
 let scm['vim-addon-php-manual'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-php-manual'}
 let scm['vim-addon-local-vimrc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-local-vimrc'}
 let scm['vim-addon-syntax-checker'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-syntax-checker'}
-let scm['snipmate'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
 let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby'}
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
 " There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed 
@@ -109,7 +109,7 @@ let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTa
 let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
 " override snipmate. There is really no reason anymore to use the old version
 " snipMate could be dropped. Keep alias
-let scmnr.2540 = copy(scm['snipmate'])
+let scm['snipmate'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
 
 " Kana Natsuno
 let scmnr.2425 = {'type': 'git', 'url': 'git://github.com/kana/vim-arpeggio'}
@@ -501,7 +501,8 @@ let scmnr.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
 let scmnr.2925 = {'type': 'git', 'url': 'git://github.com/c9s/apt-complete.vim'}
 let scmnr.2954 = {'type': 'git', 'url': 'git://github.com/c9s/hypergit.vim'}
 let scmnr.2958 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
-let scmnr.2959 = scmnr.2958
+" Duplicate
+let scmnr.2959 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
 let scmnr.3009 = {'type': 'git', 'url': 'git://github.com/c9s/treemenu.vim'}
 let scmnr.2995 = {'type': 'git', 'url': 'git://github.com/c9s/colorselector.vim'}
 let scmnr.3009 = {'type': 'git', 'url': 'git://github.com/c9s/treemenu.vim'}
@@ -523,10 +524,6 @@ let scmnr.1397 = {'type': 'git', 'url': 'git://github.com/othree/xml.vim'}
 " David JH
 let scmnr.2442 = {'type': 'git', 'url': 'git://github.com/hjdivad/vimlocalhistory'}
 
-" Micah Elliott
-" Following repository does not contain correct directory tree
-" let scmnr.1365 = {'type': 'git', 'url': 'git://gist.github.com/720355'}
-
 " Kien Nguyen
 let scmnr.3772 = {'type': 'git', 'url': 'git://github.com/kien/rainbow_parentheses.vim'}
 let scmnr.3736 = {'type': 'git', 'url': 'git://github.com/kien/ctrlp.vim'}
@@ -535,10 +532,6 @@ let scmnr.3960 = {'type': 'git', 'url': 'git://github.com/kien/tabman.vim'}
 " Andy Dawson
 let scmnr.3447 = {'type': 'git', 'url': 'git://github.com/AD7six/vim-activity-log'}
 let scmnr.3887 = {'type': 'git', 'url': 'git://github.com/AD7six/vim-independence'}
-
-" Caleb Cushing
-" Following repository does not contain correct directory tree
-" let scmnr.2409 = {'type': 'git', 'url': 'git://github.com/xenoterracide/sql_iabbr'}
 
 " Zachary Michaels
 let scmnr.2960 = {'type': 'git', 'url': 'git://github.com/mikezackles/Bisect'}
@@ -605,10 +598,6 @@ let scm['plugins-update-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/p
 let scm['googletasks-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/googletasks-vim'}
 let scm['wwwrenderer-vim'] = {'type': 'git', 'url': 'git://github.com/mattn/wwwrenderer-vim'}
 let scm['ideone'] = {'type': 'git', 'url': 'git://github.com/mattn/ideone-vim', 'addon-info': {'dependencies': {'%4019': {}}}}
-
-" Chris Yip
-" Following repository does not contain correct directory tree
-" let scmnr.3220 = {'type': 'git', 'url': 'git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim'}
 
 " Mike West
 let scmnr.3766 = {'type': 'git', 'url': 'git://github.com/mikewest/vimroom'}
@@ -1451,12 +1440,12 @@ let scmnr.3893 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-vie
 let scmnr.3903 = {'type': 'git', 'url': 'git://github.com/bloodeclipse/vim-xsnippet'}
 
 " Dmitry Frank
-let scm['indexer@development'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_development'}
 let scmnr.3221 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_stable'}
 let scmnr.3872 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/vimprj'}
 let scmnr.3884 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/dfrank_util'}
 let scmnr.3911 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/vim-punto-switcher'}
 let scm['envcontrol'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/envcontrol'}
+let scm['indexer@development'] = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_development'}
 
 " adam r
 let scmnr.3902 = {'type': 'git', 'url': 'git://github.com/aerosol/vim-compot'}
@@ -1484,9 +1473,6 @@ let scmnr.3944 = {'type': 'git', 'url': 'git://github.com/mikehaertl/yii-api-vim
 
 " Łukasz Korecki
 let scmnr.3959 = {'type': 'git', 'url': 'git://github.com/lukaszkorecki/workflowish'}
-
-" Jason Duell
-let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archive_name': 'cscope_maps.vim', 'type': 'archive', 'script-type': 'utility'}
 
 " Peter Provost
 let scmnr.1327 = {'type': 'git', 'url': 'git://github.com/PProvost/vim-ps1'}
@@ -1727,9 +1713,6 @@ let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transli
 " Hugo Pires
 let scmnr.4203 = {'type': 'git', 'url': 'git://github.com/blackgate/tropikos-vim-theme'}
 
-" teramako
-let scm['jscomplete-vim'] = {'type': 'git', 'url': 'git://github.com/teramako/jscomplete-vim'}
-
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1852,27 +1835,21 @@ let scmnr.3242 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolo
 " Anders Schau Knatten
 let scmnr.3733 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/knatten/olga_key'}, {'olga_key.vim': 'syntax'})
 
+" Jannis Pohlmann
+let scmnr.2278 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}, {'jptemplate.vim': 'plugin'})
+
 " Dmitry Ermolov
 let hook='execute "edit" fnameescape(%d."/Makefile") | %s@\V~/.vim@.@ | write! | execute "lcd" fnameescape(%d) | call mkdir("plugin") | call vam#utils#RunShell("make && make install") | lcd -'
 let scmnr.3648 = {'type': 'git', 'url': 'git://github.com/9uMaH/autocpp', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin") | ', '', '')}}
 unlet hook
 
-" lei fw
-" XXX This probably won’t normally update.
-" let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("ctags_cache", "plugin/ctags_cache") | call vam#utils#CopyFile("c_complete.vim", "plugin/c_complete.vim") | call vam#utils#CopyFile("c_complete.py", "plugin/c_complete.py")'
-" let scmnr.3684 = {'type': 'git', 'url': 'git://github.com/abadcafe/ctags_cache', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/ctags_cache")', '')}}
-" unlet hook
+" Jason Duell
+let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archive_name': 'cscope_maps.vim', 'type': 'archive', 'script-type': 'utility'}
 
-" Amit Ranjit
-" let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("vimpy", "plugin/vimpy") | call vam#utils#CopyFile("vimpy.vim", "plugin/vimpy.vim")'
-" let scmnr.3752 = {'type': 'git', 'url': 'git://github.com/amitdev/vimpy', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/vimpy")', '')}}
-" unlet hook
+"-----------------------------------------------------------------------------------------------------------------------
 
-" Jannis Pohlmann
-let scmnr.2278 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}, {'jptemplate.vim': 'plugin'})
-
-" Weakish Jiang
-" let scm['rc'] = {'type': 'git', 'url': 'git://gist.github.com/986788'}
+" teramako
+let scm['jscomplete-vim'] = {'type': 'git', 'url': 'git://github.com/teramako/jscomplete-vim'}
 
 " intuited - Ted
 let scm['vim-vamoose'] = {'type': 'git', 'url': 'git://github.com/intuited/vim-vamoose'}
@@ -1905,11 +1882,9 @@ let scm['space'] = {'type': 'git', 'url': 'git://github.com/spiiph/vim-space'}
 let scm['vim-comment-object'] = {'type': 'git', 'url': 'git://github.com/ConradIrwin/vim-comment-object'}
 let scm['git-vim'] = {'type': 'git', 'url': 'git://github.com/motemen/git-vim'}
 let scm['vimpager-perlmod'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vimpager-perlmod'}
-
 " let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/rstacruz/sparkup', 'addon-info': {'runtimepath': 'vim'}}
 " See https://github.com/rstacruz/sparkup/issues/57
 let scm['sparkup'] = {'type': 'git', 'url': 'git://github.com/chrisgeo/sparkup', 'addon-info': {'runtimepath': 'vim'}}
-
 let scm['flake8@avidal'] = {'type': 'git', 'url': 'git://github.com/avidal/flake8.vim'}
 let scm['css_color@skammer'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-css-color'}
 let scm['vim-ruby-complexity'] = {'type': 'git', 'url': 'git://github.com/skammer/vim-ruby-complexity'}
@@ -1924,9 +1899,35 @@ let scm['vim-scala@behaghel'] = {'type': 'git', 'url': 'git://github.com/behaghe
 let scm['factor'] = {'type': 'git', 'url': 'git://github.com/slavapestov/factor', 'addon-info': {'runtimepath': 'misc/vim'}}
 let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax'}
 let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang', 'addon-info': {'runtimepath': 'tools/editors/vim'}}
-
-" Single files under SCM control without proper directory structure
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
+
+"-----------------------------------------------------------------------------------------------------------------------
+
+" lei fw
+" XXX This probably won’t normally update.
+" let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("ctags_cache", "plugin/ctags_cache") | call vam#utils#CopyFile("c_complete.vim", "plugin/c_complete.vim") | call vam#utils#CopyFile("c_complete.py", "plugin/c_complete.py")'
+" let scmnr.3684 = {'type': 'git', 'url': 'git://github.com/abadcafe/ctags_cache', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/ctags_cache")', '')}}
+" unlet hook
+
+" Amit Ranjit
+" let hook='execute "lcd" fnameescape(%d) | call mkdir("plugin") | call rename("vimpy", "plugin/vimpy") | call vam#utils#CopyFile("vimpy.vim", "plugin/vimpy.vim")'
+" let scmnr.3752 = {'type': 'git', 'url': 'git://github.com/amitdev/vimpy', 'addon-info': {'post-install-hook': hook, 'post-scms-update-hook': substitute(hook, '\Vcall mkdir("plugin")', 'vam#utils#RmFR("plugin/vimpy")', '')}}
+" unlet hook
+
+" Micah Elliott
+" Following repository does not contain correct directory tree
+" let scmnr.1365 = {'type': 'git', 'url': 'git://gist.github.com/720355'}
+
+" Caleb Cushing
+" Following repository does not contain correct directory tree
+" let scmnr.2409 = {'type': 'git', 'url': 'git://github.com/xenoterracide/sql_iabbr'}
+
+" Chris Yip
+" Following repository does not contain correct directory tree
+" let scmnr.3220 = {'type': 'git', 'url': 'git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim'}
+
+" Weakish Jiang
+" let scm['rc'] = {'type': 'git', 'url': 'git://gist.github.com/986788'}
 
 " r: see vamkr#GetVim
 let r=[scm, scmnr]

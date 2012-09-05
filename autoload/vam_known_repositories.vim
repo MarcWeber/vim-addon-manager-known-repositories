@@ -1,4 +1,9 @@
-exec vam#DefineAndBind('s:c', 'g:vim_addon_manager', '{}')
+if !exists('g:vim_addon_manager')
+    let g:vim_addon_manager={}
+endif
+let s:c=g:vim_addon_manager
+
+let s:c['MergeSources']=get(g:vim_addon_manager, 'MergeSources', 'vam_known_repositories#MergeSources')
 
 " the function returning the package pool.
 " It can be configured in VAM and is run when command completion is used or

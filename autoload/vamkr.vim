@@ -1,3 +1,10 @@
+if exists('g:vam_kr_running_hook_test')
+    function s:Log(message)
+        throw a:message
+    endfunction
+else
+    let s:Log=function('vam#Log')
+endif
 let s:dbdir=expand('<sfile>:h:h').'/db'
 function! vamkr#LoadDBFile(file) abort
     let ext=fnamemodify(a:file, ':e')
@@ -47,12 +54,12 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
     let [scm, scmnr]=vamkr#LoadDBFile('scmsources.vim')
     let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
     if !empty(scmvoconflicts)
-        call vam#Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
-                    \'These plugins should either be renamed or put into scmnr dictionary.')
+        call s:Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
+                  \'These plugins should either be renamed or put into scmnr dictionary.')
     endif
     let missingscmnr=s:FilterConflicts(scmnr, a:snr_to_name, '')
     if !empty(missingscmnr)
-        call vam#Log('The following scmnr keys are not known: '.join(missingscmnr, ', ').'.')
+        call s:Log('The following scmnr keys are not known: '.join(missingscmnr, ', ').'.')
     endif
     " Merge scmnr sources into scm, rewriting numbers as names. But first add 
     " vim_script_nr key so that AddonInfo still finds the plugin even if scm 
