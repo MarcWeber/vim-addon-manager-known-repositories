@@ -13031,5 +13031,11 @@
    ],
    "4205" : [
       "cppSyntaxCheck"
+   ],
+   "4206" : [
+      "vim-java-sql"
+   ],
+   "4207" : [
+      "vim-clojure-sql"
    ]
 }
