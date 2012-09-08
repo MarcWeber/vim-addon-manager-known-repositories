@@ -1651,6 +1651,8 @@ let scmnr.4126 = {'type': 'git', 'url': 'git://github.com/alikins/vim-fix-git-di
 
 " Kris Jenkins
 let scmnr.4130 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-pipe'}
+let scmnr.4206 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-java-sql'}
+let scmnr.4207 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-clojure-sql'}
 
 " Marcin Szamotulski
 let scmnr.2945 = {'type': 'git', 'url': 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'}
@@ -1931,4 +1933,4 @@ let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/R
 
 " r: see vamkr#GetVim
 let r=[scm, scmnr]
-" vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
+" vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲ tw=0 nowrap
