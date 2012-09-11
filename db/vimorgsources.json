@@ -1,5 +1,6 @@
 {
-"easybuffer":{"archive_name":"easybuffer.vim-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18578","version":"0.1","vim_script_nr":4210},
+"PinyinSearch":{"archive_name":"PinyinSearch.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18582","version":"0.5","vim_script_nr":4211},
+"easybuffer":{"archive_name":"easybuffer.vim-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18585","version":"0.1.1","vim_script_nr":4210},
 "Vimarok":{"archive_name":"liunx-Vimarok-67096df.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18576","version":"0.1.1","vim_script_nr":4209},
 "nant_0.91_errorformat":{"archive_name":"nant.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18571","version":"1.1","vim_script_nr":4208},
 "vim-clojure-sql":{"archive_name":"vim-clojure-sql.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18564","version":"1.0.0","vim_script_nr":4207},
@@ -37,7 +38,7 @@
 "rslate":{"archive_name":"rslate.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18419","version":"21-01-12","vim_script_nr":4175},
 "rgbr":{"archive_name":"rgbr.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18418","version":"17-08-12","vim_script_nr":4174},
 "GrepCommands":{"archive_name":"GrepCommands-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18480","version":"1.01","vim_script_nr":4173},
-"switch":{"archive_name":"switch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18573","version":"0.1.0","vim_script_nr":4172},
+"switch":{"archive_name":"switch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18583","version":"0.1.1","vim_script_nr":4172},
 "sideways":{"archive_name":"sideways.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18404","version":"0.0.1","vim_script_nr":4171},
 "Vdebug":{"archive_name":"vdebug-1.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18513","version":"1.1","vim_script_nr":4170},
 "VPSIONKI_DATA":{"archive_name":"Plugin_VIM_Contacts_CSV.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18400","version":"0.0099","vim_script_nr":4169},
