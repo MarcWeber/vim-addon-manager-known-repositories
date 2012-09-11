@@ -1683,6 +1683,7 @@ let scmnr.4150 = {'type': 'git', 'url': 'git://github.com/megaannum/forms'}
 let scmnr.4157 = {'type': 'git', 'url': 'git://github.com/troydm/pb.vim'}
 let scmnr.4182 = {'type': 'git', 'url': 'git://github.com/troydm/shellasync.vim'}
 let scmnr.4198 = {'type': 'git', 'url': 'git://github.com/troydm/asyncfinder.vim'}
+let scmnr.4210 = {'type': 'git', 'url': 'git://github.com/troydm/easybuffer.vim'}
 
 " Andrew Wong
 let scmnr.4164 = {'type': 'git', 'url': 'git://github.com/w0ng/vim-hybrid'}
@@ -1714,6 +1715,9 @@ let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transli
 
 " Hugo Pires
 let scmnr.4203 = {'type': 'git', 'url': 'git://github.com/blackgate/tropikos-vim-theme'}
+
+" Lei Liu
+let scmnr.4209 = {'type': 'git', 'url': 'git://github.com/liunx/Vimarok'}
 
 " Yuxin Wu
 let scmnr.4211 = {'type': 'git', 'url': 'git://github.com/ppwwyyxx/vim-PinyinSearch'}
