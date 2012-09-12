@@ -1715,6 +1715,9 @@ let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transli
 " Hugo Pires
 let scmnr.4203 = {'type': 'git', 'url': 'git://github.com/blackgate/tropikos-vim-theme'}
 
+" Yuxin Wu
+let scmnr.4211 = {'type': 'git', 'url': 'git://github.com/ppwwyyxx/vim-PinyinSearch'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
