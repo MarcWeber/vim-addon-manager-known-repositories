@@ -1722,6 +1722,9 @@ let scmnr.4209 = {'type': 'git', 'url': 'git://github.com/liunx/Vimarok'}
 " Yuxin Wu
 let scmnr.4211 = {'type': 'git', 'url': 'git://github.com/ppwwyyxx/vim-PinyinSearch'}
 
+" Hsiaoming Yang
+let scmnr.4213 = {'type': 'git', 'url': 'git://github.com/lepture/vim-jinja'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
