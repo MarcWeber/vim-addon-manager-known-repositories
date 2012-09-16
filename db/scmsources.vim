@@ -1725,6 +1725,9 @@ let scmnr.4211 = {'type': 'git', 'url': 'git://github.com/ppwwyyxx/vim-PinyinSea
 " Hsiaoming Yang
 let scmnr.4213 = {'type': 'git', 'url': 'git://github.com/lepture/vim-jinja'}
 
+" Randy Lai
+let scmnr.4215 = {'type': 'git', 'url': 'git://github.com/randy3k/r-macvim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1744,11 +1747,11 @@ let scmnr.4162 = {'url': 'https://github.com/webastien/vim/blob/master/vim/plugi
 
 " Sergey Vakulenko
 " The following plugins do not have a separate repository:
-let scmnr.2733 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/vimfiles/plugin/bufReminderRemake.vim', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.2733 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/.vim/plugin/bufReminderRemake.vim', 'archive_name': 'bufReminderRemake.vim', 'type': 'archive', 'script-type': 'utility'}
 let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/hop.zip',       'archive_name': 'hop.zip',       'type': 'archive', 'script-type': 'utility'}
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
-let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': 'vimfiles'}}
+let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': '.vim'}}
 
 " Baptiste Fontaine
 let scmnr.4181 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
