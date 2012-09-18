@@ -1,4 +1,6 @@
 {
+"cospe":{"archive_name":"cospe.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18636","version":"0.1","vim_script_nr":4220},
+"mkvimball":{"archive_name":"mkvimball.vba.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18634","version":"0.1","vim_script_nr":4219},
 "vim2grace":{"archive_name":"vim2grace.scm","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18631","version":"0.2","vim_script_nr":4218},
 "layoutManager":{"archive_name":"layoutManager.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18610","version":"1.0.1","vim_script_nr":4217},
 "fwk_ctags":{"archive_name":"fwk_ctags.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18607","version":"0.6","vim_script_nr":4216},
