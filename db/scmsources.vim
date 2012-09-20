@@ -1656,7 +1656,7 @@ let scmnr.4206 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-java-
 let scmnr.4207 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-clojure-sql'}
 
 " Marcin Szamotulski
-let scmnr.2945 = {'type': 'git', 'url': 'git://atp-vim.git.sourceforge.net/gitroot/atp-vim/atp-vim'}
+let scmnr.2945 = {'type': 'git', 'url': 'git://git.code.sf.net/p/atp-vim/code'}
 
 " Sandeep Ravichandran
 let scmnr.4137 = {'type': 'git', 'url': 'git://github.com/sandeepravi/refactor-rails.vim'}
