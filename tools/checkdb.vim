@@ -236,12 +236,15 @@ try
     endfor
 catch
     call writefile([v:exception], 'exception.fail', 'b')
+    let exception=1
 endtry
 try
     " XXX For unknown reason putting the following line into previous :try block 
     "     prevents catching exceptions
     call vam_known_repositories#Pool()
-    qall!
+    if !exists('exception')
+        qall!
+    endif
 catch
     call writefile([v:exception], 'exception.fail', 'b')
 endtry
