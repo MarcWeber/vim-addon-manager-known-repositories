@@ -1729,6 +1729,9 @@ let scmnr.4213 = {'type': 'git', 'url': 'git://github.com/lepture/vim-jinja'}
 " Randy Lai
 let scmnr.4215 = {'type': 'git', 'url': 'git://github.com/randy3k/r-macvim'}
 
+" Thiago Arruda
+let scmnr.4222 = {'type': 'git', 'url': 'git://github.com/tarruda/vim-conque-repl'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
