@@ -1732,6 +1732,9 @@ let scmnr.4215 = {'type': 'git', 'url': 'git://github.com/randy3k/r-macvim'}
 " Thiago Arruda
 let scmnr.4222 = {'type': 'git', 'url': 'git://github.com/tarruda/vim-conque-repl'}
 
+" Eric Davis
+let scmnr.4223 = {'type': 'git', 'url': 'git://github.com/insanum/votl'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
