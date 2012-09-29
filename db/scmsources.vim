@@ -1679,6 +1679,7 @@ let scmnr.3072 = {'type': 'git', 'url': 'git://github.com/megaannum/self'}
 let scmnr.3498 = {'type': 'git', 'url': 'git://github.com/megaannum/scala_format'}
 let scmnr.4149 = {'type': 'git', 'url': 'git://github.com/megaannum/tui'}
 let scmnr.4150 = {'type': 'git', 'url': 'git://github.com/megaannum/forms'}
+let scmnr.4240 = {'type': 'git', 'url': 'git://github.com/megaannum/colorschemer'}
 
 " Dmitry Geurkov
 let scmnr.4157 = {'type': 'git', 'url': 'git://github.com/troydm/pb.vim'}
@@ -1737,6 +1738,9 @@ let scmnr.4223 = {'type': 'git', 'url': 'git://github.com/insanum/votl'}
 
 " Giacomo Comitti
 let scmnr.4237 = {'type': 'git', 'url': 'git://github.com/gcmt/taboo.vim'}
+
+" gokcehan kara
+let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
