@@ -1,4 +1,7 @@
 {
+"tabdiff":{"archive_name":"tabdiff.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18721","version":"1.0","vim_script_nr":4247},
+"longline":{"archive_name":"longline.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18720","version":"1.0","vim_script_nr":4246},
+"butane":{"archive_name":"butane.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18719","version":"1.0","vim_script_nr":4245},
 "yacom":{"archive_name":"yacom.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18717","version":"1.0","vim_script_nr":4244},
 "IndentTab":{"archive_name":"IndentTab-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18710","version":"1.00","vim_script_nr":4243},
 "SameFiletypeComplete":{"archive_name":"SameFiletypeComplete-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18702","version":"1.00","vim_script_nr":4242},
@@ -619,7 +622,7 @@
 "typofree":{"archive_name":"typofree.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15648","version":"0.1","vim_script_nr":3585},
 "checklist":{"archive_name":"checklist-v0.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15804","version":"0.6","vim_script_nr":3584},
 "Comceal":{"archive_name":"comceal.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15642","version":"0.0.2","vim_script_nr":3583},
-"simplenote":{"archive_name":"simplenote.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18083","version":"0.5.0","vim_script_nr":3582},
+"simplenote":{"archive_name":"simplenote.vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18722","version":"0.6.0","vim_script_nr":3582},
 "vim-textobj-quoted":{"archive_name":"vim-textobj-quoted.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15614","version":"0.0.1","vim_script_nr":3581},
 "ignore-me":{"archive_name":"jmcantrell-vim-lastmod-244be45.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15608","version":"0.1","vim_script_nr":3579},
 "lastmod":{"archive_name":"jmcantrell-vim-lastmod-ae98597.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15684","version":"0.2","vim_script_nr":3578},
