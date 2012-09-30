@@ -1742,6 +1742,11 @@ let scmnr.4237 = {'type': 'git', 'url': 'git://github.com/gcmt/taboo.vim'}
 " gokcehan kara
 let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
 
+" Nathaniel Soares
+let scmnr.4245 = {'type': 'git', 'url': 'git://github.com/Soares/butane.vim'}
+let scmnr.4246 = {'type': 'git', 'url': 'git://github.com/Soares/longline.vim'}
+let scmnr.4247 = {'type': 'git', 'url': 'git://github.com/Soares/tabdiff.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
