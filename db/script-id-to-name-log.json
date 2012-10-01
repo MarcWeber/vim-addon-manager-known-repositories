@@ -13157,5 +13157,14 @@
    ],
    "4247" : [
       "tabdiff"
+   ],
+   "4248" : [
+      "PatternComplete"
+   ],
+   "4249" : [
+      "write"
+   ],
+   "4250" : [
+      "CommandAlias"
    ]
 }
