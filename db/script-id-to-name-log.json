@@ -13166,5 +13166,11 @@
    ],
    "4250" : [
       "CommandAlias"
+   ],
+   "4251" : [
+      "GuessIndent"
+   ],
+   "4252" : [
+      "easytree"
    ]
 }
