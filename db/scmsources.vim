@@ -1657,6 +1657,7 @@ let scmnr.4207 = {'type': 'git', 'url': 'git://github.com/krisajenkins/vim-cloju
 
 " Marcin Szamotulski
 let scmnr.2945 = {'type': 'git', 'url': 'git://git.code.sf.net/p/atp-vim/code'}
+let scmnr.4250 = {'type': 'git', 'url': 'git://github.com/coot/cmdalias_vim'}
 
 " Sandeep Ravichandran
 let scmnr.4137 = {'type': 'git', 'url': 'git://github.com/sandeepravi/refactor-rails.vim'}
@@ -1686,6 +1687,7 @@ let scmnr.4157 = {'type': 'git', 'url': 'git://github.com/troydm/pb.vim'}
 let scmnr.4182 = {'type': 'git', 'url': 'git://github.com/troydm/shellasync.vim'}
 let scmnr.4198 = {'type': 'git', 'url': 'git://github.com/troydm/asyncfinder.vim'}
 let scmnr.4210 = {'type': 'git', 'url': 'git://github.com/troydm/easybuffer.vim'}
+let scmnr.4252 = {'type': 'git', 'url': 'git://github.com/troydm/easytree.vim'}
 
 " Andrew Wong
 let scmnr.4164 = {'type': 'git', 'url': 'git://github.com/w0ng/vim-hybrid'}
@@ -1746,6 +1748,10 @@ let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
 let scmnr.4245 = {'type': 'git', 'url': 'git://github.com/Soares/butane.vim'}
 let scmnr.4246 = {'type': 'git', 'url': 'git://github.com/Soares/longline.vim'}
 let scmnr.4247 = {'type': 'git', 'url': 'git://github.com/Soares/tabdiff.vim'}
+let scmnr.4249 = {'type': 'git', 'url': 'git://github.com/Soares/write.vim'}
+
+" Alex Ogier
+let scmnr.4251 = {'type': 'git', 'url': 'git://github.com/ogier/guessindent'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
