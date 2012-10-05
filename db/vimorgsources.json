@@ -1,4 +1,5 @@
 {
+"xqmarklogic":{"archive_name":"xqmarklogic.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18748","version":"1.0.0","vim_script_nr":4255},
 "plsql%4254":{"archive_name":"plsql.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18747","version":"1.0","vim_script_nr":"4254"},
 "TagManager":{"archive_name":"TagManager-0.1.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18743","version":"0.1","vim_script_nr":4253},
 "easytree":{"archive_name":"easytree.vim-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18734","version":"0.1","vim_script_nr":4252},
@@ -71,7 +72,7 @@
 "GrepCommands":{"archive_name":"GrepCommands-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18480","version":"1.01","vim_script_nr":4173},
 "switch":{"archive_name":"switch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18583","version":"0.1.1","vim_script_nr":4172},
 "sideways":{"archive_name":"sideways.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18404","version":"0.0.1","vim_script_nr":4171},
-"Vdebug":{"archive_name":"vdebug-1.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18513","version":"1.1","vim_script_nr":4170},
+"Vdebug":{"archive_name":"vdebug-1.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18749","version":"1.2","vim_script_nr":4170},
 "VPSIONKI_DATA":{"archive_name":"Plugin_VIM_Contacts_CSV.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18400","version":"0.0099","vim_script_nr":4169},
 "SyntaxRange":{"archive_name":"SyntaxRange.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18399","version":"1.00","vim_script_nr":4168},
 "Area_search":{"archive_name":"area_search.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18396","version":"1.1","vim_script_nr":4167},
