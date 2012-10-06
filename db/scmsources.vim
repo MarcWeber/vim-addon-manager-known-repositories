@@ -1753,6 +1753,9 @@ let scmnr.4249 = {'type': 'git', 'url': 'git://github.com/Soares/write.vim'}
 " Alex Ogier
 let scmnr.4251 = {'type': 'git', 'url': 'git://github.com/ogier/guessindent'}
 
+" Darren Cole
+let scmnr.4255 = {'type': 'git', 'url': 'git://github.com/coledarr/vim-xqmarklogic'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
