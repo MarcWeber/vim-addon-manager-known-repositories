@@ -1740,6 +1740,7 @@ let scmnr.4223 = {'type': 'git', 'url': 'git://github.com/insanum/votl'}
 
 " Giacomo Comitti
 let scmnr.4237 = {'type': 'git', 'url': 'git://github.com/gcmt/taboo.vim'}
+let scmnr.4256 = {'type': 'git', 'url': 'git://github.com/gcmt/ozzy.vim'}
 
 " gokcehan kara
 let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
