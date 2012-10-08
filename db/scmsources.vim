@@ -1163,6 +1163,7 @@ let scmnr.2193 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trun
 let scmnr.2375 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/if_v8'}
 " The following is not a vim plugin, but it is posted on vim.org:
 let scmnr.3482 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-remote'}
+let scmnr.4258 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://gist.github.com/3848180'}, {'sha3.vim': 'autoload'})
 " The following plugin does not have a separate repository:
 let scmnr.2972 = {'url': 'https://github.com/ynkdir/vim-funlib/raw/master/autoload/hmac.vim', 'archive_name': 'hmac.vim', 'type': 'archive', 'script-type': 'utility'}
 let scm['vim-patch'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-patch'}
