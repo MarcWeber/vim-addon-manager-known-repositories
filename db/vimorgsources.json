@@ -1,6 +1,7 @@
 {
-"djangojump":{"archive_name":"vim-djangojump.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18752","version":"1.0","vim_script_nr":4257},
-"Ozzy":{"archive_name":"ozzy-0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18759","version":"0.2","vim_script_nr":4256},
+"sha3":{"archive_name":"sha3.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18760","version":"1.0","vim_script_nr":4258},
+"djangojump":{"archive_name":"vim-djangojump.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18762","version":"1.2","vim_script_nr":4257},
+"Ozzy":{"archive_name":"ozzy-0.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18763","version":"0.3","vim_script_nr":4256},
 "xqmarklogic":{"archive_name":"xqmarklogic.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18748","version":"1.0.0","vim_script_nr":4255},
 "plsql%4254":{"archive_name":"plsql.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18747","version":"1.0","vim_script_nr":"4254"},
 "TagManager":{"archive_name":"TagManager-0.1.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18743","version":"0.1","vim_script_nr":4253},
