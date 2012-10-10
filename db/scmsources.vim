@@ -1758,6 +1758,15 @@ let scmnr.4251 = {'type': 'git', 'url': 'git://github.com/ogier/guessindent'}
 " Darren Cole
 let scmnr.4255 = {'type': 'git', 'url': 'git://github.com/coledarr/vim-xqmarklogic'}
 
+" uu 59
+let scmnr.4260 = {'type': 'git', 'url': 'git://github.com/uu59/vim-herokudoc-theme'}
+
+" Liam Curry
+let scmnr.4261 = {'type': 'git', 'url': 'git://github.com/liamcurry/tumblr.vim'}
+
+" Amal Khailtash
+let scmnr.4262 = {'type': 'git', 'url': 'git://github.com/amal-khailtash/vim-xdc-syntax'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
