@@ -9442,6 +9442,7 @@
       "delete-surround-html"
    ],
    "3011" : [
+      "tumblr%3011",
       "tumblr"
    ],
    "3012" : [
@@ -13191,5 +13192,14 @@
    ],
    "4258" : [
       "sha3"
+   ],
+   "4260" : [
+      "vim-herokudoc-theme"
+   ],
+   "4261" : [
+      "tumblr%4261"
+   ],
+   "4262" : [
+      "XDC_-_Xilinx_Design_Constraints"
    ]
 }
