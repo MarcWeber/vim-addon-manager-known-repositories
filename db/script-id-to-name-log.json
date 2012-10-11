@@ -13200,6 +13200,10 @@
       "tumblr%4261"
    ],
    "4262" : [
+      "vim-xdc-syntax",
       "XDC_-_Xilinx_Design_Constraints"
+   ],
+   "4263" : [
+      "autotags"
    ]
 }
