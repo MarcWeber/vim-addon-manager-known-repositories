@@ -13205,5 +13205,20 @@
    ],
    "4263" : [
       "autotags"
+   ],
+   "4264" : [
+      "VimChatBot"
+   ],
+   "4265" : [
+      "MotionComplete"
+   ],
+   "4266" : [
+      "BracketComplete"
+   ],
+   "4267" : [
+      "LineEndComplete"
+   ],
+   "4268" : [
+      "ctagloader"
    ]
 }
