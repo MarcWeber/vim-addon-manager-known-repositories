@@ -746,8 +746,9 @@ let scm['qfreplace'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-qfrep
 let scm['ku_source'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ku_source', 'dependencies': {'%2337': {}}}
 let scm['guicolorscheme@thinca'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-guicolorscheme'}
 
-" Josh Adams
+" Josh Adams (Matt Wozniski @ www.vim.org ?)
 let scmnr.3464 = {'type': 'git', 'url': 'git://github.com/godlygeek/tabular'}
+let scmnr.2390 = {'type': 'git', 'url': 'git://github.com/godlygeek/csapprox'}
 let scm['csapprox'] = {'type': 'git', 'url': 'git://github.com/godlygeek/csapprox'}
 let scm['colorchart'] = {'type': 'git', 'url': 'git://github.com/godlygeek/colorchart'}
 let scm['netlib'] = {'type': 'git', 'url': 'git://github.com/godlygeek/netlib'}
