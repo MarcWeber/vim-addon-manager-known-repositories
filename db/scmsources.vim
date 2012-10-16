@@ -475,6 +475,7 @@ let scmnr.3826 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/simple_boo
 let scmnr.3829 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/inline_edit.vim'}
 let scmnr.4171 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/sideways.vim'}
 let scmnr.4172 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/switch.vim'}
+let scmnr.4270 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/vim-eco'}
 
 " Radek Kowalski
 let scmnr.3331 = {'type': 'git', 'url': 'git://github.com/rkowal/Lua-Omni-Vim-Completion'}
