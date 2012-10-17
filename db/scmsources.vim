@@ -905,6 +905,7 @@ let scmnr.2712 = {'type': 'git', 'url': 'git://github.com/tyru/sign-diff.vim'}
 let scmnr.2605 = {'type': 'git', 'url': 'git://github.com/tyru/nextfile.vim'}
 let scmnr.2989 = {'type': 'git', 'url': 'git://github.com/tyru/pummode.vim'}
 let scmnr.2615 = {'type': 'git', 'url': 'git://github.com/tyru/vimtemplate.vim'}
+let scmnr.4273 = {'type': 'git', 'url': 'git://github.com/tyru/autochmodx.vim'}
 let scm['caw'] = {'type': 'git', 'url': 'git://github.com/tyru/caw.vim'}
 let scm['eskk'] = {'type': 'git', 'url': 'git://github.com/tyru/eskk.vim'}
 let scm['make-cmdline-compl'] = {'type': 'git', 'url': 'git://github.com/tyru/make-cmdline-compl.vim'}
