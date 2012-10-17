@@ -746,14 +746,19 @@ let scm['qfreplace'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-qfrep
 let scm['ku_source'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-ku_source', 'dependencies': {'%2337': {}}}
 let scm['guicolorscheme@thinca'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-guicolorscheme'}
 
-" Josh Adams (Matt Wozniski @ www.vim.org ?)
-let scmnr.3464 = {'type': 'git', 'url': 'git://github.com/godlygeek/tabular'}
+" Matt Wozniski
 let scmnr.2390 = {'type': 'git', 'url': 'git://github.com/godlygeek/csapprox'}
-let scm['csapprox'] = {'type': 'git', 'url': 'git://github.com/godlygeek/csapprox'}
 let scm['colorchart'] = {'type': 'git', 'url': 'git://github.com/godlygeek/colorchart'}
 let scm['netlib'] = {'type': 'git', 'url': 'git://github.com/godlygeek/netlib'}
 let scm['vim-plugin-bundling'] = {'type': 'git', 'url': 'git://github.com/godlygeek/vim-plugin-bundling'}
 let scm['windowlayout'] = {'type': 'git', 'url': 'git://github.com/godlygeek/windowlayout'}
+
+" Josh Adams
+" Did Matt Wozniski create another user to show the real author? On the script 
+" page it is said “This script was not created by me!  I'm just uploading it to 
+" vim.org because it's useful!”. And https://github.com/godlygeek shows that it 
+" belongs to Matt Wozniski, not to Josh Adams.
+let scmnr.3464 = {'type': 'git', 'url': 'git://github.com/godlygeek/tabular'}
 
 " drdr xp
 let scmnr.2611 = {'type': 'git', 'url': 'git://github.com/drmingdrmer/xptemplate'}
