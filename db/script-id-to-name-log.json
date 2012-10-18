@@ -1559,6 +1559,7 @@
       "waimea"
    ],
    "498" : [
+      "sqlanywhere",
       "sql%498",
       "sql498"
    ],
@@ -13236,5 +13237,11 @@
    ],
    "4273" : [
       "autochmodx"
+   ],
+   "4274" : [
+      "very_monochrome_grey_theme"
+   ],
+   "4275" : [
+      "sqlhana"
    ]
 }
