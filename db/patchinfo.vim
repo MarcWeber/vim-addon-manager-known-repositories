@@ -204,6 +204,7 @@ let mai_snr_deps.2782 = [2692]
 " snipMate dependents
 let mai_snr_deps.3249 = [2540]
 let mai_snr_deps.3664 = [2540]
+let mai_snr_deps.4276 = [2540, 2926]
 "▶1 Missing runtimepath information for vim.org plugins
 let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
