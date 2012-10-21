@@ -8698,6 +8698,7 @@
       "Conque_Shell"
    ],
    "2772" : [
+      "Smart_Home_Key%2772",
       "Crazy_Home_Key"
    ],
    "2773" : [
@@ -10459,6 +10460,7 @@
       "VIP"
    ],
    "3336" : [
+      "Smart_Home_Key%3336",
       "Smart_Home_Key"
    ],
    "3337" : [
@@ -13247,5 +13249,14 @@
    ],
    "4276" : [
       "SnippetCompleteSnipMate"
+   ],
+   "4277" : [
+      "Sunset"
+   ],
+   "4278" : [
+      "Makeshift"
+   ],
+   "4279" : [
+      "vim-cmake-project"
    ]
 }
