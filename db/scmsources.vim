@@ -1777,6 +1777,15 @@ let scmnr.4261 = {'type': 'git', 'url': 'git://github.com/liamcurry/tumblr.vim'}
 " Amal Khailtash
 let scmnr.4262 = {'type': 'git', 'url': 'git://github.com/amal-khailtash/vim-xdc-syntax'}
 
+" Alastair Touw
+let scmnr.4277 = {'type': 'git', 'url': 'git://github.com/amdt/sunset'}
+
+" Pete Johns
+let scmnr.4278 = {'type': 'git', 'url': 'git://github.com/johnsyweb/vim-makeshift'}
+
+" Minh Ngo
+let scmnr.4279 = {'type': 'git', 'url': 'git://github.com/Ignotus/vim-cmake-project'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
