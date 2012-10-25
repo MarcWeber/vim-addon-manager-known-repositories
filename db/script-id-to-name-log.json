@@ -13265,5 +13265,35 @@
    ],
    "4281" : [
       "yars"
+   ],
+   "4282" : [
+      "breakindent_beta"
+   ],
+   "4283" : [
+      "ctrlp-modified"
+   ],
+   "4284" : [
+      "windows_remember_size"
+   ],
+   "4285" : [
+      "toggle_maximize"
+   ],
+   "4286" : [
+      "navigation_enhancer"
+   ],
+   "4287" : [
+      "highlight_word_under_cursor"
+   ],
+   "4288" : [
+      "highlight_line_after_jump"
+   ],
+   "4289" : [
+      "blinking_statusline"
+   ],
+   "4290" : [
+      "back_to_recent_buffer"
+   ],
+   "4291" : [
+      "last_edit_marker"
    ]
 }
