@@ -91,6 +91,9 @@ let add_by_snr.2441={'deprecated': suggest_syntastic}
 let add_by_snr.2914={'deprecated': suggest_syntastic}
 let add_by_snr.3430={'deprecated': suggest_syntastic}
 let add_by_snr.3927={'deprecated': 'Also pay attention to alternative syntastic which runs flake and can do much more'}
+
+let add_by_snr.4043={'deprecated': 'The author recommends using neosnippet instead'}
+
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]

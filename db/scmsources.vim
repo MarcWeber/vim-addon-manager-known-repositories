@@ -192,6 +192,7 @@ let scmnr.1171 = {'type': 'git', 'url': 'git://github.com/ciaranm/detectindent'}
 let scmnr.2620 = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache'}
 let scmnr.3396 = {'type': 'git', 'url': 'git://github.com/Shougo/unite.vim'}
 let scmnr.4043 = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplcache-snippets-complete'}
+let scm['neosnippet'] = {'type': 'git', 'url': 'git://github.com/Shougo/neosnippet'}
 let scm['vimshell'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimshell', 'addon-info': {'dependencies': {'vimproc': {}}}}
 let scm['vimproc'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimproc'}
 let scm['vimfiler'] = {'type': 'git', 'url': 'git://github.com/Shougo/vimfiler'}
