@@ -24,13 +24,15 @@ let mai_snr.1742={'archive_name': 'vert.vim'}
 "▶1 Type corrections
 let add_by_snr.2368={'script-type': 'plugin'}
 let add_by_snr.1638={'script-type': 'plugin'}
+let add_by_snr.3868={'script-type': 'plugin'}
+let add_by_snr.1780={'script-type': 'syntax'}
+let add_by_snr.1686={'script-type': 'colors'}
 let add_by_snr.2527={'script-type': 'ftplugin'}
 let add_by_snr.1542={'script-type': 'autoload'}
-let add_by_snr.1686={'script-type': 'colors'}
 let add_by_snr.2150={'script-type': 'after/syntax'}
 let add_by_snr.2548={'script-type': 'after/syntax'}
-let add_by_snr.1780={'script-type': 'syntax'}
-let add_by_snr.3868={'script-type': 'plugin'}
+let add_by_snr.2224={'script-type': 'after/syntax'}
+let add_by_snr.2493={'script-type': 'after/syntax'}
 "▶1 Fixing target directories
 let add_by_snr.1542={'target_dir': 'autoload'}
 let add_by_snr.1662={'target_dir': 'autoload'}
