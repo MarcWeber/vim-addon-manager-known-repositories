@@ -1788,6 +1788,9 @@ let scmnr.4278 = {'type': 'git', 'url': 'git://github.com/johnsyweb/vim-makeshif
 " Minh Ngo
 let scmnr.4279 = {'type': 'git', 'url': 'git://github.com/Ignotus/vim-cmake-project'}
 
+" Jason Weathered
+let scmnr.4283 = {'type': 'git', 'url': 'git://github.com/jasoncodes/ctrlp-modified.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
