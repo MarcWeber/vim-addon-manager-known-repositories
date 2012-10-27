@@ -9,6 +9,8 @@ let mai_snr.3025 = {}
 let mai_snr.3025['post-install-hook']     = hook
 let mai_snr.3025['post-update-hook']      = hook
 let mai_snr.3025['post-scms-update-hook'] = hook
+unlet hook
+
 " Assuming that system is used right and current user does not have priveleges 
 " to write to this directory by default
 let hook = 'echohl WarningMsg | echom "Copy vimtweak.dll to the same directory with gvim.exe" | echohl None'
@@ -16,6 +18,13 @@ let mai_snr.687 = {}
 let mai_snr.687['post-install-hook']     = hook
 let mai_snr.687['post-update-hook']      = hook
 let mai_snr.687['post-scms-update-hook'] = hook
+unlet hook
+
+let hook = 'execute "lcd" fnameescape(%d."/smartgrep") | call vam#utils#RunShell("make") | lcd -'
+let mai_snr.4295 = {'runtimepath': 'smartgrep'}
+let mai_snr.4295['post-install-hook']     = hook
+let mai_snr.4295['post-update-hook']      = hook
+let mai_snr.4295['post-scms-update-hook'] = hook
 unlet hook
 "▶1 Wrong archive names
 " Author wrote that contents of vert.txt should go to vimrc, but it should work 
