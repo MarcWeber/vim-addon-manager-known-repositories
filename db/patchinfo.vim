@@ -58,6 +58,10 @@ let add_by_name['lazysnipmate']={'deprecated' : "lazysnipmate’s update is just
 " let add_by_snr.2736={'deprecated' : "consider using vim-addon-syntax-checker because it is easier to adopt its behaviour to your needs"}
 let add_by_name['syntastic2']={'deprecated' : "renamed to vim-addon-syntax-checker"}
 
+let p = {'deprecated' : "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
+let add_by_name['theonevimlib'] = p
+let add_by_snr.1963 = p
+" 
 let add_by_snr.3184={'deprecated' : "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"}
 let add_by_snr.3325={'deprecated' : "All functions from this plugin are available through `os' resource of @/os frawor module"}
 let add_by_snr.3187={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
