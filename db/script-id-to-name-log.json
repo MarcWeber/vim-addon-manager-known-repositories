@@ -1963,6 +1963,7 @@
       "nightwish"
    ],
    "625" : [
+      "Colour_Sampler_Pack",
       "Color_Sampler_Pack"
    ],
    "626" : [
@@ -13310,5 +13311,11 @@
    ],
    "4296" : [
       "ViewPort"
+   ],
+   "4297" : [
+      "detailed"
+   ],
+   "4298" : [
+      "vimside"
    ]
 }
