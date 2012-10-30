@@ -1693,6 +1693,7 @@ let scmnr.3498 = {'type': 'git', 'url': 'git://github.com/megaannum/scala_format
 let scmnr.4149 = {'type': 'git', 'url': 'git://github.com/megaannum/tui'}
 let scmnr.4150 = {'type': 'git', 'url': 'git://github.com/megaannum/forms'}
 let scmnr.4240 = {'type': 'git', 'url': 'git://github.com/megaannum/colorschemer'}
+let scmnr.4298 = {'type': 'git', 'url': 'git://github.com/megaannum/vimside'}
 
 " Dmitry Geurkov
 let scmnr.4157 = {'type': 'git', 'url': 'git://github.com/troydm/pb.vim'}
