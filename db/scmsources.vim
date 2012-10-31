@@ -1797,6 +1797,9 @@ let scmnr.4294 = {'type': 'git', 'url': 'git://github.com/PAntoine/vimgitlog'}
 " pebble on software
 let scmnr.4295 = {'type': 'git', 'url': 'git://github.com/pebble8888/smartgrep'}
 
+" Guodong Liang
+let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
