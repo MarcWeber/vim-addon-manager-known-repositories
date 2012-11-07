@@ -239,6 +239,7 @@ let scmnr.3695 = {'type': 'git', 'url': 'git://github.com/tpope/vim-commentary'}
 let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 let scmnr.4269 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scmnr.4280 = {'type': 'git', 'url': 'git://github.com/tpope/vim-bundler'}
+let scmnr.4300 = {'type': 'git', 'url': 'git://github.com/tpope/vim-eunuch'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -1800,8 +1801,8 @@ let scmnr.4294 = {'type': 'git', 'url': 'git://github.com/PAntoine/vimgitlog'}
 " pebble on software
 let scmnr.4295 = {'type': 'git', 'url': 'git://github.com/pebble8888/smartgrep'}
 
-" Guodong Liang
-let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
+" YAMAGUCHI Rei
+let scmnr.4301 = {'type': 'git', 'url': 'git://github.com/unagi/vim-moncf'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
@@ -1827,6 +1828,9 @@ let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': '.vim'}}
+
+" Guodong Liang
+let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
 
 " Basil Gor
 let scmnr.4263 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/basilgor/vim-autotags'}, {'autotags.vim': 'plugin'})
