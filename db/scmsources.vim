@@ -102,6 +102,9 @@ let scm['vim-addon-other'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/
 let scm['vim-addon-php-manual'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-php-manual'}
 let scm['vim-addon-local-vimrc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-local-vimrc'}
 let scm['vim-addon-syntax-checker'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-syntax-checker'}
+let scm['vim-addon-mru'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-mru'}
+let scm['vim-addon-surround'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-surround'}
+let scm['vim-addon-toc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toc'}
 let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby'}
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
 " There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed 
