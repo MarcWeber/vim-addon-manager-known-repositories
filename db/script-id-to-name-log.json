@@ -13329,5 +13329,11 @@
    ],
    "4302" : [
       "tshell"
+   ],
+   "4303" : [
+      "custom_dict"
+   ],
+   "4304" : [
+      "textobj-motionmotion"
    ]
 }

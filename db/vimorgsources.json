@@ -1,4 +1,6 @@
 {
+"textobj-motionmotion":{"archive_name":"textobj-motionmotion-v0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18956","version":"0.0.2","vim_script_nr":4304},
+"custom_dict":{"archive_name":"custom_dict.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18954","version":"1.0","vim_script_nr":4303},
 "tshell":{"archive_name":"tshell.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18953","version":"0.1","vim_script_nr":4302},
 "vim-moncf":{"archive_name":"vim-moncf-0.1.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18949","version":"0.1","vim_script_nr":4301},
 "eunuch":{"archive_name":"eunuch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18948","version":"1.0","vim_script_nr":4300},
@@ -1512,7 +1514,7 @@
 "falcon%2745":{"archive_name":"falcon.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13877","version":"0.06","vim_script_nr":2745},
 "git-cheat":{"archive_name":"git-cheat.txt","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11211","version":"2.0","vim_script_nr":2744},
 "greek_polytonic":{"archive_name":"greek-polytonic-keymap-1.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18403","version":"1.2","vim_script_nr":2743},
-"ruby%2742":{"archive_name":"ruby.vim.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11777","version":"0.1.6","vim_script_nr":"2742"},
+"ruby%2742":{"archive_name":"ruby.vim.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18955","version":"0.1.7","vim_script_nr":"2742"},
 "blue%2741":{"archive_name":"blue.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11201","version":"1.2","vim_script_nr":"2741"},
 "vimper":{"archive_name":"vimper-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11313","version":"0.1.1","vim_script_nr":2740},
 "bclear":{"archive_name":"bclear.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14069","version":"20101017","vim_script_nr":2739},
