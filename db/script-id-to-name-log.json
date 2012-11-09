@@ -13335,5 +13335,14 @@
    ],
    "4304" : [
       "textobj-motionmotion"
+   ],
+   "4305" : [
+      "green_light"
+   ],
+   "4306" : [
+      "HiCursorWords"
+   ],
+   "4307" : [
+      "show-git-log"
    ]
 }

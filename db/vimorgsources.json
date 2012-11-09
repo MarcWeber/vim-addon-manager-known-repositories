@@ -1,4 +1,7 @@
 {
+"show-git-log":{"archive_name":"showgitlog.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18962","version":"0.2","vim_script_nr":4307},
+"HiCursorWords":{"archive_name":"hicursorwords.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18958","version":"0.1","vim_script_nr":4306},
+"green_light":{"archive_name":"green_light.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18957","version":"1.0","vim_script_nr":4305},
 "textobj-motionmotion":{"archive_name":"textobj-motionmotion-v0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18956","version":"0.0.2","vim_script_nr":4304},
 "custom_dict":{"archive_name":"custom_dict.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18954","version":"1.0","vim_script_nr":4303},
 "tshell":{"archive_name":"tshell.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18953","version":"0.1","vim_script_nr":4302},
@@ -91,7 +94,7 @@
 "altr":{"archive_name":"vim-altr-0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18520","version":"0.0.2","vim_script_nr":4202},
 "tabpagecd":{"archive_name":"vim-tabpagecd-0.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18519","version":"0.0.1","vim_script_nr":4201},
 "transliterate":{"archive_name":"transliterate.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18626","version":"0.2.3","vim_script_nr":4200},
-"tinykeymap":{"archive_name":"tinykeymap.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18715","version":"0.02a","vim_script_nr":4199},
+"tinykeymap":{"archive_name":"tinykeymap.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18961","version":"0.03","vim_script_nr":4199},
 "asyncfinder":{"archive_name":"asyncfinder.vim-0.2.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18553","version":"0.2.6","vim_script_nr":4198},
 "numsign":{"archive_name":"numsign.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18645","version":"1.02","vim_script_nr":4197},
 "GrepTasks":{"archive_name":"GrepTasks-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18499","version":"1.00","vim_script_nr":4196},
