@@ -13344,5 +13344,11 @@
    ],
    "4307" : [
       "show-git-log"
+   ],
+   "4308" : [
+      "psettings"
+   ],
+   "4309" : [
+      "multichange"
    ]
 }
