@@ -482,6 +482,7 @@ let scmnr.3829 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/inline_edi
 let scmnr.4171 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/sideways.vim'}
 let scmnr.4172 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/switch.vim'}
 let scmnr.4270 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/vim-eco'}
+let scmnr.4309 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/multichange.vim'}
 
 " Radek Kowalski
 let scmnr.3331 = {'type': 'git', 'url': 'git://github.com/rkowal/Lua-Omni-Vim-Completion'}
@@ -1807,6 +1808,9 @@ let scmnr.4301 = {'type': 'git', 'url': 'git://github.com/unagi/vim-moncf'}
 
 " Takeshi Banse
 let scmnr.4304 = {'type': 'git', 'url': 'git://github.com/hchbaw/textobj-motionmotion.vim'}
+
+" Florian Margaine
+let scmnr.4308 = {'type': 'git', 'url': 'git://github.com/Ralt/psettings'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
