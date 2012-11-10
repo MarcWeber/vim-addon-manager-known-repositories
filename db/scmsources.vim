@@ -1619,6 +1619,7 @@ let scmnr.4083 = {'type': 'git', 'url': 'git://github.com/stephpy/vim-php-cs-fix
 
 " sunsol zn
 let scmnr.4086 = {'type': 'git', 'url': 'git://github.com/sunsol/vim_python_fold_compact'}
+let scmnr.4303 = {'type': 'git', 'url': 'git://github.com/sunsol/custom_dict'}
 
 " Nasimul Haque
 let scmnr.4092 = {'type': 'git', 'url': 'git://github.com/nsmgr8/vitra'}
@@ -1804,6 +1805,9 @@ let scmnr.4295 = {'type': 'git', 'url': 'git://github.com/pebble8888/smartgrep'}
 " YAMAGUCHI Rei
 let scmnr.4301 = {'type': 'git', 'url': 'git://github.com/unagi/vim-moncf'}
 
+" Takeshi Banse
+let scmnr.4304 = {'type': 'git', 'url': 'git://github.com/hchbaw/textobj-motionmotion.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
@@ -1828,6 +1832,9 @@ let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': '.vim'}}
+
+" sunus lee
+let scmnr.4307 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-show-git-log'}, {'showgitlog.vim': 'plugin'})
 
 " Guodong Liang
 let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
