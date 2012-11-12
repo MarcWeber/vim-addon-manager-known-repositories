@@ -1812,6 +1812,9 @@ let scmnr.4304 = {'type': 'git', 'url': 'git://github.com/hchbaw/textobj-motionm
 " Florian Margaine
 let scmnr.4308 = {'type': 'git', 'url': 'git://github.com/Ralt/psettings'}
 
+" Vital Kudzelka
+let scmnr.4310 = {'type': 'git', 'url': 'git://github.com/vitalk/vim-lesscss'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
