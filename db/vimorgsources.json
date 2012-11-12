@@ -1,4 +1,5 @@
 {
+"vim-lesscss":{"archive_name":"vim-lesscss.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18969","version":"0.1","vim_script_nr":4310},
 "multichange":{"archive_name":"multichange.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18968","version":"0.1.0","vim_script_nr":4309},
 "psettings":{"archive_name":"psettings.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18965","version":"1.0.0","vim_script_nr":4308},
 "show-git-log":{"archive_name":"showgitlog.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18962","version":"0.2","vim_script_nr":4307},
@@ -96,7 +97,7 @@
 "altr":{"archive_name":"vim-altr-0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18520","version":"0.0.2","vim_script_nr":4202},
 "tabpagecd":{"archive_name":"vim-tabpagecd-0.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18519","version":"0.0.1","vim_script_nr":4201},
 "transliterate":{"archive_name":"transliterate.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18626","version":"0.2.3","vim_script_nr":4200},
-"tinykeymap":{"archive_name":"tinykeymap.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18966","version":"0.04","vim_script_nr":4199},
+"tinykeymap":{"archive_name":"tinykeymap.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18970","version":"0.05","vim_script_nr":4199},
 "asyncfinder":{"archive_name":"asyncfinder.vim-0.2.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18553","version":"0.2.6","vim_script_nr":4198},
 "numsign":{"archive_name":"numsign.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18645","version":"1.02","vim_script_nr":4197},
 "GrepTasks":{"archive_name":"GrepTasks-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18499","version":"1.00","vim_script_nr":4196},
