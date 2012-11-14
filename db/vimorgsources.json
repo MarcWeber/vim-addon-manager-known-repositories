@@ -1,4 +1,5 @@
 {
+"doctest":{"archive_name":"doctest.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18975","version":"0.1","vim_script_nr":4311},
 "vim-lesscss":{"archive_name":"vim-lesscss.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18969","version":"0.1","vim_script_nr":4310},
 "multichange":{"archive_name":"multichange.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18968","version":"0.1.0","vim_script_nr":4309},
 "psettings":{"archive_name":"psettings.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18965","version":"1.0.0","vim_script_nr":4308},
@@ -17,7 +18,7 @@
 "smartgrep":{"archive_name":"smartgrep_2_1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18903","version":"2.1","vim_script_nr":4295},
 "git_log":{"archive_name":"vimgitlog-version_1.1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18900","version":"1.1.0","vim_script_nr":4294},
 "STL_Syntax":{"archive_name":"stl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18912","version":"0.2","vim_script_nr":4293},
-"py-coverage":{"archive_name":"vim-py-coverage.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18896","version":"0.1.0","vim_script_nr":4292},
+"py-coverage":{"archive_name":"vim-py-coverage.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18974","version":"0.1.1","vim_script_nr":4292},
 "last_edit_marker":{"archive_name":"last_edit_marker.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18889","version":"1.4","vim_script_nr":4291},
 "back_to_recent_buffer":{"archive_name":"back_to_recent_buffer.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18888","version":"1.3","vim_script_nr":4290},
 "blinking_statusline":{"archive_name":"blinking_statusline.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18887","version":"0.9","vim_script_nr":4289},
