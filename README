@@ -7,7 +7,21 @@ Have a look at all supported plugins online: http://mawercer.de/~marc/vam/index.
 You should use the special function vam#install#LoadKnownRepos() to activate
 this plugin whenever you need it. For speed reasons it is only loaded when needed.
 
+Issues which may cause us to immediately remove plugins [1]:
+  - security issues or other similar sever issues (didn't happen yet)
+
+Issues which may cause us to deprecate plugins, which means they can be
+installed but a warning will be shown [1]:
+  - there are other plugins doing the same, but better - unless the 
+    less useful plugins are a significant simpler and people indiciate that
+    they are still using it.
+
+  - a plugin is obviously broken in a way so that its causing more harm than
+    value.
+
+[1]: If in doubt create a github ticket and let's discuss the issue.
+
 
 BUGS:
-There are two plugins: one called align an done called Align. This will cause
-trouble on Windows !
+  There are two plugins: one called align an done called Align. This will cause
+  trouble on Windows !
