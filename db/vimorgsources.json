@@ -1,4 +1,5 @@
 {
+"mymarksbrowser":{"archive_name":"mymarksbrowser.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18976","version":"1.0","vim_script_nr":4312},
 "doctest":{"archive_name":"doctest.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18975","version":"0.1","vim_script_nr":4311},
 "vim-lesscss":{"archive_name":"vim-lesscss.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18969","version":"0.1","vim_script_nr":4310},
 "multichange":{"archive_name":"multichange.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18968","version":"0.1.0","vim_script_nr":4309},
