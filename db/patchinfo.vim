@@ -138,6 +138,7 @@ let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.4248 = [3914]
 let mai_snr_deps.4265 = [3914]
+let mai_snr_deps.4313 = [3914]
 " MotionComplete dependants
 let mai_snr_deps.4266 = [4265]
 let mai_snr_deps.4267 = [4265]
