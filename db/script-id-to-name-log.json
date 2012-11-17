@@ -13362,5 +13362,11 @@
    ],
    "4313" : [
       "BufNameComplete"
+   ],
+   "4314" : [
+      "simpleSnip"
+   ],
+   "4315" : [
+      "webBrowser"
    ]
 }
