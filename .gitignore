@@ -1,2 +1,3 @@
 doc/tags
 db/script-id-to-name-log.json
+*.fail

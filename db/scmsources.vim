@@ -1845,6 +1845,7 @@ let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakule
 
 " sunus lee
 let scmnr.4307 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-show-git-log'}, {'showgitlog.vim': 'plugin'})
+let scmnr.4319 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-random-colorscheme-picker'}, {'randomColorPicker.vim': 'colors'})
 
 " Guodong Liang
 let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
