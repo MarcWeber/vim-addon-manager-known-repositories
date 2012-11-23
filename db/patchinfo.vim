@@ -134,6 +134,7 @@ let mai_snr_deps.4194 = [4193]
 let mai_snr_deps.4222 = [2771]
 let mai_snr_deps.4253 = [2646]
 let mai_snr_deps.4283 = [3736]
+let mai_snr_deps.4322 = [4321, 1359]
 " CompleteHelper dependants
 let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.4248 = [3914]
