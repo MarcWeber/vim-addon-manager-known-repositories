@@ -13381,5 +13381,14 @@
    ],
    "4319" : [
       "ColorSchemePicker"
+   ],
+   "4320" : [
+      "SearchHighlighting"
+   ],
+   "4321" : [
+      "ChangeGlobally"
+   ],
+   "4322" : [
+      "ChangeGloballySmartCase"
    ]
 }
