@@ -13390,5 +13390,8 @@
    ],
    "4322" : [
       "ChangeGloballySmartCase"
+   ],
+   "4323" : [
+      "vim-simple-todo"
    ]
 }
