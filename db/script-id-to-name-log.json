@@ -13393,5 +13393,14 @@
    ],
    "4323" : [
       "vim-simple-todo"
+   ],
+   "4324" : [
+      "Change_Syntax"
+   ],
+   "4325" : [
+      "vimcat"
+   ],
+   "4326" : [
+      "colorpicker"
    ]
 }
