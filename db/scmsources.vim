@@ -1814,9 +1814,16 @@ let scmnr.4308 = {'type': 'git', 'url': 'git://github.com/Ralt/psettings'}
 
 " Vital Kudzelka
 let scmnr.4310 = {'type': 'git', 'url': 'git://github.com/vitalk/vim-lesscss'}
+let scmnr.4323 = {'type': 'git', 'url': 'git://github.com/vitalk/vim-simple-todo'}
 
 " Benjamin Leopold
 let scmnr.4317 = {'type': 'git', 'url': 'git://github.com/cometsong/CommentFrame.vim'}
+
+" Eduan Lavaque
+let scmnr.4324 = {'type': 'git', 'url': 'git://github.com/Greduan/vim-change-syntax'}
+
+" Abimael Martinez
+let scmnr.4326 = {'type': 'git', 'url': 'git://github.com/abijr/colorpicker'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
