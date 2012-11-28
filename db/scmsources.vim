@@ -1732,6 +1732,7 @@ let scmnr.4192 = {'type': 'git', 'url': 'git://github.com/tudorprodan/html_annoy
 
 " Niels Madan
 let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
+let scmnr.4328 = {'type': 'git', 'url': 'git://github.com/nielsmadan/easel'}
 
 " Fanael Linithien
 let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transliterate'}
