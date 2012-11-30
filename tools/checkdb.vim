@@ -4,6 +4,13 @@ function CheckVal(s, mes, curauthor)
             let hook=a:curauthor.hook
         endif
         let val=eval(a:s)
+        if val.type is# 'git' && val.url =~? '\V\w\+://github.com\[:/]'
+            if val.url[:16] isnot# 'git://github.com/'
+                throw 'Github URLs must start with git://github.com/'
+            elseif val.url[-4:] is# '.git'
+                throw 'Github URLs must not end with .git'
+            endif
+        endif
         return (val.type is# 'archive')*2+
                     \(!empty(filter(keys(val), 'stridx(v:val, "hook")!=-1')))
     catch

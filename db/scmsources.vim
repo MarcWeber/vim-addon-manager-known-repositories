@@ -1996,7 +1996,7 @@ let scm['vim-jst'] = {'type': 'git', 'url': 'git://github.com/briancollins/vim-j
 " Luke Randall
 let scm['haskellmode-vim'] = {'type': 'git', 'url': 'git://github.com/lukerandall/haskellmode-vim'}
 
-" Muraoka taro
+" Muraoka Taro
 let scm['nyancat-vim'] = {'type': 'git', 'url': 'git://github.com/koron/nyancat-vim'}
 
 " others:
