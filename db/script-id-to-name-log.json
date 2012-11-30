@@ -9240,7 +9240,8 @@
    "2945" : [
       "AutomaticLaTeXPlugin",
       "AutomaticLaTexPlugin",
-      "AutomaticTexPlugin"
+      "AutomaticTexPlugin",
+      "ATP"
    ],
    "2946" : [
       "AGTD"
