@@ -55,8 +55,8 @@
 " Syntax Restrictions: See tools/checkdb.vim. This file is made for using in 
 "                      hooks: if check fails vim will exit with non-zero status 
 "                      (:cquit). Prefered way of sourcing: while in the 
-"                      repository root directory (mercurial hooks are launched 
-"                      from there, don’t know about git ones) do
+"                      repository root directory (mercurial and git hooks are 
+"                      launched from there) do
 "                         vim -u NONE -N -S tools/checkdb.vim
 "                      . If hook failed see *.fail files in the repository root.
 
@@ -782,6 +782,7 @@ let scm['vim-pml'] = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-pml'}
 " Scott Bronson
 let scmnr.3201 = {'type': 'git', 'url': 'git://github.com/bronson/vim-trailing-whitespace'}
 let scm['vim-toggle-wrap'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-toggle-wrap'}
+let scm['vim-visual-star-search'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-visual-star-search'}
 
 " Chris Vertonghen
 let scmnr.603 = {'type': 'git', 'url': 'git://github.com/chrisv/vim-chrisv'}
@@ -1800,6 +1801,7 @@ let scmnr.4283 = {'type': 'git', 'url': 'git://github.com/jasoncodes/ctrlp-modif
 
 " Peter Antoine
 let scmnr.4294 = {'type': 'git', 'url': 'git://github.com/PAntoine/vimgitlog'}
+let scmnr.4334 = {'type': 'git', 'url': 'git://github.com/PAntoine/TimeKeeper'}
 
 " pebble on software
 let scmnr.4295 = {'type': 'git', 'url': 'git://github.com/pebble8888/smartgrep'}
@@ -1850,6 +1852,13 @@ let scmnr.3946 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/maste
 let scmnr.3956 = {'url': 'https://github.com/svakulenko/gvim_extention/raw/master/binaries/fwk_notes.zip', 'archive_name': 'fwk_notes.zip', 'type': 'archive', 'script-type': 'utility'}
 " You can use the following to pull all his plugins:
 let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakulenko/gvim_extention', 'addon-info': {'runtimepath': '.vim'}}
+
+" Peter Hofmann
+" The following plugins do not have a separate repository:
+let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/colors/termpot.vim', 'archive_name': 'termpot.vim', 'type': 'archive', 'script-type': 'color scheme'}
+
+" Long Changjin
+let scmnr.4332 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wusuopu/weibo-vim-plugin'}, {'my_weibo.vim': 'plugin'})
 
 " sunus lee
 let scmnr.4307 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-show-git-log'}, {'showgitlog.vim': 'plugin'})
@@ -1999,6 +2008,9 @@ let scm['haskellmode-vim'] = {'type': 'git', 'url': 'git://github.com/lukerandal
 " Muraoka Taro
 let scm['nyancat-vim'] = {'type': 'git', 'url': 'git://github.com/koron/nyancat-vim'}
 
+" Matt Sacks
+let scm['vim-complete'] = {'type': 'git', 'url': 'git://github.com/mattsacks/vim-complete'}
+
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
 let scm['Vim-R-plugin2'] = {'type': 'git', 'url': 'git://github.com/jimmyharris/vim-r-plugin2'}
@@ -2026,6 +2038,7 @@ let scm['factor'] = {'type': 'git', 'url': 'git://github.com/slavapestov/factor'
 let scm['html-template-syntax'] = {'type': 'git', 'url': 'git://github.com/pbrisbin/html-template-syntax'}
 let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang', 'addon-info': {'runtimepath': 'tools/editors/vim'}}
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
+let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
