@@ -5974,6 +5974,7 @@
       "skill_comment"
    ],
    "1903" : [
+      "REPL%1903",
       "REPL"
    ],
    "1904" : [
@@ -11356,6 +11357,7 @@
       "indsas"
    ],
    "3625" : [
+      "lua%3625",
       "lua"
    ],
    "3626" : [
@@ -13430,5 +13432,32 @@
    ],
    "4335" : [
       "star_search"
+   ],
+   "4336" : [
+      "REPL%4336"
+   ],
+   "4337" : [
+      "vim-autoformat"
+   ],
+   "4338" : [
+      "SameSyntaxMotion"
+   ],
+   "4339" : [
+      "kolor"
+   ],
+   "4340" : [
+      "vim-addon-commandline-completion"
+   ],
+   "4341" : [
+      "VimLogViewer"
+   ],
+   "4342" : [
+      "Lucid"
+   ],
+   "4343" : [
+      "mkfile_syntax"
+   ],
+   "4344" : [
+      "lua%4344"
    ]
 }
