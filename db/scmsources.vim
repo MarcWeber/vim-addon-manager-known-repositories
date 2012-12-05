@@ -86,6 +86,7 @@ let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-co
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
 let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
 let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
+let scmnr.4340 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commandline-completion'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-rfc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rfc'}
 let scm['vim-addon-urweb'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-urweb'}
@@ -1827,6 +1828,15 @@ let scmnr.4324 = {'type': 'git', 'url': 'git://github.com/Greduan/vim-change-syn
 
 " Abimael Martinez
 let scmnr.4326 = {'type': 'git', 'url': 'git://github.com/abijr/colorpicker'}
+
+" Sergey Khorev
+let scmnr.4336 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-repl'}
+
+" Chiel 92
+let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat'}
+
+" Alessandro Di Martino
+let scmnr.4339 = {'type': 'git', 'url': 'git://github.com/zeis/kolor'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
