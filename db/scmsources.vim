@@ -395,6 +395,7 @@ let scmnr.3214 = {'type': 'git', 'url': 'git://github.com/tomtom/presets_vim'}
 let scmnr.3326 = {'type': 'git', 'url': 'git://github.com/tomtom/stakeholders_vim'}
 let scmnr.3653 = {'type': 'git', 'url': 'git://github.com/tomtom/brep_vim'}
 let scmnr.4199 = {'type': 'git', 'url': 'git://github.com/tomtom/tinykeymap_vim'}
+let scmnr.4345 = {'type': 'git', 'url': 'git://github.com/tomtom/templator_vim'}
 let scm['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_vim'}
 let scm['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim'}
 let scm['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim'}
