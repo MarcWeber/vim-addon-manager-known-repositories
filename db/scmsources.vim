@@ -1832,6 +1832,7 @@ let scmnr.4326 = {'type': 'git', 'url': 'git://github.com/abijr/colorpicker'}
 
 " Sergey Khorev
 let scmnr.4336 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-repl'}
+let scmnr.4347 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-qfnotes'}
 
 " Chiel 92
 let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat'}
