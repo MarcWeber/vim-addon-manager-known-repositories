@@ -149,6 +149,7 @@ let mai_snr_deps.4138 = [1658]
 " Non-Kana textobj-user dependants
 let mai_snr_deps.3382 = [2100, 39]
 let mai_snr_deps.4304 = [2100]
+let mai_snr_deps.4348 = [2100]
 " getvar dependants
 let mai_snr_deps.352  = [353, 354]
 let mai_snr_deps.994  = [353]

@@ -485,6 +485,7 @@ let scmnr.4171 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/sideways.v
 let scmnr.4172 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/switch.vim'}
 let scmnr.4270 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/vim-eco'}
 let scmnr.4309 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/multichange.vim'}
+let scmnr.4351 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/whitespaste.vim'}
 
 " Radek Kowalski
 let scmnr.3331 = {'type': 'git', 'url': 'git://github.com/rkowal/Lua-Omni-Vim-Completion'}
@@ -1545,8 +1546,9 @@ let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markd
 " Mike Skalnik
 let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
 
-" G Ltis
+" glts
 let scmnr.3997 = {'type': 'git', 'url': 'git://github.com/glts/vim-spacebox'}
+let scmnr.4348 = {'type': 'git', 'url': 'git://github.com/glts/vim-textobj-indblock'}
 
 " lorry lee
 let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
@@ -1839,6 +1841,9 @@ let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat
 
 " Alessandro Di Martino
 let scmnr.4339 = {'type': 'git', 'url': 'git://github.com/zeis/kolor'}
+
+" Pavel Pertsev
+let scmnr.4349 = {'type': 'git', 'url': 'git://github.com/morhetz/gruvbox'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
