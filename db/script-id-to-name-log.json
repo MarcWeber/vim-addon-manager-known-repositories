@@ -13468,5 +13468,17 @@
    ],
    "4347" : [
       "qfnotes"
+   ],
+   "4348" : [
+      "textobj-indblock"
+   ],
+   "4349" : [
+      "gruvbox"
+   ],
+   "4350" : [
+      "Inferno_sh_syntax"
+   ],
+   "4351" : [
+      "whitespaste"
    ]
 }
