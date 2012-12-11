@@ -107,6 +107,8 @@ let add_by_snr.3927={'deprecated': 'Also pay attention to alternative syntastic 
 
 let add_by_snr.4043={'deprecated': 'The author recommends using neosnippet instead'}
 
+let add_by_name['minibufexpl']={'deprecated' : "Superseeded by http://fholgado.com/minibufexpl. Choose minibufexplorer instead of minibufexpl."}
+
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
 let mai_snr_deps.3574 = [2975]
