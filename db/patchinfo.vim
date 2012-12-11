@@ -90,6 +90,7 @@ let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not
 let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
 
 let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
+let add_by_snr.159 ={'deprecated': "No more maintained, use “minibufexplorer” instead. Requires git or you’ll have vimscript #3239 from vim.org which is itself deprecated (changed maintainer, new one posts only to git)"}
 
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
@@ -103,9 +104,9 @@ let suggest_syntastic="Consider giving syntastic a try instead. It supports more
 let add_by_snr.2441={'deprecated': suggest_syntastic}
 let add_by_snr.2914={'deprecated': suggest_syntastic}
 let add_by_snr.3430={'deprecated': suggest_syntastic}
-let add_by_snr.3927={'deprecated': 'Also pay attention to alternative syntastic which runs flake and can do much more'}
+let add_by_snr.3927={'deprecated': "Also pay attention to alternative syntastic which runs flake and can do much more"}
 
-let add_by_snr.4043={'deprecated': 'The author recommends using neosnippet instead'}
+let add_by_snr.4043={'deprecated': "The author recommends using neosnippet instead"}
 
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
