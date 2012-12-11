@@ -811,6 +811,7 @@ let scmnr.1120 = {'type': 'git', 'url': 'git://github.com/2072/PHP-Indenting-for
 let scmnr.1167 = {'type': 'git', 'url': 'git://github.com/aklt/vim-substitute'}
 let scmnr.2564 = {'type': 'git', 'url': 'git://github.com/aklt/vim-simple_comments'}
 let scmnr.3538 = {'type': 'git', 'url': 'git://github.com/aklt/plantuml-syntax'}
+let scmnr.4353 = {'type': 'git', 'url': 'git://github.com/aklt/vim-line_length'}
 
 " Ben Williams
 let scmnr.1242 = {'type': 'git', 'url': 'git://github.com/plasticboy/vim-markdown'}
