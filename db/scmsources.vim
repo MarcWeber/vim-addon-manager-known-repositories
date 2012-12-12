@@ -1836,6 +1836,7 @@ let scmnr.4326 = {'type': 'git', 'url': 'git://github.com/abijr/colorpicker'}
 " Sergey Khorev
 let scmnr.4336 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-repl'}
 let scmnr.4347 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-qfnotes'}
+let scmnr.4355 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-rst-ftplugin'}
 
 " Chiel 92
 let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat'}
@@ -1874,6 +1875,9 @@ let scm['plugins@svakulenko'] = {'type': 'git', 'url': 'git://github.com/svakule
 " Peter Hofmann
 " The following plugins do not have a separate repository:
 let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/colors/termpot.vim', 'archive_name': 'termpot.vim', 'type': 'archive', 'script-type': 'color scheme'}
+
+" Yggdroot Chen
+let scmnr.4354 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Yggdroot/indentLine'}, {'indentLine.vim': 'plugin'})
 
 " Long Changjin
 let scmnr.4332 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wusuopu/weibo-vim-plugin'}, {'my_weibo.vim': 'plugin'})
