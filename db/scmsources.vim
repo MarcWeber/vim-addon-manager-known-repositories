@@ -108,6 +108,7 @@ let scm['vim-addon-surround'] = {'type': 'git', 'url': 'git://github.com/MarcWeb
 let scm['vim-addon-toc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-toc'}
 let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby'}
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
+let scm['vim-addon-text-objects'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-text-objects'}
 " There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed 
 " anywhere thus removed
 let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
@@ -2019,6 +2020,7 @@ let scm['vim-less'] = {'type': 'git', 'url': 'git://github.com/groenewege/vim-le
 let scm['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim'}
 
 " Barry Arthur
+let scm['fanfingtastic'] = {'type': 'git', 'url': 'git://github.com/dahu/vim-fanfingtastic'}
 let scm['VimLint'] = {'type': 'git', 'url': 'git://github.com/dahu/VimLint'}
 
 " Brian Collins
