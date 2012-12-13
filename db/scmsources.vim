@@ -1848,6 +1848,11 @@ let scmnr.4339 = {'type': 'git', 'url': 'git://github.com/zeis/kolor'}
 " Pavel Pertsev
 let scmnr.4349 = {'type': 'git', 'url': 'git://github.com/morhetz/gruvbox'}
 
+" Idan Arye
+let hook='execute "lcd" fnameescape(%d) | call vam#utils#RunShell("make") | lcd -'
+let scmnr.4356 = {'type': 'git', 'url': 'git://github.com/Hackerpilot/Dscanner', 'addon-info': {'runtimepath': 'editors/vim', 'post-install-hook': hook, 'post-scms-update-hook': hook}}
+unlet hook
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
