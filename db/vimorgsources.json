@@ -2473,7 +2473,7 @@
 "asciidoc":{"archive_name":"asciidoc.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6891","version":"0.1","vim_script_nr":1832},
 "VimSpy":{"archive_name":"VimSpy.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7009","version":"0.2","vim_script_nr":1831},
 "html_improved_indentation":{"archive_name":"html.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6885","version":"37","vim_script_nr":1830},
-"writebackupVersionControl":{"archive_name":"writebackupVersionControl.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17501","version":"3.10","vim_script_nr":1829},
+"writebackupVersionControl":{"archive_name":"writebackupVersionControl-3.20.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19182","version":"3.20","vim_script_nr":1829},
 "writebackup":{"archive_name":"writebackup.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17474","version":"3.00","vim_script_nr":1828},
 "smp":{"archive_name":"smp.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6875","version":"1.2","vim_script_nr":1827},
 "Hints_for_C_Library_Functions%1826":{"archive_name":"hints_man3.vba.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6878","version":"2","vim_script_nr":"1826"},
