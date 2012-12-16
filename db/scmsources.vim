@@ -992,6 +992,7 @@ let scmnr.3298 = {'type': 'git', 'url': 'git://github.com/chrisbra/vim_faq'}
 let scmnr.3877 = {'type': 'git', 'url': 'git://github.com/chrisbra/improvedft'}
 let scmnr.3963 = {'type': 'git', 'url': 'git://github.com/chrisbra/color_highlight'}
 let scmnr.3965 = {'type': 'git', 'url': 'git://github.com/chrisbra/DynamicSigns'}
+let scmnr.4357 = {'type': 'git', 'url': 'git://github.com/chrisbra/DistractFree'}
 let scmnr.2998 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/chrisbra/BackgroundColor.vim'}, {'backgroundColor.vim': 'plugin'})
 
 " Francisco Garcia
