@@ -1854,6 +1854,9 @@ let hook='execute "lcd" fnameescape(%d) | call vam#utils#RunShell("make") | lcd 
 let scmnr.4356 = {'type': 'git', 'url': 'git://github.com/Hackerpilot/Dscanner', 'addon-info': {'runtimepath': 'editors/vim', 'post-install-hook': hook, 'post-scms-update-hook': hook}}
 unlet hook
 
+" Vladimir Shvets
+let scmnr.4358 = {'type': 'git', 'url': 'git://github.com/Stormherz/tablify'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
