@@ -242,6 +242,7 @@ let scmnr.3669 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rake'}
 let scmnr.4269 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scmnr.4280 = {'type': 'git', 'url': 'git://github.com/tpope/vim-bundler'}
 let scmnr.4300 = {'type': 'git', 'url': 'git://github.com/tpope/vim-eunuch'}
+let scmnr.4359 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rsi'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
