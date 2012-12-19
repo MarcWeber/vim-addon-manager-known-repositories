@@ -2,7 +2,7 @@
 "   This file associates plugin names with manually maintained version control
 "   sources (eg github, bitbucket etc)
 "
-" HOWTO: 
+" HOWTO:
 "   copy paste a line, consider taking care about the "author comment" and
 "   "SPACES" and you're ready to submit a "pull request" or "send" a small patch to
 "   "us". Trouble? "contact us", see "VAM docs".
@@ -18,7 +18,7 @@
 "     script id because the name happens to be changed more often than a script_id.
 "     The name is automatically generated from the title found on www.vim.org
 "     with some characters removed.
-" 
+"
 " No:
 "    let scm['new-unique-name'] = {dictionary}
 "
@@ -40,22 +40,22 @@
 " Copy Hooks:
 "   See samples using vamkr#AddCopyHook below, mind the dashes line
 "
-" NOTE: Before the first line go authors having at least one SCM source without 
+" NOTE: Before the first line go authors having at least one SCM source without
 "       any hooks that is also present on vim.org.
-"       Before the second line go authors whose sources all have hooks or are 
+"       Before the second line go authors whose sources all have hooks or are
 "       non-SCM ones. Not very useful, just something like “shame on them” list.
 "       Before the third line go authors without any vim.org sources at all.
-"       After the third line go authors without working sources at all. It is 
+"       After the third line go authors without working sources at all. It is
 "       a list of what can be possibly improved in the future.
 "
 " Commenting:
 "   Everything which is useful to know should be put into a comment if it is non
 "   obvious
 "
-" Syntax Restrictions: See tools/checkdb.vim. This file is made for using in 
-"                      hooks: if check fails vim will exit with non-zero status 
-"                      (:cquit). Prefered way of sourcing: while in the 
-"                      repository root directory (mercurial and git hooks are 
+" Syntax Restrictions: See tools/checkdb.vim. This file is made for using in
+"                      hooks: if check fails vim will exit with non-zero status
+"                      (:cquit). Prefered way of sourcing: while in the
+"                      repository root directory (mercurial and git hooks are
 "                      launched from there) do
 "                         vim -u NONE -N -S tools/checkdb.vim
 "                      . If hook failed see *.fail files in the repository root.
@@ -109,7 +109,7 @@ let scm['vim-addon-toc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vi
 let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby'}
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
 let scm['vim-addon-text-objects'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-text-objects'}
-" There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed 
+" There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed
 " anywhere thus removed
 let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
 " override snipmate. There is really no reason anymore to use the old version
@@ -172,7 +172,7 @@ let scm['textobj-django-template'] = {'type': 'git', 'url': 'git://github.com/ka
 let scm['flymake'] = {'type': 'git', 'url': 'git://github.com/kana/vim-flymake'}
 
 " Honza Pokorny
-" snipmate-snippets depends on snipmate so installing the snippets should be 
+" snipmate-snippets depends on snipmate so installing the snippets should be
 " enough
 let scmnr.3633 = {'type': 'git', 'url': 'git://github.com/honza/snipmate-snippets'}
 
@@ -215,7 +215,7 @@ let scm['zvim'] = {'type': 'hg', 'url': 'https://bitbucket.org/ZyX_I/zvim'}
 
 " David Terei
 let scmnr.3022 = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking'}
-" It is not a copy-paste bug, description of both plugins point to the same 
+" It is not a copy-paste bug, description of both plugins point to the same
 " repository
 let scmnr.2828 = {'type': 'git', 'url': 'git://github.com/dterei/VimCobaltColourScheme'}
 let scmnr.3439 = {'type': 'git', 'url': 'git://github.com/dterei/VimCobaltColourScheme'}
@@ -336,8 +336,8 @@ let scmnr.3659 = {'type': 'hg', 'url': 'https://bitbucket.org/mikehart/lycosaexp
 let scmnr.3510 = {'type': 'hg', 'url': 'https://bitbucket.org/pentie/vimrepress'}
 
 " Dejan Noveski
-" This plugin has both mercurial and github repository. I have chosen to use 
-" first one, but I have no idea which is original and which is generated 
+" This plugin has both mercurial and github repository. I have chosen to use
+" first one, but I have no idea which is original and which is generated
 " automatically
 let scmnr.3416 = {'type': 'hg', 'url': 'https://bitbucket.org/dekomote/w3cvalidate.vim'}
 
@@ -346,7 +346,7 @@ let scmnr.2720 = {'type': 'hg', 'url': 'https://bitbucket.org/fallintothis/arc-v
 
 " Stephen Bach
 let scmnr.1890 = {'type': 'git', 'url': 'git://github.com/sjbach/lusty'}
-" It is not a copy-paste bug, description of both plugins point to the same 
+" It is not a copy-paste bug, description of both plugins point to the same
 " repository
 let scmnr.2050 = {'type': 'git', 'url': 'git://github.com/sjbach/lusty'}
 
@@ -434,7 +434,7 @@ let scm['t-syntax'] = {'type': 'hg', 'url': 'https://bitbucket.org/sharat87/t-sy
 let scm['gotofile@sharat87'] = {'type': 'hg', 'url': 'https://bitbucket.org/sharat87/vim-gotofile'}
 
 " ali va
-" Yes, these are git repositories on bitbucket. Unfortunately, git:// URLs are 
+" Yes, these are git repositories on bitbucket. Unfortunately, git:// URLs are
 " not supported.
 let scmnr.3853 = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-dokuwiki'}
 let scm['toggletoolbar'] = {'type': 'git', 'url': 'https://bitbucket.org/aliva/vim-toggletoolbar'}
@@ -461,7 +461,7 @@ let scmnr.2226 = {'type': 'hg', 'url': 'https://code.google.com/p/vimwiki', 'add
 let scmnr.1512 = {'type': 'hg', 'url': 'http://www.blacktrash.org/hg/screenpaste'}
 
 " Ted Pavlic
-" Note: it is not an actual vim script, it is a command-line (shell 
+" Note: it is not an actual vim script, it is a command-line (shell
 " command-line) utility:
 let scmnr.2182 = {'type': 'hg', 'url': 'http://hg.tedpavlic.com/vimlatex/'}
 
@@ -765,9 +765,9 @@ let scm['vim-plugin-bundling'] = {'type': 'git', 'url': 'git://github.com/godlyg
 let scm['windowlayout'] = {'type': 'git', 'url': 'git://github.com/godlygeek/windowlayout'}
 
 " Josh Adams
-" Did Matt Wozniski create another user to show the real author? On the script 
-" page it is said “This script was not created by me!  I'm just uploading it to 
-" vim.org because it's useful!”. And https://github.com/godlygeek shows that it 
+" Did Matt Wozniski create another user to show the real author? On the script
+" page it is said “This script was not created by me!  I'm just uploading it to
+" vim.org because it's useful!”. And https://github.com/godlygeek shows that it
 " belongs to Matt Wozniski, not to Josh Adams.
 let scmnr.3464 = {'type': 'git', 'url': 'git://github.com/godlygeek/tabular'}
 
@@ -830,7 +830,7 @@ let scmnr.3770 = {'type': 'git', 'url': 'git://github.com/klen/python-mode'}
 
 " Rafael Kitover
 let scmnr.2526 = {'type': 'git', 'url': 'git://github.com/rkitover/perl-vim-mxd'}
-" Note: it is not an actual vim script, it is a command-line (shell 
+" Note: it is not an actual vim script, it is a command-line (shell
 " command-line) utility:
 let scmnr.1723 = {'type': 'git', 'url': 'git://github.com/rkitover/vimpager'}
 
@@ -1845,7 +1845,7 @@ let scmnr.4355 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-rst-ft
 let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat'}
 
 " Alessandro Di Martino
-let scmnr.4339 = {'type': 'git', 'url': 'git://github.com/zeis/kolor'}
+let scmnr.4339 = {'type': 'git', 'url': 'git://github.com/zeis/vim-kolor'}
 
 " Pavel Pertsev
 let scmnr.4349 = {'type': 'git', 'url': 'git://github.com/morhetz/gruvbox'}
@@ -1867,8 +1867,8 @@ let scmnr.4363 = {'type': 'git', 'url': 'git://github.com/Absolight/vim-bind'}
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
-" Script page and the only download suggest using git, but referenced repository 
-" is absent. Adding it here so that VAM users will get error from git if they 
+" Script page and the only download suggest using git, but referenced repository
+" is absent. Adding it here so that VAM users will get error from git if they
 " ignore deprecation instead of “Don’t know how to unpack” error.
 let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/ewiplayer/vim-scala'}
 
