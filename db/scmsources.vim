@@ -1858,6 +1858,12 @@ unlet hook
 " Vladimir Shvets
 let scmnr.4358 = {'type': 'git', 'url': 'git://github.com/Stormherz/tablify'}
 
+" Dmitry Petrov
+let scmnr.4361 = {'type': 'git', 'url': 'git://github.com/can3p/incbool.vim'}
+
+" Mathieu Arnold
+let scmnr.4363 = {'type': 'git', 'url': 'git://github.com/Absolight/vim-bind'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
