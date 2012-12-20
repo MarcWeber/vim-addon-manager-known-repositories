@@ -45,56 +45,58 @@ let add_by_snr.2493={'script-type': 'after/syntax'}
 "▶1 Fixing target directories
 let add_by_snr.1542={'target_dir': 'autoload'}
 let add_by_snr.1662={'target_dir': 'autoload'}
-let add_by_snr.2611={'strip-components' : 0}
-let add_by_snr.2572={'strip-components' : 0}
-let add_by_snr.2429={'strip-components' : 0}
+let add_by_snr.2611={'strip-components': 0}
+let add_by_snr.2572={'strip-components': 0}
+let add_by_snr.2429={'strip-components': 0}
 "▶1 Deprecations
-let add_by_snr.1780={'deprecated' : "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"}
-let add_by_snr.1662={'deprecated' : "you should consider using ruby-vim instead"}
-let add_by_snr.113 ={'deprecated' : "greputils supersedes this plugin"}
+let add_by_snr.1780={'deprecated': "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"}
+let add_by_snr.1662={'deprecated': "you should consider using ruby-vim instead"}
+let add_by_snr.113 ={'deprecated': "greputils supersedes this plugin"}
 
-let add_by_name['lazysnipmate']={'deprecated' : "lazysnipmate’s update is just snipmate"}
+let add_by_name['lazysnipmate']={'deprecated': "lazysnipmate’s update is just snipmate"}
 " I'm not sure its fair deprecating the plugin - because behavior differs
-" let add_by_snr.2736={'deprecated' : "consider using vim-addon-syntax-checker because it is easier to adopt its behaviour to your needs"}
-let add_by_name['syntastic2']={'deprecated' : "renamed to vim-addon-syntax-checker"}
+" let add_by_snr.2736={'deprecated': "consider using vim-addon-syntax-checker because it is easier to adopt its behaviour to your needs"}
+let add_by_name['syntastic2']={'deprecated': "renamed to vim-addon-syntax-checker"}
 
-let add_by_snr.1963 = {'deprecated' : "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
+let add_by_snr.1963 = {'deprecated': "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
 
-let add_by_snr.3184={'deprecated' : "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"}
-let add_by_snr.3325={'deprecated' : "All functions from this plugin are available through `os' resource of @/os frawor module"}
-let add_by_snr.3187={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
-let add_by_snr.3188={'deprecated' : "Deprecated in favour of FWC DSL defined in frawor plugin"}
-let add_by_snr.3186={'deprecated' : "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
+let add_by_snr.3184={'deprecated': "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"}
+let add_by_snr.3325={'deprecated': "All functions from this plugin are available through `os' resource of @/os frawor module"}
+let add_by_snr.3187={'deprecated': "Deprecated in favour of FWC DSL defined in frawor plugin"}
+let add_by_snr.3188={'deprecated': "Deprecated in favour of FWC DSL defined in frawor plugin"}
+let add_by_snr.3186={'deprecated': "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
 let consider_valv="Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"
-let add_by_snr.727 ={'deprecated' : consider_valv}
-let add_by_snr.441 ={'deprecated' : consider_valv}
-let add_by_snr.3393={'deprecated' : consider_valv}
+let add_by_snr.727 ={'deprecated': consider_valv}
+let add_by_snr.441 ={'deprecated': consider_valv}
+let add_by_snr.3393={'deprecated': consider_valv}
 
-let add_by_snr.1318={'deprecated' : "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
-let add_by_snr.2540={'deprecated' : "snipMate is an alias to snipmate now - so use 'snipmate'"}
+let add_by_snr.1318={'deprecated': "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
+let add_by_snr.2540={'deprecated': "snipMate is an alias to snipmate now - so use 'snipmate'"}
 
-let add_by_snr.1272={'deprecated' : "Superseeded by vimscript #1431 (checksyntax)"}
-let add_by_snr.3233={'deprecated' : "Superseeded by Buffersaurus (vimscript #3620)"}
-let add_by_snr.3134={'deprecated' : "This functionality has been rolled into tpope's vim-rvm"}
-let add_by_snr.108 ={'deprecated' : "Superseeded by vimscript #197 (genutils)"}
-let add_by_snr.1815={'deprecated' : "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
-let add_by_snr.1816={'deprecated' : "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
-let add_by_snr.2518={'deprecated' : "This plugin has been replaced with the HyperList plugin (vimscript #4006)"}
+let add_by_snr.1272={'deprecated': "Superseeded by vimscript #1431 (checksyntax)"}
+let add_by_snr.3233={'deprecated': "Superseeded by Buffersaurus (vimscript #3620)"}
+let add_by_snr.3134={'deprecated': "This functionality has been rolled into tpope's vim-rvm"}
+let add_by_snr.108 ={'deprecated': "Superseeded by vimscript #197 (genutils)"}
+let add_by_snr.1815={'deprecated': "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
+let add_by_snr.1816={'deprecated': "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
+let add_by_snr.2518={'deprecated': "This plugin has been replaced with the HyperList plugin (vimscript #4006)"}
 
-let add_by_snr.3874={'deprecated' : "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
-let add_by_snr.287 ={'deprecated' : "This script has been retired. You should use #273"}
+let add_by_snr.3874={'deprecated': "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
+let add_by_snr.287 ={'deprecated': "This script has been retired. You should use #273"}
 
-let add_by_snr.2554={'deprecated' : "Author says it is buggy and thus should not be used"}
+let add_by_snr.2554={'deprecated': "Author says it is buggy and thus should not be used"}
 
-let add_by_snr.2850={'deprecated' : "Functionality of this plugin is present in current NERDTree version"}
+let add_by_snr.2850={'deprecated': "Functionality of this plugin is present in current NERDTree version"}
 
-let add_by_snr.103 ={'deprecated' : "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
+let add_by_snr.103 ={'deprecated': "This plugin states that it requires Johannes Zellner's ScratchBuffer.vim plugin, but it is not available"}
 let add_by_snr.159 ={'deprecated': "No more maintained, use “minibufexplorer” instead. Requires git or you’ll have vimscript #3239 from vim.org which is itself deprecated (changed maintainer, new one posts only to git)"}
 
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
 let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
+
+let add_by_snr.3881={'deprecated': "Superseeded by github.com/Lokaltog/powerline"}
 
 let prefer_flake8 = "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"
 let add_by_snr.3160={'deprecated': prefer_flake8}
