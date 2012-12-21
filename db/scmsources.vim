@@ -476,6 +476,7 @@ let scmnr.3882 = {'type': 'git', 'url': 'git://github.com/Rykka/easydigraph.vim'
 let scmnr.4061 = {'type': 'git', 'url': 'git://github.com/Rykka/mathematic.vim'}
 let scmnr.4112 = {'type': 'git', 'url': 'git://github.com/Rykka/riv.vim'}
 let scmnr.4221 = {'type': 'git', 'url': 'git://github.com/Rykka/localbundle.vim'}
+let scmnr.4365 = {'type': 'git', 'url': 'git://github.com/Rykka/trans.vim'}
 
 " Andrew Radev
 let scmnr.3613 = {'type': 'git', 'url': 'git://github.com/AndrewRadev/splitjoin.vim'}
