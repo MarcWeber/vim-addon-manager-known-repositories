@@ -1865,6 +1865,9 @@ let scmnr.4361 = {'type': 'git', 'url': 'git://github.com/can3p/incbool.vim'}
 " Mathieu Arnold
 let scmnr.4363 = {'type': 'git', 'url': 'git://github.com/Absolight/vim-bind'}
 
+" Vivien Didelot
+let scmnr.4369 = {'type': 'git', 'url': 'git://github.com/v0n/vim-addon-linux-coding-style'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
