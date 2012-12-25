@@ -15,7 +15,7 @@
 "reStructuredText_ftplugin":{"archive_name":"ft_rst.vmb","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19172","version":"1.0","vim_script_nr":4355},
 "indentLine":{"archive_name":"indentLine.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19171","version":"1.0.1","vim_script_nr":4354},
 "line_length":{"archive_name":"line_length.vmb.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19166","version":"0.0.1","vim_script_nr":4353},
-"tex_alt":{"archive_name":"tex_alt.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19206","version":"0.2","vim_script_nr":4352},
+"tex_alt":{"archive_name":"tex_alt.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19238","version":"0.21","vim_script_nr":4352},
 "whitespaste":{"archive_name":"whitespaste.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19155","version":"0.1.0","vim_script_nr":4351},
 "Inferno_sh_syntax":{"archive_name":"infsh.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19153","version":"1.10","vim_script_nr":4350},
 "gruvbox":{"archive_name":"gruvbox-0.0.8.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19150","version":"0.0.8","vim_script_nr":4349},
