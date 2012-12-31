@@ -13544,5 +13544,20 @@
    ],
    "4373" : [
       "sh%4373"
+   ],
+   "4374" : [
+      "pyflakes-nopython"
+   ],
+   "4375" : [
+      "sleuth"
+   ],
+   "4376" : [
+      "vim-maximizer"
+   ],
+   "4377" : [
+      "vim-tags"
+   ],
+   "4378" : [
+      "smartpairs"
    ]
 }
