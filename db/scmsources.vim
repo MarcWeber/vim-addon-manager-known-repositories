@@ -243,6 +243,7 @@ let scmnr.4269 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scmnr.4280 = {'type': 'git', 'url': 'git://github.com/tpope/vim-bundler'}
 let scmnr.4300 = {'type': 'git', 'url': 'git://github.com/tpope/vim-eunuch'}
 let scmnr.4359 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rsi'}
+let scmnr.4375 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sleuth'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -1730,6 +1731,8 @@ let scmnr.4179 = {'type': 'git', 'url': 'git://github.com/john2x/x-marks-the-spo
 " Szymon Wrozynski
 let scmnr.4180 = {'type': 'git', 'url': 'git://github.com/szw/vim-dict'}
 let scmnr.4183 = {'type': 'git', 'url': 'git://github.com/szw/vim-g'}
+let scmnr.4376 = {'type': 'git', 'url': 'git://github.com/szw/vim-maximizer'}
+let scmnr.4377 = {'type': 'git', 'url': 'git://github.com/szw/vim-tags'}
 
 " Niklas Thörne
 let scmnr.4184 = {'type': 'git', 'url': 'git://github.com/nthorne/vim-pybreak'}
@@ -1867,6 +1870,9 @@ let scmnr.4363 = {'type': 'git', 'url': 'git://github.com/Absolight/vim-bind'}
 
 " Vivien Didelot
 let scmnr.4369 = {'type': 'git', 'url': 'git://github.com/v0n/vim-addon-linux-coding-style'}
+
+" Alexander Gorkunov
+let scmnr.4378 = {'type': 'git', 'url': 'git://github.com/gorkunov/smartpairs.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
