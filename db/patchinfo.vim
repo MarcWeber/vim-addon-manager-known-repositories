@@ -226,22 +226,17 @@ let mai_snr_deps.2782 = [2692]
 let mai_snr_deps.3249 = [2540]
 let mai_snr_deps.3664 = [2540]
 let mai_snr_deps.4276 = [2540, 2926]
-"▶1 Missing runtimepath information for vim.org plugins
-let mai_snr.2883 = {'runtimepath': 'vimlib'}
-let mai_snr.2824 = {'runtimepath': 'vimlib'}
-let mai_snr.2847 = {'runtimepath': 'vimlib'}
-let mai_snr.663  = {'runtimepath': 'vim'}
-"▶1 Missing information for kana sources
+" ▶2 Missing information for kana sources
 let mai_snr_deps.2336 = [2335]
 let mai_snr_deps.2403 = [2402]
 let mai_snr_deps.3892 = [3891]
 " Script 2782 above, in operator-user dependants
-"▶2 ku dependants
+" ku dependants
 let mai_snr_deps.2410 = [2337]
 let mai_snr_deps.2622 = [2337]
 let mai_snr_deps.2343 = [2337, 2338]
 let mai_snr_deps.2344 = [2337, 2335, 2336]
-"▶2 textobj-user dependants
+" textobj-user dependants
 let mai_snr_deps.2716 = [2100]
 let mai_snr_deps.2484 = [2100]
 let mai_snr_deps.2355 = [2100]
@@ -252,6 +247,10 @@ let mai_snr_deps.2610 = [2100]
 let mai_snr_deps.2415 = [2100]
 let mai_snr_deps.2101 = [2100]
 let mai_snr_deps.3886 = [2100]
-"▲1
+"▶1 Missing runtimepath information for vim.org plugins
+let mai_snr.2883 = {'runtimepath': 'vimlib'}
+let mai_snr.2824 = {'runtimepath': 'vimlib'}
+let mai_snr.2847 = {'runtimepath': 'vimlib'}
+let mai_snr.663  = {'runtimepath': 'vim'}
 let r=[add_by_snr, add_by_name, mai_snr, mai_snr_deps]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
