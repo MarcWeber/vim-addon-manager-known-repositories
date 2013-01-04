@@ -53,12 +53,9 @@ let add_by_snr.1780={'deprecated': "The syntax doesn't highlight \"\"\" strings 
 let add_by_snr.1662={'deprecated': "you should consider using ruby-vim instead"}
 let add_by_snr.113 ={'deprecated': "greputils supersedes this plugin"}
 
-let add_by_name['lazysnipmate']={'deprecated': "lazysnipmate’s update is just snipmate"}
-" I'm not sure its fair deprecating the plugin - because behavior differs
-" let add_by_snr.2736={'deprecated': "consider using vim-addon-syntax-checker because it is easier to adopt its behaviour to your needs"}
-let add_by_name['syntastic2']={'deprecated': "renamed to vim-addon-syntax-checker"}
+let add_by_snr.3432={'deprecated': "lazysnipmate’s update is just snipmate"}
 
-let add_by_snr.1963 = {'deprecated': "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
+let add_by_snr.1963={'deprecated': "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
 
 let add_by_snr.3184={'deprecated': "Vimpluginloader evolved into unmaintainable blob. Use frawor if you seek for framework"}
 let add_by_snr.3325={'deprecated': "All functions from this plugin are available through `os' resource of @/os frawor module"}
@@ -66,10 +63,9 @@ let add_by_snr.3187={'deprecated': "Deprecated in favour of FWC DSL defined in f
 let add_by_snr.3188={'deprecated': "Deprecated in favour of FWC DSL defined in frawor plugin"}
 let add_by_snr.3186={'deprecated': "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
-let consider_valv="Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"
-let add_by_snr.727 ={'deprecated': consider_valv}
-let add_by_snr.441 ={'deprecated': consider_valv}
-let add_by_snr.3393={'deprecated': consider_valv}
+let add_by_snr.727 ={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
+let add_by_snr.441 ={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
+let add_by_snr.3393={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
 
 let add_by_snr.1318={'deprecated': "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated': "snipMate is an alias to snipmate now - so use 'snipmate'"}
@@ -98,14 +94,12 @@ let add_by_snr.3524={'deprecated': "Script page and the only download suggest us
 
 let add_by_snr.3881={'deprecated': "Superseeded by github.com/Lokaltog/powerline"}
 
-let prefer_flake8 = "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"
-let add_by_snr.3160={'deprecated': prefer_flake8}
-let add_by_snr.3161={'deprecated': prefer_flake8}
+let add_by_snr.3160={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
+let add_by_snr.3161={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
 
-let suggest_syntastic="Consider giving syntastic a try instead. It supports more backends"
-let add_by_snr.2441={'deprecated': suggest_syntastic}
-let add_by_snr.2914={'deprecated': suggest_syntastic}
-let add_by_snr.3430={'deprecated': suggest_syntastic}
+let add_by_snr.2441={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
+let add_by_snr.2914={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
+let add_by_snr.3430={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
 let add_by_snr.3927={'deprecated': "Also pay attention to alternative syntastic which runs flake and can do much more"}
 
 let add_by_snr.4043={'deprecated': "The author recommends using neosnippet instead"}
