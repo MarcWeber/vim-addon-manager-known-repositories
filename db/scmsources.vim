@@ -1877,6 +1877,9 @@ let scmnr.4378 = {'type': 'git', 'url': 'git://github.com/gorkunov/smartpairs.vi
 " Bryan Richter
 let scmnr.4379 = {'type': 'git', 'url': 'git://github.com/chreekat/vim-paren-crosshairs'}
 
+" Eduardo Lopez
+let scmnr.4382 = {'type': 'git', 'url': 'git://github.com/tapichu/asm2d-vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
