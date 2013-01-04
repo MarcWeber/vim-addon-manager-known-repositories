@@ -50,6 +50,7 @@ try
     let afterline=0
     let lnr=0
     "▶1 Validate lines
+    let def={'snr': {}, 'name': {}}
     for line in lines
         let lnr+=1
         if empty(line) && empty(topvars)
@@ -99,16 +100,25 @@ try
             elseif !has_key(snr_to_name, match[1])
                 throw lnr.':Absent snr: '.match[1]
             endif
+            if has_key(def.snr, match[1])
+                throw lnr.':Duplicating entry for scmnr '.match[1].' (previous on line '.def.snr[match[1]].'): '.line
+            endif
+            let def.snr[match[1]]=lnr
             let curtype=CheckVal(match[2], lnr.':Invalid scmnr value %s: %s', curauthor)
             let curauthor.hasvo=1
             let curauthor.vo=1
         elseif line=~#'^let scm'
             let match=matchlist(line, 'scm\v\[\''([a-zA-Z0-9_\-]+)(\@[a-zA-Z0-9_\-]+|\#[a-zA-Z0-9_\-]+%(\%\d+)?)?\''\]\s+\=\s+(.*)$')
+            let name=match[1].match[2]
             if empty(match)
                 throw lnr.':Invalid scm line: '.line
-            elseif has_key(www_vim_org, match[1].match[2])
-                throw lnr.':Key '.match[1].match[2].' already present in www_vim_org dictionary'
+            elseif has_key(www_vim_org, name)
+                throw lnr.':Key '.name.' already present in www_vim_org dictionary'
             endif
+            if has_key(def.name, name)
+                throw lnr.':Duplicating scm '.name.' (previous on line '.def.name[name].'): '.line
+            endif
+            let def.name[name]=lnr
             let curtype=CheckVal(match[3], lnr.':Invalid scm value %s: %s', curauthor)
             if curauthor.vo
                 let curauthor.vo=0
