@@ -134,13 +134,11 @@ let scmnr.2619 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-funct
 let scmnr.2275 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-fold'}
 let scmnr.2610 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-entire'}
 let scmnr.2415 = {'type': 'git', 'url': 'git://github.com/kana/vim-textobj-diff'}
-let scmnr.1697 = {'type': 'git', 'url': 'git://github.com/kana/vim-surround'}
 let scmnr.2467 = {'type': 'git', 'url': 'git://github.com/kana/vim-submode'}
 let scmnr.2470 = {'type': 'git', 'url': 'git://github.com/kana/vim-smartword'}
 let scmnr.2673 = {'type': 'git', 'url': 'git://github.com/kana/vim-smarttill'}
 let scmnr.2290 = {'type': 'git', 'url': 'git://github.com/kana/vim-smartchr'}
 let scmnr.2291 = {'type': 'git', 'url': 'git://github.com/kana/vim-skeleton'}
-let scmnr.2136 = {'type': 'git', 'url': 'git://github.com/kana/vim-repeat'}
 let scmnr.2335 = {'type': 'git', 'url': 'git://github.com/kana/vim-metarw'}
 let scmnr.2336 = {'type': 'git', 'url': 'git://github.com/kana/vim-metarw-git'}
 let scmnr.2274 = {'type': 'git', 'url': 'git://github.com/kana/vim-flydiff'}
@@ -504,7 +502,6 @@ let scmnr.3617 = {'type': 'git', 'url': 'git://github.com/Bogdanp/quicksilver.vi
 let scmnr.4047 = {'type': 'git', 'url': 'git://github.com/Bogdanp/rbrepl.vim'}
 
 " Yo-An Lin
-let scmnr.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
 let scmnr.2885 = {'type': 'git', 'url': 'git://github.com/c9s/gsession.vim'}
 let scmnr.2883 = {'type': 'git', 'url': 'git://github.com/c9s/growlnotify.vim'}
 let scmnr.2824 = {'type': 'git', 'url': 'git://github.com/c9s/libperl.vim'}
@@ -514,19 +511,19 @@ let scmnr.2847 = {'type': 'git', 'url': 'git://github.com/c9s/pod-helper.vim'}
 let scmnr.2852 = {'type': 'git', 'url': 'git://github.com/c9s/perlomni.vim'}
 let scmnr.2893 = {'type': 'git', 'url': 'git://github.com/c9s/filetype-completion.vim'}
 let scmnr.2922 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
-let scmnr.2913 = {'type': 'git', 'url': 'git://github.com/c9s/vimomni.vim'}
 let scmnr.2925 = {'type': 'git', 'url': 'git://github.com/c9s/apt-complete.vim'}
-let scmnr.2954 = {'type': 'git', 'url': 'git://github.com/c9s/hypergit.vim'}
 let scmnr.2958 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
 " Duplicate
 let scmnr.2959 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
-let scmnr.3009 = {'type': 'git', 'url': 'git://github.com/c9s/treemenu.vim'}
 let scmnr.2995 = {'type': 'git', 'url': 'git://github.com/c9s/colorselector.vim'}
 let scmnr.3009 = {'type': 'git', 'url': 'git://github.com/c9s/treemenu.vim'}
 let scmnr.3544 = {'type': 'git', 'url': 'git://github.com/c9s/cascading.vim'}
 let scmnr.3005 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/c9s/simple-commenter.vim'}, {'simplecommenter.vim': 'plugin'})
 let scm['vim-dev-plugin'] = {'type': 'git', 'url': 'git://github.com/c9s/vim-dev-plugin'}
 let scm['jifty'] = {'type': 'git', 'url': 'git://github.com/c9s/jifty.vim'}
+" The following repositories are referenced on vim.org, but not present on github:
+" let scmnr.2784 = {'type': 'git', 'url': 'git://github.com/c9s/template-init.vim'}
+" let scmnr.2923 = {'type': 'git', 'url': 'git://github.com/c9s/std.vim'}
 
 " wei ko kao
 let scmnr.3282 = {'type': 'git', 'url': 'git://github.com/othree/eregex.vim'}
@@ -779,9 +776,6 @@ let scmnr.2611 = {'type': 'git', 'url': 'git://github.com/drmingdrmer/xptemplate
 " Holger Rapp
 let scmnr.2715 = {'type': 'git', 'url': 'git://github.com/SirVer/ultisnips'}
 
-" Bruno Michel
-let scmnr.2416 = {'type': 'git', 'url': 'git://github.com/nono/jquery.vim'}
-
 " Drew Neil
 let scmnr.3382 = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-textobj-rubyblock'}
 let scm['vim-pml'] = {'type': 'git', 'url': 'git://github.com/nelstrom/vim-pml'}
@@ -838,7 +832,7 @@ let scmnr.1723 = {'type': 'git', 'url': 'git://github.com/rkitover/vimpager'}
 
 " Josh O'Rourke
 let scmnr.1995 = {'type': 'git', 'url': 'git://github.com/jpo/vim-railscasts-theme'}
-" Not present on github:
+" The following repository is referenced on vim.org, but not present on github:
 " let scmnr.2517 = {'type': 'git', 'url': 'git://github.com/jpo/vim-norwaytoday-theme'}
 
 " Will Gray
@@ -1540,9 +1534,10 @@ let scmnr.3975 = {'type': 'git', 'url': 'git://github.com/xieyu/Finder'}
 let scmnr.3979 = {'type': 'git', 'url': 'git://github.com/mnick/vim-pomodoro'}
 
 " Jon Cairns
-let scmnr.3780 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpqa'}
+let scmnr.3980 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpqa'}
 let scmnr.3992 = {'type': 'git', 'url': 'git://github.com/joonty/vim-sauce'}
 let scmnr.4054 = {'type': 'git', 'url': 'git://github.com/joonty/vim-phpunitqf'}
+let scmnr.4074 = {'type': 'git', 'url': 'git://github.com/joonty/vim-xdebug'}
 let scmnr.4088 = {'type': 'git', 'url': 'git://github.com/joonty/vim-taggatron'}
 let scmnr.4170 = {'type': 'git', 'url': 'git://github.com/joonty/vdebug'}
 
@@ -1968,9 +1963,6 @@ let scmnr.3851 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mich
 " The following plugin does not have a separate repository:
 let scmnr.3674 = {'url': 'https://github.com/graudeejs/dot.vim/raw/master/colors/universal-blue.vim', 'archive_name': 'universal-blue.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
-" Jevgeni Tarasov
-let scmnr.3571 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wolfsund/terse'}, {'terse.vim': 'plugin'})
-
 " tien le
 let scmnr.3414 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/tienle/bocau'}, {'bocau.vim': 'colors'})
 
@@ -2128,6 +2120,10 @@ let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-
 
 " Weakish Jiang
 " let scm['rc'] = {'type': 'git', 'url': 'git://gist.github.com/986788'}
+
+" Jevgeni Tarasov
+" The following repository is referenced on vim.org, but not present on github:
+" let scmnr.3570 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wolfsund/terse'}, {'terse.vim': 'plugin'})
 
 " r: see vamkr#GetVim
 let r=[scm, scmnr]
