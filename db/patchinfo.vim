@@ -1,6 +1,5 @@
 " See documentation at vamkr#GetVim
 let add_by_snr = {}
-let add_by_name = {}
 let mai_snr = {}
 let mai_snr_deps = {}
 "▶1 Hooks
@@ -251,5 +250,5 @@ let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
 let mai_snr.2847 = {'runtimepath': 'vimlib'}
 let mai_snr.663  = {'runtimepath': 'vim'}
-let r=[add_by_snr, add_by_name, mai_snr, mai_snr_deps]
+let r=[add_by_snr, mai_snr, mai_snr_deps]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲

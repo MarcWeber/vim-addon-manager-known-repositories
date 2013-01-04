@@ -220,13 +220,8 @@ try
     let add_keys={'script-type': '', 'target_dir': '', 'strip-components': 0, 'deprecated': ''}
     call map(add_keys, 'type(v:val)')
     let checkid=numcheckid
-    "▶1 Check patchinfo values: add_by_snr and add_by_name
-    for [id, add] in items(patchinfo[0])+[[0, 1]]+items(patchinfo[1])
-        if id is 0
-            unlet add
-            let checkid=strcheckid
-            continue
-        endif
+    "▶1 Check patchinfo values: add_by_snr
+    for [id, add] in items(patchinfo[0])
         let s=id.' '.string(add)
         if type(add)!=type({})
             throw 'Not a dict: '.s
@@ -240,7 +235,7 @@ try
         unlet add
     endfor
     "▶1 Check patchinfo values: mai_snr
-    for [id, mai] in items(patchinfo[2])
+    for [id, mai] in items(patchinfo[1])
         let s=id.' '.string(mai)
         if type(mai)!=type({})
             throw 'Not a dict: '.s
@@ -254,7 +249,7 @@ try
         unlet mai
     endfor
     "▶1 Check patchinfo values: mai_snr_deps
-    for [id, msd] in items(patchinfo[3])
+    for [id, msd] in items(patchinfo[2])
         let s=id.' '.string(msd)
         if type(msd)!=type([])
             throw 'Not a list: '.s
@@ -266,7 +261,7 @@ try
     endfor
     "▶1 Prepare variables for patchinfo lines validating
     let lines=readfile('db/patchinfo.vim')
-    let topvars=['add_by_snr', 'add_by_name', 'mai_snr', 'mai_snr_deps']
+    let topvars=['add_by_snr', 'mai_snr', 'mai_snr_deps']
     let alltopvars=copy(topvars)
     let prevempty=0
     let lnr=0

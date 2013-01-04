@@ -79,7 +79,7 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, add_by_name, mai_snr, mai_snr_deps]=vamkr#LoadDBFile('patchinfo.vim')
+    let [add_by_snr, mai_snr, mai_snr_deps]=vamkr#LoadDBFile('patchinfo.vim')
     for [snr, deps] in items(mai_snr_deps)
         if !has_key(mai_snr, snr)
             let mai_snr[snr]={}
@@ -90,6 +90,7 @@ function! vamkr#PatchSources(sources, snr_to_name)
     endfor
     call filter(mai_snr, 'has_key(a:snr_to_name, v:key)')
     call map(mai_snr, 'extend(add_by_snr, {v:key : extend(get(add_by_snr, v:key, {}), {"addon-info": v:val})})')
+    let add_by_name={}
     call map(add_by_snr, 'extend(add_by_name, {a:snr_to_name[v:key] : v:val})')
     call map(filter(add_by_name, 'has_key(a:sources, v:key)'), 'extend(a:sources[v:key], v:val)')
     return a:sources
