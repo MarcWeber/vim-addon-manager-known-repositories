@@ -1,6 +1,6 @@
 " See documentation at vamkr#GetVim
-let add_by_snr={}
-let add_by_name={}
+let add_by_snr = {}
+let add_by_name = {}
 let mai_snr = {}
 let mai_snr_deps = {}
 "▶1 Hooks
@@ -109,11 +109,8 @@ let add_by_snr.3430={'deprecated': suggest_syntastic}
 let add_by_snr.3927={'deprecated': "Also pay attention to alternative syntastic which runs flake and can do much more"}
 
 let add_by_snr.4043={'deprecated': "The author recommends using neosnippet instead"}
-
 "▶1 Missing dependencies
 let mai_snr_deps.1984 = [3252]
-let mai_snr_deps.3574 = [2975]
-let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.2665 = [3464]
 let mai_snr_deps.2972 = [2806, 2971]
 let mai_snr_deps.884  = [294]
@@ -128,7 +125,7 @@ let mai_snr_deps.2742 = [1839]
 let mai_snr_deps.2997 = [293]
 let mai_snr_deps.3729 = [3597]
 let mai_snr_deps.3873 = [3023]
-let mai_snr_deps.3961 = ['vim-rooter']
+let mai_snr_deps.3961 = [4145]
 let mai_snr_deps.3979 = [3431]
 let mai_snr_deps.4079 = [4050, 4056]
 let mai_snr_deps.4116 = [4115, 2544]
@@ -139,6 +136,10 @@ let mai_snr_deps.4253 = [2646]
 let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.4322 = [4321, 1359]
 let mai_snr_deps.4336 = ['vimproc']
+" fugitive dependants
+let mai_snr_deps.3574 = [2975]
+let mai_snr_deps.3509 = [2975]
+let mai_snr_deps.3574 = [2975]
 " CompleteHelper dependants
 let mai_snr_deps.3915 = [3914]
 let mai_snr_deps.4248 = [3914]
