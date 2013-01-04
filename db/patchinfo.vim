@@ -43,14 +43,14 @@ let add_by_snr.2548={'script-type': 'after/syntax'}
 let add_by_snr.2224={'script-type': 'after/syntax'}
 let add_by_snr.2493={'script-type': 'after/syntax'}
 "▶1 Fixing target directories
-let add_by_snr.1542={'target_dir': 'autoload'}
+call extend(add_by_snr.1542, {'target_dir': 'autoload'})
 let add_by_snr.1662={'target_dir': 'autoload'}
 let add_by_snr.2611={'strip-components': 0}
 let add_by_snr.2572={'strip-components': 0}
 let add_by_snr.2429={'strip-components': 0}
 "▶1 Deprecations
-let add_by_snr.1780={'deprecated': "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"}
-let add_by_snr.1662={'deprecated': "you should consider using ruby-vim instead"}
+call extend(add_by_snr.1780, {'deprecated': "The syntax doesn't highlight \"\"\" strings correctly. I don't know how to contact the maintainer. So I moved the file and a fix into vim-addon-scala"})
+call extend(add_by_snr.1662, {'deprecated': "you should consider using ruby-vim instead"})
 let add_by_snr.113 ={'deprecated': "greputils supersedes this plugin"}
 
 let add_by_snr.3432={'deprecated': "lazysnipmate’s update is just snipmate"}
@@ -131,7 +131,6 @@ let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.4322 = [4321, 1359]
 let mai_snr_deps.4336 = ['vimproc']
 " fugitive dependants
-let mai_snr_deps.3574 = [2975]
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3574 = [2975]
 " CompleteHelper dependants
