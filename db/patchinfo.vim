@@ -20,7 +20,7 @@ let mai_snr.687['post-scms-update-hook'] = hook
 unlet hook
 
 let hook = 'execute "lcd" fnameescape(%d."/smartgrep") | call vam#utils#RunShell("make") | lcd -'
-let mai_snr.4295 = {'runtimepath': 'smartgrep'}
+let mai_snr.4295 = {}
 let mai_snr.4295['post-install-hook']     = hook
 let mai_snr.4295['post-update-hook']      = hook
 let mai_snr.4295['post-scms-update-hook'] = hook
@@ -257,5 +257,6 @@ let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
 let mai_snr.2847 = {'runtimepath': 'vimlib'}
 let mai_snr.663  = {'runtimepath': 'vim'}
+call extend(mai_snr.4295, {'runtimepath': 'smartgrep'})
 let r=[add_by_snr, mai_snr, mai_snr_deps]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
