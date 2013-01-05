@@ -1868,12 +1868,19 @@ let scmnr.4369 = {'type': 'git', 'url': 'git://github.com/v0n/vim-addon-linux-co
 
 " Alexander Gorkunov
 let scmnr.4378 = {'type': 'git', 'url': 'git://github.com/gorkunov/smartpairs.vim'}
+let scmnr.4386 = {'type': 'git', 'url': 'git://github.com/gorkunov/smartgf.vim'}
 
 " Bryan Richter
 let scmnr.4379 = {'type': 'git', 'url': 'git://github.com/chreekat/vim-paren-crosshairs'}
 
 " Eduardo Lopez
 let scmnr.4382 = {'type': 'git', 'url': 'git://github.com/tapichu/asm2d-vim'}
+
+" Nicholas FitzRoy-Dale
+let scmnr.4384 = {'type': 'git', 'url': 'git://github.com/nfd/filepirate'}
+
+" Mihai Ciuraru
+let scmnr.4385 = {'type': 'git', 'url': 'git://github.com/mihaifm/bufstop'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 

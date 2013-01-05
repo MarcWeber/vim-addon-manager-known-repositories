@@ -25,6 +25,13 @@ let mai_snr.4295['post-install-hook']     = hook
 let mai_snr.4295['post-update-hook']      = hook
 let mai_snr.4295['post-scms-update-hook'] = hook
 unlet hook
+
+let hook = 'execute "lcd" fnameescape(%d."/plugin") | call vam#utils#RunShell("make") | lcd -'
+let mai_snr.4384 = {}
+let mai_snr.4384['post-install-hook']     = hook
+let mai_snr.4384['post-update-hook']      = hook
+let mai_snr.4384['post-scms-update-hook'] = hook
+unlet hook
 "▶1 Wrong archive names
 " Author wrote that contents of vert.txt should go to vimrc, but it should work 
 " fine as a script in plugin directory
