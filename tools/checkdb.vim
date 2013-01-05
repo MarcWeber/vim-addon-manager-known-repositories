@@ -204,7 +204,7 @@ try
             throw 'Unknown key: '.s
         elseif src.type is# 'archive' && !empty(filter(copy(mandatory_archive_keys), '!has_key(src, v:val)'))
             throw 'Mandatory archive key missing: '.s
-        elseif src.type is# 'git' && src.url=~#'\vgit\:\/\/github\.com\/.*\.git$|^(git)@!\a+\:\/\/github\.com\/'
+        elseif src.type is# 'git' && src.url=~#'\v^git\:\/\/github\.com\/.*\.git$|^(git)@!\a+\:\/\/github\.com\/'
             throw 'Invalid github url: '.s
         elseif has_key(src, 'addon-info') && (empty(src['addon-info']) || !empty(filter(copy(ai_keys), 'has_key(src["addon-info"], v:key) && type(src["addon-info"][v:key])!=v:val')))
             throw 'Invalid addon-info: '.s
@@ -321,8 +321,8 @@ try
                 let value=eval(line[stridx(line, '=')+2:])
                 if type(value)!=type({})
                     throw lnr.':Invalid mai_snr value: '.line
-                elseif !empty(filter(keys(value), 'v:val[-5:] is# "-hook"'))
-                    throw lnr.':Hooks must be defined afterwards: '.line
+                elseif !empty(value)
+                    throw lnr.':Everything must be defined afterwards: '.line
                 endif
                 let snr=str2nr(line[12:])
                 if has_key(snrs.ms, snr)
@@ -420,12 +420,14 @@ try
                 let stage+=1
                 continue
             endif
-            if line=~#'let mai_snr\.\v([^=]{5})@=\d+\s+\V= {''runtimepath'': ''\[^'']\+''}\$'
+            if line=~#'^let mai_snr\.\v([^=]{5})@=\d+\s+\V= {''runtimepath'': ''\[^'']\+''}\$'
                 let snr=str2nr(line[12:])
                 if has_key(snrs.ms, snr)
                     throw lnr.':Duplicating mai_snr entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
                 endif
                 let snrs.ms[snr]=lnr
+            elseif line=~#'\V\^call extend(mai_snr.\d\+, {''runtimepath'': ''\[^'']\+''})\$'
+                continue
             else
                 throw lnr.':Invalid line in runtimepath information section: '.line
             endif
