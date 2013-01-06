@@ -69,10 +69,6 @@ let add_by_snr.3187={'deprecated': "Deprecated in favour of FWC DSL defined in f
 let add_by_snr.3188={'deprecated': "Deprecated in favour of FWC DSL defined in frawor plugin"}
 let add_by_snr.3186={'deprecated': "Functions from this plugin were either dropped or moved to frawor plugin, see its documentation"}
 
-let add_by_snr.727 ={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
-let add_by_snr.441 ={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
-let add_by_snr.3393={'deprecated': "Consider using vim-addon-local-vimrc cause it provides simple hash protection and caches your replies"}
-
 let add_by_snr.1318={'deprecated': "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated': "snipMate is an alias to snipmate now - so use 'snipmate'"}
 
@@ -103,10 +99,8 @@ let add_by_snr.3881={'deprecated': "Superseeded by github.com/Lokaltog/powerline
 let add_by_snr.3160={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
 let add_by_snr.3161={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
 
-let add_by_snr.2441={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
-let add_by_snr.2914={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
-let add_by_snr.3430={'deprecated': "Consider giving syntastic a try instead. It supports more backends"}
-let add_by_snr.3927={'deprecated': "Also pay attention to alternative syntastic which runs flake and can do much more"}
+let add_by_snr.2914={'deprecated': "Plugin seems to be no longer supported (last update 2 years ago (from Jan 2013)). Consider giving syntastic a try instead. It supports more backends"}
+let add_by_snr.3430={'deprecated': "Plugin seems to be no longer supported (last update 1 year ago (from Jan 2013)). Consider giving syntastic a try instead. It supports more backends"}
 
 let add_by_snr.4043={'deprecated': "The author recommends using neosnippet instead"}
 "▶1 Missing dependencies
