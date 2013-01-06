@@ -647,6 +647,9 @@ let scmnr.50  = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/map-too
 let scmnr.214 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
 let scmnr.229 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/trunk'}
 let scmnr.336 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
+" The following plugins do not have a separate repository:
+let scmnr.727 = {'url': 'http://lh-vim.googlecode.com/svn/misc/trunk/plugin/local_vimrc.vim', 'archive_name': 'local_vimrc.vim', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.83  = {'url': 'http://lh-vim.googlecode.com/svn/misc/trunk/plugin/let-modeline.vim', 'archive_name': 'let-modeline.vim', 'type': 'archive', 'script-type': 'utility'}
 " let scm['lh-vim-lib']          = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
 let scm['build-tools-wrapper'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/BTW/trunk'}
 let scm['lh-tags'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/tags/trunk'}
@@ -654,9 +657,16 @@ let scm['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev
 let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
+" system-tools are required for vim-spell.tar.gz (vimscript #135), which are 
+" part of misc. Cannot install using 'type':'archive': it won’t pull in 
+" documentation. Alternative: use cpp (vimscript #336, above) in place of a@lh
+" Triggers.vim (vimscript #48) which is also here requires fileuptodate.
+let scm['lh-misc'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/misc/trunk', 'dependencies': {'system-tools': {}, 'a@lh': {}, 'fileuptodate': {}}}
 " Not owned by Luc Hermitte, but forked and enhanced...
 " let scmnr.222 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
 let scm['mu-template@lh'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/mu-template/trunk'}
+let scm['fileuptodate'] = {'url': 'http://hermitte.free.fr/vim/ressources/dollar_VIM/plugin/fileuptodate.vim', 'archive_name': 'fileuptodate.vim', 'type': 'archive', 'script-type': 'utility'}
+let scm['a@lh'] = {'url': 'http://code.google.com/p/lh-vim/source/browse/cpp/trunk/plugin/a-old.vim', 'archive_name': 'a-old.vim', 'type': 'archive', 'script-type': 'utility'}
 
 " Jan Larres
 let scmnr.3465 = {'type': 'git', 'url': 'git://github.com/majutsushi/tagbar'}
