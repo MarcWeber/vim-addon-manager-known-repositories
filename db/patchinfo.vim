@@ -59,6 +59,8 @@ call extend(add_by_snr.1780, {'deprecated': "The syntax doesn't highlight \"\"\"
 call extend(add_by_snr.1662, {'deprecated': "you should consider using ruby-vim instead"})
 let add_by_snr.113 ={'deprecated': "greputils supersedes this plugin"}
 
+let add_by_snr.143 ={'deprecated': "Merged into lh-vim-lib (vimscript #214)"}
+
 let add_by_snr.3432={'deprecated': "lazysnipmate’s update is just snipmate"}
 
 let add_by_snr.1963={'deprecated': "This was one of my biggest mistakes. This library won't be maintained. I'm mvoing contents into individual plugins slowly. Its just bloat"}
