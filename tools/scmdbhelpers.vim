@@ -11,7 +11,7 @@ function! GetAuthor()
     wincmd p
     return matchstr(a, 'Author: \zs.*')
 endfunction
-function! GetScriptType(nr)
+function! s:GetScriptType(nr)
     let nrnamesdb=vamkr#LoadDBFile('script-id-to-name-log.json')
     let name=get(nrnamesdb, a:nr, [0])[0]
     if name is 0
@@ -38,17 +38,22 @@ endfunction
 function! s:GitUrl(url)
     return 'git://'.substitute(substitute(substitute(substitute(a:url, '^\w\+://', '', ''), '/\(/\|$\)\@=', '', ''), '^\([^/]*/[^/]*/[^/]*\).*', '\1', ''), '\.git$', '', '')
 endfunction
-function! AddGHUrl(url, nr)
+function! s:ProcNR(url, nr)
     let nr=a:nr
     if nr is 0 | let nr=substitute(matchstr(a:url, '\v^(\w+\:\/\/)?[^/]+\/[^/]+\/\zs[^/]+'), '\v(\.vim)?(\.git)?/*$', '', '') | endif
     if type(nr)==type(0)
         let s:prevsnr=nr
     endif
-    call append('.', ((type(nr)==type(0))?
-                \       ('let scmnr.'.nr):
-                \       ('let scm['.string(nr).']')).' = '.
+    if type(nr)==type(0)
+        return 'let scmnr.'.nr.' = '
+    else
+        return 'let scm['.string(nr).'] = '
+    endif
+endfunction
+function! AddGHUrl(url, nr)
+    call append('.', s:ProcNR(a:url, a:nr).
                 \    ((a:url=~#'\v\/(blob|raw)\/[^/]+\/.*\.vim$')?
-                \       ('vamkr#AddCopyHook({''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}, {'.string(substitute(a:url, '\v^.{-}\/%(blob|raw)\/[^/]+\/(.*)$', '\1', '')).': '.string(vam#utils#GuessFixDir(GetScriptType(nr))).'})'):
+                \       ('vamkr#AddCopyHook({''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}, {'.string(substitute(a:url, '\v^.{-}\/%(blob|raw)\/[^/]+\/(.*)$', '\1', '')).': '.string(vam#utils#GuessFixDir(s:GetScriptType(a:nr))).'})'):
                 \    ((a:url=~#'^lp:')?
                 \       ('{''type'': ''bzr'', ''url'': '.string(a:url).'}'):
                 \    ((a:url=~#'svn')?
@@ -56,6 +61,13 @@ function! AddGHUrl(url, nr)
                 \    ((a:url=~#'bitbucket\.org' || match(a:url, '\v<hg>')!=-1)?
                 \       ('{''type'': ''hg'', ''url'': '.string(a:url).'}'):
                 \       ('{''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}'))))))
+endfunction
+function! AddArchiveUrl(url, nr)
+    call append('.', s:ProcNR(a:url, a:nr).
+                \   '{''url'': '.string(a:url).', '.
+                \    '''archive_name'': '.string(matchstr(a:url, '[^/]\+$')).', '.
+                \    '''type'': ''archive'', '.
+                \    '''script-type'': '.string(s:GetScriptType(a:nr)).'}')
 endfunction
 function! GetSNR()
     wincmd k
@@ -78,7 +90,9 @@ endfunction
 nnoremap ,gv :call AddGHUrl(@+, +GetSNR())<CR>j
 nnoremap ,gg :call AddGHUrl(@+, 0)<CR>j
 nnoremap ,ge :call AddGHUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
+nnoremap ,gE :call AddArchiveUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
 nnoremap ,gc :call AddGHUrl(@+, +@*)<CR>
+nnoremap ,gC :call AddArchiveUrl(@+, +@*)<CR>
 nnoremap ,ga :call AddAuthor(GetAuthor())<CR>
 nnoremap ,gA :call AddAuthor(@*)<CR>
 nnoremap ,g- :call search('\V"'.repeat('-', 119), 'w')<CR>
