@@ -1892,6 +1892,9 @@ let scmnr.4384 = {'type': 'git', 'url': 'git://github.com/nfd/filepirate'}
 " Mihai Ciuraru
 let scmnr.4385 = {'type': 'git', 'url': 'git://github.com/mihaifm/bufstop'}
 
+" Daan Bakker
+let scmnr.4387 = {'type': 'git', 'url': 'git://github.com/dbakker/vim-projectroot'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
