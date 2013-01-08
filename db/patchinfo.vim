@@ -48,6 +48,7 @@ let add_by_snr.2150={'script-type': 'after/syntax'}
 let add_by_snr.2548={'script-type': 'after/syntax'}
 let add_by_snr.2224={'script-type': 'after/syntax'}
 let add_by_snr.2493={'script-type': 'after/syntax'}
+let add_by_snr.4388={'script-type': 'ftplugin'}
 "▶1 Fixing target directories
 call extend(add_by_snr.1542, {'target_dir': 'autoload'})
 let add_by_snr.1662={'target_dir': 'autoload'}
