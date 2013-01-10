@@ -242,6 +242,7 @@ let scmnr.4280 = {'type': 'git', 'url': 'git://github.com/tpope/vim-bundler'}
 let scmnr.4300 = {'type': 'git', 'url': 'git://github.com/tpope/vim-eunuch'}
 let scmnr.4359 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rsi'}
 let scmnr.4375 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sleuth'}
+let scmnr.4391 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sensible'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -1838,6 +1839,7 @@ let scmnr.4323 = {'type': 'git', 'url': 'git://github.com/vitalk/vim-simple-todo
 
 " Benjamin Leopold
 let scmnr.4317 = {'type': 'git', 'url': 'git://github.com/cometsong/CommentFrame.vim'}
+let scmnr.4390 = {'type': 'git', 'url': 'git://github.com/cometsong/ferm.vim'}
 
 " Eduan Lavaque
 let scmnr.4324 = {'type': 'git', 'url': 'git://github.com/Greduan/vim-change-syntax'}
