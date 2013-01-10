@@ -1,4 +1,6 @@
 {
+"boshiamy-cue":{"archive_name":"boshiamy-cue.vim","script-type":"patch","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19341","version":"1.0","vim_script_nr":4392},
+"sensible":{"archive_name":"sensible.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19340","version":"1.0","vim_script_nr":4391},
 "ferm":{"archive_name":"ferm.vim.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19338","version":"0.03","vim_script_nr":4390},
 "ljyat":{"archive_name":"ljyat.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19337","version":"0.2","vim_script_nr":4389},
 "CoqIDE":{"archive_name":"coq_IDE.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19323","version":"7.3","vim_script_nr":4388},
