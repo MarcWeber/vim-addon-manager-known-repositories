@@ -1,7 +1,8 @@
 {
+"boshiamy_input_method_keymap_file":{"archive_name":"boshiamy.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19342","version":"0.1","vim_script_nr":4393},
 "boshiamy-cue":{"archive_name":"boshiamy-cue.vim","script-type":"patch","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19341","version":"1.0","vim_script_nr":4392},
 "sensible":{"archive_name":"sensible.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19340","version":"1.0","vim_script_nr":4391},
-"ferm":{"archive_name":"ferm.vim.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19338","version":"0.03","vim_script_nr":4390},
+"ferm":{"archive_name":"ferm.vim.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19344","version":"0.04","vim_script_nr":4390},
 "ljyat":{"archive_name":"ljyat.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19337","version":"0.2","vim_script_nr":4389},
 "CoqIDE":{"archive_name":"coq_IDE.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19323","version":"7.3","vim_script_nr":4388},
 "projectroot":{"archive_name":"projectroot.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19322","version":"1.0","vim_script_nr":4387},
@@ -2464,7 +2465,7 @@
 "securemodelines":{"archive_name":"securemodelines.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8598","version":"20080424","vim_script_nr":1876},
 "verilog_emacsauto":{"archive_name":"verilog_emacsauto.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7578","version":"0.4","vim_script_nr":1875},
 "psql%1874":{"archive_name":"psql.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7028","version":"0.1","vim_script_nr":"1874"},
-"projtags":{"archive_name":"projtags.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16095","version":"0.42","vim_script_nr":1873},
+"projtags":{"archive_name":"projtags.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19343","version":"0.42","vim_script_nr":1873},
 "summerfruit":{"archive_name":"summerfruit.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7017","version":"0.1","vim_script_nr":1872},
 "fruity":{"archive_name":"fruity.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7016","version":"0.2","vim_script_nr":1871},
 "django%1870":{"archive_name":"django.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7015","version":"0.1","vim_script_nr":1870},
