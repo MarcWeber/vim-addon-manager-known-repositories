@@ -915,7 +915,6 @@ let scmnr.3118 = {'type': 'git', 'url': 'git://github.com/tyru/skk.vim'}
 let scmnr.3167 = {'type': 'git', 'url': 'git://github.com/tyru/regbuf.vim'}
 let scmnr.3490 = {'type': 'git', 'url': 'git://github.com/tyru/visualctrlg.vim'}
 let scmnr.3489 = {'type': 'git', 'url': 'git://github.com/tyru/urilib.vim'}
-let scmnr.3615 = {'type': 'git', 'url': 'git://github.com/tyru/vimtemplate.vim'}
 let scmnr.3312 = {'type': 'git', 'url': 'git://github.com/tyru/operator-html-escape.vim'}
 let scmnr.2576 = {'type': 'git', 'url': 'git://github.com/tyru/winmove.vim'}
 let scmnr.3294 = {'type': 'git', 'url': 'git://github.com/tyru/grass.vim'}
