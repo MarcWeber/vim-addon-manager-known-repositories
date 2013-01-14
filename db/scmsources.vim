@@ -1897,6 +1897,9 @@ let scmnr.4385 = {'type': 'git', 'url': 'git://github.com/mihaifm/bufstop'}
 " Daan Bakker
 let scmnr.4387 = {'type': 'git', 'url': 'git://github.com/dbakker/vim-projectroot'}
 
+" Jeroen Budts
+let scmnr.4395 = {'type': 'git', 'url': 'git://github.com/teranex/jk-jumps.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
