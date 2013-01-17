@@ -63,7 +63,7 @@
 "vim-autoformat":{"archive_name":"README.markdown","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19126","version":"1.01","vim_script_nr":4337},
 "REPL%4336":{"archive_name":"vimrepl.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19335","version":"1.2","vim_script_nr":"4336"},
 "star_search":{"archive_name":"starsearch.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19084","version":"0.1.0","vim_script_nr":4335},
-"TimeKeeper":{"archive_name":"TimeKeeper-version_1.1.4.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19329","version":"1.1.4","vim_script_nr":4334},
+"TimeKeeper":{"archive_name":"TimeKeeper-version_1.2.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19384","version":"1.2.0","vim_script_nr":4334},
 "termpot":{"archive_name":"termpot.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19078","version":"1.0","vim_script_nr":4333},
 "weibo-vim":{"archive_name":"weibo-vim-v0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19077","version":"0.1","vim_script_nr":4332},
 "TabLineNumbers":{"archive_name":"TabLineNumbers.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19073","version":"0.1","vim_script_nr":4331},
