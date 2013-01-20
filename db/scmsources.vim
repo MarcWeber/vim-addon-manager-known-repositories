@@ -1901,6 +1901,12 @@ let scmnr.4387 = {'type': 'git', 'url': 'git://github.com/dbakker/vim-projectroo
 " Jeroen Budts
 let scmnr.4395 = {'type': 'git', 'url': 'git://github.com/teranex/jk-jumps.vim'}
 
+" Gnu Jérémie
+" The following plugins do not have a separate repository:
+" (does not really matter for colorschemes)
+let scmnr.4401 = {'type': 'git', 'url': 'git://github.com/gnujeremie/colorscheme-gnujeremie'}
+let scmnr.4402 = {'type': 'git', 'url': 'git://github.com/gnujeremie/colorscheme-gnujeremie'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
