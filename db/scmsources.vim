@@ -1907,6 +1907,12 @@ let scmnr.4395 = {'type': 'git', 'url': 'git://github.com/teranex/jk-jumps.vim'}
 let scmnr.4401 = {'type': 'git', 'url': 'git://github.com/gnujeremie/colorscheme-gnujeremie'}
 let scmnr.4402 = {'type': 'git', 'url': 'git://github.com/gnujeremie/colorscheme-gnujeremie'}
 
+" John Szakmeister
+let scmnr.4403 = {'type': 'git', 'url': 'git://github.com/jszakmeister/vim-togglecursor'}
+
+" Philip Woods
+let scmnr.4404 = {'type': 'git', 'url': 'git://github.com/Elzair/vim-line-numbers'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
