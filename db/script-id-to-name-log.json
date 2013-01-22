@@ -13637,5 +13637,8 @@
    ],
    "4404" : [
       "vim-line-numbers"
+   ],
+   "4405" : [
+      "latex-support"
    ]
 }

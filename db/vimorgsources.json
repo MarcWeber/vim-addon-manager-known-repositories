@@ -1,4 +1,5 @@
 {
+"latex-support":{"archive_name":"latex-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19411","version":"1.0","vim_script_nr":4405},
 "vim-line-numbers":{"archive_name":"vim-line-numbers.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19408","version":"0.1","vim_script_nr":4404},
 "togglecursor":{"archive_name":"togglecursor.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19402","version":"0.1.0","vim_script_nr":4403},
 "vim-darksea":{"archive_name":"vim-darksea.vim.tgz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19400","version":"0.1","vim_script_nr":4402},
@@ -28,7 +29,7 @@
 "smartpairs":{"archive_name":"smartpairs.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19267","version":"1.0","vim_script_nr":4378},
 "vim-tags":{"archive_name":"vim-tags.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19264","version":"0.0.2","vim_script_nr":4377},
 "vim-maximizer":{"archive_name":"vim-maximizer.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19263","version":"1.0.1","vim_script_nr":4376},
-"sleuth":{"archive_name":"sleuth.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19261","version":"1.0","vim_script_nr":4375},
+"sleuth":{"archive_name":"sleuth.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19409","version":"1.1","vim_script_nr":4375},
 "pyflakes-nopython":{"archive_name":"pyflakes-nopython.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19266","version":"0.2","vim_script_nr":4374},
 "sh%4373":{"archive_name":"sh.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19382","version":"1.18","vim_script_nr":"4373"},
 "awk":{"archive_name":"awk.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19383","version":"1.16","vim_script_nr":4372},
@@ -880,7 +881,7 @@
 "asp.net":{"archive_name":"aspnet.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15151","version":"1","vim_script_nr":3480},
 "makebg":{"archive_name":"makebg","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15392","version":"1.1","vim_script_nr":3479},
 "robokai":{"archive_name":"robokai.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15145","version":"1.0","vim_script_nr":3478},
-"bad_apple":{"archive_name":"badApple.7z","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15246","version":"0.7","vim_script_nr":3477},
+"bad_apple":{"archive_name":"badApple.zip","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19410","version":"0.71","vim_script_nr":3477},
 "bitly":{"archive_name":"bitly.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15140","version":"1.0","vim_script_nr":3476},
 "Vim_Blog":{"archive_name":"blog.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15191","version":"1.6","vim_script_nr":3475},
 "Neopro":{"archive_name":"neopro.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15134","version":"1.0","vim_script_nr":3474},
