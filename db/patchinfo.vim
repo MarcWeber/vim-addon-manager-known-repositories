@@ -75,10 +75,10 @@ let add_by_snr.3186={'deprecated': "Functions from this plugin were either dropp
 let add_by_snr.1318={'deprecated': "Use snipmate instead. jano on irc reported that place holders don't work - last release 2006"}
 let add_by_snr.2540={'deprecated': "snipMate is an alias to snipmate now - so use 'snipmate'"}
 
-let add_by_snr.1272={'deprecated': "Superseeded by vimscript #1431 (checksyntax)"}
-let add_by_snr.3233={'deprecated': "Superseeded by Buffersaurus (vimscript #3620)"}
+let add_by_snr.1272={'deprecated': "Superseded by vimscript #1431 (checksyntax)"}
+let add_by_snr.3233={'deprecated': "Superseded by Buffersaurus (vimscript #3620)"}
 let add_by_snr.3134={'deprecated': "This functionality has been rolled into tpope's vim-rvm"}
-let add_by_snr.108 ={'deprecated': "Superseeded by vimscript #197 (genutils)"}
+let add_by_snr.108 ={'deprecated': "Superseded by vimscript #197 (genutils)"}
 let add_by_snr.1815={'deprecated': "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
 let add_by_snr.1816={'deprecated': "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
 let add_by_snr.2518={'deprecated': "This plugin has been replaced with the HyperList plugin (vimscript #4006)"}
@@ -96,7 +96,9 @@ let add_by_snr.159 ={'deprecated': "No more maintained, use â€œminibufexplorerâ€
 
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
-let add_by_snr.3881={'deprecated': "Superseeded by powerline (https://github.com/Lokaltog/powerline)"}
+let add_by_snr.3881={'deprecated': "Superseded by powerline (https://github.com/Lokaltog/powerline)"}
+let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
+
 
 let add_by_snr.3160={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
 let add_by_snr.3161={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
