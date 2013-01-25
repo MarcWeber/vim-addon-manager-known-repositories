@@ -244,6 +244,7 @@ let scmnr.4359 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rsi'}
 let scmnr.4375 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sleuth'}
 let scmnr.4391 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sensible'}
 let scmnr.4394 = {'type': 'git', 'url': 'git://github.com/tpope/vim-scriptease'}
+let scmnr.4410 = {'type': 'git', 'url': 'git://github.com/tpope/vim-characterize'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -1012,6 +1013,8 @@ let scmnr.3567 = {'type': 'git', 'url': 'git://github.com/lilydjwg/colorizer'}
 " The following is not a vim plugin, but it is posted on vim.org:
 " The following plugin does not have a separate repository:
 let scmnr.2778 = {'type': 'git', 'url': 'git://github.com/lilydjwg/winterpy'}
+" The following plugin does not have a separate repository:
+let scmnr.4407 = {'url': 'https://github.com/lilydjwg/dotvim/raw/master/indent/haskell.vim', 'archive_name': 'haskell.vim', 'type': 'archive', 'script-type': 'indent'}
 
 " Liam Cooke
 let scmnr.3011 = {'type': 'git', 'url': 'git://github.com/inky/tumblr'}
@@ -1894,6 +1897,7 @@ let scmnr.4384 = {'type': 'git', 'url': 'git://github.com/nfd/filepirate'}
 
 " Mihai Ciuraru
 let scmnr.4385 = {'type': 'git', 'url': 'git://github.com/mihaifm/bufstop'}
+let scmnr.4409 = {'type': 'git', 'url': 'git://github.com/mihaifm/vimpanel'}
 
 " Daan Bakker
 let scmnr.4387 = {'type': 'git', 'url': 'git://github.com/dbakker/vim-projectroot'}
@@ -1912,6 +1916,15 @@ let scmnr.4403 = {'type': 'git', 'url': 'git://github.com/jszakmeister/vim-toggl
 
 " Philip Woods
 let scmnr.4404 = {'type': 'git', 'url': 'git://github.com/Elzair/vim-line-numbers'}
+
+" Göktuğ Kayaalp
+let scmnr.4406 = {'type': 'git', 'url': 'https://bitbucket.org/goktugkayaalp/lithochromatic-vim'}
+
+" Greg Berenfield
+let scmnr.4412 = {'type': 'git', 'url': 'git://github.com/gberenfield/cljfold.vim'}
+
+" felippe alves
+let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
 
 "-----------------------------------------------------------------------------------------------------------------------
 
