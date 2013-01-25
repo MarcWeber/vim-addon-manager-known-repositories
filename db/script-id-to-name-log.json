@@ -13637,5 +13637,32 @@
    ],
    "4404" : [
       "vim-line-numbers"
+   ],
+   "4405" : [
+      "latex-support"
+   ],
+   "4406" : [
+      "lithochromatic"
+   ],
+   "4407" : [
+      "haskell%4407"
+   ],
+   "4408" : [
+      "accelerated-jk"
+   ],
+   "4409" : [
+      "Vimpanel"
+   ],
+   "4410" : [
+      "characterize"
+   ],
+   "4411" : [
+      "metaweblog"
+   ],
+   "4412" : [
+      "cljfold"
+   ],
+   "4413" : [
+      "darkgit"
    ]
 }
