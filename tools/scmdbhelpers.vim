@@ -64,7 +64,7 @@ function! AddGHUrl(url, nr)
 endfunction
 function! AddArchiveUrl(url, nr)
     call append('.', s:ProcNR(a:url, a:nr).
-                \   '{''url'': '.string(a:url).', '.
+                \   '{''url'': '.string(substitute(a:url, '\V/blob/', '/raw/', '')).', '.
                 \    '''archive_name'': '.string(matchstr(a:url, '[^/]\+$')).', '.
                 \    '''type'': ''archive'', '.
                 \    '''script-type'': '.string(s:GetScriptType(a:nr)).'}')
