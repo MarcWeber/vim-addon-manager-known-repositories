@@ -1926,6 +1926,9 @@ let scmnr.4412 = {'type': 'git', 'url': 'git://github.com/gberenfield/cljfold.vi
 " felippe alves
 let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
 
+" Vic Goldfeld
+let scmnr.4416 = {'type': 'git', 'url': 'git://github.com/goldfeld/vim-seek'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
