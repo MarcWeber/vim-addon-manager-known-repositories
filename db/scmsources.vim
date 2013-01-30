@@ -1923,9 +1923,6 @@ let scmnr.4406 = {'type': 'git', 'url': 'https://bitbucket.org/goktugkayaalp/lit
 " Greg Berenfield
 let scmnr.4412 = {'type': 'git', 'url': 'git://github.com/gberenfield/cljfold.vim'}
 
-" felippe alves
-let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
-
 " Vic Goldfeld
 let scmnr.4416 = {'type': 'git', 'url': 'git://github.com/goldfeld/vim-seek'}
 
@@ -1961,6 +1958,12 @@ let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/c
 " joey c
 " The following plugin does not have a separate repository:
 let scmnr.4381 = {'url': 'http://hwi.ath.cx/code/home/.vim/plugin/RepeatLast.vim', 'archive_name': 'RepeatLast.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" felippe alves
+let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
+
+" Yu-Heng Chang
+let scmnr.4417 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/changyuheng/holokai'}, {'holokai.vim': 'colors'})
 
 " Yggdroot Chen
 let scmnr.4354 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Yggdroot/indentLine'}, {'indentLine.vim': 'plugin'})
