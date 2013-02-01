@@ -1,4 +1,6 @@
 {
+"Fold_License":{"archive_name":"fold_license.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19459","version":"0.1","vim_script_nr":4420},
+"sunny":{"archive_name":"sunny.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19458","version":"1","vim_script_nr":4419},
 "Bck":{"archive_name":"bck.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19456","version":"1.0.0","vim_script_nr":4418},
 "holokai":{"archive_name":"holokai.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19449","version":"1.0","vim_script_nr":4417},
 "vim-seek":{"archive_name":"seek.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19439","version":"0.2","vim_script_nr":4416},
@@ -1283,7 +1285,7 @@
 "RTL":{"archive_name":"rtl.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12992","version":"0.1","vim_script_nr":3090},
 "vimtl":{"archive_name":"vimtl.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13002","version":"0.22","vim_script_nr":3089},
 "GetFile":{"archive_name":"getfile.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12967","version":"1.0.3","vim_script_nr":3088},
-"OutlookVim":{"archive_name":"outlookvim_v7.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18768","version":"7.0","vim_script_nr":3087},
+"OutlookVim":{"archive_name":"outlookvim_v8.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19460","version":"8.0","vim_script_nr":3087},
 "glyph":{"archive_name":"glyph.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15131","version":"1.5.0","vim_script_nr":3086},
 "tf2":{"archive_name":"tf2.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13085","version":".2","vim_script_nr":3085},
 "dc":{"archive_name":"dc.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12940","version":"1.0","vim_script_nr":3084},
