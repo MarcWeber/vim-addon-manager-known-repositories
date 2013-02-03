@@ -1564,6 +1564,7 @@ let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
 " glts
 let scmnr.3997 = {'type': 'git', 'url': 'git://github.com/glts/vim-spacebox'}
 let scmnr.4348 = {'type': 'git', 'url': 'git://github.com/glts/vim-textobj-indblock'}
+let scmnr.4421 = {'type': 'git', 'url': 'git://github.com/glts/vim-texlog'}
 
 " lorry lee
 let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
@@ -1926,6 +1927,12 @@ let scmnr.4412 = {'type': 'git', 'url': 'git://github.com/gberenfield/cljfold.vi
 
 " Vic Goldfeld
 let scmnr.4416 = {'type': 'git', 'url': 'git://github.com/goldfeld/vim-seek'}
+
+" Heath Stewart
+let scmnr.4422 = {'type': 'git', 'url': 'git://github.com/heaths/vim-msbuild'}
+
+" Chip Castle
+let scmnr.4423 = {'type': 'git', 'url': 'git://github.com/chip/vim-fat-finger'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
