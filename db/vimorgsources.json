@@ -1203,7 +1203,7 @@
 "Haskell_Highlight_Enhanced":{"archive_name":"haskell.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13451","version":"1.4","vim_script_nr":3175},
 "JsLint_Helper":{"archive_name":"jsLintHelper.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13437","version":"1.0","vim_script_nr":3174},
 "vimgcwsyntax":{"archive_name":"vimgcwsyntax-1.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13989","version":"1.0","vim_script_nr":3173},
-"SyntaxComplete":{"archive_name":"syntaxcomplete.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18847","version":"10.0","vim_script_nr":3172},
+"SyntaxComplete":{"archive_name":"syntaxcomplete.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19470","version":"12.0","vim_script_nr":3172},
 "phpcomplete":{"archive_name":"phpcomplete.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14129","version":"1.3.3","vim_script_nr":3171},
 "pw":{"archive_name":"pw.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17160","version":"2.0","vim_script_nr":3170},
 "luainspect":{"archive_name":"luainspect.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16958","version":"0.4.16","vim_script_nr":3169},
