@@ -1,4 +1,5 @@
 {
+"gf-ext":{"archive_name":"gf-ext.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19478","version":"1.0","vim_script_nr":4427},
 "find-complete":{"archive_name":"vim-find-complete.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19474","version":"1.0","vim_script_nr":4426},
 "phonzia":{"archive_name":"phonzia.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19472","version":"1.0.0","vim_script_nr":4425},
 "usefold":{"archive_name":"usefold.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19471","version":"0.0.3","vim_script_nr":4424},
@@ -52,7 +53,7 @@
 "vim-maximizer":{"archive_name":"vim-maximizer.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19263","version":"1.0.1","vim_script_nr":4376},
 "sleuth":{"archive_name":"sleuth.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19409","version":"1.1","vim_script_nr":4375},
 "pyflakes-nopython":{"archive_name":"pyflakes-nopython.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19266","version":"0.2","vim_script_nr":4374},
-"sh%4373":{"archive_name":"sh.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19468","version":"1.20","vim_script_nr":"4373"},
+"sh%4373":{"archive_name":"sh.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19477","version":"1.21","vim_script_nr":"4373"},
 "awk":{"archive_name":"awk.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19469","version":"1.17","vim_script_nr":4372},
 "Gentooish_II":{"archive_name":"gentooishII.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19246","version":"1.0","vim_script_nr":4371},
 "visualMarks":{"archive_name":"visualMarks.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19243","version":"1.1","vim_script_nr":4370},
@@ -513,7 +514,7 @@
 "DfrankUtil":{"archive_name":"dfrank_util-1.02.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17363","version":"1.02","vim_script_nr":3884},
 "autosess":{"archive_name":"autosess.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19213","version":"1.2.0","vim_script_nr":3883},
 "EasyDigraph":{"archive_name":"easydigraph.vim-0.3.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17228","version":"0.3","vim_script_nr":3882},
-"Powerline":{"archive_name":"Lokaltog-vim-powerline-d885f90.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17546","version":"β","vim_script_nr":3881},
+"vim-powerline":{"archive_name":"Lokaltog-vim-powerline-d885f90.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17546","version":"β","vim_script_nr":3881},
 "fountain":{"archive_name":"fountain.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17497","version":"2.02","vim_script_nr":3880},
 "ambicmd":{"archive_name":"vim-ambicmd-0.5.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17198","version":"0.5.0","vim_script_nr":3879},
 "nerdtree-ack":{"archive_name":"NERD_tree-ack.vim","script-type":"patch","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17196","version":"0.1","vim_script_nr":3878},
