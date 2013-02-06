@@ -2131,6 +2131,10 @@ let scm['nyancat-vim'] = {'type': 'git', 'url': 'git://github.com/koron/nyancat-
 " Matt Sacks
 let scm['vim-complete'] = {'type': 'git', 'url': 'git://github.com/mattsacks/vim-complete'}
 
+" Val Markovic
+" installation instructions: https://github.com/Valloric/YouCompleteMe#full-installation-guide
+let scm['YouCompleteMe'] = {'type': 'git', 'url': 'git://github.com/Valloric/YouCompleteMe'}
+
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
 let scm['Vim-R-plugin2'] = {'type': 'git', 'url': 'git://github.com/jimmyharris/vim-r-plugin2'}
