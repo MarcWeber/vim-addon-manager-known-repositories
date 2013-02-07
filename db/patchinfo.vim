@@ -97,7 +97,7 @@ let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
 
 let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
 
-let add_by_snr.3881={'deprecated': "Superseeded by github.com/Lokaltog/powerline"}
+let add_by_snr.3881={'deprecated': "Superseeded by powerline (https://github.com/Lokaltog/powerline)"}
 
 let add_by_snr.3160={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
 let add_by_snr.3161={'deprecated': "According to github its superseded by vim-flake8 (vimscript #3927). You probably want to prefer syntastic anyway"}
