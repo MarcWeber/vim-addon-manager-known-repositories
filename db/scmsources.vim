@@ -1935,6 +1935,15 @@ let scmnr.4422 = {'type': 'git', 'url': 'git://github.com/heaths/vim-msbuild'}
 " Chip Castle
 let scmnr.4423 = {'type': 'git', 'url': 'git://github.com/chip/vim-fat-finger'}
 
+" Leo Bärring
+let scmnr.4424 = {'type': 'git', 'url': 'git://github.com/tlvb/Usefold'}
+
+" Sean Tegtmeyer
+let scmnr.4426 = {'type': 'git', 'url': 'git://github.com/stegtmeyer/find-complete'}
+
+" Daniel P. Wright
+let scmnr.4427 = {'type': 'git', 'url': 'git://github.com/dpwright/vim-gf-ext'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
