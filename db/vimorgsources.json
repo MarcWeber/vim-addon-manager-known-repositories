@@ -1,4 +1,6 @@
 {
+"_Mini_Year_Todo__Gantt_Planner_for_VIM_":{"archive_name":"vim_planner.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19494","version":"0.01","vim_script_nr":4429},
+"JavaScript_Libraries_Syntax":{"archive_name":"javascript-libraries-syntax.vim-0.1.vmb","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19493","version":"0.1","vim_script_nr":4428},
 "gf-ext":{"archive_name":"gf-ext.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19478","version":"1.0","vim_script_nr":4427},
 "find-complete":{"archive_name":"vim-find-complete.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19479","version":"1.0","vim_script_nr":4426},
 "phonzia":{"archive_name":"phonzia.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19472","version":"1.0.0","vim_script_nr":4425},
