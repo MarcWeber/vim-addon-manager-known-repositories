@@ -535,6 +535,7 @@ let scmnr.3236 = {'type': 'git', 'url': 'git://github.com/othree/html5.vim'}
 let scmnr.3232 = {'type': 'git', 'url': 'git://github.com/othree/html5-syntax.vim'}
 let scmnr.3453 = {'type': 'git', 'url': 'git://github.com/othree/fecompressor.vim'}
 let scmnr.3900 = {'type': 'git', 'url': 'git://github.com/othree/coffee-check.vim'}
+let scmnr.4428 = {'type': 'git', 'url': 'git://github.com/othree/javascript-libraries-syntax.vim'}
 
 " Rene de Zwart
 let scmnr.1397 = {'type': 'git', 'url': 'git://github.com/othree/xml.vim'}
@@ -684,6 +685,7 @@ let scmnr.3646 = {'type': 'git', 'url': 'git://github.com/jeetsukumaran/vim-file
 let scmnr.2719 = {'type': 'git', 'url': 'git://github.com/tmallen/proj-vim'}
 let scmnr.2424 = {'type': 'git', 'url': 'git://github.com/tmallen/transmit-vim'}
 let scmnr.3163 = {'type': 'git', 'url': 'git://github.com/tmallen/endline-vim'}
+let scmnr.4431 = {'type': 'git', 'url': 'git://github.com/oinksoft/tcd.vim'}
 
 " @kevinwatters
 let scmnr.2441 = {'type': 'git', 'url': 'git://github.com/kevinw/pyflakes-vim'}
@@ -1729,6 +1731,7 @@ let scmnr.4182 = {'type': 'git', 'url': 'git://github.com/troydm/shellasync.vim'
 let scmnr.4198 = {'type': 'git', 'url': 'git://github.com/troydm/asyncfinder.vim'}
 let scmnr.4210 = {'type': 'git', 'url': 'git://github.com/troydm/easybuffer.vim'}
 let scmnr.4252 = {'type': 'git', 'url': 'git://github.com/troydm/easytree.vim'}
+let scmnr.4432 = {'type': 'git', 'url': 'git://github.com/troydm/zoomwintab.vim'}
 
 " Andrew Wong
 let scmnr.4164 = {'type': 'git', 'url': 'git://github.com/w0ng/vim-hybrid'}
@@ -1786,6 +1789,7 @@ let scmnr.4223 = {'type': 'git', 'url': 'git://github.com/insanum/votl'}
 let scmnr.4237 = {'type': 'git', 'url': 'git://github.com/gcmt/taboo.vim'}
 let scmnr.4256 = {'type': 'git', 'url': 'git://github.com/gcmt/ozzy.vim'}
 let scmnr.4400 = {'type': 'git', 'url': 'git://github.com/gcmt/tube.vim'}
+let scmnr.4436 = {'type': 'git', 'url': 'git://github.com/gcmt/psearch.vim'}
 
 " gokcehan kara
 let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
@@ -1871,6 +1875,7 @@ let scmnr.4349 = {'type': 'git', 'url': 'git://github.com/morhetz/gruvbox'}
 let hook='execute "lcd" fnameescape(%d) | call vam#utils#RunShell("make") | lcd -'
 let scmnr.4356 = {'type': 'git', 'url': 'git://github.com/Hackerpilot/Dscanner', 'addon-info': {'runtimepath': 'editors/vim', 'post-install-hook': hook, 'post-scms-update-hook': hook}}
 unlet hook
+let scmnr.4434 = {'type': 'git', 'url': 'git://github.com/someboddy/vim-erroneous'}
 
 " Vladimir Shvets
 let scmnr.4358 = {'type': 'git', 'url': 'git://github.com/Stormherz/tablify'}
@@ -1943,6 +1948,10 @@ let scmnr.4426 = {'type': 'git', 'url': 'git://github.com/stegtmeyer/find-comple
 
 " Daniel P. Wright
 let scmnr.4427 = {'type': 'git', 'url': 'git://github.com/dpwright/vim-gf-ext'}
+
+" ryan kulla
+" The following is not a vim plugin, but it is posted on vim.org:
+let scmnr.4430 = {'type': 'git', 'url': 'git://github.com/rkulla/vimogen'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
