@@ -1953,6 +1953,9 @@ let scmnr.4427 = {'type': 'git', 'url': 'git://github.com/dpwright/vim-gf-ext'}
 " The following is not a vim plugin, but it is posted on vim.org:
 let scmnr.4430 = {'type': 'git', 'url': 'git://github.com/rkulla/vimogen'}
 
+" Roman Dolgushin
+let scmnr.4438 = {'type': 'git', 'url': 'git://github.com/rdolgushin/rythm.vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " Derek Wyatt
