@@ -1960,6 +1960,12 @@ let scmnr.4438 = {'type': 'git', 'url': 'git://github.com/rdolgushin/rythm.vim'}
 " Using the author's new github page. Link in vim.org is absent.
 let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/derekwyatt/vim-scala'}
 
+" Sandeep Singh
+let scmnr.4439 = {'type': 'git', 'url': 'git://github.com/sandeepsinghmails/Dev_Delight'}
+
+" Andrew Rodionoff
+let scmnr.4440 = {'type': 'git', 'url': 'git://github.com/andviro/flake8-vim'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
