@@ -1956,13 +1956,11 @@ let scmnr.4430 = {'type': 'git', 'url': 'git://github.com/rkulla/vimogen'}
 " Roman Dolgushin
 let scmnr.4438 = {'type': 'git', 'url': 'git://github.com/rdolgushin/rythm.vim'}
 
-"-----------------------------------------------------------------------------------------------------------------------
-
 " Derek Wyatt
-" Script page and the only download suggest using git, but referenced repository
-" is absent. Adding it here so that VAM users will get error from git if they
-" ignore deprecation instead of “Don’t know how to unpack” error.
-let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/ewiplayer/vim-scala'}
+" Using the author's new github page. Link in vim.org is absent.
+let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/derekwyatt/vim-scala'}
+
+"-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
 " The following plugin does not have a separate repository:
