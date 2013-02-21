@@ -1966,6 +1966,15 @@ let scmnr.4439 = {'type': 'git', 'url': 'git://github.com/sandeepsinghmails/Dev_
 " Andrew Rodionoff
 let scmnr.4440 = {'type': 'git', 'url': 'git://github.com/andviro/flake8-vim'}
 
+" Ryan King
+let scmnr.4450 = {'type': 'git', 'url': 'git://github.com/rking/ag.vim'}
+let scmnr.4451 = {'type': 'git', 'url': 'git://github.com/rking/pry-de', 'addon-info': {'runtimepath': 'vim'}}
+
+" Josh Perez
+" Old maintainer gave write access to old repository to the new one, thus URL 
+" have not changed and is equal to that of #2765 now.
+let scmnr.4452 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascript'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop

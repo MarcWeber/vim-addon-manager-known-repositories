@@ -83,8 +83,9 @@ let add_by_snr.1815={'deprecated': "This file is out of date and is now included
 let add_by_snr.1816={'deprecated': "This file is out of date and is now included in the Windows PowerShell Syntax Plugin package (vimscript #1327)"}
 let add_by_snr.2518={'deprecated': "This plugin has been replaced with the HyperList plugin (vimscript #4006)"}
 
-let add_by_snr.3874={'deprecated': "This script is no longer supported. Please use the matchit.vim plugin(already bundled with vim > 7) instead."}
+let add_by_snr.3874={'deprecated': "This script is no longer supported. Please use the matchit.vim plugin (already bundled with vim > 7) instead."}
 let add_by_snr.287 ={'deprecated': "This script has been retired. You should use #273"}
+let add_by_snr.2765={'deprecated': "Maintainer has changed. You should use #4452 (vim-javascript) now"}
 
 let add_by_snr.2554={'deprecated': "Author says it is buggy and thus should not be used"}
 
@@ -131,6 +132,8 @@ let mai_snr_deps.4253 = [2646]
 let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.4322 = [4321, 1359]
 let mai_snr_deps.4336 = ['vimproc']
+" ingo-library dependants
+let mai_snr_deps.4449 = [4433]
 " fugitive dependants
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3574 = [2975]
