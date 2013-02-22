@@ -1,4 +1,5 @@
 {
+"play":{"archive_name":"play.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19560","version":"0.9.1","vim_script_nr":4453},
 "vim-javascript":{"archive_name":"vim-javascript.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19555","version":"1.0.0","vim_script_nr":4452},
 "pry":{"archive_name":"ruby_pry.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19553","version":"1.0","vim_script_nr":4451},
 "ag":{"archive_name":"ag-vim.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19552","version":"1.0","vim_script_nr":4450},
@@ -7,7 +8,7 @@
 "Dev_Delight":{"archive_name":"Dev_Delight.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19540","version":"1.0","vim_script_nr":4439},
 "rythm":{"archive_name":"rythm.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19515","version":"1.01","vim_script_nr":4438},
 "redif":{"archive_name":"redif.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19512","version":"1.0","vim_script_nr":4437},
-"PSearch":{"archive_name":"psearch-0.1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19507","version":"0.1.0","vim_script_nr":4436},
+"PSearch":{"archive_name":"psearch-0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19561","version":"0.2","vim_script_nr":4436},
 "tla":{"archive_name":"tla.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19542","version":"2","vim_script_nr":4435},
 "erroneous":{"archive_name":"erroneous_v1.0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19503","version":"1.0.0","vim_script_nr":4434},
 "ingo-library":{"archive_name":"ingo-library-1.001.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19557","version":"1.001","vim_script_nr":4433},
