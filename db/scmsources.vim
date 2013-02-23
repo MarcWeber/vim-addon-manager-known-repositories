@@ -1955,6 +1955,7 @@ let scmnr.4430 = {'type': 'git', 'url': 'git://github.com/rkulla/vimogen'}
 
 " Roman Dolgushin
 let scmnr.4438 = {'type': 'git', 'url': 'git://github.com/rdolgushin/rythm.vim'}
+let scmnr.4453 = {'type': 'git', 'url': 'git://github.com/rdolgushin/play.vim'}
 
 " Derek Wyatt
 " Using the author's new github page. Link in vim.org is absent.
