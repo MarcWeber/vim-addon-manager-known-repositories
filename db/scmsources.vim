@@ -1151,6 +1151,10 @@ let scmnr.3424 = {'type': 'git', 'url': 'git://github.com/alfredodeza/pytest.vim
 let scmnr.3549 = {'type': 'git', 'url': 'git://github.com/alfredodeza/plexer.vim'}
 let scm['coveragepy'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/coveragepy.vim'}
 let scm['konira'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/konira.vim'}
+let scm['khuno'] = {'type': 'git', 'url': 'git@github.com:alfredodeza/khuno.vim.git'}
+
+" Michael Foukarakis
+let scm['khuno'] = {'type': 'git', 'url': 'git@github.com:mfukar/robotframework-vim.git'}
 
 " Magnus Woldrich
 let scmnr.3397 = {'type': 'git', 'url': 'git://github.com/trapd00r/neverland-vim-theme'}
