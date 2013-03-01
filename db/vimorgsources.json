@@ -1,4 +1,5 @@
 {
+"textobj-gitgutter":{"archive_name":"textobj-gitgutter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19579","version":"0.1","vim_script_nr":4458},
 "convert_case":{"archive_name":"convert_case.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19569","version":"1.0","vim_script_nr":4457},
 "vgdb":{"archive_name":"vgdb.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19566","version":"1","vim_script_nr":4456},
 "rbenv":{"archive_name":"rbenv.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19565","version":"1.0","vim_script_nr":4455},

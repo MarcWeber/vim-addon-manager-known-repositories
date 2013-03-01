@@ -13801,5 +13801,8 @@
    ],
    "4457" : [
       "convert_case"
+   ],
+   "4458" : [
+      "textobj-gitgutter"
    ]
 }
