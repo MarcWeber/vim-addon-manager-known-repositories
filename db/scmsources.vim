@@ -1152,6 +1152,7 @@ let scmnr.3424 = {'type': 'git', 'url': 'git://github.com/alfredodeza/pytest.vim
 let scmnr.3549 = {'type': 'git', 'url': 'git://github.com/alfredodeza/plexer.vim'}
 let scm['coveragepy'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/coveragepy.vim'}
 let scm['konira'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/konira.vim'}
+let scm['khuno'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/khuno.vim'}
 
 " Magnus Woldrich
 let scmnr.3397 = {'type': 'git', 'url': 'git://github.com/trapd00r/neverland-vim-theme'}
@@ -2168,6 +2169,9 @@ let scm['nyancat-vim'] = {'type': 'git', 'url': 'git://github.com/koron/nyancat-
 
 " Matt Sacks
 let scm['vim-complete'] = {'type': 'git', 'url': 'git://github.com/mattsacks/vim-complete'}
+
+" Michael Foukarakis
+let scm['robotframework-vim'] = {'type': 'git', 'url': 'git://github.com/mfukar/robotframework-vim'}
 
 " Val Markovic
 " installation instructions: https://github.com/Valloric/YouCompleteMe#full-installation-guide
