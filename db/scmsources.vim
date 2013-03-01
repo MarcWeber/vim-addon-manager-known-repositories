@@ -1715,6 +1715,7 @@ let scmnr.4143 = {'type': 'git', 'url': 'git://github.com/sanpii/seeks.vim'}
 
 " Andrew Stewart
 let scmnr.4145 = {'type': 'git', 'url': 'git://github.com/airblade/vim-rooter'}
+let scm['vim-gitgutter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-gitgutter'}
 
 " Srinath Avadhanula
 let scmnr.475 = {'type': 'git', 'url': 'git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex'}
@@ -1978,6 +1979,9 @@ let scmnr.4451 = {'type': 'git', 'url': 'git://github.com/rking/pry-de', 'addon-
 " Old maintainer gave write access to old repository to the new one, thus URL 
 " have not changed and is equal to that of #2765 now.
 let scmnr.4452 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascript'}
+
+" Tobias Pflug
+let scmnr.4458 = {'type': 'git', 'url': 'git://github.com/gilligan/textobj-gitgutter'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 

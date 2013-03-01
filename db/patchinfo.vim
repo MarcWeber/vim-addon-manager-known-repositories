@@ -151,6 +151,7 @@ let mai_snr_deps.4138 = [1658]
 let mai_snr_deps.3382 = [2100, 39]
 let mai_snr_deps.4304 = [2100]
 let mai_snr_deps.4348 = [2100]
+let mai_snr_deps.4458 = [2100, 'vim-gitgutter']
 " getvar dependants
 let mai_snr_deps.352  = [353, 354]
 let mai_snr_deps.994  = [353]
