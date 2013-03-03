@@ -1,5 +1,4 @@
 {
-"dummy":{"archive_name":"dummy","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19584","version":"0.0","vim_script_nr":4460},
 "neosnippet":{"archive_name":"neosnippet-3.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19582","version":"3.0","vim_script_nr":4459},
 "textobj-gitgutter":{"archive_name":"textobj-gitgutter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19579","version":"0.1","vim_script_nr":4458},
 "convert_case":{"archive_name":"convert_case.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19569","version":"1.0","vim_script_nr":4457},
@@ -319,7 +318,7 @@
 "kickAssembler_syntax":{"archive_name":"kickass.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18302","version":"1.2","vim_script_nr":4121},
 "viske":{"archive_name":"viske.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18212","version":"0.1","vim_script_nr":4120},
 "vktheming":{"archive_name":"vktheming-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18206","version":"0.1","vim_script_nr":4119},
-"vim-signature":{"archive_name":"vim-signature.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18951","version":"1.3.5","vim_script_nr":4118},
+"vim-signature":{"archive_name":"vim-signature.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19586","version":"1.3.6","vim_script_nr":4118},
 "VcsMessageRecall":{"archive_name":"VcsMessageRecall.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18247","version":"1.02","vim_script_nr":4117},
 "MessageRecall":{"archive_name":"MessageRecall.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18246","version":"1.01","vim_script_nr":4116},
 "BufferPersist":{"archive_name":"BufferPersist.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18188","version":"1.00","vim_script_nr":4115},
