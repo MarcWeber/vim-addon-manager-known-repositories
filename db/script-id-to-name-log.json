@@ -13810,5 +13810,11 @@
    ],
    "4460" : [
       "dummy"
+   ],
+   "4461" : [
+      "RelativeNumberCurrentWindow"
+   ],
+   "4462" : [
+      "ProportionalResize"
    ]
 }
