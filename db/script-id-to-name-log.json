@@ -13816,5 +13816,11 @@
    ],
    "4462" : [
       "ProportionalResize"
+   ],
+   "4463" : [
+      "vim-easy-submode"
+   ],
+   "4464" : [
+      "vim-tayra"
    ]
 }
