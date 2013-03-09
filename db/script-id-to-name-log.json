@@ -13822,5 +13822,14 @@
    ],
    "4464" : [
       "vim-tayra"
+   ],
+   "4465" : [
+      "LineJugglerCommands"
+   ],
+   "4466" : [
+      "vim-transmitty"
+   ],
+   "4467" : [
+      "vim-multiedit"
    ]
 }
