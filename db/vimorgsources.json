@@ -190,7 +190,7 @@
 "very_monochrome_grey_theme":{"archive_name":"grey.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18828","version":"1.0","vim_script_nr":4274},
 "autochmodx":{"archive_name":"autochmodx.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18824","version":"1.0.0","vim_script_nr":4273},
 "Unicode_RST_Tables":{"archive_name":"rst_table.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18869","version":"0.1.1","vim_script_nr":4272},
-"CY":{"archive_name":"cyim-2.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19229","version":"2.0","vim_script_nr":4271},
+"CY":{"archive_name":"cyim-2.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19630","version":"2.2","vim_script_nr":4271},
 "vim-eco":{"archive_name":"vim-eco.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18809","version":"306ebff","vim_script_nr":4270},
 "rvm%4269":{"archive_name":"rvm.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18797","version":"1.0","vim_script_nr":"4269"},
 "ctagloader":{"archive_name":"ctagloader.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18813","version":"0.11","vim_script_nr":4268},
