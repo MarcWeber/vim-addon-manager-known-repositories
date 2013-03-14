@@ -13849,5 +13849,14 @@
    ],
    "4473" : [
       "ghcmod"
+   ],
+   "4474" : [
+      "interactive-replace"
+   ],
+   "4475" : [
+      "voogle"
+   ],
+   "4476" : [
+      "vim-scroll-position"
    ]
 }
