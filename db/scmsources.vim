@@ -1155,9 +1155,6 @@ let scm['coveragepy'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/cov
 let scm['konira'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/konira.vim'}
 let scm['khuno'] = {'type': 'git', 'url': 'git://github.com/alfredodeza/khuno.vim'}
 
-" Marius Gedminas
-let scm['python-imports2'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
-
 " Magnus Woldrich
 let scmnr.3397 = {'type': 'git', 'url': 'git://github.com/trapd00r/neverland-vim-theme'}
 let scm['todo-syntax'] = {'type': 'git', 'url': 'git://github.com/trapd00r/vim-syntax-todo'}
@@ -2214,6 +2211,9 @@ let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang', 
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
 let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison'}
 let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-vim'}
+
+" Marius Gedminas
+let scm['python-imports2'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
