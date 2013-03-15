@@ -13858,5 +13858,8 @@
    ],
    "4476" : [
       "vim-scroll-position"
+   ],
+   "4477" : [
+      "vim-php-namespace"
    ]
 }
