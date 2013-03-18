@@ -131,9 +131,14 @@ let mai_snr_deps.4222 = [2771]
 let mai_snr_deps.4253 = [2646]
 let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.4322 = [4321, 1359]
+let mai_snr_deps.4463 = [2467]
+" vimproc dependants
 let mai_snr_deps.4336 = ['vimproc']
+let mai_snr_deps.4473 = ['vimproc']
 " ingo-library dependants
 let mai_snr_deps.4449 = [4433]
+let mai_snr_deps.4462 = [4433]
+let mai_snr_deps.4465 = [4433, 4140]
 " fugitive dependants
 let mai_snr_deps.3509 = [2975]
 let mai_snr_deps.3574 = [2975]
