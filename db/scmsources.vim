@@ -2213,7 +2213,7 @@ let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison
 let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-vim'}
 
 " Marius Gedminas
-let scm['python-imports2'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
+let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
