@@ -6829,6 +6829,7 @@
       "cqml"
    ],
    "2179" : [
+      "Source_Explorer_SrcExpl",
       "SrcExpl",
       "srcexpl",
       "Source_Explorer_srcexpl.vim",
@@ -13864,5 +13865,8 @@
    ],
    "4478" : [
       "vim-run-live"
+   ],
+   "4479" : [
+      "iwilldiffer"
    ]
 }
