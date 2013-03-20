@@ -2012,6 +2012,9 @@ let scmnr.4476 = {'type': 'git', 'url': 'git://github.com/junegunn/vim-scroll-po
 " Arnaud Le Blanc
 let scmnr.4477 = {'type': 'git', 'url': 'git://github.com/arnaud-lb/vim-php-namespace'}
 
+" Alex Johnson
+let scmnr.4478 = {'type': 'git', 'url': 'git://github.com/notalex/vim-run-live'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
