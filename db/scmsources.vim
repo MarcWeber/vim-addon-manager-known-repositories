@@ -2015,6 +2015,9 @@ let scmnr.4477 = {'type': 'git', 'url': 'git://github.com/arnaud-lb/vim-php-name
 " Alex Johnson
 let scmnr.4478 = {'type': 'git', 'url': 'git://github.com/notalex/vim-run-live'}
 
+" Shu Chen
+let scmnr.4479 = {'type': 'hg', 'url': 'https://bitbucket.org/sirpengi/iwilldiffer'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
