@@ -1,4 +1,8 @@
 {
+"assistEncloseManip":{"archive_name":"assistEncloseManip.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19682","version":"0.12","vim_script_nr":4484},
+"zarniwoop":{"archive_name":"zarniwoop.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19684","version":"1.1","vim_script_nr":4483},
+"vim-tmuxify":{"archive_name":"vim-tmuxify.tbz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19675","version":"1.0","vim_script_nr":4482},
+"joy":{"archive_name":"joy.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19674","version":"1.0","vim_script_nr":4481},
 "composer":{"archive_name":"Composer.vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19673","version":"0.1","vim_script_nr":4480},
 "iwilldiffer":{"archive_name":"iwilldiffer-0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19668","version":"0.1","vim_script_nr":4479},
 "vim-run-live":{"archive_name":"vim-run-live.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19663","version":"1.0","vim_script_nr":4478},
@@ -2074,7 +2078,7 @@
 "rootwater":{"archive_name":"rootwater.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10978","version":"1.3","vim_script_nr":2350},
 "indentgenie":{"archive_name":"genie.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=9150","version":"0.1","vim_script_nr":2349},
 "Chimp":{"archive_name":"chimp-1.2.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=9368","version":"1.2.0","vim_script_nr":2348},
-"Trinity":{"archive_name":"Trinity-2.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19672","version":"2.1","vim_script_nr":2347},
+"Trinity":{"archive_name":"Trinity-2.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19683","version":"2.1","vim_script_nr":2347},
 "bufmru":{"archive_name":"bufmru.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10574","version":"3.3","vim_script_nr":2346},
 "Vimchant":{"archive_name":"vimchant.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=9199","version":"1.1","vim_script_nr":2345},
 "ku-metarw":{"archive_name":"vim-ku-metarw-0.1.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10602","version":"0.1.2","vim_script_nr":2344},

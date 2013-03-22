@@ -13871,5 +13871,17 @@
    ],
    "4480" : [
       "composer"
+   ],
+   "4481" : [
+      "joy"
+   ],
+   "4482" : [
+      "vim-tmuxify"
+   ],
+   "4483" : [
+      "zarniwoop"
+   ],
+   "4484" : [
+      "assistEncloseManip"
    ]
 }
