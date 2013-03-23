@@ -1976,6 +1976,7 @@ let scmnr.4440 = {'type': 'git', 'url': 'git://github.com/andviro/flake8-vim'}
 " Ryan King
 let scmnr.4450 = {'type': 'git', 'url': 'git://github.com/rking/ag.vim'}
 let scmnr.4451 = {'type': 'git', 'url': 'git://github.com/rking/pry-de', 'addon-info': {'runtimepath': 'vim'}}
+let scmnr.4481 = {'type': 'git', 'url': 'git://github.com/rking/vim-joy'}
 
 " Josh Perez
 " Old maintainer gave write access to old repository to the new one, thus URL 
@@ -2017,6 +2018,15 @@ let scmnr.4478 = {'type': 'git', 'url': 'git://github.com/notalex/vim-run-live'}
 
 " Shu Chen
 let scmnr.4479 = {'type': 'hg', 'url': 'https://bitbucket.org/sirpengi/iwilldiffer'}
+
+" Denis Tukalenko
+let scmnr.4480 = {'type': 'git', 'url': 'git://github.com/detook/vim-composer'}
+
+" Marco Hinz
+let scmnr.4482 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-tmuxify'}
+
+" Steffen L. Norgren
+let scmnr.4483 = {'type': 'git', 'url': 'git://github.com/xironix/zarniwoop.vim'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
