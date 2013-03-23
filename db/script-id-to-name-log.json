@@ -13883,5 +13883,8 @@
    ],
    "4484" : [
       "assistEncloseManip"
+   ],
+   "4485" : [
+      "vim-git-log"
    ]
 }
