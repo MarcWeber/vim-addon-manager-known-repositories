@@ -1,6 +1,6 @@
 {
 "vim-git-log":{"archive_name":"vim-git-log-master.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19686","version":"0.01","vim_script_nr":4485},
-"assistEncloseManip":{"archive_name":"assistEncloseManip.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19689","version":"0.12a","vim_script_nr":4484},
+"assistEncloseManip":{"archive_name":"assistEncloseManip.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19694","version":"0.14","vim_script_nr":4484},
 "zarniwoop":{"archive_name":"zarniwoop.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19684","version":"1.1","vim_script_nr":4483},
 "vim-tmuxify":{"archive_name":"vim-tmuxify.tbz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19675","version":"1.0","vim_script_nr":4482},
 "joy":{"archive_name":"joy.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19674","version":"1.0","vim_script_nr":4481},
