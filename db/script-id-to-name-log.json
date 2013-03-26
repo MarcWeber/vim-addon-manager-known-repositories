@@ -13889,5 +13889,8 @@
    ],
    "4486" : [
       "vim-rst-sections"
+   ],
+   "4487" : [
+      "vim-signify"
    ]
 }
