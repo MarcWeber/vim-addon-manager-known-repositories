@@ -810,6 +810,7 @@ let scmnr.603 = {'type': 'git', 'url': 'git://github.com/chrisv/vim-chrisv'}
 " eric johnson
 " Also requires post-installation hook
 let scmnr.663 = {'type': 'git', 'url': 'git://github.com/kablamo/VimDebug'}
+let scmnr.4485 = {'type': 'git', 'url': 'git://github.com/kablamo/vim-git-log'}
 
 " atsushi moriki
 let scmnr.830 = {'type': 'git', 'url': 'git://github.com/petdance/vim-perl'}
@@ -2027,6 +2028,9 @@ let scmnr.4482 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-tmuxify'}
 
 " Steffen L. Norgren
 let scmnr.4483 = {'type': 'git', 'url': 'git://github.com/xironix/zarniwoop.vim'}
+
+" Matthew Brett
+let scmnr.4486 = {'type': 'git', 'url': 'git://github.com/matthew-brett/vim-rst-sections'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
