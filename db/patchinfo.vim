@@ -132,6 +132,7 @@ let mai_snr_deps.4253 = [2646]
 let mai_snr_deps.4283 = [3736]
 let mai_snr_deps.4322 = [4321, 1359]
 let mai_snr_deps.4463 = [2467]
+let mai_snr_deps.4492 = [4491]
 " vimproc dependants
 let mai_snr_deps.4336 = ['vimproc']
 let mai_snr_deps.4473 = ['vimproc']

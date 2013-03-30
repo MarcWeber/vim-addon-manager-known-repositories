@@ -248,6 +248,7 @@ let scmnr.4394 = {'type': 'git', 'url': 'git://github.com/tpope/vim-scriptease'}
 let scmnr.4410 = {'type': 'git', 'url': 'git://github.com/tpope/vim-characterize'}
 let scmnr.4455 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rbenv'}
 let scmnr.4472 = {'type': 'git', 'url': 'git://github.com/tpope/vim-obsession'}
+let scmnr.4488 = {'type': 'git', 'url': 'git://github.com/tpope/vim-tbone'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -1767,6 +1768,8 @@ let scmnr.4192 = {'type': 'git', 'url': 'git://github.com/tudorprodan/html_annoy
 " Niels Madan
 let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
 let scmnr.4328 = {'type': 'git', 'url': 'git://github.com/nielsmadan/easel'}
+let scmnr.4491 = {'type': 'git', 'url': 'git://github.com/nielsmadan/venom'}
+let scmnr.4492 = {'type': 'git', 'url': 'git://github.com/nielsmadan/mercury'}
 
 " Fanael Linithien
 let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transliterate'}
@@ -2025,12 +2028,26 @@ let scmnr.4480 = {'type': 'git', 'url': 'git://github.com/detook/vim-composer'}
 
 " Marco Hinz
 let scmnr.4482 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-tmuxify'}
+let scmnr.4487 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-signify'}
 
 " Steffen L. Norgren
 let scmnr.4483 = {'type': 'git', 'url': 'git://github.com/xironix/zarniwoop.vim'}
 
 " Matthew Brett
 let scmnr.4486 = {'type': 'git', 'url': 'git://github.com/matthew-brett/vim-rst-sections'}
+
+" Kent Yuan
+let scmnr.4489 = {'type': 'git', 'url': 'git://github.com/sk1418/last256'}
+let scmnr.4490 = {'type': 'git', 'url': 'git://github.com/sk1418/QFGrep'}
+
+" Arseny Zarechnev
+let scmnr.4493 = {'type': 'git', 'url': 'git://github.com/evindor/vim-rusmode'}
+
+" Jonathan Warner
+let scmnr.4494 = {'type': 'git', 'url': 'git://github.com/jaxbot/brolink.vim'}
+
+" z jx
+let scmnr.4496 = {'type': 'git', 'url': 'git://github.com/sangwich/colorful-statusline'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
