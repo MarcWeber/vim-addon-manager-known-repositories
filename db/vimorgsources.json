@@ -1,4 +1,8 @@
 {
+"Code_Upstairs":{"archive_name":"cu-vim-0.1.tgz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19730","version":"0.1","vim_script_nr":4498},
+"Git_Support":{"archive_name":"git-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19729","version":"0.9","vim_script_nr":4497},
+"colorful-statusline":{"archive_name":"colorful-statusline.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19728","version":"0.1","vim_script_nr":4496},
+"molokai_nancle":{"archive_name":"molokai_nancle.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19727","version":"1.0","vim_script_nr":4495},
 "Brolink":{"archive_name":"brolink.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19725","version":"1.0","vim_script_nr":4494},
 "vim-rusmode":{"archive_name":"vim-rusmode.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19724","version":"0.1","vim_script_nr":4493},
 "mercury%4492":{"archive_name":"mercury.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19722","version":"1.0","vim_script_nr":"4492"},
@@ -38,7 +42,7 @@
 "convert_case":{"archive_name":"convert_case.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19569","version":"1.0","vim_script_nr":4457},
 "vgdb":{"archive_name":"vgdb.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19566","version":"1","vim_script_nr":4456},
 "rbenv":{"archive_name":"rbenv.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19585","version":"1.1","vim_script_nr":4455},
-"vim-vimlparser":{"archive_name":"vim-vimlparser.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19578","version":"0.2","vim_script_nr":4454},
+"vim-vimlparser":{"archive_name":"vim-vimlparser.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19726","version":"0.3","vim_script_nr":4454},
 "play":{"archive_name":"play.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19560","version":"0.9.1","vim_script_nr":4453},
 "vim-javascript":{"archive_name":"vim-javascript.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19555","version":"1.0.0","vim_script_nr":4452},
 "pry":{"archive_name":"ruby_pry.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19553","version":"1.0","vim_script_nr":4451},
