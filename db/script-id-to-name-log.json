@@ -13926,5 +13926,11 @@
    ],
    "4498" : [
       "Code_Upstairs"
+   ],
+   "4499" : [
+      "vim-expand-region"
+   ],
+   "4500" : [
+      "rebtags"
    ]
 }
