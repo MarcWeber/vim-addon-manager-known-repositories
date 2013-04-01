@@ -13932,5 +13932,14 @@
    ],
    "4500" : [
       "rebtags"
+   ],
+   "4501" : [
+      "table-mode"
+   ],
+   "4502" : [
+      "eighties"
+   ],
+   "4503" : [
+      "vim-xkbswitch"
    ]
 }
