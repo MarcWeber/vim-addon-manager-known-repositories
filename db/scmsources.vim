@@ -85,7 +85,7 @@ let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ha
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
 let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
-let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
+let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate'}
 let scmnr.4340 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commandline-completion'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-rfc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rfc'}
@@ -1440,10 +1440,6 @@ let scmnr.3798 = {'type': 'git', 'url': 'git://github.com/mmalecki/vim-node.js'}
 
 " Rory McKinley
 let scmnr.3803 = {'type': 'git', 'url': 'git://github.com/rorymckinley/vim-symbols-strings'}
-
-" Bartłomiej Danek
-let scmnr.3820 = {'type': 'git', 'url': 'git://github.com/bartekd/vim-dart'}
-let scmnr.3830 = {'type': 'git', 'url': 'git://github.com/bartekd/better-snipmate-snippets'}
 
 " Paul Meng
 let scmnr.3821 = {'type': 'git', 'url': 'git://github.com/MnO2/vim-ocaml-conceal'}
