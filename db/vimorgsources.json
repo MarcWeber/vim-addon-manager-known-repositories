@@ -1,4 +1,5 @@
 {
+"textobj-latex":{"archive_name":"vim-textobj-latex-v0.90.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19763","version":"0.90","vim_script_nr":4506},
 "autohide":{"archive_name":"autohide_v1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19756","version":"1","vim_script_nr":4505},
 "dispatch":{"archive_name":"dispatch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19747","version":"1.0","vim_script_nr":4504},
 "vim-xkbswitch":{"archive_name":"vim-xkbswitch-0.2.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19754","version":"0.2","vim_script_nr":4503},
