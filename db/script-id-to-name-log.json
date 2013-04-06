@@ -13950,5 +13950,11 @@
    ],
    "4506" : [
       "textobj-latex"
+   ],
+   "4507" : [
+      "conflicts"
+   ],
+   "4508" : [
+      "pytest-compiler"
    ]
 }
