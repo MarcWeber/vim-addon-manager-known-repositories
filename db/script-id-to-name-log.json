@@ -13956,5 +13956,20 @@
    ],
    "4508" : [
       "pytest-compiler"
+   ],
+   "4509" : [
+      "TLA"
+   ],
+   "4510" : [
+      "HLPSL"
+   ],
+   "4511" : [
+      "vim-ember-script"
+   ],
+   "4512" : [
+      "thwins"
+   ],
+   "4513" : [
+      "haml_instant"
    ]
 }
