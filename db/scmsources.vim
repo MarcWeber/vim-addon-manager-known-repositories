@@ -249,6 +249,7 @@ let scmnr.4410 = {'type': 'git', 'url': 'git://github.com/tpope/vim-characterize
 let scmnr.4455 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rbenv'}
 let scmnr.4472 = {'type': 'git', 'url': 'git://github.com/tpope/vim-obsession'}
 let scmnr.4488 = {'type': 'git', 'url': 'git://github.com/tpope/vim-tbone'}
+let scmnr.4504 = {'type': 'git', 'url': 'git://github.com/tpope/vim-dispatch'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
@@ -2047,6 +2048,33 @@ let scmnr.4494 = {'type': 'git', 'url': 'git://github.com/jaxbot/brolink.vim'}
 " z jx
 let scmnr.4496 = {'type': 'git', 'url': 'git://github.com/sangwich/colorful-statusline'}
 
+" Tomasz Wyderka
+let scmnr.4498 = {'type': 'git', 'url': 'git://github.com/wyderkat/code_upstairs'}
+
+" Terry Ma
+let scmnr.4499 = {'type': 'git', 'url': 'git://github.com/terryma/vim-expand-region'}
+
+" Jesús Espino
+let scmnr.4500 = {'type': 'git', 'url': 'git://github.com/jespino/vim-rebtags'}
+
+" Dhruva Sagar
+let scmnr.4501 = {'type': 'git', 'url': 'git://github.com/dhruvasagar/vim-table-mode'}
+
+" Justin Campbell
+let scmnr.4502 = {'type': 'git', 'url': 'git://github.com/justincampbell/vim-eighties'}
+
+" Alexey Radkov
+let scmnr.4503 = {'type': 'git', 'url': 'git://github.com/lyokha/vim-xkbswitch'}
+
+" Ben Fritz
+let scmnr.4505 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-autohide-plugin'}
+
+" Roberto Bonvallet
+let scmnr.4506 = {'type': 'git', 'url': 'git://github.com/rbonvall/vim-textobj-latex'}
+
+" Whyme Lyu
+let scmnr.4508 = {'type': 'git', 'url': 'git://github.com/5long/pytest-vim-compiler'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
@@ -2101,6 +2129,7 @@ let scmnr.4263 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/basi
 
 " Baptiste Fontaine
 let scmnr.4181 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
+let scmnr.4507 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/conflicts.vim'}, {'conflicts.vim': 'syntax'})
 
 " Shuhei Kubota
 let scmnr.2542 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/starrange'}, {'starrange.vim': 'plugin'})
