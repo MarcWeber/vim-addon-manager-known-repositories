@@ -1626,6 +1626,7 @@ let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vi
 let scmnr.4056 = {'type': 'git', 'url': 'git://github.com/michalliu/jsoncodecs.vim'}
 let scmnr.4057 = {'type': 'git', 'url': 'git://github.com/michalliu/jsflakes.vim'}
 let scmnr.4079 = {'type': 'git', 'url': 'git://github.com/michalliu/sourcebeautify.vim'}
+let scmnr.4513 = {'type': 'git', 'url': 'git://github.com/michalliu/haml-instant'}
 
 " Mike Lue
 let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
@@ -2075,6 +2076,9 @@ let scmnr.4506 = {'type': 'git', 'url': 'git://github.com/rbonvall/vim-textobj-l
 " Whyme Lyu
 let scmnr.4508 = {'type': 'git', 'url': 'git://github.com/5long/pytest-vim-compiler'}
 
+" hearts entwined
+let scmnr.4511 = {'type': 'git', 'url': 'git://github.com/heartsentwined/vim-ember-script'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
@@ -2101,6 +2105,9 @@ let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/c
 " joey c
 " The following plugin does not have a separate repository:
 let scmnr.4381 = {'url': 'http://hwi.ath.cx/code/home/.vim/plugin/RepeatLast.vim', 'archive_name': 'RepeatLast.vim', 'type': 'archive', 'script-type': 'utility'}
+
+" Hugo Wang
+let scmnr.4512 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mitnk/thwins'}, {'thwins.vim': 'plugin'})
 
 " Felipe Tanus
 let scmnr.4420 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/fotanus/fold_license'}, {'fold_license.vim': 'plugin'})
