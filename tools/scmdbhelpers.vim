@@ -36,7 +36,11 @@ function! GetPrevSNR()
     endif
 endfunction
 function! s:GitUrl(url)
-    return 'git://'.substitute(substitute(substitute(substitute(a:url, '^\w\+://', '', ''), '/\(/\|$\)\@=', '', ''), '^\([^/]*/[^/]*/[^/]*\).*', '\1', ''), '\.git$', '', '')
+    if a:url[:23] is# 'https://code.google.com/'
+        return substitute(a:url, '/*$', '', '')
+    else
+        return 'git://'.substitute(substitute(substitute(substitute(a:url, '^\w\+://', '', ''), '/\(/\|$\)\@=', '', ''), '^\([^/]*/[^/]*/[^/]*\).*', '\1', ''), '\.git$', '', '')
+    endif
 endfunction
 function! s:ProcNR(url, nr)
     let nr=a:nr

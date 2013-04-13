@@ -2013,6 +2013,7 @@ let scmnr.4475 = {'type': 'git', 'url': 'git://github.com/g3orge/vim-voogle'}
 
 " Junegunn Choi
 let scmnr.4476 = {'type': 'git', 'url': 'git://github.com/junegunn/vim-scroll-position'}
+let scmnr.4520 = {'type': 'git', 'url': 'git://github.com/junegunn/vim-easy-align'}
 
 " Arnaud Le Blanc
 let scmnr.4477 = {'type': 'git', 'url': 'git://github.com/arnaud-lb/vim-php-namespace'}
@@ -2039,6 +2040,7 @@ let scmnr.4486 = {'type': 'git', 'url': 'git://github.com/matthew-brett/vim-rst-
 " Kent Yuan
 let scmnr.4489 = {'type': 'git', 'url': 'git://github.com/sk1418/last256'}
 let scmnr.4490 = {'type': 'git', 'url': 'git://github.com/sk1418/QFGrep'}
+let scmnr.4516 = {'type': 'git', 'url': 'git://github.com/sk1418/Join'}
 
 " Arseny Zarechnev
 let scmnr.4493 = {'type': 'git', 'url': 'git://github.com/evindor/vim-rusmode'}
@@ -2078,6 +2080,18 @@ let scmnr.4508 = {'type': 'git', 'url': 'git://github.com/5long/pytest-vim-compi
 
 " hearts entwined
 let scmnr.4511 = {'type': 'git', 'url': 'git://github.com/heartsentwined/vim-ember-script'}
+
+" fu design
+let scmnr.4518 = {'type': 'git', 'url': 'git://github.com/FuDesign2008/translator.vim'}
+
+" Keith Smiley
+let scmnr.4519 = {'type': 'git', 'url': 'git://github.com/Keithbsmiley/specta.vim'}
+
+" Alexey Chernenkov
+let scmnr.4521 = {'type': 'git', 'url': 'git://github.com/907th/vim-auto-save'}
+
+" Jesse Nazario
+let scmnr.4522 = {'type': 'git', 'url': 'https://code.google.com/p/vim-easyrun'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
