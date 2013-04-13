@@ -8684,6 +8684,7 @@
       "Better_Javascript_Indentation"
    ],
    "2766" : [
+      "Join%2766",
       "Join"
    ],
    "2767" : [
@@ -13974,5 +13975,29 @@
    ],
    "4514" : [
       "forest"
+   ],
+   "4515" : [
+      "tornadotmpl"
+   ],
+   "4516" : [
+      "Join%4516"
+   ],
+   "4517" : [
+      "templateX"
+   ],
+   "4518" : [
+      "translator"
+   ],
+   "4519" : [
+      "specta"
+   ],
+   "4520" : [
+      "vim-easy-align"
+   ],
+   "4521" : [
+      "vim-auto-save"
+   ],
+   "4522" : [
+      "VERun"
    ]
 }
