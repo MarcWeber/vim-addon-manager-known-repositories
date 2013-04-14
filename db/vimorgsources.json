@@ -1,4 +1,5 @@
 {
+"vim-multiple-cursors":{"archive_name":"vim-multiple-cursors.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19814","version":"1.0","vim_script_nr":4523},
 "VERun":{"archive_name":"verun-0.9.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19813","version":"0.9","vim_script_nr":4522},
 "vim-auto-save":{"archive_name":"vim-auto-save.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19810","version":"0.1.1","vim_script_nr":4521},
 "vim-easy-align":{"archive_name":"vim-easy-align.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19806","version":"1.0","vim_script_nr":4520},
@@ -2237,7 +2238,7 @@
 "pacific":{"archive_name":"pacific.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8652","version":"1.0","vim_script_nr":2229},
 "autopreview":{"archive_name":"autopreview.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=9037","version":"1.0","vim_script_nr":2228},
 "browser%2227":{"archive_name":"browser.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8647","version":"0.1.1","vim_script_nr":"2227"},
-"vimwiki":{"archive_name":"vimwiki-2-0-1.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18232","version":"2.0.1.stu","vim_script_nr":2226},
+"vimwiki":{"archive_name":"vimwiki-2-1.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19815","version":"2.1","vim_script_nr":2226},
 "sort_python_imports":{"archive_name":"sort_python_imports.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8703","version":"1.2","vim_script_nr":2225},
 "STL_improved":{"archive_name":"stl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8628","version":"0.1","vim_script_nr":2224},
 "tinymode":{"archive_name":"tinymode_0.5.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=9130","version":"0.5","vim_script_nr":2223},

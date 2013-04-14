@@ -13999,5 +13999,8 @@
    ],
    "4522" : [
       "VERun"
+   ],
+   "4523" : [
+      "vim-multiple-cursors"
    ]
 }
