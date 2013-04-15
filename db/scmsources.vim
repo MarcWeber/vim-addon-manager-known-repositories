@@ -2056,6 +2056,7 @@ let scmnr.4498 = {'type': 'git', 'url': 'git://github.com/wyderkat/code_upstairs
 
 " Terry Ma
 let scmnr.4499 = {'type': 'git', 'url': 'git://github.com/terryma/vim-expand-region'}
+let scmnr.4523 = {'type': 'git', 'url': 'git://github.com/terryma/vim-multiple-cursors'}
 
 " Jesús Espino
 let scmnr.4500 = {'type': 'git', 'url': 'git://github.com/jespino/vim-rebtags'}
