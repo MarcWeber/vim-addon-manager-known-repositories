@@ -18,7 +18,7 @@ my $verbose=shift @ARGV;
 my $dumpall=shift @ARGV;
 
 my $ua=LWP::UserAgent->new(cookie_jar => {},
-                             max_size => 10*1024*1024,
+                             max_size => 100*1024*1024,
                     protocols_allowed => ['http'],
                               timeout => 30,
                                 agent => "www_vim_org.pl");

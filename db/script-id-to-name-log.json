@@ -1589,6 +1589,7 @@
       "greputil"
    ],
    "507" : [
+      "mercury%507",
       "mercury"
    ],
    "508" : [
@@ -6829,6 +6830,7 @@
       "cqml"
    ],
    "2179" : [
+      "Source_Explorer_SrcExpl",
       "SrcExpl",
       "srcexpl",
       "Source_Explorer_srcexpl.vim",
@@ -8682,6 +8684,7 @@
       "Better_Javascript_Indentation"
    ],
    "2766" : [
+      "Join%2766",
       "Join"
    ],
    "2767" : [
@@ -13846,5 +13849,158 @@
    ],
    "4472" : [
       "obsession"
+   ],
+   "4473" : [
+      "ghcmod"
+   ],
+   "4474" : [
+      "interactive-replace"
+   ],
+   "4475" : [
+      "voogle"
+   ],
+   "4476" : [
+      "vim-scroll-position"
+   ],
+   "4477" : [
+      "vim-php-namespace"
+   ],
+   "4478" : [
+      "vim-run-live"
+   ],
+   "4479" : [
+      "iwilldiffer"
+   ],
+   "4480" : [
+      "composer"
+   ],
+   "4481" : [
+      "joy"
+   ],
+   "4482" : [
+      "vim-tmuxify"
+   ],
+   "4483" : [
+      "zarniwoop"
+   ],
+   "4484" : [
+      "assistEncloseManip"
+   ],
+   "4485" : [
+      "vim-git-log"
+   ],
+   "4486" : [
+      "vim-rst-sections"
+   ],
+   "4487" : [
+      "vim-signify"
+   ],
+   "4488" : [
+      "tbone"
+   ],
+   "4489" : [
+      "last256"
+   ],
+   "4490" : [
+      "QFGrep"
+   ],
+   "4491" : [
+      "venom"
+   ],
+   "4492" : [
+      "mercury%4492"
+   ],
+   "4493" : [
+      "vim-rusmode"
+   ],
+   "4494" : [
+      "Brolink"
+   ],
+   "4495" : [
+      "molokai_nancle"
+   ],
+   "4496" : [
+      "colorful-statusline"
+   ],
+   "4497" : [
+      "Git_Support"
+   ],
+   "4498" : [
+      "Code_Upstairs"
+   ],
+   "4499" : [
+      "vim-expand-region"
+   ],
+   "4500" : [
+      "rebtags"
+   ],
+   "4501" : [
+      "table-mode"
+   ],
+   "4502" : [
+      "eighties"
+   ],
+   "4503" : [
+      "vim-xkbswitch"
+   ],
+   "4504" : [
+      "dispatch"
+   ],
+   "4505" : [
+      "autohide"
+   ],
+   "4506" : [
+      "textobj-latex"
+   ],
+   "4507" : [
+      "conflicts"
+   ],
+   "4508" : [
+      "pytest-compiler"
+   ],
+   "4509" : [
+      "TLA"
+   ],
+   "4510" : [
+      "HLPSL"
+   ],
+   "4511" : [
+      "vim-ember-script"
+   ],
+   "4512" : [
+      "thwins"
+   ],
+   "4513" : [
+      "haml_instant"
+   ],
+   "4514" : [
+      "forest"
+   ],
+   "4515" : [
+      "tornadotmpl"
+   ],
+   "4516" : [
+      "Join%4516"
+   ],
+   "4517" : [
+      "templateX"
+   ],
+   "4518" : [
+      "translator"
+   ],
+   "4519" : [
+      "specta"
+   ],
+   "4520" : [
+      "vim-easy-align"
+   ],
+   "4521" : [
+      "vim-auto-save"
+   ],
+   "4522" : [
+      "VERun"
+   ],
+   "4523" : [
+      "vim-multiple-cursors"
    ]
 }

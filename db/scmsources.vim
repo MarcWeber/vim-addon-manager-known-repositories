@@ -85,7 +85,7 @@ let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ha
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
 let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
-let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
+let scmnr.2540 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate'}
 let scmnr.4340 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commandline-completion'}
 let scm['vim-addon-lout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-lout'}
 let scm['vim-addon-rfc'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rfc'}
@@ -247,9 +247,14 @@ let scmnr.4391 = {'type': 'git', 'url': 'git://github.com/tpope/vim-sensible'}
 let scmnr.4394 = {'type': 'git', 'url': 'git://github.com/tpope/vim-scriptease'}
 let scmnr.4410 = {'type': 'git', 'url': 'git://github.com/tpope/vim-characterize'}
 let scmnr.4455 = {'type': 'git', 'url': 'git://github.com/tpope/vim-rbenv'}
+let scmnr.4472 = {'type': 'git', 'url': 'git://github.com/tpope/vim-obsession'}
+let scmnr.4488 = {'type': 'git', 'url': 'git://github.com/tpope/vim-tbone'}
+let scmnr.4504 = {'type': 'git', 'url': 'git://github.com/tpope/vim-dispatch'}
 let scm['flatfoot'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-flatfoot'}
 let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
+let scm['vim-fireplace'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fireplace'}
+let scm['vim-classpath'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-classpath'}
 " " The below plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
 
@@ -809,6 +814,7 @@ let scmnr.603 = {'type': 'git', 'url': 'git://github.com/chrisv/vim-chrisv'}
 " eric johnson
 " Also requires post-installation hook
 let scmnr.663 = {'type': 'git', 'url': 'git://github.com/kablamo/VimDebug'}
+let scmnr.4485 = {'type': 'git', 'url': 'git://github.com/kablamo/vim-git-log'}
 
 " atsushi moriki
 let scmnr.830 = {'type': 'git', 'url': 'git://github.com/petdance/vim-perl'}
@@ -1270,7 +1276,7 @@ let scmnr.3564 = {'type': 'git', 'url': 'git://github.com/jceb/vim-hier'}
 let scmnr.3642 = {'type': 'git', 'url': 'git://github.com/jceb/vim-orgmode'}
 let scmnr.3809 = {'type': 'git', 'url': 'git://github.com/jceb/vim-ipi'}
 let scm['vim-fastwordcompleter'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-fastwordcompleter'}
-let scm['vim-multiedit'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-multiedit'}
+let scm['vim-multiedit@jceb'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-multiedit'}
 let scm['vim-cd'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-cd'}
 let scm['vim-qf_toggle'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-qf_toggle'}
 let scm['vim-rfc'] = {'type': 'git', 'url': 'git://github.com/jceb/vim-rfc'}
@@ -1435,10 +1441,6 @@ let scmnr.3798 = {'type': 'git', 'url': 'git://github.com/mmalecki/vim-node.js'}
 
 " Rory McKinley
 let scmnr.3803 = {'type': 'git', 'url': 'git://github.com/rorymckinley/vim-symbols-strings'}
-
-" Bartłomiej Danek
-let scmnr.3820 = {'type': 'git', 'url': 'git://github.com/bartekd/vim-dart'}
-let scmnr.3830 = {'type': 'git', 'url': 'git://github.com/bartekd/better-snipmate-snippets'}
 
 " Paul Meng
 let scmnr.3821 = {'type': 'git', 'url': 'git://github.com/MnO2/vim-ocaml-conceal'}
@@ -1624,6 +1626,7 @@ let scmnr.4050 = {'type': 'git', 'url': 'git://github.com/michalliu/jsruntime.vi
 let scmnr.4056 = {'type': 'git', 'url': 'git://github.com/michalliu/jsoncodecs.vim'}
 let scmnr.4057 = {'type': 'git', 'url': 'git://github.com/michalliu/jsflakes.vim'}
 let scmnr.4079 = {'type': 'git', 'url': 'git://github.com/michalliu/sourcebeautify.vim'}
+let scmnr.4513 = {'type': 'git', 'url': 'git://github.com/michalliu/haml-instant'}
 
 " Mike Lue
 let scmnr.4051 = {'type': 'git', 'url': 'git://github.com/mikelue/vim-maven-plugin'}
@@ -1765,6 +1768,8 @@ let scmnr.4192 = {'type': 'git', 'url': 'git://github.com/tudorprodan/html_annoy
 " Niels Madan
 let scmnr.4195 = {'type': 'git', 'url': 'git://github.com/nielsmadan/harlequin'}
 let scmnr.4328 = {'type': 'git', 'url': 'git://github.com/nielsmadan/easel'}
+let scmnr.4491 = {'type': 'git', 'url': 'git://github.com/nielsmadan/venom'}
+let scmnr.4492 = {'type': 'git', 'url': 'git://github.com/nielsmadan/mercury'}
 
 " Fanael Linithien
 let scmnr.4200 = {'type': 'hg', 'url': 'https://bitbucket.org/Fanael/vim-transliterate'}
@@ -1975,6 +1980,7 @@ let scmnr.4440 = {'type': 'git', 'url': 'git://github.com/andviro/flake8-vim'}
 " Ryan King
 let scmnr.4450 = {'type': 'git', 'url': 'git://github.com/rking/ag.vim'}
 let scmnr.4451 = {'type': 'git', 'url': 'git://github.com/rking/pry-de', 'addon-info': {'runtimepath': 'vim'}}
+let scmnr.4481 = {'type': 'git', 'url': 'git://github.com/rking/vim-joy'}
 
 " Josh Perez
 " Old maintainer gave write access to old repository to the new one, thus URL 
@@ -1983,6 +1989,109 @@ let scmnr.4452 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascrip
 
 " Tobias Pflug
 let scmnr.4458 = {'type': 'git', 'url': 'git://github.com/gilligan/textobj-gitgutter'}
+
+" bool fool
+let scmnr.4463 = {'type': 'git', 'url': 'git://github.com/boolfool/vim-easy-submode'}
+
+" Henrik Lissner
+let scmnr.4466 = {'type': 'git', 'url': 'git://github.com/hlissner/vim-transmitty'}
+let scmnr.4467 = {'type': 'git', 'url': 'git://github.com/hlissner/vim-multiedit'}
+let scmnr.4469 = {'type': 'git', 'url': 'git://github.com/hlissner/vim-forrestgump'}
+
+" Noah Frederick
+let scmnr.4470 = {'type': 'git', 'url': 'git://github.com/noahfrederick/Hemisu'}
+let scmnr.4471 = {'type': 'git', 'url': 'git://github.com/noahfrederick/vim-noctu'}
+
+" Kohei Suzuki
+let scmnr.4473 = {'type': 'git', 'url': 'git://github.com/eagletmt/ghcmod-vim'}
+
+" Harold Rodriguez
+let scmnr.4474 = {'type': 'git', 'url': 'git://github.com/hwrod/interactive-replace'}
+
+" George Papanikolaou
+let scmnr.4475 = {'type': 'git', 'url': 'git://github.com/g3orge/vim-voogle'}
+
+" Junegunn Choi
+let scmnr.4476 = {'type': 'git', 'url': 'git://github.com/junegunn/vim-scroll-position'}
+let scmnr.4520 = {'type': 'git', 'url': 'git://github.com/junegunn/vim-easy-align'}
+
+" Arnaud Le Blanc
+let scmnr.4477 = {'type': 'git', 'url': 'git://github.com/arnaud-lb/vim-php-namespace'}
+
+" Alex Johnson
+let scmnr.4478 = {'type': 'git', 'url': 'git://github.com/notalex/vim-run-live'}
+
+" Shu Chen
+let scmnr.4479 = {'type': 'hg', 'url': 'https://bitbucket.org/sirpengi/iwilldiffer'}
+
+" Denis Tukalenko
+let scmnr.4480 = {'type': 'git', 'url': 'git://github.com/detook/vim-composer'}
+
+" Marco Hinz
+let scmnr.4482 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-tmuxify'}
+let scmnr.4487 = {'type': 'git', 'url': 'git://github.com/mhinz/vim-signify'}
+
+" Steffen L. Norgren
+let scmnr.4483 = {'type': 'git', 'url': 'git://github.com/xironix/zarniwoop.vim'}
+
+" Matthew Brett
+let scmnr.4486 = {'type': 'git', 'url': 'git://github.com/matthew-brett/vim-rst-sections'}
+
+" Kent Yuan
+let scmnr.4489 = {'type': 'git', 'url': 'git://github.com/sk1418/last256'}
+let scmnr.4490 = {'type': 'git', 'url': 'git://github.com/sk1418/QFGrep'}
+let scmnr.4516 = {'type': 'git', 'url': 'git://github.com/sk1418/Join'}
+
+" Arseny Zarechnev
+let scmnr.4493 = {'type': 'git', 'url': 'git://github.com/evindor/vim-rusmode'}
+
+" Jonathan Warner
+let scmnr.4494 = {'type': 'git', 'url': 'git://github.com/jaxbot/brolink.vim'}
+
+" z jx
+let scmnr.4496 = {'type': 'git', 'url': 'git://github.com/sangwich/colorful-statusline'}
+
+" Tomasz Wyderka
+let scmnr.4498 = {'type': 'git', 'url': 'git://github.com/wyderkat/code_upstairs'}
+
+" Terry Ma
+let scmnr.4499 = {'type': 'git', 'url': 'git://github.com/terryma/vim-expand-region'}
+
+" Jesús Espino
+let scmnr.4500 = {'type': 'git', 'url': 'git://github.com/jespino/vim-rebtags'}
+
+" Dhruva Sagar
+let scmnr.4501 = {'type': 'git', 'url': 'git://github.com/dhruvasagar/vim-table-mode'}
+
+" Justin Campbell
+let scmnr.4502 = {'type': 'git', 'url': 'git://github.com/justincampbell/vim-eighties'}
+
+" Alexey Radkov
+let scmnr.4503 = {'type': 'git', 'url': 'git://github.com/lyokha/vim-xkbswitch'}
+
+" Ben Fritz
+let scmnr.4505 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-autohide-plugin'}
+
+" Roberto Bonvallet
+let scmnr.4506 = {'type': 'git', 'url': 'git://github.com/rbonvall/vim-textobj-latex'}
+
+" Whyme Lyu
+let scmnr.4508 = {'type': 'git', 'url': 'git://github.com/5long/pytest-vim-compiler'}
+
+" hearts entwined
+let scmnr.4511 = {'type': 'git', 'url': 'git://github.com/heartsentwined/vim-ember-script'}
+
+" fu design
+let scmnr.4518 = {'type': 'git', 'url': 'git://github.com/FuDesign2008/translator.vim'}
+
+" Keith Smiley
+let scmnr.4519 = {'type': 'git', 'url': 'git://github.com/Keithbsmiley/specta.vim'}
+
+" Alexey Chernenkov
+let scmnr.4521 = {'type': 'git', 'url': 'git://github.com/907th/vim-auto-save'}
+
+" Jesse Nazario
+let scmnr.4522 = {'type': 'git', 'url': 'https://code.google.com/p/vim-easyrun'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
@@ -2011,6 +2120,9 @@ let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/c
 " The following plugin does not have a separate repository:
 let scmnr.4381 = {'url': 'http://hwi.ath.cx/code/home/.vim/plugin/RepeatLast.vim', 'archive_name': 'RepeatLast.vim', 'type': 'archive', 'script-type': 'utility'}
 
+" Hugo Wang
+let scmnr.4512 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mitnk/thwins'}, {'thwins.vim': 'plugin'})
+
 " Felipe Tanus
 let scmnr.4420 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/fotanus/fold_license'}, {'fold_license.vim': 'plugin'})
 
@@ -2038,6 +2150,7 @@ let scmnr.4263 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/basi
 
 " Baptiste Fontaine
 let scmnr.4181 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
+let scmnr.4507 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/conflicts.vim'}, {'conflicts.vim': 'syntax'})
 
 " Shuhei Kubota
 let scmnr.2542 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/starrange'}, {'starrange.vim': 'plugin'})
@@ -2212,6 +2325,12 @@ let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/R
 let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison'}
 let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-vim'}
 let scm['vim-css3-syntax'] = {'type': 'git', 'url': 'git://github.com/hail2u/vim-css3-syntax.git'}
+
+" Marius Gedminas
+let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
+
+" Meikel Brandmeyer
+let scm['vim-clojure-static'] = {'type': 'git', 'url': 'git://github.com/guns/vim-clojure-static'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
