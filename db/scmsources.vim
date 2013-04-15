@@ -2211,6 +2211,7 @@ let scm['opalang'] = {'type': 'git', 'url': 'git://github.com/MLstate/opalang', 
 let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
 let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison'}
 let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-vim'}
+let scm['vim-css3-syntax'] = {'type': 'git', 'url': 'git://github.com/hail2u/vim-css3-syntax.git'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
