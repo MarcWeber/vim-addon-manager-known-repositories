@@ -14002,5 +14002,17 @@
    ],
    "4523" : [
       "vim-multiple-cursors"
+   ],
+   "4524" : [
+      "vim-latex-live-preview"
+   ],
+   "4525" : [
+      "vim-xtcl-syntax"
+   ],
+   "4526" : [
+      "vimongous"
+   ],
+   "4527" : [
+      "vim-emblem"
    ]
 }
