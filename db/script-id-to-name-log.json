@@ -14014,5 +14014,23 @@
    ],
    "4527" : [
       "vim-emblem"
+   ],
+   "4528" : [
+      "modepar"
+   ],
+   "4529" : [
+      "GoldenView.Vim"
+   ],
+   "4530" : [
+      "MakeDoxygenComment_2013"
+   ],
+   "4531" : [
+      "ploticus"
+   ],
+   "4532" : [
+      "TweetVim"
+   ],
+   "4533" : [
+      "milk"
    ]
 }
