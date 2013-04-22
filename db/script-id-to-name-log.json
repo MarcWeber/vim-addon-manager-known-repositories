@@ -14038,5 +14038,14 @@
    ],
    "4535" : [
       "vim-smartclose"
+   ],
+   "4536" : [
+      "nextval"
+   ],
+   "4537" : [
+      "keymap"
+   ],
+   "4538" : [
+      "vim-gitmodeline"
    ]
 }
