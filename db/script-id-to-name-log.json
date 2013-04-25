@@ -14074,5 +14074,11 @@
    ],
    "4546" : [
       "vterm"
+   ],
+   "4547" : [
+      "ruby-syntaxchecker"
+   ],
+   "4548" : [
+      "vagrant"
    ]
 }
