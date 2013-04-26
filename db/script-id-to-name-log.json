@@ -14080,5 +14080,11 @@
    ],
    "4548" : [
       "vagrant"
+   ],
+   "4549" : [
+      "svn_line_history"
+   ],
+   "4550" : [
+      "PreserveNoEOL"
    ]
 }
