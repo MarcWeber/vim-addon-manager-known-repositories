@@ -2095,6 +2095,7 @@ let scmnr.4518 = {'type': 'git', 'url': 'git://github.com/FuDesign2008/translato
 
 " Keith Smiley
 let scmnr.4519 = {'type': 'git', 'url': 'git://github.com/Keithbsmiley/specta.vim'}
+let scmnr.4553 = {'type': 'git', 'url': 'git://github.com/Keithbsmiley/rspec.vim'}
 
 " Alexey Chernenkov
 let scmnr.4521 = {'type': 'git', 'url': 'git://github.com/907th/vim-auto-save'}
