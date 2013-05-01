@@ -136,6 +136,9 @@ let mai_snr_deps.4322 = [4321, 1359]
 let mai_snr_deps.4463 = [2467]
 let mai_snr_deps.4492 = [4491]
 let mai_snr_deps.4511 = [3590]
+let mai_snr_deps.4542 = [3736]
+let mai_snr_deps.4532 = [3133, 'twibill']
+" optional: 3396, 3476, unite-outline, vimproc, favstar-vim
 " vimproc dependants
 let mai_snr_deps.4336 = ['vimproc']
 let mai_snr_deps.4473 = ['vimproc']
@@ -226,7 +229,7 @@ let mai_snr_deps.3854 = [3396]
 let mai_snr_deps.3356 = [3396, 3133, 4019]
 " webapi dependants
 let mai_snr_deps.4143 = [4019]
-" Neocemplcache plugins
+" Neocomplcache plugins
 let mai_snr_deps.3423 = [2620]
 let mai_snr_deps.3440 = [2620]
 let mai_snr_deps.4043 = [2620]
