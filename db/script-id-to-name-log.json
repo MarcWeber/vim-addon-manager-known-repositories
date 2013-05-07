@@ -12963,6 +12963,7 @@
       "rslate"
    ],
    "4176" : [
+      "Rainbow_Parentheses_Improved",
       "Rainbow_Parentheses_Improved_",
       "Rainbow_Parentheses_Improved"
    ],
@@ -14151,5 +14152,17 @@
    ],
    "4571" : [
       "rel-jump"
+   ],
+   "4572" : [
+      "mystatusline"
+   ],
+   "4573" : [
+      "dummy_test_spam_script_uploaded_by_maint%4573"
+   ],
+   "4574" : [
+      "dummy_test_spam_script_uploaded_by_maint%4574"
+   ],
+   "4575" : [
+      "prev_indent"
    ]
 }
