@@ -14164,5 +14164,23 @@
    ],
    "4575" : [
       "prev_indent"
+   ],
+   "4576" : [
+      "linepower%4576"
+   ],
+   "4577" : [
+      "linepower%4577"
+   ],
+   "4578" : [
+      "."
+   ],
+   "4579" : [
+      "KeepComment"
+   ],
+   "4580" : [
+      "vim-niji"
+   ],
+   "4581" : [
+      "vim-identifier-movement"
    ]
 }
