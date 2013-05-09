@@ -14182,5 +14182,8 @@
    ],
    "4581" : [
       "vim-identifier-movement"
+   ],
+   "4582" : [
+      "Conque_GDB"
    ]
 }
