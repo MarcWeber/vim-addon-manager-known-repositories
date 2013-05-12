@@ -2370,6 +2370,7 @@ let scm['SkyBison'] = {'type': 'git', 'url': 'git://github.com/paradigm/SkyBison
 let scm['jedi-vim'] = {'type': 'git', 'url': 'git://github.com/davidhalter/jedi-vim'}
 let scm['vim-css3-syntax'] = {'type': 'git', 'url': 'git://github.com/hail2u/vim-css3-syntax'}
 let scm['neco-tweetvim'] = {'type': 'git', 'url': 'git://github.com/yomi322/neco-tweetvim'}
+let scm['ctrlp-cmatcher'] = {'type': 'git', 'url': 'git://github.com/JazzCore/ctrlp-cmatcher', 'addon-info': {'dependencies': {'%3736': {}}}}
 
 " Marius Gedminas
 let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
