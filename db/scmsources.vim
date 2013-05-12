@@ -760,7 +760,7 @@ let scm['logcat'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-logcat'}
 let scm['editvar'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-editvar'}
 let scm['partedit'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-partedit'}
 let scm['unite-history'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-unite-history'}
-let scm['textobj-comment'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-comment'}
+let scm['textobj-comment@thinca'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-textobj-comment'}
 let scm['vim-github'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-github'}
 let scm['auto_source'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-auto_source'}
 let scm['vim-scouter'] = {'type': 'git', 'url': 'git://github.com/thinca/vim-scouter'}
@@ -1462,6 +1462,7 @@ let scmnr.3949 = {'type': 'git', 'url': 'git://github.com/lambdalisue/pyunit.vim
 " Zhao Cai
 let scmnr.3854 = {'type': 'git', 'url': 'git://github.com/zhaocai/unite-scriptnames'}
 let scmnr.4529 = {'type': 'git', 'url': 'git://github.com/zhaocai/GoldenView'}
+let scmnr.4576 = {'type': 'git', 'url': 'git://github.com/zhaocai/linepower.vim'}
 
 " Matthias Guenther
 let scmnr.3856 = {'type': 'git', 'url': 'git://github.com/matthias-guenther/tocdown'}
@@ -1581,6 +1582,7 @@ let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
 let scmnr.3997 = {'type': 'git', 'url': 'git://github.com/glts/vim-spacebox'}
 let scmnr.4348 = {'type': 'git', 'url': 'git://github.com/glts/vim-textobj-indblock'}
 let scmnr.4421 = {'type': 'git', 'url': 'git://github.com/glts/vim-texlog'}
+let scmnr.4570 = {'type': 'git', 'url': 'git://github.com/glts/vim-textobj-comment'}
 
 " lorry lee
 let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
@@ -1808,6 +1810,7 @@ let scmnr.4237 = {'type': 'git', 'url': 'git://github.com/gcmt/taboo.vim'}
 let scmnr.4256 = {'type': 'git', 'url': 'git://github.com/gcmt/ozzy.vim'}
 let scmnr.4400 = {'type': 'git', 'url': 'git://github.com/gcmt/tube.vim'}
 let scmnr.4436 = {'type': 'git', 'url': 'git://github.com/gcmt/psearch.vim'}
+let scmnr.4569 = {'type': 'git', 'url': 'git://github.com/gcmt/breeze.vim'}
 
 " gokcehan kara
 let scmnr.4244 = {'type': 'git', 'url': 'git://github.com/gokcehan/vim-yacom'}
@@ -1836,6 +1839,7 @@ let scmnr.4525 = {'type': 'git', 'url': 'git://github.com/amal-khailtash/vim-xtc
 
 " Alastair Touw
 let scmnr.4277 = {'type': 'git', 'url': 'git://github.com/amdt/sunset'}
+let scmnr.4580 = {'type': 'git', 'url': 'git://github.com/amdt/vim-niji'}
 
 " Pete Johns
 let scmnr.4278 = {'type': 'git', 'url': 'git://github.com/johnsyweb/vim-makeshift'}
@@ -1975,6 +1979,7 @@ let scmnr.4430 = {'type': 'git', 'url': 'git://github.com/rkulla/vimogen'}
 " Roman Dolgushin
 let scmnr.4438 = {'type': 'git', 'url': 'git://github.com/rdolgushin/rythm.vim'}
 let scmnr.4453 = {'type': 'git', 'url': 'git://github.com/rdolgushin/play.vim'}
+let scmnr.4568 = {'type': 'git', 'url': 'git://github.com/rdolgushin/gitignore.vim'}
 
 " Derek Wyatt
 " Using the author's new github page. Link in vim.org is absent.
@@ -2122,6 +2127,12 @@ let scmnr.4547 = {'type': 'git', 'url': 'git://github.com/vantares/ruby-syntaxch
 
 " Will Pragnell
 let scmnr.4551 = {'type': 'git', 'url': 'git://github.com/willpragnell/vim-reprocessed'}
+
+" rargo ye
+let scmnr.4581 = {'type': 'git', 'url': 'git://github.com/rargo/vim-identifier-movement'}
+
+" Bastian Winkler
+let scmnr.4571 = {'type': 'git', 'url': 'git://github.com/buztard/vim-rel-jump'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 

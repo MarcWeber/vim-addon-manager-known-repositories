@@ -95,6 +95,7 @@ let add_by_snr.103 ={'deprecated': "This plugin states that it requires Johannes
 let add_by_snr.159 ={'deprecated': "No more maintained, use “minibufexplorer” instead. Requires git or you’ll have vimscript #3239 from vim.org which is itself deprecated (changed maintainer, new one posts only to git)"}
 
 let add_by_snr.3901={'deprecated': "Accident (?) duplicate of vimscript #3900"}
+let add_by_snr.4577={'deprecated': "Accident (?) duplicate of vimscript #4576"}
 
 let add_by_snr.3881={'deprecated': "Superseded by powerline (https://github.com/Lokaltog/powerline)"}
 let add_by_snr.3524={'deprecated': "Script page and the only download suggest using git, but referenced repository is absent"}
@@ -165,6 +166,7 @@ let mai_snr_deps.4304 = [2100]
 let mai_snr_deps.4348 = [2100]
 let mai_snr_deps.4458 = [2100, 'vim-gitgutter']
 let mai_snr_deps.4508 = [2100]
+let mai_snr_deps.4570 = [2100]
 " getvar dependants
 let mai_snr_deps.352  = [353, 354]
 let mai_snr_deps.994  = [353]
