@@ -14195,5 +14195,17 @@
    ],
    "4585" : [
       "vim-bgimg"
+   ],
+   "4586" : [
+      "vim-colorscheme-switcher"
+   ],
+   "4587" : [
+      "vim-neatstatus"
+   ],
+   "4588" : [
+      "vim-online-thesaurus"
+   ],
+   "4589" : [
+      "newt"
    ]
 }
