@@ -14082,6 +14082,7 @@
       "ruby-syntaxchecker"
    ],
    "4548" : [
+      "vim-vagrant",
       "vagrant"
    ],
    "4549" : [
@@ -14213,5 +14214,8 @@
    ],
    "4591" : [
       "winresizer"
+   ],
+   "4592" : [
+      "ctrlp-funky"
    ]
 }
