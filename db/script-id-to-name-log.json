@@ -14217,5 +14217,14 @@
    ],
    "4592" : [
       "ctrlp-funky"
+   ],
+   "4593" : [
+      "fishruler"
+   ],
+   "4594" : [
+      "header-info"
+   ],
+   "4595" : [
+      "vim-bufferline"
    ]
 }
