@@ -14226,5 +14226,8 @@
    ],
    "4595" : [
       "vim-bufferline"
+   ],
+   "4596" : [
+      "verilog_auto_testbench"
    ]
 }
