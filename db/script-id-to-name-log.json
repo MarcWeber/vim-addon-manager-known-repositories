@@ -14229,5 +14229,11 @@
    ],
    "4596" : [
       "verilog_auto_testbench"
+   ],
+   "4597" : [
+      "vim-misc"
+   ],
+   "4598" : [
+      "rainbow_csv"
    ]
 }
