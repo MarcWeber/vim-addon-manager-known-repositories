@@ -1408,7 +1408,7 @@
 "xpcomplete":{"archive_name":"xpcomplete.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13223","version":"r660","vim_script_nr":3126},
 "PIV":{"archive_name":"piv.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13186","version":".9","vim_script_nr":3125},
 "vim-addon-sbt":{"archive_name":"vim-addon-sbt-0.1.1.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13409","version":"0.1.1.2","vim_script_nr":3124},
-"shell":{"archive_name":"shell.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20209","version":"0.12.7","vim_script_nr":3123},
+"shell":{"archive_name":"shell.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20225","version":"0.12.9","vim_script_nr":3123},
 "PySuite":{"archive_name":"pysuite-0.3.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13247","version":"0.3.0","vim_script_nr":3122},
 "django_templates":{"archive_name":"django_templates.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17298","version":"0.4","vim_script_nr":3121},
 "grails-vim":{"archive_name":"grails-vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13213","version":"0.2","vim_script_nr":3120},
