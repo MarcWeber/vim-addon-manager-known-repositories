@@ -4002,6 +4002,7 @@
       "SpotlightOpen"
    ],
    "1276" : [
+      "autoscroll%1276",
       "autoscroll"
    ],
    "1277" : [
@@ -14257,5 +14258,11 @@
    ],
    "4605" : [
       "seoul256"
+   ],
+   "4606" : [
+      "move_until_char_changes"
+   ],
+   "4607" : [
+      "autoscroll%4607"
    ]
 }
