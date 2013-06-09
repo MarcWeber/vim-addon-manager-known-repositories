@@ -2339,6 +2339,9 @@ let scm['robotframework-vim'] = {'type': 'git', 'url': 'git://github.com/mfukar/
 " installation instructions: https://github.com/Valloric/YouCompleteMe#full-installation-guide
 let scm['YouCompleteMe'] = {'type': 'git', 'url': 'git://github.com/Valloric/YouCompleteMe'}
 
+" zaiste
+let scm['tmux'] = {'type': 'git', 'url': 'git://github.com/zaiste/tmux.vim'}
+
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
 let scm['Vim-R-plugin2'] = {'type': 'git', 'url': 'git://github.com/jimmyharris/vim-r-plugin2'}
