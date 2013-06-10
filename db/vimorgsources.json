@@ -1,4 +1,5 @@
 {
+"vim-cpp-enhanced-highlight":{"archive_name":"vim-cpp-enhanced-highlight-0.1.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20330","version":"0.1","vim_script_nr":4617},
 "shootingstar":{"archive_name":"shootingstar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20328","version":"0.1","vim_script_nr":4616},
 "thumbnail":{"archive_name":"thumbnail.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20326","version":"0.1","vim_script_nr":4615},
 "vim-autopep8":{"archive_name":"python_autopep8.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20318","version":"1.0.1","vim_script_nr":4614},
@@ -16,7 +17,7 @@
 "PatternsOnText":{"archive_name":"PatternsOnText-1.10.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20307","version":"1.10","vim_script_nr":4602},
 "grails-conque":{"archive_name":"grails-conque.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20284","version":"0.3","vim_script_nr":4601},
 "Sprunge_Paste_Upload":{"archive_name":"sprunge.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20224","version":"0.1","vim_script_nr":4600},
-"videm":{"archive_name":"videm-1003.tar.xz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20266","version":"1.003","vim_script_nr":4599},
+"videm":{"archive_name":"videm-1004.tar.xz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20331","version":"1.004","vim_script_nr":4599},
 "rainbow_csv":{"archive_name":"rainbow_csv.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20204","version":"1.0","vim_script_nr":4598},
 "vim-misc":{"archive_name":"misc.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20274","version":"1.6","vim_script_nr":4597},
 "verilog_auto_testbench":{"archive_name":"verilog_auto_testbench.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20199","version":"1.1","vim_script_nr":4596},
@@ -221,7 +222,7 @@
 "vim-maximizer":{"archive_name":"vim-maximizer.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19263","version":"1.0.1","vim_script_nr":4376},
 "sleuth":{"archive_name":"sleuth.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19409","version":"1.1","vim_script_nr":4375},
 "pyflakes-nopython":{"archive_name":"pyflakes-nopython.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19266","version":"0.2","vim_script_nr":4374},
-"sh%4373":{"archive_name":"sh.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20329","version":"1.22","vim_script_nr":"4373"},
+"sh%4373":{"archive_name":"sh.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20333","version":"1.24","vim_script_nr":"4373"},
 "awk":{"archive_name":"awk.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20321","version":"1.35","vim_script_nr":4372},
 "Gentooish_II":{"archive_name":"gentooishII.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19246","version":"1.0","vim_script_nr":4371},
 "visualMarks":{"archive_name":"visualMarks.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19243","version":"1.1","vim_script_nr":4370},
