@@ -14294,5 +14294,8 @@
    ],
    "4617" : [
       "vim-cpp-enhanced-highlight"
+   ],
+   "4618" : [
+      "kink"
    ]
 }
