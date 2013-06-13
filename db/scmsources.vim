@@ -2388,7 +2388,7 @@ let scm['YouCompleteMe'] = {'type': 'git', 'url': 'git://github.com/Valloric/You
 let scm['tmux'] = {'type': 'git', 'url': 'git://github.com/zaiste/tmux.vim'}
 
 " tfnico
-let scm['vim-gradle'] = {'type': 'git', 'url': 'git@github.com:tfnico/vim-gradle'}
+let scm['vim-gradle'] = {'type': 'git', 'url': 'git://github.com/tfnico/vim-gradle'}
 
 " others:
 let scm['mustache'] = {'type': 'git', 'url': 'git://github.com/juvenn/mustache.vim'}
