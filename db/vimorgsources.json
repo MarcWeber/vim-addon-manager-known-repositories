@@ -3,7 +3,7 @@
 "kink":{"archive_name":"kink.vim-1.0.2.vba","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20352","version":"1.0.2","vim_script_nr":4618},
 "vim-cpp-enhanced-highlight":{"archive_name":"vim-cpp-enhanced-highlight-0.1.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20330","version":"0.1","vim_script_nr":4617},
 "shootingstar":{"archive_name":"shootingstar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20328","version":"0.1","vim_script_nr":4616},
-"thumbnail":{"archive_name":"thumbnail.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20326","version":"0.1","vim_script_nr":4615},
+"thumbnail":{"archive_name":"thumbnail.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20357","version":"0.2","vim_script_nr":4615},
 "vim-autopep8":{"archive_name":"python_autopep8.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20318","version":"1.0.1","vim_script_nr":4614},
 "vim-origami":{"archive_name":"vim-origami.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20313","version":"1.5","vim_script_nr":4613},
 "aPen":{"archive_name":"apen.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20290","version":"beta","vim_script_nr":4612},
