@@ -171,12 +171,7 @@ let scm['textobj-django-template'] = {'type': 'git', 'url': 'git://github.com/ka
 let scm['flymake'] = {'type': 'git', 'url': 'git://github.com/kana/vim-flymake'}
 
 " Honza Pokorny
-" vim-snippets is the old "snipmate-snippets" repository
-" In the near future it hopefully is also used by UltiSnip users hence the renaming
-" Right now it can be installed by vim-snippets and snimpate-snippet names,
-" both contain the same
 let scmnr.3633 = {'type': 'git', 'url': 'git://github.com/honza/vim-snippets'}
-let scm['vim-snippets'] = {'type': 'git', 'url': 'git://github.com/honza/vim-snippets'}
 
 " Peter Odding
 let scmnr.2252 = {'type': 'git', 'url': 'git://github.com/xolox/vim-publish'}
@@ -2182,6 +2177,9 @@ let scmnr.4617 = {'type': 'git', 'url': 'git://github.com/octol/vim-cpp-enhanced
 
 " Taku Miyakawa
 let scmnr.4618 = {'type': 'git', 'url': 'https://bitbucket.org/kink/kink.vim'}
+
+" Pratheek
+let scmnr.4620 = {'type': 'git', 'url': 'git://github.com/Pychimp/vim-luna'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
