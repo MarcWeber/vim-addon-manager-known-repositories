@@ -17,9 +17,11 @@ function! vamkr#LoadDBFile(file) abort
         " and gets the job done. Little bit uncommon :)
         "
         " limitations: You can’t use line continuation here
-        execute "function s:Vim()\n".join(readfile(file, 'b'), "\n")."\nreturn r\nendfunction"
+        execute "function! s:Vim()\n".join(readfile(file, 'b'), "\n")."\nreturn r\nendfunction"
         try
             let r=s:Vim()
+        catch /.*/
+            throw "error: ".v:exception.' real error location ('.a:file.'): '.v:throwpoint
         endtry
         delfunction s:Vim
         return r
@@ -27,7 +29,7 @@ function! vamkr#LoadDBFile(file) abort
         try
             return eval(join(readfile(file, 'b'), ''))
         catch /.*/
-            throw 'Failed to read json file “'.file.'”: '.v:exception
+            throw 'Failed to read json file “'.file.'”: '.v:exception.' '.v:throwpoint
         endtry
     else
         throw 'Unknown file type: '.ext

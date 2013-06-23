@@ -215,7 +215,7 @@ try
     try
         let patchinfo=vamkr#LoadDBFile('patchinfo.vim')
     catch
-        throw 'Error while loading patchinfo DB file: '.v:exception
+        throw 'Error while loading patchinfo DB file: '.v:exception.' '.v:throwpoint
     endtry
     let add_keys={'script-type': '', 'target_dir': '', 'strip-components': 0, 'deprecated': ''}
     call map(add_keys, 'type(v:val)')
