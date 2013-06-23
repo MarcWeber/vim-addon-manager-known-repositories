@@ -2,6 +2,7 @@
 let add_by_snr = {}
 let mai_snr = {}
 let mai_snr_deps = {}
+let renamings = {}
 "▶1 Hooks
 let hook = 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'
 let mai_snr.3025 = {}
@@ -279,11 +280,17 @@ let mai_snr_deps.2610 = [2100]
 let mai_snr_deps.2415 = [2100]
 let mai_snr_deps.2101 = [2100]
 let mai_snr_deps.3886 = [2100]
+" eaasytags
+let mai_snr_deps.3114 = [4597]
 "▶1 Missing runtimepath information for vim.org plugins
 let mai_snr.2883 = {'runtimepath': 'vimlib'}
 let mai_snr.2824 = {'runtimepath': 'vimlib'}
 let mai_snr.2847 = {'runtimepath': 'vimlib'}
 let mai_snr.663  = {'runtimepath': 'vim'}
 call extend(mai_snr.4295, {'runtimepath': 'smartgrep'})
-let r=[add_by_snr, mai_snr, mai_snr_deps]
+
+" some names got wired titles by the script, try to use better ones
+let renamings['tags_for_std_c_STL_streams_...'] = 'cpp_src'
+
+let r=[add_by_snr, mai_snr, mai_snr_deps, renamings]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲

@@ -79,7 +79,7 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, mai_snr, mai_snr_deps]=vamkr#LoadDBFile('patchinfo.vim')
+    let [add_by_snr, mai_snr, mai_snr_deps, renamings]=vamkr#LoadDBFile('patchinfo.vim')
     for [snr, deps] in items(mai_snr_deps)
         if !has_key(mai_snr, snr)
             let mai_snr[snr]={}
@@ -93,6 +93,15 @@ function! vamkr#PatchSources(sources, snr_to_name)
     let add_by_name={}
     call map(add_by_snr, 'extend(add_by_name, {a:snr_to_name[v:key] : v:val})')
     call map(filter(add_by_name, 'has_key(a:sources, v:key)'), 'extend(a:sources[v:key], v:val)')
+
+    for [from, to_] in items(renamings)
+      if has_key(a:sources, to_) | throw "cannot rename ".from.' to '.to_ | endif
+      let a:sources[to_] = a:sources[from]
+      call remove(a:sources, from)
+      let a:sources[to_].old_title = from
+      unlet from to_
+    endfor
+
     return a:sources
 endfunction
 
