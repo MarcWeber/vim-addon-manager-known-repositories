@@ -298,6 +298,18 @@ let addon_info.663  = {'runtimepath': 'vim'}
 call extend(addon_info.4295, {'runtimepath': 'smartgrep'})
 
 " some names got wired titles by the script, try to use better ones
+"
+" policies:
+" Renaming 'Supertab%1643' to 'Supertab'is ok if most users think one is more
+" useful than the other.
+"
+" Renaming "vim-textobj-*" to "textobj-*" or such is not feasable,
+" because its a property that you can pick and "google" for a key.
+" People can tell me that they think differently about this to make me change
+" my mind
+"
+" horrible names like tags_for_std_c_STL_streams_... are the intented use case
+" for renamings:
 let renamings['tags_for_std_c_STL_streams_...'] = 'cpp_src'
 
 let r=[patch_repo, addon_info, addon_info_deps, renamings]
