@@ -1,7 +1,11 @@
-" See documentation at vamkr#GetVim
-let add_by_snr = {}
 let mai_snr = {}
 let mai_snr_deps = {}
+
+" mai_nr_deps values get translated into names and then get added to mai_snr
+" mai_snr contains addon-info keys which will be merged into add_by_snr
+let add_by_snr = {}
+" Rest see vamkr#PatchSources
+
 let renamings = {}
 "▶1 Hooks
 let hook = 'execute "lcd" fnameescape(%d."/ruby/command-t") | call vam#utils#RunShell("ruby extconf.rb") | call vam#utils#RunShell("make") | lcd -'

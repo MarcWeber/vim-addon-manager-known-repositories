@@ -82,6 +82,8 @@ endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
     let [add_by_snr, mai_snr, mai_snr_deps, renamings]=vamkr#LoadDBFile('patchinfo.vim')
+    " short documentation see patchinfo.vim
+
     for [snr, deps] in items(mai_snr_deps)
         if !has_key(mai_snr, snr)
             let mai_snr[snr]={}
