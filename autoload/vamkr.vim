@@ -81,21 +81,21 @@ function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
 endfunction
 
 function! vamkr#PatchSources(sources, snr_to_name)
-    let [add_by_snr, mai_snr, mai_snr_deps, renamings]=vamkr#LoadDBFile('patchinfo.vim')
+    let [patch_repo, addon_info, addon_info_deps, renamings]=vamkr#LoadDBFile('patchinfo.vim')
     " short documentation see patchinfo.vim
 
-    for [snr, deps] in items(mai_snr_deps)
-        if !has_key(mai_snr, snr)
-            let mai_snr[snr]={}
+    for [snr, deps] in items(addon_info_deps)
+        if !has_key(addon_info, snr)
+            let addon_info[snr]={}
         endif
-        let ms = mai_snr[snr]
-        let ms.dependencies = get(mai_snr, 'dependencies', {})
+        let ms = addon_info[snr]
+        let ms.dependencies = get(addon_info, 'dependencies', {})
         call map(deps, 'extend( ms.dependencies, {(type(v:val) == type(0) ? a:snr_to_name[v:val] : v:val) : {}})')
     endfor
-    call filter(mai_snr, 'has_key(a:snr_to_name, v:key)')
-    call map(mai_snr, 'extend(add_by_snr, {v:key : extend(get(add_by_snr, v:key, {}), {"addon-info": v:val})})')
+    call filter(addon_info, 'has_key(a:snr_to_name, v:key)')
+    call map(addon_info, 'extend(patch_repo, {v:key : extend(get(patch_repo, v:key, {}), {"addon-info": v:val})})')
     let add_by_name={}
-    call map(add_by_snr, 'extend(add_by_name, {a:snr_to_name[v:key] : v:val})')
+    call map(patch_repo, 'extend(add_by_name, {a:snr_to_name[v:key] : v:val})')
     call map(filter(add_by_name, 'has_key(a:sources, v:key)'), 'extend(a:sources[v:key], v:val)')
 
     for [from, to_] in items(renamings)
