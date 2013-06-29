@@ -2430,6 +2430,10 @@ let scm['vim-plugin-viewdoc'] = {'type': 'git', 'url': 'git://github.com/powerma
 let scm['vim-qt-syntax'] = {'type': 'git', 'url': 'https://bitbucket.org/kh3phr3n/vim-qt-syntax'}
 let scm['vim-textobj-space'] = {'type': 'git', 'url': 'git://github.com/saihoooooooo/vim-textobj-space'}
 let scm['vim-textobj-underscore'] = {'type': 'git', 'url': 'git://github.com/lucapette/vim-textobj-underscore'}
+let scm['vim-slime'] = {'type': 'git', 'url': 'git://github.com/jpalardy/vim-slime'}
+
+let scm['merlin'] = {'type': 'git', 'url': 'git://github.com/def-lkb/merlin', 'addon-infof': {'runtimepath': 'vim/merlin'}}
+let scm['ocp-indent'] = {'type': 'git', 'url': 'git://github.com/OCamlPro/ocp-indent'}
 
 " Marius Gedminas
 let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
