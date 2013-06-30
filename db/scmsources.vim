@@ -675,7 +675,7 @@ let scm['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev
 let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
-let scm['vim-clang'] = {'type': 'svn', 'url': 'git://github.com/LucHermitte/vim-clang'}
+let scm['vim-clang'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/vim-clang'}
 
 
 " system-tools are required for vim-spell.tar.gz (vimscript #135), which are 
