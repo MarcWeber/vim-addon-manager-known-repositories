@@ -1,4 +1,5 @@
 {
+"presenting":{"archive_name":"presenting.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20498","version":"0.1.0","vim_script_nr":4653},
 "NPM":{"archive_name":"npm.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20497","version":"0.1.0","vim_script_nr":4652},
 "cottidie":{"archive_name":"cottidie.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20496","version":"1.0.0","vim_script_nr":4651},
 "conflictslides":{"archive_name":"conflictslides-1.0.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20492","version":"1.0.0","vim_script_nr":4650},
