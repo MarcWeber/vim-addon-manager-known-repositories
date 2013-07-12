@@ -1,4 +1,5 @@
 {
+"vim-addon-errorformats%4656":{"archive_name":"dummy.txt","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20508","version":"0.0","vim_script_nr":"4656"},
 "hsftp":{"archive_name":"hsftp.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20506","version":"0.1","vim_script_nr":4655},
 "AutoAdapt":{"archive_name":"AutoAdapt-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20501","version":"1.00","vim_script_nr":4654},
 "presenting":{"archive_name":"presenting.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20498","version":"0.1.0","vim_script_nr":4653},
@@ -24,7 +25,7 @@
 "robo":{"archive_name":"robo.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20427","version":"1","vim_script_nr":4633},
 "tjs":{"archive_name":"tjs.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20413","version":"1.0.1","vim_script_nr":4632},
 "vim-github-comment":{"archive_name":"vim-github-comment.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20415","version":"0.0.2","vim_script_nr":4631},
-"vim-addon-errorformats":{"archive_name":"install-info.txt","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20408","version":"0.0","vim_script_nr":4630},
+"vim-addon-errorformats%4630":{"archive_name":"install-info.txt","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20408","version":"0.0","vim_script_nr":4630},
 "LGS":{"archive_name":"lgs.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20402","version":"1.0","vim_script_nr":4629},
 "bats":{"archive_name":"bats.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20400","version":"0.1.0","vim_script_nr":4628},
 "auto_tags_gen":{"archive_name":"auto_tag_gen_v0.00.02win32.7z","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20416","version":"0.00.02","vim_script_nr":4627},

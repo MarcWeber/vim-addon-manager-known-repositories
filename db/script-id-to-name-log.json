@@ -14330,6 +14330,7 @@
       "LGS"
    ],
    "4630" : [
+      "vim-addon-errorformats%4630",
       "vim-addon-errorformats"
    ],
    "4631" : [
@@ -14406,5 +14407,8 @@
    ],
    "4655" : [
       "hsftp"
+   ],
+   "4656" : [
+      "vim-addon-errorformats%4656"
    ]
 }
