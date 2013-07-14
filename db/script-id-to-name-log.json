@@ -14410,5 +14410,11 @@
    ],
    "4656" : [
       "vim-addon-errorformats%4656"
+   ],
+   "4657" : [
+      "wabisabi"
+   ],
+   "4658" : [
+      "BidiComplete"
    ]
 }
