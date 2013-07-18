@@ -1,4 +1,5 @@
 {
+"vim-sprunge":{"archive_name":"vim-sprunge.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20537","version":"0.0.1","vim_script_nr":4662},
 "vim-airline":{"archive_name":"vim-airline-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20535","version":"0.1","vim_script_nr":4661},
 "plum":{"archive_name":"plum.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20529","version":"0.1","vim_script_nr":4660},
 "buildmenu":{"archive_name":"buildmenu.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20522","version":"0.1","vim_script_nr":4659},
