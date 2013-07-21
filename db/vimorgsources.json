@@ -1,8 +1,9 @@
 {
+"bbye":{"archive_name":"vim-bbye-0.9.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20553","version":"0.9.1","vim_script_nr":4664},
 "terra":{"archive_name":"terra.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20551","version":"0.1","vim_script_nr":4663},
 "vim-sprunge":{"archive_name":"vim-sprunge.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20537","version":"0.0.1","vim_script_nr":4662},
 "vim-airline":{"archive_name":"vim-airline-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20535","version":"0.1","vim_script_nr":4661},
-"plum":{"archive_name":"plum.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20529","version":"0.1","vim_script_nr":4660},
+"plum":{"archive_name":"plum-0.2.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20554","version":"0.2","vim_script_nr":4660},
 "buildmenu":{"archive_name":"buildmenu.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20522","version":"0.1","vim_script_nr":4659},
 "BidiComplete":{"archive_name":"BidiComplete-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20526","version":"1.01","vim_script_nr":4658},
 "wabisabi":{"archive_name":"wabisabi.vim.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20511","version":"0.0.0","vim_script_nr":4657},
