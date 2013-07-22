@@ -1,4 +1,5 @@
 {
+"ctrlp-ssh":{"archive_name":"ctrlp-ssh.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20555","version":"0.0.1","vim_script_nr":4665},
 "bbye":{"archive_name":"vim-bbye-0.9.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20553","version":"0.9.1","vim_script_nr":4664},
 "terra":{"archive_name":"terra.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20551","version":"0.1","vim_script_nr":4663},
 "vim-sprunge":{"archive_name":"vim-sprunge.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20537","version":"0.0.1","vim_script_nr":4662},
