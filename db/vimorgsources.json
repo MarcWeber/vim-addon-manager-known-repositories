@@ -1,6 +1,8 @@
 {
+"monokai":{"archive_name":"monokai.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20558","version":"1.0","vim_script_nr":4667},
+"vim-berks":{"archive_name":"vim-berks-1.0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20557","version":"1.0.1","vim_script_nr":4666},
 "ctrlp-ssh":{"archive_name":"ctrlp-ssh.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20555","version":"0.0.1","vim_script_nr":4665},
-"bbye":{"archive_name":"vim-bbye-0.9.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20553","version":"0.9.1","vim_script_nr":4664},
+"bbye":{"archive_name":"vim-bbye-1.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20560","version":"1.0.1","vim_script_nr":4664},
 "terra":{"archive_name":"terra.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20551","version":"0.1","vim_script_nr":4663},
 "vim-sprunge":{"archive_name":"vim-sprunge.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20537","version":"0.0.1","vim_script_nr":4662},
 "vim-airline":{"archive_name":"vim-airline-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20535","version":"0.1","vim_script_nr":4661},
