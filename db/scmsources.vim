@@ -2160,6 +2160,7 @@ let scmnr.4590 = {'type': 'git', 'url': 'git://github.com/dirkwallenstein/vim-lo
 let scmnr.4591 = {'type': 'git', 'url': 'git://github.com/jimsei/winresizer'}
 
 " Bailey Ling
+let scmnr.4661 = {'type': 'git', 'url': 'git://github.com/bling/vim-airline'}
 let scmnr.4595 = {'type': 'git', 'url': 'git://github.com/bling/vim-bufferline'}
 
 " Marin Staykov
