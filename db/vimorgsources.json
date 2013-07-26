@@ -1,4 +1,6 @@
 {
+"locate":{"archive_name":"locate.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20567","version":"1.0.0","vim_script_nr":4671},
+"android":{"archive_name":"android.vim-0.2.0-1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20566","version":"0.2.0-1","vim_script_nr":4670},
 "bluecloud":{"archive_name":"bluecloud.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20564","version":"1.0","vim_script_nr":4669},
 "TurboMark":{"archive_name":"TurboMark.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20561","version":"0.1","vim_script_nr":4668},
 "monokai":{"archive_name":"monokai.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20558","version":"1.0","vim_script_nr":4667},
@@ -1078,7 +1080,7 @@
 "Rename%3525":{"archive_name":"rename.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15310","version":"1.0","vim_script_nr":"3525"},
 "vim-scala":{"archive_name":"vim-scala_README.txt","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15307","version":"0.1","vim_script_nr":3524},
 "gem":{"archive_name":"gem.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15292","version":"1.0.1","vim_script_nr":3523},
-"SAS_Syntax":{"archive_name":"sas.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17825","version":"1.2.2","vim_script_nr":3522},
+"SAS_Syntax":{"archive_name":"sas.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20565","version":"1.2.3","vim_script_nr":3522},
 "Gravity":{"archive_name":"gravity.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15286","version":"1.0","vim_script_nr":3521},
 "Solarized":{"archive_name":"vim-colors-solarized-v1.0.0beta1.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15285","version":"1.0.0b1","vim_script_nr":3520},
 "accentuate":{"archive_name":"accentuate.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15278","version":"1.1","vim_script_nr":3518},
