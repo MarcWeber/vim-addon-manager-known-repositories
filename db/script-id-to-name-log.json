@@ -14455,5 +14455,11 @@
    ],
    "4671" : [
       "locate"
+   ],
+   "4672" : [
+      "nerdtree-execute"
+   ],
+   "4673" : [
+      "ctrlp-tjump"
    ]
 }

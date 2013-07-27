@@ -1,4 +1,6 @@
 {
+"ctrlp-tjump":{"archive_name":"vim-ctrlp-tjump-0.0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20569","version":"0.0.1","vim_script_nr":4673},
+"nerdtree-execute":{"archive_name":"nerdtree-execute-0.0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20568","version":"0.0.1","vim_script_nr":4672},
 "locate":{"archive_name":"locate.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20567","version":"1.0.0","vim_script_nr":4671},
 "android":{"archive_name":"android.vim-0.2.0-1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20566","version":"0.2.0-1","vim_script_nr":4670},
 "bluecloud":{"archive_name":"bluecloud.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20564","version":"1.0","vim_script_nr":4669},
