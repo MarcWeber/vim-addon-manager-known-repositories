@@ -13,7 +13,8 @@ function CheckVal(s, mes, curauthor)
             endif
         endif
         return (val.type is# 'archive')*2+
-                    \(!empty(filter(keys(val), 'stridx(v:val, "hook")!=-1')))
+                    \(has_key(val, 'addon-info') &&
+                    \ !empty(filter(keys(val['addon-info']), 'stridx(v:val, "hook")!=-1')))
     catch
         throw printf(a:mes, a:s, v:exception)
     finally
@@ -44,13 +45,14 @@ try
     let topvars=['scm', 'scmnr']
     let alltopvars=copy(topvars)
     let prevempty=0
-    let curauthorempty={'type': 0, 'vo': 1, 'hashook': 0, 'mintype': 5, 'hasvo': 0, 'srcnum': 0}
+    let curauthorempty={'type': 0, 'vo': 1, 'hashook': 0, 'mintype': 5, 'hasvo': 0, 'srcnum': 0, 'lsnr': 0}
     let curauthor={}
     let isend=0
     let afterline=0
     let lnr=0
-    "▶1 Validate lines
+    let psfsnr=0
     let def={'snr': {}, 'name': {}}
+    "▶1 Validate lines
     for line in lines
         let lnr+=1
         if empty(line) && empty(topvars)
@@ -82,6 +84,9 @@ try
                 throw lnr.':It is allowed to only separate author sections with empty lines'
             endif
         elseif line=~#'\v^%(\".*)?$'
+            if !empty(curauthor)
+                let curauthor.lsnr=0
+            endif
         elseif isend
             throw lnr.':Only comment and empty lines are allowed after “let r=…” line: '.line
         elseif line=~#'\v^let\ %('.join(topvars, '|').')\m\s*=\s*{}$'
@@ -90,11 +95,11 @@ try
             if empty(topvars)
                 let section=1
             endif
-        elseif line=~#'^let scmnr'
+        elseif line[:9] is# 'let scmnr.'
             if !curauthor.vo
                 throw lnr.':www.vim.org sources must go before scm ones'
             endif
-            let match=matchlist(line, 'scmnr\.\v(\d+)\s+\=\s+(.*)$')
+            let match=matchlist(line, '^let scmnr\.\v(\d+)\s+\=\s+(.*)$')
             if empty(match)
                 throw lnr.':Invalid scmnr line: '.line
             elseif !has_key(snr_to_name, match[1])
@@ -105,10 +110,25 @@ try
             endif
             let def.snr[match[1]]=lnr
             let curtype=CheckVal(match[2], lnr.':Invalid scmnr value %s: %s', curauthor)
+            if curauthor.type!=curtype
+                let curauthor.lsnr=0
+            endif
+            let snr=+match[1]
+            if !curauthor.hasvo && !afterline
+                if snr<psfsnr
+                    throw lnr.':First script number is lesser then first script number in previous section: '.snr.'<'.psfsnr
+                endif
+                let psfsnr=snr
+            endif
+            if snr<curauthor.lsnr
+                throw lnr.':Script number is lesser then previous one: '.snr.'<'.curauthor.lsnr
+            endif
+            let curauthor.lsnr=snr
+            unlet snr
             let curauthor.hasvo=1
             let curauthor.vo=1
-        elseif line=~#'^let scm'
-            let match=matchlist(line, 'scm\v\[\''([a-zA-Z0-9_\-]+)(\@[a-zA-Z0-9_\-]+|\#[a-zA-Z0-9_\-]+%(\%\d+)?)?\''\]\s+\=\s+(.*)$')
+        elseif line[:6] is# 'let scm'
+            let match=matchlist(line, '^let scm\v\[\''([a-zA-Z0-9_\-]+)(\@[a-zA-Z0-9_\-]+|\#[a-zA-Z0-9_\-]+%(\%\d+)?)?\''\]\s+\=\s+(.*)$')
             let name=match[1].match[2]
             if empty(match)
                 throw lnr.':Invalid scm line: '.line
