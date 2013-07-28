@@ -220,7 +220,7 @@ try
     let add_keys={'script-type': '', 'target_dir': '', 'strip-components': 0, 'deprecated': ''}
     call map(add_keys, 'type(v:val)')
     let checkid=numcheckid
-    "▶1 Check patchinfo values: add_by_snr
+    "▶1 Check patchinfo values: patch_repo
     for [id, add] in items(patchinfo[0])
         let s=id.' '.string(add)
         if type(add)!=type({})
@@ -234,7 +234,7 @@ try
         endif
         unlet add
     endfor
-    "▶1 Check patchinfo values: mai_snr
+    "▶1 Check patchinfo values: addon_info
     for [id, mai] in items(patchinfo[1])
         let s=id.' '.string(mai)
         if type(mai)!=type({})
@@ -248,7 +248,7 @@ try
         endif
         unlet mai
     endfor
-    "▶1 Check patchinfo values: mai_snr_deps
+    "▶1 Check patchinfo values: addon_info_deps
     for [id, msd] in items(patchinfo[2])
         let s=id.' '.string(msd)
         if type(msd)!=type([])
@@ -259,9 +259,19 @@ try
             throw 'Invalid value '.s
         endif
     endfor
+    "▶1 Check renamings: renamings
+    for [old_name, new_name] in items(patchinfo[3])
+        if type(new_name) != type('')
+            throw 'Not a string: '.new_name
+        elseif !has_key(www_vim_org, old_name)
+            throw 'Unknown plugin: '.old_name
+        elseif old_name is# new_name
+            throw 'Old name is equal to new one: '.old_name
+        endif
+    endfor
     "▶1 Prepare variables for patchinfo lines validating
     let lines=readfile('db/patchinfo.vim')
-    let topvars=['add_by_snr', 'mai_snr', 'mai_snr_deps']
+    let topvars=['patch_repo', 'addon_info', 'addon_info_deps', 'renamings']
     let alltopvars=copy(topvars)
     let prevempty=0
     let lnr=0
@@ -273,11 +283,13 @@ try
     " 5: deprecations
     " 6: Missing dependencies
     " 7: Missing runtimepaths
+    " 8: Renamings
     let stage=0
     let vardefined=0
     let dictdefined=0
     let snr=0
     let snrs={'as': {}, 'an': {}, 'ms': {}, 'msd': {}}
+    let rns={'to': {}, 'from': {}}
     for line in lines
         let lnr+=1
         if empty(line) && empty(topvars)
@@ -312,25 +324,25 @@ try
                     throw lnr.':Hook is not a string: '.line
                 endif
                 let vardefined=1
-            elseif line =~# '^let mai_snr\.\d\+ = \S'
+            elseif line =~# '^let addon_info\.\d\+ = \S'
                 if !vardefined
                     throw lnr.':You must define hook before doing anything else'
                 elseif dictdefined
-                    throw lnr.':mai_snr dictionary was already defined'
+                    throw lnr.':addon_info dictionary was already defined'
                 endif
                 let value=eval(line[stridx(line, '=')+2:])
                 if type(value)!=type({})
-                    throw lnr.':Invalid mai_snr value: '.line
+                    throw lnr.':Invalid addon_info value: '.line
                 elseif !empty(value)
                     throw lnr.':Everything must be defined afterwards: '.line
                 endif
-                let snr=str2nr(line[12:])
+                let snr=str2nr(line[15:])
                 if has_key(snrs.ms, snr)
-                    throw lnr.':Duplicating mai_snr entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
+                    throw lnr.':Duplicating addon_info entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
                 endif
                 let snrs.ms[snr]=lnr
                 let dictdefined=1
-            elseif line =~# '\v^let\ mai_snr\.'.snr.'\[\''(post\-(install|(scms\-)?update)|pre\-update)\-hook\'']\s+\=\ hook$'
+            elseif line =~# '\v^let\ addon_info\.'.snr.'\[\''(post\-(install|(scms\-)?update)|pre\-update)\-hook\'']\s+\=\ hook$'
                 if !dictdefined
                     throw lnr.':Invalid hook definition: '.line
                 endif
@@ -341,10 +353,10 @@ try
                 throw lnr.':Invalid line in hooks section: '.line
             endif
         elseif stage==2
-            if line=~#'^let mai_snr\.\d\+='
+            if line=~#'^let addon_info\.\d\+='
                 let value=eval(line[stridx(line, '=')+1:])
                 if type(value)!=type({})
-                    throw lnr.':Invalid mai_snr value: '.line
+                    throw lnr.':Invalid addon_info value: '.line
                 elseif !has_key(value, 'archive_name')
                     throw lnr.':Wrong section (no archive_name key): '.line
                 elseif type(value.archive_name)!=type('')
@@ -352,15 +364,15 @@ try
                 endif
                 let snr=str2nr(line[12:])
                 if has_key(snrs.ms, snr)
-                    throw lnr.':Duplicating mai_snr entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
+                    throw lnr.':Duplicating addon_info entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
                 endif
                 let snrs.ms[snr]=lnr
             else
                 throw lnr.':Invalid line in archive names section: '.line
             endif
         elseif stage==3 || stage==4
-            if line=~#'^let add_by_snr\.\d\+='
-                        \|| line=~#'\V\^call extend(add_by_snr.\d\+, '
+            if line=~#'^let patch_repo\.\d\+='
+                        \|| line=~#'\V\^call extend(patch_repo.\d\+, '
                 if line[0] is# 'l'
                     let value=eval(line[stridx(line, '=')+1:])
                 else
@@ -377,7 +389,7 @@ try
                 endif
                 let snr=str2nr(line[15:])
                 if has_key(snrs.as, snr)
-                    throw lnr.':Duplicating add_by_snr entry for '.snr.' (previous on line '.snrs.as[snr].'): '.line
+                    throw lnr.':Duplicating patch_repo entry for '.snr.' (previous on line '.snrs.as[snr].'): '.line
                 endif
                 let snrs.as[snr]=lnr
             else
@@ -388,48 +400,59 @@ try
                 endif
             endif
         elseif stage==5
-            if line=~#'^let add_by_snr\.\v([^=]{4})@=\d+\s*\V={''deprecated'': "\v(\\.|[^\\"])+\V"}\$'
+            if line=~#'^let patch_repo\.\v([^=]{4})@=\d+\s*\V={''deprecated'': "\v(\\.|[^\\"])+\V"}\$'
                 let snr=str2nr(line[15:])
                 if has_key(snrs.as, snr)
-                    throw lnr.':Duplicating add_by_snr entry for '.snr.' (previous on line '.snrs.as[snr].'): '.line
+                    throw lnr.':Duplicating patch_repo entry for '.snr.' (previous on line '.snrs.as[snr].'): '.line
                 endif
                 let snrs.as[snr]=lnr
-            elseif line=~#'\V\^call extend(add_by_snr.\d\+, {''deprecated'': "\v(\\.|[^\\"])+\V"})\$'
+            elseif line=~#'\V\^call extend(patch_repo.\d\+, {''deprecated'': "\v(\\.|[^\\"])+\V"})\$'
                 continue
             else
                 throw lnr.':Invalid line in deprecations section: '.line
             endif
         elseif stage==6
-            if line=~#'^let mai_snr_deps\.\v([^=]{5})@=\d+\s+\V= [\v(\d+|\''[^'']+\'')(\,\ (\d+|\''[^'']+\''))*\V]\$'
-                let types=map(eval(line[24:]), 'type(v:val)')
+            if line=~#'^let addon_info_deps\.\v([^=]{5})@=\d+\s+\V= [\v(\d+|\''[^'']+\'')(\,\ (\d+|\''[^'']+\''))*\V]\$'
+                let types=map(eval(line[27:]), 'type(v:val)')
                 for i in range(0, len(types)-2)
                     if types[i]==type('') && types[i+1]==type(0)
                         throw lnr.':Numbers must go before strings in dependencies list: '.line
                     endif
                 endfor
-                let snr=str2nr(line[17:])
+                let snr=str2nr(line[20:])
                 if has_key(snrs.msd, snr)
-                    throw lnr.':Duplicating mai_snr_deps entry for '.snr.' (previous on line '.snrs.msd[snr].'): '.line
+                    throw lnr.':Duplicating addon_info_deps entry for '.snr.' (previous on line '.snrs.msd[snr].'): '.line
                 endif
                 let snrs.msd[snr]=lnr
             else
                 throw lnr.':Invalid line in missing dependencies section: '.line
             endif
         elseif stage==7
+            if line=~#'^let addon_info\.\v([^=]{5})@=\d+\s+\V= {''runtimepath'': ''\[^'']\+''}\$'
+                let snr=str2nr(line[15:])
+                if has_key(snrs.ms, snr)
+                    throw lnr.':Duplicating addon_info entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
+                endif
+                let snrs.ms[snr]=lnr
+            elseif line=~#'\V\^call extend(addon_info.\d\+, {''runtimepath'': ''\[^'']\+''})\$'
+                continue
+            else
+                throw lnr.':Invalid line in runtimepath information section: '.line
+            endif
+        elseif stage==8
             if line is# 'let r=['.join(alltopvars, ', ').']'
                 let stage+=1
                 continue
             endif
-            if line=~#'^let mai_snr\.\v([^=]{5})@=\d+\s+\V= {''runtimepath'': ''\[^'']\+''}\$'
-                let snr=str2nr(line[12:])
-                if has_key(snrs.ms, snr)
-                    throw lnr.':Duplicating mai_snr entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
+            if line=~#'^let renamings\[''\(''''\|[^'']\)\+''\] = ''\(''''\|[^'']\)\+''$'
+                let [old_name, new_name]=matchlist(line, '\[\(''\%(''''\|[^'']\)\+''\)\] = \(''\%(''''\|[^'']\)\+''\)')[1:2]
+                if has_key(rns.from, new_name)
+                    throw lnr.':Renaming two plugins to the same name, previous on line '.rns.from[new_name].': '.line
+                elseif has_key(rns.to, old_name)
+                    throw lnr.':Trying to rename one plugin to two different names, previous on line '.rns.to[old_name].': '.line
                 endif
-                let snrs.ms[snr]=lnr
-            elseif line=~#'\V\^call extend(mai_snr.\d\+, {''runtimepath'': ''\[^'']\+''})\$'
-                continue
-            else
-                throw lnr.':Invalid line in runtimepath information section: '.line
+                let rns.from[new_name]=lnr
+                let rns.to[old_name]=lnr
             endif
         endif
         let prevempty=0
