@@ -2230,6 +2230,7 @@ let scmnr.4662 = {'type': 'git', 'url': 'git://github.com/chilicuil/vim-sprunge'
 
 " Andri Möll
 let scmnr.4664 = {'type': 'git', 'url': 'git://github.com/moll/vim-bbye'}
+let scmnr.4674 = {'type': 'git', 'url': 'git://github.com/moll/vim-node'}
 
 " Luiz Rocha
 let scmnr.4667 = {'type': 'git', 'url': 'git://github.com/lsdr/monokai'}
