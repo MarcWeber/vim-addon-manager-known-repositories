@@ -2291,7 +2291,7 @@ let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flip
 let scmnr.4417 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/changyuheng/holokai'}, {'holokai.vim': 'colors'})
 
 " Yggdroot Chen
-let scmnr.4354 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Yggdroot/indentLine'}, {'indentLine.vim': 'plugin'})
+let scmnr.4354 = {'type': 'git', 'url': 'git://github.com/Yggdroot/indentLine'}
 
 " Long Changjin
 let scmnr.4332 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wusuopu/weibo-vim-plugin'}, {'my_weibo.vim': 'plugin'})
