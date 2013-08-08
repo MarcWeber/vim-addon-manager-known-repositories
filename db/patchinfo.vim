@@ -308,6 +308,7 @@ call extend(addon_info.4295, {'runtimepath': 'smartgrep'})
 "   case for renamings.
 let renamings['tags_for_std_c_STL_streams_...'] = 'cpp_src'
 let renamings['SuperTab%1643'] = 'Supertab'
+let renamings['vim-addon-errorformats%4630'] = 'vim-addon-errorformats'
 
 let r=[patch_repo, addon_info, addon_info_deps, renamings]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲
