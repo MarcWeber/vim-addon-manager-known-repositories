@@ -8179,6 +8179,7 @@
       "svk"
    ],
    "2605" : [
+      "nextfile%2605",
       "nextfile"
    ],
    "2606" : [
@@ -9363,6 +9364,7 @@
       "php-doc_upgrade"
    ],
    "2981" : [
+      "Emmet",
       "ZenCoding"
    ],
    "2982" : [
@@ -10081,6 +10083,7 @@
       "cHiTags"
    ],
    "3209" : [
+      "Quotes",
       "Quotes%3209",
       "Quotes3209",
       "Quotes"
@@ -10313,6 +10316,7 @@
       "OMNeT4.x_NED_Syntax_file"
    ],
    "3284" : [
+      "Support_for_punctuation_text_objects",
       "Quotes%3284",
       "Quotes3284"
    ],
@@ -14464,5 +14468,92 @@
    ],
    "4674" : [
       "node"
+   ],
+   "4675" : [
+      "Vertigo"
+   ],
+   "4676" : [
+      "better-header"
+   ],
+   "4677" : [
+      "unstack"
+   ],
+   "4678" : [
+      "neat"
+   ],
+   "4679" : [
+      "Vim-Ultimate-Colorscheme-Utility"
+   ],
+   "4680" : [
+      "Visual_Studio"
+   ],
+   "4681" : [
+      "Pretty_Args"
+   ],
+   "4682" : [
+      "jshint2"
+   ],
+   "4683" : [
+      "playroom"
+   ],
+   "4684" : [
+      "EasyClip"
+   ],
+   "4685" : [
+      "logpad-plus-duration"
+   ],
+   "4686" : [
+      "Crunch"
+   ],
+   "4687" : [
+      "move"
+   ],
+   "4688" : [
+      "simple_highlighting"
+   ],
+   "4689" : [
+      "vim-kitchen"
+   ],
+   "4690" : [
+      "oops_trace"
+   ],
+   "4691" : [
+      "movealong"
+   ],
+   "4692" : [
+      "desertink"
+   ],
+   "4693" : [
+      "fixkey"
+   ],
+   "4694" : [
+      "WSearch"
+   ],
+   "4695" : [
+      "0x7A69_dark"
+   ],
+   "4696" : [
+      "liquidfold"
+   ],
+   "4697" : [
+      "perl-nextmethod"
+   ],
+   "4698" : [
+      "nextfile%4698"
+   ],
+   "4699" : [
+      "webkitgtk"
+   ],
+   "4700" : [
+      "libxml2"
+   ],
+   "4701" : [
+      "mlp"
+   ],
+   "4702" : [
+      "tex-fold"
+   ],
+   "4703" : [
+      "tag-surfer"
    ]
 }
