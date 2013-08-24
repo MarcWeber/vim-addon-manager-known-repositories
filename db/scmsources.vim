@@ -863,7 +863,7 @@ let scmnr.3156 = {'type': 'git', 'url': 'git://git.devnull.li/ikiwiki-syntax'}
 let scmnr.3011 = {'type': 'git', 'url': 'git://github.com/inky/tumblr'}
 
 " Wincent Colaiuta
-let scmnr.3025 = {'type': 'git', 'url': 'git://git.wincent.com/command-t'}
+let scmnr.3025 = {'type': 'git', 'url': 'git://github.com/wincent/Command-T'}
 
 " Michael Smith
 let scmnr.3037 = {'type': 'git', 'url': 'git://github.com/michaeljsmith/vim-indent-object'}
