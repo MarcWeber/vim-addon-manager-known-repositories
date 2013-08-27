@@ -1,4 +1,5 @@
 {
+"vimcn":{"archive_name":"vimcn-readme.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20720","version":"1.0","vim_script_nr":4711},
 "tweetvim-advanced-filter":{"archive_name":"tweetvim-advanced-filter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20718","version":"0.1","vim_script_nr":4710},
 "unite-n3337":{"archive_name":"unite-n3337.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20717","version":"1.0","vim_script_nr":4709},
 "open-pdf":{"archive_name":"open-pdf.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20716","version":"1.0","vim_script_nr":4708},
