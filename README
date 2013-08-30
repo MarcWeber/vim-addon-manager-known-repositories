@@ -4,8 +4,16 @@ It is the "default source" of descriptions where to get which addons for vim-add
 
 Have a look at all supported plugins online: http://mawercer.de/~marc/vam/index.php
 
-You should use the special function vam#install#LoadKnownRepos() to activate
-this plugin whenever you need it. For speed reasons it is only loaded when needed.
+For speed reasons vam#install#LoadKnownRepos() is used to load the repo as needed only.
+
+As VAM this repository is mantainained by ZyX and Marc Weber
+
+Contributing:
+* Contribute to db/scmsources.vim which contains all the git,svn,mercurial,..
+  sources
+
+db/vimorgsources.json contains a dump from www.vim.org which is generated automatically.
+The default implementation merges both prefering the source control ones
 
 Issues which may cause us to immediately remove plugins [1]:
   - security issues or other similar sever issues (didn't happen yet)
