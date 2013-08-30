@@ -2245,6 +2245,13 @@ let scmnr.4671 = {'type': 'git', 'url': 'git://github.com/mtth/locate.vim'}
 let scmnr.4672 = {'type': 'git', 'url': 'git://github.com/ivalkeen/nerdtree-execute'}
 let scmnr.4673 = {'type': 'git', 'url': 'git://github.com/ivalkeen/vim-ctrlp-tjump'}
 
+" elixir-lang
+let scm['vim-elixir'] = {'type': 'git', 'url': 'git://github.com/elixir-lang/vim-elixir'}
+
+" Carlos Galdino
+let scm['elixir-snippets'] = {'type': 'git', 'url': 'git://github.com/carlosgaldino/elixir-snippets'}
+
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
