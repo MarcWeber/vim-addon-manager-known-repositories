@@ -112,7 +112,7 @@
 "videm":{"archive_name":"videm-1004.tar.xz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20331","version":"1.004","vim_script_nr":4599},
 "rainbow_csv":{"archive_name":"rainbow_csv.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20204","version":"1.0","vim_script_nr":4598},
 "vim-misc":{"archive_name":"misc.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20548","version":"1.8.5","vim_script_nr":4597},
-"verilog_auto_testbench":{"archive_name":"testbench.rar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20724","version":"2.2","vim_script_nr":4596},
+"verilog_auto_testbench":{"archive_name":"testbench.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20742","version":"2.3","vim_script_nr":4596},
 "vim-bufferline":{"archive_name":"bufferline.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20322","version":"0.3","vim_script_nr":4595},
 "header-info":{"archive_name":"header-info.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20234","version":"1.1","vim_script_nr":4594},
 "fishruler":{"archive_name":"fishruler.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20194","version":"1.1","vim_script_nr":4593},
