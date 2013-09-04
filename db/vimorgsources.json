@@ -31,7 +31,7 @@
 "jshint2":{"archive_name":"jshint2.vim-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20606","version":"0.1","vim_script_nr":4682},
 "Pretty_Args":{"archive_name":"pretty_args.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20633","version":"2","vim_script_nr":4681},
 "Visual_Studio":{"archive_name":"visualstudio.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20598","version":"1.1","vim_script_nr":4680},
-"Vim-Ultimate-Colorscheme-Utility":{"archive_name":"vim-ultimate-colorscheme-utility-v0.1.3.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20689","version":"0.1.3","vim_script_nr":4679},
+"Vim-Ultimate-Colorscheme-Utility":{"archive_name":"vim-ultimate-colorscheme-utility-v0.2.0a.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20749","version":"0.2.0a","vim_script_nr":4679},
 "neat":{"archive_name":"neat.vim-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20585","version":"1.0","vim_script_nr":4678},
 "unstack":{"archive_name":"unstack.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20583","version":"0.3.0","vim_script_nr":4677},
 "better-header":{"archive_name":"better-header.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20582","version":"1.0","vim_script_nr":4676},
