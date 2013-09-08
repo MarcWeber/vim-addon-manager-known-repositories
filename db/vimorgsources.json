@@ -1,4 +1,5 @@
 {
+"Hardcore_Mode":{"archive_name":"hardcore_1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20767","version":"1.0","vim_script_nr":4715},
 "KillBrackets":{"archive_name":"KillBrackets.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20765","version":"1.0.1","vim_script_nr":4714},
 "Reco":{"archive_name":"reco.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20753","version":"1.0.2","vim_script_nr":4713},
 "FindYamlKey":{"archive_name":"find_yaml_key.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20740","version":"0.1.0","vim_script_nr":4712},
@@ -1529,7 +1530,7 @@
 "CFWheels_Dictionary":{"archive_name":"CFWheels.dict","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13142","version":"1","vim_script_nr":3116},
 "SingleCompile":{"archive_name":"SingleCompile-2.11.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20188","version":"2.11.0","vim_script_nr":3115},
 "easytags":{"archive_name":"easytags.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20741","version":"3.4.3","vim_script_nr":3114},
-"formatvim":{"archive_name":"formatvim-3.2.3.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19134","version":"3.2.3","vim_script_nr":3113},
+"formatvim":{"archive_name":"formatvim-4.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20766","version":"4.0","vim_script_nr":3113},
 "RemoveFile":{"archive_name":"RemoveFile.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13114","version":"0.1","vim_script_nr":3112},
 "leglight2":{"archive_name":"leglight2.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13107","version":"1.0.1","vim_script_nr":3111},
 "mdx":{"archive_name":"mdx.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15646","version":"1.1","vim_script_nr":3110},
