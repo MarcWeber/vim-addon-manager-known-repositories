@@ -14603,5 +14603,14 @@
    ],
    "4719" : [
       "yankitute"
+   ],
+   "4720" : [
+      "vim-django-i18n"
+   ],
+   "4721" : [
+      "vim-polyglot"
+   ],
+   "4722" : [
+      "DuplicateWrite"
    ]
 }
