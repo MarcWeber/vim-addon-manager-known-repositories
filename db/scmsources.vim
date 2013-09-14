@@ -2245,12 +2245,14 @@ let scmnr.4671 = {'type': 'git', 'url': 'git://github.com/mtth/locate.vim'}
 let scmnr.4672 = {'type': 'git', 'url': 'git://github.com/ivalkeen/nerdtree-execute'}
 let scmnr.4673 = {'type': 'git', 'url': 'git://github.com/ivalkeen/vim-ctrlp-tjump'}
 
-" elixir-lang
-let scm['vim-elixir'] = {'type': 'git', 'url': 'git://github.com/elixir-lang/vim-elixir'}
+" Pandu Rendradjaja
+let scmnr.4675 = {'type': 'git', 'url': 'git://github.com/prendradjaja/vim-vertigo'}
 
-" Carlos Galdino
-let scm['elixir-snippets'] = {'type': 'git', 'url': 'git://github.com/carlosgaldino/elixir-snippets'}
+" Xia Kai
+let scmnr.4676 = {'type': 'git', 'url': 'git://github.com/xiaket/better-header'}
 
+" Matthew Boehm
+let scmnr.4677 = {'type': 'git', 'url': 'git://github.com/mattboehm/vim-unstack'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
@@ -2514,6 +2516,12 @@ let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mge
 
 " Meikel Brandmeyer
 let scm['vim-clojure-static'] = {'type': 'git', 'url': 'git://github.com/guns/vim-clojure-static'}
+
+" elixir-lang
+let scm['vim-elixir'] = {'type': 'git', 'url': 'git://github.com/elixir-lang/vim-elixir'}
+
+" Carlos Galdino
+let scm['elixir-snippets'] = {'type': 'git', 'url': 'git://github.com/carlosgaldino/elixir-snippets'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
