@@ -1418,7 +1418,7 @@
 "blockinsert":{"archive_name":"blockinsert.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13874","version":"4.1","vim_script_nr":3237},
 "html5":{"archive_name":"html5.vim-0.27.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16151","version":"0.27","vim_script_nr":3236},
 "showcolor":{"archive_name":"showcolor.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13795","version":"1.0","vim_script_nr":3235},
-"ToggleLineNumberMode":{"archive_name":"toggleRelative.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13790","version":"1.0","vim_script_nr":3234},
+"ToggleLineNumberMode":{"archive_name":"toggleRelative.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20820","version":"1.1","vim_script_nr":3234},
 "VimgrepBuffer":{"archive_name":"vimgrepbuffer.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13787","version":"1.0.1","vim_script_nr":3233},
 "HTML5_Syntax_File":{"archive_name":"html5-syntax.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13783","version":"0.1","vim_script_nr":3232},
 "PyInteractive":{"archive_name":"pyinteractive-vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20520","version":"0.7.0","vim_script_nr":3231},
