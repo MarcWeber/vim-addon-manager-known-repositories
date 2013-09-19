@@ -905,7 +905,7 @@ let scmnr.3753 = {'type': 'git', 'url': 'git://github.com/fmoralesc/vim-pad'}
 
 " David Munger
 let scmnr.3108 = {'type': 'bzr', 'url': 'lp:vim-gui-box'}
-let scmnr.3109 = {'type': 'bzr', 'url': 'lp:vim-latex-box'}
+let scmnr.3109 = {'type': 'git', 'url': 'git://github.com/LaTeX-Box-Team/LaTeX-Box'}
 
 " Finlay Cannon
 let scmnr.3110 = {'type': 'git', 'url': 'git://github.com/findango/mdxdotvim'}
