@@ -1,8 +1,10 @@
 {
+"Sol":{"archive_name":"sol-term.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20860","version":"0.0.1","vim_script_nr":4733},
+"integrake":{"archive_name":"integrake.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20859","version":"1.0.0","vim_script_nr":4732},
 "cmake%4731":{"archive_name":"v0.1.9-1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20855","version":"0.1.9-1","vim_script_nr":"4731"},
 "pastek":{"archive_name":"pastek.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20850","version":"0.1.0","vim_script_nr":4730},
 "VerticalHelp":{"archive_name":"VerticalHelp.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20849","version":"1.01","vim_script_nr":4729},
-"Tags_Updater":{"archive_name":"tags_updater.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20845","version":"1.0","vim_script_nr":4728},
+"Tags_Updater":{"archive_name":"tags_updater.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20861","version":"1.2","vim_script_nr":4728},
 "stringliteral":{"archive_name":"stringliteral-0.1.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20841","version":"0.1","vim_script_nr":4727},
 "Extended-FT":{"archive_name":"vim-extended-ft.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20826","version":"1.0","vim_script_nr":4726},
 "vim-emoji":{"archive_name":"vim-emoji.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20828","version":"0.2.0","vim_script_nr":4725},
