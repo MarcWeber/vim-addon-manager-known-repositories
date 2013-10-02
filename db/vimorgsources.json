@@ -143,7 +143,7 @@
 "winresizer":{"archive_name":"winresizer.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20487","version":"1.0","vim_script_nr":4591},
 "localcomplete":{"archive_name":"localcomplete-1.0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20494","version":"1.0.1","vim_script_nr":4590},
 "newt":{"archive_name":"newt.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20161","version":"0.1","vim_script_nr":4589},
-"vim-online-thesaurus":{"archive_name":"vim-online-thesaurus.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20697","version":"0.1.5","vim_script_nr":4588},
+"vim-online-thesaurus":{"archive_name":"vim-online-thesaurus.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20867","version":"0.1.6","vim_script_nr":4588},
 "vim-neatstatus":{"archive_name":"neatstatus.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20156","version":"0.1","vim_script_nr":4587},
 "vim-colorscheme-switcher":{"archive_name":"colorscheme-switcher.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20679","version":"0.2.5","vim_script_nr":4586},
 "vim-bgimg":{"archive_name":"vim-bgimg.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20152","version":"1.0","vim_script_nr":4585},
