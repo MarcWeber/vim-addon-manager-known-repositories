@@ -14652,5 +14652,17 @@
    ],
    "4735" : [
       "accordion"
+   ],
+   "4736" : [
+      "navigate-softtab"
+   ],
+   "4737" : [
+      "ctrlp-cmdpalette"
+   ],
+   "4738" : [
+      "vim-isort"
+   ],
+   "4739" : [
+      "extline"
    ]
 }
