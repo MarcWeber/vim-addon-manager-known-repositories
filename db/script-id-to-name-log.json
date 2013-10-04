@@ -14664,5 +14664,11 @@
    ],
    "4739" : [
       "extline"
+   ],
+   "4740" : [
+      "vim-toplevel"
+   ],
+   "4741" : [
+      "TextFormComplete"
    ]
 }
