@@ -2555,7 +2555,7 @@
 "gcov":{"archive_name":"gcov.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8141","version":"1.0","vim_script_nr":2118},
 "GCov_plugin":{"archive_name":"gcov.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8134","version":"0.01","vim_script_nr":2117},
 "Io_programming_language_syntax":{"archive_name":"io.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8129","version":"1","vim_script_nr":2116},
-"Processing":{"archive_name":"processing.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8220","version":"3","vim_script_nr":2115},
+"Processing":{"archive_name":"processing.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20901","version":"1.0.0","vim_script_nr":2115},
 "Torquescript_syntax_highlighting":{"archive_name":"VimTorqueSyntax.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8115","version":"1.0","vim_script_nr":2114},
 "pspad_colors_scheme":{"archive_name":"pspad.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8114","version":"0.1","vim_script_nr":2113},
 "autohotkey_ahk":{"archive_name":"autohotkey.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8113","version":"0.1","vim_script_nr":2112},
