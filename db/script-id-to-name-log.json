@@ -14679,5 +14679,8 @@
    ],
    "4744" : [
       "unbundle"
+   ],
+   "4745" : [
+      "urxvt_color_scheme"
    ]
 }
