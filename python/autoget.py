@@ -36,6 +36,14 @@ import list_git_files as lsgit
 logger = logging.getLogger('autoget')
 
 
+def dump_json(obj, F):
+    return json.dump(obj, F, indent=2, sort_keys=True)
+
+
+def dump_json_nr_set(st, F):
+    dump_json(list(sorted(st, key=int)), F)
+
+
 class cached_property(object):
     def __init__(self, func):
         self.func = func
@@ -513,9 +521,9 @@ if __name__ == '__main__':
                     logger.exception(e)
 
     with open(scm_generated_name, 'w') as SGF:
-        json.dump(scm_generated, SGF)
+        dump_json(scm_generated, SGF)
 
     with open(not_found_name, 'w') as NF:
-        json.dump(list(not_found), NF)
+        dump_json_nr_set(list(not_found), NF)
 
 # vim: tw=100 ft=python fenc=utf-8 ts=4 sts=4 sw=4
