@@ -55,9 +55,11 @@ class cached_property(object):
 
 def getdb():
     if os.path.isfile('script-info.json'):
+        logger.info('Using file script-info.json')
         with codecs.open('script-info.json', 'r', encoding='utf-8') as F:
             return json.load(F)
     else:
+        logger.info('Processing http://www.vim.org/script-info.php')
         return json.load(urllib.urlopen('http://www.vim.org/script-info.php'))
 
 
@@ -463,18 +465,16 @@ if __name__ == '__main__':
     handler = logging.StreamHandler()
     logger.addHandler(handler)
     scmnrs = set()
-    with open(os.path.join(os.path.dirname(os.path.dirname(__file__)),'db','scmsources.vim')) as SF:
+    with open(os.path.join('.', 'db', 'scmsources.vim')) as SF:
         scmnr_re = re.compile(r'^let scmnr\.(\d+)')
         for line in SF:
             match = scmnr_re.match(line)
             if match:
                 scmnrs.add(match.group(1))
 
-    scm_generated_name = os.path.join(os.path.dirname(os.path.dirname(__file__)),
-                                      'db', 'scm_generated.json')
+    scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
 
-    not_found_name = os.path.join(os.path.dirname(os.path.dirname(__file__)),
-                                  'db', 'not_found.json')
+    not_found_name = os.path.join('.', 'db', 'not_found.json')
 
     try:
         with open(scm_generated_name) as SGF:
@@ -496,15 +496,25 @@ if __name__ == '__main__':
         user, password = iter(passwords['github.com'][0].items()).next()
     gh = GithubLazy(user, password)
 
+    db = getdb()
+
     if len(sys.argv) > 1:
-        keys = sys.argv[1:]
-        not_found -= set(keys)
+        if len(sys.argv) == 2 and sys.argv[1].startswith('-'):
+            i = int(sys.argv[1])
+            _keys = reversed(sorted(db, key=int))
+            keys = []
+            while i:
+                keys.append(next(_keys))
+                i += 1
+        else:
+            keys = sys.argv[1:]
+            not_found -= set(keys)
     else:
         keys = reversed(sorted(db, key=int))
 
     with lshg.MercurialRemoteParser() as remote_parser:
-        db = getdb()
         for key in keys:
+            logger.info('Considering key {0}'.format(key))
             if key not in scmnrs:
                 voinfo = db[key]
                 logger.info('> Checking plugin {script_name} (vimscript #{script_id})'

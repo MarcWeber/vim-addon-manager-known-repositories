@@ -14,8 +14,11 @@ use utf8;
 use JSON;
 use HTML::Entities;
 
-my $verbose=shift @ARGV;
-my $dumpall=shift @ARGV;
+my $verbose=0;
+if($ARGV[0] eq "--verbose") {
+    $verbose=1;
+    shift @ARGV;
+}
 
 my $ua=LWP::UserAgent->new(cookie_jar => {},
                              max_size => 100*1024*1024,
@@ -53,7 +56,7 @@ sub WL {
         Time::HiRes::sleep(0.0625);
     }
     print $F $l;
-    flush $F;
+    eval {flush $F;};
     flock $F, LOCK_UN
         or die "Failed to unlock file: $!";
 }
@@ -140,11 +143,21 @@ sub addScriptID {
 }
 #▶1 getAllScripts
 sub getAllScripts() {
-    my $url="$vimorg/script-info.php";
-    print "Processing $url\n" if($verbose);
-    my $response=get($url);
+    my $file = "script-info.json";
+    my $jstring;
+    if(-e $file) {
+        print "Using file $file\n" if($verbose);
+        my $F;
+        open $F, '<:utf8', $file;
+        $jstring=join "", <$F>;
+    }
+    else {
+        my $url="$vimorg/script-info.php";
+        print "Processing $url\n" if($verbose);
+        $jstring=get($url)->decoded_content();
+    }
     my $json;
-    eval {$json=JSON->new()->utf8()->decode($response->decoded_content())};
+    eval {$json=JSON->new()->utf8()->decode($jstring)};
     unless(defined $json) {
         die "Failed to parse json: $@";
     }
