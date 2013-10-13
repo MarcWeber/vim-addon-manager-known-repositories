@@ -54,6 +54,8 @@ endfunction
 
 function! vamkr#GetSCMSources(snr_to_name, www_vim_org)
     let [scm, scmnr]=vamkr#LoadDBFile('scmsources.vim')
+    let scmnr_generated=vamkr#LoadDBFile('scm_generated.json')
+    call extend(scmnr, scmnr_generated, 'keep')
     let scmvoconflicts=s:FilterConflicts(scm, a:www_vim_org, '!')
     if !empty(scmvoconflicts)
         call s:Log('The following scm keys are the same as vim.org ones: '.join(scmvoconflicts, ', ').".\n".
