@@ -30,6 +30,10 @@ sys.path.append(os.path.dirname(__file__))
 
 
 import list_hg_files as lshg
+import list_git_files as lsgit
+
+
+logger = logging.getLogger('autoget')
 
 
 class cached_property(object):
@@ -51,6 +55,15 @@ def getdb():
 
 def get_ext(fname):
     return fname.rpartition('.')[-1]
+
+
+def guess_fix_dir(voinfo):
+    if voinfo['script_type'] in ('syntax', 'indent', 'ftplugin'):
+        return voinfo['script_type']
+    elif voinfo['script_type'] == 'color scheme':
+        return 'colors'
+    else:
+        return 'plugin'
 
 
 # Namespace
@@ -123,7 +136,7 @@ def get_file_list(voinfo):
     aurl = 'http://www.vim.org/scripts/download_script.php?src_id='+rinfo['src_id']
     ext = get_ext(aname).lower()
     if ext == 'vim':
-        return [aname]
+        return [guess_fix_dir(voinfo) + '/' + aname]
     elif ext in FileListers.__dict__:
         AF = urllib.urlopen(aurl)
         r = getattr(FileListers, ext)(AF)
@@ -168,7 +181,9 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
     else:
         vofileparts = [fname.partition('/') for fname in vofiles]
         leadingdir = vofileparts[0][0]
-        if all((part[0] == leadingdir for part in vofileparts[1:])):
+        if (leadingdir
+                and all((part[0] == leadingdir for part in vofileparts[1:]))
+                and all((part[1] for part in vofileparts))):
             return check_candidate_with_file_list(
                 [part[-1] for part in vofileparts],
                 files,
@@ -178,13 +193,15 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
             return (prefix, 0)
 
 
-github_url              = re.compile(r'github\.com/([^/\s]+)/([a-zA-Z\-_]+)(?:\.git)?')
+github_url              = re.compile(r'github\.com/([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:\.git)?')
+vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*\'([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:.git)?\'')
 gist_url                = re.compile(r'gist\.github\.com/(\d+)')
-bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_]+)')
-bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_]+)|bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_]+)\.git')
+bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)')
+bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)|bitbucket\.org/([a-zA-Z_.]+)/([a-zA-Z\-_.]+)\.git')
 bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_]+)')
 googlecode_url          = re.compile(r'code\.google\.com/p/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
+git_url                 = re.compile(r'git\s+clone\s+(\S+)')
 
 
 def novimext(s):
@@ -205,14 +222,6 @@ class Match(object):
     def __init__(self, match, voinfo):
         self.match = match
         self.voinfo = voinfo
-
-    @property
-    def name(self):
-        return None
-
-    @property
-    def files(self):
-        return []
 
     @cached_property
     def key(self):
@@ -251,6 +260,13 @@ class Match(object):
             else:
                 return -1
 
+    for level in ('info', 'warning', 'error', 'critical'):
+        exec(('def {0}(self, msg):\n'+
+              '   return logger.{0}(">>> " + msg)\n').format(level))
+
+    def exception(self, e):
+        logger.exception(e)
+
     def __cmp__(self, other):
         if not isinstance(other, Match):
             raise NotImplementedError
@@ -262,13 +278,12 @@ class GithubMatch(Match):
 
     scm = 'git'
 
-    @property
-    def name(self):
-        return self.match.group(2)
-
-    @property
-    def repo_path(self):
-        return self.match.group(1) + '/' + self.name
+    def __init__(self, *args, **kwargs):
+        super(GithubMatch, self).__init__(*args, **kwargs)
+        self.name = self.match.group(2)
+        self.repo_path = self.match.group(1) + '/' + self.name
+        self.scm_url = 'git://github.com/' + self.repo_path
+        self.url = 'https://github.com/' + self.repo_path
 
     @cached_property
     def repo(self):
@@ -284,20 +299,12 @@ class GithubMatch(Match):
                 for subf in self.list_files(name):
                     yield subf
 
-    @property
-    def url(self):
-        return 'https://github.com/' + self.repo_path
-
-    @property
-    def scm_url(self):
-        return 'git://github.com/' + self.repo_path
-
     @cached_property
     def files(self):
         try:
             return self.list_files()
         except Exception as e:
-            logging.exception(e)
+            self.exception(e)
             u = urllib.urlopen(self.url)
             new_url = u.geturl()
             if new_url != full_repo_url:
@@ -306,19 +313,25 @@ class GithubMatch(Match):
                 raise ValueError('Failed to get information from ' + repr(new_url))
 
 
+class VundleGithubMatch(GithubMatch):
+    re = vundle_github_url
+
+
 class GistMatch(GithubMatch):
     re = gist_url
 
     scm = 'git'
 
+    def __init__(self, *args, **kwargs):
+        super(GistMatch, self).__init__(*args, **kwargs)
+        self.name = self.match.group(1)
+        self.scm_url = 'git://gist.github.com/' + self.name
+        self.url = 'https://gist.github.com/' + self.name
+
     @cached_property
     def repo(self):
         global gh
-        return gh.get_gist(self.match.group(1))
-
-    @property
-    def scm_url(self):
-        return 'git://gist.github.com/' + self.match.group(1)
+        return gh.get_gist(self.name)
 
     @cached_property
     def files(self):
@@ -330,9 +343,10 @@ class MercurialMatch(Match):
 
     scm = 'hg'
 
-    @property
-    def scm_url(self):
-        return self.match.group(1)
+    def __init__(self, *args, **kwargs):
+        super(MercurialMatch, self).__init__(*args, **kwargs)
+        self.scm_url = self.match.group(1)
+        self.name = self.scm_url.rpartition('/')[-1]
 
     @cached_property
     def files(self):
@@ -346,9 +360,10 @@ class BitbucketMercurialMatch(MercurialMatch):
 
     scm = 'hg'
 
-    @property
-    def scm_url(self):
-        return 'https://bitbucket.org/' + self.match.group(1) + '/' + self.match.group(2)
+    def __init__(self, *args, **kwargs):
+        super(BitbucketMercurialMatch, self).__init__(*args, **kwargs)
+        self.name = self.match.group(2)
+        self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
 
 
 class BitbucketMatch(Match):
@@ -357,19 +372,18 @@ class BitbucketMatch(Match):
     def __init__(self, *args, **kwargs):
         global remote_parser
         super(BitbucketMatch, self).__init__(*args, **kwargs)
-        self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.match.group(2)
+        self.name = self.match.group(2)
+        self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
         try:
+            self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         except Exception as e:
-            print('{0} is probably not a mercurial URL: {1}'.format(self.scm_url, e))
-            self._files = []
+            self.info('Checking whether {0} is a git repository'.format(self.scm_url))
+            self.files = lsgit.list_git_files(self.scm_url)
+            self.scm = 'git'
         else:
-            self._files = list(next(iter(parsing_result['tips'])).files)
+            self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
-
-    @property
-    def files(self):
-        return self._files
 
 
 class GithubLazy(object):
@@ -403,8 +417,8 @@ def find_repo_candidates(voinfo):
             try:
                 string = voinfo[key]
             except KeyError:
-                print('Key {0} was not found in voinfo of script {script_name}'
-                        .format(key, **voinfo))
+                logger.error('>> Key {0} was not found in voinfo of script {script_name}'
+                             .format(key, **voinfo))
                 continue
             for match in C.re.finditer(string):
                 if not match.group(0) in foundstrings:
@@ -413,29 +427,33 @@ def find_repo_candidates(voinfo):
 
 
 def find_repo_candidate(voinfo):
-    candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key)
     vofiles = get_file_list(voinfo)
+    logger.info('>> vim.org files: ' + repr(vofiles))
+    candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key)
     best_candidate = None
     for candidate in candidates:
-        print('Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
-                                                   candidate.match.group(0)))
+        logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
+                                                            candidate.match.group(0)))
         prefix, key2 = check_candidate_with_file_list(vofiles, candidate.files)
         candidate.prefix = prefix
         if key2 == 100:
-            print ('Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
-                                                           candidate.match.group(0)))
+            logger.info('>> Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
+                                                                   candidate.match.group(0)))
             return candidate
         elif key2 and (not best_candidate or key2 > best_candidate.key2):
             best_candidate = candidate
             best_candidate.key2 = key2
     if best_candidate:
-        print('Found candidate {0}: {1} ({2})'.format(
+        logger.info('Found candidate {0}: {1} ({2})'.format(
                                                 best_candidate.__class__.__name__,
                                                 best_candidate.match.group(0),
                                                 best_candidate.key2))
     return best_candidate
 
 if __name__ == '__main__':
+    logger.setLevel(logging.INFO)
+    handler = logging.StreamHandler()
+    logger.addHandler(handler)
     scmnrs = set()
     with open(os.path.join(os.path.dirname(os.path.dirname(__file__)),'db','scmsources.vim')) as SF:
         scmnr_re = re.compile(r'^let scmnr\.(\d+)')
@@ -470,22 +488,29 @@ if __name__ == '__main__':
         user, password = iter(passwords['github.com'][0].items()).next()
     gh = GithubLazy(user, password)
 
+    if len(sys.argv) > 1:
+        keys = sys.argv[1:]
+        not_found -= set(keys)
+    else:
+        keys = reversed(sorted(db, key=int))
+
     with lshg.MercurialRemoteParser() as remote_parser:
         db = getdb()
-        for key in reversed(sorted(db, key=int)):
+        for key in keys:
             if key not in scmnrs:
                 voinfo = db[key]
-                print(('Checking plugin {script_name} (vimscript #{script_id})'.format(**voinfo))
-                        .encode(locale.getpreferredencoding() or 'ascii', 'xmlcharrefreplace'))
+                logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
+                            .format(**voinfo))
                 try:
                     candidate = find_repo_candidate(voinfo)
                     if candidate:
                         scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
-                        print(key, scm_generated[key])
+                        logger.info('> Recording found candidate for {0}: {1}'
+                                    .format(key, scm_generated[key]))
                     else:
                         not_found.add(key)
                 except Exception as e:
-                    print('Failed to process plugin {script_name}: {0}'.format(e, **voinfo))
+                    logger.exception(e)
 
     with open(scm_generated_name, 'w') as SGF:
         json.dump(scm_generated, SGF)
