@@ -1,4 +1,6 @@
 {
+"felipec":{"archive_name":"felipec.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20918","version":"1.0","vim_script_nr":4747},
+"tocterm2":{"archive_name":"tocterm.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20917","version":"0.1","vim_script_nr":4746},
 "unkiwii_color_scheme":{"archive_name":"unkiwii.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20913","version":"0.2","vim_script_nr":4745},
 "unbundle":{"archive_name":"vim-unbundle.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20900","version":"1.0.0","vim_script_nr":4744},
 "systemverilog.tar.gz":{"archive_name":"systemverilog.0.4.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20896","version":"0.4","vim_script_nr":4743},
@@ -960,7 +962,7 @@
 "noweboutline":{"archive_name":"noweboutline.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19061","version":"0.15","vim_script_nr":3720},
 "diffwindow_movement":{"archive_name":"diffwindow_movement.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17555","version":"1.01","vim_script_nr":3719},
 "melt-syntax":{"archive_name":"melt-syntax.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16403","version":"1.0","vim_script_nr":3718},
-"SnippetySnip":{"archive_name":"SnippetySnip-0.6.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18826","version":"0.6","vim_script_nr":3717},
+"SnippetySnip":{"archive_name":"SnippetySnip-1.0.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20919","version":"1.0","vim_script_nr":3717},
 "fuzzee":{"archive_name":"fuzzee.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17504","version":"1.0","vim_script_nr":3716},
 "numlist":{"archive_name":"numlist.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16562","version":"1.3","vim_script_nr":3715},
 "light2011":{"archive_name":"light2011.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16410","version":"1.2","vim_script_nr":3714},

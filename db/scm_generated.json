@@ -215,6 +215,10 @@
     "type": "git",
     "url": "git://github.com/someboddy/vim-integrake"
   },
+  "4733": {
+    "type": "git",
+    "url": "git://github.com/Pychimp/vim-sol"
+  },
   "4735": {
     "type": "git",
     "url": "git://github.com/mattboehm/vim-accordion"
