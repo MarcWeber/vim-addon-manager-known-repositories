@@ -37,7 +37,7 @@ logger = logging.getLogger('autoget')
 
 
 def dump_json(obj, F):
-    return json.dump(obj, F, indent=2, sort_keys=True)
+    return json.dump(obj, F, indent=2, sort_keys=True, separators=(',', ': '))
 
 
 def dump_json_nr_set(st, F):
