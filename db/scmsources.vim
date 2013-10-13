@@ -309,6 +309,7 @@ let scmnr.3432 = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate'}
 let scmnr.3916 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-haskell'}
 let scmnr.3977 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commenting'}
 let scmnr.4024 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-rdebug'}
+let scm['vim-addon-python-pdb'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-python-pdb'}
 let scmnr.4028 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-ruby-debug-ide'}
 let scmnr.4340 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-commandline-completion'}
 let scmnr.4630 = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-errorformats'}
@@ -905,7 +906,7 @@ let scmnr.3753 = {'type': 'git', 'url': 'git://github.com/fmoralesc/vim-pad'}
 
 " David Munger
 let scmnr.3108 = {'type': 'bzr', 'url': 'lp:vim-gui-box'}
-let scmnr.3109 = {'type': 'bzr', 'url': 'lp:vim-latex-box'}
+let scmnr.3109 = {'type': 'git', 'url': 'git://github.com/LaTeX-Box-Team/LaTeX-Box'}
 
 " Finlay Cannon
 let scmnr.3110 = {'type': 'git', 'url': 'git://github.com/findango/mdxdotvim'}
