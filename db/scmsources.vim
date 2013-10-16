@@ -1257,6 +1257,8 @@ let scmnr.3523 = {'type': 'git', 'url': 'git://github.com/GutenYe/gem.vim'}
 " Derek Wyatt
 " Using the author's new github page. Link in vim.org is absent.
 let scmnr.3524 = {'type': 'git', 'url': 'git://github.com/derekwyatt/vim-scala'}
+" vim.org version is old and does not work well with plugin managers
+let scmnr.2624 = {'type': 'git', 'url': 'git://github.com/derekwyatt/vim-protodef'}
 
 " Kim Silkebækken
 let scmnr.3526 = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-easymotion'}
