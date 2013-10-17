@@ -1992,7 +1992,7 @@
 "zOS_Enterprise_Compiler_PLI":{"archive_name":"pli.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10864","version":"0.1","vim_script_nr":2685},
 "herald":{"archive_name":"herald.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11712","version":"0.2.1","vim_script_nr":2684},
 "FastLadder":{"archive_name":"fastladder.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10882","version":"0.9","vim_script_nr":2683},
-"colorsupport":{"archive_name":"colorsupport.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14828","version":"1.0.3","vim_script_nr":2682},
+"colorsupport":{"archive_name":"colorsupport.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20926","version":"1.0.4","vim_script_nr":2682},
 "Colorzone":{"archive_name":"colorzone.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17972","version":"1.2","vim_script_nr":2681},
 "cursoroverdictionary":{"archive_name":"cursoroverdictionary0_1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11580","version":"0.1","vim_script_nr":2680},
 "textobj-verticalbar":{"archive_name":"textobj-verticalbar_0.0.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11503","version":"0.0.3","vim_script_nr":2679},
