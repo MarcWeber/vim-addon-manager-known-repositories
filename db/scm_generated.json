@@ -247,6 +247,14 @@
     "type": "git",
     "url": "git://github.com/sunaku/vim-unbundle"
   },
+  "4748": {
+    "type": "git",
+    "url": "git://github.com/bigfish/vim-js-context-coloring"
+  },
+  "4749": {
+    "type": "git",
+    "url": "git://github.com/shashurup/vim-gains-nrepl"
+  },
   "850": {
     "type": "git",
     "url": "git://github.com/rkulla/pydiction"

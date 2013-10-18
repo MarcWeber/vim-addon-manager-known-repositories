@@ -14690,5 +14690,11 @@
    ],
    "4747" : [
       "felipec"
+   ],
+   "4748" : [
+      "JavaScript_Context_Coloring"
+   ],
+   "4749" : [
+      "vim-gains-nrepl"
    ]
 }
