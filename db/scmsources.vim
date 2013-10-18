@@ -2529,6 +2529,9 @@ let scm['elixir-snippets'] = {'type': 'git', 'url': 'git://github.com/carlosgald
 " Johannes Raggam - Tabline by: mkitt (Matthew Kitt)
 let scm['tabline'] = {'type': 'git', 'url': 'git://github.com/mkitt/tabline.vim.git'}
 
+" Tim Clem
+let scm['vim-arduino'] = {'type': 'git', 'url': 'git://github.com/tclem/vim-arduino'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
