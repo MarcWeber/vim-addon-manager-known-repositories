@@ -1535,7 +1535,7 @@ let scm['toggletoolbar'] = {'type': 'git', 'url': 'https://bitbucket.org/aliva/v
 
 " Zhao Cai
 let scmnr.3854 = {'type': 'git', 'url': 'git://github.com/zhaocai/unite-scriptnames'}
-let scmnr.4529 = {'type': 'git', 'url': 'git://github.com/zhaocai/GoldenView'}
+let scmnr.4529 = {'type': 'git', 'url': 'git://github.com/zhaocai/GoldenView.Vim'}
 let scmnr.4576 = {'type': 'git', 'url': 'git://github.com/zhaocai/linepower.vim'}
 
 " Matthias Guenther
