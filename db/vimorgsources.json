@@ -1,6 +1,6 @@
 {
 "vim-gains-nrepl":{"archive_name":"vim-gains-nrepl-0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20930","version":"0.2","vim_script_nr":4749},
-"JavaScript_Context_Coloring":{"archive_name":"vim-js-context-coloring-master.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20927","version":"0.0.1","vim_script_nr":4748},
+"JavaScript_Context_Coloring":{"archive_name":"vim-js-context-coloring-master.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20936","version":"0.0.2","vim_script_nr":4748},
 "felipec":{"archive_name":"felipec.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20918","version":"1.0","vim_script_nr":4747},
 "tocterm2":{"archive_name":"tocterm.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20917","version":"0.1","vim_script_nr":4746},
 "unkiwii_color_scheme":{"archive_name":"unkiwii.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20913","version":"0.2","vim_script_nr":4745},
