@@ -3522,7 +3522,7 @@
 "C-fold":{"archive_name":"cfold.tar.bz2","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3668","version":"0.1","vim_script_nr":1145},
 "jhdark":{"archive_name":"jhdark.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=4467","version":"1.1","vim_script_nr":1144},
 "inkpot":{"archive_name":"inkpot.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11833","version":"20091127","vim_script_nr":1143},
-"header":{"archive_name":"header.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8632","version":"0.1.3","vim_script_nr":1142},
+"header":{"archive_name":"header.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20947","version":"0.2.0","vim_script_nr":1142},
 "Cisco_ACL_syntax_highlighting_rules":{"archive_name":"ciscoacl.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3651","version":"0.1","vim_script_nr":1141},
 "FileTree":{"archive_name":"FileTree.tgz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3662","version":"1.0","vim_script_nr":1140},
 "tree":{"archive_name":"tree.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3661","version":"1.0","vim_script_nr":1139},
