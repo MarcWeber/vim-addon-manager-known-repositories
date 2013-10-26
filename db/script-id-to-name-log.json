@@ -14696,5 +14696,17 @@
    ],
    "4749" : [
       "vim-gains-nrepl"
+   ],
+   "4750" : [
+      "human"
+   ],
+   "4751" : [
+      "ruby-xmpfilter"
+   ],
+   "4752" : [
+      "macvim-transparency"
+   ],
+   "4753" : [
+      "OpenURL"
    ]
 }
