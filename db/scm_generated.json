@@ -255,6 +255,10 @@
     "type": "git",
     "url": "git://github.com/shashurup/vim-gains-nrepl"
   },
+  "4755": {
+    "type": "git",
+    "url": "git://github.com/caglartoklu/launchassociated.vim"
+  },
   "850": {
     "type": "git",
     "url": "git://github.com/rkulla/pydiction"
