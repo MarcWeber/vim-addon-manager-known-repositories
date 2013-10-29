@@ -1,4 +1,9 @@
 {
+  "159": {
+    "comment": "Unsure whether the following repository should be used",
+    "type": "git",
+    "url": "git://github.com/fholgado/minibufexpl.vim"
+  },
   "3764": {
     "comment": "Removed due to the request in issue #73"
   }
