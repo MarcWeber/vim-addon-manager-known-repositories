@@ -26,7 +26,7 @@ then
     $GIT reset --hard HEAD
     exit 1
 fi
-if ! $PYTHON -O $VAMKR_SAFE_REPO/python/autoget.py -20
+if ! $PYTHON -O $VAMKR_SAFE_REPO/python/autoget.py --all-last
 then
     $RM script-info.json
     $GIT reset --hard HEAD
