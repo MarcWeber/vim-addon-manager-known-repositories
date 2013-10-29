@@ -181,31 +181,12 @@ def get_file_list(voinfo):
 
 expected_extensions = set(('vim', 'txt', 'py', 'pl', 'lua', 'pm'))
 def check_candidate_with_file_list(vofiles, files, prefix=None):
-    nummatches = 0
-    nummatches2 = 0
-    numfiles = 0
-    numfiles2 = 0
-    nomatches = set()
     files = set(files)
-    for fname in vofiles:
-        if fname.endswith('/'):
-            continue
-        ext = get_ext(fname)
-        isexp = ext in expected_extensions
-        if fname in files:
-            if isexp:
-                nummatches += 1
-            else:
-                nummatches2 += 1
-        else:
-            nomatches.add(fname)
-        if isexp:
-            numfiles += 1
-        else:
-            numfiles2 += 1
-    if nummatches == numfiles and nummatches2 == numfiles2:
+    vofiles = set((fname for fname in vofiles if not fname.endswith('/')))
+    expvofiles = set((fname for fname in vofiles if get_ext(fname) in expected_extensions))
+    if vofiles <= files:
         return (prefix, 100)
-    elif nummatches == numfiles and (nummatches2 or not numfiles2):
+    elif expvofiles and expvofiles <= files:
         return (prefix, 90)
     else:
         vofileparts = [fname.partition('/') for fname in vofiles]
