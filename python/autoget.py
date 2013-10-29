@@ -480,6 +480,33 @@ def find_repo_candidate(voinfo):
     return best_candidate
 
 if __name__ == '__main__':
+    import argparse
+    p = argparse.ArgumentParser(
+            description=__doc__.partition('\n\n')[0],
+            epilog=__doc__.partition('\n\n')[-1],
+            formatter_class=argparse.RawDescriptionHelpFormatter
+        )
+    p.add_argument('-n', '--dry-run', action='store_const', const=True,
+            help='do not edit any files')
+    p.add_argument('-N', '--last', metavar='N', type=int,
+            help='process only last N script numbers')
+    p.add_argument('-a', '--all-last', action='store_const', const=True,
+            help='process scripts in reversed order until already processed script was not found')
+    p.add_argument('-f', '--force', action='store_const', const=True,
+            help='do not check whether given numbers were already processed')
+    p.add_argument('sids', nargs='*', metavar='SID',
+            help='process only this script. May be passed more then once. Also see --force.')
+
+    args = p.parse_args()
+
+    if ((args.sids and args.last)
+            or (args.sids and args.all_last)
+            or (args.last and args.all_last)):
+        raise ValueError('You may specify only one of SID, --last or --all-last')
+
+    if (args.all_last and args.force):
+        raise ValueError('You may not specify both --force and --all-last')
+
     logger.setLevel(logging.INFO)
     handler = logging.StreamHandler()
     logger.addHandler(handler)
@@ -517,42 +544,46 @@ if __name__ == '__main__':
 
     db = getdb()
 
-    if len(sys.argv) > 1:
-        if len(sys.argv) == 2 and sys.argv[1].startswith('-'):
-            i = int(sys.argv[1])
-            _keys = reversed(sorted(db, key=int))
-            keys = []
-            while i:
-                keys.append(next(_keys))
-                i += 1
-        else:
-            keys = sys.argv[1:]
-            not_found -= set(keys)
+    if args.sids:
+        keys = args.sids
+        not_found -= set(keys)
+    elif args.last:
+        i = args.last
+        _keys = reversed(sorted(db, key=int))
+        keys = []
+        while i:
+            keys.append(next(_keys))
+            i -= 1
     else:
         keys = reversed(sorted(db, key=int))
 
     with lshg.MercurialRemoteParser() as remote_parser:
         for key in keys:
+            if not args.force and key in scmnrs:
+                if args.all_last:
+                    break
+                else:
+                    continue
             logger.info('Considering key {0}'.format(key))
-            if key not in scmnrs:
-                voinfo = db[key]
-                logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
-                            .format(**voinfo))
-                try:
-                    candidate = find_repo_candidate(voinfo)
-                    if candidate:
-                        scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
-                        logger.info('> Recording found candidate for {0}: {1}'
-                                    .format(key, scm_generated[key]))
-                    else:
-                        not_found.add(key)
-                except Exception as e:
-                    logger.exception(e)
+            voinfo = db[key]
+            logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
+                        .format(**voinfo))
+            try:
+                candidate = find_repo_candidate(voinfo)
+                if candidate:
+                    scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
+                    logger.info('> Recording found candidate for {0}: {1}'
+                                .format(key, scm_generated[key]))
+                else:
+                    not_found.add(key)
+            except Exception as e:
+                logger.exception(e)
 
-    with open(scm_generated_name, 'w') as SGF:
-        dump_json(scm_generated, SGF)
+    if not args.dry_run:
+        with open(scm_generated_name, 'w') as SGF:
+            dump_json(scm_generated, SGF)
 
-    with open(not_found_name, 'w') as NF:
-        dump_json_nr_set(list(not_found), NF)
+        with open(not_found_name, 'w') as NF:
+            dump_json_nr_set(list(not_found), NF)
 
 # vim: tw=100 ft=python fenc=utf-8 ts=4 sts=4 sw=4
