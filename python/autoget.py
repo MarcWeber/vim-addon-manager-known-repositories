@@ -12,6 +12,10 @@ is saved in ./db/not_found.json.
 It uses these files and ./db/scmsources.vim to determine which scripts
 should not be rechecked.
 
+Vim.org archive URLs and plugin descriptions are obtained from dump found at
+http://www.vim.org/script-info.php. If there is file ./script-info.json it is
+used instead.
+
 Currently supports only git and mercurial repositories.
 '''
 from __future__ import unicode_literals, division, print_function
