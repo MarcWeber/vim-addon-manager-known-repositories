@@ -184,7 +184,6 @@ def get_file_list(voinfo):
 expected_extensions = set(('vim', 'txt', 'py', 'pl', 'lua', 'pm'))
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     files = set(files)
-    vofiles = set((fname for fname in vofiles if not fname.endswith('/')))
     expvofiles = set((fname for fname in vofiles if get_ext(fname) in expected_extensions))
     if vofiles <= files:
         return (prefix, 100)
@@ -197,7 +196,7 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
                 and all((part[0] == leadingdir for part in vofileparts[1:]))
                 and all((part[1] for part in vofileparts))):
             return check_candidate_with_file_list(
-                [part[-1] for part in vofileparts],
+                {part[-1] for part in vofileparts},
                 files,
                 leadingdir,
             )
@@ -445,11 +444,14 @@ def find_repo_candidates(voinfo):
 
 
 def find_repo_candidate(voinfo):
-    vofiles = get_file_list(voinfo)
-    logger.info('>> vim.org files: ' + repr(vofiles))
+    vofiles = None
     candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key)
     best_candidate = None
     for candidate in candidates:
+        if vofiles is None:
+            vofiles = get_file_list(voinfo)
+            vofiles = set((fname for fname in vofiles if not fname.endswith('/')))
+            logger.info('>> vim.org files: ' + repr(vofiles))
         logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
                                                             candidate.match.group(0)))
         try:
