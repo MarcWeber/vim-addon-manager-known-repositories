@@ -445,7 +445,7 @@ def find_repo_candidates(voinfo):
 
 def find_repo_candidate(voinfo):
     vofiles = None
-    candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key)
+    candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key, reverse=True)
     best_candidate = None
     for candidate in candidates:
         if vofiles is None:
