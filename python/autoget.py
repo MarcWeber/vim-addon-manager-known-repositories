@@ -97,6 +97,10 @@ def guess_fix_dir(voinfo):
         return 'plugin'
 
 
+def get_voinfo_hash(voinfo):
+    return hash(voinfo.get('description',     '') + voinfo.get('install_details', ''))
+
+
 # Namespace
 class FileListers:
     @staticmethod
@@ -487,6 +491,8 @@ if __name__ == '__main__':
             help='process only last N script numbers')
     p.add_argument('-a', '--all-last', action='store_const', const=True,
             help='process scripts in reversed order until already processed script was not found')
+    p.add_argument('--no-descriptions', action='store_const', const=True,
+            help='do not check description hashes')
     p.add_argument('-f', '--force', action='store_const', const=True,
             help='do not check whether given numbers were already processed')
     p.add_argument('sids', nargs='*', metavar='SID',
@@ -516,6 +522,7 @@ if __name__ == '__main__':
     scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
     not_found_name = os.path.join('.', 'db', 'not_found.json')
     omitted_name = os.path.join('.', 'db', 'omitted.json')
+    description_hashes_name = os.path.join('.', 'db', 'description_hashes.json')
 
     def load_scmnrs_json(fname, typ=dict):
         global scmnrs
@@ -528,8 +535,16 @@ if __name__ == '__main__':
             return typ()
 
     scm_generated = load_scmnrs_json(scm_generated_name)
-    not_found     = load_scmnrs_json(not_found_name, set)
     omitted       = load_scmnrs_json(omitted_name)
+    found = scmnrs.copy()
+    not_found     = load_scmnrs_json(not_found_name, set)
+
+    if not args.no_descriptions:
+        try:
+            with open(description_hashes_name) as DHF:
+                description_hashes = json.load(DHF)
+        except IOError:
+            description_hashes = {}
 
     with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
         passwords = yaml.load(PF)
@@ -551,6 +566,25 @@ if __name__ == '__main__':
     else:
         keys = reversed(sorted(db, key=int))
 
+    def process_voinfo(voinfo):
+        global scm_generated
+        global found
+        global not_found
+        logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
+                    .format(**voinfo))
+        try:
+            candidate = find_repo_candidate(voinfo)
+            if candidate:
+                scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
+                logger.info('> Recording found candidate for {0}: {1}'
+                            .format(key, scm_generated[key]))
+                found.add(key)
+            else:
+                not_found.add(key)
+                found.add(key)
+        except Exception as e:
+            logger.exception(e)
+
     with lshg.MercurialRemoteParser() as remote_parser:
         for key in keys:
             if not args.force and key in scmnrs:
@@ -559,19 +593,29 @@ if __name__ == '__main__':
                 else:
                     continue
             logger.info('Considering key {0}'.format(key))
-            voinfo = db[key]
-            logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
-                        .format(**voinfo))
-            try:
-                candidate = find_repo_candidate(voinfo)
-                if candidate:
-                    scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
-                    logger.info('> Recording found candidate for {0}: {1}'
-                                .format(key, scm_generated[key]))
+            process_voinfo(db[key])
+
+        if not args.no_descriptions:
+            for key in keys:
+                voinfo = db[key]
+                changed = False
+                if key not in description_hashes:
+                    h = get_voinfo_hash(voinfo)
+                    description_hashes[key] = h
+                    changed = True
+                if key in found:
+                    # TODO Check whether old URL should change
+                    continue
+                if not changed:
+                    h = get_voinfo_hash(voinfo)
+                    changed = (h != description_hashes.get(key))
+                    if changed:
+                        logger.info('Hash for key {0} changed, checking it'.format(key))
+                        description_hashes[key] = h
                 else:
-                    not_found.add(key)
-            except Exception as e:
-                logger.exception(e)
+                    logger.info('New hash for key {0}'.format(key))
+                if changed:
+                    process_voinfo(voinfo)
 
     if not args.dry_run:
         with open(scm_generated_name, 'w') as SGF:
@@ -579,5 +623,9 @@ if __name__ == '__main__':
 
         with open(not_found_name, 'w') as NF:
             dump_json_nr_set(list(not_found), NF)
+
+        if not args.no_descriptions:
+            with open(description_hashes_name, 'w') as DHF:
+                dump_json(description_hashes, DHF)
 
 # vim: tw=100 ft=python fenc=utf-8 ts=4 sts=4 sw=4
