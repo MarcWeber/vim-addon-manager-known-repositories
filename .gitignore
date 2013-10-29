@@ -2,6 +2,7 @@ doc/tags
 db/script-id-to-name-log.json
 *.fail
 *.pyc
+*.pyo
 tmp/
 script-info.json
 pool.yaml
