@@ -55,10 +55,6 @@
     "type": "git",
     "url": "git://github.com/amitdev/vimpy"
   },
-  "3764": {
-    "type": "git",
-    "url": "git://github.com/lilydjwg/dotvim"
-  },
   "3820": {
     "type": "git",
     "url": "git://github.com/bartlomiejdanek/vim-dart"

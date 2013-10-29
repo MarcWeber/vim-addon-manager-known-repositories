@@ -8,6 +8,8 @@ or installation details found on www.vim.org.
 Found SCM URLs are saved in ./db/scm_generated.json.
 List of script numbers which were checked, but with no result,
 is saved in ./db/not_found.json.
+List of script numbers which should not be processed for some reason can be
+found in ./db/omitted.json.
 
 It uses these files and ./db/scmsources.vim to determine which scripts
 should not be rechecked.
@@ -510,23 +512,22 @@ if __name__ == '__main__':
                 scmnrs.add(match.group(1))
 
     scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
-
     not_found_name = os.path.join('.', 'db', 'not_found.json')
+    omitted_name = os.path.join('.', 'db', 'omitted.json')
 
-    try:
-        with open(scm_generated_name) as SGF:
-            scm_generated = json.load(SGF)
-            scmnrs.update(scm_generated)
-    except IOError:
-        scm_generated = {}
+    def load_scmnrs_json(fname, typ=dict):
+        global scmnrs
+        try:
+            with open(fname) as F:
+                ret = json.load(F)
+                scmnrs.update(ret)
+                return typ(ret)
+        except IOError:
+            return typ()
 
-
-    try:
-        with open(not_found_name) as NF:
-            not_found = set(json.load(NF))
-            scmnrs.update(not_found)
-    except IOError:
-        not_found = set()
+    scm_generated = load_scmnrs_json(scm_generated_name)
+    not_found     = load_scmnrs_json(not_found_name, set)
+    omitted       = load_scmnrs_json(omitted_name)
 
     with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
         passwords = yaml.load(PF)
