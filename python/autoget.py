@@ -1,4 +1,19 @@
 #!/usr/bin/env python
+# vim:fileencoding=utf-8
+'''
+Utility that generates SCM URLs based on comparison of file lists generated
+from www.vim.org archives and repository URLs found in script descriptions
+or installation details found on www.vim.org.
+
+Found SCM URLs are saved in ./db/scm_generated.json.
+List of script numbers which were checked, but with no result,
+is saved in ./db/not_found.json.
+
+It uses these files and ./db/scmsources.vim to determine which scripts
+should not be rechecked.
+
+Currently supports only git and mercurial repositories.
+'''
 from __future__ import unicode_literals, division, print_function
 
 from github import Github
@@ -281,6 +296,10 @@ class Match(object):
         if not isinstance(other, Match):
             raise NotImplementedError
         return cmp(self.key, other.key)
+
+    def __repr__(self):
+        return ('<%s: %s (from match %s)>'
+                % (type(self).__name__, self.url, self.match.group(0)))
 
 
 class GithubMatch(Match):
