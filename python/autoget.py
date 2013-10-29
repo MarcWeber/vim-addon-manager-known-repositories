@@ -483,7 +483,7 @@ if __name__ == '__main__':
         )
     p.add_argument('-n', '--dry-run', action='store_const', const=True,
             help='do not edit any files')
-    p.add_argument('-N', '--last', metavar='N', type=int,
+    p.add_argument('-l', '--last', metavar='N', type=int,
             help='process only last N script numbers')
     p.add_argument('-a', '--all-last', action='store_const', const=True,
             help='process scripts in reversed order until already processed script was not found')
