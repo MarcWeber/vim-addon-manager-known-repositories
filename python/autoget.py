@@ -334,6 +334,8 @@ class GithubMatch(Match):
 
     @cached_property
     def files(self):
+        if self.scm_url.startswith('git://github.com/vim-scripts'):
+            raise ValueError('vim-scripts repositories are not used by VAM')
         try:
             return self.list_files()
         except Exception as e:
@@ -467,15 +469,19 @@ def find_repo_candidate(voinfo):
     for candidate in candidates:
         logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
                                                             candidate.match.group(0)))
-        prefix, key2 = check_candidate_with_file_list(vofiles, candidate.files)
-        candidate.prefix = prefix
-        if key2 == 100:
-            logger.info('>> Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
-                                                                   candidate.match.group(0)))
-            return candidate
-        elif key2 and (not best_candidate or key2 > best_candidate.key2):
-            best_candidate = candidate
-            best_candidate.key2 = key2
+        try:
+            prefix, key2 = check_candidate_with_file_list(vofiles, candidate.files)
+        except Exception as e:
+            logger.exception(e)
+        else:
+            candidate.prefix = prefix
+            if key2 == 100:
+                logger.info('>> Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
+                                                                    candidate.match.group(0)))
+                return candidate
+            elif key2 and (not best_candidate or key2 > best_candidate.key2):
+                best_candidate = candidate
+                best_candidate.key2 = key2
     if best_candidate:
         logger.info('Found candidate {0}: {1} ({2})'.format(
                                                 best_candidate.__class__.__name__,
