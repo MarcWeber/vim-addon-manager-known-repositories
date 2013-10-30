@@ -29,6 +29,7 @@ import codecs
 import yaml
 import os
 import urllib
+import httplib
 import json
 import re
 import logging
@@ -305,9 +306,12 @@ class GithubMatch(Match):
             self.repo_path = self.repo_path[:-4]
         self.url = 'https://github.com/' + self.repo_path
 
-        u = urllib.urlopen(self.url)
-        new_url = u.geturl()
-        assert new_url.startswith('https://github.com/')
+        c = httplib.HTTPSConnection('github.com')
+        c.request('HEAD', '/' + self.repo_path)
+        r = c.getresponse()
+        if r.status == httplib.MOVED_PERMANENTLY:
+            new_url = r.msg['location']
+            assert new_url.startswith('https://github.com/')
         if new_url != self.url:
             self.info('Found redirect to %s' % new_url)
             self.url = new_url
