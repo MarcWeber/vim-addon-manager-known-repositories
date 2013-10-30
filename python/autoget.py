@@ -6,8 +6,8 @@ from www.vim.org archives and repository URLs found in script descriptions
 or installation details found on www.vim.org.
 
 Found SCM URLs are saved in ./db/scm_generated.json.
-List of script numbers which were checked, but with no result,
-is saved in ./db/not_found.json.
+List of script numbers which were checked, but with no result, is saved in
+./db/not_found.json.
 List of script numbers which should not be processed for some reason can be
 found in ./db/omitted.json.
 
@@ -286,6 +286,7 @@ class Match(object):
     @cached_property
     def key(self):
         name = self.name
+        # TODO Also compare author names
         try:
             voname = self.voinfo['script_name']
         except KeyError:
@@ -567,18 +568,19 @@ if __name__ == '__main__':
     p.add_argument('-n', '--dry-run', action='store_const', const=True,
             help='do not edit any files')
     p.add_argument('-l', '--last', metavar='N', type=int,
-            help='process only last N script numbers')
+            help='process only last N script numbers. Implies -D')
     p.add_argument('-a', '--all-last', action='store_const', const=True,
             help='process scripts in reversed order until already processed script was not found')
-    p.add_argument('--no-descriptions', action='store_const', const=True,
+    p.add_argument('-D', '--no-descriptions', action='store_const', const=True,
             help='do not check description hashes')
     p.add_argument('-R', '--recheck', action='store_const', const=True,
             help='recheck URLs found in scm_generated.json and report the result. '
-                 'Does not modify scm_generated.json')
+                 'Does not modify scm_generated.json. Implies -D')
     p.add_argument('-f', '--force', action='store_const', const=True,
             help='do not check whether given numbers were already processed')
     p.add_argument('sids', nargs='*', metavar='SID',
-            help='process only this script. May be passed more then once. Also see --force.')
+            help='process only this script. May be passed more then once. Also see --force. '
+                 'Implies -D')
 
     args = p.parse_args()
 
@@ -593,6 +595,9 @@ if __name__ == '__main__':
     if (args.recheck and (args.sids or args.last or args.all_last)):
         raise ValueError('You may not specify --recheck and --sids, --last or --all-last at '
                 'the time')
+
+    if (args.sids or args.recheck or args.last):
+        args.no_descriptions = True
 
     logger.setLevel(logging.INFO)
     handler = logging.StreamHandler()
