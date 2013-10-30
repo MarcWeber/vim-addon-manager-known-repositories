@@ -186,26 +186,38 @@ def get_file_list(voinfo):
         raise ValueError('Unknown extension')
 
 
+# Directories corresponding to plugin types on www.vim.org
+vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
 expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     files = set(files)
     expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
     if vofiles <= files:
+        logger.info('>>>> Accepted with score 100 because all files '
+                'are contained in the repository')
         return (prefix, 100)
     elif expvofiles and expvofiles <= files:
+        logger.info('>>>> Accepted with score 90 because all files that are considered significant '
+                'are contained in the repository: %s' % repr(expvofiles))
         return (prefix, 90)
     else:
         vofileparts = [fname.partition('/') for fname in vofiles]
         leadingdir = vofileparts[0][0]
         if (leadingdir
+                and leadingdir not in vodirs
                 and all((part[0] == leadingdir for part in vofileparts[1:]))
                 and all((part[1] for part in vofileparts))):
+            logger.info('>>>> Trying to match with leading path component removed: %s'
+                    % leadingdir)
             return check_candidate_with_file_list(
                 {part[-1] for part in vofileparts},
                 files,
                 leadingdir,
             )
         else:
+            # TODO Detect the need in vamkr#AddCopyHook
+            logger.info('>>>> Rejected because not all significant files were found '
+                    'in the repository: %s' % repr(expvofiles - files))
             return (prefix, 0)
 
 
@@ -312,11 +324,11 @@ class GithubMatch(Match):
         if r.status == httplib.MOVED_PERMANENTLY:
             new_url = r.msg['location']
             assert new_url.startswith('https://github.com/')
-        if new_url != self.url:
-            self.info('Found redirect to %s' % new_url)
-            self.url = new_url
-            self.repo_path = self.url[len('https://github.com/'):]
-            self.name = self.repo_path.rpartition('/')[-1]
+            if new_url != self.url:
+                self.info('Found redirect to %s' % new_url)
+                self.url = new_url
+                self.repo_path = self.url[len('https://github.com/'):]
+                self.name = self.repo_path.rpartition('/')[-1]
 
         self.scm_url = 'git://github.com/' + self.repo_path
 
