@@ -230,12 +230,12 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
             return (prefix, 0)
 
 
-github_url              = re.compile(r'github\.com/([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:\.git)?')
-vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*[\'"]([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:.git)?[\'"]')
+github_url              = re.compile(r'github\.com/([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:\.git)?')
+vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*[\'"]([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:.git)?[\'"]')
 gist_url                = re.compile(r'gist\.github\.com/(\d+)')
-bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)')
-bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)|bitbucket\.org/([a-zA-Z_.]+)/([a-zA-Z\-_.]+)\.git')
-bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_]+)')
+bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
+bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)|bitbucket\.org/([0-9a-zA-Z_.]+)/([0-9a-zA-Z\-_.]+)\.git')
+bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_]+)')
 googlecode_url          = re.compile(r'code\.google\.com/p/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
 git_url                 = re.compile(r'git\s+clone\s+(\S+)')
