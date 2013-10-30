@@ -343,10 +343,6 @@
     "type": "git",
     "url": "git://github.com/mattboehm/vim-accordion"
   },
-  "4736": {
-    "type": "git",
-    "url": "git://github.com/lampert/vim"
-  },
   "4737": {
     "type": "git",
     "url": "git://github.com/fisadev/vim-ctrlp-cmdpalette"

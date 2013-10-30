@@ -2284,6 +2284,9 @@ let scmnr.4333 = {'url': 'https://github.com/vain/dotfiles-pub/raw/master/.vim/c
 " The following plugin does not have a separate repository:
 let scmnr.4381 = {'url': 'http://hwi.ath.cx/code/home/.vim/plugin/RepeatLast.vim', 'archive_name': 'RepeatLast.vim', 'type': 'archive', 'script-type': 'utility'}
 
+" Paul Lampert
+let scmnr.4736 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/lampert/vim'}, {'navigate-softtab.vim': 'plugin'})
+
 " jeb beich
 let scmnr.4648 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/jebberjeb/yet-another-buffer-list'}, {'buflist.vim': 'plugin'})
 
