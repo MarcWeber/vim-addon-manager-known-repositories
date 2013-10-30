@@ -196,16 +196,39 @@ def get_file_list(voinfo):
         raise ValueError('Unknown extension')
 
 
+# Only directories that may be automatically loaded by vim are listed below.
+specialdirs = {'plugin', 'ftplugin', 'syntax', 'indent', 'after'}
+
+def isvimvofile(fname):
+    return ((fname.endswith('.vim') and fname.partition('/')[0] in specialdirs))
+           #or (fname.endswith('.py') and
+           #    (fname.startswith('pythonx/')
+           #        or fname.startswith('python2/')
+           #        or fname.startswith('python3/'))))
+
+
 # Directories corresponding to plugin types on www.vim.org
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
 expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
+    vimvofiles = {fname for fname in expvofiles if isvimvofile(fname)}
+    vimfiles = {fname for fname in files if isvimvofile(fname)}
     if vofiles <= files:
+        if vimvofiles < vimfiles and len(vimfiles) - len(vimvofiles) > 5:
+            logger.info('>>>> Rejected because there are significant files not present in archive: '
+                    '%s'
+                    % (repr(vimfiles - vimvofiles)))
+            return (prefix, 0)
         logger.info('>>>> Accepted with score 100 because all files '
                 'are contained in the repository')
         return (prefix, 100)
     elif expvofiles and expvofiles <= files:
+        if vimvofiles < vimfiles and len(vimfiles) - len(vimvofiles) > 5:
+            logger.info('>>>> Rejected because there are significant files not present in archive: '
+                    '%s'
+                    % (repr(vimfiles - vimvofiles)))
+            return (prefix, 0)
         logger.info('>>>> Accepted with score 90 because all files that are considered significant '
                 'are contained in the repository: %s' % repr(expvofiles))
         return (prefix, 90)
