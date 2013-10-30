@@ -185,10 +185,10 @@ def get_file_list(voinfo):
         raise ValueError('Unknown extension')
 
 
-expected_extensions = set(('vim', 'txt', 'py', 'pl', 'lua', 'pm'))
+expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     files = set(files)
-    expvofiles = set((fname for fname in vofiles if get_ext(fname) in expected_extensions))
+    expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
     if vofiles <= files:
         return (prefix, 100)
     elif expvofiles and expvofiles <= files:
@@ -454,7 +454,7 @@ def find_repo_candidate(voinfo):
     for candidate in candidates:
         if vofiles is None:
             vofiles = get_file_list(voinfo)
-            vofiles = set((fname for fname in vofiles if not fname.endswith('/')))
+            vofiles = {fname for fname in vofiles if not fname.endswith('/')}
             logger.info('>> vim.org files: ' + repr(vofiles))
         logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
                                                             candidate.match.group(0)))
