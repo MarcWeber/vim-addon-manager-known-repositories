@@ -22,7 +22,7 @@ Currently supports only git and mercurial repositories.
 '''
 from __future__ import unicode_literals, division, print_function
 
-from github import Github
+from github import Github, GithubException
 from collections import namedtuple
 from subprocess import check_call, CalledProcessError
 import codecs
@@ -56,6 +56,9 @@ import list_git_files as lsgit
 
 
 logger = logging.getLogger('autoget')
+
+
+MAX_ATTEMPTS = 5
 
 
 def dump_json(obj, F):
@@ -190,7 +193,6 @@ def get_file_list(voinfo):
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
 expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
-    files = set(files)
     expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
     if vofiles <= files:
         logger.info('>>>> Accepted with score 100 because all files '
@@ -317,7 +319,9 @@ class GithubMatch(Match):
         if self.repo_path.endswith('.git'):
             self.repo_path = self.repo_path[:-4]
         self.url = 'https://github.com/' + self.repo_path
+        self._check_redirects()
 
+    def _check_redirects(self, attempt=0):
         c = httplib.HTTPSConnection('github.com')
         c.request('HEAD', '/' + self.repo_path)
         r = c.getresponse()
@@ -329,6 +333,18 @@ class GithubMatch(Match):
                 self.url = new_url
                 self.repo_path = self.url[len('https://github.com/'):]
                 self.name = self.repo_path.rpartition('/')[-1]
+        elif 400 <= r.status < 500:
+            self.error('Cannot use this match: request failed with code %u (%s)'
+                       % (r.status, httplib.responses[r.status]))
+            raise ValueError
+        elif 500 <= r.status:
+            if attempt < MAX_ATTEMPTS:
+                self.error('Retrying: request failed with code %u (%s)'
+                           % (r.status, httplib.responses[r.status]))
+                self._check_redirects(attempt + 1)
+            else:
+                self.error('Cannot use this match: request failed with code %u (%s), attempt %u'
+                           % (r.status, httplib.responses[r.status], attempt))
 
         self.scm_url = 'git://github.com/' + self.repo_path
 
@@ -337,14 +353,25 @@ class GithubMatch(Match):
         global gh
         return gh.get_repo(self.repo_path)
 
-    def list_files(self, dir=None):
-        for f in self.repo.get_dir_contents(dir or '/'):
-            name = (dir + '/' + f.name if dir else f.name)
-            if f.type == 'file':
-                yield name
-            elif f.type == 'dir':
-                for subf in self.list_files(name):
-                    yield subf
+    def list_files(self, dir=None, attempt=0):
+        try:
+            for f in self.repo.get_dir_contents(dir or '/'):
+                name = (dir + '/' + f.name if dir else f.name)
+                if f.type == 'file':
+                    yield name
+                elif f.type == 'dir':
+                    for subf in self.list_files(name):
+                        yield subf
+        except GithubException as e:
+            if 500 <= e.status:
+                if attempt < MAX_ATTEMPTS:
+                    self.error('Received exception, retrying: %s' % repr(e))
+                    for fname in self.list_files(self, dir, attempt + 1):
+                        yield fname
+                else:
+                    raise
+            else:
+                raise
 
     @cached_property
     def files(self):
@@ -479,7 +506,9 @@ def find_repo_candidate(voinfo):
         logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
                                                             candidate.match.group(0)))
         try:
-            prefix, key2 = check_candidate_with_file_list(vofiles, candidate.files)
+            files = set(candidate.files)
+            logger.info('>> Repository files: {0!r}'.format(files))
+            prefix, key2 = check_candidate_with_file_list(vofiles, files)
         except Exception as e:
             logger.exception(e)
         else:
