@@ -105,6 +105,12 @@ def get_voinfo_hash(voinfo):
     return hash(voinfo.get('description',     '') + voinfo.get('install_details', ''))
 
 
+def get_tar_names(tf):
+    for ti in tf:
+        if not ti.isdir():
+            yield ti.name
+
+
 # Namespace
 class FileListers:
     @staticmethod
@@ -126,26 +132,26 @@ class FileListers:
 
     @staticmethod
     def tar(AF):
-        return tarfile.TarFile(fileobj=AF).getnames()
+        return set(get_tar_names(tarfile.TarFile(fileobj=AF)))
 
     @staticmethod
     def tgz(AF):
         # gz requires tell
-        return tarfile.TarFile(fileobj=io.BytesIO(AF.read()), format='gz').getnames()
+        return set(get_tar_names(tarfile.TarFile(fileobj=FileListers.gz(AF), format='gz')))
 
     @staticmethod
     def tbz(AF):
-        return tarfile.TarFile(fileobj=io.BytesIO(AF.read()), format='bz2').getnames()
+        return set(get_tar_names(tarfile.TarFile(fileobj=FileListers.bz2(AF), format='bz2')))
     tbz2 = tbz
 
     @staticmethod
     def txz(AF):
-        return tarfile.TarFile(fileobj=FileListers.xz(AF)).getnames()
+        return set(get_tar_names(tarfile.TarFile(fileobj=FileListers.xz(AF))))
 
     @staticmethod
     def zip(AF):
         # ZipFile requires seek
-        return zipfile.ZipFile(io.BytesIO(AF.read())).namelist()
+        return set(zipfile.ZipFile(io.BytesIO(AF.read())).namelist())
 
     @staticmethod
     def vmb(AF):
@@ -153,11 +159,11 @@ class FileListers:
         while not next(af).startswith('finish'):
             pass
 
-        files = []
+        files = set()
         filere = re.compile('^\S+')
         try:
             while True:
-                files.append(filere.match(next(af)).group(0))
+                files.add(filere.match(next(af)).group(0))
                 numlines = int(next(af))
                 while numlines:
                     next(af)
@@ -174,15 +180,16 @@ def get_file_list(voinfo):
     aname = rinfo['package']
     aurl = 'http://www.vim.org/scripts/download_script.php?src_id='+rinfo['src_id']
     ext = get_ext(aname).lower()
+    logger.info('>>> Processing archive %s (ext %s)' % (aname, ext))
     if ext == 'vim':
         return [guess_fix_dir(voinfo) + '/' + aname]
     elif ext in FileListers.__dict__:
         AF = urllib.urlopen(aurl)
         r = getattr(FileListers, ext)(AF)
-        while not isinstance(r, list):
+        while not isinstance(r, set):
             aname = aname[:-1-len(ext)]
             AF = r
-            ext = get_ext(aname)
+            ext = get_ext(aname).lower()
             r = getattr(FileListers, ext)(AF)
         return r
     else:
@@ -507,7 +514,7 @@ def find_repo_candidate(voinfo):
                                                             candidate.match.group(0)))
         try:
             files = set(candidate.files)
-            logger.info('>> Repository files: {0!r}'.format(files))
+            logger.info('>>> Repository files: {0!r}'.format(files))
             prefix, key2 = check_candidate_with_file_list(vofiles, files)
         except Exception as e:
             logger.exception(e)
