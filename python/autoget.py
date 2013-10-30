@@ -707,6 +707,7 @@ if __name__ == '__main__':
                 process_voinfo(db[key])
 
             if not args.no_descriptions:
+                logger.info('Starting descriptions check')
                 for key in keys:
                     voinfo = db[key]
                     changed = False
