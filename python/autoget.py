@@ -493,6 +493,9 @@ if __name__ == '__main__':
             help='process scripts in reversed order until already processed script was not found')
     p.add_argument('--no-descriptions', action='store_const', const=True,
             help='do not check description hashes')
+    p.add_argument('-R', '--recheck', action='store_const', const=True,
+            help='recheck URLs found in scm_generated.json and report the result. '
+                 'Does not modify scm_generated.json')
     p.add_argument('-f', '--force', action='store_const', const=True,
             help='do not check whether given numbers were already processed')
     p.add_argument('sids', nargs='*', metavar='SID',
@@ -507,6 +510,10 @@ if __name__ == '__main__':
 
     if (args.all_last and args.force):
         raise ValueError('You may not specify both --force and --all-last')
+
+    if (args.recheck and (args.sids or args.last or args.all_last)):
+        raise ValueError('You may not specify --recheck and --sids, --last or --all-last at '
+                'the time')
 
     logger.setLevel(logging.INFO)
     handler = logging.StreamHandler()
@@ -566,7 +573,10 @@ if __name__ == '__main__':
     else:
         keys = reversed(sorted(db, key=int))
 
-    def process_voinfo(voinfo):
+    def candidate_to_sg(candidate):
+        return {'type': candidate.scm, 'url': candidate.scm_url}
+
+    def process_voinfo(voinfo, recheck=False):
         global scm_generated
         global found
         global not_found
@@ -574,48 +584,65 @@ if __name__ == '__main__':
                     .format(**voinfo))
         try:
             candidate = find_repo_candidate(voinfo)
-            if candidate:
-                scm_generated[key] = {'type': candidate.scm, 'url': candidate.scm_url}
-                logger.info('> Recording found candidate for {0}: {1}'
-                            .format(key, scm_generated[key]))
-                found.add(key)
+            if recheck:
+                desc = '%s : %s' % (voinfo['script_id'], voinfo['script_name'])
+                if candidate:
+                    c_sg = candidate_to_sg(candidate)
+                    s_sg = scm_generated[voinfo['script_id']]
+                    if c_sg == s_sg:
+                        print ('== ' + desc)
+                    else:
+                        logger.info('> {0!r} (new) /= {1!r} (old)'.format(c_sg, s_sg))
+                        print ('/= ' + desc)
+                else:
+                    print ('no ' + desc)
             else:
-                not_found.add(key)
-                found.add(key)
+                if candidate:
+                    scm_generated[key] = candidate_to_sg(candidate)
+                    logger.info('> Recording found candidate for {0}: {1}'
+                                .format(key, scm_generated[key]))
+                    found.add(key)
+                else:
+                    not_found.add(key)
+                    found.add(key)
         except Exception as e:
             logger.exception(e)
 
     with lshg.MercurialRemoteParser() as remote_parser:
-        for key in keys:
-            if not args.force and key in scmnrs:
-                if args.all_last:
-                    break
-                else:
-                    continue
-            logger.info('Considering key {0}'.format(key))
-            process_voinfo(db[key])
-
-        if not args.no_descriptions:
+        if args.recheck:
+            for key in scm_generated:
+                process_voinfo(db[key], recheck=True)
+        else:
             for key in keys:
-                voinfo = db[key]
-                changed = False
-                if key not in description_hashes:
-                    h = get_voinfo_hash(voinfo)
-                    description_hashes[key] = h
-                    changed = True
-                if key in found:
-                    # TODO Check whether old URL should change
-                    continue
-                if not changed:
-                    h = get_voinfo_hash(voinfo)
-                    changed = (h != description_hashes.get(key))
-                    if changed:
-                        logger.info('Hash for key {0} changed, checking it'.format(key))
+                if not args.force and key in scmnrs:
+                    if args.all_last:
+                        break
+                    else:
+                        continue
+                logger.info('Considering key {0}'.format(key))
+                process_voinfo(db[key])
+
+            if not args.no_descriptions:
+                for key in keys:
+                    voinfo = db[key]
+                    changed = False
+                    if key not in description_hashes:
+                        h = get_voinfo_hash(voinfo)
                         description_hashes[key] = h
-                else:
-                    logger.info('New hash for key {0}'.format(key))
-                if changed:
-                    process_voinfo(voinfo)
+                        changed = True
+                    if key in found:
+                        # TODO Check whether old URL should change
+                        continue
+                    if not changed:
+                        h = get_voinfo_hash(voinfo)
+                        changed = (h != description_hashes.get(key))
+                        if changed:
+                            logger.info('Hash for key {0} changed, checking it'.format(key))
+                            description_hashes[key] = h
+                    else:
+                        logger.info('New hash for key {0}'.format(key))
+                    if changed:
+                        process_voinfo(voinfo)
 
     if not args.dry_run:
         with open(scm_generated_name, 'w') as SGF:
