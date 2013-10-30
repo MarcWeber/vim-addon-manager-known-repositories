@@ -209,7 +209,7 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
 
 
 github_url              = re.compile(r'github\.com/([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:\.git)?')
-vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*\'([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:.git)?\'')
+vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*[\'"]([a-zA-Z\-_]+)/([a-zA-Z\-_.]+)(?:.git)?[\'"]')
 gist_url                = re.compile(r'gist\.github\.com/(\d+)')
 bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)')
 bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([a-zA-Z_]+)/([a-zA-Z\-_.]+)|bitbucket\.org/([a-zA-Z_.]+)/([a-zA-Z\-_.]+)\.git')
@@ -301,8 +301,20 @@ class GithubMatch(Match):
         super(GithubMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         self.repo_path = self.match.group(1) + '/' + self.name
-        self.scm_url = 'git://github.com/' + self.repo_path
+        if self.repo_path.endswith('.git'):
+            self.repo_path = self.repo_path[:-4]
         self.url = 'https://github.com/' + self.repo_path
+
+        u = urllib.urlopen(self.url)
+        new_url = u.geturl()
+        assert new_url.startswith('https://github.com/')
+        if new_url != self.url:
+            self.info('Found redirect to %s' % new_url)
+            self.url = new_url
+            self.repo_path = self.url[len('https://github.com/'):]
+            self.name = self.repo_path.rpartition('/')[-1]
+
+        self.scm_url = 'git://github.com/' + self.repo_path
 
     @cached_property
     def repo(self):
@@ -322,16 +334,7 @@ class GithubMatch(Match):
     def files(self):
         if self.scm_url.startswith('git://github.com/vim-scripts'):
             raise ValueError('vim-scripts repositories are not used by VAM')
-        try:
-            return self.list_files()
-        except Exception as e:
-            self.exception(e)
-            u = urllib.urlopen(self.url)
-            new_url = u.geturl()
-            if new_url != full_repo_url:
-                return GithubMatch(self.re.match(new_url), self.voinfo).files
-            else:
-                raise ValueError('Failed to get information from ' + repr(new_url))
+        return set(self.list_files())
 
 
 class VundleGithubMatch(GithubMatch):
@@ -356,7 +359,7 @@ class GistMatch(GithubMatch):
 
     @cached_property
     def files(self):
-        return list(self.repo.files())
+        return set(self.repo.files())
 
 
 class MercurialMatch(Match):
@@ -373,7 +376,7 @@ class MercurialMatch(Match):
     def files(self):
         global remote_parser
         parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
-        return list(next(iter(parsing_result['tips'])).files)
+        return set(next(iter(parsing_result['tips'])).files)
 
 
 class BitbucketMercurialMatch(MercurialMatch):
@@ -424,6 +427,7 @@ class GithubLazy(object):
 
 candidate_classes = (
     GithubMatch,
+    VundleGithubMatch,
     GistMatch,
     MercurialMatch,
     BitbucketMercurialMatch,
