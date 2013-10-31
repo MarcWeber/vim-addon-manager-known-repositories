@@ -245,7 +245,7 @@ def isvimvofile(fname):
 
 # Directories corresponding to plugin types on www.vim.org
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
-expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
+expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm', 'rb'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
     vimvofiles = {fname for fname in expvofiles if isvimvofile(fname)}
@@ -433,7 +433,7 @@ class GithubMatch(Match):
             if 500 <= e.status:
                 if attempt < MAX_ATTEMPTS:
                     self.error('Received exception, retrying: %s' % repr(e))
-                    for fname in self.list_files(self, dir, attempt + 1):
+                    for fname in self.list_files(dir, attempt + 1):
                         yield fname
                 else:
                     raise
@@ -457,7 +457,7 @@ class GistMatch(GithubMatch):
     scm = 'git'
 
     def __init__(self, *args, **kwargs):
-        super(GistMatch, self).__init__(*args, **kwargs)
+        Match.__init__(self, *args, **kwargs)
         self.name = self.match.group(1)
         self.scm_url = 'git://gist.github.com/' + self.name
         self.url = 'https://gist.github.com/' + self.name
@@ -469,7 +469,7 @@ class GistMatch(GithubMatch):
 
     @cached_property
     def files(self):
-        return set(self.repo.files())
+        return set(self.repo.files)
 
 
 class MercurialMatch(Match):

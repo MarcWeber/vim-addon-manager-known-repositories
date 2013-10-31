@@ -568,6 +568,9 @@ let scmnr.2719 = {'type': 'git', 'url': 'git://github.com/tmallen/proj-vim'}
 let scmnr.3163 = {'type': 'git', 'url': 'git://github.com/tmallen/endline-vim'}
 let scmnr.4431 = {'type': 'git', 'url': 'git://github.com/oinksoft/tcd.vim'}
 
+" Anthony Panozzo
+let scmnr.2429 = {'type': 'git', 'url': 'git://github.com/panozzaj/vim-autocorrect'}
+
 " @kevinwatters
 let scmnr.2441 = {'type': 'git', 'url': 'git://github.com/kevinw/pyflakes-vim'}
 
