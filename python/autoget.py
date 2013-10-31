@@ -433,7 +433,7 @@ class GithubMatch(Match):
             if 500 <= e.status:
                 if attempt < MAX_ATTEMPTS:
                     self.error('Received exception, retrying: %s' % repr(e))
-                    for fname in self.list_files(self, dir, attempt + 1):
+                    for fname in self.list_files(dir, attempt + 1):
                         yield fname
                 else:
                     raise
