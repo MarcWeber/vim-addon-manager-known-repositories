@@ -457,7 +457,7 @@ class GistMatch(GithubMatch):
     scm = 'git'
 
     def __init__(self, *args, **kwargs):
-        super(GistMatch, self).__init__(*args, **kwargs)
+        Match.__init__(self, *args, **kwargs)
         self.name = self.match.group(1)
         self.scm_url = 'git://gist.github.com/' + self.name
         self.url = 'https://gist.github.com/' + self.name
@@ -469,7 +469,7 @@ class GistMatch(GithubMatch):
 
     @cached_property
     def files(self):
-        return set(self.repo.files())
+        return set(self.repo.files)
 
 
 class MercurialMatch(Match):
