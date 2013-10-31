@@ -245,7 +245,7 @@ def isvimvofile(fname):
 
 # Directories corresponding to plugin types on www.vim.org
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
-expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm'}
+expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm', 'rb'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
     expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
     vimvofiles = {fname for fname in expvofiles if isvimvofile(fname)}
