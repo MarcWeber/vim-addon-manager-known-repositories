@@ -115,6 +115,10 @@
     "type": "git",
     "url": "git://github.com/caglartoklu/fortran_line_length.vim"
   },
+  "2903": {
+    "type": "git",
+    "url": "git://github.com/neilhwatson/vim_cf3"
+  },
   "2904": {
     "type": "git",
     "url": "git://github.com/neilhwatson/vim_cf3"
@@ -287,6 +291,10 @@
     "type": "git",
     "url": "git://github.com/rosstimson/bats.vim"
   },
+  "4679": {
+    "type": "git",
+    "url": "git://github.com/biskark/vim-ultimate-colorscheme-utility"
+  },
   "4681": {
     "type": "git",
     "url": "git://github.com/coot/vim_args"
@@ -378,6 +386,10 @@
   "4723": {
     "type": "git",
     "url": "git://github.com/drmikehenry/vim-fontdetect"
+  },
+  "4724": {
+    "type": "git",
+    "url": "git://github.com/biskark/vim-ultimate-test-utility"
   },
   "4725": {
     "type": "git",
