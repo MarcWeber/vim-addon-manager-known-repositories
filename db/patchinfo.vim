@@ -40,6 +40,8 @@ unlet hook
 " Author wrote that contents of vert.txt should go to vimrc, but it should work 
 " fine as a script in plugin directory
 let addon_info.1742={'archive_name': 'vert.vim'}
+" It pretents being tar file, but it is actually tar.gz
+let addon_info.4734={'archive_name': 'united-front.tar.gz'}
 "▶1 Type corrections
 let patch_repo.2368={'script-type': 'plugin'}
 let patch_repo.1638={'script-type': 'plugin'}

@@ -42,6 +42,8 @@ import tarfile
 import zipfile
 import io
 
+import magic
+
 try:
     import lzma
 except ImportError:
@@ -132,7 +134,8 @@ class FileListers:
 
     @staticmethod
     def tar(AF):
-        return set(get_tar_names(tarfile.TarFile(fileobj=AF)))
+        # tar requires tell on its own
+        return set(get_tar_names(tarfile.TarFile(fileobj=io.BytesIO(AF.read()))))
 
     @staticmethod
     def tgz(AF):
@@ -175,6 +178,46 @@ class FileListers:
     vba = vmb
 
 
+mime_to_ext = {
+    'application/x-gzip': 'gz',
+    'application/x-tar': 'tar',
+}
+
+_magic = None
+
+def find_mime(AF):
+    global _magic
+    if not _magic:
+        _magic = magic.open(magic.MAGIC_MIME_TYPE)
+        _magic.load('/usr/share/misc/magic.mgc')
+    af = AF.read()
+    return io.BytesIO(af), mime_to_ext[_magic.buffer(af)]
+
+
+def get_result(AF, ext, aname, had_to_guess=False):
+    try:
+        ret = getattr(FileListers, ext)(AF)
+    except Exception as e:
+        logger.exception(e)
+        if not had_to_guess:
+            AF.seek(0)
+            AF, ext = find_mime(AF)
+            ret = get_result(AF, ext, aname, True)
+            had_to_guess = True
+        else:
+            raise
+    if not isinstance(ret, set):
+        if had_to_guess:
+            AF, ext = find_mime(ret)
+            return get_result(AF, ext, None, had_to_guess)
+        else:
+            aname = aname[:-1-len(ext)]
+            ext = get_ext(aname).lower()
+            return get_result(ret, ext, aname, had_to_guess)
+    else:
+        return ret
+
+
 def get_file_list(voinfo):
     rinfo = voinfo['releases'][0]
     aname = rinfo['package']
@@ -184,14 +227,7 @@ def get_file_list(voinfo):
     if ext == 'vim':
         return [guess_fix_dir(voinfo) + '/' + aname]
     elif ext in FileListers.__dict__:
-        AF = urllib.urlopen(aurl)
-        r = getattr(FileListers, ext)(AF)
-        while not isinstance(r, set):
-            aname = aname[:-1-len(ext)]
-            AF = r
-            ext = get_ext(aname).lower()
-            r = getattr(FileListers, ext)(AF)
-        return r
+        return get_result(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname)
     else:
         raise ValueError('Unknown extension')
 

@@ -395,6 +395,10 @@
     "type": "git",
     "url": "git://github.com/Pychimp/vim-sol"
   },
+  "4734": {
+    "type": "git",
+    "url": "git://github.com/ardagnir/united-front"
+  },
   "4735": {
     "type": "git",
     "url": "git://github.com/mattboehm/vim-accordion"
