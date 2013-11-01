@@ -455,6 +455,10 @@
     "type": "git",
     "url": "git://github.com/caglartoklu/launchassociated.vim"
   },
+  "4756": {
+    "type": "git",
+    "url": "git://github.com/Zuckonit/vim-airline-tomato"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"

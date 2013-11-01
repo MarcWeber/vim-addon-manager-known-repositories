@@ -14714,5 +14714,8 @@
    ],
    "4755" : [
       "launchassociated"
+   ],
+   "4756" : [
+      "vim-airline-tomato"
    ]
 }
