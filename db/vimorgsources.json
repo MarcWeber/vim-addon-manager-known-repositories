@@ -1,7 +1,8 @@
 {
+"vim-airline-tomato":{"archive_name":"vim-airline-tomato.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20991","version":"0.02","vim_script_nr":4756},
 "launchassociated":{"archive_name":"launchassociated.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20972","version":"0.0.1","vim_script_nr":4755},
 "mlessnau_block_shift":{"archive_name":"mlessnau_block_shift.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20968","version":"0.0.1","vim_script_nr":4754},
-"OpenURL":{"archive_name":"OpenURL.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20964","version":"1.0","vim_script_nr":4753},
+"OpenURL":{"archive_name":"OpenURL.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20989","version":"1.1","vim_script_nr":4753},
 "macvim-transparency":{"archive_name":"vim-macvim-transparency-1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20963","version":"1.0","vim_script_nr":4752},
 "ruby-xmpfilter":{"archive_name":"vim-ruby-xmpfilter-1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20962","version":"1.1","vim_script_nr":4751},
 "human":{"archive_name":"human.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20958","version":"0.1","vim_script_nr":4750},
