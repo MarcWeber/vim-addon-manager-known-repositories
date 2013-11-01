@@ -141,6 +141,7 @@ let addon_info_deps.4463 = [2467]
 let addon_info_deps.4492 = [4491]
 let addon_info_deps.4511 = [3590]
 let addon_info_deps.4532 = [3133, 'twibill']
+let addon_info_deps.4756 = [4661]
 " optional: 3396, 3476, unite-outline, vimproc, favstar-vim
 " ConqueTerm dependants
 let addon_info_deps.4222 = [2771]
