@@ -58,6 +58,7 @@ let patch_repo.4388={'script-type': 'ftplugin'}
 let patch_repo.2372={'script-type': 'ftplugin/vlog'}
 "▶1 Fixing target directories
 call extend(patch_repo.1542, {'target_dir': 'autoload'})
+let patch_repo.2372={'target_dir': 'ftplugin/vlog'}
 let patch_repo.1662={'target_dir': 'autoload'}
 let patch_repo.2611={'strip-components': 0}
 let patch_repo.2572={'strip-components': 0}
