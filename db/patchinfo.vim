@@ -49,16 +49,15 @@ let patch_repo.3868={'script-type': 'plugin'}
 let patch_repo.1780={'script-type': 'syntax'}
 let patch_repo.1686={'script-type': 'colors'}
 let patch_repo.2527={'script-type': 'ftplugin'}
-let patch_repo.1542={'script-type': 'autoload'}
-let patch_repo.2150={'script-type': 'after/syntax'}
-let patch_repo.2548={'script-type': 'after/syntax'}
-let patch_repo.2224={'script-type': 'after/syntax'}
-let patch_repo.2493={'script-type': 'after/syntax'}
 let patch_repo.4388={'script-type': 'ftplugin'}
 "▶1 Fixing target directories
-call extend(patch_repo.1542, {'target_dir': 'autoload'})
 let patch_repo.2372={'target_dir': 'ftplugin/vlog'}
+let patch_repo.1542={'target_dir': 'autoload'}
 let patch_repo.1662={'target_dir': 'autoload'}
+let patch_repo.2150={'target_dir': 'after/syntax'}
+let patch_repo.2548={'target_dir': 'after/syntax'}
+let patch_repo.2224={'target_dir': 'after/syntax'}
+let patch_repo.2493={'target_dir': 'after/syntax'}
 let patch_repo.2611={'strip-components': 0}
 let patch_repo.2572={'strip-components': 0}
 let patch_repo.2429={'strip-components': 0}
