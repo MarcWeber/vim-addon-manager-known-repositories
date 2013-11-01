@@ -300,6 +300,10 @@ mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
 git_url                 = re.compile(r'git\s+clone\s+(\S+)')
 
 
+class NotLoggedError(Exception):
+    pass
+
+
 def novimext(s):
     if s.endswith('.vim'):
         return s[:-4]
@@ -403,7 +407,7 @@ class GithubMatch(Match):
         elif 400 <= r.status < 500:
             self.error('Cannot use this match: request failed with code %u (%s)'
                        % (r.status, httplib.responses[r.status]))
-            raise ValueError
+            raise NotLoggedError
         elif 500 <= r.status:
             if attempt < MAX_ATTEMPTS:
                 self.error('Retrying: request failed with code %u (%s)'
@@ -558,7 +562,10 @@ def find_repo_candidates(voinfo):
             for match in C.re.finditer(string):
                 if not match.group(0) in foundstrings:
                     foundstrings.add(match.group(0))
-                    yield C(match, voinfo)
+                    try:
+                        yield C(match, voinfo)
+                    except NotLoggedError:
+                        pass
 
 
 def find_repo_candidate(voinfo):
@@ -576,6 +583,8 @@ def find_repo_candidate(voinfo):
             files = set(candidate.files)
             logger.info('>>> Repository files: {0!r}'.format(files))
             prefix, key2 = check_candidate_with_file_list(vofiles, files)
+        except NotLoggedError:
+            pass
         except Exception as e:
             logger.exception(e)
         else:
@@ -723,6 +732,7 @@ if __name__ == '__main__':
                                 .format(key, scm_generated[key]))
                     found.add(key)
                 else:
+                    logger.info('> Recording failure to find candidates for {0}'.format(key))
                     not_found.add(key)
                     found.add(key)
         except Exception as e:
