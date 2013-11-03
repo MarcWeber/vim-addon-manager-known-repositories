@@ -459,6 +459,10 @@
     "type": "git",
     "url": "git://github.com/Zuckonit/vim-airline-tomato"
   },
+  "4758": {
+    "type": "git",
+    "url": "git://github.com/lfilho/cosco.vim"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"
