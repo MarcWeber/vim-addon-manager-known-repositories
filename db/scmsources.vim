@@ -915,7 +915,7 @@ let scmnr.3109 = {'type': 'git', 'url': 'git://github.com/LaTeX-Box-Team/LaTeX-B
 let scmnr.3110 = {'type': 'git', 'url': 'git://github.com/findango/mdxdotvim'}
 
 " H Xu
-let scmnr.3115 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/singlecompile'}
+let scmnr.3115 = {'type': 'git', 'url': 'git://github.com/xuhdev/SingleCompile'}
 let scmnr.3219 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/projecttag'}
 let scmnr.3301 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/trimblank'}
 let scmnr.3434 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/iniparser'}
