@@ -115,6 +115,10 @@
     "type": "git",
     "url": "git://github.com/caglartoklu/fortran_line_length.vim"
   },
+  "2881": {
+    "type": "git",
+    "url": "git://github.com/caglartoklu/mib_translator.vim"
+  },
   "2903": {
     "type": "git",
     "url": "git://github.com/neilhwatson/vim_cf3"
@@ -462,6 +466,14 @@
   "4758": {
     "type": "git",
     "url": "git://github.com/lfilho/cosco.vim"
+  },
+  "4759": {
+    "type": "git",
+    "url": "git://github.com/mechatroner/minimal_gdb"
+  },
+  "4760": {
+    "type": "git",
+    "url": "git://github.com/Zuckonit/vim-gnote"
   },
   "586": {
     "type": "git",
