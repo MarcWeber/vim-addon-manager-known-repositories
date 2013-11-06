@@ -1,5 +1,6 @@
 {
-"vim-gnote":{"archive_name":"vim-gnote.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21007","version":"0.01","vim_script_nr":4760},
+"HowMuch":{"archive_name":"HowMuch.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21010","version":"1.0.0","vim_script_nr":4761},
+"vim-gnote":{"archive_name":"vim-gnote.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21008","version":"0.02","vim_script_nr":4760},
 "minimal_gdb":{"archive_name":"minimal_gdb.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21005","version":"1.0","vim_script_nr":4759},
 "Cosco":{"archive_name":"cosco.vim-v0.8.5.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21002","version":"0.8.5","vim_script_nr":4758},
 "SlateDark":{"archive_name":"SlateDark.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21001","version":"0.01","vim_script_nr":4757},
@@ -254,7 +255,7 @@
 "vim-rusmode":{"archive_name":"vim-rusmode.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19755","version":"0.3.1","vim_script_nr":4493},
 "mercury%4492":{"archive_name":"mercury.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19722","version":"1.0","vim_script_nr":"4492"},
 "venom":{"archive_name":"venom.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19721","version":"0.1","vim_script_nr":4491},
-"QFGrep":{"archive_name":"QFGrep.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20733","version":"1.0.1","vim_script_nr":4490},
+"QFGrep":{"archive_name":"QFGrep.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21009","version":"1.0.3","vim_script_nr":4490},
 "last256":{"archive_name":"last256.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19717","version":"1.0.0","vim_script_nr":4489},
 "tbone":{"archive_name":"tbone.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19742","version":"1.1","vim_script_nr":4488},
 "vim-signify":{"archive_name":"vim-signify-1.9.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20479","version":"1.9","vim_script_nr":4487},

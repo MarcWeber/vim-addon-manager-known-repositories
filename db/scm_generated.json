@@ -475,6 +475,10 @@
     "type": "git",
     "url": "git://github.com/Zuckonit/vim-gnote"
   },
+  "4761": {
+    "type": "git",
+    "url": "git://github.com/sk1418/HowMuch"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"
