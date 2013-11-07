@@ -479,6 +479,10 @@
     "type": "git",
     "url": "git://github.com/sk1418/HowMuch"
   },
+  "4762": {
+    "type": "git",
+    "url": "git://github.com/kayaalpg/vim-sunflower"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"
