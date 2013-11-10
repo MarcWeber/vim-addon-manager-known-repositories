@@ -1,4 +1,5 @@
 {
+"sovim":{"archive_name":"sovim.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21022","version":"0.0.0","vim_script_nr":4766},
 "axiom":{"archive_name":"axiom.vim.tgz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21021","version":"1.0","vim_script_nr":4765},
 "NERV-ous":{"archive_name":"nerv-ous.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21020","version":"0.1","vim_script_nr":4764},
 "cppnav":{"archive_name":"cppnav.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21016","version":"1.0","vim_script_nr":4763},

@@ -483,6 +483,10 @@
     "type": "git",
     "url": "git://github.com/kayaalpg/vim-sunflower"
   },
+  "4766": {
+    "type": "git",
+    "url": "git://github.com/cirosantilli/sovim"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"
