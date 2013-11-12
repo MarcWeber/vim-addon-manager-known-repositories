@@ -487,6 +487,10 @@
     "type": "git",
     "url": "git://github.com/cirosantilli/sovim"
   },
+  "4767": {
+    "type": "git",
+    "url": "git://github.com/cesheridan/tabwins"
+  },
   "586": {
     "type": "git",
     "url": "git://github.com/khorser/vim-northsky"
