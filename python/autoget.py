@@ -670,9 +670,9 @@ if __name__ == '__main__':
         except IOError:
             return typ()
 
-    scm_generated = load_scmnrs_json(scm_generated_name)
     omitted       = load_scmnrs_json(omitted_name)
     found = scmnrs.copy()
+    scm_generated = load_scmnrs_json(scm_generated_name)
     not_found     = load_scmnrs_json(not_found_name, set)
 
     if not args.no_descriptions:
