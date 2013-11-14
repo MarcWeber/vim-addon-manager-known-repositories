@@ -284,6 +284,9 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
             )
         else:
             # TODO Detect the need in vamkr#AddCopyHook
+            # TODO Detect the need in fixing target directory (example: script #4769 which has 
+            #      a single .vim file “archive” that has to be put under autoload/airline/themes as 
+            #      listed in db/patchinfo.vim)
             logger.info('>>>> Rejected because not all significant files were found '
                     'in the repository: %s' % repr(expvofiles - files))
             return (prefix, 0)
@@ -568,19 +571,34 @@ def find_repo_candidates(voinfo):
                         pass
 
 
+_checked_URLs = {}
+
+
 def find_repo_candidate(voinfo):
+    global _checked_URLs
     vofiles = None
     candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key, reverse=True)
     best_candidate = None
+    already_checked = set()
     for candidate in candidates:
         if vofiles is None:
             vofiles = get_file_list(voinfo)
             vofiles = {fname for fname in vofiles if not fname.endswith('/')}
             logger.info('>> vim.org files: ' + repr(vofiles))
+        url = candidate.url
+        if url in already_checked:
+            logger.debug('>>> Omitting {0} because it was already checked'.format(url))
+            continue
+        already_checked.add(url)
         logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
                                                             candidate.match.group(0)))
         try:
-            files = set(candidate.files)
+            try:
+                files = _checked_URLs[url]
+                logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
+            except KeyError:
+                files = set(candidate.files)
+                _checked_URLs[url] = files
             logger.info('>>> Repository files: {0!r}'.format(files))
             prefix, key2 = check_candidate_with_file_list(vofiles, files)
         except NotLoggedError:
@@ -626,6 +644,8 @@ if __name__ == '__main__':
     p.add_argument('sids', nargs='*', metavar='SID',
             help='process only this script. May be passed more then once. Also see --force. '
                  'Implies -D')
+    p.add_argument('-d', '--debug', action='store_const', const=True,
+            help='enable a few more messages')
 
     args = p.parse_args()
 
@@ -644,7 +664,7 @@ if __name__ == '__main__':
     if (args.sids or args.recheck or args.last):
         args.no_descriptions = True
 
-    logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
     handler = logging.StreamHandler()
     logger.addHandler(handler)
     scmnrs = set()
@@ -763,7 +783,6 @@ if __name__ == '__main__':
                         description_hashes[key] = h
                         changed = True
                     if key in found:
-                        # TODO Check whether old URL should change
                         continue
                     if not changed:
                         h = get_voinfo_hash(voinfo)
