@@ -2260,6 +2260,12 @@ let scmnr.4676 = {'type': 'git', 'url': 'git://github.com/xiaket/better-header'}
 " Matthew Boehm
 let scmnr.4677 = {'type': 'git', 'url': 'git://github.com/mattboehm/vim-unstack'}
 
+" Adam Stankiewicz
+let scmnr.4721 = {'type': 'git', 'url': 'git://github.com/sheerun/vim-polyglot'}
+
+" Rafal Bromirski
+let scmnr.4769 = {'type': 'git', 'url': 'git://github.com/paranoida/vim-airlineish'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " hickop
