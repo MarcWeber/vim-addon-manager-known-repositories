@@ -191,6 +191,10 @@
     "type": "git",
     "url": "git://github.com/wlangstroth/vim-racket"
   },
+  "3764": {
+    "type": "git",
+    "url": "git://github.com/lilydjwg/fcitx.vim"
+  },
   "3815": {
     "type": "git",
     "url": "git://github.com/djjcast/mirodark"
