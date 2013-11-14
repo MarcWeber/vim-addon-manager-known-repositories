@@ -58,6 +58,7 @@ let patch_repo.2150={'target_dir': 'after/syntax'}
 let patch_repo.2548={'target_dir': 'after/syntax'}
 let patch_repo.2224={'target_dir': 'after/syntax'}
 let patch_repo.2493={'target_dir': 'after/syntax'}
+let patch_repo.4769={'target_dir': 'autoload/airline/themes'}
 let patch_repo.2611={'strip-components': 0}
 let patch_repo.2572={'strip-components': 0}
 let patch_repo.2429={'strip-components': 0}
@@ -141,6 +142,8 @@ let addon_info_deps.4463 = [2467]
 let addon_info_deps.4492 = [4491]
 let addon_info_deps.4511 = [3590]
 let addon_info_deps.4532 = [3133, 'twibill']
+" airline dependants
+let addon_info_deps.4769 = [4661]
 let addon_info_deps.4756 = [4661]
 " optional: 3396, 3476, unite-outline, vimproc, favstar-vim
 " ConqueTerm dependants
