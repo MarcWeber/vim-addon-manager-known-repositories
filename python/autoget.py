@@ -198,6 +198,10 @@ def get_result(AF, ext, aname, had_to_guess=False):
     try:
         ret = getattr(FileListers, ext)(AF)
     except Exception as e:
+        # It may appear that archive has wrong extension (e.g. like in script #4734 that reports 
+        # being .tar file while it is actually .tar.gz). Thus here is catch-all rule.
+        # TODO: Maybe add patchinfo_generated.json which will contain archive name corrections for 
+        #       such cases.
         logger.exception(e)
         if not had_to_guess:
             AF.seek(0)
@@ -286,7 +290,7 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
             # TODO Detect the need in vamkr#AddCopyHook
             # TODO Detect the need in fixing target directory (example: script #4769 which has 
             #      a single .vim file “archive” that has to be put under autoload/airline/themes as 
-            #      listed in db/patchinfo.vim)
+            #      listed in db/patchinfo.vim). Add this in patchinfo_generated.json.
             logger.info('>>>> Rejected because not all significant files were found '
                     'in the repository: %s' % repr(expvofiles - files))
             return (prefix, 0)
