@@ -730,11 +730,12 @@ if __name__ == '__main__':
                     scm_generated[key] = candidate_to_sg(candidate)
                     logger.info('> Recording found candidate for {0}: {1}'
                                 .format(key, scm_generated[key]))
-                    found.add(key)
                 else:
                     logger.info('> Recording failure to find candidates for {0}'.format(key))
                     not_found.add(key)
-                    found.add(key)
+                found.add(key)
+                if not args.no_descriptions:
+                    description_hashes[key] = get_voinfo_hash(voinfo)
         except Exception as e:
             logger.exception(e)
 
