@@ -2544,6 +2544,9 @@ let scm['tabline'] = {'type': 'git', 'url': 'git://github.com/mkitt/tabline.vim'
 " Tim Clem
 let scm['vim-arduino'] = {'type': 'git', 'url': 'git://github.com/tclem/vim-arduino'}
 
+" Jacobo de Vera
+let scm['vim-opengrok-search'] = {'type': 'git', 'url': 'git://github.com/jdevera/vim-opengrok-search'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
