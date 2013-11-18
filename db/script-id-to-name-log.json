@@ -14759,5 +14759,11 @@
    ],
    "4770" : [
       "noerrmsg"
+   ],
+   "4771" : [
+      "maven_errorformat"
+   ],
+   "4772" : [
+      "marslo"
    ]
 }

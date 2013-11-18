@@ -503,6 +503,10 @@
     "type": "git",
     "url": "git://github.com/cesheridan/tabwins"
   },
+  "4772": {
+    "type": "git",
+    "url": "git://github.com/Marslo/marslo.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
