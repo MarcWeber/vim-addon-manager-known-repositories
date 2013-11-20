@@ -507,6 +507,10 @@
     "type": "git",
     "url": "git://github.com/Marslo/marslo.vim"
   },
+  "4774": {
+    "type": "git",
+    "url": "git://github.com/aslater/p4checkout"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
