@@ -511,6 +511,10 @@
     "type": "git",
     "url": "git://github.com/aslater/p4checkout"
   },
+  "4775": {
+    "type": "git",
+    "url": "git://github.com/xuhdev/tex-breqn.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
