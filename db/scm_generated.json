@@ -291,6 +291,10 @@
     "type": "git",
     "url": "git://github.com/embear/vim-localvimrc"
   },
+  "4578": {
+    "type": "git",
+    "url": "git://github.com/escher9/throughpairs"
+  },
   "4583": {
     "type": "git",
     "url": "git://github.com/StrayFeral/DevLife"

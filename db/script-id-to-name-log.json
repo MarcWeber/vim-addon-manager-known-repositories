@@ -14180,6 +14180,7 @@
       "linepower%4577"
    ],
    "4578" : [
+      "throughpairs",
       "easy-through-pairing",
       "."
    ],
@@ -14777,5 +14778,8 @@
    ],
    "4776" : [
       "Projx"
+   ],
+   "4777" : [
+      "repeatableMapping"
    ]
 }
