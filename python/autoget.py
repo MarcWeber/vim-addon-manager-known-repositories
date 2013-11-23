@@ -339,6 +339,7 @@ bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]
 bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_]+)')
 codegoogle_url          = re.compile(r'code\.google\.com/([pr])/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
+mercurial_url_2         = re.compile(r'\b(?:(?i)hg|mercurial)\b.*\b(\w+(?:\+\w+)*://\S+)')
 git_url                 = re.compile(r'git\s+clone\s+(\S+)')
 
 
@@ -489,7 +490,8 @@ class GithubMatch(Match):
     @cached_property
     def files(self):
         if self.scm_url.startswith('git://github.com/vim-scripts'):
-            raise ValueError('vim-scripts repositories are not used by VAM')
+            self.error('removing candidate: vim-scripts repositories are not used by VAM')
+            raise NotLoggedError
         return set(self.list_files())
 
 
@@ -538,6 +540,17 @@ class MercurialMatch(Match):
         global remote_parser
         parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         return set(next(iter(parsing_result['tips'])).files)
+
+
+class MercurialMatch2(MercurialMatch):
+    re = mercurial_url_2
+
+    scm = 'hg'
+
+    def __init__(self, *args, **kwargs):
+        super(MercurialMatch2, self).__init__(*args, **kwargs)
+        for attr in ('scm_url', 'name', 'url'):
+            setattr(self, attr, getattr(self, attr).rstrip('.,!?'))
 
 
 class BitbucketMercurialMatch(MercurialMatch):
@@ -633,10 +646,11 @@ candidate_classes = (
     VundleGithubMatch,
     VundleGithubMatch2,
     GistMatch,
-    MercurialMatch,
-    BitbucketMercurialMatch,
-    BitbucketMatch,
     GoogleCodeMatch,
+    BitbucketMercurialMatch,
+    MercurialMatch,
+    MercurialMatch2,
+    BitbucketMatch,
 )
 
 
