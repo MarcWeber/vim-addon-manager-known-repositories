@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git://github.com/bencollerson/Omap.vim"
   },
+  "1512": {
+    "type": "hg",
+    "url": "https://bitbucket.org/blacktrash/screenpaste"
+  },
   "1693": {
     "type": "git",
     "url": "git://github.com/mbbill/desertEx"

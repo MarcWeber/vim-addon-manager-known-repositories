@@ -282,9 +282,6 @@ let scm['vim-fix-numbering'] = {'type': 'git', 'url': 'git://github.com/taku-o/v
 let scm['vim-chardet'] = {'type': 'git', 'url': 'git://github.com/taku-o/vim-chardet'}
 let scm['vim-mmatch'] = {'type': 'git', 'url': 'git://github.com/taku-o/vim-mmatch'}
 
-" Christian Ebert
-let scmnr.1512 = {'type': 'hg', 'url': 'http://www.blacktrash.org/hg/screenpaste'}
-
 " Manpreet Singh
 let scmnr.1563 = {'type': 'git', 'url': 'git://github.com/junkblocker/patchreview-vim'}
 
