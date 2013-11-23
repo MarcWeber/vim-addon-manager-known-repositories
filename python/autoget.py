@@ -313,7 +313,8 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
                     % (repr(vimfiles - vimvofiles)))
             return (prefix, 0)
         logger.info('>>>> Accepted with score 90 because all files that are considered significant '
-                'are contained in the repository: %s' % repr(expvofiles))
+                'are contained in the repository: %s. Missing insignificant files: %s.'
+                % (repr(expvofiles), repr(vofiles - files)))
         return (prefix, 90)
     else:
         vofileparts = [fname.partition('/') for fname in vofiles]
