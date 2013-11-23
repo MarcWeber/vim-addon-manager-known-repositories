@@ -155,6 +155,10 @@
     "type": "git",
     "url": "git://github.com/yegappan/grep"
   },
+  "3231": {
+    "type": "git",
+    "url": "git://github.com/clericJ/pyinteractive-vim"
+  },
   "3322": {
     "type": "git",
     "url": "git://github.com/coot/vim_ftpdev"

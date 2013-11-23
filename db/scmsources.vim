@@ -991,9 +991,6 @@ let scmnr.3599 = {'type': 'git', 'url': 'git://github.com/jiangmiao/auto-pairs'}
 let scmnr.3228 = {'type': 'git', 'url': 'git://github.com/msbmsb/porter-stem.vim'}
 let scmnr.3229 = {'type': 'git', 'url': 'git://github.com/msbmsb/stem-search.vim'}
 
-" Almaz Karimov
-let scmnr.3231 = {'type': 'hg', 'url': 'https://vim-pyinteractive-plugin.googlecode.com/hg/'}
-
 " wei ko kao
 let scmnr.3232 = {'type': 'git', 'url': 'git://github.com/othree/html5-syntax.vim'}
 let scmnr.3236 = {'type': 'git', 'url': 'git://github.com/othree/html5.vim'}
