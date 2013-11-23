@@ -1,20 +1,21 @@
 #!/usr/bin/env python
 # vim: fileencoding=utf-8
 
-from subvertpy.ra import RemoteAccess
+from subvertpy.ra import RemoteAccess, DIRENT_KIND
+from subvertpy import NODE_DIR
 
 class NoFilesError(Exception):
     pass
 
 def _list_svn_files(conn, path=''):
-    dirents, frev, props = conn.get_dir(path, -1)
-    for fname in dirents:
+    dirents, frev, props = conn.get_dir(path, -1, DIRENT_KIND)
+    for fname, props in dirents.items():
         new_path = (path + '/' if path else '') + fname
         contains = False
-        for full_fname in _list_svn_files(conn, new_path):
-            contains = True
-            yield full_fname
-        if not contains:
+        if props['kind'] == NODE_DIR:
+            for full_fname in _list_svn_files(conn, new_path):
+                yield full_fname
+        else:
             yield new_path
 
 def list_svn_files(url):

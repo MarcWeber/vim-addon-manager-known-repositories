@@ -655,12 +655,16 @@ class CodeGoogleMatch(Match):
                 self.scm = 'git'
             except Exception as e:
                 self.info('Checking whether {0} is a subversion repository'.format(self.scm_url))
-                # FIXME use target directory
+                # FIXME detect directory
+                # Plugin for which detection is useful: #2805
                 self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
                 self.files = list(lssvn.list_svn_files(self.scm_url))
+                self.info('Subversion files: {0!r}'.format(self.files))
                 trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
                 if trunkfiles:
+                    self.scm_url += '/trunk'
                     self.files = trunkfiles
+                    self.info('Found trunk/ directory, leaving only files in there: {0!r}'.format(self.files))
                 self.scm = 'svn'
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
