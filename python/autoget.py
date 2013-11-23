@@ -282,11 +282,19 @@ def isvimvofile(fname):
            #        or fname.startswith('python3/'))))
 
 
+expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm', 'rb'}
+def isexpected(fname):
+    # Second condition blocks files like .hg_archival.txt
+    return ((get_ext(fname) in expected_extensions)
+            and not fname.startswith('.hg')
+            and not fname.startswith('.git')
+            and not 'README' in fname)
+
+
 # Directories corresponding to plugin types on www.vim.org
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
-expected_extensions = {'vim', 'txt', 'py', 'pl', 'lua', 'pm', 'rb'}
 def check_candidate_with_file_list(vofiles, files, prefix=None):
-    expvofiles = {fname for fname in vofiles if get_ext(fname) in expected_extensions}
+    expvofiles = {fname for fname in vofiles if isexpected(fname)}
     vimvofiles = {fname for fname in expvofiles if isvimvofile(fname)}
     vimfiles = {fname for fname in files if isvimvofile(fname)}
     if vofiles <= files:
@@ -639,7 +647,8 @@ class CodeGoogleMatch(Match):
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         except Exception as e:
-            pass
+            # TODO Check for git
+            raise
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
