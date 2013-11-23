@@ -55,6 +55,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import list_hg_files as lshg
 import list_git_files as lsgit
+import list_svn_files as lssvn
 
 
 logger = logging.getLogger('autoget')
@@ -648,11 +649,23 @@ class CodeGoogleMatch(Match):
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         except Exception as e:
-            # TODO Check for git
-            raise
+            try:
+                self.info('Checking whether {0} is a git repository'.format(self.scm_url))
+                self.files = lsgit.list_git_files(self.scm_url, allow_depth=False)
+                self.scm = 'git'
+            except Exception as e:
+                self.info('Checking whether {0} is a subversion repository'.format(self.scm_url))
+                # FIXME use target directory
+                self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
+                self.files = list(lssvn.list_svn_files(self.scm_url))
+                trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
+                if trunkfiles:
+                    self.files = trunkfiles
+                self.scm = 'svn'
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
+
 
     @cached_property
     def files(self):
