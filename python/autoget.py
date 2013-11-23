@@ -336,7 +336,8 @@ vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*[\'"]([0-9a-zA-Z\-
 gist_url                = re.compile(r'gist\.github\.com/(\d+)')
 bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
 bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)|bitbucket\.org/([0-9a-zA-Z_.]+)/([0-9a-zA-Z\-_.]+)\.git')
-bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_]+)')
+bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
+bitbucket_site_url      = re.compile(r'([0-9a-zA-Z_]+)\.bitbucket\.org/([0-9a-zA-Z\-_.]+)')
 codegoogle_url          = re.compile(r'code\.google\.com/([pr])/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
 mercurial_url_2         = re.compile(r'\b(?:(?i)hg|mercurial)\b.*\b(\w+(?:\+\w+)*://\S+)')
@@ -605,6 +606,10 @@ class BitbucketMatch(Match):
                            % (r.status, httplib.responses[r.status], attempt))
 
 
+class BitbucketSiteMatch(BitbucketMatch):
+    re = bitbucket_site_url
+
+
 class GoogleCodeMatch(Match):
     re = codegoogle_url
 
@@ -651,6 +656,7 @@ candidate_classes = (
     MercurialMatch,
     MercurialMatch2,
     BitbucketMatch,
+    BitbucketSiteMatch,
 )
 
 
