@@ -337,7 +337,7 @@ gist_url                = re.compile(r'gist\.github\.com/(\d+)')
 bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
 bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)|bitbucket\.org/([0-9a-zA-Z_.]+)/([0-9a-zA-Z\-_.]+)\.git')
 bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_]+)')
-googlecode_url          = re.compile(r'code\.google\.com/p/([^/\s]+)')
+codegoogle_url          = re.compile(r'code\.google\.com/([pr])/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
 git_url                 = re.compile(r'git\s+clone\s+(\S+)')
 
@@ -559,8 +559,10 @@ class BitbucketMatch(Match):
         global remote_parser
         super(BitbucketMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
-        self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
+        self.repo_path = self.match.group(1) + '/' + self.name
+        self.scm_url = 'https://bitbucket.org/' + self.repo_path
         self.url = self.scm_url
+        self._check_presence()
         try:
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
@@ -568,6 +570,44 @@ class BitbucketMatch(Match):
             self.info('Checking whether {0} is a git repository'.format(self.scm_url))
             self.files = lsgit.list_git_files(self.scm_url)
             self.scm = 'git'
+        else:
+            self.files = list(next(iter(parsing_result['tips'])).files)
+            self.scm = 'hg'
+
+    def _check_presence(self, attempt=0):
+        c = httplib.HTTPSConnection('bitbucket.org')
+        c.request('HEAD', '/' + self.repo_path)
+        r = c.getresponse()
+        if 400 <= r.status < 500:
+            self.error('Cannot use this match: request failed with code %u (%s)'
+                       % (r.status, httplib.responses[r.status]))
+            raise NotLoggedError
+        elif 500 <= r.status:
+            if attempt < MAX_ATTEMPTS:
+                self.error('Retrying: request failed with code %u (%s)'
+                           % (r.status, httplib.responses[r.status]))
+                self._check_presence(attempt + 1)
+            else:
+                self.error('Cannot use this match: request failed with code %u (%s), attempt %u'
+                           % (r.status, httplib.responses[r.status], attempt))
+
+
+class GoogleCodeMatch(Match):
+    re = codegoogle_url
+
+    def __init__(self, *args, **kwargs):
+        global remote_parser
+        super(GoogleCodeMatch, self).__init__(*args, **kwargs)
+        self.name = self.match.group(2)
+        urlpart = self.match.group(1) + '/' + self.match.group(2)
+        url = 'http://code.google.com/' + urlpart
+        self.scm_url = url
+        self.url = url
+        try:
+            self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
+            parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
+        except Exception as e:
+            pass
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
@@ -596,6 +636,7 @@ candidate_classes = (
     MercurialMatch,
     BitbucketMercurialMatch,
     BitbucketMatch,
+    GoogleCodeMatch,
 )
 
 
