@@ -754,6 +754,7 @@ if __name__ == '__main__':
                     scm_generated[key] = candidate_to_sg(candidate)
                     logger.info('> Recording found candidate for {0}: {1}'
                                 .format(key, scm_generated[key]))
+                    not_found.discard(key)
                 else:
                     logger.info('> Recording failure to find candidates for {0}'.format(key))
                     not_found.add(key)
