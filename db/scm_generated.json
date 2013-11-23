@@ -103,6 +103,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/abudden/tagsignature"
   },
+  "2729": {
+    "type": "git",
+    "url": "git://github.com/hallettj/jslint.vim"
+  },
   "2809": {
     "type": "git",
     "url": "git://github.com/drmikehenry/vim-fontsize"
@@ -355,6 +359,10 @@
     "type": "git",
     "url": "git://github.com/catalinciurea/perl-nextmethod"
   },
+  "4698": {
+    "type": "git",
+    "url": "git://github.com/sincebasic/nextfile.vim"
+  },
   "4706": {
     "type": "git",
     "url": "git://github.com/dirkwallenstein/vim-excess-lines"
@@ -451,6 +459,10 @@
     "type": "git",
     "url": "git://github.com/mhinz/vim-toplevel"
   },
+  "4742": {
+    "type": "git",
+    "url": "git://github.com/fifthposition/columcille"
+  },
   "4744": {
     "type": "git",
     "url": "git://github.com/sunaku/vim-unbundle"
@@ -462,6 +474,10 @@
   "4749": {
     "type": "git",
     "url": "git://github.com/shashurup/vim-gains-nrepl"
+  },
+  "4750": {
+    "type": "git",
+    "url": "git://github.com/vivien/vim-addon-human"
   },
   "4751": {
     "type": "git",
