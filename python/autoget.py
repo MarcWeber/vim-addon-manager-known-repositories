@@ -531,6 +531,7 @@ class MercurialMatch(Match):
         super(MercurialMatch, self).__init__(*args, **kwargs)
         self.scm_url = self.match.group(1)
         self.name = self.scm_url.rpartition('/')[-1]
+        self.url = self.scm_url
 
     @cached_property
     def files(self):
@@ -548,6 +549,7 @@ class BitbucketMercurialMatch(MercurialMatch):
         super(BitbucketMercurialMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
+        self.url = self.scm_url
 
 
 class BitbucketMatch(Match):
@@ -558,6 +560,7 @@ class BitbucketMatch(Match):
         super(BitbucketMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
+        self.url = self.scm_url
         try:
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
