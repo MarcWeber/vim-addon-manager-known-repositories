@@ -1,4 +1,5 @@
 {
+"QFEnter":{"archive_name":"QFEnter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21096","version":"1.0.0","vim_script_nr":4778},
 "repeatableMapping":{"archive_name":"repeatableMapping-2.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21094","version":"2.00","vim_script_nr":4777},
 "Projx":{"archive_name":"projx.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21086","version":"1.0","vim_script_nr":4776},
 "tex-breqn":{"archive_name":"tex-breqn-0.1.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21078","version":"0.1","vim_script_nr":4775},
@@ -195,7 +196,7 @@
 "vim-identifier-movement":{"archive_name":"vim-identifier-movement.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20134","version":"1.2","vim_script_nr":4581},
 "vim-niji":{"archive_name":"vim-niji-1.0.2.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20261","version":"1.0.2","vim_script_nr":4580},
 "KeepComment":{"archive_name":"keepcomment.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21014","version":"0.5","vim_script_nr":4579},
-"throughpairs":{"archive_name":"throughpairs.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21091","version":"1.0","vim_script_nr":4578},
+"throughpairs":{"archive_name":"throughpairs.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21095","version":"1.0","vim_script_nr":4578},
 "linepower%4577":{"archive_name":"linepower.vim-1.0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20057","version":"1.0.0","vim_script_nr":"4577"},
 "linepower%4576":{"archive_name":"linepower.vim-1.4.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20706","version":"1.4.0","vim_script_nr":4576},
 "prev_indent":{"archive_name":"prev_indent.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20110","version":"0.2.2","vim_script_nr":4575},
