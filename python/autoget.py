@@ -462,6 +462,10 @@ class VundleGithubMatch(GithubMatch):
     re = vundle_github_url
 
 
+class VundleGithubMatch2(GithubMatch):
+    re = re.compile('\\b[Bb]undle\\b(?:\s+\\w+\s+)?[\'"]?([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:.git)?[\'"]?')
+
+
 class GistMatch(GithubMatch):
     re = gist_url
 
@@ -549,6 +553,7 @@ class GithubLazy(object):
 candidate_classes = (
     GithubMatch,
     VundleGithubMatch,
+    VundleGithubMatch2,
     GistMatch,
     MercurialMatch,
     BitbucketMercurialMatch,
