@@ -50,6 +50,7 @@ let patch_repo.1780={'script-type': 'syntax'}
 let patch_repo.1686={'script-type': 'colors'}
 let patch_repo.2527={'script-type': 'ftplugin'}
 let patch_repo.4388={'script-type': 'ftplugin'}
+let patch_repo.4750={'script-type': 'plugin'}
 "▶1 Fixing target directories
 let patch_repo.2372={'target_dir': 'ftplugin/vlog'}
 let patch_repo.1542={'target_dir': 'autoload'}
