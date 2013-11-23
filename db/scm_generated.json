@@ -91,6 +91,10 @@
     "type": "git",
     "url": "git://github.com/johnsyweb/vim-tut"
   },
+  "2506": {
+    "type": "svn",
+    "url": "http://vimim.googlecode.com/svn/trunk"
+  },
   "251": {
     "type": "git",
     "url": "git://github.com/yegappan/lid"
@@ -155,6 +159,10 @@
     "type": "git",
     "url": "git://github.com/lepture/vim-css"
   },
+  "3081": {
+    "type": "svn",
+    "url": "http://web-indent.googlecode.com/svn"
+  },
   "311": {
     "type": "git",
     "url": "git://github.com/yegappan/grep"
@@ -162,6 +170,10 @@
   "3231": {
     "type": "git",
     "url": "git://github.com/clericJ/pyinteractive-vim"
+  },
+  "3310": {
+    "type": "svn",
+    "url": "http://gdb4vim.googlecode.com/svn"
   },
   "3322": {
     "type": "git",
