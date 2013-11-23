@@ -159,6 +159,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/ZyX_I/vim-fileutils"
   },
+  "3407": {
+    "type": "git",
+    "url": "git://github.com/tczengming/headerGatesAdd.vim"
+  },
   "341": {
     "type": "git",
     "url": "git://github.com/lotheac/pf.vim"
