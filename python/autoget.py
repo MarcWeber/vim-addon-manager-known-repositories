@@ -576,6 +576,8 @@ class BitbucketMatch(Match):
         self.repo_path = self.match.group(1) + '/' + self.name
         self.scm_url = 'https://bitbucket.org/' + self.repo_path
         self.url = self.scm_url
+
+    def _check_scm(self):
         self._check_presence()
         try:
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
@@ -587,6 +589,16 @@ class BitbucketMatch(Match):
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
+
+    @cached_property
+    def files(self):
+        self._check_scm()
+        return self.files
+
+    @cached_property
+    def scm(self):
+        self._check_scm()
+        return self.scm
 
     def _check_presence(self, attempt=0):
         c = httplib.HTTPSConnection('bitbucket.org')
@@ -610,17 +622,19 @@ class BitbucketSiteMatch(BitbucketMatch):
     re = bitbucket_site_url
 
 
-class GoogleCodeMatch(Match):
+class CodeGoogleMatch(Match):
     re = codegoogle_url
 
     def __init__(self, *args, **kwargs):
         global remote_parser
-        super(GoogleCodeMatch, self).__init__(*args, **kwargs)
+        super(CodeGoogleMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         urlpart = self.match.group(1) + '/' + self.match.group(2)
         url = 'http://code.google.com/' + urlpart
         self.scm_url = url
         self.url = url
+
+    def _check_scm(self):
         try:
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
@@ -629,6 +643,16 @@ class GoogleCodeMatch(Match):
         else:
             self.files = list(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
+
+    @cached_property
+    def files(self):
+        self._check_scm()
+        return self.files
+
+    @cached_property
+    def scm(self):
+        self._check_scm()
+        return self.scm
 
 
 class GithubLazy(object):
@@ -651,7 +675,7 @@ candidate_classes = (
     VundleGithubMatch,
     VundleGithubMatch2,
     GistMatch,
-    GoogleCodeMatch,
+    CodeGoogleMatch,
     BitbucketMercurialMatch,
     MercurialMatch,
     MercurialMatch2,
@@ -698,8 +722,11 @@ def find_repo_candidate(voinfo):
             logger.debug('>>> Omitting {0} because it was already checked'.format(url))
             continue
         already_checked.add(url)
-        logger.info('>> Checking candidate {0}: {1}'.format(candidate.__class__.__name__,
-                                                            candidate.match.group(0)))
+        logger.info('>> Checking candidate {0} with key {1}: {2}'.format(
+            candidate.__class__.__name__,
+            candidate.key,
+            candidate.match.group(0)
+        ))
         try:
             try:
                 files = _checked_URLs[url]
