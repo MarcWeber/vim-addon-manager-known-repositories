@@ -539,6 +539,10 @@
     "type": "git",
     "url": "git://github.com/xuhdev/tex-breqn.vim"
   },
+  "4778": {
+    "type": "git",
+    "url": "git://github.com/yssl/QFEnter"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
