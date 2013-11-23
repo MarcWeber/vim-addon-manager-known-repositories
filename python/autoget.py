@@ -94,13 +94,48 @@ def get_ext(fname):
     return fname.rpartition('.')[-1]
 
 
-def guess_fix_dir(voinfo):
-    if voinfo['script_type'] in ('syntax', 'indent', 'ftplugin'):
-        return voinfo['script_type']
-    elif voinfo['script_type'] == 'color scheme':
+def get_patchinfo_fix_dirs(ret={}):
+    if ret:
+        return ret
+    else:
+        with open(os.path.join('.', 'db', 'patchinfo.vim')) as PIF:
+            start_section = b'"▶1 '
+            in_section = 0
+            line_re = re.compile(r"(\d+).*: '([^']+)'")
+            for line in PIF:
+                if line.startswith(start_section):
+                    if line.startswith(start_section + b'Type corrections'):
+                        in_section = 2
+                    elif line.startswith(start_section + b'Fixing target directories'):
+                        in_section = 1
+                    else:
+                        if in_section:
+                            break
+                        in_section = 0
+                    continue
+                if in_section:
+                    match = line_re.search(line)
+                    if match:
+                        d = match.group(2)
+                        ret[match.group(1)] = d if in_section == 1 else _guess_fix_dir(d)
+        return ret
+
+
+def _guess_fix_dir(script_type):
+    if script_type in ('syntax', 'indent', 'ftplugin'):
+        return script_type
+    elif script_type == 'color scheme':
         return 'colors'
     else:
         return 'plugin'
+
+
+def guess_fix_dir(voinfo):
+    patchinfo_fix_dirs = get_patchinfo_fix_dirs()
+    try:
+        return patchinfo_fix_dirs[voinfo['script_id']]
+    except KeyError:
+        return _guess_fix_dir(voinfo['script_type'])
 
 
 def get_voinfo_hash(voinfo):
