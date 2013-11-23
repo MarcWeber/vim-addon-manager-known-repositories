@@ -780,9 +780,6 @@ let scm['jifty'] = {'type': 'git', 'url': 'git://github.com/c9s/jifty.vim'}
 " let scmnr.2784 = {'type': 'git', 'url': 'git://github.com/c9s/template-init.vim'}
 " let scmnr.2923 = {'type': 'git', 'url': 'git://github.com/c9s/std.vim'}
 
-" Kosei Kitahara
-let scmnr.2827 = {'type': 'hg', 'url': 'https://bitbucket.org/Surgo/rtm.vim'}
-
 " David Terei
 let scmnr.2828 = {'type': 'git', 'url': 'git://github.com/dterei/VimCobaltColourScheme'}
 let scmnr.3022 = {'type': 'git', 'url': 'git://github.com/dterei/VimBookmarking'}
