@@ -115,6 +115,10 @@
     "type": "git",
     "url": "git://github.com/drmikehenry/vim-fontsize"
   },
+  "2827": {
+    "type": "hg",
+    "url": "https://bitbucket.org/Surgo/rtm.vim"
+  },
   "2850": {
     "type": "git",
     "url": "git://github.com/dmcinnes/FindInNERDTree"
@@ -190,6 +194,10 @@
   "3618": {
     "type": "git",
     "url": "git://github.com/mmai/wikilink"
+  },
+  "3643": {
+    "type": "hg",
+    "url": "http://code.google.com/p/vimper"
   },
   "3684": {
     "type": "git",
@@ -327,6 +335,10 @@
     "type": "git",
     "url": "git://github.com/rosstimson/bats.vim"
   },
+  "4678": {
+    "type": "hg",
+    "url": "https://bitbucket.org/sareyko/neat.vim"
+  },
   "4679": {
     "type": "git",
     "url": "git://github.com/biskark/vim-ultimate-colorscheme-utility"
@@ -366,6 +378,10 @@
   "4694": {
     "type": "git",
     "url": "git://github.com/countoren/WSearch"
+  },
+  "4696": {
+    "type": "git",
+    "url": "git://github.com/bbakersmith/liquidfold.vim"
   },
   "4697": {
     "type": "git",
@@ -438,6 +454,10 @@
   "4726": {
     "type": "git",
     "url": "git://github.com/svermeulen/vim-extended-ft"
+  },
+  "4727": {
+    "type": "hg",
+    "url": "https://bitbucket.org/dsign/stringliteral.vim"
   },
   "4732": {
     "type": "git",
