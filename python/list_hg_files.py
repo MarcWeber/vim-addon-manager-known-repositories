@@ -10,6 +10,25 @@ import sys
 
 
 class MercurialRevision(object):
+    '''Data class holding revision information
+
+    Contains the following keys:
+        ``rev``: revision number
+        ``hex``: revision hexadecimal string
+
+        ``tags``, ``bookmarks``: tags and bookmarks that reference this revision
+        ``branch``: branch property of the revision
+
+        ``parents``: list of MercurialRevision objects with revision parents
+        ``children``: like above, but with revision children
+
+        ``added``, ``removed``, ``modified``:
+            set of files that were added, removed or modified in this revision respectively
+
+        ``copies``: dictionary mapping source of the copies to destination
+
+        ``files``: a set of all files present in given revision
+    '''
     __slots__ = ('rev', 'hex',
                  'tags', 'bookmarks', 'branch',
                  'parents', 'children',
@@ -42,6 +61,10 @@ class MercurialRevision(object):
 
 
 class MercurialHandler(sax.handler.ContentHandler):
+    '''Class for parsing “hg log --style xml” output
+
+    To get parsing result you should run handler.export_result() after you are done.
+    '''
     def startDocument(self):
         self.curpath = []
         self.currev = None
@@ -126,6 +149,19 @@ class MercurialHandler(sax.handler.ContentHandler):
         self.curpath.pop()
 
     def export_result(self):
+        '''Export parsing result in a dictionary
+
+        Returns dictionary with the following key:
+            ``heads``: set of heads (revisions that do not have any children with the same branch as 
+                       itself)
+            ``tips``: set of tips (revisions that have no children)
+            ``tags``: dictionary mapping tag names to MercurialRevision objects
+            ``bookmarks``: same as above, but for bookmarks
+            ``revisions_hex``: dictionary mapping revision hexadecimal identifiers to 
+                               MercurialRevision objects
+            ``revisions_rev``: like above, but maps revision numbers
+            ``root``: special revision that is the root of all other revisions
+        '''
         heads = {revision for revision in self.revisions_hex.values()
                  if not revision.children
                     or all(child.branch != revision.branch for child in revision.children)}
@@ -142,6 +178,14 @@ class MercurialHandler(sax.handler.ContentHandler):
         }
 
 class MercurialRemoteParser(object):
+    '''Class for with statement for getting revisions of remote repository
+
+    When initialized creates temporary directory and initializes an empty mercurial repository 
+    there. On __exit__ this directory is deleted.
+
+    Empty mercurial repository is used because you can run ``hg incoming {url}`` for any URL and 
+    this will work listing all commits remote repository at given URL has.
+    '''
     __slots__ = ('parser', 'handler', 'tmpdir')
 
     def __init__(self, tmpdir=None):
@@ -152,9 +196,15 @@ class MercurialRemoteParser(object):
         self.init_tmpdir()
 
     def init_tmpdir(self):
+        '''Create an empty mercurial repository in self.tmpdir
+
+        If directory does not exist it will be created by “hg init”. stdout of “hg init” is 
+        connected to the current stderr.
+        '''
         check_call(['hg', 'init', self.tmpdir], stdout=sys.stderr)
 
     def delete_tmpdir(self):
+        '''Remove temporary directory'''
         if self.tmpdir and rmtree:
             rmtree(self.tmpdir)
             self.tmpdir = None
@@ -169,6 +219,11 @@ class MercurialRemoteParser(object):
 
     @staticmethod
     def generate_files(parsing_result):
+        '''Populates .files attributes of MercurialRevision instanses
+
+        Accepts dictionary returned by MercurialHandler.export_result and operates on all revisions 
+        it (i.e. parsing_result['revisions_hex']) references.
+        '''
         toprocess = [parsing_result['root']]
         processed = set()
         while toprocess:
@@ -196,6 +251,11 @@ class MercurialRemoteParser(object):
         return parsing_result
 
     def parse_url(self, url, rev_name=None):
+        '''Return description of all revisions repository at given URL contains
+
+        Before return parsing result is altered for MercurialRevision instanses to have proper 
+        contents in their .files attributes.
+        '''
         p = Popen(['hg', '--repository', self.tmpdir,
                          'incoming', '--style', 'xml', '--verbose', url,
                   ] + (['--rev', rev_name] if rev_name else []),

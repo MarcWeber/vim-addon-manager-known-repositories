@@ -8,6 +8,7 @@ logger = logging.getLogger('list_github_files')
 
 
 class GithubLazy(object):
+    '''Proxy to Github() class with delayed initialization'''
     __slots__ = ('user', 'password', 'gh')
 
     def __init__(self, user, password):
@@ -45,13 +46,25 @@ def _list_github_files(repo, dir=None, attempt=0):
 gh = None
 
 def init_gh(user, password):
+    '''Initialize global Github object
+
+    Must be called before any other functions in this module.
+    '''
     global gh
     gh = GithubLazy(user, password)
 
 
 def list_github_files(repo_path):
+    '''List files in github repository
+
+    Returns a generator that lists files.
+    '''
     return _list_github_files(gh.get_repo(repo_path))
 
 
 def list_gist_files(name):
+    '''List files in github gist repository
+
+    Returns a list.
+    '''
     return gh.get_gist(name).files

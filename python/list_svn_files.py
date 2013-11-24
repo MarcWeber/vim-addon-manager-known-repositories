@@ -19,6 +19,10 @@ def _list_svn_files(conn, path=''):
             yield new_path
 
 def list_svn_files(url):
+    '''List files in remote subversion repository
+
+    Returns either an empty list or a generator.
+    '''
     conn = RemoteAccess(url)
     try:
         return _list_svn_files(conn)

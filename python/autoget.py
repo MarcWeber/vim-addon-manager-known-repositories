@@ -50,14 +50,28 @@ MAX_ATTEMPTS = 5
 
 
 def dump_json(obj, F):
+    '''Dump object to JSON in a VCS- and human-friendly way
+
+    VCS-friendly implies having newlines and dictionary key sorting, without spaces after commas.
+    Human-friendly implies using indentation and spaces after colons.
+    '''
     return json.dump(obj, F, indent=2, sort_keys=True, separators=(',', ': '))
 
 
 def dump_json_nr_set(st, F):
+    '''Dump set() to json as a sorted list in a VCS- and human-friendly way
+
+    set() is supposed to contain only string integer keys (i.e. integers represented as strings). 
+    For the definition of VCS- and human-friendly check out dump_json above.
+    '''
     dump_json(list(sorted(st, key=int)), F)
 
 
 class cached_property(object):
+    '''cached_property decorator
+
+    Found somewhere on the internet. Uses __dict__ to cache properties into it.
+    '''
     def __init__(self, func):
         self.func = func
 
@@ -86,6 +100,7 @@ class NotLoggedError(Exception):
 
 
 def novimext(s):
+    '''Strip .vim extension from the given string'''
     if s.endswith('.vim'):
         return s[:-4]
     else:
@@ -93,6 +108,7 @@ def novimext(s):
 
 
 def novimprefix(s):
+    '''Strip vim- prefix from the given string'''
     if s.startswith('vim-'):
         return s[4:]
     else:
@@ -100,6 +116,7 @@ def novimprefix(s):
 
 
 class Match(object):
+    '''Base class for all matches'''
     def __init__(self, match, voinfo):
         self.match = match
         self.voinfo = voinfo
@@ -108,6 +125,9 @@ class Match(object):
     def key(self):
         name = self.name
         # TODO Also compare author names
+        # TODO Give less common matches priority (if there are github and bitbucket mirrors 90% that 
+        #      author has development on bitbucket, but has to use github as a mirror to be 
+        #      Vundle-friendly)
         try:
             voname = self.voinfo['script_name']
         except KeyError:
@@ -160,6 +180,9 @@ class Match(object):
 
 
 class GithubMatch(Match):
+    '''Matches github.com/{author}/{repo} URLs
+
+    Uses github API to get list of files.'''
     re = github_url
 
     scm = 'git'
@@ -209,14 +232,19 @@ class GithubMatch(Match):
 
 
 class VundleGithubMatch(GithubMatch):
+    '''Matches “Vundle '{author}/{repo}'” strings'''
     re = vundle_github_url
 
 
 class VundleGithubMatch2(GithubMatch):
+    '''Matches strings like “[add] bundle for {author}/{repo}”'''
     re = vundle_github_url_2
 
 
 class GistMatch(GithubMatch):
+    '''Matches gist github URLs
+
+    Uses github API as well, but a different portion of it.'''
     re = gist_url
 
     scm = 'git'
@@ -233,6 +261,7 @@ class GistMatch(GithubMatch):
 
 
 class VCSMatch(Match):
+    '''Base class for strings like “svn checkout {url}”/“hg clone {url}”/etc'''
     def __init__(self, *args, **kwargs):
         super(VCSMatch, self).__init__(*args, **kwargs)
         self.scm_url = self.match.group(1)
@@ -241,6 +270,7 @@ class VCSMatch(Match):
 
 
 class MercurialMatch(VCSMatch):
+    '''Matches “hg clone {url}”'''
     re = mercurial_url
 
     scm = 'hg'
@@ -253,6 +283,7 @@ class MercurialMatch(VCSMatch):
 
 
 class MercurialMatch2(MercurialMatch):
+    '''Matches strings like “mercurial [repository is located at] {url}”'''
     re = mercurial_url_2
 
     scm = 'hg'
@@ -264,6 +295,7 @@ class MercurialMatch2(MercurialMatch):
 
 
 class BitbucketMercurialMatch(MercurialMatch):
+    '''Matches strings like “hg clone https://bitbucket.org/{author}/{repo}”'''
     re = bitbucket_mercurial_url
 
     scm = 'hg'
@@ -276,6 +308,7 @@ class BitbucketMercurialMatch(MercurialMatch):
 
 
 class BitbucketMatch(Match):
+    '''Matches URLs bitbucket.org/{author}/{repo}'''
     re = bitbucket_noscm_url
 
     def __init__(self, *args, **kwargs):
@@ -328,10 +361,12 @@ class BitbucketMatch(Match):
 
 
 class BitbucketSiteMatch(BitbucketMatch):
+    '''Matches URLs like {author}.bitbucket.org/{repo}'''
     re = bitbucket_site_url
 
 
 class CodeGoogleMatch(Match):
+    '''Matches code.google.com/(p|r)/{project}'''
     re = codegoogle_url
 
     def __init__(self, *args, **kwargs):
@@ -381,6 +416,7 @@ class CodeGoogleMatch(Match):
 
 
 class SubversionMatch(VCSMatch):
+    '''Matches “svn checkout {url}”'''
     re = subversion_url
 
     scm = 'svn'
@@ -391,6 +427,7 @@ class SubversionMatch(VCSMatch):
 
 
 class GitMatch(VCSMatch):
+    '''Matches “git checkout {url}”'''
     re = git_url
 
     scm = 'git'
@@ -421,6 +458,11 @@ candidate_classes = (
 
 
 def find_repo_candidates(voinfo):
+    '''Process all Match subclasses recorded above
+
+    Uses MatchSubclass.re to find URLs that are candidates to be repository URLs and yields 
+    instances of used MatchSubclass.
+    '''
     foundstrings = set()
     for C in candidate_classes:
         for key in ('install_details', 'description'):
@@ -442,6 +484,7 @@ def find_repo_candidates(voinfo):
 _checked_URLs = {}
 
 def get_scm_file_list(candidate):
+    '''Returns candidate.files, cached; cache key is candidate.scm_url'''
     url = candidate.scm_url
     try:
         files = _checked_URLs[url]
@@ -453,6 +496,10 @@ def get_scm_file_list(candidate):
 
 
 def find_repo_candidate(voinfo, vofiles=None):
+    '''Find repository URL for the given plugin
+
+    Iterates for all candidates returned by find_repo_candidates and returns first candidate with 
+    best score found.'''
     global _checked_URLs
     candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key, reverse=True)
     best_candidate = None
@@ -498,6 +545,11 @@ def find_repo_candidate(voinfo, vofiles=None):
 
 
 def load_scmnrs_json(scmnrs, fname, typ=dict):
+    '''Load json file, recording its contents into scmnrs
+
+    If file is not present instance of typ is returned. If file is present loaded object is 
+    converted to the given typ.
+    '''
     try:
         with open(fname) as F:
             ret = json.load(F)
@@ -508,10 +560,18 @@ def load_scmnrs_json(scmnrs, fname, typ=dict):
 
 
 def candidate_to_sg(candidate):
+    '''Convert candidate to dictionary suitable for recording into scm_generated.json'''
     return {'type': candidate.scm, 'url': candidate.scm_url}
 
 
 def process_voinfo(scm_generated, found, not_found, voinfo, recheck=False):
+    '''Process given plugin
+
+    If ``recheck`` is ``True`` then it only prints to stderr whether something changed.
+
+    If ``recheck`` is ``False`` then it records found URL in scm_generated and puts corresponding 
+    plugin number into ``found``. If no URL was found it records plugin number into ``not_found``.
+    '''
     logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
                 .format(**voinfo))
     try:
