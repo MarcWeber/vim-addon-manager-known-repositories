@@ -353,6 +353,7 @@ codegoogle_url          = re.compile(r'code\.google\.com/([pr])/([^/\s]+)')
 mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
 mercurial_url_2         = re.compile(r'\b(?:(?i)hg|mercurial)\b.*\b(\w+(?:\+\w+)*://\S+)')
 git_url                 = re.compile(r'git\s+clone\s+(\S+)')
+subversion_url          = re.compile(r'svn\s+(?:checkout|co)\s+(\S+)')
 
 
 class NotLoggedError(Exception):
@@ -536,16 +537,18 @@ class GistMatch(GithubMatch):
         return set(self.repo.files)
 
 
-class MercurialMatch(Match):
-    re = mercurial_url
-
-    scm = 'hg'
-
+class VCSMatch(Match):
     def __init__(self, *args, **kwargs):
-        super(MercurialMatch, self).__init__(*args, **kwargs)
+        super(VCSMatch, self).__init__(*args, **kwargs)
         self.scm_url = self.match.group(1)
         self.name = self.scm_url.rpartition('/')[-1]
         self.url = self.scm_url
+
+
+class MercurialMatch(VCSMatch):
+    re = mercurial_url
+
+    scm = 'hg'
 
     @cached_property
     def files(self):
@@ -683,6 +686,30 @@ class CodeGoogleMatch(Match):
         return self.scm
 
 
+class SubversionMatch(VCSMatch):
+    re = subversion_url
+
+    scm = 'svn'
+
+    @cached_property
+    def files(self):
+        return list(lssvn.list_svn_files(self.scm_url))
+
+
+class GitMatch(VCSMatch):
+    re = git_url
+
+    scm = 'git'
+
+    @cached_property
+    def files(self):
+        try:
+            return lsgit.list_git_files(self.scm_url)
+        except Exception as e:
+            logger.exception(e)
+            return lsgit.list_git_files(self.scm_url, allow_depth=False)
+
+
 class GithubLazy(object):
     __slots__ = ('user', 'password', 'gh')
 
@@ -705,8 +732,10 @@ candidate_classes = (
     GistMatch,
     CodeGoogleMatch,
     BitbucketMercurialMatch,
+    GitMatch,
     MercurialMatch,
     MercurialMatch2,
+    SubversionMatch,
     BitbucketMatch,
     BitbucketSiteMatch,
 )
