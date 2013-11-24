@@ -660,7 +660,7 @@ if __name__ == '__main__':
                     match = line_regex_strict.match(line)
                     if match:
                         write('  ')
-                        numcolumns -= 1
+                        numcolumns -= 2
                         snr, scm, url = match.groups()
                     else:
                         write('X')
