@@ -201,11 +201,6 @@ class GithubMatch(Match):
         self.scm_url = 'git://github.com/' + self.repo_path
 
     @cached_property
-    def repo(self):
-        global gh
-        return gh.get_repo(self.repo_path)
-
-    @cached_property
     def files(self):
         if self.scm_url.startswith('git://github.com/vim-scripts'):
             self.error('removing candidate: vim-scripts repositories are not used by VAM')
@@ -340,7 +335,6 @@ class CodeGoogleMatch(Match):
     re = codegoogle_url
 
     def __init__(self, *args, **kwargs):
-        global remote_parser
         super(CodeGoogleMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         urlpart = self.match.group(1) + '/' + self.match.group(2)
@@ -498,8 +492,57 @@ def find_repo_candidate(voinfo):
                                                 best_candidate.key2))
     return best_candidate
 
+
+def load_scmnrs_json(scmnrs, fname, typ=dict):
+    try:
+        with open(fname) as F:
+            ret = json.load(F)
+            scmnrs.update(ret)
+            return typ(ret)
+    except IOError:
+        return typ()
+
+
+def candidate_to_sg(candidate):
+    return {'type': candidate.scm, 'url': candidate.scm_url}
+
+
+def process_voinfo(scm_generated, found, not_found, voinfo, recheck=False):
+    logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
+                .format(**voinfo))
+    try:
+        candidate = find_repo_candidate(voinfo)
+        if recheck:
+            desc = '%s : %s' % (voinfo['script_id'], voinfo['script_name'])
+            if candidate:
+                c_sg = candidate_to_sg(candidate)
+                s_sg = scm_generated[voinfo['script_id']]
+                if c_sg == s_sg:
+                    print ('== ' + desc)
+                else:
+                    logger.info('> {0!r} (new) /= {1!r} (old)'.format(c_sg, s_sg))
+                    print ('/= ' + desc)
+            else:
+                print ('no ' + desc)
+        else:
+            if candidate:
+                scm_generated[key] = candidate_to_sg(candidate)
+                logger.info('> Recording found candidate for {0}: {1}'
+                            .format(key, scm_generated[key]))
+                not_found.discard(key)
+            else:
+                logger.info('> Recording failure to find candidates for {0}'.format(key))
+                not_found.add(key)
+            found.add(key)
+            if not args.no_descriptions:
+                description_hashes[key] = get_voinfo_hash(voinfo)
+    except Exception as e:
+        logger.exception(e)
+
+
 if __name__ == '__main__':
     import argparse
+    from functools import partial
     p = argparse.ArgumentParser(
             description=__doc__.partition('\n\n')[0],
             epilog=__doc__.partition('\n\n')[-1],
@@ -558,20 +601,10 @@ if __name__ == '__main__':
     omitted_name = os.path.join('.', 'db', 'omitted.json')
     description_hashes_name = os.path.join('.', 'db', 'description_hashes.json')
 
-    def load_scmnrs_json(fname, typ=dict):
-        global scmnrs
-        try:
-            with open(fname) as F:
-                ret = json.load(F)
-                scmnrs.update(ret)
-                return typ(ret)
-        except IOError:
-            return typ()
-
-    omitted       = load_scmnrs_json(omitted_name)
+    omitted       = load_scmnrs_json(scmnrs, omitted_name)
     found = scmnrs.copy()
-    scm_generated = load_scmnrs_json(scm_generated_name)
-    not_found     = load_scmnrs_json(not_found_name, set)
+    scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
+    not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
 
     if not args.no_descriptions:
         try:
@@ -600,44 +633,7 @@ if __name__ == '__main__':
     else:
         keys = reversed(sorted(db, key=int))
 
-    def candidate_to_sg(candidate):
-        return {'type': candidate.scm, 'url': candidate.scm_url}
-
-    def process_voinfo(voinfo, recheck=False):
-        global scm_generated
-        global found
-        global not_found
-        logger.info('> Checking plugin {script_name} (vimscript #{script_id})'
-                    .format(**voinfo))
-        try:
-            candidate = find_repo_candidate(voinfo)
-            if recheck:
-                desc = '%s : %s' % (voinfo['script_id'], voinfo['script_name'])
-                if candidate:
-                    c_sg = candidate_to_sg(candidate)
-                    s_sg = scm_generated[voinfo['script_id']]
-                    if c_sg == s_sg:
-                        print ('== ' + desc)
-                    else:
-                        logger.info('> {0!r} (new) /= {1!r} (old)'.format(c_sg, s_sg))
-                        print ('/= ' + desc)
-                else:
-                    print ('no ' + desc)
-            else:
-                if candidate:
-                    scm_generated[key] = candidate_to_sg(candidate)
-                    logger.info('> Recording found candidate for {0}: {1}'
-                                .format(key, scm_generated[key]))
-                    not_found.discard(key)
-                else:
-                    logger.info('> Recording failure to find candidates for {0}'.format(key))
-                    not_found.add(key)
-                found.add(key)
-                if not args.no_descriptions:
-                    description_hashes[key] = get_voinfo_hash(voinfo)
-        except Exception as e:
-            logger.exception(e)
-
+    process_voinfo = partial(process_voinfo, scm_generated, found, not_found)
     with lshg.MercurialRemoteParser() as remote_parser:
         if args.recheck:
             for key in scm_generated:
