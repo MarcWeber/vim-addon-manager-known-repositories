@@ -442,7 +442,7 @@ def find_repo_candidates(voinfo):
 _checked_URLs = {}
 
 def get_scm_file_list(candidate):
-    url = candidate.url
+    url = candidate.scm_url
     try:
         files = _checked_URLs[url]
         logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
