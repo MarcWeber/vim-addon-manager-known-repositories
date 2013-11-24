@@ -9,15 +9,15 @@ logger = logging.getLogger('list_github_files')
 
 class GithubLazy(object):
     '''Proxy to Github() class with delayed initialization'''
-    __slots__ = ('user', 'password', 'gh')
+    __slots__ = ('args', 'kwargs', 'gh')
 
-    def __init__(self, user, password):
-        self.user = user
-        self.password = password
+    def __init__(self, *args, **kwargs):
+        self.args = args
+        self.kwargs = kwargs
 
     def __getattr__(self, attr):
         if attr == 'gh':
-            self.gh = Github(self.user, self.password)
+            self.gh = Github(*self.args, **self.kwargs)
             return self.gh
         else:
             return getattr(self.gh, attr)
