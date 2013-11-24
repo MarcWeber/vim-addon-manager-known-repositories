@@ -40,7 +40,7 @@ import list_hg_files as lshg
 import list_git_files as lsgit
 import list_svn_files as lssvn
 import list_github_files as lsgh
-from vimorg import getdb, get_file_list, check_candidate_with_file_list
+from vimorg import getdb, get_file_list, check_candidate_with_file_list, get_voinfo_hash
 
 
 logger = logging.getLogger('autoget')
