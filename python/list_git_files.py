@@ -5,12 +5,14 @@ from tempfile import mkdtemp
 from subprocess import check_call, check_output
 import os
 from shutil import rmtree
+import sys
 
 
 def list_git_files(url, allow_depth=True):
     tmpdir = mkdtemp(suffix='.git')
     try:
-        check_call(['git', 'clone'] + (['--depth=1'] if allow_depth else []) +['--', url, tmpdir])
+        check_call(['git', 'clone'] + (['--depth=1'] if allow_depth else []) +['--', url, tmpdir],
+                   stdout=sys.stderr)
         if os.path.isdir(tmpdir):
             return check_output(['git', '--git-dir=' + os.path.join(tmpdir, '.git'),
                                          '--work-tree=' + tmpdir,

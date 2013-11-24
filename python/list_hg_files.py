@@ -6,6 +6,7 @@ from xml import sax
 from subprocess import check_call, Popen, PIPE
 from shutil import rmtree
 from tempfile import mkdtemp
+import sys
 
 
 class MercurialRevision(object):
@@ -151,7 +152,7 @@ class MercurialRemoteParser(object):
         self.init_tmpdir()
 
     def init_tmpdir(self):
-        check_call(['hg', 'init', self.tmpdir])
+        check_call(['hg', 'init', self.tmpdir], stdout=sys.stderr)
 
     def delete_tmpdir(self):
         if self.tmpdir and rmtree:
