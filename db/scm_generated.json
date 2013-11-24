@@ -83,6 +83,10 @@
     "type": "git",
     "url": "git://github.com/wesleyche/Trinity"
   },
+  "2361": {
+    "type": "git",
+    "url": "git://gitorious.org/vim-diff_navigator/main.git"
+  },
   "2409": {
     "type": "git",
     "url": "git://github.com/xenoterracide/sql_iabbr"
