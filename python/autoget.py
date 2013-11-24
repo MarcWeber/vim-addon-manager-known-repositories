@@ -441,10 +441,19 @@ def find_repo_candidates(voinfo):
 
 _checked_URLs = {}
 
+def get_scm_file_list(candidate):
+    url = candidate.url
+    try:
+        files = _checked_URLs[url]
+        logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
+    except KeyError:
+        files = set(candidate.files)
+        _checked_URLs[url] = files
+    return files
 
-def find_repo_candidate(voinfo):
+
+def find_repo_candidate(voinfo, vofiles=None):
     global _checked_URLs
-    vofiles = None
     candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key, reverse=True)
     best_candidate = None
     already_checked = set()
@@ -464,12 +473,7 @@ def find_repo_candidate(voinfo):
             candidate.match.group(0)
         ))
         try:
-            try:
-                files = _checked_URLs[url]
-                logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
-            except KeyError:
-                files = set(candidate.files)
-                _checked_URLs[url] = files
+            files = get_scm_file_list(candidate)
             logger.info('>>> Repository files: {0!r}'.format(files))
             prefix, key2 = check_candidate_with_file_list(vofiles, files)
         except NotLoggedError:
@@ -566,20 +570,26 @@ if __name__ == '__main__':
                  'Implies -D')
     p.add_argument('-d', '--debug', action='store_const', const=True,
             help='enable a few more messages')
+    p.add_argument('-A', '--annotate-scmsources', action='store_const', const=True,
+            help='annotate db/scmsources.vim: shows which URLs can be deduced by autoget.py')
+    p.add_argument('-x', '--no-extra-check', action='store_const', const=True,
+            help='when annotating, do not check lines that contain extra information')
+    p.add_argument('-p', '--print-other-candidate', action='store_const', const=True,
+            help='when annotating, print candidates that were found')
 
     args = p.parse_args()
 
-    if ((args.sids and args.last)
-            or (args.sids and args.all_last)
-            or (args.last and args.all_last)):
-        raise ValueError('You may specify only one of SID, --last or --all-last')
+    if (args.no_extra_check or args.print_other_candidate) and not args.annotate_scmsources:
+        raise ValueError('--print-other-candidate and --no-extra-check can only be used with '
+                '--annotate-scmsources')
+
+    if (len(filter(None,
+        [args.sids, args.last, args.all_last, args.recheck, args.annotate_scmsources])) > 1):
+        raise ValueError('You may specify only one of sids, --recheck, --last, --all-last, '
+                '--annotate-scmsources at the time')
 
     if (args.all_last and args.force):
         raise ValueError('You may not specify both --force and --all-last')
-
-    if (args.recheck and (args.sids or args.last or args.all_last)):
-        raise ValueError('You may not specify --recheck and --sids, --last or --all-last at '
-                'the time')
 
     if (args.sids or args.recheck or args.last):
         args.no_descriptions = True
@@ -589,12 +599,15 @@ if __name__ == '__main__':
     handler = logging.StreamHandler()
     root_logger.addHandler(handler)
     scmnrs = set()
-    with open(os.path.join('.', 'db', 'scmsources.vim')) as SF:
+    scmsources_name = os.path.join('.', 'db', 'scmsources.vim')
+    scmnr_lines = []
+    with open(scmsources_name) as SF:
         scmnr_re = re.compile(r'^let scmnr\.(\d+)')
         for line in SF:
             match = scmnr_re.match(line)
             if match:
                 scmnrs.add(match.group(1))
+                scmnr_lines.append(line)
 
     scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
     not_found_name = os.path.join('.', 'db', 'not_found.json')
@@ -606,19 +619,131 @@ if __name__ == '__main__':
     scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
     not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
 
+    db = getdb()
+
+    with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
+        passwords = yaml.load(PF)
+        user, password = iter(passwords['github.com'][0].items()).next()
+    lsgh.init_gh(user, password)
+
+    if args.annotate_scmsources:
+        scm_matches = {
+            'svn': SubversionMatch,
+            'git': GitMatch,
+            'hg':  MercurialMatch,
+        }
+        url_regex = re.compile('^(.*)$')
+        line_regex_strict = re.compile(r"^let\s+scmnr\.(\d+)\s*=\s*\{'type':\s*'(\w+)',\s*'url':\s*'([^']+)'\s*\}\s*")
+        line_snr_regex = re.compile(r'(\d+)')
+        line_url_regex = re.compile(r"'url': '([^']+)'")
+        line_scm_regex = re.compile(r"'type': '([^']+)'")
+        def write(msg):
+            sys.stdout.write(msg.encode('utf-8'))
+            if '\n' in msg:
+                sys.stdout.flush()
+        def prnt(msg):
+            return write(msg + '\n')
+        prnt ('┌ X if line contains information besides repository URL and SCM used')
+        prnt ('│┌ ? or ! if line failes to be parsed by regular expressions')
+        prnt ('││┌ A if scm type is unknown')
+        prnt ('│││┌ F if match failes')
+        prnt ('││││┌ O if match deduced from the description is different, M if there are no')
+        prnt ('│││││┌ E if exception occurred, C if printing candidate on this line')
+        prnt ('┴┴┴┴┴┴┬─────────────────────────────────────────────────────────────────────────')
+        with lshg.MercurialRemoteParser() as remote_parser:
+            for line in reversed(scmnr_lines):
+                try:
+                    numcolumns = 5
+                    best_candidate = None
+                    line = line.decode('utf-8')
+                    logger.info('Checking line ' + line)
+                    match = line_regex_strict.match(line)
+                    if match:
+                        write('  ')
+                        numcolumns -= 1
+                        snr, scm, url = match.groups()
+                    else:
+                        write('X')
+                        numcolumns -= 1
+                        if args.no_extra_check:
+                            raise NotLoggedError
+                        snr = line_snr_regex.search(line)
+                        scm = line_scm_regex.search(line)
+                        url = line_url_regex.search(line)
+                        if snr:
+                            snr = snr.group(1)
+                        if scm:
+                            scm = scm.group(1)
+                        if url:
+                            url = url.group(1)
+                        if not snr:
+                            write('!')
+                            numcolumns -= 1
+                            raise ValueError('snr key not found')
+                        if not scm:
+                            write('?A')
+                            numcolumns -= 2
+                            url = None
+                        elif not url:
+                            write('?-')
+                            numcolumns -= 2
+                            scm = None
+                        else:
+                            write(' ')
+                            numcolumns -= 1
+                    if scm not in scm_matches:
+                        write('A')
+                        numcolumns -= 1
+                        url = None
+                        scm = None
+                    else:
+                        write(' ')
+                        numcolumns -= 1
+
+                    voinfo = db[snr]
+                    vofiles = set(get_file_list(voinfo))
+                    if url:
+                        match = url_regex.match(url)
+                        candidate = scm_matches[scm](match, voinfo)
+                        files = get_scm_file_list(candidate)
+                        prefix, key2 = check_candidate_with_file_list(vofiles, files)
+                        write(' ' if key2 else 'F')
+                        numcolumns -= 1
+                    else:
+                        write('-')
+                        numcolumns -= 1
+
+                    best_candidate = find_repo_candidate(voinfo, vofiles)
+                    if not best_candidate:
+                        write('M')
+                        numcolumns -= 1
+                    elif not (url and best_candidate.scm_url == url and best_candidate.scm == scm):
+                        write('O')
+                        numcolumns -= 1
+                    else:
+                        write(' ')
+                        numcolumns -= 1
+                        best_candidate = None
+                    write(' ')
+                    numcolumns -= 1
+                except Exception as e:
+                    if not isinstance(e, NotLoggedError):
+                        logger.exception(e)
+                    write(('-' * numcolumns) + 'E')
+                finally:
+                    # XXX line ends with \n, thus not writing `+ '\n'` here.
+                    write('│' + line)
+                    if best_candidate and args.print_other_candidate:
+                        write("-----C│let scmnr.%-4u = {'type': '%s', 'url': '%s'}\n"
+                                % (int(snr), best_candidate.scm, best_candidate.scm_url))
+        sys.exit(0)
+
     if not args.no_descriptions:
         try:
             with open(description_hashes_name) as DHF:
                 description_hashes = json.load(DHF)
         except IOError:
             description_hashes = {}
-
-    with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
-        passwords = yaml.load(PF)
-        user, password = iter(passwords['github.com'][0].items()).next()
-    gh = lsgh.init_gh(user, password)
-
-    db = getdb()
 
     if args.sids:
         keys = args.sids
