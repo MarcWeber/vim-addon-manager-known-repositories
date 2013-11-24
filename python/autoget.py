@@ -18,7 +18,7 @@ Vim.org archive URLs and plugin descriptions are obtained from dump found at
 http://www.vim.org/script-info.php. If there is file ./script-info.json it is
 used instead.
 
-Currently supports only git and mercurial repositories.
+Currently supports git, mercurial and subversion repositories.
 '''
 from __future__ import unicode_literals, division, print_function
 
