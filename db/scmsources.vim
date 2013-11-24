@@ -2232,6 +2232,10 @@ let scmnr.4667 = {'type': 'git', 'url': 'git://github.com/lsdr/monokai'}
 " Konstantinos Bairaktaris
 let scmnr.4668 = {'type': 'git', 'url': 'git://github.com/kbairak/TurboMark'}
 
+" Jacky Alciné
+let scmnr.4670 = {'type': 'git', 'url': 'git://github.com/jalcine/android.vim'}
+let scmnr.4731 = {'type': 'git', 'url': 'git://github.com/jalcine/cmake.vim'}
+
 " Matthieu Monsch
 let scmnr.4671 = {'type': 'git', 'url': 'git://github.com/mtth/locate.vim'}
 
@@ -2250,10 +2254,6 @@ let scmnr.4677 = {'type': 'git', 'url': 'git://github.com/mattboehm/vim-unstack'
 
 " Adam Stankiewicz
 let scmnr.4721 = {'type': 'git', 'url': 'git://github.com/sheerun/vim-polyglot'}
-
-" Jacky Alciné
-let scmnr.4731 = {'type': 'git', 'url': 'git://github.com/jalcine/cmake.vim'}
-let scmnr.4760 = {'type': 'git', 'url': 'git://github.com/jalcine/android.vim'}
 
 " Rafal Bromirski
 let scmnr.4769 = {'type': 'git', 'url': 'git://github.com/paranoida/vim-airlineish'}
