@@ -22,7 +22,6 @@ Currently supports only git and mercurial repositories.
 '''
 from __future__ import unicode_literals, division, print_function
 
-from github import Github, GithubException
 from collections import namedtuple
 from subprocess import check_call, CalledProcessError
 import yaml
@@ -40,6 +39,7 @@ sys.path.append(os.path.dirname(__file__))
 import list_hg_files as lshg
 import list_git_files as lsgit
 import list_svn_files as lssvn
+import list_github_files as lsgh
 from vimorg import getdb, get_file_list, check_candidate_with_file_list
 
 
@@ -205,32 +205,12 @@ class GithubMatch(Match):
         global gh
         return gh.get_repo(self.repo_path)
 
-    def list_files(self, dir=None, attempt=0):
-        try:
-            for f in self.repo.get_dir_contents(dir or '/'):
-                name = (dir + '/' + f.name if dir else f.name)
-                if f.type == 'file':
-                    yield name
-                elif f.type == 'dir':
-                    for subf in self.list_files(name):
-                        yield subf
-        except GithubException as e:
-            if 500 <= e.status:
-                if attempt < MAX_ATTEMPTS:
-                    self.error('Received exception, retrying: %s' % repr(e))
-                    for fname in self.list_files(dir, attempt + 1):
-                        yield fname
-                else:
-                    raise
-            else:
-                raise
-
     @cached_property
     def files(self):
         if self.scm_url.startswith('git://github.com/vim-scripts'):
             self.error('removing candidate: vim-scripts repositories are not used by VAM')
             raise NotLoggedError
-        return set(self.list_files())
+        return set(lsgh.list_github_files(self.repo_path))
 
 
 class VundleGithubMatch(GithubMatch):
@@ -253,13 +233,8 @@ class GistMatch(GithubMatch):
         self.url = 'https://gist.github.com/' + self.name
 
     @cached_property
-    def repo(self):
-        global gh
-        return gh.get_gist(self.name)
-
-    @cached_property
     def files(self):
-        return set(self.repo.files)
+        return set(lsgh.list_gist_files(self.name))
 
 
 class VCSMatch(Match):
@@ -323,10 +298,10 @@ class BitbucketMatch(Match):
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         except Exception as e:
             self.info('Checking whether {0} is a git repository'.format(self.scm_url))
-            self.files = lsgit.list_git_files(self.scm_url)
+            self.files = set(lsgit.list_git_files(self.scm_url))
             self.scm = 'git'
         else:
-            self.files = list(next(iter(parsing_result['tips'])).files)
+            self.files = set(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
 
     @cached_property
@@ -380,14 +355,14 @@ class CodeGoogleMatch(Match):
         except Exception as e:
             try:
                 self.info('Checking whether {0} is a git repository'.format(self.scm_url))
-                self.files = lsgit.list_git_files(self.scm_url, allow_depth=False)
+                self.files = set(lsgit.list_git_files(self.scm_url, allow_depth=False))
                 self.scm = 'git'
             except Exception as e:
                 self.info('Checking whether {0} is a subversion repository'.format(self.scm_url))
                 # FIXME detect directory
                 # Plugin for which detection is useful: #2805
                 self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
-                self.files = list(lssvn.list_svn_files(self.scm_url))
+                self.files = set(lssvn.list_svn_files(self.scm_url))
                 self.info('Subversion files: {0!r}'.format(self.files))
                 trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
                 if trunkfiles:
@@ -396,7 +371,7 @@ class CodeGoogleMatch(Match):
                     self.info('Found trunk/ directory, leaving only files in there: {0!r}'.format(self.files))
                 self.scm = 'svn'
         else:
-            self.files = list(next(iter(parsing_result['tips'])).files)
+            self.files = set(next(iter(parsing_result['tips'])).files)
             self.scm = 'hg'
 
 
@@ -418,7 +393,7 @@ class SubversionMatch(VCSMatch):
 
     @cached_property
     def files(self):
-        return list(lssvn.list_svn_files(self.scm_url))
+        return set(lssvn.list_svn_files(self.scm_url))
 
 
 class GitMatch(VCSMatch):
@@ -429,25 +404,10 @@ class GitMatch(VCSMatch):
     @cached_property
     def files(self):
         try:
-            return lsgit.list_git_files(self.scm_url)
+            return set(lsgit.list_git_files(self.scm_url))
         except Exception as e:
             logger.exception(e)
             return lsgit.list_git_files(self.scm_url, allow_depth=False)
-
-
-class GithubLazy(object):
-    __slots__ = ('user', 'password', 'gh')
-
-    def __init__(self, user, password):
-        self.user = user
-        self.password = password
-
-    def __getattr__(self, attr):
-        if attr == 'gh':
-            self.gh = Github(self.user, self.password)
-            return self.gh
-        else:
-            return getattr(self.gh, attr)
 
 
 candidate_classes = (
@@ -623,7 +583,7 @@ if __name__ == '__main__':
     with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
         passwords = yaml.load(PF)
         user, password = iter(passwords['github.com'][0].items()).next()
-    gh = GithubLazy(user, password)
+    gh = lsgh.init_gh(user, password)
 
     db = getdb()
 
