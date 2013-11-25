@@ -2047,6 +2047,10 @@
     "type": "git",
     "url": "git://github.com/rosstimson/bats.vim"
   },
+  "4629": {
+    "type": "git",
+    "url": "git://github.com/naquad/lgs.vim"
+  },
   "4631": {
     "type": "git",
     "url": "git://github.com/mmozuras/vim-github-comment"

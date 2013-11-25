@@ -1247,9 +1247,6 @@ let scmnr.4587 = {'type': 'git', 'url': 'git://github.com/maciakl/vim-neatstatus
 " John Krueger
 let scmnr.4610 = {'type': 'git', 'url': 'git://github.com/jtmkrueger/vim-c-cr'}
 
-" Ross Timson
-let scmnr.4629 = {'type': 'git', 'url': 'git://github.com/rosstimson/bats.vim'}
-
 " Andri Möll
 let scmnr.4664 = {'type': 'git', 'url': 'git://github.com/moll/vim-bbye'}
 let scmnr.4674 = {'type': 'git', 'url': 'git://github.com/moll/vim-node'}
