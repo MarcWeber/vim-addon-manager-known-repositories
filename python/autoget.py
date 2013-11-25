@@ -122,12 +122,9 @@ class Match(object):
         self.voinfo = voinfo
 
     @cached_property
-    def key(self):
+    def key2(self):
         name = self.name
         # TODO Also compare author names
-        # TODO Give less common matches priority (if there are github and bitbucket mirrors 90% that 
-        #      author has development on bitbucket, but has to use github as a mirror to be 
-        #      Vundle-friendly)
         try:
             voname = self.voinfo['script_name']
         except KeyError:
@@ -161,6 +158,10 @@ class Match(object):
                 return 2
             else:
                 return -1
+
+    @cached_property
+    def key(self):
+        return self.key2 * 100 + candidate_classes.index(self.__class__)
 
     for level in ('info', 'warning', 'error', 'critical'):
         exec(('def {0}(self, msg):\n'+
@@ -456,6 +457,8 @@ candidate_classes = (
     BitbucketSiteMatch,
 )
 
+assert len(candidate_classes) < 100, 'candidate_classes has grown too lengthy, adjust Match.key'
+
 
 def find_repo_candidates(voinfo):
     '''Process all Match subclasses recorded above
@@ -476,6 +479,8 @@ def find_repo_candidates(voinfo):
                 if not match.group(0) in foundstrings:
                     foundstrings.add(match.group(0))
                     try:
+                        logger.debug('>> Created candidate {0}: {1}'.format(
+                            C.__name__, match.group(0)))
                         yield C(match, voinfo)
                     except NotLoggedError:
                         pass
