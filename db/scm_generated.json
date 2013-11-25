@@ -123,6 +123,10 @@
     "type": "git",
     "url": "git://github.com/Twinside/vim-syntax-haskell-cabal"
   },
+  "2627": {
+    "type": "git",
+    "url": "git://github.com/exdev/exvim"
+  },
   "2632": {
     "type": "git",
     "url": "git://github.com/zah/nimrod.vim"
@@ -150,6 +154,10 @@
   "2715": {
     "type": "git",
     "url": "git://github.com/SirVer/ultisnips"
+  },
+  "2719": {
+    "type": "git",
+    "url": "git://github.com/oinksoft/proj.vim"
   },
   "2720": {
     "type": "hg",
@@ -291,6 +299,10 @@
     "type": "git",
     "url": "git://github.com/thinca/vim-visualstar"
   },
+  "2945": {
+    "type": "git",
+    "url": "git://github.com/coot/atp_vim"
+  },
   "2946": {
     "type": "git",
     "url": "git://github.com/fgarcia/agtd"
@@ -374,6 +386,10 @@
   "3147": {
     "type": "git",
     "url": "git://github.com/wannesm/wmgraphviz.vim"
+  },
+  "3163": {
+    "type": "git",
+    "url": "git://github.com/oinksoft/endline.vim"
   },
   "3168": {
     "type": "git",
@@ -1718,6 +1734,10 @@
   "4428": {
     "type": "git",
     "url": "git://github.com/othree/javascript-libraries-syntax.vim"
+  },
+  "4431": {
+    "type": "git",
+    "url": "git://github.com/oinksoft/tcd.vim"
   },
   "4434": {
     "type": "git",

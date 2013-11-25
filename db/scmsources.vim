@@ -561,9 +561,6 @@ let scm['kami'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/uji
 
 " Thomas Allen
 let scmnr.2424 = {'type': 'git', 'url': 'git://github.com/tmallen/transmit-vim'}
-let scmnr.2719 = {'type': 'git', 'url': 'git://github.com/tmallen/proj-vim'}
-let scmnr.3163 = {'type': 'git', 'url': 'git://github.com/tmallen/endline-vim'}
-let scmnr.4431 = {'type': 'git', 'url': 'git://github.com/oinksoft/tcd.vim'}
 
 " Anthony Panozzo
 let scmnr.2429 = {'type': 'git', 'url': 'git://github.com/panozzaj/vim-autocorrect'}
@@ -680,9 +677,6 @@ let scm['neoui'] = {'type': 'git', 'url': 'git://github.com/Shougo/neoui'}
 let scm['neobundle'] = {'type': 'git', 'url': 'git://github.com/Shougo/neobundle.vim'}
 let scm['neocomplete'] = {'type': 'git', 'url': 'git://github.com/Shougo/neocomplete'}
 
-" Jie Wu
-let scmnr.2627 = {'type': 'git', 'url': 'git://github.com/jwu/exvim'}
-
 " Jakson Aquino
 let scmnr.2628 = {'type': 'git', 'url': 'git://github.com/jcfaria/Vim-R-plugin'}
 
@@ -734,9 +728,6 @@ let scmnr.2911 = {'type': 'git', 'url': 'git://github.com/narfdotpl/selfdot.vim'
 " Shawn Biddle
 let scmnr.2924 = {'type': 'git', 'url': 'git://github.com/shawncplus/Vim-toCterm'}
 let scmnr.3171 = {'type': 'git', 'url': 'git://github.com/shawncplus/phpcomplete.vim'}
-
-" Marcin Szamotulski
-let scmnr.2945 = {'type': 'git', 'url': 'git://git.code.sf.net/p/atp-vim/code'}
 
 " Antonio Salazar Cardozo
 let scmnr.2962 = {'type': 'git', 'url': 'git://github.com/Shadowfiend/liftweb-vim'}
