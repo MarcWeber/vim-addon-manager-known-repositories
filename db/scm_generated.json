@@ -1883,6 +1883,10 @@
     "type": "git",
     "url": "git://github.com/907th/vim-auto-save"
   },
+  "4522": {
+    "type": "git",
+    "url": "git://github.com/sollidsnake/verun"
+  },
   "4524": {
     "type": "git",
     "url": "git://github.com/xuhdev/vim-latex-live-preview"

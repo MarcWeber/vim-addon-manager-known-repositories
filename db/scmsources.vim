@@ -1226,9 +1226,6 @@ let scmnr.4501 = {'type': 'git', 'url': 'git://github.com/dhruvasagar/vim-table-
 " Ben Fritz
 let scmnr.4505 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-autohide-plugin'}
 
-" Jesse Nazario
-let scmnr.4522 = {'type': 'git', 'url': 'https://code.google.com/p/vim-easyrun'}
-
 " Terry Ma
 let scmnr.4523 = {'type': 'git', 'url': 'git://github.com/terryma/vim-multiple-cursors'}
 
