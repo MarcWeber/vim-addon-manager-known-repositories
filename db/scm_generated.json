@@ -183,6 +183,10 @@
     "type": "git",
     "url": "git://github.com/pangloss/vim-javascript"
   },
+  "2771": {
+    "type": "svn",
+    "url": "http://conque.googlecode.com/svn/trunk"
+  },
   "2786": {
     "type": "git",
     "url": "git://github.com/c9s/cpan.vim"

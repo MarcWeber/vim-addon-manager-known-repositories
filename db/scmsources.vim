@@ -701,9 +701,6 @@ let scmnr.3965 = {'type': 'git', 'url': 'git://github.com/chrisbra/DynamicSigns'
 let scmnr.4357 = {'type': 'git', 'url': 'git://github.com/chrisbra/DistractFree'}
 let scmnr.2998 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/chrisbra/BackgroundColor.vim'}, {'backgroundColor.vim': 'plugin'})
 
-" Nico Raffo
-let scmnr.2771 = {'type': 'svn', 'url': 'http://conque.googlecode.com/svn/trunk/'}
-
 " lilydjwg
 " The following is not a vim plugin, but it is posted on vim.org:
 " The following plugin does not have a separate repository:
