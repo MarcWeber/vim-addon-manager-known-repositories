@@ -1759,6 +1759,10 @@
     "type": "git",
     "url": "git://github.com/hlissner/vim-forrestgump"
   },
+  "4470": {
+    "type": "git",
+    "url": "git://github.com/noahfrederick/vim-hemisu"
+  },
   "4471": {
     "type": "git",
     "url": "git://github.com/noahfrederick/vim-noctu"

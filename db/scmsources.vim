@@ -1205,9 +1205,6 @@ let scmnr.4451 = {'type': 'git', 'url': 'git://github.com/rking/pry-de', 'addon-
 " have not changed and is equal to that of #2765 now.
 let scmnr.4452 = {'type': 'git', 'url': 'git://github.com/pangloss/vim-javascript'}
 
-" Noah Frederick
-let scmnr.4470 = {'type': 'git', 'url': 'git://github.com/noahfrederick/Hemisu'}
-
 " Alex Johnson
 let scmnr.4478 = {'type': 'git', 'url': 'git://github.com/notalex/vim-run-live'}
 
