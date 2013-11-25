@@ -201,18 +201,35 @@ def _get_file_list(AF, ext, aname, had_to_guess=False):
         return ret
 
 
+_downloaded_URLs = {}
+
 def get_file_list(voinfo):
     rinfo = voinfo['releases'][0]
-    aname = rinfo['package']
     aurl = 'http://www.vim.org/scripts/download_script.php?src_id='+rinfo['src_id']
+    try:
+        logger.debug('>>>> Got %s from cache' % aurl)
+        return _downloaded_URLs[aurl]
+    except KeyError:
+        pass
+    aname = rinfo['package']
     ext = get_ext(aname).lower()
     logger.info('>>> Processing archive %s (ext %s)' % (aname, ext))
     if ext == 'vim':
-        return [guess_fix_dir(voinfo) + '/' + aname]
+        ret = {guess_fix_dir(voinfo) + '/' + aname}
     elif ext in FileListers.__dict__:
-        return _get_file_list(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname)
+        ret = set(_get_file_list(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname))
     else:
         raise ValueError('Unknown extension')
+    _downloaded_URLs[aurl] = ret
+    return ret
+
+
+def update_vo_cache(d):
+    return _downloaded_URLs.update(d)
+
+
+def get_vo_cache():
+    return _downloaded_URLs
 
 
 # Only directories that may be automatically loaded by vim are listed below.

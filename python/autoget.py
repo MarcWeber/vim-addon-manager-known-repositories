@@ -500,6 +500,14 @@ def get_scm_file_list(candidate):
     return files
 
 
+def update_scm_cache(d):
+    return _checked_URLs.update(d)
+
+
+def get_scm_cache():
+    return _checked_URLs
+
+
 def find_repo_candidate(voinfo, vofiles=None):
     '''Find repository URL for the given plugin
 
@@ -569,7 +577,7 @@ def candidate_to_sg(candidate):
     return {'type': candidate.scm, 'url': candidate.scm_url}
 
 
-def process_voinfo(scm_generated, found, not_found, voinfo, recheck=False):
+def process_voinfo(scm_generated, found, not_found, key, voinfo, recheck=False):
     '''Process given plugin
 
     If ``recheck`` is ``True`` then it only prints to stderr whether something changed.
@@ -612,6 +620,8 @@ def process_voinfo(scm_generated, found, not_found, voinfo, recheck=False):
 if __name__ == '__main__':
     import argparse
     from functools import partial
+    import pickle
+    from vimorg import update_vo_cache, get_vo_cache
     p = argparse.ArgumentParser(
             description=__doc__.partition('\n\n')[0],
             epilog=__doc__.partition('\n\n')[-1],
@@ -641,8 +651,20 @@ if __name__ == '__main__':
             help='when annotating, do not check lines that contain extra information')
     p.add_argument('-p', '--print-other-candidate', action='store_const', const=True,
             help='when annotating, print candidates that were found')
+    p.add_argument('-c', '--use-cache', action='store_const', const=True,
+            help='use cache with vim.org archive contents and contents of various SCM sources. '
+                 'Cache will be stored in ./cache.pickle')
+    p.add_argument('-i', '--interrupt-write', action='store_const', const=True,
+            help='Do writes (cache and database updates) after KeyboardInterrupt')
 
     args = p.parse_args()
+
+    if (args.interrupt_write and (args.dry_run and not args.use_cache)):
+        raise ValueError('Nothing to write on interrupt: you should either omit --dry-run or '
+                'use --use-cache')
+
+    if (args.dry_run and args.annotate_scmsources):
+        raise ValueError('--dry-run is doing nothing for --annotate-scmsources')
 
     if (args.no_extra_check or args.print_other_candidate) and not args.annotate_scmsources:
         raise ValueError('--print-other-candidate and --no-extra-check can only be used with '
@@ -658,6 +680,17 @@ if __name__ == '__main__':
 
     if (args.sids or args.recheck or args.last):
         args.no_descriptions = True
+
+    cache_name = os.path.join('.', 'cache.pickle')
+
+    if args.use_cache:
+        try:
+            with open(cache_name) as CF:
+                scm_cache, vo_cache = pickle.load(CF)
+                update_scm_cache(scm_cache)
+                update_vo_cache(vo_cache)
+        except IOError:
+            pass
 
     root_logger = logging.getLogger()
     root_logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
@@ -679,11 +712,6 @@ if __name__ == '__main__':
     omitted_name = os.path.join('.', 'db', 'omitted.json')
     description_hashes_name = os.path.join('.', 'db', 'description_hashes.json')
 
-    omitted       = load_scmnrs_json(scmnrs, omitted_name)
-    found = scmnrs.copy()
-    scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
-    not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
-
     db = getdb()
 
     with open(os.path.expanduser('~/.settings/passwords.yaml')) as PF:
@@ -691,7 +719,8 @@ if __name__ == '__main__':
         user, password = iter(passwords['github.com'][0].items()).next()
     lsgh.init_gh(user, password)
 
-    if args.annotate_scmsources:
+    def annotate_scmsources():
+        global remote_parser
         scm_matches = {
             'svn': SubversionMatch,
             'git': GitMatch,
@@ -801,66 +830,97 @@ if __name__ == '__main__':
                     if best_candidate and args.print_other_candidate:
                         write("-----C│let scmnr.%-4u = {'type': '%s', 'url': '%s'}\n"
                                 % (int(snr), best_candidate.scm, best_candidate.scm_url))
-        sys.exit(0)
 
-    if not args.no_descriptions:
-        try:
-            with open(description_hashes_name) as DHF:
-                description_hashes = json.load(DHF)
-        except IOError:
-            description_hashes = {}
+    def main():
+        global remote_parser
 
-    if args.sids:
-        keys = args.sids
-        not_found -= set(keys)
-    elif args.last:
-        i = args.last
-        _keys = reversed(sorted(db, key=int))
-        keys = []
-        while i:
-            keys.append(next(_keys))
-            i -= 1
-    else:
-        keys = reversed(sorted(db, key=int))
+        omitted       = load_scmnrs_json(scmnrs, omitted_name)
+        found = scmnrs.copy()
+        scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
+        not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
 
-    process_voinfo = partial(process_voinfo, scm_generated, found, not_found)
-    with lshg.MercurialRemoteParser() as remote_parser:
-        if args.recheck:
-            for key in scm_generated:
-                process_voinfo(db[key], recheck=True)
+        if not args.no_descriptions:
+            try:
+                with open(description_hashes_name) as DHF:
+                    description_hashes = json.load(DHF)
+            except IOError:
+                description_hashes = {}
+
+        if args.sids:
+            keys = args.sids
+            not_found -= set(keys)
+        elif args.last:
+            i = args.last
+            _keys = reversed(sorted(db, key=int))
+            keys = []
+            while i:
+                keys.append(next(_keys))
+                i -= 1
         else:
-            for key in keys:
-                if not args.force and key in scmnrs:
-                    if args.all_last:
-                        break
-                    else:
-                        continue
-                logger.info('Considering key {0}'.format(key))
-                process_voinfo(db[key])
+            keys = reversed(sorted(db, key=int))
 
-            if not args.no_descriptions:
-                logger.info('Starting descriptions check')
+        _process_voinfo = partial(process_voinfo, scm_generated, found, not_found)
+        with lshg.MercurialRemoteParser() as remote_parser:
+            if args.recheck:
+                for key in scm_generated:
+                    _process_voinfo(key, db[key], recheck=True)
+            else:
                 for key in keys:
-                    voinfo = db[key]
-                    changed = False
-                    if key not in description_hashes:
-                        h = get_voinfo_hash(voinfo)
-                        description_hashes[key] = h
-                        changed = True
-                    if key in found:
-                        continue
-                    if not changed:
-                        h = get_voinfo_hash(voinfo)
-                        changed = (h != description_hashes.get(key))
-                        if changed:
-                            logger.info('Hash for key {0} changed, checking it'.format(key))
-                            description_hashes[key] = h
-                    else:
-                        logger.info('New hash for key {0}'.format(key))
-                    if changed:
-                        process_voinfo(voinfo)
+                    if not args.force and key in scmnrs:
+                        if args.all_last:
+                            break
+                        else:
+                            continue
+                    logger.info('Considering key {0}'.format(key))
+                    _process_voinfo(key, db[key])
 
-    if not args.dry_run:
+                if not args.no_descriptions:
+                    logger.info('Starting descriptions check')
+                    for key in keys:
+                        voinfo = db[key]
+                        changed = False
+                        if key not in description_hashes:
+                            h = get_voinfo_hash(voinfo)
+                            description_hashes[key] = h
+                            changed = True
+                        if key in found:
+                            continue
+                        if not changed:
+                            h = get_voinfo_hash(voinfo)
+                            changed = (h != description_hashes.get(key))
+                            if changed:
+                                logger.info('Hash for key {0} changed, checking it'.format(key))
+                                description_hashes[key] = h
+                        else:
+                            logger.info('New hash for key {0}'.format(key))
+                        if changed:
+                            _process_voinfo(key, voinfo)
+
+    write_cache = False
+    write_db = False
+    try:
+        if args.annotate_scmsources:
+            if args.interrupt_write:
+                write_cache = True
+            annotate_scmsources()
+            write_cache = True
+        else:
+            if args.interrupt_write:
+                write_cache = True
+                write_db = True
+            main()
+            write_cache = True
+            write_db = True
+    except Exception as e:
+        logger.exception(e)
+    except KeyboardInterrupt:
+        pass
+
+    if write_cache and args.use_cache:
+        with open(cache_name, 'w') as CF:
+            pickle.dump((get_scm_cache(), get_vo_cache()), CF)
+
+    if write_db and not args.dry_run:
         with open(scm_generated_name, 'w') as SGF:
             dump_json(scm_generated, SGF)
 
@@ -870,5 +930,6 @@ if __name__ == '__main__':
         if not args.no_descriptions:
             with open(description_hashes_name, 'w') as DHF:
                 dump_json(description_hashes, DHF)
+
 
 # vim: tw=100 ft=python fenc=utf-8 ts=4 sts=4 sw=4

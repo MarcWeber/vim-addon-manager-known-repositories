@@ -7,3 +7,5 @@ tmp/
 script-info.json
 pool.yaml
 .ropeproject/
+log-*
+cache.pickle
