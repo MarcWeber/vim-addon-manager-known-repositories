@@ -299,6 +299,7 @@ let addon_info_deps.3886 = [2100]
 " eaasytags
 let addon_info_deps.3114 = [4597]
 "▶1 Missing runtimepath information for vim.org plugins
+let addon_info.2424 = {'runtimepath': 'TransmitFTP'}
 let addon_info.2883 = {'runtimepath': 'vimlib'}
 let addon_info.2824 = {'runtimepath': 'vimlib'}
 let addon_info.2847 = {'runtimepath': 'vimlib'}
