@@ -22,31 +22,35 @@ Currently supports git, mercurial and subversion repositories.
 '''
 from __future__ import unicode_literals, division, print_function
 
-from collections import namedtuple
-from subprocess import check_call, CalledProcessError
 import yaml
 import os
-import httplib
 import json
 import re
 import logging
 import sys
-
+import argparse
+from functools import partial
+import pickle
 
 sys.path.append(os.path.dirname(__file__))
 
-
 import list_hg_files as lshg
-import list_git_files as lsgit
-import list_svn_files as lssvn
 import list_github_files as lsgh
-from vimorg import getdb, get_file_list, check_candidate_with_file_list, get_voinfo_hash
 
+from vimorg import (getdb, get_file_list, check_candidate_with_file_list, get_voinfo_hash,
+                    update_vo_cache, get_vo_cache)
+from vomatch import (NotLoggedError, update_scm_cache, get_scm_cache, find_repo_candidate,
+                     set_remote_parser, scm_matches, get_scm_file_list)
 
 logger = logging.getLogger('autoget')
 
 
-MAX_ATTEMPTS = 5
+cache_name = os.path.join('.', 'cache.pickle')
+scmsources_name = os.path.join('.', 'db', 'scmsources.vim')
+scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
+not_found_name = os.path.join('.', 'db', 'not_found.json')
+omitted_name = os.path.join('.', 'db', 'omitted.json')
+description_hashes_name = os.path.join('.', 'db', 'description_hashes.json')
 
 
 def dump_json(obj, F):
@@ -65,496 +69,6 @@ def dump_json_nr_set(st, F):
     For the definition of VCS- and human-friendly check out dump_json above.
     '''
     dump_json(list(sorted(st, key=int)), F)
-
-
-class cached_property(object):
-    '''cached_property decorator
-
-    Found somewhere on the internet. Uses __dict__ to cache properties into it.
-    '''
-    def __init__(self, func):
-        self.func = func
-
-    def __get__(self, instance, cls=None):
-        result = instance.__dict__[self.func.__name__] = self.func(instance)
-        return result
-
-
-github_url              = re.compile(r'github\.com/([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:\.git)?')
-vundle_github_url       = re.compile('\\b(?:Neo)?Bundle\\b\\s*[\'"]([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:.git)?[\'"]')
-vundle_github_url_2     = re.compile('\\b[Bb]undle\\b(?:\s+\\w+)?\s+`?[\'"]?([0-9a-zA-Z\-_]+)/([0-9a-zA-Z\-_.]+)(?:.git)?[\'"]?')
-gist_url                = re.compile(r'gist\.github\.com/(\d+)')
-bitbucket_mercurial_url = re.compile(r'\bhg\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
-bitbucket_git_url       = re.compile(r'\bgit\b[^\n]*bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)|bitbucket\.org/([0-9a-zA-Z_.]+)/([0-9a-zA-Z\-_.]+)\.git')
-bitbucket_noscm_url     = re.compile(r'bitbucket\.org/([0-9a-zA-Z_]+)/([0-9a-zA-Z\-_.]+)')
-bitbucket_site_url      = re.compile(r'([0-9a-zA-Z_]+)\.bitbucket\.org/([0-9a-zA-Z\-_.]+)')
-codegoogle_url          = re.compile(r'code\.google\.com/([pr])/([^/\s]+)')
-mercurial_url           = re.compile(r'hg\s+clone\s+(\S+)')
-mercurial_url_2         = re.compile(r'\b(?:(?i)hg|mercurial)\b.*\b(\w+(?:\+\w+)*://\S+)')
-git_url                 = re.compile(r'git\s+clone\s+(\S+)')
-subversion_url          = re.compile(r'svn\s+(?:checkout|co)\s+(\S+)')
-
-
-class NotLoggedError(Exception):
-    pass
-
-
-def novimext(s):
-    '''Strip .vim extension from the given string'''
-    if s.endswith('.vim'):
-        return s[:-4]
-    else:
-        return s
-
-
-def novimprefix(s):
-    '''Strip vim- prefix from the given string'''
-    if s.startswith('vim-'):
-        return s[4:]
-    else:
-        return s
-
-
-class Match(object):
-    '''Base class for all matches'''
-    def __init__(self, match, voinfo):
-        self.match = match
-        self.voinfo = voinfo
-
-    @cached_property
-    def key2(self):
-        name = self.name
-        # TODO Also compare author names
-        try:
-            voname = self.voinfo['script_name']
-        except KeyError:
-            return 0
-        if not name or not voname:
-            return 0
-        elif name == voname:
-            return 10
-        elif name.lower() == voname.lower():
-            return 9
-        elif novimext(name) == novimext(voname):
-            return 9
-        elif novimext(name.lower()) == novimext(voname.lower()):
-            return 8
-        elif novimprefix(name) == novimprefix(voname):
-            return 7
-        elif novimprefix(name.lower()) == novimprefix(voname.lower()):
-            return 6
-        else:
-            name = novimext(novimprefix(name.lower()))
-            voname = novimext(novimprefix(voname.lower()))
-            if name == voname:
-                return 5
-            elif name.startswith(voname) or voname.startswith(name):
-                return 4
-            elif name.endswith(voname) or voname.endswith(name):
-                return 4
-            elif name in voname:
-                return 3
-            elif voname in name:
-                return 2
-            else:
-                return -1
-
-    @cached_property
-    def key(self):
-        return self.key2 * 100 + candidate_classes.index(self.__class__)
-
-    for level in ('info', 'warning', 'error', 'critical'):
-        exec(('def {0}(self, msg):\n'+
-              '   return logger.{0}(">>> " + msg)\n').format(level))
-
-    def exception(self, e):
-        logger.exception(e)
-
-    def __cmp__(self, other):
-        if not isinstance(other, Match):
-            raise NotImplementedError
-        return cmp(self.key, other.key)
-
-    def __repr__(self):
-        return ('<%s: %s (from match %s)>'
-                % (type(self).__name__, self.url, self.match.group(0)))
-
-
-class GithubMatch(Match):
-    '''Matches github.com/{author}/{repo} URLs
-
-    Uses github API to get list of files.'''
-    re = github_url
-
-    scm = 'git'
-
-    def __init__(self, *args, **kwargs):
-        super(GithubMatch, self).__init__(*args, **kwargs)
-        self.name = self.match.group(2)
-        self.repo_path = self.match.group(1) + '/' + self.name
-        if self.repo_path.endswith('.git'):
-            self.repo_path = self.repo_path[:-4]
-        self.url = 'https://github.com/' + self.repo_path
-        self._check_redirects()
-
-    def _check_redirects(self, attempt=0):
-        c = httplib.HTTPSConnection('github.com')
-        c.request('HEAD', '/' + self.repo_path)
-        r = c.getresponse()
-        if r.status == httplib.MOVED_PERMANENTLY:
-            new_url = r.msg['location']
-            assert new_url.startswith('https://github.com/')
-            if new_url != self.url:
-                self.info('Found redirect to %s' % new_url)
-                self.url = new_url
-                self.repo_path = self.url[len('https://github.com/'):]
-                self.name = self.repo_path.rpartition('/')[-1]
-        elif 400 <= r.status < 500:
-            self.error('Cannot use this match: request failed with code %u (%s)'
-                       % (r.status, httplib.responses[r.status]))
-            raise NotLoggedError
-        elif 500 <= r.status:
-            if attempt < MAX_ATTEMPTS:
-                self.error('Retrying: request failed with code %u (%s)'
-                           % (r.status, httplib.responses[r.status]))
-                self._check_redirects(attempt + 1)
-            else:
-                self.error('Cannot use this match: request failed with code %u (%s), attempt %u'
-                           % (r.status, httplib.responses[r.status], attempt))
-
-        self.scm_url = 'git://github.com/' + self.repo_path
-
-    @cached_property
-    def files(self):
-        if self.scm_url.startswith('git://github.com/vim-scripts'):
-            self.error('removing candidate: vim-scripts repositories are not used by VAM')
-            raise NotLoggedError
-        return set(lsgh.list_github_files(self.repo_path))
-
-
-class VundleGithubMatch(GithubMatch):
-    '''Matches “Vundle '{author}/{repo}'” strings'''
-    re = vundle_github_url
-
-
-class VundleGithubMatch2(GithubMatch):
-    '''Matches strings like “[add] bundle for {author}/{repo}”'''
-    re = vundle_github_url_2
-
-
-class GistMatch(GithubMatch):
-    '''Matches gist github URLs
-
-    Uses github API as well, but a different portion of it.'''
-    re = gist_url
-
-    scm = 'git'
-
-    def __init__(self, *args, **kwargs):
-        Match.__init__(self, *args, **kwargs)
-        self.name = self.match.group(1)
-        self.scm_url = 'git://gist.github.com/' + self.name
-        self.url = 'https://gist.github.com/' + self.name
-
-    @cached_property
-    def files(self):
-        return set(lsgh.list_gist_files(self.name))
-
-
-class VCSMatch(Match):
-    '''Base class for strings like “svn checkout {url}”/“hg clone {url}”/etc'''
-    def __init__(self, *args, **kwargs):
-        super(VCSMatch, self).__init__(*args, **kwargs)
-        self.scm_url = self.match.group(1)
-        self.name = self.scm_url.rpartition('/')[-1]
-        self.url = self.scm_url
-
-
-class MercurialMatch(VCSMatch):
-    '''Matches “hg clone {url}”'''
-    re = mercurial_url
-
-    scm = 'hg'
-
-    @cached_property
-    def files(self):
-        global remote_parser
-        parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
-        return set(next(iter(parsing_result['tips'])).files)
-
-
-class MercurialMatch2(MercurialMatch):
-    '''Matches strings like “mercurial [repository is located at] {url}”'''
-    re = mercurial_url_2
-
-    scm = 'hg'
-
-    def __init__(self, *args, **kwargs):
-        super(MercurialMatch2, self).__init__(*args, **kwargs)
-        for attr in ('scm_url', 'name', 'url'):
-            setattr(self, attr, getattr(self, attr).rstrip('.,!?'))
-
-
-class BitbucketMercurialMatch(MercurialMatch):
-    '''Matches strings like “hg clone https://bitbucket.org/{author}/{repo}”'''
-    re = bitbucket_mercurial_url
-
-    scm = 'hg'
-
-    def __init__(self, *args, **kwargs):
-        super(BitbucketMercurialMatch, self).__init__(*args, **kwargs)
-        self.name = self.match.group(2)
-        self.scm_url = 'https://bitbucket.org/' + self.match.group(1) + '/' + self.name
-        self.url = self.scm_url
-
-
-class BitbucketMatch(Match):
-    '''Matches URLs bitbucket.org/{author}/{repo}'''
-    re = bitbucket_noscm_url
-
-    def __init__(self, *args, **kwargs):
-        global remote_parser
-        super(BitbucketMatch, self).__init__(*args, **kwargs)
-        self.name = self.match.group(2)
-        self.repo_path = self.match.group(1) + '/' + self.name
-        self.scm_url = 'https://bitbucket.org/' + self.repo_path
-        self.url = self.scm_url
-
-    def _check_scm(self):
-        self._check_presence()
-        try:
-            self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
-            parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
-        except Exception as e:
-            self.info('Checking whether {0} is a git repository'.format(self.scm_url))
-            self.files = set(lsgit.list_git_files(self.scm_url))
-            self.scm = 'git'
-        else:
-            self.files = set(next(iter(parsing_result['tips'])).files)
-            self.scm = 'hg'
-
-    @cached_property
-    def files(self):
-        self._check_scm()
-        return self.files
-
-    @cached_property
-    def scm(self):
-        self._check_scm()
-        return self.scm
-
-    def _check_presence(self, attempt=0):
-        c = httplib.HTTPSConnection('bitbucket.org')
-        c.request('HEAD', '/' + self.repo_path)
-        r = c.getresponse()
-        if 400 <= r.status < 500:
-            self.error('Cannot use this match: request failed with code %u (%s)'
-                       % (r.status, httplib.responses[r.status]))
-            raise NotLoggedError
-        elif 500 <= r.status:
-            if attempt < MAX_ATTEMPTS:
-                self.error('Retrying: request failed with code %u (%s)'
-                           % (r.status, httplib.responses[r.status]))
-                self._check_presence(attempt + 1)
-            else:
-                self.error('Cannot use this match: request failed with code %u (%s), attempt %u'
-                           % (r.status, httplib.responses[r.status], attempt))
-
-
-class BitbucketSiteMatch(BitbucketMatch):
-    '''Matches URLs like {author}.bitbucket.org/{repo}'''
-    re = bitbucket_site_url
-
-
-class CodeGoogleMatch(Match):
-    '''Matches code.google.com/(p|r)/{project}'''
-    re = codegoogle_url
-
-    def __init__(self, *args, **kwargs):
-        super(CodeGoogleMatch, self).__init__(*args, **kwargs)
-        self.name = self.match.group(2)
-        urlpart = self.match.group(1) + '/' + self.match.group(2)
-        url = 'http://code.google.com/' + urlpart
-        self.scm_url = url
-        self.url = url
-
-    def _check_scm(self):
-        try:
-            self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
-            parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
-        except Exception as e:
-            try:
-                self.info('Checking whether {0} is a git repository'.format(self.scm_url))
-                self.files = set(lsgit.list_git_files(self.scm_url, allow_depth=False))
-                self.scm = 'git'
-            except Exception as e:
-                self.info('Checking whether {0} is a subversion repository'.format(self.scm_url))
-                # FIXME detect directory
-                # Plugin for which detection is useful: #2805
-                self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
-                self.files = set(lssvn.list_svn_files(self.scm_url))
-                self.info('Subversion files: {0!r}'.format(self.files))
-                trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
-                if trunkfiles:
-                    self.scm_url += '/trunk'
-                    self.files = trunkfiles
-                    self.info('Found trunk/ directory, leaving only files in there: {0!r}'.format(self.files))
-                self.scm = 'svn'
-        else:
-            self.files = set(next(iter(parsing_result['tips'])).files)
-            self.scm = 'hg'
-
-
-    @cached_property
-    def files(self):
-        self._check_scm()
-        return self.files
-
-    @cached_property
-    def scm(self):
-        self._check_scm()
-        return self.scm
-
-
-class SubversionMatch(VCSMatch):
-    '''Matches “svn checkout {url}”'''
-    re = subversion_url
-
-    scm = 'svn'
-
-    @cached_property
-    def files(self):
-        return set(lssvn.list_svn_files(self.scm_url))
-
-
-class GitMatch(VCSMatch):
-    '''Matches “git checkout {url}”'''
-    re = git_url
-
-    scm = 'git'
-
-    @cached_property
-    def files(self):
-        try:
-            return set(lsgit.list_git_files(self.scm_url))
-        except Exception as e:
-            logger.exception(e)
-            return lsgit.list_git_files(self.scm_url, allow_depth=False)
-
-
-candidate_classes = (
-    GithubMatch,
-    VundleGithubMatch,
-    VundleGithubMatch2,
-    GistMatch,
-    CodeGoogleMatch,
-    BitbucketMercurialMatch,
-    GitMatch,
-    MercurialMatch,
-    MercurialMatch2,
-    SubversionMatch,
-    BitbucketMatch,
-    BitbucketSiteMatch,
-)
-
-assert len(candidate_classes) < 100, 'candidate_classes has grown too lengthy, adjust Match.key'
-
-
-def find_repo_candidates(voinfo):
-    '''Process all Match subclasses recorded above
-
-    Uses MatchSubclass.re to find URLs that are candidates to be repository URLs and yields 
-    instances of used MatchSubclass.
-    '''
-    foundstrings = set()
-    for C in candidate_classes:
-        for key in ('install_details', 'description'):
-            try:
-                string = voinfo[key]
-            except KeyError:
-                logger.error('>> Key {0} was not found in voinfo of script {script_name}'
-                             .format(key, **voinfo))
-                continue
-            for match in C.re.finditer(string):
-                if not match.group(0) in foundstrings:
-                    foundstrings.add(match.group(0))
-                    try:
-                        logger.debug('>> Created candidate {0}: {1}'.format(
-                            C.__name__, match.group(0)))
-                        yield C(match, voinfo)
-                    except NotLoggedError:
-                        pass
-
-
-_checked_URLs = {}
-
-def get_scm_file_list(candidate):
-    '''Returns candidate.files, cached; cache key is candidate.scm_url'''
-    url = candidate.scm_url
-    try:
-        files = _checked_URLs[url]
-        logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
-    except KeyError:
-        files = set(candidate.files)
-        _checked_URLs[url] = files
-    return files
-
-
-def update_scm_cache(d):
-    return _checked_URLs.update(d)
-
-
-def get_scm_cache():
-    return _checked_URLs
-
-
-def find_repo_candidate(voinfo, vofiles=None):
-    '''Find repository URL for the given plugin
-
-    Iterates for all candidates returned by find_repo_candidates and returns first candidate with 
-    best score found.'''
-    global _checked_URLs
-    candidates = sorted(find_repo_candidates(voinfo), key=lambda o: o.key, reverse=True)
-    best_candidate = None
-    already_checked = set()
-    for candidate in candidates:
-        if vofiles is None:
-            vofiles = get_file_list(voinfo)
-            vofiles = {fname for fname in vofiles if not fname.endswith('/')}
-            logger.info('>> vim.org files: ' + repr(vofiles))
-        url = candidate.url
-        if url in already_checked:
-            logger.debug('>>> Omitting {0} because it was already checked'.format(url))
-            continue
-        already_checked.add(url)
-        logger.info('>> Checking candidate {0} with key {1}: {2}'.format(
-            candidate.__class__.__name__,
-            candidate.key,
-            candidate.match.group(0)
-        ))
-        try:
-            files = get_scm_file_list(candidate)
-            logger.info('>>> Repository files: {0!r}'.format(files))
-            prefix, key2 = check_candidate_with_file_list(vofiles, files)
-        except NotLoggedError:
-            pass
-        except Exception as e:
-            logger.exception(e)
-        else:
-            candidate.prefix = prefix
-            if key2 == 100:
-                logger.info('>> Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
-                                                                    candidate.match.group(0)))
-                return candidate
-            elif key2 and (not best_candidate or key2 > best_candidate.key2):
-                best_candidate = candidate
-                best_candidate.key2 = key2
-    if best_candidate:
-        logger.info('Found candidate {0}: {1} ({2})'.format(
-                                                best_candidate.__class__.__name__,
-                                                best_candidate.match.group(0),
-                                                best_candidate.key2))
-    return best_candidate
 
 
 def load_scmnrs_json(scmnrs, fname, typ=dict):
@@ -617,11 +131,205 @@ def process_voinfo(scm_generated, found, not_found, description_hashes, key, voi
         logger.exception(e)
 
 
+def process_scmsources(return_scmnrs=True):
+    scmnrs = set()
+    scmnr_lines = []
+    with open(scmsources_name) as SF:
+        scmnr_re = re.compile(r'^let scmnr\.(\d+)')
+        for line in SF:
+            match = scmnr_re.match(line)
+            if match:
+                scmnrs.add(match.group(1))
+                scmnr_lines.append(line)
+    return scmnrs if return_scmnrs else scmnr_lines
+
+
+def main():
+    scmnrs = process_scmsources()
+
+    omitted       = load_scmnrs_json(scmnrs, omitted_name)
+    found = scmnrs.copy()
+    scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
+    not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
+
+    if not args.no_descriptions:
+        try:
+            with open(description_hashes_name) as DHF:
+                description_hashes = json.load(DHF)
+        except IOError:
+            description_hashes = {}
+
+    if args.sids:
+        keys = args.sids
+        not_found -= set(keys)
+    elif args.last:
+        i = args.last
+        _keys = reversed(sorted(db, key=int))
+        keys = []
+        while i:
+            keys.append(next(_keys))
+            i -= 1
+    else:
+        keys = reversed(sorted(db, key=int))
+
+    _process_voinfo = partial(process_voinfo, scm_generated,found,not_found,description_hashes)
+    with lshg.MercurialRemoteParser() as remote_parser:
+        set_remote_parser(remote_parser)
+        if args.recheck:
+            for key in scm_generated:
+                _process_voinfo(key, db[key], recheck=True)
+        else:
+            for key in keys:
+                if not args.force and key in scmnrs:
+                    if args.all_last:
+                        break
+                    else:
+                        continue
+                logger.info('Considering key {0}'.format(key))
+                _process_voinfo(key, db[key])
+
+            if not args.no_descriptions:
+                logger.info('Starting descriptions check')
+                for key in keys:
+                    voinfo = db[key]
+                    changed = False
+                    if key not in description_hashes:
+                        h = get_voinfo_hash(voinfo)
+                        description_hashes[key] = h
+                        changed = True
+                    if key in found:
+                        continue
+                    if not changed:
+                        h = get_voinfo_hash(voinfo)
+                        changed = (h != description_hashes.get(key))
+                        if changed:
+                            logger.info('Hash for key {0} changed, checking it'.format(key))
+                            description_hashes[key] = h
+                    else:
+                        logger.info('New hash for key {0}'.format(key))
+                    if changed:
+                        _process_voinfo(key, voinfo)
+
+    return scm_generated, not_found, description_hashes
+
+
+def write(msg):
+    '''Write msg to sys.stdout, encoding it to utf-8
+
+    If msg contains newline this function also calls .flush().'''
+    sys.stdout.write(msg.encode('utf-8'))
+    if '\n' in msg:
+        sys.stdout.flush()
+
+
+def prnt(msg):
+    '''Like write(), but adds newline to the end of the message'''
+    return write(msg + '\n')
+
+
+def annotate_scmsources():
+    url_regex = re.compile('^(.*)$')
+    line_regex_strict = re.compile(r"^let\s+scmnr\.(\d+)\s*=\s*\{'type':\s*'(\w+)',\s*'url':\s*'([^']+)'\s*\}\s*")
+    line_snr_regex = re.compile(r'(\d+)')
+    line_url_regex = re.compile(r"'url': '([^']+)'")
+    line_scm_regex = re.compile(r"'type': '([^']+)'")
+    prnt ('┌ X if line contains information besides repository URL and SCM used')
+    prnt ('│┌ ? or ! if line failes to be parsed by regular expressions')
+    prnt ('││┌ A if scm type is unknown')
+    prnt ('│││┌ F if match failes')
+    prnt ('││││┌ O if match deduced from the description is different, M if there are no')
+    prnt ('│││││┌ E if exception occurred, C if printing candidate on this line')
+    prnt ('┴┴┴┴┴┴┬─────────────────────────────────────────────────────────────────────────')
+    with lshg.MercurialRemoteParser() as remote_parser:
+        set_remote_parser(remote_parser)
+        for line in process_scmsources(False):
+            try:
+                numcolumns = 5
+                best_candidate = None
+                line = line.decode('utf-8')
+                logger.info('Checking line ' + line)
+                match = line_regex_strict.match(line)
+                if match:
+                    write('  ')
+                    numcolumns -= 2
+                    snr, scm, url = match.groups()
+                else:
+                    write('X')
+                    numcolumns -= 1
+                    if args.no_extra_check:
+                        raise NotLoggedError
+                    snr = line_snr_regex.search(line)
+                    scm = line_scm_regex.search(line)
+                    url = line_url_regex.search(line)
+                    if snr:
+                        snr = snr.group(1)
+                    if scm:
+                        scm = scm.group(1)
+                    if url:
+                        url = url.group(1)
+                    if not snr:
+                        write('!')
+                        numcolumns -= 1
+                        raise ValueError('snr key not found')
+                    if not scm:
+                        write('?A')
+                        numcolumns -= 2
+                        url = None
+                    elif not url:
+                        write('?-')
+                        numcolumns -= 2
+                        scm = None
+                    else:
+                        write(' ')
+                        numcolumns -= 1
+                if scm not in scm_matches:
+                    write('A')
+                    numcolumns -= 1
+                    url = None
+                    scm = None
+                else:
+                    write(' ')
+                    numcolumns -= 1
+
+                voinfo = db[snr]
+                vofiles = set(get_file_list(voinfo))
+                if url:
+                    match = url_regex.match(url)
+                    candidate = scm_matches[scm](match, voinfo)
+                    files = get_scm_file_list(candidate)
+                    prefix, key2 = check_candidate_with_file_list(vofiles, files)
+                    write(' ' if key2 else 'F')
+                    numcolumns -= 1
+                else:
+                    write('-')
+                    numcolumns -= 1
+
+                best_candidate = find_repo_candidate(voinfo, vofiles)
+                if not best_candidate:
+                    write('M')
+                    numcolumns -= 1
+                elif not (url and best_candidate.scm_url == url and best_candidate.scm == scm):
+                    write('O')
+                    numcolumns -= 1
+                else:
+                    write(' ')
+                    numcolumns -= 1
+                    best_candidate = None
+                write(' ')
+                numcolumns -= 1
+            except Exception as e:
+                if not isinstance(e, NotLoggedError):
+                    logger.exception(e)
+                write(('-' * numcolumns) + 'E')
+            finally:
+                # XXX line ends with \n, thus not writing `+ '\n'` here.
+                write('│' + line)
+                if best_candidate and args.print_other_candidate:
+                    write("-----C│let scmnr.%-4u = {'type': '%s', 'url': '%s'}\n"
+                            % (int(snr), best_candidate.scm, best_candidate.scm_url))
+
+
 if __name__ == '__main__':
-    import argparse
-    from functools import partial
-    import pickle
-    from vimorg import update_vo_cache, get_vo_cache
     p = argparse.ArgumentParser(
             description=__doc__.partition('\n\n')[0],
             epilog=__doc__.partition('\n\n')[-1],
@@ -681,8 +389,6 @@ if __name__ == '__main__':
     if (args.sids or args.recheck or args.last):
         args.no_descriptions = True
 
-    cache_name = os.path.join('.', 'cache.pickle')
-
     if args.use_cache:
         try:
             with open(cache_name) as CF:
@@ -696,11 +402,6 @@ if __name__ == '__main__':
     root_logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
     handler = logging.StreamHandler()
     root_logger.addHandler(handler)
-    scmsources_name = os.path.join('.', 'db', 'scmsources.vim')
-    scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
-    not_found_name = os.path.join('.', 'db', 'not_found.json')
-    omitted_name = os.path.join('.', 'db', 'omitted.json')
-    description_hashes_name = os.path.join('.', 'db', 'description_hashes.json')
 
     db = getdb()
 
@@ -708,199 +409,6 @@ if __name__ == '__main__':
         passwords = yaml.load(PF)
         user, password = iter(passwords['github.com'][0].items()).next()
     lsgh.init_gh(user, password)
-
-    def process_scmsources(return_scmnrs=True):
-        scmnrs = set()
-        scmnr_lines = []
-        with open(scmsources_name) as SF:
-            scmnr_re = re.compile(r'^let scmnr\.(\d+)')
-            for line in SF:
-                match = scmnr_re.match(line)
-                if match:
-                    scmnrs.add(match.group(1))
-                    scmnr_lines.append(line)
-        return scmnrs if return_scmnrs else scmnr_lines
-
-    def annotate_scmsources():
-        global remote_parser
-        scm_matches = {
-            'svn': SubversionMatch,
-            'git': GitMatch,
-            'hg':  MercurialMatch,
-        }
-        url_regex = re.compile('^(.*)$')
-        line_regex_strict = re.compile(r"^let\s+scmnr\.(\d+)\s*=\s*\{'type':\s*'(\w+)',\s*'url':\s*'([^']+)'\s*\}\s*")
-        line_snr_regex = re.compile(r'(\d+)')
-        line_url_regex = re.compile(r"'url': '([^']+)'")
-        line_scm_regex = re.compile(r"'type': '([^']+)'")
-        def write(msg):
-            sys.stdout.write(msg.encode('utf-8'))
-            if '\n' in msg:
-                sys.stdout.flush()
-        def prnt(msg):
-            return write(msg + '\n')
-        prnt ('┌ X if line contains information besides repository URL and SCM used')
-        prnt ('│┌ ? or ! if line failes to be parsed by regular expressions')
-        prnt ('││┌ A if scm type is unknown')
-        prnt ('│││┌ F if match failes')
-        prnt ('││││┌ O if match deduced from the description is different, M if there are no')
-        prnt ('│││││┌ E if exception occurred, C if printing candidate on this line')
-        prnt ('┴┴┴┴┴┴┬─────────────────────────────────────────────────────────────────────────')
-        with lshg.MercurialRemoteParser() as remote_parser:
-            for line in process_scmsources(False):
-                try:
-                    numcolumns = 5
-                    best_candidate = None
-                    line = line.decode('utf-8')
-                    logger.info('Checking line ' + line)
-                    match = line_regex_strict.match(line)
-                    if match:
-                        write('  ')
-                        numcolumns -= 2
-                        snr, scm, url = match.groups()
-                    else:
-                        write('X')
-                        numcolumns -= 1
-                        if args.no_extra_check:
-                            raise NotLoggedError
-                        snr = line_snr_regex.search(line)
-                        scm = line_scm_regex.search(line)
-                        url = line_url_regex.search(line)
-                        if snr:
-                            snr = snr.group(1)
-                        if scm:
-                            scm = scm.group(1)
-                        if url:
-                            url = url.group(1)
-                        if not snr:
-                            write('!')
-                            numcolumns -= 1
-                            raise ValueError('snr key not found')
-                        if not scm:
-                            write('?A')
-                            numcolumns -= 2
-                            url = None
-                        elif not url:
-                            write('?-')
-                            numcolumns -= 2
-                            scm = None
-                        else:
-                            write(' ')
-                            numcolumns -= 1
-                    if scm not in scm_matches:
-                        write('A')
-                        numcolumns -= 1
-                        url = None
-                        scm = None
-                    else:
-                        write(' ')
-                        numcolumns -= 1
-
-                    voinfo = db[snr]
-                    vofiles = set(get_file_list(voinfo))
-                    if url:
-                        match = url_regex.match(url)
-                        candidate = scm_matches[scm](match, voinfo)
-                        files = get_scm_file_list(candidate)
-                        prefix, key2 = check_candidate_with_file_list(vofiles, files)
-                        write(' ' if key2 else 'F')
-                        numcolumns -= 1
-                    else:
-                        write('-')
-                        numcolumns -= 1
-
-                    best_candidate = find_repo_candidate(voinfo, vofiles)
-                    if not best_candidate:
-                        write('M')
-                        numcolumns -= 1
-                    elif not (url and best_candidate.scm_url == url and best_candidate.scm == scm):
-                        write('O')
-                        numcolumns -= 1
-                    else:
-                        write(' ')
-                        numcolumns -= 1
-                        best_candidate = None
-                    write(' ')
-                    numcolumns -= 1
-                except Exception as e:
-                    if not isinstance(e, NotLoggedError):
-                        logger.exception(e)
-                    write(('-' * numcolumns) + 'E')
-                finally:
-                    # XXX line ends with \n, thus not writing `+ '\n'` here.
-                    write('│' + line)
-                    if best_candidate and args.print_other_candidate:
-                        write("-----C│let scmnr.%-4u = {'type': '%s', 'url': '%s'}\n"
-                                % (int(snr), best_candidate.scm, best_candidate.scm_url))
-
-    def main():
-        global remote_parser
-
-        scmnrs = process_scmsources()
-
-        omitted       = load_scmnrs_json(scmnrs, omitted_name)
-        found = scmnrs.copy()
-        scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
-        not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
-
-        if not args.no_descriptions:
-            try:
-                with open(description_hashes_name) as DHF:
-                    description_hashes = json.load(DHF)
-            except IOError:
-                description_hashes = {}
-
-        if args.sids:
-            keys = args.sids
-            not_found -= set(keys)
-        elif args.last:
-            i = args.last
-            _keys = reversed(sorted(db, key=int))
-            keys = []
-            while i:
-                keys.append(next(_keys))
-                i -= 1
-        else:
-            keys = reversed(sorted(db, key=int))
-
-        _process_voinfo = partial(process_voinfo, scm_generated,found,not_found,description_hashes)
-        with lshg.MercurialRemoteParser() as remote_parser:
-            if args.recheck:
-                for key in scm_generated:
-                    _process_voinfo(key, db[key], recheck=True)
-            else:
-                for key in keys:
-                    if not args.force and key in scmnrs:
-                        if args.all_last:
-                            break
-                        else:
-                            continue
-                    logger.info('Considering key {0}'.format(key))
-                    _process_voinfo(key, db[key])
-
-                if not args.no_descriptions:
-                    logger.info('Starting descriptions check')
-                    for key in keys:
-                        voinfo = db[key]
-                        changed = False
-                        if key not in description_hashes:
-                            h = get_voinfo_hash(voinfo)
-                            description_hashes[key] = h
-                            changed = True
-                        if key in found:
-                            continue
-                        if not changed:
-                            h = get_voinfo_hash(voinfo)
-                            changed = (h != description_hashes.get(key))
-                            if changed:
-                                logger.info('Hash for key {0} changed, checking it'.format(key))
-                                description_hashes[key] = h
-                        else:
-                            logger.info('New hash for key {0}'.format(key))
-                        if changed:
-                            _process_voinfo(key, voinfo)
-
-        return scm_generated, not_found, description_hashes
 
     ret = 0
     write_cache = False
