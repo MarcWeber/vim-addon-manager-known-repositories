@@ -747,6 +747,10 @@
     "type": "git",
     "url": "git://github.com/tpope/vim-fugitive"
   },
+  "2981": {
+    "type": "git",
+    "url": "http://github.com/mattn/emmet-vim.git"
+  },
   "2989": {
     "type": "git",
     "url": "git://github.com/tyru/pummode.vim"

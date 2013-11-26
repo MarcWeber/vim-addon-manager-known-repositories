@@ -97,7 +97,6 @@ let scm['a@lh'] = {'url': 'http://code.google.com/p/lh-vim/source/browse/cpp/tru
 let scmnr.52 = {'type': 'git', 'url': 'git://github.com/mattn/calendar-vim'}
 let scmnr.2678 = {'type': 'git', 'url': 'git://github.com/mattn/googlereader-vim'}
 let scmnr.2948 = {'type': 'git', 'url': 'git://github.com/mattn/googlesuggest-complete-vim'}
-let scmnr.2981 = {'type': 'git', 'url': 'git://github.com/mattn/zencoding-vim'}
 let scmnr.3505 = {'type': 'git', 'url': 'git://github.com/mattn/pastebin-vim'}
 let scmnr.4019 = {'type': 'git', 'url': 'git://github.com/mattn/webapi-vim'}
 " Requires postupdate hook // though non-SCM source does also
