@@ -577,7 +577,7 @@ def candidate_to_sg(candidate):
     return {'type': candidate.scm, 'url': candidate.scm_url}
 
 
-def process_voinfo(scm_generated, found, not_found, key, voinfo, recheck=False):
+def process_voinfo(scm_generated, found, not_found, description_hashes, key, voinfo, recheck=False):
     '''Process given plugin
 
     If ``recheck`` is ``True`` then it only prints to stderr whether something changed.
@@ -696,17 +696,7 @@ if __name__ == '__main__':
     root_logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
     handler = logging.StreamHandler()
     root_logger.addHandler(handler)
-    scmnrs = set()
     scmsources_name = os.path.join('.', 'db', 'scmsources.vim')
-    scmnr_lines = []
-    with open(scmsources_name) as SF:
-        scmnr_re = re.compile(r'^let scmnr\.(\d+)')
-        for line in SF:
-            match = scmnr_re.match(line)
-            if match:
-                scmnrs.add(match.group(1))
-                scmnr_lines.append(line)
-
     scm_generated_name = os.path.join('.', 'db', 'scm_generated.json')
     not_found_name = os.path.join('.', 'db', 'not_found.json')
     omitted_name = os.path.join('.', 'db', 'omitted.json')
@@ -718,6 +708,18 @@ if __name__ == '__main__':
         passwords = yaml.load(PF)
         user, password = iter(passwords['github.com'][0].items()).next()
     lsgh.init_gh(user, password)
+
+    def process_scmsources(return_scmnrs=True):
+        scmnrs = set()
+        scmnr_lines = []
+        with open(scmsources_name) as SF:
+            scmnr_re = re.compile(r'^let scmnr\.(\d+)')
+            for line in SF:
+                match = scmnr_re.match(line)
+                if match:
+                    scmnrs.add(match.group(1))
+                    scmnr_lines.append(line)
+        return scmnrs if return_scmnrs else scmnr_lines
 
     def annotate_scmsources():
         global remote_parser
@@ -745,7 +747,7 @@ if __name__ == '__main__':
         prnt ('│││││┌ E if exception occurred, C if printing candidate on this line')
         prnt ('┴┴┴┴┴┴┬─────────────────────────────────────────────────────────────────────────')
         with lshg.MercurialRemoteParser() as remote_parser:
-            for line in reversed(scmnr_lines):
+            for line in process_scmsources(False):
                 try:
                     numcolumns = 5
                     best_candidate = None
@@ -834,6 +836,8 @@ if __name__ == '__main__':
     def main():
         global remote_parser
 
+        scmnrs = process_scmsources()
+
         omitted       = load_scmnrs_json(scmnrs, omitted_name)
         found = scmnrs.copy()
         scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
@@ -859,7 +863,7 @@ if __name__ == '__main__':
         else:
             keys = reversed(sorted(db, key=int))
 
-        _process_voinfo = partial(process_voinfo, scm_generated, found, not_found)
+        _process_voinfo = partial(process_voinfo, scm_generated,found,not_found,description_hashes)
         with lshg.MercurialRemoteParser() as remote_parser:
             if args.recheck:
                 for key in scm_generated:
@@ -896,6 +900,9 @@ if __name__ == '__main__':
                         if changed:
                             _process_voinfo(key, voinfo)
 
+        return scm_generated, not_found, description_hashes
+
+    ret = 0
     write_cache = False
     write_db = False
     try:
@@ -908,11 +915,12 @@ if __name__ == '__main__':
             if args.interrupt_write:
                 write_cache = True
                 write_db = True
-            main()
+            scm_generated, not_found, description_hashes = main()
             write_cache = True
             write_db = True
     except Exception as e:
         logger.exception(e)
+        ret = 1
     except KeyboardInterrupt:
         pass
 
@@ -930,6 +938,8 @@ if __name__ == '__main__':
         if not args.no_descriptions:
             with open(description_hashes_name, 'w') as DHF:
                 dump_json(description_hashes, DHF)
+
+    sys.exit(ret)
 
 
 # vim: tw=100 ft=python fenc=utf-8 ts=4 sts=4 sw=4
