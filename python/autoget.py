@@ -158,6 +158,8 @@ def main():
                 description_hashes = json.load(DHF)
         except IOError:
             description_hashes = {}
+    else:
+        description_hashes = {}
 
     if args.sids:
         keys = args.sids
