@@ -3219,6 +3219,10 @@
     "type": "git",
     "url": "git://github.com/yssl/QFEnter"
   },
+  "4783": {
+    "type": "git",
+    "url": "git://github.com/oinksoft/npm.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
