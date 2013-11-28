@@ -507,6 +507,10 @@
     "type": "git",
     "url": "git://github.com/Twinside/vim-cuteErrorMarker"
   },
+  "2657": {
+    "type": "git",
+    "url": "git://github.com/vim-voom/VOoM"
+  },
   "2672": {
     "type": "git",
     "url": "git://github.com/Twinside/vim-hoogle"
