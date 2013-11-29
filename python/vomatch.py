@@ -198,6 +198,8 @@ class GitMatch(VCSMatch):
     scm_url_norm_subs = (
         (re.compile('^\w+://(?:git@)?github\.com[/:]([^/]+)/([^/]+?)(?:\.git)?(?:/.*)?$'),
          r'git://github.com/\1/\2'),
+        (re.compile('^\w+://(?:git@)?bitbucket\.org[/:]([^/]+)/([^/]+?)(?:\.git)?(?:/.*)?$'),
+         r'https://bitbucket.org/\1/\2'),
     )
 
     re = git_url
@@ -240,6 +242,10 @@ class BitbucketMatch(Match):
     def _check_scm(self):
         self._check_presence()
         try:
+            if self.scm_url.endswith('.git'):
+                self.info('Assuming {0} is not a mercurial repository'.format(self.scm_url))
+                self.scm_url = self.scm_url[:-4]
+                raise NotLoggedError
             self.info('Checking whether {0} is a mercurial repository'.format(self.scm_url))
             parsing_result = remote_parser.parse_url(self.scm_url, 'tip')
         except Exception as e:
@@ -467,6 +473,7 @@ def get_scm_file_list(candidate):
         files = _checked_URLs[url]
         logger.debug('>>> Obtained files from cache for URL {0}'.format(url))
     except KeyError:
+        logger.debug('>>> No files in cache for URL {0}'.format(url))
         files = set(candidate.files)
         _checked_URLs[url] = files
     return files
