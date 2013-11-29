@@ -74,7 +74,7 @@ class Match(object):
         self.voinfo = voinfo
 
     @cached_property
-    def key2(self):
+    def name_key(self):
         name = self.name
         # TODO Also compare author names
         try:
@@ -113,7 +113,7 @@ class Match(object):
 
     @cached_property
     def key(self):
-        return self.key2 * 100 + candidate_classes.index(self.__class__)
+        return self.name_key * 100 + candidate_classes.index(self.__class__)
 
     for level in ('info', 'warning', 'error', 'critical'):
         exec(('def {0}(self, msg):\n'+
@@ -514,25 +514,25 @@ def find_repo_candidate(voinfo, vofiles=None):
         try:
             files = get_scm_file_list(candidate)
             logger.info('>>> Repository files: {0!r}'.format(files))
-            prefix, key2 = check_candidate_with_file_list(vofiles, files)
+            prefix, score = check_candidate_with_file_list(vofiles, files)
         except NotLoggedError:
             pass
         except Exception as e:
             logger.exception(e)
         else:
             candidate.prefix = prefix
-            if key2 == 100:
+            if score == 100:
                 logger.info('>> Found candidate {0}: {1} (100)'.format(candidate.__class__.__name__,
                                                                     candidate.match.group(0)))
                 return candidate
-            elif key2 and (not best_candidate or key2 > best_candidate.key2):
+            elif score and (not best_candidate or score > best_candidate.score):
                 best_candidate = candidate
-                best_candidate.key2 = key2
+                best_candidate.score = score
     if best_candidate:
         logger.info('Found candidate {0}: {1} ({2})'.format(
                                                 best_candidate.__class__.__name__,
                                                 best_candidate.match.group(0),
-                                                best_candidate.key2))
+                                                best_candidate.score))
     return best_candidate
 
 
