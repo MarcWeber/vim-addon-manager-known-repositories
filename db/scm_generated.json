@@ -435,6 +435,10 @@
     "type": "git",
     "url": "git://github.com/rkitover/perl-vim-mxd"
   },
+  "2531": {
+    "type": "hg",
+    "url": "https://bitbucket.org/kovisoft/slimv"
+  },
   "2536": {
     "type": "git",
     "url": "git://github.com/jonathanfilip/vim-lucius"
@@ -1174,6 +1178,10 @@
   "3413": {
     "type": "git",
     "url": "git://github.com/zaki/zazen"
+  },
+  "3416": {
+    "type": "hg",
+    "url": "https://bitbucket.org/dekomote/w3cvalidate.vim"
   },
   "3417": {
     "type": "git",
@@ -2347,6 +2355,10 @@
     "type": "git",
     "url": "git://github.com/PAntoine/TimeKeeper"
   },
+  "4336": {
+    "type": "hg",
+    "url": "https://bitbucket.org/khorser/vim-repl"
+  },
   "4339": {
     "type": "git",
     "url": "git://github.com/zeis/vim-kolor"
@@ -2354,6 +2366,10 @@
   "4345": {
     "type": "git",
     "url": "git://github.com/tomtom/templator_vim"
+  },
+  "4347": {
+    "type": "hg",
+    "url": "https://bitbucket.org/khorser/vim-qfnotes"
   },
   "4348": {
     "type": "git",
@@ -2370,6 +2386,10 @@
   "4354": {
     "type": "git",
     "url": "git://github.com/Yggdroot/indentLine"
+  },
+  "4355": {
+    "type": "hg",
+    "url": "https://bitbucket.org/khorser/vim-rst-ftplugin"
   },
   "4358": {
     "type": "git",

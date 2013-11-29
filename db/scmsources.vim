@@ -340,10 +340,6 @@ let scmnr.2442 = {'type': 'git', 'url': 'git://github.com/hjdivad/vimlocalhistor
 " Marcin Sztolcman
 let scmnr.2492 = {'type': 'git', 'url': 'git://github.com/mysz/viblip'}
 
-" Tamas Kovacs
-let scmnr.2531 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/slimv'}
-let scmnr.3998 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/paredit'}
-
 " Eddie Carle
 let scmnr.2570 = {'type': 'git', 'url': 'git://github.com/eddic/vimdecdef'}
 
@@ -603,12 +599,6 @@ let scm['rubytter'] = {'type': 'git', 'url': 'git://github.com/basyura/rubytter.
 let scm['unite-oreore'] = {'type': 'git', 'url': 'git://github.com/basyura/unite-oreore', 'addon-info': {'dependencies': {'%3396':{}}}}
 let scm['b@basyura'] = {'type': 'git', 'url': 'git://github.com/basyura/b.vim'}
 
-" Dejan Noveski
-" This plugin has both mercurial and github repository. I have chosen to use
-" first one, but I have no idea which is original and which is generated
-" automatically
-let scmnr.3416 = {'type': 'hg', 'url': 'https://bitbucket.org/dekomote/w3cvalidate.vim'}
-
 " ujihisa .
 let scmnr.3423 = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-ghc'}
 let scmnr.3440 = {'type': 'git', 'url': 'git://github.com/ujihisa/neco-look'}
@@ -829,6 +819,9 @@ let scmnr.3994 = {'type': 'git', 'url': 'git://github.com/suan/vim-instant-markd
 " Mike Skalnik
 let scmnr.3995 = {'type': 'git', 'url': 'git://github.com/skalnik/vim-vroom'}
 
+" Tamas Kovacs
+let scmnr.3998 = {'type': 'hg', 'url': 'https://bitbucket.org/kovisoft/paredit'}
+
 " lorry lee
 let scmnr.3999 = {'type': 'git', 'url': 'git://github.com/lorry-lee/vim-ayumi'}
 
@@ -904,11 +897,6 @@ let scmnr.4317 = {'type': 'git', 'url': 'git://github.com/cometsong/CommentFrame
 
 " Eduan Lavaque
 let scmnr.4324 = {'type': 'git', 'url': 'git://github.com/Greduan/vim-change-syntax'}
-
-" Sergey Khorev
-let scmnr.4336 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-repl'}
-let scmnr.4347 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-qfnotes'}
-let scmnr.4355 = {'type': 'hg', 'url': 'https://bitbucket.org/khorser/vim-rst-ftplugin'}
 
 " Chiel 92
 let scmnr.4337 = {'type': 'git', 'url': 'git://github.com/Chiel92/vim-autoformat'}
