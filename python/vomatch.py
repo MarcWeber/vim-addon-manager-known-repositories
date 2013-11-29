@@ -134,11 +134,28 @@ class Match(object):
 
 class VCSMatch(Match):
     '''Base class for strings like “svn checkout {url}”/“hg clone {url}”/etc'''
+
+    url_norm_subs = ()
+    scm_url_norm_subs = ()
+
     def __init__(self, *args, **kwargs):
         super(VCSMatch, self).__init__(*args, **kwargs)
         self.scm_url = self.match.group(1)
+        self.normalize_urls()
         self.name = self.scm_url.rpartition('/')[-1]
+
+    def normalize_urls(self):
+        '''Transform some URLs so that they are not different from Github/BitbucketMatch
+
+        Relies on the list of pairs (regex, substitute) located in self.url_norm_subs (for self.url) 
+        and self.scm_url_norm_subs (for self.scm_url). Normally it is used to transform something 
+        like “http://github.com/author/repo.git” into “git://github.com/author/repo”.
+        '''
+        for reg, rep in self.scm_url_norm_subs:
+            self.scm_url = reg.subn(rep, self.scm_url)[0]
         self.url = self.scm_url
+        for reg, rep in self.url_norm_subs:
+            self.url = reg.subn(rep, self.url)[0]
 
 
 class MercurialMatch(VCSMatch):
@@ -178,6 +195,11 @@ class SubversionMatch(VCSMatch):
 
 class GitMatch(VCSMatch):
     '''Matches “git checkout {url}”'''
+    scm_url_norm_subs = (
+        (re.compile('^\w+://(?:git@)?github\.com[/:]([^/]+)/([^/]+?)(?:\.git)?(?:/.*)?$'),
+         r'git://github.com/\1/\2'),
+    )
+
     re = git_url
 
     scm = 'git'
