@@ -254,7 +254,7 @@ def isexpected(fname):
 
 # Directories corresponding to plugin types on www.vim.org
 vodirs = {'plugin', 'colors', 'ftplugin', 'indent', 'syntax'}
-def check_candidate_with_file_list(vofiles, files, prefix=None):
+def compare_file_lists(vofiles, files, prefix=None):
     expvofiles = {fname for fname in vofiles if isexpected(fname)}
     vimvofiles = {fname for fname in expvofiles if isvimvofile(fname)}
     vimfiles = {fname for fname in files if isvimvofile(fname)}
@@ -286,7 +286,7 @@ def check_candidate_with_file_list(vofiles, files, prefix=None):
                 and all((part[1] for part in vofileparts))):
             logger.info('>>>> Trying to match with leading path component removed: %s'
                     % leadingdir)
-            return check_candidate_with_file_list(
+            return compare_file_lists(
                 {part[-1] for part in vofileparts},
                 files,
                 leadingdir,

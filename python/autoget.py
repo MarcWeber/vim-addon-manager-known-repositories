@@ -37,7 +37,7 @@ sys.path.append(os.path.dirname(__file__))
 import list_hg_files as lshg
 import list_github_files as lsgh
 
-from vimorg import (getdb, get_file_list, check_candidate_with_file_list, get_voinfo_hash,
+from vimorg import (getdb, get_file_list, compare_file_lists, get_voinfo_hash,
                     update_vo_cache, get_vo_cache)
 from vomatch import (NotLoggedError, update_scm_cache, get_scm_cache, find_repo_candidate,
                      set_remote_parser, scm_matches, get_scm_file_list)
@@ -299,7 +299,7 @@ def annotate_scmsources():
                     match = url_regex.match(url)
                     candidate = scm_matches[scm](match, voinfo)
                     files = get_scm_file_list(candidate)
-                    prefix, key2 = check_candidate_with_file_list(vofiles, files)
+                    prefix, key2 = compare_file_lists(vofiles, files)
                     write(' ' if key2 else 'F')
                     numcolumns -= 1
                 else:

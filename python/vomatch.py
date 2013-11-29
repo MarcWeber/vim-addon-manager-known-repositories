@@ -6,7 +6,7 @@ import httplib
 import logging
 import re
 
-from vimorg import get_file_list, check_candidate_with_file_list
+from vimorg import get_file_list, compare_file_lists
 
 import list_hg_files as lshg
 import list_git_files as lsgit
@@ -514,7 +514,7 @@ def find_repo_candidate(voinfo, vofiles=None):
         try:
             files = get_scm_file_list(candidate)
             logger.info('>>> Repository files: {0!r}'.format(files))
-            prefix, score = check_candidate_with_file_list(vofiles, files)
+            prefix, score = compare_file_lists(vofiles, files)
         except NotLoggedError:
             pass
         except Exception as e:
