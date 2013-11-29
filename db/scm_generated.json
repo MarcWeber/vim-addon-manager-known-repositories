@@ -753,7 +753,7 @@
   },
   "2981": {
     "type": "git",
-    "url": "http://github.com/mattn/emmet-vim.git"
+    "url": "git://github.com/mattn/emmet-vim"
   },
   "2989": {
     "type": "git",
@@ -769,7 +769,7 @@
   },
   "2999": {
     "type": "git",
-    "url": "git://github.com/mjbrownie/django-template-textobjects.git"
+    "url": "git://github.com/mjbrownie/django-template-textobjects"
   },
   "3000": {
     "type": "git",
@@ -1673,7 +1673,7 @@
   },
   "3790": {
     "type": "git",
-    "url": "http://github.com/mattn/sonictemplate-vim.git"
+    "url": "git://github.com/mattn/sonictemplate-vim"
   },
   "3804": {
     "type": "git",
@@ -1689,7 +1689,7 @@
   },
   "3819": {
     "type": "git",
-    "url": "http://github.com/mattn/lisper-vim.git"
+    "url": "git://github.com/mattn/lisper-vim"
   },
   "3820": {
     "type": "git",
