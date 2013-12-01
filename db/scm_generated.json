@@ -3251,6 +3251,10 @@
     "type": "git",
     "url": "git://github.com/oinksoft/npm.vim"
   },
+  "4785": {
+    "type": "git",
+    "url": "git://github.com/junegunn/goyo.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
