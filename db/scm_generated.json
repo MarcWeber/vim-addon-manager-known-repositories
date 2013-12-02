@@ -539,6 +539,10 @@
     "type": "git",
     "url": "git://github.com/ervandew/screen"
   },
+  "2713": {
+    "type": "git",
+    "url": "git://github.com/chilicuil/nextCS"
+  },
   "2714": {
     "type": "hg",
     "url": "https://bitbucket.org/abudden/tagsignature"
