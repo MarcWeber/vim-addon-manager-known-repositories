@@ -129,7 +129,14 @@ class FileListers:
     @staticmethod
     def zip(AF):
         # ZipFile requires seek
-        return set(zipfile.ZipFile(io.BytesIO(AF.read())).namelist())
+        zf = zipfile.ZipFile(io.BytesIO(AF.read()))
+        ret = set(zf.namelist())
+        if len(ret) == 1:
+            fname = next(iter(ret))
+            if '/' not in fname and hasattr(FileListers, get_ext(fname)):
+                logger.debug('>>>> Assuming somebody packed an archive ({0}) into a zip file'.format(fname))
+                return zf.open(fname)
+        return ret
 
     @staticmethod
     def vmb(AF):
