@@ -3259,6 +3259,10 @@
     "type": "git",
     "url": "git://github.com/junegunn/goyo.vim"
   },
+  "4786": {
+    "type": "git",
+    "url": "git://github.com/QianChenglong/vim-update-time"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
