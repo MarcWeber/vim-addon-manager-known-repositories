@@ -14809,5 +14809,14 @@
    ],
    "4786" : [
       "update-time"
+   ],
+   "4787" : [
+      "vim-svngutter"
+   ],
+   "4788" : [
+      "Vim-Kompleter"
+   ],
+   "4789" : [
+      "Vim-CtrlSpace"
    ]
 }
