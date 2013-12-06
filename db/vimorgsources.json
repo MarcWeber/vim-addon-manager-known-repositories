@@ -9,7 +9,7 @@
 "RPN":{"archive_name":"rpn.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21104","version":"1.0","vim_script_nr":4781},
 "bashizzle":{"archive_name":"bashizzle.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21116","version":"0.66","vim_script_nr":4780},
 "vim-slamhound":{"archive_name":"vim-slamhound.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21098","version":"1","vim_script_nr":4779},
-"QFEnter":{"archive_name":"QFEnter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21163","version":"1.1.0","vim_script_nr":4778},
+"QFEnter":{"archive_name":"QFEnter-1.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21165","version":"1.1.1","vim_script_nr":4778},
 "repeatableMapping":{"archive_name":"repeatableMapping-2.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21094","version":"2.00","vim_script_nr":4777},
 "Projx":{"archive_name":"projx.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21100","version":"1.1","vim_script_nr":4776},
 "tex-breqn":{"archive_name":"tex-breqn-0.1.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21078","version":"0.1","vim_script_nr":4775},
