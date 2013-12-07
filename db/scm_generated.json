@@ -391,6 +391,10 @@
     "type": "git",
     "url": "git://github.com/mattn/gist-vim"
   },
+  "2424": {
+    "type": "git",
+    "url": "git://github.com/oinksoft/transmit.vim"
+  },
   "2425": {
     "type": "git",
     "url": "git://github.com/kana/vim-arpeggio"
@@ -498,6 +502,10 @@
   "2627": {
     "type": "git",
     "url": "git://github.com/exdev/exvim"
+  },
+  "2628": {
+    "type": "git",
+    "url": "git://github.com/jcfaria/Vim-R-plugin"
   },
   "2632": {
     "type": "git",
@@ -666,6 +674,10 @@
   "2869": {
     "type": "git",
     "url": "git://github.com/dmcinnes/ruby_single_test"
+  },
+  "2877": {
+    "type": "hg",
+    "url": "http://code.google.com/p/spinner-vim-plugin"
   },
   "2881": {
     "type": "git",
@@ -991,6 +1003,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/tartley/vim_run_python_tests"
   },
+  "3284": {
+    "type": "git",
+    "url": "git://github.com/kurkale6ka/vim-pairs"
+  },
   "3285": {
     "type": "hg",
     "url": "https://bitbucket.org/sharat87/vim-looks"
@@ -1230,6 +1246,10 @@
   "3454": {
     "type": "git",
     "url": "git://github.com/fousa/vim-flog"
+  },
+  "3455": {
+    "type": "git",
+    "url": "git://github.com/mbadran/headlights"
   },
   "3457": {
     "type": "git",
@@ -1619,6 +1639,10 @@
     "type": "git",
     "url": "git://github.com/AndrewRadev/linediff.vim"
   },
+  "3746": {
+    "type": "git",
+    "url": "git://github.com/avakarev/vim-watchdog"
+  },
   "3750": {
     "type": "git",
     "url": "git://github.com/LStinson/TclShell-Vim"
@@ -1854,6 +1878,10 @@
   "3934": {
     "type": "git",
     "url": "git://github.com/editorconfig/editorconfig-vim"
+  },
+  "3938": {
+    "type": "git",
+    "url": "git://github.com/csexton/trailertrash.vim"
   },
   "3939": {
     "type": "git",
@@ -2115,9 +2143,17 @@
     "type": "git",
     "url": "git://github.com/sandeepravi/refactor-rails.vim"
   },
+  "4142": {
+    "type": "git",
+    "url": "https://bitbucket.org/madevgeny/fastfileselector"
+  },
   "4143": {
     "type": "git",
     "url": "git://github.com/sanpii/seeks.vim"
+  },
+  "4144": {
+    "type": "git",
+    "url": "git://github.com/tacahiroy/vim-logaling"
   },
   "4145": {
     "type": "git",
@@ -2387,6 +2423,10 @@
     "type": "git",
     "url": "git://github.com/AndrewRadev/whitespaste.vim"
   },
+  "4353": {
+    "type": "git",
+    "url": "git://github.com/aklt/vim-line_length"
+  },
   "4354": {
     "type": "git",
     "url": "git://github.com/Yggdroot/indentLine"
@@ -2467,6 +2507,10 @@
     "type": "git",
     "url": "git://github.com/teranex/jk-jumps.vim"
   },
+  "4400": {
+    "type": "git",
+    "url": "git://github.com/gcmt/tube.vim"
+  },
   "4401": {
     "type": "git",
     "url": "git://github.com/gnujeremie/colorscheme-gnujeremie"
@@ -2534,6 +2578,10 @@
   "4434": {
     "type": "git",
     "url": "git://github.com/someboddy/vim-erroneous"
+  },
+  "4436": {
+    "type": "git",
+    "url": "git://github.com/gcmt/psearch.vim"
   },
   "4438": {
     "type": "git",
@@ -2663,6 +2711,10 @@
     "type": "git",
     "url": "git://github.com/nielsmadan/mercury"
   },
+  "4493": {
+    "type": "git",
+    "url": "git://github.com/evindor/vim-rusmode"
+  },
   "4494": {
     "type": "git",
     "url": "git://github.com/jaxbot/brolink.vim"
@@ -2731,6 +2783,10 @@
     "type": "git",
     "url": "git://github.com/sollidsnake/verun"
   },
+  "4523": {
+    "type": "git",
+    "url": "git://github.com/terryma/vim-multiple-cursors"
+  },
   "4524": {
     "type": "git",
     "url": "git://github.com/xuhdev/vim-latex-live-preview"
@@ -2750,6 +2806,10 @@
   "4535": {
     "type": "git",
     "url": "git://github.com/szw/vim-smartclose"
+  },
+  "4539": {
+    "type": "git",
+    "url": "git://github.com/amiorin/vim-bookmarks"
   },
   "4540": {
     "type": "git",
@@ -2838,6 +2898,10 @@
   "4591": {
     "type": "git",
     "url": "git://github.com/jimsei/winresizer"
+  },
+  "4592": {
+    "type": "git",
+    "url": "git://github.com/tacahiroy/ctrlp-funky"
   },
   "4593": {
     "type": "git",
