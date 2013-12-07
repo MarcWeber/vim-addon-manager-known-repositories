@@ -315,13 +315,18 @@ class CodeGoogleMatch(Match):
                 # FIXME detect directory
                 # Plugin for which detection is useful: #2805
                 self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
-                self.files = set(lssvn.list_svn_files(self.scm_url))
-                self.info('Subversion files: {0!r}'.format(self.files))
-                trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
-                if trunkfiles:
-                    self.scm_url += '/trunk'
-                    self.files = trunkfiles
-                    self.info('Found trunk/ directory, leaving only files in there: {0!r}'.format(self.files))
+                scm_cache = get_scm_cache()
+                try:
+                    self.files = scm_cache[self.scm_url]
+                    self.debug('Obtained file list from cache for URL {0}'.format(self.scm_url))
+                except KeyError:
+                    self.files = set(lssvn.list_svn_files(self.scm_url))
+                    self.info('Subversion files: {0!r}'.format(self.files))
+                    trunkfiles = {tf[6:] for tf in self.files if tf.startswith('trunk/')}
+                    if trunkfiles:
+                        self.scm_url += '/trunk'
+                        self.files = trunkfiles
+                        self.info('Found trunk/ directory, leaving only files in there: {0!r}'.format(self.files))
                 self.scm = 'svn'
         else:
             self.files = set(next(iter(parsing_result['tips'])).files)
