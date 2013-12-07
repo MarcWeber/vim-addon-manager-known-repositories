@@ -450,7 +450,8 @@ if __name__ == '__main__':
         with open(cache_name, 'w') as CF:
             pickle.dump((scm_cache, vo_cache), CF)
 
-    if write_db and not args.dry_run:
+    if write_db and not args.dry_run and 'scm_generated' in locals():
+        # FIXME: Should actually handle KeyboardInterrupt in main()
         with open(scm_generated_name, 'w') as SGF:
             dump_json(scm_generated, SGF)
 
