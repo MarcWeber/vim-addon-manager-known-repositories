@@ -3263,6 +3263,10 @@
     "type": "git",
     "url": "git://github.com/QianChenglong/vim-update-time"
   },
+  "4789": {
+    "type": "git",
+    "url": "git://github.com/szw/vim-ctrlspace"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
