@@ -93,24 +93,24 @@ class FileListers:
     @staticmethod
     def gz(AF):
         # GzipFile requires tell
-        return gzip.GzipFile(fileobj=io.BytesIO(AF.read()))
+        return io.BytesIO(gzip.GzipFile(fileobj=AF).read())
 
     @staticmethod
     def bz2(AF):
-        return io.BytesIO(bz2.decompress(AF.read()))
+        return io.BytesIO(bz2.decompress(AF))
 
     @staticmethod
     def lzma(AF):
-        return lzma.LZMAFile(AF)
+        return io.BytesIO(lzma.LZMAFile(AF).read())
 
     @staticmethod
     def xz(AF):
-        return lzma.LZMAFile(AF)
+        return io.BytesIO(lzma.LZMAFile(AF).read())
 
     @staticmethod
     def tar(AF):
         # tar requires tell on its own
-        return set(get_tar_names(tarfile.TarFile(fileobj=io.BytesIO(AF.read()))))
+        return set(get_tar_names(tarfile.TarFile(fileobj=AF)))
 
     @staticmethod
     def tgz(AF):
@@ -129,13 +129,13 @@ class FileListers:
     @staticmethod
     def zip(AF):
         # ZipFile requires seek
-        zf = zipfile.ZipFile(io.BytesIO(AF.read()))
+        zf = zipfile.ZipFile(AF)
         ret = set(zf.namelist())
         if len(ret) == 1:
             fname = next(iter(ret))
             if '/' not in fname and hasattr(FileListers, get_ext(fname)):
                 logger.debug('>>>> Assuming somebody packed an archive ({0}) into a zip file'.format(fname))
-                return zf.open(fname)
+                return io.BytesIO(zf.open(fname).read())
         return ret
 
     @staticmethod
@@ -177,7 +177,9 @@ def find_mime(AF):
         _magic = magic.open(magic.MAGIC_MIME_TYPE)
         _magic.load('/usr/share/misc/magic.mgc')
     af = AF.read()
-    return io.BytesIO(af), mime_to_ext[_magic.buffer(af)]
+    mime = _magic.buffer(af)
+    logger.info('>>>> Deduced mime extension: {0}'.format(mime))
+    return io.BytesIO(af), mime_to_ext[mime]
 
 
 def _get_file_list(AF, ext, aname, had_to_guess=False):
