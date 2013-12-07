@@ -224,7 +224,8 @@ def get_file_list(voinfo):
     if ext == 'vim':
         ret = {guess_fix_dir(voinfo) + '/' + aname}
     elif ext in FileListers.__dict__:
-        ret = set(_get_file_list(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname))
+        ret = {fname for fname in _get_file_list(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname)
+                         if not fname.startswith('__MACOSX')}
     else:
         raise ValueError('Unknown extension')
     _downloaded_URLs[aurl] = ret
