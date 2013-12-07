@@ -364,8 +364,10 @@ if __name__ == '__main__':
     p.add_argument('-c', '--use-cache', action='store_const', const=True,
             help='use cache with vim.org archive contents and contents of various SCM sources. '
                  'Cache will be stored in ./cache.pickle')
+    p.add_argument('-w', '--write-cache', action='store_const', const=True,
+            help='update cache at exit, but do not use it')
     p.add_argument('-i', '--interrupt-write', action='store_const', const=True,
-            help='Do writes (cache and database updates) after KeyboardInterrupt')
+            help='do writes (cache and database updates) after KeyboardInterrupt')
 
     args = p.parse_args()
 
@@ -391,12 +393,13 @@ if __name__ == '__main__':
     if (args.sids or args.recheck or args.last):
         args.no_descriptions = True
 
-    if args.use_cache:
+    if args.use_cache or args.write_cache:
         try:
             with open(cache_name) as CF:
                 scm_cache, vo_cache = pickle.load(CF)
-                update_scm_cache(scm_cache)
-                update_vo_cache(vo_cache)
+                if args.use_cache:
+                    update_scm_cache(scm_cache)
+                    update_vo_cache(vo_cache)
         except IOError:
             pass
 
@@ -434,9 +437,15 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         pass
 
-    if write_cache and args.use_cache:
+    if write_cache and (args.use_cache or args.write_cache):
+        if args.use_cache:
+            scm_cache = get_scm_cache()
+            vo_cache = get_vo_cache()
+        else:
+            scm_cache.update(get_scm_cache())
+            vo_cache.update(get_vo_cache())
         with open(cache_name, 'w') as CF:
-            pickle.dump((get_scm_cache(), get_vo_cache()), CF)
+            pickle.dump((scm_cache, vo_cache), CF)
 
     if write_db and not args.dry_run:
         with open(scm_generated_name, 'w') as SGF:
