@@ -763,6 +763,10 @@
     "type": "git",
     "url": "git://github.com/mikezackles/Bisect"
   },
+  "2962": {
+    "type": "git",
+    "url": "git://github.com/Shadowfiend/liftweb-vim"
+  },
   "2973": {
     "type": "git",
     "url": "git://github.com/tpope/vim-cucumber"
