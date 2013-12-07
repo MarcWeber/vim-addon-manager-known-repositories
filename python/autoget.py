@@ -371,9 +371,12 @@ if __name__ == '__main__':
 
     args = p.parse_args()
 
-    if (args.interrupt_write and (args.dry_run and not args.use_cache)):
+    if (args.interrupt_write and (args.dry_run and not (args.use_cache or args.write_cache))):
         raise ValueError('Nothing to write on interrupt: you should either omit --dry-run or '
-                'use --use-cache')
+                'use --use-cache or --write-cache')
+
+    if args.write_cache and args.use_cache:
+        raise ValueError('Using both --write-cache and --use-cache makes no sense')
 
     if (args.dry_run and args.annotate_scmsources):
         raise ValueError('--dry-run is doing nothing for --annotate-scmsources')
