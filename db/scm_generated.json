@@ -3331,6 +3331,10 @@
     "type": "git",
     "url": "git://github.com/QianChenglong/vim-update-time"
   },
+  "4788": {
+    "type": "git",
+    "url": "git://github.com/szw/vim-kompleter"
+  },
   "4789": {
     "type": "git",
     "url": "git://github.com/szw/vim-ctrlspace"
