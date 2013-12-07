@@ -149,7 +149,7 @@ class VCSMatch(Match):
 
         Relies on the list of pairs (regex, substitute) located in self.url_norm_subs (for self.url) 
         and self.scm_url_norm_subs (for self.scm_url). Normally it is used to transform something 
-        like “http://github.com/author/repo.git” into “git://github.com/author/repo”.
+        like “https://github.com/author/repo.git” into “git://github.com/author/repo”.
         '''
         for reg, rep in self.scm_url_norm_subs:
             self.scm_url = reg.subn(rep, self.scm_url)[0]
@@ -297,7 +297,7 @@ class CodeGoogleMatch(Match):
         super(CodeGoogleMatch, self).__init__(*args, **kwargs)
         self.name = self.match.group(2)
         urlpart = self.match.group(1) + '/' + self.match.group(2)
-        url = 'http://code.google.com/' + urlpart
+        url = 'https://code.google.com/' + urlpart
         self.scm_url = url
         self.url = url
 
@@ -314,7 +314,7 @@ class CodeGoogleMatch(Match):
                 self.info('Checking whether {0} is a subversion repository'.format(self.scm_url))
                 # FIXME detect directory
                 # Plugin for which detection is useful: #2805
-                self.scm_url = 'http://' + self.name + '.googlecode.com/svn'
+                self.scm_url = 'https://' + self.name + '.googlecode.com/svn'
                 scm_cache = get_scm_cache()
                 try:
                     self.files = scm_cache[self.scm_url]
