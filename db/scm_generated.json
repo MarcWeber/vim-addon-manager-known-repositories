@@ -283,6 +283,10 @@
     "type": "git",
     "url": "git://github.com/mjbrownie/Trac.vim"
   },
+  "2157": {
+    "type": "svn",
+    "url": "http://altfile.googlecode.com/svn/trunk"
+  },
   "2179": {
     "type": "git",
     "url": "git://github.com/wesleyche/SrcExpl"
@@ -677,7 +681,7 @@
   },
   "2877": {
     "type": "hg",
-    "url": "http://code.google.com/p/spinner-vim-plugin"
+    "url": "https://code.google.com/p/spinner-vim-plugin"
   },
   "2881": {
     "type": "git",
@@ -966,6 +970,10 @@
   "3219": {
     "type": "hg",
     "url": "https://bitbucket.org/xuhdev/projecttag"
+  },
+  "3220": {
+    "type": "git",
+    "url": "git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim"
   },
   "3227": {
     "type": "git",
@@ -1525,7 +1533,7 @@
   },
   "3643": {
     "type": "hg",
-    "url": "http://code.google.com/p/vimper"
+    "url": "https://code.google.com/p/vimper"
   },
   "3646": {
     "type": "git",
@@ -1870,6 +1878,10 @@
   "3896": {
     "type": "git",
     "url": "git://github.com/sandeepcr529/Buffet.vim"
+  },
+  "3898": {
+    "type": "git",
+    "url": "https://bitbucket.org/aliva/vim-gtk-mode"
   },
   "3900": {
     "type": "git",
@@ -3154,6 +3166,10 @@
   "4698": {
     "type": "git",
     "url": "git://github.com/sincebasic/nextfile.vim"
+  },
+  "4703": {
+    "type": "git",
+    "url": "git://github.com/gcmt/tag-surfer"
   },
   "4706": {
     "type": "git",
