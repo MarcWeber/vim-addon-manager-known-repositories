@@ -96,6 +96,8 @@ let patch_repo.3874={'deprecated': "This script is no longer supported. Please u
 let patch_repo.287 ={'deprecated': "This script has been retired. You should use #273"}
 let patch_repo.2765={'deprecated': "Maintainer has changed. You should use #4452 (vim-javascript) now"}
 
+let patch_repo.3102={'deprecated': "Author recommends using other plugin installers and states that this one is kept only for historical reasons"}
+
 let patch_repo.2554={'deprecated': "Author says it is buggy and thus should not be used"}
 
 let patch_repo.2850={'deprecated': "Functionality of this plugin is present in current NERDTree version"}

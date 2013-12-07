@@ -931,6 +931,10 @@
     "type": "git",
     "url": "git://github.com/xolox/vim-lua-inspect"
   },
+  "3173": {
+    "type": "hg",
+    "url": "https://code.google.com/p/vimgcwsyntax"
+  },
   "3197": {
     "type": "git",
     "url": "git://github.com/tyru/current-func-info.vim"
@@ -1827,6 +1831,14 @@
     "type": "git",
     "url": "git://github.com/Rykka/easydigraph.vim"
   },
+  "3883": {
+    "type": "hg",
+    "url": "https://code.google.com/p/vim-plugin-autosess"
+  },
+  "3885": {
+    "type": "hg",
+    "url": "https://code.google.com/p/vim-plugin-ruscmd"
+  },
   "3886": {
     "type": "git",
     "url": "git://github.com/kana/vim-textobj-line"
@@ -1850,6 +1862,10 @@
   "3892": {
     "type": "git",
     "url": "git://github.com/kana/vim-gf-diff"
+  },
+  "3893": {
+    "type": "hg",
+    "url": "https://code.google.com/p/vim-plugin-viewdoc"
   },
   "3896": {
     "type": "git",
@@ -2746,6 +2762,10 @@
   "4504": {
     "type": "git",
     "url": "git://github.com/tpope/vim-dispatch"
+  },
+  "4505": {
+    "type": "hg",
+    "url": "http://vim-autohide-plugin.googlecode.com"
   },
   "4506": {
     "type": "git",

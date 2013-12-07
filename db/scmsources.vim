@@ -530,11 +530,6 @@ let scmnr.3161 = {'type': 'git', 'url': 'git://github.com/nvie/vim-pyflakes'}
 let scmnr.3166 = {'type': 'git', 'url': 'git://github.com/nvie/vim-togglemouse'}
 let scmnr.3927 = {'type': 'git', 'url': 'git://github.com/nvie/vim-flake8'}
 
-" Silas Silva
-let scmnr.3173 = {'type': 'hg', 'url': 'https://code.google.com/p/vimgcwsyntax'}
-" The following is not a vim plugin, but it is posted on vim.org:
-let scmnr.3102 = {'type': 'git', 'url': 'git://github.com/silasdb/vplinst'}
-
 " Dmitry Frank
 let scmnr.3221 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/indexer_stable'}
 let scmnr.3884 = {'type': 'hg', 'url': 'http://hg.dfrank.ru/vim/bundle/dfrank_util'}
@@ -766,11 +761,6 @@ let scmnr.3863 = {'type': 'git', 'url': 'git://github.com/epegzz/epegzz.vim'}
 let scmnr.3881 = {'type': 'git', 'url': 'git://github.com/Lokaltog/vim-powerline'}
 let scm['powerline'] = {'type': 'git', 'url': 'git://github.com/Lokaltog/powerline', 'addon-info': {'runtimepath': 'powerline/bindings/vim'}}
 
-" Alex Efros
-let scmnr.3883 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-autosess'}
-let scmnr.3885 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-ruscmd'}
-let scmnr.3893 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-plugin-viewdoc'}
-
 " Roman Podolyaka
 let scmnr.3903 = {'type': 'git', 'url': 'git://github.com/bloodeclipse/vim-xsnippet'}
 
@@ -910,9 +900,6 @@ let scmnr.4498 = {'type': 'git', 'url': 'git://github.com/wyderkat/code_upstairs
 
 " Dhruva Sagar
 let scmnr.4501 = {'type': 'git', 'url': 'git://github.com/dhruvasagar/vim-table-mode'}
-
-" Ben Fritz
-let scmnr.4505 = {'type': 'hg', 'url': 'https://code.google.com/p/vim-autohide-plugin'}
 
 " Andreas Schneider
 let scmnr.4538 = {'type': 'git', 'url': 'git://git.cryptomilk.org/projects/vim-gitmodeline'}
