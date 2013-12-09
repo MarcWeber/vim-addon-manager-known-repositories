@@ -3375,6 +3375,10 @@
     "type": "git",
     "url": "git://github.com/szw/vim-ctrlspace"
   },
+  "4792": {
+    "type": "git",
+    "url": "git://github.com/sirbrillig/netgrep"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
