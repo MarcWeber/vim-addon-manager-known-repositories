@@ -244,6 +244,7 @@ let scm['vim-ruby'] = {'type': 'git', 'url': 'git://github.com/vim-ruby/vim-ruby
 let scm['SmartTag'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/SmartTag'}
 let scm['vim-addon-text-objects'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-text-objects'}
 let scm['vim-haxe-syntax'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-haxe-syntax'}
+let scm['vim-addon-qf-layout'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/vim-addon-qf-layout'}
 " There was key {'branch': 'master-vim-cleaned-up'}, but it is not processed
 " anywhere thus removed
 let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
