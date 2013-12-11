@@ -1,4 +1,6 @@
 {
+"ExtractMatches":{"archive_name":"ExtractMatches-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21184","version":"1.00","vim_script_nr":4795},
+"AddCppClass_Plus":{"archive_name":"AddCppClass_Plus.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21183","version":"1.0","vim_script_nr":4794},
 "easydir":{"archive_name":"easydir.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21179","version":"1.0.0","vim_script_nr":4793},
 "netgrep":{"archive_name":"netgrep-1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21178","version":"1.0","vim_script_nr":4792},
 "SwissCalc":{"archive_name":"SwissCalc.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21170","version":"1.0.0","vim_script_nr":4791},
@@ -189,7 +191,7 @@
 "PatternsOnText":{"archive_name":"PatternsOnText-1.12.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21083","version":"1.12","vim_script_nr":4602},
 "grails-conque":{"archive_name":"grails-conque.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20353","version":"0.4","vim_script_nr":4601},
 "Sprunge_Paste_Upload":{"archive_name":"sprunge.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20224","version":"0.1","vim_script_nr":4600},
-"videm":{"archive_name":"videm-1014-build20131208.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21174","version":"1.014","vim_script_nr":4599},
+"videm":{"archive_name":"videm-1015-build20131211.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21185","version":"1.015","vim_script_nr":4599},
 "rainbow_csv":{"archive_name":"rainbow_csv.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20204","version":"1.0","vim_script_nr":4598},
 "vim-misc":{"archive_name":"misc.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20548","version":"1.8.5","vim_script_nr":4597},
 "verilog_auto_testbench":{"archive_name":"testbench-2.4.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20759","version":"2.4","vim_script_nr":4596},

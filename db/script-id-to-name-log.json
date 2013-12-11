@@ -14831,5 +14831,11 @@
    ],
    "4793" : [
       "easydir"
+   ],
+   "4794" : [
+      "AddCppClass_Plus"
+   ],
+   "4795" : [
+      "ExtractMatches"
    ]
 }
