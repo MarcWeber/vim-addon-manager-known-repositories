@@ -108,7 +108,7 @@
 "move":{"archive_name":"vim-move-1.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20642","version":"1.2","vim_script_nr":4687},
 "Crunch":{"archive_name":"crunch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21047","version":"2.0","vim_script_nr":4686},
 "logpad-plus-duration":{"archive_name":"logpad.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20613","version":"1.0","vim_script_nr":4685},
-"EasyClip":{"archive_name":"vim-easyclip.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21166","version":"2.1","vim_script_nr":4684},
+"EasyClip":{"archive_name":"vim-easy-clip-2.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21189","version":"2.1","vim_script_nr":4684},
 "playroom":{"archive_name":"playroom.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20609","version":"0.1","vim_script_nr":4683},
 "jshint2":{"archive_name":"jshint2.vim-0.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20945","version":"0.3","vim_script_nr":4682},
 "Pretty_Args":{"archive_name":"pretty_args.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20633","version":"2","vim_script_nr":4681},
