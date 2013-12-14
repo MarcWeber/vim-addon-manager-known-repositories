@@ -3379,6 +3379,14 @@
     "type": "git",
     "url": "git://github.com/sirbrillig/netgrep"
   },
+  "4796": {
+    "type": "git",
+    "url": "git://github.com/smilekzs/vim-nfo"
+  },
+  "4797": {
+    "type": "git",
+    "url": "git://github.com/DavidEGx/ctrlp-smarttabs"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

@@ -1,4 +1,7 @@
 {
+"swamplight":{"archive_name":"swamplight.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21192","version":"1.0","vim_script_nr":4798},
+"CtrlP-SmartTabs":{"archive_name":"ctrlp-smarttabs.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21191","version":"0.1","vim_script_nr":4797},
+"vim-nfo":{"archive_name":"vim-nfo.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21190","version":"0.1.0","vim_script_nr":4796},
 "ExtractMatches":{"archive_name":"ExtractMatches-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21184","version":"1.00","vim_script_nr":4795},
 "AddCppClass_Plus":{"archive_name":"AddCppClass_Plus.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21183","version":"1.0","vim_script_nr":4794},
 "easydir":{"archive_name":"easydir.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21179","version":"1.0.0","vim_script_nr":4793},
@@ -824,7 +827,7 @@
 "tagport":{"archive_name":"tagport.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17376","version":"0.2","vim_script_nr":3917},
 "vim-addon-haskell":{"archive_name":"vim-addon-haskell.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17361","version":"0.1","vim_script_nr":3916},
 "CamelCaseComplete":{"archive_name":"CamelCaseComplete.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17359","version":"1.00","vim_script_nr":3915},
-"CompleteHelper":{"archive_name":"CompleteHelper-1.31.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19603","version":"1.31","vim_script_nr":3914},
+"CompleteHelper":{"archive_name":"CompleteHelper-1.32.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21193","version":"1.32","vim_script_nr":3914},
 "CapsulaPigmentorum":{"archive_name":"CapsulaPigmentorum.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17337","version":"0.1","vim_script_nr":3913},
 "toggle_comment":{"archive_name":"toggle_comment.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19498","version":"1.7","vim_script_nr":3912},
 "vim-punto-switcher":{"archive_name":"vim-punto-switcher-1.00.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17333","version":"1.00","vim_script_nr":3911},

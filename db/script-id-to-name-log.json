@@ -14837,5 +14837,14 @@
    ],
    "4795" : [
       "ExtractMatches"
+   ],
+   "4796" : [
+      "vim-nfo"
+   ],
+   "4797" : [
+      "CtrlP-SmartTabs"
+   ],
+   "4798" : [
+      "swamplight"
    ]
 }
