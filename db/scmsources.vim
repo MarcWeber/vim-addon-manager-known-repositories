@@ -925,6 +925,9 @@ let scmnr.4731 = {'type': 'git', 'url': 'git://github.com/jalcine/cmake.vim'}
 " Adam Stankiewicz
 let scmnr.4721 = {'type': 'git', 'url': 'git://github.com/sheerun/vim-polyglot'}
 
+" light xue
+let scmnr.4791 = {'type': 'git', 'url': 'git://github.com/lightxue/SwissCalc'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " David Briscoe
