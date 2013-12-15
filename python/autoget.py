@@ -1,22 +1,84 @@
 #!/usr/bin/env python
 # vim:fileencoding=utf-8
 '''
-Utility that generates SCM URLs based on comparison of file lists generated
-from www.vim.org archives and repository URLs found in script descriptions
-or installation details found on www.vim.org.
+Utility for processing non-standardased data found on www.vim.org.
 
-Found SCM URLs are saved in ./db/scm_generated.json.
-List of script numbers which were checked, but with no result, is saved in
-./db/not_found.json.
-List of script numbers which should not be processed for some reason can be
-found in ./db/omitted.json.
+Usage:
+    autoget.py [-d] [-c | -w] last [-nif] <N>
+    autoget.py [-d] [-c | -w] new [-nDi]
+    autoget.py [-d] [-c | -w] recheck
+    autoget.py [-d] [-c | -w] scripts [-nif] <SID>...
+    autoget.py [-d] [-c | -w] annotate [--no-extra-check --print-other-candidate]
+    autoget.py -h | --help
 
-It uses these files and ./db/scmsources.vim to determine which scripts
-should not be rechecked.
+Options:
+    -h --help         Show this screen
+    -d --debug        Print additional output
 
-Vim.org archive URLs and plugin descriptions are obtained from dump found at
-http://www.vim.org/script-info.php. If there is file ./script-info.json it is
-used instead.
+    -c --use-cache    Use cache. Cache is located in ./cache.pickle.
+    -w --write-cache  Merge cache from ./cache.pickle with data obtained
+                      in the current run. Do not use cache from
+                      ./cache.pickle though.
+Commands:
+    last              Process last N script numbers.
+    scripts           Process given scripts.
+        -f --force    Normally autoget.py omits reprocessing scripts which were
+                      already processed. This option makes autoget.py process
+                      them regardless.
+                      Already processed scripts are scripts mentioned in
+                        ∙ ./db/scm_generated.json
+                        ∙ ./db/not_found.json
+                        ∙ ./db/scmsources.vim
+                        ∙ ./db/omitted.json
+
+    new               Check scripts with script numbers above the greatest number
+                      found in aforementioned list (list attached to -f argument).
+        -D --no-descriptions
+                      Do not check description hashes.
+
+    The following options are supported by “last”, “scripts” and “new” subcommands:
+        -n --dry-run  Do not write data to ./db/*.
+        -i --interrupt-write
+                      Write to ./db/* on interrupt.
+
+    recheck           Recheck contents of ./db/scm_generate.json.
+
+    annotate          Annotate scripts found in ./db/scmsources.vim.
+        -x --no-extra-check
+                      Do not check lines that contain information that autoget.py
+                      is not able to generate.
+        -p --print-other-candidate
+                      If autoget.py found candidate other then present in
+                      ./db/scmsources.vim print it.
+
+When searching for candidates autoget.py checks plugin description and
+installation details for common repository URL patterns. When such pattern
+is found it compares list of files present in given repository URL with
+the list of files present in www.vim.org archive. If lists match (exact match
+is not required) then URL is considered to point to VCS-managed version of
+the plugin.
+
+Files used by this utility:
+    ./db/scm_generated.json   Contains found candidates. This file is generated
+                              automatically.
+    ./db/not_found.json       Contains a list of script numbers which were
+                              processed, but with no candidates found. This file
+                              is generated automatically.
+    ./db/omitted.json         Contains a list of plugins which should not be
+                              processed by autoget.py. This file is populated
+                              manually.
+    ./db/scmsources.json      Contains SCM sources found by VAM-kr contributors.
+                              This file is populated manually.
+    ./db/description_hashes.json
+                              Contains hashes of description + installation
+                              details. Used to determine whether plugin
+                              description changed: when it changes autoget.py
+                              rechecks plugin.
+    ./cache.pickle            Contains cached lists of files.
+    ./script-info.json        Contains data downloaded from
+                              http://www.vim.org/script-info.php.
+                              If it is present then script uses it in place of
+                              downloading data from the above URL.
 
 Currently supports git, mercurial and subversion repositories.
 '''
@@ -31,6 +93,7 @@ import sys
 import argparse
 from functools import partial
 import pickle
+import docopt
 
 sys.path.append(os.path.dirname(__file__))
 
@@ -125,7 +188,7 @@ def process_voinfo(scm_generated, found, not_found, description_hashes, key, voi
                 logger.info('> Recording failure to find candidates for {0}'.format(key))
                 not_found.add(key)
             found.add(key)
-            if not args.no_descriptions:
+            if not args['--no-descriptions']:
                 description_hashes[key] = get_voinfo_hash(voinfo)
     except Exception as e:
         logger.exception(e)
@@ -152,7 +215,7 @@ def main():
     scm_generated = load_scmnrs_json(scmnrs, scm_generated_name)
     not_found     = load_scmnrs_json(scmnrs, not_found_name, set)
 
-    if not args.no_descriptions:
+    if not args['--no-descriptions']:
         try:
             with open(description_hashes_name) as DHF:
                 description_hashes = json.load(DHF)
@@ -161,11 +224,11 @@ def main():
     else:
         description_hashes = {}
 
-    if args.sids:
-        keys = args.sids
+    if args['scripts']:
+        keys = args['<SID>']
         not_found -= set(keys)
-    elif args.last:
-        i = args.last
+    elif args['last']:
+        i = args['last']
         _keys = reversed(sorted(db, key=int))
         keys = []
         while i:
@@ -177,20 +240,20 @@ def main():
     _process_voinfo = partial(process_voinfo, scm_generated,found,not_found,description_hashes)
     with lshg.MercurialRemoteParser() as remote_parser:
         set_remote_parser(remote_parser)
-        if args.recheck:
+        if args['recheck']:
             for key in scm_generated:
                 _process_voinfo(key, db[key], recheck=True)
         else:
             for key in keys:
-                if not args.force and key in scmnrs:
-                    if args.all_last:
+                if not args['--force'] and key in scmnrs:
+                    if args['new']:
                         break
                     else:
                         continue
                 logger.info('Considering key {0}'.format(key))
                 _process_voinfo(key, db[key])
 
-            if not args.no_descriptions:
+            if not args['--no-descriptions']:
                 logger.info('Starting descriptions check')
                 for key in keys:
                     voinfo = db[key]
@@ -258,7 +321,7 @@ def annotate_scmsources():
                 else:
                     write('X')
                     numcolumns -= 1
-                    if args.no_extra_check:
+                    if args['--no-extra-check']:
                         raise NotLoggedError
                     snr = line_snr_regex.search(line)
                     scm = line_scm_regex.search(line)
@@ -326,88 +389,29 @@ def annotate_scmsources():
             finally:
                 # XXX line ends with \n, thus not writing `+ '\n'` here.
                 write('│' + line)
-                if best_candidate and args.print_other_candidate:
+                if best_candidate and args['--print-other-candidate']:
                     write("-----C│let scmnr.%-4u = {'type': '%s', 'url': '%s'}\n"
                             % (int(snr), best_candidate.scm, best_candidate.scm_url))
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(
-            description=__doc__.partition('\n\n')[0],
-            epilog=__doc__.partition('\n\n')[-1],
-            formatter_class=argparse.RawDescriptionHelpFormatter
-        )
-    p.add_argument('-n', '--dry-run', action='store_const', const=True,
-            help='do not edit any files')
-    p.add_argument('-l', '--last', metavar='N', type=int,
-            help='process only last N script numbers. Implies -D')
-    p.add_argument('-a', '--all-last', action='store_const', const=True,
-            help='process scripts in reversed order until already processed script was not found')
-    p.add_argument('-D', '--no-descriptions', action='store_const', const=True,
-            help='do not check description hashes')
-    p.add_argument('-R', '--recheck', action='store_const', const=True,
-            help='recheck URLs found in scm_generated.json and report the result. '
-                 'Does not modify scm_generated.json. Implies -D')
-    p.add_argument('-f', '--force', action='store_const', const=True,
-            help='do not check whether given numbers were already processed')
-    p.add_argument('sids', nargs='*', metavar='SID',
-            help='process only this script. May be passed more then once. Also see --force. '
-                 'Implies -D')
-    p.add_argument('-d', '--debug', action='store_const', const=True,
-            help='enable a few more messages')
-    p.add_argument('-A', '--annotate-scmsources', action='store_const', const=True,
-            help='annotate db/scmsources.vim: shows which URLs can be deduced by autoget.py')
-    p.add_argument('-x', '--no-extra-check', action='store_const', const=True,
-            help='when annotating, do not check lines that contain extra information')
-    p.add_argument('-p', '--print-other-candidate', action='store_const', const=True,
-            help='when annotating, print candidates that were found')
-    p.add_argument('-c', '--use-cache', action='store_const', const=True,
-            help='use cache with vim.org archive contents and contents of various SCM sources. '
-                 'Cache will be stored in ./cache.pickle')
-    p.add_argument('-w', '--write-cache', action='store_const', const=True,
-            help='update cache at exit, but do not use it')
-    p.add_argument('-i', '--interrupt-write', action='store_const', const=True,
-            help='do writes (cache and database updates) after KeyboardInterrupt')
+    args = docopt.docopt(__doc__)
 
-    args = p.parse_args()
+    if (args['scripts'] or args['recheck'] or args['last']):
+        args['--no-descriptions'] = True
 
-    if (args.interrupt_write and (args.dry_run and not (args.use_cache or args.write_cache))):
-        raise ValueError('Nothing to write on interrupt: you should either omit --dry-run or '
-                'use --use-cache or --write-cache')
-
-    if args.write_cache and args.use_cache:
-        raise ValueError('Using both --write-cache and --use-cache makes no sense')
-
-    if (args.dry_run and args.annotate_scmsources):
-        raise ValueError('--dry-run is doing nothing for --annotate-scmsources')
-
-    if (args.no_extra_check or args.print_other_candidate) and not args.annotate_scmsources:
-        raise ValueError('--print-other-candidate and --no-extra-check can only be used with '
-                '--annotate-scmsources')
-
-    if (len(filter(None,
-        [args.sids, args.last, args.all_last, args.recheck, args.annotate_scmsources])) > 1):
-        raise ValueError('You may specify only one of sids, --recheck, --last, --all-last, '
-                '--annotate-scmsources at the time')
-
-    if (args.all_last and args.force):
-        raise ValueError('You may not specify both --force and --all-last')
-
-    if (args.sids or args.recheck or args.last):
-        args.no_descriptions = True
-
-    if args.use_cache or args.write_cache:
+    if args['--use-cache'] or args['--write-cache']:
         try:
             with open(cache_name) as CF:
                 scm_cache, vo_cache = pickle.load(CF)
-                if args.use_cache:
+                if args['--use-cache']:
                     update_scm_cache(scm_cache)
                     update_vo_cache(vo_cache)
         except IOError:
             pass
 
     root_logger = logging.getLogger()
-    root_logger.setLevel(logging.DEBUG if args.debug else logging.INFO)
+    root_logger.setLevel(logging.DEBUG if args['--debug'] else logging.INFO)
     handler = logging.StreamHandler()
     root_logger.addHandler(handler)
 
@@ -422,13 +426,13 @@ if __name__ == '__main__':
     write_cache = False
     write_db = False
     try:
-        if args.annotate_scmsources:
-            if args.interrupt_write:
+        if args['annotate']:
+            if args['--interrupt-write']:
                 write_cache = True
             annotate_scmsources()
             write_cache = True
         else:
-            if args.interrupt_write:
+            if args['--interrupt-write']:
                 write_cache = True
                 write_db = True
             scm_generated, not_found, description_hashes = main()
@@ -440,8 +444,8 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         pass
 
-    if write_cache and (args.use_cache or args.write_cache):
-        if args.use_cache:
+    if write_cache and (args['--use-cache'] or args['--write-cache']):
+        if args['--use-cache']:
             scm_cache = get_scm_cache()
             vo_cache = get_vo_cache()
         else:
@@ -450,7 +454,7 @@ if __name__ == '__main__':
         with open(cache_name, 'w') as CF:
             pickle.dump((scm_cache, vo_cache), CF)
 
-    if write_db and not args.dry_run and 'scm_generated' in locals():
+    if write_db and not args['--dry-run'] and 'scm_generated' in locals():
         # FIXME: Should actually handle KeyboardInterrupt in main()
         with open(scm_generated_name, 'w') as SGF:
             dump_json(scm_generated, SGF)
@@ -458,7 +462,7 @@ if __name__ == '__main__':
         with open(not_found_name, 'w') as NF:
             dump_json_nr_set(list(not_found), NF)
 
-        if not args.no_descriptions:
+        if not args['--no-descriptions']:
             with open(description_hashes_name, 'w') as DHF:
                 dump_json(description_hashes, DHF)
 
