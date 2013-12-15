@@ -178,6 +178,7 @@ let addon_info_deps.4462 = [4433]
 let addon_info_deps.4465 = [4433, 4140]
 let addon_info_deps.4654 = [4433]
 let addon_info_deps.4658 = [4433, 3914]
+let addon_info_deps.4795 = [4433]
 " fugitive dependants
 let addon_info_deps.3509 = [2975]
 let addon_info_deps.3574 = [2975]
