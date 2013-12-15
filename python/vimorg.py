@@ -227,7 +227,9 @@ def get_file_list(voinfo):
         ret = {guess_fix_dir(voinfo) + '/' + aname}
     elif ext in FileListers.__dict__:
         ret = {fname for fname in _get_file_list(io.BytesIO(urllib.urlopen(aurl).read()), ext, aname)
-                         if not (fname.startswith('__MACOSX') or '.git/' in fname)}
+                         if not (fname.startswith('__MACOSX') or '.git/' in fname
+                                 or fname.startswith('._') or '/._' in fname
+                                 or fname.endswith('.DS_Store'))}
     else:
         raise ValueError('Unknown extension')
     _downloaded_URLs[aurl] = ret
