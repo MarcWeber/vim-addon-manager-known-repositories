@@ -14846,5 +14846,14 @@
    ],
    "4798" : [
       "swamplight"
+   ],
+   "4799" : [
+      "Include_Fixer_for_CC"
+   ],
+   "4800" : [
+      "Investigate"
+   ],
+   "4801" : [
+      "vim-skuld"
    ]
 }
