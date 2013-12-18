@@ -14855,5 +14855,8 @@
    ],
    "4801" : [
       "vim-skuld"
+   ],
+   "4802" : [
+      "vim-javacompleteex"
    ]
 }

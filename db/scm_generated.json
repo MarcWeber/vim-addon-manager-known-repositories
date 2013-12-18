@@ -3395,6 +3395,10 @@
     "type": "git",
     "url": "git://github.com/Keithbsmiley/investigate.vim"
   },
+  "4802": {
+    "type": "git",
+    "url": "git://github.com/richox/vim-javacompleteex"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
