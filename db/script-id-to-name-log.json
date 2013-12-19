@@ -14858,5 +14858,14 @@
    ],
    "4802" : [
       "vim-javacompleteex"
+   ],
+   "4803" : [
+      "ft-cmake"
+   ],
+   "4804" : [
+      "InnerFragmentComplete"
+   ],
+   "4805" : [
+      "MultiWordComplete"
    ]
 }

@@ -3395,9 +3395,17 @@
     "type": "git",
     "url": "git://github.com/Keithbsmiley/investigate.vim"
   },
+  "4801": {
+    "type": "git",
+    "url": "git://github.com/l04m33/vim-skuld"
+  },
   "4802": {
     "type": "git",
     "url": "git://github.com/richox/vim-javacompleteex"
+  },
+  "4803": {
+    "type": "git",
+    "url": "git://github.com/ujihisa/ft-cmake"
   },
   "521": {
     "type": "git",
