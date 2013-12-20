@@ -3407,6 +3407,10 @@
     "type": "git",
     "url": "git://github.com/ujihisa/ft-cmake"
   },
+  "4806": {
+    "type": "git",
+    "url": "git://github.com/cazador481/vim-systemverilog"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

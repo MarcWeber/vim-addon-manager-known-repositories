@@ -14867,5 +14867,11 @@
    ],
    "4805" : [
       "MultiWordComplete"
+   ],
+   "4806" : [
+      "vim-systemverilog"
+   ],
+   "4807" : [
+      "Accurev_diff_tool"
    ]
 }
