@@ -4192,7 +4192,7 @@
 "Visual_Studio_.NET_compiler_file":{"archive_name":"msvsnet.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1618","version":"1.2","vim_script_nr":524},
 "VimITunes":{"archive_name":"VimITunes.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1617","version":"1.0","vim_script_nr":523},
 "tar":{"archive_name":"tar-1.00.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1600","version":"1.00","vim_script_nr":522},
-"mru":{"archive_name":"mru.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20075","version":"3.5","vim_script_nr":521},
+"mru":{"archive_name":"mru.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21224","version":"3.7","vim_script_nr":521},
 "PHPDoc_Script_PDocS":{"archive_name":"phpdocs-0.26.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1601","version":"0.26","vim_script_nr":520},
 "CVS_conflict_highlight":{"archive_name":"cvs_cnfl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1589","version":"1.0","vim_script_nr":519},
 "csv_color":{"archive_name":"csv.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2357","version":"1.01","vim_script_nr":518},
