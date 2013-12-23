@@ -3411,6 +3411,10 @@
     "type": "git",
     "url": "git://github.com/cazador481/vim-systemverilog"
   },
+  "4808": {
+    "type": "git",
+    "url": "git://github.com/jiangmiao/auto-pairs"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

@@ -14873,5 +14873,8 @@
    ],
    "4807" : [
       "Accurev_diff_tool"
+   ],
+   "4808" : [
+      "auto-pairs-gentle"
    ]
 }
