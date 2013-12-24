@@ -3415,6 +3415,10 @@
     "type": "git",
     "url": "git://github.com/jiangmiao/auto-pairs"
   },
+  "4809": {
+    "type": "git",
+    "url": "git://github.com/justinmk/vim-sneak"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

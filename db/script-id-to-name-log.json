@@ -14876,5 +14876,11 @@
    ],
    "4808" : [
       "auto-pairs-gentle"
+   ],
+   "4809" : [
+      "vim-sneak"
+   ],
+   "4810" : [
+      "LEF_DEF_syntax"
    ]
 }
