@@ -3419,6 +3419,14 @@
     "type": "git",
     "url": "git://github.com/justinmk/vim-sneak"
   },
+  "4811": {
+    "type": "git",
+    "url": "git://github.com/reedes/vim-quotable"
+  },
+  "4812": {
+    "type": "git",
+    "url": "git://github.com/guns/vim-sexp"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

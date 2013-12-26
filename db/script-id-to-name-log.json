@@ -14883,5 +14883,14 @@
    ],
    "4810" : [
       "LEF_DEF_syntax"
+   ],
+   "4811" : [
+      "vim-quotable"
+   ],
+   "4812" : [
+      "vim-sexp"
+   ],
+   "4813" : [
+      "candyVirus"
    ]
 }
