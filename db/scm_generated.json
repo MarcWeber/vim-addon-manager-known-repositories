@@ -3169,7 +3169,7 @@
   },
   "4703": {
     "type": "git",
-    "url": "git://github.com/gcmt/tag-surfer"
+    "url": "git://github.com/gcmt/surfer.vim"
   },
   "4706": {
     "type": "git",
@@ -3426,6 +3426,10 @@
   "4812": {
     "type": "git",
     "url": "git://github.com/guns/vim-sexp"
+  },
+  "4814": {
+    "type": "git",
+    "url": "git://github.com/laurentgoudet/vim-howdoi"
   },
   "521": {
     "type": "git",
