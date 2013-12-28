@@ -1,4 +1,5 @@
 {
+"choowsewin":{"archive_name":"vim-choosewin-0.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21250","version":"0.6","vim_script_nr":4815},
 "vim-howdoi":{"archive_name":"vim-howdoi-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21244","version":"1.0","vim_script_nr":4814},
 "candyVirus":{"archive_name":"candyVirus.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21242","version":"1.0","vim_script_nr":4813},
 "vim-sexp":{"archive_name":"vim-sexp.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21240","version":"1","vim_script_nr":4812},
@@ -638,7 +639,7 @@
 "star":{"archive_name":"star.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18289","version":"1.0.0","vim_script_nr":4139},
 "Toggle_NERDTree_width":{"archive_name":"toggle_width.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18278","version":"1.0","vim_script_nr":4138},
 "refactor-rails":{"archive_name":"refactor-rails.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18277","version":"1.0","vim_script_nr":4137},
-"Briofita":{"archive_name":"briofita.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21243","version":"3.0.7","vim_script_nr":4136},
+"Briofita":{"archive_name":"briofita.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21249","version":"3.0.8","vim_script_nr":4136},
 "change-hash-syntax":{"archive_name":"change-hash-syntax.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18274","version":"0.01","vim_script_nr":4135},
 "spacepaste":{"archive_name":"jmcantrell-vim-spacepaste-71bf16b.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18270","version":"0.1","vim_script_nr":4134},
 "rainbow-end":{"archive_name":"rainbow-end.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18276","version":"0.1.1","vim_script_nr":4133},
@@ -4503,7 +4504,7 @@
 "xmms_play_and_enqueue":{"archive_name":"xmms.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1709","version":"0.4.0","vim_script_nr":216},
 "tagmenu":{"archive_name":"tagmenu.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1396","version":"1.31","vim_script_nr":215},
 "lh-vim-lib":{"archive_name":"lh-vim-lib-2.1.0.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=8591","version":"2.1.0","vim_script_nr":214},
-"c%213":{"archive_name":"cvim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18444","version":"6.0","vim_script_nr":213},
+"c%213":{"archive_name":"cvim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21251","version":"6.1","vim_script_nr":213},
 "linuxmag":{"archive_name":"linuxmag-1.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=578","version":"1.0","vim_script_nr":212},
 "sokoban":{"archive_name":"VimSokoban.tar.gz","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=656","version":"1.3","vim_script_nr":211},
 "fine_blue":{"archive_name":"fine_blue.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=664","version":"1.2","vim_script_nr":210},
