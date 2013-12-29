@@ -115,6 +115,10 @@ class Match(object):
     def key(self):
         return self.name_key * 100 + candidate_classes.index(self.__class__)
 
+    @cached_property
+    def has_name_similarity(self):
+        return self.name_key > 0
+
     for level in ('info', 'warning', 'error', 'critical'):
         exec(('def {0}(self, msg):\n'+
               '   return logger.{0}(">>> " + msg)\n').format(level))
@@ -519,7 +523,7 @@ def find_repo_candidate(voinfo, vofiles=None):
         try:
             files = get_scm_file_list(candidate)
             logger.info('>>> Repository files: {0!r}'.format(files))
-            prefix, score = compare_file_lists(vofiles, files)
+            prefix, score = compare_file_lists(candidate, vofiles, files)
         except NotLoggedError:
             pass
         except Exception as e:

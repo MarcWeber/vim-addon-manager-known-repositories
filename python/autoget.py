@@ -362,7 +362,7 @@ def annotate_scmsources():
                     match = url_regex.match(url)
                     candidate = scm_matches[scm](match, voinfo)
                     files = get_scm_file_list(candidate)
-                    prefix, key2 = compare_file_lists(vofiles, files)
+                    prefix, key2 = compare_file_lists(candidate, vofiles, files)
                     write(' ' if key2 else 'F')
                     numcolumns -= 1
                 else:
