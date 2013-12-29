@@ -3431,6 +3431,10 @@
     "type": "git",
     "url": "git://github.com/laurentgoudet/vim-howdoi"
   },
+  "4815": {
+    "type": "git",
+    "url": "git://github.com/t9md/vim-choosewin"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
