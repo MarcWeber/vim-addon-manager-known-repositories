@@ -8,7 +8,13 @@ elseif exists('g:vam_kr_silent')
 else
     let s:Log=function('vam#Log')
 endif
-let s:dbdir=expand('<sfile>:h:h').'/db'
+
+if !exists('g:vam_kr_database_directory')
+    let s:dbdir = expand('<sfile>:h:h').'/db'
+else
+    let s:dbdir = g:vam_kr_database_directory
+endif
+
 function! vamkr#LoadDBFile(file) abort
     let ext=fnamemodify(a:file, ':e')
     let file=s:dbdir.'/'.a:file
