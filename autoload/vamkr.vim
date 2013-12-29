@@ -2,6 +2,9 @@ if exists('g:vam_kr_running_hook_test')
     function s:Log(message)
         throw a:message
     endfunction
+elseif exists('g:vam_kr_silent')
+    function! s:Log(message)
+    endfunction
 else
     let s:Log=function('vam#Log')
 endif
