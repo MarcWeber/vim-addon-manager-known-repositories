@@ -1275,7 +1275,6 @@ let scm['vim-arduino'] = {'type': 'git', 'url': 'git://github.com/tclem/vim-ardu
 let scm['vim-opengrok-search'] = {'type': 'git', 'url': 'git://github.com/jdevera/vim-opengrok-search'}
 
 " Justin M. Keyes
-let scm['vim-sneak'] = {'type': 'git', 'url': 'git://github.com/justinmk/vim-sneak'}
 let scm['vim-gtfo'] = {'type': 'git', 'url': 'git://github.com/justinmk/vim-gtfo'}
 
 " Christopher Sexton
