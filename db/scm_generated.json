@@ -2215,6 +2215,10 @@
     "type": "git",
     "url": "git://github.com/AndrewRadev/switch.vim"
   },
+  "4176": {
+    "type": "git",
+    "url": "git://github.com/luochen1990/rainbow"
+  },
   "4177": {
     "type": "git",
     "url": "git://github.com/mbbill/undotree"
