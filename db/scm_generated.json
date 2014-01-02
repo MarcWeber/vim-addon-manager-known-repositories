@@ -3439,6 +3439,10 @@
     "type": "git",
     "url": "git://github.com/t9md/vim-choosewin"
   },
+  "4816": {
+    "type": "git",
+    "url": "git://github.com/lyokha/vim-publish-helper"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

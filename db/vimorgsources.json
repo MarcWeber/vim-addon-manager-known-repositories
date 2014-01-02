@@ -1,4 +1,5 @@
 {
+"publish_helper":{"archive_name":"vim-publish-helper-0.2.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21269","version":"0.2","vim_script_nr":4816},
 "choowsewin":{"archive_name":"vim-choosewin-0.8.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21255","version":"0.8","vim_script_nr":4815},
 "vim-howdoi":{"archive_name":"vim-howdoi-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21244","version":"1.0","vim_script_nr":4814},
 "candyVirus":{"archive_name":"candyVirus.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21242","version":"1.0","vim_script_nr":4813},
