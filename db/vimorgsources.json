@@ -1,5 +1,7 @@
 {
-"publish_helper":{"archive_name":"vim-publish-helper-0.2.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21269","version":"0.2","vim_script_nr":4816},
+"vizardry":{"archive_name":"vizardry.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21274","version":"0.1","vim_script_nr":4818},
+"increment-activator":{"archive_name":"increment-activator-0.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21271","version":"0.0.1","vim_script_nr":4817},
+"publish_helper":{"archive_name":"vim-publish-helper-0.3.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21273","version":"0.3","vim_script_nr":4816},
 "choowsewin":{"archive_name":"vim-choosewin-0.8.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21255","version":"0.8","vim_script_nr":4815},
 "vim-howdoi":{"archive_name":"vim-howdoi-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21244","version":"1.0","vim_script_nr":4814},
 "candyVirus":{"archive_name":"candyVirus.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21242","version":"1.0","vim_script_nr":4813},
@@ -4354,7 +4356,7 @@
 "oceandeep":{"archive_name":"oceandeep.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=7799","version":"1.2.5","vim_script_nr":368},
 "DirDo":{"archive_name":"DirDo.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=4583","version":"1.3","vim_script_nr":367},
 "ldraw":{"archive_name":"ldraw.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1088","version":"1.0","vim_script_nr":366},
-"bash-support":{"archive_name":"bash-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21180","version":"4.1","vim_script_nr":365},
+"bash-support":{"archive_name":"bash-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21272","version":"4.2","vim_script_nr":365},
 "withdrawn%364":{"archive_name":"Withdrawn.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=1413","version":"W","vim_script_nr":364},
 "cream-showinvisibles":{"archive_name":"cream-showinvisibles.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=2847","version":"3.01","vim_script_nr":363},
 "opsplorer":{"archive_name":"opsplorer.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10271","version":"1.2","vim_script_nr":362},

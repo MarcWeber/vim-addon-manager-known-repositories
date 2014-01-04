@@ -3443,6 +3443,14 @@
     "type": "git",
     "url": "git://github.com/lyokha/vim-publish-helper"
   },
+  "4817": {
+    "type": "git",
+    "url": "git://github.com/nishigori/increment-activator"
+  },
+  "4818": {
+    "type": "git",
+    "url": "git://github.com/ardagnir/vizardry"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
