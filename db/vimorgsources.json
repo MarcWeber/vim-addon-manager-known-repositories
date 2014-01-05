@@ -1,7 +1,7 @@
 {
 "vizardry":{"archive_name":"vizardry.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21274","version":"0.1","vim_script_nr":4818},
 "increment-activator":{"archive_name":"increment-activator-0.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21271","version":"0.0.1","vim_script_nr":4817},
-"publish_helper":{"archive_name":"vim-publish-helper-0.3.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21273","version":"0.3","vim_script_nr":4816},
+"publish_helper":{"archive_name":"vim-publish-helper-0.4.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21275","version":"0.4","vim_script_nr":4816},
 "choowsewin":{"archive_name":"vim-choosewin-0.8.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21255","version":"0.8","vim_script_nr":4815},
 "vim-howdoi":{"archive_name":"vim-howdoi-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21244","version":"1.0","vim_script_nr":4814},
 "candyVirus":{"archive_name":"candyVirus.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21242","version":"1.0","vim_script_nr":4813},
@@ -452,7 +452,7 @@
 "Lucid":{"archive_name":"lucid.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19108","version":"1.0","vim_script_nr":4342},
 "VimLogViewer":{"archive_name":"VimLogViewer.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19104","version":"0.1","vim_script_nr":4341},
 "vim-addon-commandline-completion":{"archive_name":"downloadinfo.txt","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19102","version":"0.0","vim_script_nr":4340},
-"kolor":{"archive_name":"kolor.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19636","version":"1.4.0","vim_script_nr":4339},
+"kolor":{"archive_name":"kolor.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21276","version":"1.4.1","vim_script_nr":4339},
 "SameSyntaxMotion":{"archive_name":"SameSyntaxMotion-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19090","version":"1.00","vim_script_nr":4338},
 "vim-autoformat":{"archive_name":"README.md","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19710","version":"1.04","vim_script_nr":4337},
 "REPL%4336":{"archive_name":"vimrepl.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19335","version":"1.2","vim_script_nr":"4336"},
