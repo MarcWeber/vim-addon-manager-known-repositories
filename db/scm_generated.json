@@ -3451,6 +3451,14 @@
     "type": "git",
     "url": "git://github.com/ardagnir/vizardry"
   },
+  "4819": {
+    "type": "git",
+    "url": "git://github.com/luochen1990/select-and-search"
+  },
+  "4820": {
+    "type": "git",
+    "url": "git://github.com/cocopon/iceberg.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
