@@ -3459,6 +3459,10 @@
     "type": "git",
     "url": "git://github.com/cocopon/iceberg.vim"
   },
+  "4822": {
+    "type": "git",
+    "url": "git://github.com/svjunic/RadicalGoodSpeed.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
