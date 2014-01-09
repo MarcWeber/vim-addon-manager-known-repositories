@@ -295,6 +295,10 @@
     "type": "git",
     "url": "git://github.com/bogado/file-line"
   },
+  "2189": {
+    "type": "git",
+    "url": "git://github.com/lxmzhv/vim"
+  },
   "2227": {
     "type": "git",
     "url": "git://github.com/mjbrownie/browser.vim"
@@ -1066,6 +1070,10 @@
   "3312": {
     "type": "git",
     "url": "git://github.com/tyru/operator-html-escape.vim"
+  },
+  "3313": {
+    "type": "git",
+    "url": "git://github.com/lxmzhv/vim"
   },
   "3318": {
     "type": "git",
@@ -3462,6 +3470,14 @@
   "4822": {
     "type": "git",
     "url": "git://github.com/svjunic/RadicalGoodSpeed.vim"
+  },
+  "4824": {
+    "type": "git",
+    "url": "git://github.com/reedes/vim-pencil"
+  },
+  "4825": {
+    "type": "git",
+    "url": "git://github.com/lxmzhv/vim"
   },
   "521": {
     "type": "git",
