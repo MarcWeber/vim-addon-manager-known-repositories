@@ -12876,6 +12876,7 @@
       "vim-logaling"
    ],
    "4145" : [
+      "vim-rooter",
       "rooter"
    ],
    "4146" : [
@@ -14931,5 +14932,8 @@
    ],
    "4826" : [
       "arnaudmix2_Color_Scheme"
+   ],
+   "4827" : [
+      "vim-gitgutter"
    ]
 }

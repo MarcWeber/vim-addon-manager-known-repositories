@@ -3479,6 +3479,10 @@
     "type": "git",
     "url": "git://github.com/lxmzhv/vim"
   },
+  "4827": {
+    "type": "git",
+    "url": "git://github.com/airblade/vim-gitgutter"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
