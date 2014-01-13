@@ -14935,5 +14935,11 @@
    ],
    "4827" : [
       "vim-gitgutter"
+   ],
+   "4828" : [
+      "vim-plug"
+   ],
+   "4829" : [
+      "cs_class_split"
    ]
 }
