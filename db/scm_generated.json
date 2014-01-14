@@ -3483,6 +3483,22 @@
     "type": "git",
     "url": "git://github.com/airblade/vim-gitgutter"
   },
+  "4830": {
+    "type": "git",
+    "url": "git://github.com/yakiang/excel.vim"
+  },
+  "4831": {
+    "type": "git",
+    "url": "git://github.com/Zuckonit/vim-airline-todo"
+  },
+  "4832": {
+    "type": "git",
+    "url": "git://github.com/junegunn/vader.vim"
+  },
+  "4833": {
+    "type": "git",
+    "url": "git://github.com/guns/vim-clojure-highlight"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

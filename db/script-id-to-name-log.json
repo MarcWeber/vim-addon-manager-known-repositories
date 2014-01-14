@@ -14941,5 +14941,17 @@
    ],
    "4829" : [
       "cs_class_split"
+   ],
+   "4830" : [
+      "excel"
+   ],
+   "4831" : [
+      "vim-airline-todo"
+   ],
+   "4832" : [
+      "vader"
+   ],
+   "4833" : [
+      "vim-clojure-highlight"
    ]
 }
