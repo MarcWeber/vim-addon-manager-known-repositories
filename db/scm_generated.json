@@ -147,6 +147,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/ns9tks/vim-autocomplpop"
   },
+  "1888": {
+    "type": "git",
+    "url": "git://github.com/vlmarek/DiffGoFile"
+  },
   "1890": {
     "type": "git",
     "url": "git://github.com/sjbach/lusty"
