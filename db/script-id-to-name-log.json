@@ -14953,5 +14953,8 @@
    ],
    "4833" : [
       "vim-clojure-highlight"
+   ],
+   "4834" : [
+      "vimcaps"
    ]
 }
