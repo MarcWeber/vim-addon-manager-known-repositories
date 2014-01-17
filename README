@@ -1,3 +1,36 @@
+VIM-PI (vim plugin index?) (previously vim-addon-manager-known-repositories)
+=============================================================================
+ZyX, Marc, Shougo are discussing how to move this all to the next level so that
+all
+- plugin manager (VAM, NeoBundle, PyPi etc)
+- users
+- distribution systems (Gentoo Portag, Nix, npackd)
+
+can benefit the most.
+
+discussions going on:
+=======================
+
+discussion 1)
+http://vim-wiki.mawercer.de/wiki/topic/vim%20plugin%20managment.html (bottom,
+which hooks do we need, how to compile supporting tools, how declare dependencies)
+
+discussion 2)
+
+more discussions:
+Some additional discussions are taking place it
+vim-addon-manager-known-repository's github bug tracker
+
+moving to a new location:
+https://github.com/MarcWeber/vim-addon-manager-known-repositories/issues/83
+
+API, move contents to database having a online store ?:
+https://github.com/MarcWeber/vim-addon-manager-known-repositories/issues/80
+
+
+
+Older vim-addon-manager-known-repository README contents:
+=========================================================
 This repository is an extension to http://github.com/MarcWeber/vim-addon-manager
 
 It is the "default source" of descriptions where to get which addons for vim-addon-manager.

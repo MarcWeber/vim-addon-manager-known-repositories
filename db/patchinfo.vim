@@ -40,6 +40,8 @@ unlet hook
 " Author wrote that contents of vert.txt should go to vimrc, but it should work 
 " fine as a script in plugin directory
 let addon_info.1742={'archive_name': 'vert.vim'}
+" It pretents being tar file, but it is actually tar.gz
+let addon_info.4734={'archive_name': 'united-front.tar.gz'}
 "▶1 Type corrections
 let patch_repo.2368={'script-type': 'plugin'}
 let patch_repo.1638={'script-type': 'plugin'}
@@ -47,15 +49,18 @@ let patch_repo.3868={'script-type': 'plugin'}
 let patch_repo.1780={'script-type': 'syntax'}
 let patch_repo.1686={'script-type': 'colors'}
 let patch_repo.2527={'script-type': 'ftplugin'}
-let patch_repo.1542={'script-type': 'autoload'}
-let patch_repo.2150={'script-type': 'after/syntax'}
-let patch_repo.2548={'script-type': 'after/syntax'}
-let patch_repo.2224={'script-type': 'after/syntax'}
-let patch_repo.2493={'script-type': 'after/syntax'}
 let patch_repo.4388={'script-type': 'ftplugin'}
+let patch_repo.4750={'script-type': 'plugin'}
+let patch_repo.3938={'script-type': 'plugin'}
 "▶1 Fixing target directories
-call extend(patch_repo.1542, {'target_dir': 'autoload'})
+let patch_repo.2372={'target_dir': 'ftplugin/vlog'}
+let patch_repo.1542={'target_dir': 'autoload'}
 let patch_repo.1662={'target_dir': 'autoload'}
+let patch_repo.2150={'target_dir': 'after/syntax'}
+let patch_repo.2548={'target_dir': 'after/syntax'}
+let patch_repo.2224={'target_dir': 'after/syntax'}
+let patch_repo.2493={'target_dir': 'after/syntax'}
+let patch_repo.4769={'target_dir': 'autoload/airline/themes'}
 let patch_repo.2611={'strip-components': 0}
 let patch_repo.2572={'strip-components': 0}
 let patch_repo.2429={'strip-components': 0}
@@ -90,6 +95,8 @@ let patch_repo.2518={'deprecated': "This plugin has been replaced with the Hyper
 let patch_repo.3874={'deprecated': "This script is no longer supported. Please use the matchit.vim plugin (already bundled with vim > 7) instead."}
 let patch_repo.287 ={'deprecated': "This script has been retired. You should use #273"}
 let patch_repo.2765={'deprecated': "Maintainer has changed. You should use #4452 (vim-javascript) now"}
+
+let patch_repo.3102={'deprecated': "Author recommends using other plugin installers and states that this one is kept only for historical reasons"}
 
 let patch_repo.2554={'deprecated': "Author says it is buggy and thus should not be used"}
 
@@ -139,6 +146,10 @@ let addon_info_deps.4463 = [2467]
 let addon_info_deps.4492 = [4491]
 let addon_info_deps.4511 = [3590]
 let addon_info_deps.4532 = [3133, 'twibill']
+let addon_info_deps.4777 = [2136]
+" airline dependants
+let addon_info_deps.4769 = [4661]
+let addon_info_deps.4756 = [4661]
 " optional: 3396, 3476, unite-outline, vimproc, favstar-vim
 " ConqueTerm dependants
 let addon_info_deps.4222 = [2771]
@@ -167,6 +178,7 @@ let addon_info_deps.4462 = [4433]
 let addon_info_deps.4465 = [4433, 4140]
 let addon_info_deps.4654 = [4433]
 let addon_info_deps.4658 = [4433, 3914]
+let addon_info_deps.4795 = [4433]
 " fugitive dependants
 let addon_info_deps.3509 = [2975]
 let addon_info_deps.3574 = [2975]
@@ -291,6 +303,7 @@ let addon_info_deps.3886 = [2100]
 " eaasytags
 let addon_info_deps.3114 = [4597]
 "▶1 Missing runtimepath information for vim.org plugins
+let addon_info.2424 = {'runtimepath': 'TransmitFTP'}
 let addon_info.2883 = {'runtimepath': 'vimlib'}
 let addon_info.2824 = {'runtimepath': 'vimlib'}
 let addon_info.2847 = {'runtimepath': 'vimlib'}

@@ -91,6 +91,27 @@ function! AddAuthor(author)
         normal! 2j
     endif
 endfunction
+function! ScmSourcesFoldExpr(lnum)
+    if empty(getline(a:lnum-1))
+        return '>1'
+    else
+        return '='
+    endif
+endfunction
+function! ScmSourcesFoldText(lnum)
+    let i=a:lnum+1
+    let line=getline(i)
+    while line[0] is# '"'
+        let i+=1
+        let line=getline(i)
+    endwhile
+    return v:folddashes . ' ' . line
+endfunction
+function! s:SetFolds()
+    setlocal foldexpr=ScmSourcesFoldExpr(v:lnum)
+    setlocal foldtext=ScmSourcesFoldText(v:foldstart)
+    setlocal foldmethod=expr
+endfunction
 nnoremap ,gv :call AddGHUrl(@+, +GetSNR())<CR>j
 nnoremap ,gg :call AddGHUrl(@+, 0)<CR>j
 nnoremap ,ge :call AddGHUrl(@+, )<Left><C-r>=GetPrevSNR()<CR>
@@ -105,3 +126,4 @@ nmap     ,gN ,gA,ge
 inoremap ,gs <C-r>=GetSNR()<CR>
 nnoremap ,gd olet mai_snr_deps.<C-r>=printf("%-4u", +GetSNR())<CR> = []<Left>
 nnoremap ,gD olet add_by_snr.<C-r>=printf("%-4u", +GetSNR())<CR>={'deprecated' : ""}<Left><Left>
+nnoremap ,gf :call <SID>SetFolds()<CR>

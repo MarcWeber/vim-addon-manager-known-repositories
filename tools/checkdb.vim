@@ -382,7 +382,7 @@ try
                 elseif type(value.archive_name)!=type('')
                     throw lnr.':Wrong archive_name type: '.line
                 endif
-                let snr=str2nr(line[12:])
+                let snr=str2nr(line[15:])
                 if has_key(snrs.ms, snr)
                     throw lnr.':Duplicating addon_info entry for '.snr.' (previous on line '.snrs.ms[snr].'): '.line
                 endif

@@ -2,10 +2,19 @@ if exists('g:vam_kr_running_hook_test')
     function s:Log(message)
         throw a:message
     endfunction
+elseif exists('g:vam_kr_silent')
+    function! s:Log(message)
+    endfunction
 else
     let s:Log=function('vam#Log')
 endif
-let s:dbdir=expand('<sfile>:h:h').'/db'
+
+if !exists('g:vam_kr_database_directory')
+    let s:dbdir = expand('<sfile>:h:h').'/db'
+else
+    let s:dbdir = g:vam_kr_database_directory
+endif
+
 function! vamkr#LoadDBFile(file) abort
     let ext=fnamemodify(a:file, ':e')
     let file=s:dbdir.'/'.a:file
@@ -124,5 +133,15 @@ function! vamkr#AddCopyHook(repository, files)
     let a:repository['addon-info']['post-install-hook']=join(map(keys(dirs), '"call mkdir(%d.".string("/".v:val).(stridx(v:val, "/")==-1 ? "" : ", ''p''").")"')+hook, ' | ')
     let a:repository['addon-info']['post-scms-update-hook']=join(hook, ' | ')
     return a:repository " Make it possible to use let scmnr.XXXX = vamkr#AddCopyHook({...}, {...})
+endfunction
+
+function! vamkr#GetNrToNameMap(www_vim_org)
+  " build vim_script_nr to name lookup dictionary:
+  " nr_to_name is not exposed to the user (can only be accessed via function
+  " arg) because running #Pool() is expensive. That's why its done only when
+  " installing or upgrading plugins ..
+  let snr_to_name={}
+  call map(copy(a:www_vim_org), 'extend(snr_to_name, {v:val.vim_script_nr : v:key})')
+  return snr_to_name
 endfunction
 " vim: ft=vim ts=4 sts=4 sw=4 et fmr=▶,▲

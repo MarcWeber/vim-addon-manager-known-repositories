@@ -5048,6 +5048,7 @@
       "colornames"
    ],
    "1605" : [
+      "gsl%1605",
       "gsl"
    ],
    "1606" : [
@@ -12875,6 +12876,7 @@
       "vim-logaling"
    ],
    "4145" : [
+      "vim-rooter",
       "rooter"
    ],
    "4146" : [
@@ -14180,10 +14182,12 @@
       "linepower%4577"
    ],
    "4578" : [
+      "throughpairs",
       "easy-through-pairing",
       "."
    ],
    "4579" : [
+      "keepcomment",
       "KeepComment"
    ],
    "4580" : [
@@ -14554,6 +14558,7 @@
       "tex-fold"
    ],
    "4703" : [
+      "surfer",
       "tag-surfer"
    ],
    "4704" : [
@@ -14675,6 +14680,7 @@
       "columcille"
    ],
    "4743" : [
+      "systemverilog%4743",
       "systemverilog.tar.gz"
    ],
    "4744" : [
@@ -14689,5 +14695,266 @@
    ],
    "4747" : [
       "felipec"
+   ],
+   "4748" : [
+      "JavaScript_Context_Coloring"
+   ],
+   "4749" : [
+      "vim-gains-nrepl"
+   ],
+   "4750" : [
+      "human"
+   ],
+   "4751" : [
+      "ruby-xmpfilter"
+   ],
+   "4752" : [
+      "macvim-transparency"
+   ],
+   "4753" : [
+      "OpenURL"
+   ],
+   "4754" : [
+      "mlessnau_block_shift"
+   ],
+   "4755" : [
+      "launchassociated"
+   ],
+   "4756" : [
+      "vim-airline-tomato"
+   ],
+   "4757" : [
+      "SlateDark"
+   ],
+   "4758" : [
+      "Cosco"
+   ],
+   "4759" : [
+      "minimal_gdb"
+   ],
+   "4760" : [
+      "vim-gnote"
+   ],
+   "4761" : [
+      "HowMuch"
+   ],
+   "4762" : [
+      "vim-sunflower"
+   ],
+   "4763" : [
+      "cppnav"
+   ],
+   "4764" : [
+      "NERV-ous"
+   ],
+   "4765" : [
+      "axiom"
+   ],
+   "4766" : [
+      "sovim"
+   ],
+   "4767" : [
+      "tabwins"
+   ],
+   "4768" : [
+      "natbib"
+   ],
+   "4769" : [
+      "airlineish"
+   ],
+   "4770" : [
+      "noerrmsg"
+   ],
+   "4771" : [
+      "maven_errorformat"
+   ],
+   "4772" : [
+      "marslo"
+   ],
+   "4773" : [
+      "grishin-color-scheme"
+   ],
+   "4774" : [
+      "p4checkout"
+   ],
+   "4775" : [
+      "tex-breqn"
+   ],
+   "4776" : [
+      "Projx"
+   ],
+   "4777" : [
+      "repeatableMapping"
+   ],
+   "4778" : [
+      "QFEnter"
+   ],
+   "4779" : [
+      "vim-slamhound"
+   ],
+   "4780" : [
+      "bashizzle"
+   ],
+   "4781" : [
+      "RPN"
+   ],
+   "4782" : [
+      "v2ex"
+   ],
+   "4783" : [
+      "npm"
+   ],
+   "4784" : [
+      "Online_Tshirt_Design_Tool"
+   ],
+   "4785" : [
+      "goyo"
+   ],
+   "4786" : [
+      "update-time"
+   ],
+   "4787" : [
+      "vim-svngutter"
+   ],
+   "4788" : [
+      "Vim-Kompleter"
+   ],
+   "4789" : [
+      "Vim-CtrlSpace"
+   ],
+   "4790" : [
+      "gsl%4790"
+   ],
+   "4791" : [
+      "SwissCalc"
+   ],
+   "4792" : [
+      "netgrep"
+   ],
+   "4793" : [
+      "easydir"
+   ],
+   "4794" : [
+      "AddCppClass_Plus"
+   ],
+   "4795" : [
+      "ExtractMatches"
+   ],
+   "4796" : [
+      "vim-nfo"
+   ],
+   "4797" : [
+      "CtrlP-SmartTabs"
+   ],
+   "4798" : [
+      "swamplight"
+   ],
+   "4799" : [
+      "Include_Fixer_for_CC"
+   ],
+   "4800" : [
+      "Investigate"
+   ],
+   "4801" : [
+      "vim-skuld"
+   ],
+   "4802" : [
+      "vim-javacompleteex"
+   ],
+   "4803" : [
+      "ft-cmake"
+   ],
+   "4804" : [
+      "InnerFragmentComplete"
+   ],
+   "4805" : [
+      "MultiWordComplete"
+   ],
+   "4806" : [
+      "vim-systemverilog"
+   ],
+   "4807" : [
+      "Accurev_diff_tool"
+   ],
+   "4808" : [
+      "auto-pairs-gentle"
+   ],
+   "4809" : [
+      "vim-sneak"
+   ],
+   "4810" : [
+      "LEF_DEF_syntax"
+   ],
+   "4811" : [
+      "vim-quotable"
+   ],
+   "4812" : [
+      "vim-sexp"
+   ],
+   "4813" : [
+      "candyVirus"
+   ],
+   "4814" : [
+      "vim-howdoi"
+   ],
+   "4815" : [
+      "choowsewin"
+   ],
+   "4816" : [
+      "publish_helper"
+   ],
+   "4817" : [
+      "increment-activator"
+   ],
+   "4818" : [
+      "vizardry"
+   ],
+   "4819" : [
+      "select__search"
+   ],
+   "4820" : [
+      "Iceberg"
+   ],
+   "4821" : [
+      "potion-support"
+   ],
+   "4822" : [
+      "RadicalGoodSpeed"
+   ],
+   "4823" : [
+      "autotag"
+   ],
+   "4824" : [
+      "vim-pencil"
+   ],
+   "4825" : [
+      "Elda"
+   ],
+   "4826" : [
+      "arnaudmix2_Color_Scheme"
+   ],
+   "4827" : [
+      "vim-gitgutter"
+   ],
+   "4828" : [
+      "vim-plug"
+   ],
+   "4829" : [
+      "cs_class_split"
+   ],
+   "4830" : [
+      "excel"
+   ],
+   "4831" : [
+      "vim-airline-todo"
+   ],
+   "4832" : [
+      "vader"
+   ],
+   "4833" : [
+      "vim-clojure-highlight"
+   ],
+   "4834" : [
+      "vimcaps"
    ]
 }
