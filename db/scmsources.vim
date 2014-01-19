@@ -1276,6 +1276,9 @@ let scm['vim-gtfo'] = {'type': 'git', 'url': 'git://github.com/justinmk/vim-gtfo
 let scm['jekyll'] = {'type': 'git', 'url': 'git://github.com/csexton/jekyll.vim'}
 let scm['viceroy'] = {'type': 'git', 'url': 'git://github.com/csexton/viceroy'}
 
+" David Barnett
+let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/maktaba.git'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
