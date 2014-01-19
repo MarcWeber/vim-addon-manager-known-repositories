@@ -3503,6 +3503,10 @@
     "type": "git",
     "url": "git://github.com/guns/vim-clojure-highlight"
   },
+  "4836": {
+    "type": "git",
+    "url": "git@github.com:markgandolfo/nerdtree-wget.vim.git"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
