@@ -14,7 +14,7 @@ if($ARGV[0] eq "--help") {
     print "    but not ignore.lst file\n";
     print "  --nomaisnrdeps will make script also ignore plugins that have\n";
     print "    missing dependency information located in db/patch.vim\n";
-    print "You must run this with current directory set to vam-kr root.\n";
+    print "You must run this with current directory set to vim-pi root.\n";
     print "Do not forget to run\n";
     print "    curl 'http://www.vim.org/script-info.php' > vodb.json\n";
     print "before running this script unless you want make this script\n";

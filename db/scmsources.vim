@@ -38,7 +38,7 @@
 "   this information to be inaccurate.
 "
 " Copy Hooks:
-"   See samples using vamkr#AddCopyHook below, mind the dashes line
+"   See samples using vimpi#AddCopyHook below, mind the dashes line
 "
 " NOTE: Before the first line go authors having at least one SCM source without
 "       any hooks that is also present on vim.org.
@@ -193,7 +193,7 @@ let scmnr.1939 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trun
 let scmnr.2193 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/fpdf-vim'}
 let scmnr.4585 = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-bgimg'}
 " The following is not a vim plugin, but it is posted on vim.org:
-let scmnr.4258 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://gist.github.com/3848180'}, {'sha3.vim': 'autoload'})
+let scmnr.4258 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://gist.github.com/3848180'}, {'sha3.vim': 'autoload'})
 " The following plugin does not have a separate repository:
 let scmnr.2972 = {'url': 'https://github.com/ynkdir/vim-funlib/raw/master/autoload/hmac.vim', 'archive_name': 'hmac.vim', 'type': 'archive', 'script-type': 'utility'}
 let scm['vim-patch'] = {'type': 'git', 'url': 'git://github.com/ynkdir/vim-patch'}
@@ -322,7 +322,7 @@ let scm['windowlayout'] = {'type': 'git', 'url': 'git://github.com/godlygeek/win
 let scmnr.2416 = {'type': 'git', 'url': 'git://github.com/nono/jquery.vim'}
 let scmnr.2417 = {'type': 'git', 'url': 'git://github.com/nono/merb.vim'}
 " This should possibly be named github_theme@nono
-let scm['github_vim_theme'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/nono/github_vim_theme'}, {'github.vim': 'colors'})
+let scm['github_vim_theme'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/nono/github_vim_theme'}, {'github.vim': 'colors'})
 
 " Anthony Panozzo
 let scmnr.2429 = {'type': 'git', 'url': 'git://github.com/panozzaj/vim-autocorrect'}
@@ -412,7 +412,7 @@ let scmnr.2992 = {'type': 'git', 'url': 'git://github.com/chrisbra/SaveSigns.vim
 let scmnr.3963 = {'type': 'git', 'url': 'git://github.com/chrisbra/color_highlight'}
 let scmnr.3965 = {'type': 'git', 'url': 'git://github.com/chrisbra/DynamicSigns'}
 let scmnr.4357 = {'type': 'git', 'url': 'git://github.com/chrisbra/DistractFree'}
-let scmnr.2998 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/chrisbra/BackgroundColor.vim'}, {'backgroundColor.vim': 'plugin'})
+let scmnr.2998 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/chrisbra/BackgroundColor.vim'}, {'backgroundColor.vim': 'plugin'})
 
 " lilydjwg
 " The following is not a vim plugin, but it is posted on vim.org:
@@ -431,7 +431,7 @@ let scmnr.2958 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
 " Duplicate
 let scmnr.2959 = {'type': 'git', 'url': 'git://github.com/c9s/emoticon.vim'}
 let scmnr.3544 = {'type': 'git', 'url': 'git://github.com/c9s/cascading.vim'}
-let scmnr.3005 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/c9s/simple-commenter.vim'}, {'simplecommenter.vim': 'plugin'})
+let scmnr.3005 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/c9s/simple-commenter.vim'}, {'simplecommenter.vim': 'plugin'})
 let scm['vim-dev-plugin'] = {'type': 'git', 'url': 'git://github.com/c9s/vim-dev-plugin'}
 let scm['jifty'] = {'type': 'git', 'url': 'git://github.com/c9s/jifty.vim'}
 " The following repositories are referenced on vim.org, but not present on github:
@@ -598,7 +598,7 @@ let scm['correr'] = {'type': 'git', 'url': 'git://github.com/ujihisa/correr'}
 let scm['unite-help'] = {'type': 'git', 'url': 'git://github.com/tsukkee/unite-help', 'addon-info': {'dependencies': {'%3396': {}}}}
 let scm['ref-hoogle'] = {'type': 'git', 'url': 'git://github.com/ujihisa/ref-hoogle'}
 let scm['vimshell-repl'] = {'type': 'git', 'url': 'git://github.com/ujihisa/vimshell-repl'}
-let scm['kami'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/ujihisa/vim-kami'}, {'kami.vim': 'ftplugin'})
+let scm['kami'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/ujihisa/vim-kami'}, {'kami.vim': 'ftplugin'})
 
 " Jose Elera Campana
 let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-colorscheme'}
@@ -967,143 +967,143 @@ let scmnr.2616 = {'url': 'https://github.com/graywh/dotfiles/raw/master/.vim/col
 let scmnr.4017 = {'type': 'git', 'url': 'git://github.com/maksimr/vim-jsbeautify', 'addon-info': {'post-install-hook': 'execute "lcd" fnameescape(%d) | call vam#utils#RunShell("git submodule init && git submodule update") | lcd -', 'post-scms-update': 'execute "lcd" fnameescape(%d) | call vam#utils#RunShell("git submodule update") | lcd -'}}
 
 " Michael Brown
-let scmnr.2780 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mjbrownie/Python-Tag-Import'}, {'python_tag_import.vim': 'ftplugin'})
-let scmnr.2781 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mjbrownie/django_helper.vim'}, {'django_helper.vim': 'plugin'})
+let scmnr.2780 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/mjbrownie/Python-Tag-Import'}, {'python_tag_import.vim': 'ftplugin'})
+let scmnr.2781 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/mjbrownie/django_helper.vim'}, {'django_helper.vim': 'plugin'})
 
 " Peter Odding
-let scmnr.3242 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs'}, {'open.vim': 'autoload/xolox'})
+let scmnr.3242 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/xolox/vim-open-associated-programs'}, {'open.vim': 'autoload/xolox'})
 
 " Andrei Nicholson
-let scmnr.2548 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/tetsuo13/Vim-PHP-Doc'}, {'php.vim': 'after/syntax'})
+let scmnr.2548 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/tetsuo13/Vim-PHP-Doc'}, {'php.vim': 'after/syntax'})
 
 " Paul Lampert
-let scmnr.4736 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/lampert/vim'}, {'navigate-softtab.vim': 'plugin'})
+let scmnr.4736 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/lampert/vim'}, {'navigate-softtab.vim': 'plugin'})
 
 " jeb beich
-let scmnr.4648 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/jebberjeb/yet-another-buffer-list'}, {'buflist.vim': 'plugin'})
+let scmnr.4648 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/jebberjeb/yet-another-buffer-list'}, {'buflist.vim': 'plugin'})
 
 " Robert Mitchell
-let scmnr.4526 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/robu3/vimongous'}, {'vimongous.vim': 'plugin', 'venode.js': 'plugin', 'venode-lib.js': 'plugin'})
+let scmnr.4526 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/robu3/vimongous'}, {'vimongous.vim': 'plugin', 'venode.js': 'plugin', 'venode-lib.js': 'plugin'})
 
 " Hugo Wang
-let scmnr.4512 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/mitnk/thwins'}, {'thwins.vim': 'plugin'})
+let scmnr.4512 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/mitnk/thwins'}, {'thwins.vim': 'plugin'})
 
 " Felipe Tanus
-let scmnr.4420 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/fotanus/fold_license'}, {'fold_license.vim': 'plugin'})
+let scmnr.4420 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/fotanus/fold_license'}, {'fold_license.vim': 'plugin'})
 
 " felippe alves
-let scmnr.4413 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
+let scmnr.4413 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/flipgthb/misc'}, {'darkgit.vim': 'colors'})
 
 " Yu-Heng Chang
-let scmnr.4417 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/changyuheng/holokai'}, {'holokai.vim': 'colors'})
+let scmnr.4417 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/changyuheng/holokai'}, {'holokai.vim': 'colors'})
 
 " Long Changjin
-let scmnr.4332 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wusuopu/weibo-vim-plugin'}, {'my_weibo.vim': 'plugin'})
+let scmnr.4332 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/wusuopu/weibo-vim-plugin'}, {'my_weibo.vim': 'plugin'})
 
 " sunus lee
-let scmnr.4307 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-show-git-log'}, {'showgitlog.vim': 'plugin'})
-let scmnr.4319 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-random-colorscheme-picker'}, {'randomColorPicker.vim': 'colors'})
+let scmnr.4307 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-show-git-log'}, {'showgitlog.vim': 'plugin'})
+let scmnr.4319 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/sunuslee/vim-plugin-random-colorscheme-picker'}, {'randomColorPicker.vim': 'colors'})
 
 " Guodong Liang
-let scmnr.4299 = vamkr#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
+let scmnr.4299 = vimpi#AddCopyHook({'type': 'svn', 'url': 'http://name5566-vim-bookmark.googlecode.com/svn/trunk/'}, {'vbookmark.vim': 'plugin'})
 
 " Basil Gor
-let scmnr.4263 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/basilgor/vim-autotags'}, {'autotags.vim': 'plugin'})
+let scmnr.4263 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/basilgor/vim-autotags'}, {'autotags.vim': 'plugin'})
 
 " Baptiste Fontaine
-let scmnr.4181 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
-let scmnr.4507 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/conflicts.vim'}, {'conflicts.vim': 'syntax'})
+let scmnr.4181 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/omgrofl.vim'}, {'omgrofl.vim': 'syntax'})
+let scmnr.4507 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/bfontaine/conflicts.vim'}, {'conflicts.vim': 'syntax'})
 
 " Shuhei Kubota
-let scmnr.1283 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/tinybufferexplorer'}, {'tbe.vim': 'plugin'})
-let scmnr.1477 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/modeliner'}, {'modeliner.vim': 'plugin'})
-let scmnr.2205 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/coremosearch'}, {'coremo_search.vim': 'plugin'})
-let scmnr.2496 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/changed'}, {'changed.vim': 'plugin'})
-let scmnr.2542 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/starrange'}, {'starrange.vim': 'plugin'})
-let scmnr.2843 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/fliplr'}, {'fliplr.vim': 'plugin'})
-let scmnr.3162 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/tabops'}, {'tabops.vim': 'plugin'})
-let scmnr.3640 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/theoldones'}, {'theoldones.vim': 'plugin'})
+let scmnr.1283 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/tinybufferexplorer'}, {'tbe.vim': 'plugin'})
+let scmnr.1477 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/modeliner'}, {'modeliner.vim': 'plugin'})
+let scmnr.2205 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/coremosearch'}, {'coremo_search.vim': 'plugin'})
+let scmnr.2496 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/changed'}, {'changed.vim': 'plugin'})
+let scmnr.2542 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/starrange'}, {'starrange.vim': 'plugin'})
+let scmnr.2843 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/fliplr'}, {'fliplr.vim': 'plugin'})
+let scmnr.3162 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/tabops'}, {'tabops.vim': 'plugin'})
+let scmnr.3640 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/shu/theoldones'}, {'theoldones.vim': 'plugin'})
 
 " dos Santos
-let scmnr.3092 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/andre-luiz-dos-santos/autocomp'}, {'autocomp.vim': 'plugin'})
+let scmnr.3092 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/andre-luiz-dos-santos/autocomp'}, {'autocomp.vim': 'plugin'})
 
 " Carlos Ruiz-Henestrosa
-let scmnr.4122 = vamkr#AddCopyHook({'type': 'darcs', 'url': 'http://darcsden.com/karl/vim-ptsc-header'}, {'ptsc-header.vim': 'plugin'})
+let scmnr.4122 = vimpi#AddCopyHook({'type': 'darcs', 'url': 'http://darcsden.com/karl/vim-ptsc-header'}, {'ptsc-header.vim': 'plugin'})
 
 " mihaly himics
-let scmnr.3127 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/trialsolution/gamsvim'}, {'gams.vim': 'syntax'})
+let scmnr.3127 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/trialsolution/gamsvim'}, {'gams.vim': 'syntax'})
 
 " Aydar Khabibullin
-let scmnr.3428 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/abra/obsidian2'}, {'obsidian2.vim': 'colors'})
+let scmnr.3428 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/abra/obsidian2'}, {'obsidian2.vim': 'colors'})
 
 " Andrew Lunny
-let scmnr.4101 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/alunny/pegjs-vim'}, {'pegjs.vim': 'plugin'})
+let scmnr.4101 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/alunny/pegjs-vim'}, {'pegjs.vim': 'plugin'})
 
 " Phui-Hock Chang
-let scmnr.3917 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}, {'tagport.vim': 'ftplugin'})
+let scmnr.3917 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/phuihock/tagport.vim'}, {'tagport.vim': 'ftplugin'})
 
 " Michael Nussbaum
 " The following plugin does not have a separate repository:
-let scmnr.3851 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/michaelnussbaum08/Mark-Ring'}, {'mark_ring.vim': 'plugin'})
+let scmnr.3851 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/michaelnussbaum08/Mark-Ring'}, {'mark_ring.vim': 'plugin'})
 
 " Aldis Berjoza
 " The following plugin does not have a separate repository:
 let scmnr.3674 = {'url': 'https://github.com/graudeejs/dot.vim/raw/master/colors/universal-blue.vim', 'archive_name': 'universal-blue.vim', 'type': 'archive', 'script-type': 'color scheme'}
 
 " tien le
-let scmnr.3414 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/tienle/bocau'}, {'bocau.vim': 'colors'})
+let scmnr.3414 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/tienle/bocau'}, {'bocau.vim': 'colors'})
 
 " Jiri Kratochvil
-let scmnr.3399 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/klokane/vim-phpunit'}, {'phpunit.vim': 'plugin'})
+let scmnr.3399 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/klokane/vim-phpunit'}, {'phpunit.vim': 'plugin'})
 
 " Daniel B
 " The following plugins do not have a separate repository:
-let scmnr.3140 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'obsidian.vim': 'colors'})
-let scmnr.3470 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'tidydiff.vim': 'plugin'})
-let scmnr.3693 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'FixCSS.vim': 'plugin'})
-let scmnr.3913 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'CapsulaPigmentorum.vim': 'colors'})
-let scm['plugins@dbb'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'CapsulaPigmentorum.vim': 'colors', 'FixCSS.vim': 'plugin', 'tidydiff.vim': 'plugin', 'obsidian.vim': 'colors'})
+let scmnr.3140 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'obsidian.vim': 'colors'})
+let scmnr.3470 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'tidydiff.vim': 'plugin'})
+let scmnr.3693 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'FixCSS.vim': 'plugin'})
+let scmnr.3913 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'CapsulaPigmentorum.vim': 'colors'})
+let scm['plugins@dbb'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/dbb/vim'}, {'CapsulaPigmentorum.vim': 'colors', 'FixCSS.vim': 'plugin', 'tidydiff.vim': 'plugin', 'obsidian.vim': 'colors'})
 
 " Steffen Siering
 " The following plugin does not have a separate repository:
 let scmnr.3034 = {'url': 'https://github.com/urso/dotrc/raw/master/vim/syntax/haskell.vim', 'archive_name': 'haskell.vim', 'type': 'archive', 'script-type': 'syntax'}
 
 " C. Coutinho
-let scmnr.3023 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/kikijump/tslime.vim'}, {'tslime.vim': 'plugin'})
+let scmnr.3023 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/kikijump/tslime.vim'}, {'tslime.vim': 'plugin'})
 
 " joseph wecker
-let scmnr.2964 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/josephwecker/neutron.vim'}, {'neutron.vim': 'colors'})
-let scm['murphytango'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/josephwecker/murphytango.vim'}, {'murphytango.vim': 'color scheme'})
+let scmnr.2964 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/josephwecker/neutron.vim'}, {'neutron.vim': 'colors'})
+let scm['murphytango'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/josephwecker/murphytango.vim'}, {'murphytango.vim': 'color scheme'})
 
 " Einar Lielmanis
-let scmnr.2469 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/einars/translit.vim'}, {'translit.vim': 'plugin'})
+let scmnr.2469 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/einars/translit.vim'}, {'translit.vim': 'plugin'})
 
 " Chris Gaffney
-let scmnr.2466 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/gaffneyc/vim-cdargs'}, {'cdargs.vim': 'plugin'})
+let scmnr.2466 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/gaffneyc/vim-cdargs'}, {'cdargs.vim': 'plugin'})
 
 " Benjamin Hoffstein
-let scmnr.2449 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/hoffstein/vim-tsql'}, {'sqlserver.vim': 'syntax'})
+let scmnr.2449 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/hoffstein/vim-tsql'}, {'sqlserver.vim': 'syntax'})
 
 " Benjamin Esham
-let scmnr.432 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/bdesham/biogoo'}, {'biogoo.vim': 'colors'})
+let scmnr.432 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/bdesham/biogoo'}, {'biogoo.vim': 'colors'})
 
 " Hans Fugal
-let scmnr.105 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/fugalh/desert.vim'}, {'desert.vim': 'colors'})
+let scmnr.105 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/fugalh/desert.vim'}, {'desert.vim': 'colors'})
 
 " Peter Hosey
-let scmnr.2475 = vamkr#AddCopyHook({'type': 'git', 'url': 'https://bitbucket.org/boredzo/vim-ini-syntax'}, {'ini.vim': 'syntax'})
+let scmnr.2475 = vimpi#AddCopyHook({'type': 'git', 'url': 'https://bitbucket.org/boredzo/vim-ini-syntax'}, {'ini.vim': 'syntax'})
 
 " Jochen Bartl
-let scmnr.2479 = vamkr#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/lobo/grsecurityvim'}, {'grsecurity.vim': 'syntax'})
+let scmnr.2479 = vimpi#AddCopyHook({'type': 'hg', 'url': 'https://bitbucket.org/lobo/grsecurityvim'}, {'grsecurity.vim': 'syntax'})
 
 " Leandro Penz
-let scmnr.808 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/lpenz/vimcommander'}, {'vimcommander.vim': 'plugin', 'vimcommander.txt': 'doc'})
+let scmnr.808 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/lpenz/vimcommander'}, {'vimcommander.vim': 'plugin', 'vimcommander.txt': 'doc'})
 
 " Anders Schau Knatten
-let scmnr.3733 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/knatten/olga_key'}, {'olga_key.vim': 'syntax'})
+let scmnr.3733 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/knatten/olga_key'}, {'olga_key.vim': 'syntax'})
 
 " Jannis Pohlmann
-let scmnr.2278 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}, {'jptemplate.vim': 'plugin'})
+let scmnr.2278 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://git.gezeiten.org/git/jptemplate'}, {'jptemplate.vim': 'plugin'})
 
 " Jian Liang
 let hook='if g:is_win | execute "edit" fnameescape(%d."/install_windows.bat") | %s@\V\w:\\vim\\vimfiles@.@ | else | execute "edit" fnameescape(%d."/install_linux_dev.sh") | %s@\V~/.vim@.@ | endif | write! | execute "lcd" fnameescape(%d) | call mkdir("plugin") | call vam#utils#RunShell(g:is_win ? "cmd .\\install_windows.bat" : "sh ./install_linux_dev.sh") | lcd -'
@@ -1243,7 +1243,7 @@ let scm['vim-slime'] = {'type': 'git', 'url': 'git://github.com/jpalardy/vim-sli
 let scm['vimbufsync'] = {'type': 'git', 'url': 'git://github.com/def-lkb/vimbufsync', 'addon-info': {'runtimepath': 'vim/merlin'}}
 let scm['merlin'] = {'type': 'git', 'url': 'git://github.com/def-lkb/merlin', 'addon-info': {'runtimepath': 'vim/merlin', 'dependencies': {'vimbufsync': {}}}}
 let scm['ocp-indent'] = {'type': 'git', 'url': 'git://github.com/OCamlPro/ocp-indent'}
-let scm['pgnvim'] = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
+let scm['pgnvim'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/Raimondi/pgnvim'}, {'pgn.vim': 'syntax'})
 
 " Marius Gedminas
 let scm['python-imports@mgedmin'] = {'type': 'git', 'url': 'git://github.com/mgedmin/python-imports.vim'}
@@ -1306,8 +1306,8 @@ let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/maktaba'}
 
 " Jevgeni Tarasov
 " The following repository is referenced on vim.org, but not present on github:
-" let scmnr.3570 = vamkr#AddCopyHook({'type': 'git', 'url': 'git://github.com/wolfsund/terse'}, {'terse.vim': 'plugin'})
+" let scmnr.3570 = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/wolfsund/terse'}, {'terse.vim': 'plugin'})
 
-" r: see vamkr#GetVim
+" r: see vimpi#LoadDBFile
 let r=[scm, scmnr]
 " vim: ft=vim ts=2 sts=2 sw=2 et fdm=marker fmr=▶,▲ tw=0 nowrap

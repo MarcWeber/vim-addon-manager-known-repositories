@@ -30,10 +30,10 @@ let types = ['SCM unhooked source',
             \'archive hooked source']
 try
     set rtp=.
-    let g:vam_kr_running_hook_test=1
+    let g:vim_pi_running_hook_test=1
     "▶1 Load vimorgsources
     try
-        let www_vim_org=vamkr#LoadDBFile('vimorgsources.json')
+        let www_vim_org=vimpi#LoadDBFile('vimorgsources.json')
     catch
         throw 'Error while loading vo DB file: '.v:exception
     endtry
@@ -181,10 +181,10 @@ try
         throw 'End line not found'
     endif
     "▲1
-    let scmsources=vamkr#LoadDBFile('scmsources.vim')
-    "▶1 Check whether vamkr#GetSCMSources runs properly (it has some checks on its own)
+    let scmsources=vimpi#LoadDBFile('scmsources.vim')
+    "▶1 Check whether vimpi#GetSCMSources runs properly (it has some checks on its own)
     redir => g:messages
-    call vamkr#GetSCMSources(snr_to_name, www_vim_org)
+    call vimpi#GetSCMSources(snr_to_name, www_vim_org)
     redir END
     if match(g:messages, '\S')!=-1
         throw 'Not empty messages: '.g:messages
@@ -233,7 +233,7 @@ try
     endfor
     "▶1 Prepare variables for patchinfo values checking
     try
-        let patchinfo=vamkr#LoadDBFile('patchinfo.vim')
+        let patchinfo=vimpi#LoadDBFile('patchinfo.vim')
     catch
         throw 'Error while loading patchinfo DB file: '.v:exception.' '.v:throwpoint
     endtry

@@ -1,7 +1,7 @@
 " This file is the "patch" to modify the repository informations retrieved
 " from vim.sf.net
 " Most numbers represent vim-script numbers
-" See vamkr#PatchSources
+" See vimpi#PatchSources
 let patch_repo = {}
 let addon_info = {}
 let addon_info_deps = {}

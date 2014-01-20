@@ -12,12 +12,12 @@ function! GetAuthor()
     return matchstr(a, 'Author: \zs.*')
 endfunction
 function! s:GetScriptType(nr)
-    let nrnamesdb=vamkr#LoadDBFile('script-id-to-name-log.json')
+    let nrnamesdb=vimpi#LoadDBFile('script-id-to-name-log.json')
     let name=get(nrnamesdb, a:nr, [0])[0]
     if name is 0
         return 'utility'
     endif
-    let vodb=vamkr#LoadDBFile('vimorgsources.json')
+    let vodb=vimpi#LoadDBFile('vimorgsources.json')
     return get(get(vodb, name, {}), 'script-type', 'utility')
 endfunction
 function! GetPrevSNR()
@@ -57,7 +57,7 @@ endfunction
 function! AddGHUrl(url, nr)
     call append('.', s:ProcNR(a:url, a:nr).
                 \    ((a:url=~#'\v\/(blob|raw)\/[^/]+\/.*\.vim$')?
-                \       ('vamkr#AddCopyHook({''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}, {'.string(substitute(a:url, '\v^.{-}\/%(blob|raw)\/[^/]+\/(.*)$', '\1', '')).': '.string(vam#utils#GuessFixDir(s:GetScriptType(a:nr))).'})'):
+                \       ('vimpi#AddCopyHook({''type'': ''git'', ''url'': '.string(s:GitUrl(a:url)).'}, {'.string(substitute(a:url, '\v^.{-}\/%(blob|raw)\/[^/]+\/(.*)$', '\1', '')).': '.string(vam#utils#GuessFixDir(s:GetScriptType(a:nr))).'})'):
                 \    ((a:url=~#'^lp:')?
                 \       ('{''type'': ''bzr'', ''url'': '.string(a:url).'}'):
                 \    ((a:url=~#'svn')?
