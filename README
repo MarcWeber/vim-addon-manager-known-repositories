@@ -25,16 +25,12 @@ which hooks do we need, how to compile supporting tools, how declare dependencie
 
 discussion 2)
 
-more discussions:
-Some additional discussions are taking place it
-vim-addon-manager-known-repository's github bug tracker
+More discussions:
+Some additional discussions are taking place at vim-pi's bitbucket issue 
+tracker.
 
-moving to a new location:
-https://bitbucket.org/vimcommunity/vim-pi/issue/83
-
-API, move contents to database having a online store ?:
-https://bitbucket.org/vimcommunity/vim-pi/issue/80
-
+- API, move contents to database having a online store ?: 
+  https://bitbucket.org/vimcommunity/vim-pi/issue/80
 
 
 Older vim-addon-manager-known-repository README contents:
