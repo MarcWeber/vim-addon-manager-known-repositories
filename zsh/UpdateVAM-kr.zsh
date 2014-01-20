@@ -55,6 +55,6 @@ if $GIT commit -a ./db -m "Cron job update" ; then
         # VAM-kr is a mirror now. Do not try too hard: 5 attempts or any merge 
         # conflict and “push -f”.
         safe_push $VAMKRREP || \
-            $GIT push -f $VAMKRREP
+            $GIT push -f $VAMKRREP master
     fi
 fi
