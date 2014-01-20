@@ -1123,9 +1123,6 @@ let scmnr.51   = {'url': 'http://cscope.sourceforge.net/cscope_maps.vim', 'archi
 " Devin Weaver (sukima)
 let scm['LSLvim'] = {'type': 'git', 'url': 'git://github.com/sukima/LSLvim'}
 
-" Andrew Stewart
-let scm['vim-gitgutter'] = {'type': 'git', 'url': 'git://github.com/airblade/vim-gitgutter'}
-
 " Scott Bronson
 let scm['vim-toggle-wrap'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-toggle-wrap'}
 let scm['vim-visual-star-search'] = {'type': 'git', 'url': 'git://github.com/bronson/vim-visual-star-search'}
@@ -1277,7 +1274,7 @@ let scm['jekyll'] = {'type': 'git', 'url': 'git://github.com/csexton/jekyll.vim'
 let scm['viceroy'] = {'type': 'git', 'url': 'git://github.com/csexton/viceroy'}
 
 " David Barnett
-let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/maktaba.git'}
+let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/maktaba'}
 
 "-----------------------------------------------------------------------------------------------------------------------
 
