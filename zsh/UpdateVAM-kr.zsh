@@ -46,7 +46,7 @@ function safe_push()
             return 1
         fi
     done
-    (( ATTEMPTS == -1 ))
+    (( ATTEMPTS != -1 ))
     return $?
 }
 
