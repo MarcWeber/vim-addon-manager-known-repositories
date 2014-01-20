@@ -1,10 +1,10 @@
 DEPRECATION WARNING
 ===================
 
-**THIS REPOSITORY IS NOW A MIRROR OF https://bitbucket.org/vimcommunity/vim-pi. 
-YOU SHOULD POST ALL ISSUES AND PULL REQUESTS THERE. ANY CHANGES TO THIS 
-REPOSITORY RESULTING IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON 
-JOB.**
+**THIS REPOSITORY IS NOW A MIRROR OF https://bitbucket.org/vimcommunity/vim-pi.**
+**YOU SHOULD POST ALL ISSUES AND PULL REQUESTS THERE. ANY CHANGES TO THIS**
+**REPOSITORY RESULTING IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON**
+**JOB.**
 
 VIM-PI (vim plugin index?) (previously vim-addon-manager-known-repositories)
 =============================================================================
