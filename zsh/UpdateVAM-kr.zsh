@@ -42,7 +42,7 @@ function safe_push()
     # By the time we are trying to push new changes may have added
     integer ATTEMPTS=5
     while ! $GIT push $@ master && (( ATTEMPTS-- )) ; do
-        if ! $GIT pull $@ master
+        if ! $GIT pull $@ master ; then
             return 1
         fi
     done
