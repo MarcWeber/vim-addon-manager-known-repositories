@@ -1,3 +1,11 @@
+DEPRECATION WARNING
+===================
+
+**THIS REPOSITORY IS NOW A MIRROR OF https://bitbucket.org/vimcommunity/vim-pi. 
+YOU SHOULD POST ALL ISSUES AND PULL REQUESTS THERE. ANY CHANGES TO THIS 
+REPOSITORY RESULTING IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON 
+JOB.**
+
 VIM-PI (vim plugin index?) (previously vim-addon-manager-known-repositories)
 =============================================================================
 ZyX, Marc, Shougo are discussing how to move this all to the next level so that
@@ -22,10 +30,10 @@ Some additional discussions are taking place it
 vim-addon-manager-known-repository's github bug tracker
 
 moving to a new location:
-https://github.com/MarcWeber/vim-addon-manager-known-repositories/issues/83
+https://bitbucket.org/vimcommunity/vim-pi/issue/83
 
 API, move contents to database having a online store ?:
-https://github.com/MarcWeber/vim-addon-manager-known-repositories/issues/80
+https://bitbucket.org/vimcommunity/vim-pi/issue/80
 
 
 
