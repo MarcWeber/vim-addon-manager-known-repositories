@@ -17,6 +17,7 @@ if ! test -d $VIMPIDIR ; then
     cd $VIMPIDIR || exit 3
 else
     cd $VIMPIDIR || exit 3
+    $GIT reset --hard HEAD
     $GIT pull
 fi
 $GIT checkout -f master || exit 4

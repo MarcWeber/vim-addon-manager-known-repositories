@@ -26,8 +26,8 @@ which hooks do we need, how to compile supporting tools, how declare dependencie
 discussion 2)
 
 More discussions:
-Some additional discussions are taking place at vim-pi's bitbucket issue 
-tracker.
+Some additional discussions are taking place at vim-pi's [bitbucket issue 
+tracker](https://bitbucket.org/vimcommunity/vim-pi/issues).
 
 - API, move contents to database having a online store ?: 
   https://bitbucket.org/vimcommunity/vim-pi/issue/80
