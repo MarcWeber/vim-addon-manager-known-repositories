@@ -1,12 +1,12 @@
 DEPRECATION WARNING
 ===================
 
-**[VAM-KR][1] REPOSITORY IS NOW A MIRROR OF https://bitbucket.org/vimcommunity/vim-pi.**
-**YOU SHOULD POST ALL ISSUES AND PULL REQUESTS THERE. ANY CHANGES TO THIS**
-**REPOSITORY RESULTING IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON**
-**JOB.**
+**[VAM-KR][1] REPOSITORY IS NOW A MIRROR OF [VIM-PI][2]. YOU SHOULD POST ALL 
+ISSUES AND PULL REQUESTS THERE. ANY CHANGES TO THIS REPOSITORY RESULTING IN 
+A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON JOB.**
 
 [1]: https://github.com/MarcWeber/vim-addon-manager-known-repositories
+[2]: https://bitbucket.org/vimcommunity/vim-pi
 
 VIM-PI (vim plugin index?) (previously vim-addon-manager-known-repositories)
 =============================================================================
@@ -54,11 +54,11 @@ Contributing:
 db/vimorgsources.json contains a dump from www.vim.org which is generated automatically.
 The default implementation merges both prefering the source control ones
 
-Issues which may cause us to immediately remove plugins [1]:
+Issues which may cause us to immediately remove plugins†:
   - security issues or other similar sever issues (didn't happen yet)
 
 Issues which may cause us to deprecate plugins, which means they can be
-installed but a warning will be shown [1]:
+installed but a warning will be shown†:
   - there are other plugins doing the same, but better - unless the 
     less useful plugins are a significant simpler and people indiciate that
     they are still using it.
@@ -66,7 +66,7 @@ installed but a warning will be shown [1]:
   - a plugin is obviously broken in a way so that its causing more harm than
     value.
 
-[1]: If in doubt create a github ticket and let's discuss the issue.
+† If in doubt create a github ticket and let's discuss the issue.
 
 
 BUGS:
