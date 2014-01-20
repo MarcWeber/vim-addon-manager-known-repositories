@@ -50,7 +50,7 @@ function safe_push()
     return $?
 }
 
-if $GIT commit -a ./db -m "Cron job update" ; then
+if $GIT commit ./db -m "Cron job update" ; then
     if safe_push $VIMPIREP ; then
         # VAM-kr is a mirror now. Do not try too hard: 5 attempts or any merge 
         # conflict and “push -f”.
