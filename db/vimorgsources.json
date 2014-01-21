@@ -1,4 +1,5 @@
 {
+"counterpoint":{"archive_name":"counterpoint.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21351","version":"0.1","vim_script_nr":4838},
 "vim-bemhtml":{"archive_name":"vim-bemhtml.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21348","version":"0.1.0","vim_script_nr":4837},
 "NERDTree_WGet":{"archive_name":"nerdtree-wget.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21346","version":"1","vim_script_nr":4836},
 "Textabyss":{"archive_name":"nav.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21338","version":"1.2.1","vim_script_nr":4835},
@@ -17,7 +18,7 @@
 "potion-support":{"archive_name":"potion-support.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21287","version":"0.0.0.1","vim_script_nr":4821},
 "Iceberg":{"archive_name":"iceberg.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21282","version":"0.2","vim_script_nr":4820},
 "select__search":{"archive_name":"select_and_search.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21280","version":"1.0","vim_script_nr":4819},
-"vizardry":{"archive_name":"vizardry.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21274","version":"0.1","vim_script_nr":4818},
+"vizardry":{"archive_name":"vizardry.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21352","version":"0.2","vim_script_nr":4818},
 "increment-activator":{"archive_name":"increment-activator-0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21316","version":"0.0.2","vim_script_nr":4817},
 "publish_helper":{"archive_name":"vim-publish-helper-0.6.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21291","version":"0.6","vim_script_nr":4816},
 "choowsewin":{"archive_name":"vim-choosewin-1.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21306","version":"v1.3","vim_script_nr":4815},
@@ -239,7 +240,7 @@
 "vim-bufferline":{"archive_name":"bufferline.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20322","version":"0.3","vim_script_nr":4595},
 "header-info":{"archive_name":"header-info.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20234","version":"1.1","vim_script_nr":4594},
 "fishruler":{"archive_name":"fishruler.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20194","version":"1.1","vim_script_nr":4593},
-"ctrlp-funky":{"archive_name":"ctrlp-funky-0.6.4.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20965","version":"0.6.4","vim_script_nr":4592},
+"ctrlp-funky":{"archive_name":"ctrlp-funky-0.8.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21353","version":"0.8.0","vim_script_nr":4592},
 "winresizer":{"archive_name":"winresizer.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20487","version":"1.0","vim_script_nr":4591},
 "localcomplete":{"archive_name":"localcomplete-1.0.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20494","version":"1.0.1","vim_script_nr":4590},
 "newt":{"archive_name":"newt.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20161","version":"0.1","vim_script_nr":4589},

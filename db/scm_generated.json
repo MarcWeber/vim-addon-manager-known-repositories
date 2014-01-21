@@ -3507,6 +3507,10 @@
     "type": "git",
     "url": "git@github.com:markgandolfo/nerdtree-wget.vim.git"
   },
+  "4838": {
+    "type": "git",
+    "url": "git://github.com/jpetrie/vim-counterpoint"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
