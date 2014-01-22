@@ -9512,6 +9512,7 @@
       "grsecurity3027"
    ],
    "3028" : [
+      "rename%3028",
       "rename"
    ],
    "3029" : [
@@ -14968,5 +14969,14 @@
    ],
    "4838" : [
       "counterpoint"
+   ],
+   "4839" : [
+      "writepath"
+   ],
+   "4840" : [
+      "rename%4840"
+   ],
+   "4841" : [
+      "JumpToVerticalOccurrence"
    ]
 }

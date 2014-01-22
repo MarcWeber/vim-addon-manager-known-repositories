@@ -3511,6 +3511,14 @@
     "type": "git",
     "url": "git://github.com/jpetrie/vim-counterpoint"
   },
+  "4839": {
+    "type": "git",
+    "url": "git://github.com/artnez/vim-writepath"
+  },
+  "4840": {
+    "type": "git",
+    "url": "git://github.com/artnez/vim-rename"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
