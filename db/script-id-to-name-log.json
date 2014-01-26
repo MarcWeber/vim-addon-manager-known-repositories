@@ -14978,5 +14978,17 @@
    ],
    "4841" : [
       "JumpToVerticalOccurrence"
+   ],
+   "4842" : [
+      "InsertFromAround"
+   ],
+   "4843" : [
+      "CopySel"
+   ],
+   "4844" : [
+      "_poshcomplete-vim"
+   ],
+   "4845" : [
+      "Html_Template"
    ]
 }

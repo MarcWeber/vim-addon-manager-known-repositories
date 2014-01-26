@@ -487,6 +487,10 @@
     "type": "git",
     "url": "git://github.com/derekmcloughlin/gvimfullscreen_win32"
   },
+  "2602": {
+    "type": "git",
+    "url": "git://github.com/pr3d4t0r/paster"
+  },
   "2610": {
     "type": "git",
     "url": "git://github.com/kana/vim-textobj-entire"
@@ -3518,6 +3522,10 @@
   "4840": {
     "type": "git",
     "url": "git://github.com/artnez/vim-rename"
+  },
+  "4844": {
+    "type": "git",
+    "url": "git://github.com/cd01/poshcomplete-vim"
   },
   "521": {
     "type": "git",
