@@ -467,6 +467,10 @@
     "type": "git",
     "url": "git://github.com/aklt/vim-simple_comments"
   },
+  "2565": {
+    "type": "git",
+    "url": "git://github.com/inkarkat/runVimTests"
+  },
   "2571": {
     "type": "git",
     "url": "git://github.com/mileszs/apidock.vim"
@@ -3526,6 +3530,10 @@
   "4844": {
     "type": "git",
     "url": "git://github.com/cd01/poshcomplete-vim"
+  },
+  "4848": {
+    "type": "git",
+    "url": "git://github.com/sk1418/blockit"
   },
   "521": {
     "type": "git",
