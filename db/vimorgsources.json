@@ -1,5 +1,8 @@
 {
-"Echnchanted_Vim":{"archive_name":"enchanted.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21416","version":"1","vim_script_nr":4849},
+"vawa":{"archive_name":"vawa.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21421","version":"1.00","vim_script_nr":4852},
+"grin":{"archive_name":"grin.vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21420","version":"0.1","vim_script_nr":4851},
+"vim-colors-pencil":{"archive_name":"vim-colors-pencil-0.4.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21419","version":"0.4","vim_script_nr":4850},
+"Enchanted_Vim":{"archive_name":"enchanted.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21416","version":"1","vim_script_nr":4849},
 "blockit":{"archive_name":"blockit.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21407","version":"1.0.0","vim_script_nr":4848},
 "phpspec":{"archive_name":"phpspec.vim-1.0.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21397","version":"1.0","vim_script_nr":4847},
 "TWMC_TabWin_Move_Commands":{"archive_name":"TWMC.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21412","version":"2.0.0","vim_script_nr":4846},
@@ -419,7 +422,7 @@
 "lithochromatic":{"archive_name":"lithochromatic-1.2.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21015","version":"1.2","vim_script_nr":4406},
 "latex-support":{"archive_name":"latex-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21339","version":"1.1","vim_script_nr":4405},
 "vim-line-numbers":{"archive_name":"vim-line-numbers.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19408","version":"0.1","vim_script_nr":4404},
-"togglecursor":{"archive_name":"togglecursor-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20603","version":"0.1.1","vim_script_nr":4403},
+"togglecursor":{"archive_name":"togglecursor-0.2.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21422","version":"0.2.0","vim_script_nr":4403},
 "vim-darksea":{"archive_name":"vim-darksea.vim.tgz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19400","version":"0.1","vim_script_nr":4402},
 "vim-sunshine":{"archive_name":"vim-sunshine.vim.tgz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19412","version":"0.1.1","vim_script_nr":4401},
 "tube":{"archive_name":"tube-0.3.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19451","version":"0.3.1","vim_script_nr":4400},

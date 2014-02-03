@@ -3535,6 +3535,18 @@
     "type": "git",
     "url": "git://github.com/sk1418/blockit"
   },
+  "4850": {
+    "type": "git",
+    "url": "git://github.com/reedes/vim-colors-pencil"
+  },
+  "4851": {
+    "type": "git",
+    "url": "git://github.com/santiycr/grin.vim"
+  },
+  "4852": {
+    "type": "hg",
+    "url": "https://bitbucket.org/sras/vawa"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
