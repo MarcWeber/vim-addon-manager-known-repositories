@@ -3547,6 +3547,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/sras/vawa"
   },
+  "4853": {
+    "type": "git",
+    "url": "git://github.com/pavoljuhas/smart-change-directory"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
