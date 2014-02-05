@@ -144,4 +144,18 @@ function! vimpi#GetNrToNameMap(www_vim_org)
   call map(copy(a:www_vim_org), 'extend(snr_to_name, {v:val.vim_script_nr : v:key})')
   return snr_to_name
 endfunction
+
+function! vimpi#DrChipSources()
+  let r = {}
+  for l in readfile(s:dbdir.'/forgit.tuv')
+    let [name, url, version_] = split(l,'|')
+    " prevent naming collisions by introducing dr_chip namespacing
+    let name = 'dr_chip_'.substitute(name, '[^a-zA-Z_]','','g')
+    let r[name] = {'version': version_, 'url': url, 'type': 'archive', 'source': 'drchip'}
+    unlet name url version_
+  endfor
+  return r
+endfunction
+
+
 " vim: ft=vim ts=4 sts=4 sw=4 et fmr=▶,▲
