@@ -1263,6 +1263,10 @@
     "type": "git",
     "url": "git://github.com/pydave/AsyncCommand"
   },
+  "3434": {
+    "type": "git",
+    "url": "git://github.com/xuhdev/vim-IniParser"
+  },
   "3439": {
     "type": "git",
     "url": "git://github.com/dterei/VimCobaltColourScheme"
@@ -1679,6 +1683,10 @@
     "type": "git",
     "url": "git://github.com/avakarev/vim-watchdog"
   },
+  "3747": {
+    "type": "git",
+    "url": "git://github.com/xuhdev/syntax-dosini.vim"
+  },
   "3750": {
     "type": "git",
     "url": "git://github.com/LStinson/TclShell-Vim"
@@ -1902,6 +1910,10 @@
   "3898": {
     "type": "git",
     "url": "https://bitbucket.org/aliva/vim-gtk-mode"
+  },
+  "3899": {
+    "type": "git",
+    "url": "git://github.com/xuhdev/indent-java.vim"
   },
   "3900": {
     "type": "git",

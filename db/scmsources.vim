@@ -604,12 +604,6 @@ let scm['kami'] = vimpi#AddCopyHook({'type': 'git', 'url': 'git://github.com/uji
 let scmnr.3427 = {'type': 'git', 'url': 'git://github.com/jelera/vim-nazca-colorscheme'}
 let scmnr.3922 = {'type': 'git', 'url': 'git://github.com/jelera/vim-gummybears-colorscheme'}
 
-" H Xu
-let scmnr.3434 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/iniparser'}
-let scmnr.3747 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/syntax-dosini.vim'}
-let scmnr.3899 = {'type': 'hg', 'url': 'https://bitbucket.org/xuhdev/indent-java.vim'}
-" The following is not a vim plugin, but it is posted on vim.org:
-
 " Lars Smit
 let scmnr.3445 = {'type': 'git', 'url': 'git://github.com/larssmit/Getafe'}
 
