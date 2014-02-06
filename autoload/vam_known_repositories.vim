@@ -13,27 +13,16 @@ let s:c['MergeSources']=get(g:vim_addon_manager, 'MergeSources', 'vam_known_repo
 " 
 " arg www_vim_org: See vimpi#www_vim_org_generated#Sources() (result is patched vamkr#patch#Patch)
 " arg scm_plugin_sources: See  vimpi#scm#Sources() (vim_script_nr_X is replaced by plugin's name in keys)
-fun! vam_known_repositories#MergeSources(o)
-  " old argument list: fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin_sources, patch_function, snr_to_name)
-  " this was not extensibel, switch to dictionary (sorry for breaking API)
-  "
-  " keys of o see usage below
-  let o = a:o
-  if !has_key(o, 'plugin_sources')
-    throw "API changed, pass dictionary, please"
-  endif
+fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin_sources, patch_function, snr_to_name)
 
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
 
   let d = {}
 
   " (1) merge in www.vim.org sources:
-  call extend(d, o.www_vim_org)
+  call extend(d, a:www_vim_org)
 
-  " (2) merge in drchip sources:
-  call extend(d, o.drchip_sources)
-
-  " (3) merge in SCM sources only if support isn't disabled
+  " (2) merge in SCM sources only if support isn't disabled
   "     (See VAMs documentation 4. Options -> drop_{scm}_soucres)
   "
   " g:vim_addon_manager['scm_merge_strategy'] options:
@@ -41,18 +30,18 @@ fun! vam_known_repositories#MergeSources(o)
   " keep:  only add scm version which have no released versions on www.vim.org
   " never: Don't add scm versions to list of known sources
   if merge_strategy isnot# 'never'
-    call filter(o.scm_plugin_sources, '!get(s:c, "drop_".(v:val.type)."_sources", 0)')
+    call filter(a:scm_plugin_sources, '!get(s:c, "drop_".(v:val.type)."_sources", 0)')
 
     " old code, will be dropped: scm_support was renamed to drop_scm_sources
-    call filter(o.scm_plugin_sources, 'get(s:c, (v:val.type)."_support", 1)')
+    call filter(a:scm_plugin_sources, 'get(s:c, (v:val.type)."_support", 1)')
 
-    call extend(d, o.scm_plugin_sources, merge_strategy)
+    call extend(d, a:scm_plugin_sources, merge_strategy)
   endif
 
-  let d=call(o.patch_function, [d, o.snr_to_name], {})
+  let d=call(a:patch_function, [d, a:snr_to_name], {})
 
   " always keep what the user has set:
-  call extend(o.plugin_sources, d, 'keep')
+  call extend(a:plugin_sources, d, 'keep')
 endf
 
 " returns the package pool. Probably you want to overwrite MergeSources instead
@@ -69,13 +58,7 @@ fun! vam_known_repositories#Pool()
 
   " now call MergeSources merge function so that user can pick scm over
   " www_vim_org sources as she desires.
-  call call(s:c['MergeSources'], [{
-        \ 'plugin_sources': pool,
-        \ 'www_vim_org'   : www_vim_org,
-        \ 'drchip_sources': vimpi#DrChipSources(),
-        \ 'scm_plugin_sources'   : scm,
-        \ 'patch_function'   : 'vimpi#PatchSources',
-        \ 'snr_to_name'   : snr_to_name,
-        \ }],{})
+  call call(s:c['MergeSources'], [pool, www_vim_org, scm, 'vimpi#PatchSources', snr_to_name], {})
+
   return pool
 endf
