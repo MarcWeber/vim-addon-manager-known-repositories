@@ -323,6 +323,12 @@
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/Rainbow.vba.gz",
     "version": "v2q"
   },
+  "ReadStub@drchip": {
+    "homepage": "http://www.drchip.org/astronaut/vim/index.html",
+    "type": "archive",
+    "url": "http://www.drchip.org/astronaut/vim/vbafiles/ReadStub.vba.gz",
+    "version": "v1a"
+  },
   "RltvNmbr@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
