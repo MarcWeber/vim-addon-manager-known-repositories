@@ -11,16 +11,16 @@ let s:c['MergeSources']=get(g:vim_addon_manager, 'MergeSources', 'vam_known_repo
 " If you have custom packages overwrite this function and patch whatever you
 " want to patch...
 " 
-" arg www_vim_org: See vimpi#www_vim_org_generated#Sources() (result is patched vamkr#patch#Patch)
+" arg default_sources: See vimpi#www_vim_org_generated#Sources() (result is patched vamkr#patch#Patch)
 " arg scm_plugin_sources: See  vimpi#scm#Sources() (vim_script_nr_X is replaced by plugin's name in keys)
-fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin_sources, patch_function, snr_to_name)
+fun! vam_known_repositories#MergeSources(user_sources, default_sources, scm_plugin_sources, patch_function, snr_to_name)
 
   let merge_strategy = get(s:c, 'scm_merge_strategy', 'force')
 
   let d = {}
 
   " (1) merge in www.vim.org sources:
-  call extend(d, a:www_vim_org)
+  call extend(d, a:default_sources)
 
   " (2) merge in SCM sources only if support isn't disabled
   "     (See VAMs documentation 4. Options -> drop_{scm}_soucres)
@@ -41,7 +41,7 @@ fun! vam_known_repositories#MergeSources(plugin_sources, www_vim_org, scm_plugin
   let d=call(a:patch_function, [d, a:snr_to_name], {})
 
   " always keep what the user has set:
-  call extend(a:plugin_sources, d, 'keep')
+  call extend(a:user_sources, d, 'keep')
 endf
 
 " returns the package pool. Probably you want to overwrite MergeSources instead
@@ -50,15 +50,19 @@ endf
 " known addons.
 fun! vam_known_repositories#Pool()
   let www_vim_org = vimpi#LoadDBFile('vimorgsources.json')
+  let drchip      = vimpi#LoadDBFile('drchip.json')
   let snr_to_name = vimpi#GetNrToNameMap(www_vim_org)
   let scm         = vimpi#GetSCMSources(snr_to_name, www_vim_org)
+
+  " Add drchip sources to vim.org ones
+  let default_sources = extend(copy(www_vim_org), drchip)
 
   "  start from scratch adding plugin sources to pool:
   let pool = copy(get(s:c, 'plugin_sources', {}))
 
   " now call MergeSources merge function so that user can pick scm over
   " www_vim_org sources as she desires.
-  call call(s:c['MergeSources'], [pool, www_vim_org, scm, 'vimpi#PatchSources', snr_to_name], {})
+  call call(s:c['MergeSources'], [pool, default_sources, scm, 'vimpi#PatchSources', snr_to_name], {})
 
   return pool
 endf

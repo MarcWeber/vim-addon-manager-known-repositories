@@ -36,6 +36,10 @@ then
     exit 7
 fi
 $RM script-info.json
+if ! $PYTHON -O $VIMPI_SAFE_REPO/python/drchip.py ; then
+    $GIT reset --hard HEAD
+    exit 8
+fi
 
 function safe_push()
 {
