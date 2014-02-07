@@ -36,6 +36,7 @@ tracker](https://bitbucket.org/vimcommunity/vim-pi/issues).
 ## Older vim-addon-manager-known-repository README contents:
 
 This repository is an extension to http://github.com/MarcWeber/vim-addon-manager
+(and NeoBundle).
 
 It is the "default source" of descriptions where to get which addons for vim-addon-manager.
 
@@ -67,7 +68,7 @@ installed but a warning will be shown†:
 - a plugin is obviously broken in a way so that its causing more harm than 
   value.
 
-† If in doubt create a github ticket and let's discuss the issue.
+† If in doubt create a bitbucket ticket and let's discuss the issue.
 
 ### BUGS:
 
