@@ -2604,8 +2604,8 @@
     "url": "git://github.com/mihaifm/vimpanel"
   },
   "441": {
-    "type": "git",
-    "url": "git://github.com/embear/vim-localvimrc"
+    "type": "hg",
+    "url": "https://bitbucket.org/embear/localvimrc"
   },
   "4410": {
     "type": "git",
