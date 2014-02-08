@@ -14887,6 +14887,7 @@
       "LEF_DEF_syntax"
    ],
    "4811" : [
+      "vim-textobj-quote",
       "vim-quotable"
    ],
    "4812" : [

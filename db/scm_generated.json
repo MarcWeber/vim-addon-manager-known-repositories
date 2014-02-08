@@ -3461,7 +3461,7 @@
   },
   "4811": {
     "type": "git",
-    "url": "git://github.com/reedes/vim-quotable"
+    "url": "git://github.com/reedes/vim-textobj-quote"
   },
   "4812": {
     "type": "git",
@@ -3550,6 +3550,10 @@
   "4848": {
     "type": "git",
     "url": "git://github.com/sk1418/blockit"
+  },
+  "4849": {
+    "type": "git",
+    "url": "git://github.com/coot/EnchantedVim"
   },
   "4850": {
     "type": "git",
