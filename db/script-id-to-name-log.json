@@ -15026,5 +15026,14 @@
    ],
    "4856" : [
       "CRDispatcher"
+   ],
+   "4857" : [
+      "APL_character_picker"
+   ],
+   "4858" : [
+      "stdtabs"
+   ],
+   "4859" : [
+      "better-whitespace"
    ]
 }

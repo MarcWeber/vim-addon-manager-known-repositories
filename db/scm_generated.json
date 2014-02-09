@@ -3571,6 +3571,14 @@
     "type": "git",
     "url": "git://github.com/pavoljuhas/smart-change-directory"
   },
+  "4858": {
+    "type": "git",
+    "url": "git://github.com/sdanielf/vim-stdtabs"
+  },
+  "4859": {
+    "type": "git",
+    "url": "git://github.com/ntpeters/vim-better-whitespace"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
