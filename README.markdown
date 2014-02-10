@@ -17,6 +17,33 @@ all
 
 can benefit the most.
 
+We strongly welcome everybody who wants to contribute (also Pathogen and Vundle
+and .. lovers).
+
+## GOALS
+- list all known Vim plugins
+- do so in a way that everybody who is interested can reuse the information
+- provide hints about deprecations or replacements
+- collaborate with interested parties (other plugin managers etc)
+- maybe cerate a website which provides advanced features
+- setup standards for dependency management if possible.
+
+## SUPPORT
+Open tickets, thanks
+
+## important contents of this repository
+- The database files: db/\*.json
+- Manually maintained packages and patches db/\*.vim
+- The Vim supporting code: autoload/\*.vim
+  Suggested main entry ponit (default implementation): vam_known_repositories#Pool()
+  It returns a list of all known plugins. Each plugin is a dictionary. An easy way to view
+  contents is the :VAMPluginInfo command of VAM.
+- python/\*.py files: scripts to update the database files
+- doc/\*: additional documentation
+
+If you're looking for code which actually knowns how to download the known plugins
+we recommend VAM or NeoBundle.
+
 ### discussions going on:
 
 #### discussion 1)
