@@ -1,5 +1,6 @@
 {
-"better-whitespace":{"archive_name":"better-whitespace.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21455","version":"1.0","vim_script_nr":4859},
+"VimMahewinHub":{"archive_name":"vim-mahewin-hub.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21457","version":"0.1","vim_script_nr":4860},
+"better-whitespace":{"archive_name":"better-whitespace.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21456","version":"1.0.1","vim_script_nr":4859},
 "stdtabs":{"archive_name":"vim-stdtabs.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21454","version":"0.2","vim_script_nr":4858},
 "APL_character_picker":{"archive_name":"apl.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21452","version":"1.0","vim_script_nr":4857},
 "CRDispatcher":{"archive_name":"crdispatcher.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21435","version":"1","vim_script_nr":4856},
