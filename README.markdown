@@ -1,12 +1,3 @@
-# DEPRECATION WARNING
-
-**[VAM-KR][1] REPOSITORY IS NOW A MIRROR OF [VIM-PI][2]. YOU SHOULD POST ALL 
-ISSUES AND PULL REQUESTS TO THE LATTER. ANY CHANGES TO THIS REPOSITORY RESULTING
-IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON JOB.**
-
-[1]: https://github.com/MarcWeber/vim-addon-manager-known-repositories
-[2]: https://bitbucket.org/vimcommunity/vim-pi
-
 ## VIM-PI (vim plugin index) (previously vim-addon-manager-known-repositories)
 
 ZyX, Marc, Shougo are discussing how to move this all to the next level so that
@@ -59,6 +50,10 @@ tracker](https://bitbucket.org/vimcommunity/vim-pi/issues).
 - API, move contents to database having a online store ?: 
   https://bitbucket.org/vimcommunity/vim-pi/issue/80
 
+- cross plugin manager way to describe plugins to be installed:
+  https://bitbucket.org/vimcommunity/vim-pi/issue/95
+  goals: allow external tools to install plugins (parallelization etc)
+
 
 ## Older vim-addon-manager-known-repository README contents:
 
@@ -101,3 +96,14 @@ installed but a warning will be shown†:
 
   There are two plugins: one called align an done called Align. This will cause
   trouble on Windows !
+
+
+# HISTORICAL INFO
+
+**[VAM-KR][1] REPOSITORY IS NOW A MIRROR OF [VIM-PI][2]. YOU SHOULD POST ALL 
+ISSUES AND PULL REQUESTS TO THE LATTER. ANY CHANGES TO THIS REPOSITORY RESULTING
+IN A MERGE CONFLICT WITH UPSTREAM WILL BE DELETED BY A CRON JOB.**
+
+[1]: https://github.com/MarcWeber/vim-addon-manager-known-repositories
+[2]: https://bitbucket.org/vimcommunity/vim-pi
+
