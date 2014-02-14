@@ -3587,6 +3587,10 @@
     "type": "git",
     "url": "git://github.com/ntpeters/vim-better-whitespace"
   },
+  "4863": {
+    "type": "git",
+    "url": "git://github.com/tpope/vim-jdaddy"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

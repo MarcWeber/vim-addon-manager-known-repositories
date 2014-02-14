@@ -1,4 +1,5 @@
 {
+"jdaddy":{"archive_name":"jdaddy.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21481","version":"1.0","vim_script_nr":4863},
 "hybris_ImpEx":{"archive_name":"impex.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21470","version":"0.1","vim_script_nr":4862},
 "sql.snippets":{"archive_name":"sql.snippets","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21476","version":"0.5","vim_script_nr":4861},
 "VimMahewinHub":{"archive_name":"vim-mahewin-hub.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21457","version":"0.1","vim_script_nr":4860},
@@ -42,7 +43,7 @@
 "select__search":{"archive_name":"select_and_search.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21280","version":"1.0","vim_script_nr":4819},
 "vizardry":{"archive_name":"vizardry.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21352","version":"0.2","vim_script_nr":4818},
 "increment-activator":{"archive_name":"increment-activator-0.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21316","version":"0.0.2","vim_script_nr":4817},
-"publish_helper":{"archive_name":"vim-publish-helper-0.8.1.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21467","version":"0.8.1","vim_script_nr":4816},
+"publish_helper":{"archive_name":"vim-publish-helper-0.8.2.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21482","version":"0.8.2","vim_script_nr":4816},
 "choowsewin":{"archive_name":"vim-choosewin-1.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21306","version":"v1.3","vim_script_nr":4815},
 "vim-howdoi":{"archive_name":"vim-howdoi-1.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21244","version":"1.0","vim_script_nr":4814},
 "candyVirus":{"archive_name":"candyVirus.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21242","version":"1.0","vim_script_nr":4813},
@@ -1976,7 +1977,7 @@
 "term":{"archive_name":"term.vim","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11530","version":"0.1","vim_script_nr":2812},
 "hlasm":{"archive_name":"hlasm.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11528","version":"1.0","vim_script_nr":2811},
 "InsertChar":{"archive_name":"InsertChar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11521","version":"1.0","vim_script_nr":2810},
-"fontsize":{"archive_name":"fontsize-0.3.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20878","version":"0.3.1","vim_script_nr":2809},
+"fontsize":{"archive_name":"fontsize-0.3.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21483","version":"0.3.2","vim_script_nr":2809},
 "haxe_plugin":{"archive_name":"omnihaxeselectpack2.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11517","version":"0.001","vim_script_nr":2808},
 "Nmap_syntax_highlight":{"archive_name":"nmap.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11516","version":"1.0","vim_script_nr":2807},
 "md5":{"archive_name":"md5.vim","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11508","version":"1.0","vim_script_nr":2806},
