@@ -3591,6 +3591,10 @@
     "type": "git",
     "url": "git://github.com/tpope/vim-jdaddy"
   },
+  "4865": {
+    "type": "git",
+    "url": "git://github.com/AndrewRadev/writable_search.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
