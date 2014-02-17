@@ -3595,6 +3595,18 @@
     "type": "git",
     "url": "git://github.com/AndrewRadev/writable_search.vim"
   },
+  "4867": {
+    "type": "git",
+    "url": "git://github.com/zardus/fuckpep8"
+  },
+  "4868": {
+    "type": "git",
+    "url": "git://github.com/gcmt/wildfire.vim"
+  },
+  "4869": {
+    "type": "git",
+    "url": "git://github.com/jcorbin/vim-searchmatch"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
