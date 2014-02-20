@@ -1127,6 +1127,10 @@
     "type": "git",
     "url": "git://github.com/ujihisa/unite-locate"
   },
+  "3334": {
+    "type": "git",
+    "url": "git://github.com/orthecreedence/void.vim"
+  },
   "3339": {
     "type": "git",
     "url": "git://github.com/tangledhelix/vim-rdist"
