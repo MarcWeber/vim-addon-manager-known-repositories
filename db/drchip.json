@@ -99,7 +99,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/astronaut.vba.gz",
-    "version": "v8f"
+    "version": "v20"
   },
   "DrCsUtilities@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -141,7 +141,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/getscript.vba.gz",
-    "version": "v36b"
+    "version": "v36"
   },
   "HdrtagExplorer@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v150u"
+    "version": "v151d"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -471,7 +471,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/ZoomWin.vba.gz",
-    "version": "v25j"
+    "version": "v25l"
   },
   "foldcol@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
