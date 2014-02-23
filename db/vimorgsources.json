@@ -1,4 +1,5 @@
 {
+"Licenses":{"archive_name":"licenses.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21524","version":"0.1","vim_script_nr":4871},
 "ExtractLinks":{"archive_name":"ExtractLinks-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21513","version":"1.00","vim_script_nr":4870},
 "searchmatch":{"archive_name":"vim-searchmatch-0.9.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21499","version":"0.9.1","vim_script_nr":4869},
 "wildfire":{"archive_name":"wildfire-1.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21510","version":"1.1.1","vim_script_nr":4868},
@@ -32,7 +33,7 @@
 "counterpoint":{"archive_name":"counterpoint.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21360","version":"0.2","vim_script_nr":4838},
 "vim-bemhtml":{"archive_name":"vim-bemhtml.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21348","version":"0.1.0","vim_script_nr":4837},
 "NERDTree_WGet":{"archive_name":"nerdtree-wget.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21369","version":"1.2","vim_script_nr":4836},
-"Textabyss":{"archive_name":"nav.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21508","version":"1.6.1","vim_script_nr":4835},
+"Textabyss":{"archive_name":"nav.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21525","version":"1.6.4","vim_script_nr":4835},
 "vimcaps":{"archive_name":"vimcaps-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21521","version":"0.1.1","vim_script_nr":4834},
 "vim-clojure-highlight":{"archive_name":"vim-clojure-highlight.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21321","version":"1","vim_script_nr":4833},
 "vader":{"archive_name":"vader.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21345","version":"0.2.0","vim_script_nr":4832},
