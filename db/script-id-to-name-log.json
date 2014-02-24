@@ -15072,5 +15072,11 @@
    ],
    "4871" : [
       "Licenses"
+   ],
+   "4872" : [
+      "vim-decfile"
+   ],
+   "4873" : [
+      "gnuplot_syntax_highlighting"
    ]
 }

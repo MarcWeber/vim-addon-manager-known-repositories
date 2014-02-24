@@ -3615,6 +3615,10 @@
     "type": "git",
     "url": "git://github.com/jcorbin/vim-searchmatch"
   },
+  "4872": {
+    "type": "git",
+    "url": "git://github.com/stevensons/vim-decfile"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
