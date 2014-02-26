@@ -3619,6 +3619,10 @@
     "type": "git",
     "url": "git://github.com/stevensons/vim-decfile"
   },
+  "4874": {
+    "type": "git",
+    "url": "git://github.com/Yggdroot/LeaderF"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

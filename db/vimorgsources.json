@@ -1,5 +1,6 @@
 {
-"gnuplot_syntax_highlighting":{"archive_name":"gnuplot.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21531","version":"1.1","vim_script_nr":4873},
+"LeaderF":{"archive_name":"LeaderF.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21535","version":"1.0.1","vim_script_nr":4874},
+"gnuplot_syntax_highlighting":{"archive_name":"gnuplot.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21536","version":"1.11","vim_script_nr":4873},
 "vim-decfile":{"archive_name":"vim-decfile-1.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21526","version":"1.0","vim_script_nr":4872},
 "Licenses":{"archive_name":"licenses.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21532","version":"0.2","vim_script_nr":4871},
 "ExtractLinks":{"archive_name":"ExtractLinks-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21513","version":"1.00","vim_script_nr":4870},
@@ -27,7 +28,7 @@
 "TWMC_TabWin_Move_Commands":{"archive_name":"TWMC.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21412","version":"2.0.0","vim_script_nr":4846},
 "Html_Template":{"archive_name":"htmltemplate.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21378","version":"1","vim_script_nr":4845},
 "_poshcomplete-vim":{"archive_name":"poshcomplete-vim.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21377","version":"0.1","vim_script_nr":4844},
-"CopySel":{"archive_name":"CopySel.VIM","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21398","version":"1.1","vim_script_nr":4843},
+"CopySel":{"archive_name":"CopySel.VIM","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21537","version":"1.2","vim_script_nr":4843},
 "InsertFromAround":{"archive_name":"InsertFromAround-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21364","version":"1.00","vim_script_nr":4842},
 "JumpToVerticalOccurrence":{"archive_name":"JumpToVerticalOccurrence-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21357","version":"1.00","vim_script_nr":4841},
 "rename%4840":{"archive_name":"rename.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21355","version":"0.1","vim_script_nr":"4840"},
