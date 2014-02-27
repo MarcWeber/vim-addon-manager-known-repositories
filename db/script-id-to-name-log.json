@@ -7850,6 +7850,7 @@
       "blood"
    ],
    "2500" : [
+      "TUT_toggle_unit_tests",
       "toggle_unit_tests"
    ],
    "2501" : [
@@ -15081,5 +15082,8 @@
    ],
    "4874" : [
       "LeaderF"
+   ],
+   "4875" : [
+      "industry"
    ]
 }
