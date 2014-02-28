@@ -3623,6 +3623,10 @@
     "type": "git",
     "url": "git://github.com/Yggdroot/LeaderF"
   },
+  "4877": {
+    "type": "git",
+    "url": "git://github.com/glts/vim-magnum"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
