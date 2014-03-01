@@ -3627,6 +3627,10 @@
     "type": "git",
     "url": "git://github.com/glts/vim-magnum"
   },
+  "4878": {
+    "type": "git",
+    "url": "git://github.com/justindomingue/Abridge"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
