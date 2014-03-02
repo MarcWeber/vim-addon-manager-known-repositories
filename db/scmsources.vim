@@ -1279,8 +1279,9 @@ let scm['vtd'] = {'type': 'git', 'url': 'git://github.com/chiphogg/vim-vtd'}
 " Tom McDonald
 let scm['vim-exchange'] = {'type': 'git', 'url': 'git://github.com/tommcdo/vim-exchange' }
 
+" William Ting
 " its synced with bigger rust repository
-let scm['rust'] = {'type': 'git', 'url': 'https://github.com/wting/rust.vim'}
+let scm['rust'] = {'type': 'git', 'url': 'git://github.com/wting/rust.vim'}
 
 
 "-----------------------------------------------------------------------------------------------------------------------
