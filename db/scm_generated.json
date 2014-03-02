@@ -2355,6 +2355,10 @@
     "type": "git",
     "url": "git://github.com/megaannum/colorschemer"
   },
+  "4241": {
+    "type": "git",
+    "url": "git://github.com/kenng/vim-bettersearch"
+  },
   "4244": {
     "type": "git",
     "url": "git://github.com/gokcehan/vim-yacom"
@@ -3630,6 +3634,18 @@
   "4878": {
     "type": "git",
     "url": "git://github.com/justindomingue/Abridge"
+  },
+  "4879": {
+    "type": "git",
+    "url": "git://github.com/tell-k/vim-autoflake"
+  },
+  "4880": {
+    "type": "git",
+    "url": "git://github.com/machakann/vim-columnmove"
+  },
+  "4881": {
+    "type": "git",
+    "url": "git://github.com/machakann/vim-patternjump"
   },
   "521": {
     "type": "git",

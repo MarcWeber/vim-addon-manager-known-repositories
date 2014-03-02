@@ -15094,5 +15094,14 @@
    ],
    "4878" : [
       "Abridge"
+   ],
+   "4879" : [
+      "vim-autoflake"
+   ],
+   "4880" : [
+      "columnmove"
+   ],
+   "4881" : [
+      "patternjump"
    ]
 }
