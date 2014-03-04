@@ -2807,6 +2807,10 @@
     "type": "git",
     "url": "git://github.com/sangwich/colorful-statusline"
   },
+  "4497": {
+    "type": "git",
+    "url": "git://github.com/WolfgangMehner/git-support"
+  },
   "4499": {
     "type": "git",
     "url": "git://github.com/terryma/vim-expand-region"
@@ -3646,6 +3650,10 @@
   "4881": {
     "type": "git",
     "url": "git://github.com/machakann/vim-patternjump"
+  },
+  "4883": {
+    "type": "git",
+    "url": "git://github.com/zweifisch/pipe2eval"
   },
   "521": {
     "type": "git",
