@@ -3655,6 +3655,10 @@
     "type": "git",
     "url": "git://github.com/zweifisch/pipe2eval"
   },
+  "4884": {
+    "type": "git",
+    "url": "git://github.com/FelikZ/ctrlp-py-matcher"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
