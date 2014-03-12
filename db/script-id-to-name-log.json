@@ -15118,5 +15118,8 @@
    ],
    "4886" : [
       "ConsultADict"
+   ],
+   "4887" : [
+      "REPL_plugin"
    ]
 }
