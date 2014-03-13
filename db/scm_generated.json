@@ -1916,8 +1916,8 @@
     "url": "https://code.google.com/p/vim-plugin-viewdoc"
   },
   "3896": {
-    "type": "git",
-    "url": "git://github.com/sandeepcr529/Buffet.vim"
+    "type": "hg",
+    "url": "https://bitbucket.org/sras/buffet"
   },
   "3898": {
     "type": "git",
@@ -3658,6 +3658,10 @@
   "4884": {
     "type": "git",
     "url": "git://github.com/FelikZ/ctrlp-py-matcher"
+  },
+  "4888": {
+    "type": "git",
+    "url": "git://github.com/juneedahamed/svnj.vim"
   },
   "521": {
     "type": "git",
