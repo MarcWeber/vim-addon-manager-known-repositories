@@ -1,4 +1,5 @@
 {
+"likelycomplete":{"archive_name":"likelycomplete.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21615","version":"0.1","vim_script_nr":4889},
 "svnj":{"archive_name":"svnj.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21606","version":"0.1","vim_script_nr":4888},
 "REPL_plugin":{"archive_name":"repl.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21605","version":"1.4","vim_script_nr":4887},
 "ConsultADict":{"archive_name":"consultadict.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21590","version":"0.801","vim_script_nr":4886},
@@ -26,7 +27,7 @@
 "c%4864":{"archive_name":"c.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21485","version":"1.0","vim_script_nr":"4864"},
 "jdaddy":{"archive_name":"jdaddy.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21481","version":"1.0","vim_script_nr":4863},
 "hybris_ImpEx":{"archive_name":"impex.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21470","version":"0.1","vim_script_nr":4862},
-"sql.snippets":{"archive_name":"sql.snippets","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21543","version":"0.9","vim_script_nr":4861},
+"sql.snippets":{"archive_name":"sql.snippets","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21614","version":"0.91","vim_script_nr":4861},
 "VimMahewinHub":{"archive_name":"vim-mahewin-hub.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21457","version":"0.1","vim_script_nr":4860},
 "better-whitespace":{"archive_name":"better-whitespace.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21475","version":"1.0.2","vim_script_nr":4859},
 "stdtabs":{"archive_name":"vim-stdtabs.tar.gz","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21454","version":"0.2","vim_script_nr":4858},
@@ -312,7 +313,7 @@
 "rel-jump":{"archive_name":"vim-rel-jump.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20026","version":"1.0","vim_script_nr":4571},
 "textobj-comment":{"archive_name":"textobj-comment.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20018","version":"1.0.0","vim_script_nr":4570},
 "breeze":{"archive_name":"breeze-1.0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20424","version":"1.0.1","vim_script_nr":4569},
-"gitignore%4568":{"archive_name":"gitignore.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21054","version":"1.04f1","vim_script_nr":"4568"},
+"gitignore%4568":{"archive_name":"gitignore.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21616","version":"1.05","vim_script_nr":"4568"},
 "w3af":{"archive_name":"w3af.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19985","version":"1.0.0","vim_script_nr":4567},
 "php_annotations_syntax":{"archive_name":"php.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19991","version":"0.3","vim_script_nr":4554},
 "rspec":{"archive_name":"rspec.vim-0.1.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19970","version":"0.1.0","vim_script_nr":4553},
