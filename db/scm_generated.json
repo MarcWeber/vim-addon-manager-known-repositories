@@ -3667,6 +3667,14 @@
     "type": "git",
     "url": "git://github.com/tomtom/likelycomplete_vim"
   },
+  "4890": {
+    "type": "git",
+    "url": "git://github.com/stefandtw/quickfix-reflector.vim"
+  },
+  "4891": {
+    "type": "git",
+    "url": "git://github.com/buztard/vim-nomad"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
