@@ -87,7 +87,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/Decho.vba.gz",
-    "version": "v21q"
+    "version": "v21r"
   },
   "DotFill@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -231,7 +231,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/LargeFile.vba.gz",
-    "version": "v5"
+    "version": "v6"
   },
   "LibraryViewer@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v151j"
+    "version": "v151l"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -327,7 +327,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/ReadStub.vba.gz",
-    "version": "v1a"
+    "version": "v1b"
   },
   "RltvNmbr@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
