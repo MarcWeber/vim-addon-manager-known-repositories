@@ -3691,6 +3691,10 @@
     "type": "git",
     "url": "git://github.com/ardagnir/pterosaur"
   },
+  "4900": {
+    "type": "hg",
+    "url": "https://bitbucket.org/atimholt/arrowkeyrepurpose"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
