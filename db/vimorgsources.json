@@ -1,7 +1,7 @@
 {
 "Arrow_Key_Repurpose":{"archive_name":"arrowkeyrepurpose.1.0.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21641","version":"1.0.0","vim_script_nr":4900},
-"cra":{"archive_name":"cra.vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21637","version":"0.1","vim_script_nr":4899},
-"VIDE":{"archive_name":"vide-1.0.0.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21636","version":"1.0.0","vim_script_nr":4898},
+"cra":{"archive_name":"cra.vim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21644","version":"0.2","vim_script_nr":4899},
+"VIDE":{"archive_name":"vide-1.1.0.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21643","version":"1.1.0","vim_script_nr":4898},
 "cloneSimilar":{"archive_name":"cloneSimilar-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21634","version":"1.00","vim_script_nr":4897},
 "clone":{"archive_name":"clone-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21633","version":"1.00","vim_script_nr":4896},
 "Pterosaur":{"archive_name":"pterosaur.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21631","version":"0.1","vim_script_nr":4895},
