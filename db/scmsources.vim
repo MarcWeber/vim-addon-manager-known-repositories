@@ -1286,6 +1286,9 @@ let scm['moonscript'] = {'type': 'git', 'url': 'git://github.com/leafo/moonscrip
 " its synced with bigger rust repository
 let scm['rust'] = {'type': 'git', 'url': 'git://github.com/wting/rust.vim'}
 
+" Hisashi Nakamura, Shinya Ohynagi
+let scm['vim-jsdoc'] = {'type': 'git', 'url': 'git://github.com/heavenshell/vim-jsdoc'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
