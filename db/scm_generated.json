@@ -585,7 +585,7 @@
   },
   "2715": {
     "type": "git",
-    "url": "git://github.com/SirVer/ultisnips"
+    "url": "git://github.com/sirver/ultisnips"
   },
   "2716": {
     "type": "git",
@@ -1470,6 +1470,10 @@
   "3582": {
     "type": "git",
     "url": "git://github.com/mrtazz/simplenote.vim"
+  },
+  "3584": {
+    "type": "git",
+    "url": "git://github.com/ctruett/Checklist.vim"
   },
   "3585": {
     "type": "git",
@@ -3694,6 +3698,10 @@
   "4900": {
     "type": "hg",
     "url": "https://bitbucket.org/atimholt/arrowkeyrepurpose"
+  },
+  "4901": {
+    "type": "git",
+    "url": "git://github.com/gradzikb/vim-lsdyna"
   },
   "521": {
     "type": "git",

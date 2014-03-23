@@ -13737,6 +13737,7 @@
       "_Mini_Year_Todo__Gantt_Planner_for_VIM_"
    ],
    "4430" : [
+      "Vimogen",
       "vimogen"
    ],
    "4431" : [
@@ -15160,5 +15161,8 @@
    ],
    "4900" : [
       "Arrow_Key_Repurpose"
+   ],
+   "4901" : [
+      "vim-lsdyna"
    ]
 }
