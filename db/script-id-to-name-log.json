@@ -15164,5 +15164,14 @@
    ],
    "4901" : [
       "vim-lsdyna"
+   ],
+   "4902" : [
+      "VimCompletesMe"
+   ],
+   "4903" : [
+      "github-issues"
+   ],
+   "4904" : [
+      "avahi-syntax"
    ]
 }

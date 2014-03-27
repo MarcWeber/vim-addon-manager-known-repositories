@@ -3703,6 +3703,14 @@
     "type": "git",
     "url": "git://github.com/gradzikb/vim-lsdyna"
   },
+  "4902": {
+    "type": "git",
+    "url": "git://github.com/ajh17/VimCompletesMe"
+  },
+  "4903": {
+    "type": "git",
+    "url": "git://github.com/jaxbot/github-issues.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
