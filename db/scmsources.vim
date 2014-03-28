@@ -292,7 +292,7 @@ let scm['scriproject'] = {'type': 'hg', 'url': 'https://bitbucket.org/ns9tks/vim
 let scmnr.2212 = {'type': 'git', 'url': 'git://github.com/bsl/obviousmode'}
 
 " Maxim Kim
-let scmnr.2226 = {'type': 'hg', 'url': 'https://code.google.com/p/vimwiki', 'addon-info': {'runtimepath': 'src'}}
+let scmnr.2226 = {'type': 'git', 'url': 'git://github.com/vimwiki/vimwiki'}
 
 " Kana Natsuno
 let scmnr.2337 = {'type': 'git', 'url': 'git://github.com/kana/vim-ku'}
