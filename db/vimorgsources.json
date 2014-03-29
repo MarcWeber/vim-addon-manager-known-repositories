@@ -632,7 +632,7 @@
 "yacom":{"archive_name":"yacom.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18717","version":"1.0","vim_script_nr":4244},
 "IndentTab":{"archive_name":"IndentTab-1.10.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20011","version":"1.10","vim_script_nr":4243},
 "SameFiletypeComplete":{"archive_name":"SameFiletypeComplete-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18702","version":"1.00","vim_script_nr":4242},
-"betterSearch":{"archive_name":"betterSearch.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21558","version":"0.0.5","vim_script_nr":4241},
+"betterSearch":{"archive_name":"betterSearch.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21690","version":"0.0.7","vim_script_nr":4241},
 "colorschemer":{"archive_name":"colorschemer_gui.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18730","version":"1.2b","vim_script_nr":4240},
 "Freya":{"archive_name":"freya.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18873","version":"2.3","vim_script_nr":4239},
 "RepeatableYank":{"archive_name":"RepeatableYank-1.20.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21085","version":"1.20","vim_script_nr":4238},
