@@ -1562,7 +1562,7 @@
 "open_file_from_clip_board":{"archive_name":"clipboard_file_open.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14043","version":"1.2","vim_script_nr":3269},
 "command-list":{"archive_name":"command-list.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14007","version":"1.1","vim_script_nr":3268},
 "omnetpp":{"archive_name":"omnetpp.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14044","version":"0.1.2","vim_script_nr":3267},
-"CodeBlocks_Dark":{"archive_name":"codeblocks_dark.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17704","version":"0.2","vim_script_nr":3266},
+"CodeBlocks_Dark":{"archive_name":"codeblocks-dark.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21691","version":"0.3","vim_script_nr":3266},
 "cSyntaxAfter":{"archive_name":"cSyntaxAfter-0.2.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17703","version":"0.2","vim_script_nr":3265},
 "Vimtodo":{"archive_name":"vimtodo-0.2.tgz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13987","version":"0.2","vim_script_nr":3264},
 "Bird_Syntax":{"archive_name":"bird.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13967","version":"0.1","vim_script_nr":3263},
