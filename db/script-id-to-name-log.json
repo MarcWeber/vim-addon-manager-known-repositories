@@ -14963,6 +14963,7 @@
       "vimcaps"
    ],
    "4835" : [
+      "microViche",
       "Textabyss"
    ],
    "4836" : [
@@ -15173,5 +15174,8 @@
    ],
    "4904" : [
       "avahi-syntax"
+   ],
+   "4905" : [
+      "apprentice"
    ]
 }

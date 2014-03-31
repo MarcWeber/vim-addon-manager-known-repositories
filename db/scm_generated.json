@@ -123,6 +123,10 @@
     "type": "git",
     "url": "git://github.com/mbbill/code_complete"
   },
+  "1788": {
+    "type": "git",
+    "url": "https://bitbucket.org/fboender/bexec"
+  },
   "1863": {
     "type": "git",
     "url": "git://github.com/tomtom/tlib_vim"
@@ -3710,6 +3714,10 @@
   "4903": {
     "type": "git",
     "url": "git://github.com/jaxbot/github-issues.vim"
+  },
+  "4905": {
+    "type": "git",
+    "url": "git://github.com/romainl/Apprentice"
   },
   "521": {
     "type": "git",
