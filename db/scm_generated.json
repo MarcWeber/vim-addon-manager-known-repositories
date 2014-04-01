@@ -3719,6 +3719,10 @@
     "type": "git",
     "url": "git://github.com/romainl/Apprentice"
   },
+  "4906": {
+    "type": "git",
+    "url": "git://github.com/EinfachToll/peggi"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
