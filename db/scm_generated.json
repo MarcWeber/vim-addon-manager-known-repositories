@@ -3723,6 +3723,10 @@
     "type": "git",
     "url": "git://github.com/EinfachToll/peggi"
   },
+  "4907": {
+    "type": "git",
+    "url": "git://github.com/burnettk/vim-angular"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
