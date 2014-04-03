@@ -3727,6 +3727,14 @@
     "type": "git",
     "url": "git://github.com/burnettk/vim-angular"
   },
+  "4908": {
+    "type": "git",
+    "url": "git://github.com/hl037/vim-visualHtml"
+  },
+  "4909": {
+    "type": "git",
+    "url": "git://github.com/rsludge/vim-sails"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
