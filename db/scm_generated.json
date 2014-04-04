@@ -655,6 +655,10 @@
     "type": "git",
     "url": "git://github.com/chrisbra/CheckAttach"
   },
+  "2805": {
+    "type": "git",
+    "url": "git://github.com/alvan/assistant.vim"
+  },
   "2809": {
     "type": "git",
     "url": "git://github.com/drmikehenry/vim-fontsize"
