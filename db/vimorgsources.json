@@ -31,7 +31,7 @@
 "ctrlp-py-matcher":{"archive_name":"ctrlp-py-matcher-0.9b.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21571","version":"0.9b","vim_script_nr":4884},
 "pipe2eval":{"archive_name":"pip2eval.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21569","version":"0.1","vim_script_nr":4883},
 "wipeout":{"archive_name":"wipeout.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21566","version":"0.1","vim_script_nr":4882},
-"patternjump":{"archive_name":"patternjump-1.0.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21670","version":"1.0.3","vim_script_nr":4881},
+"patternjump":{"archive_name":"patternjump-2.0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21740","version":"2.0.0","vim_script_nr":4881},
 "columnmove":{"archive_name":"columnmove-1.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21592","version":"1.0.2","vim_script_nr":4880},
 "vim-autoflake":{"archive_name":"vim-autoflake.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21562","version":"1.0.0","vim_script_nr":4879},
 "Abridge":{"archive_name":"abridge.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21555","version":"0.4","vim_script_nr":4878},
