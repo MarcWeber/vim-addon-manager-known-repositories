@@ -3739,6 +3739,14 @@
     "type": "git",
     "url": "git://github.com/rsludge/vim-sails"
   },
+  "4915": {
+    "type": "git",
+    "url": "git://github.com/tpope/vim-heroku"
+  },
+  "4916": {
+    "type": "git",
+    "url": "git://github.com/vitalk/vim-onoff"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

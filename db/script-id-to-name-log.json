@@ -15202,5 +15202,14 @@
    ],
    "4913" : [
       "ttfzoom"
+   ],
+   "4914" : [
+      "repeatable-motions"
+   ],
+   "4915" : [
+      "heroku"
+   ],
+   "4916" : [
+      "vim-onoff"
    ]
 }
