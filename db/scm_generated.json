@@ -3747,6 +3747,10 @@
     "type": "git",
     "url": "git://github.com/vitalk/vim-onoff"
   },
+  "4917": {
+    "type": "git",
+    "url": "git://github.com/gilligan/vim-lldb"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
