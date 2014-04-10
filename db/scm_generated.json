@@ -3751,6 +3751,14 @@
     "type": "git",
     "url": "git://github.com/gilligan/vim-lldb"
   },
+  "4919": {
+    "type": "git",
+    "url": "git://github.com/Kazark/vim-tabv"
+  },
+  "4920": {
+    "type": "hg",
+    "url": "https://bitbucket.org/atimholt/spiffy_foldtext"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

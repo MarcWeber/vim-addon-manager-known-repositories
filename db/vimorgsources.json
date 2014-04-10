@@ -1,4 +1,8 @@
 {
+"FindOccurrence":{"archive_name":"FindOccurrence-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21758","version":"1.00","vim_script_nr":4922},
+"Simple_TODO":{"archive_name":"todotxt.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21757","version":"0.01","vim_script_nr":4921},
+"Spiffy_Foldtext":{"archive_name":"spiffy_foldtext_1_0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21756","version":"1.0","vim_script_nr":4920},
+"Tabv":{"archive_name":"tabv.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21755","version":"0.0.1","vim_script_nr":4919},
 "otaku":{"archive_name":"otaku.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21754","version":"0.1","vim_script_nr":4918},
 "vim-lldb":{"archive_name":"vim-lldb.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21753","version":"1.0","vim_script_nr":4917},
 "vim-onoff":{"archive_name":"vim-onoff-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21750","version":"0.1.1","vim_script_nr":4916},
