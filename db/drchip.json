@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v151"
+    "version": "v152b"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -471,7 +471,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/ZoomWin.vba.gz",
-    "version": "v25m"
+    "version": "v25n"
   },
   "foldcol@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",

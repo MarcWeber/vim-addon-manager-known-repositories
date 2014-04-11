@@ -51,6 +51,10 @@
     "type": "git",
     "url": "git://github.com/PProvost/vim-ps1"
   },
+  "1343": {
+    "type": "git",
+    "url": "git://github.com/craigemery/vim-autotag"
+  },
   "1431": {
     "type": "git",
     "url": "git://github.com/tomtom/checksyntax_vim"
