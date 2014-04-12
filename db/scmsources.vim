@@ -250,7 +250,7 @@ let scm['vim-addon-qf-layout'] = {'type': 'git', 'url': 'git://github.com/MarcWe
 let scm['ensime'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/ensime'}
 " override snipmate. There is really no reason anymore to use the old version
 " snipMate could be dropped. Keep alias
-let scm['snipmate'] = {'type': 'git', 'url': 'git://github.com/MarcWeber/snipmate.vim'}
+let scm['snipmate'] = {'type': 'git', 'url': 'git://github.com/garbas/vim-snipmate'}
 
 " Eustaquio Rangel de Oliveira Jr.
 let scmnr.1966 = {'type': 'git', 'url': 'git://github.com/taq/vim-ruby-snippets'}
