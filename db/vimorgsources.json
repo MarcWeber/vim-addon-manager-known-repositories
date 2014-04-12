@@ -1,6 +1,6 @@
 {
 "FindOccurrence":{"archive_name":"FindOccurrence-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21758","version":"1.00","vim_script_nr":4922},
-"Simple_TODO":{"archive_name":"todotxt.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21757","version":"0.01","vim_script_nr":4921},
+"Simple_TODO":{"archive_name":"texttodo.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21761","version":"0.02","vim_script_nr":4921},
 "Spiffy_Foldtext":{"archive_name":"spiffy_foldtext_1_0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21756","version":"1.0","vim_script_nr":4920},
 "Tabv":{"archive_name":"tabv.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21759","version":"0.0.2","vim_script_nr":4919},
 "otaku":{"archive_name":"otaku.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21754","version":"0.1","vim_script_nr":4918},
@@ -1900,7 +1900,7 @@
 "GoogleSuggest_Complete":{"archive_name":"googlesuggest-complete.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12221","version":"0.2","vim_script_nr":2948},
 "bvemu":{"archive_name":"bvemu.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12201","version":"1.1","vim_script_nr":2947},
 "AGTD":{"archive_name":"agtd.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15259","version":"0.3","vim_script_nr":2946},
-"AutomaticLaTeXPlugin":{"archive_name":"AutomaticTexPlugin_12.4.vmb","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21370","version":"12.4","vim_script_nr":2945},
+"AutomaticLaTeXPlugin":{"archive_name":"AutomaticTexPlugin_12.5.vmb","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21762","version":"12.5","vim_script_nr":2945},
 "visualstar":{"archive_name":"vim-visualstar-0.4.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18199","version":"0.4.0","vim_script_nr":2944},
 "ccvext":{"archive_name":"ccvext.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=16390","version":"4.7","vim_script_nr":2943},
 "RubySinatra":{"archive_name":"ruby-sinatra-0.2.0.vba.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12222","version":"0.2.0","vim_script_nr":2942},
