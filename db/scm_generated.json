@@ -3503,6 +3503,10 @@
     "type": "git",
     "url": "git://github.com/guns/vim-sexp"
   },
+  "4813": {
+    "type": "git",
+    "url": "git://github.com/ercolanelli-leo/candyVirus"
+  },
   "4814": {
     "type": "git",
     "url": "git://github.com/laurentgoudet/vim-howdoi"
