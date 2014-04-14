@@ -15229,5 +15229,11 @@
    ],
    "4922" : [
       "FindOccurrence"
+   ],
+   "4923" : [
+      "autoswap"
+   ],
+   "4924" : [
+      "FormatToWidth"
    ]
 }
