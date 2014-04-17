@@ -3767,6 +3767,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/atimholt/spiffy_foldtext"
   },
+  "4926": {
+    "type": "git",
+    "url": "git://github.com/justmao945/vim-clang"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

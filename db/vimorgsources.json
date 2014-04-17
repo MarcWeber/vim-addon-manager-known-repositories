@@ -1,4 +1,6 @@
 {
+"vim-clang":{"archive_name":"vim-clang.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21787","version":"1.0","vim_script_nr":4926},
+"snare":{"archive_name":"snare.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21786","version":"1.0","vim_script_nr":4925},
 "FormatToWidth":{"archive_name":"FormatToWidth-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21773","version":"1.00","vim_script_nr":4924},
 "autoswap":{"archive_name":"vim-autoswap-0.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21770","version":"0.2","vim_script_nr":4923},
 "FindOccurrence":{"archive_name":"FindOccurrence-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21758","version":"1.00","vim_script_nr":4922},
@@ -2025,7 +2027,7 @@
 "filter":{"archive_name":"filter.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11582","version":"1.1","vim_script_nr":2825},
 "libperl":{"archive_name":"libperl-vim-0.72.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11873","version":"0.72","vim_script_nr":2824},
 "baan":{"archive_name":"baan.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11595","version":"0.22","vim_script_nr":2823},
-"unicode":{"archive_name":"unicode-0.18.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21685","version":"18","vim_script_nr":2822},
+"unicode":{"archive_name":"unicode-0.19.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21785","version":"19","vim_script_nr":2822},
 "sqlplus%2821":{"archive_name":"sqlplus.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11561","version":"2.0.0","vim_script_nr":"2821"},
 "DBGp-client":{"archive_name":"debugger.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11560","version":"0.12","vim_script_nr":2820},
 "smarty_syntax":{"archive_name":"smarty.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=11553","version":"1","vim_script_nr":2819},
