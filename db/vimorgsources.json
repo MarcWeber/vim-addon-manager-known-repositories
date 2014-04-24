@@ -1,8 +1,9 @@
 {
+"EightHeader":{"archive_name":"eightheader.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21818","version":"1.0","vim_script_nr":4930},
 "unite-spell-suggest":{"archive_name":"unite-spell-suggest.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21815","version":"1.0.2","vim_script_nr":4929},
 "clang_pro":{"archive_name":"clang_pro.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21812","version":"1.1","vim_script_nr":4928},
 "Autosave":{"archive_name":"autosave.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21807","version":"1.2","vim_script_nr":4927},
-"vim-clang":{"archive_name":"vim-clang.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21787","version":"1.0","vim_script_nr":4926},
+"vim-clang":{"archive_name":"vim-clang.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21819","version":"0.2.4","vim_script_nr":4926},
 "snare":{"archive_name":"snare.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21786","version":"1.0","vim_script_nr":4925},
 "FormatToWidth":{"archive_name":"FormatToWidth-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21773","version":"1.00","vim_script_nr":4924},
 "autoswap":{"archive_name":"vim-autoswap-0.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21770","version":"0.2","vim_script_nr":4923},
