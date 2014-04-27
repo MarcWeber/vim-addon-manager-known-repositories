@@ -383,6 +383,10 @@
     "type": "git",
     "url": "git://gitorious.org/vim-diff_navigator/main.git"
   },
+  "2368": {
+    "type": "git",
+    "url": "git://github.com/hari-rangarajan/CCTree"
+  },
   "2375": {
     "type": "svn",
     "url": "http://vim-soko.googlecode.com/svn/trunk/if_v8"

@@ -516,7 +516,7 @@
 "CoqIDE":{"archive_name":"coq_IDE-0.97b.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20750","version":"0.97b","vim_script_nr":4388},
 "projectroot":{"archive_name":"projectroot.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19322","version":"1.0","vim_script_nr":4387},
 "Smartgf":{"archive_name":"smartgf.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19319","version":"1.0.2","vim_script_nr":4386},
-"Bufstop":{"archive_name":"bufstop.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19358","version":"1.2","vim_script_nr":4385},
+"Bufstop":{"archive_name":"bufstop.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21836","version":"1.3","vim_script_nr":4385},
 "File_Pirate":{"archive_name":"filepirate-0.1.1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19357","version":"0.1.1","vim_script_nr":4384},
 "configurationUtility":{"archive_name":"configurationUtility.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19305","version":"1.0","vim_script_nr":4383},
 "asm2d-vim":{"archive_name":"asm2d-vim-v0.1.2.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19333","version":"0.1.2","vim_script_nr":4382},
