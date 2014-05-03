@@ -611,6 +611,10 @@
     "type": "hg",
     "url": "https://bitbucket.org/fallintothis/arc-vim"
   },
+  "2721": {
+    "type": "git",
+    "url": "git://github.com/s3rvac/AutoFenc"
+  },
   "2729": {
     "type": "git",
     "url": "git://github.com/hallettj/jslint.vim"
