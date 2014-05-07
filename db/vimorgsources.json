@@ -1,7 +1,8 @@
 {
+"Syntax_for_Clustal":{"archive_name":"clustal.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21871","version":"0.1","vim_script_nr":4935},
 "lite-dfm":{"archive_name":"lite-dfm.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21852","version":"1.0.0","vim_script_nr":4933},
-"diffchar":{"archive_name":"diffchar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21867","version":"2.0","vim_script_nr":4932},
-"tslime%4931":{"archive_name":"tslime.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21851","version":"1.2","vim_script_nr":"4931"},
+"diffchar":{"archive_name":"diffchar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21869","version":"2.1","vim_script_nr":4932},
+"tslime%4931":{"archive_name":"tslime.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21868","version":"1.3","vim_script_nr":"4931"},
 "EightHeader":{"archive_name":"eightheader.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21846","version":"1.0","vim_script_nr":4930},
 "unite-spell-suggest":{"archive_name":"unite-spell-suggest.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21833","version":"1.0.3","vim_script_nr":4929},
 "clang_pro":{"archive_name":"clang_pro.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21863","version":"2.0","vim_script_nr":4928},
