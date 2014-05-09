@@ -1,4 +1,5 @@
 {
+"mrtg":{"archive_name":"mrtg.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21873","version":"7.3","vim_script_nr":4936},
 "Syntax_for_Clustal":{"archive_name":"clustal.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21871","version":"0.1","vim_script_nr":4935},
 "lite-dfm":{"archive_name":"lite-dfm.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21852","version":"1.0.0","vim_script_nr":4933},
 "diffchar":{"archive_name":"diffchar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21869","version":"2.1","vim_script_nr":4932},
@@ -627,7 +628,7 @@
 "bundler%4280":{"archive_name":"bundler.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19666","version":"2.0","vim_script_nr":"4280"},
 "vim-cmake-project":{"archive_name":"vim-cmake-project-2.0.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21518","version":"2.0.0","vim_script_nr":4279},
 "Makeshift":{"archive_name":"vim-makeshift-0.12.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21834","version":"0.12.0","vim_script_nr":4278},
-"Sunset":{"archive_name":"sunset-2.0.0.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19353","version":"2.0.0","vim_script_nr":4277},
+"Sunset":{"archive_name":"sunset-2.0.1.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21872","version":"2.0.1","vim_script_nr":4277},
 "SnippetCompleteSnipMate":{"archive_name":"SnippetCompleteSnipMate-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19390","version":"1.01","vim_script_nr":4276},
 "sqlhana":{"archive_name":"sqlhana.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20844","version":"SP6","vim_script_nr":4275},
 "very_monochrome_grey_theme":{"archive_name":"grey.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=18828","version":"1.0","vim_script_nr":4274},
