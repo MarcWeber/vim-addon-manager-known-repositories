@@ -20,7 +20,7 @@
 "vim-lldb":{"archive_name":"vim-lldb.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21753","version":"1.0","vim_script_nr":4917},
 "vim-onoff":{"archive_name":"vim-onoff-0.2.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21798","version":"0.2.0","vim_script_nr":4916},
 "heroku":{"archive_name":"heroku.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21749","version":"1.0","vim_script_nr":4915},
-"repeatable-motions":{"archive_name":"repeatable-motions.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21746","version":"1.0","vim_script_nr":4914},
+"repeatable-motions":{"archive_name":"repeatable-motions.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21875","version":"1.1","vim_script_nr":4914},
 "ttfzoom":{"archive_name":"ttfzoom.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21743","version":"0.2","vim_script_nr":4913},
 "AlphaComplete":{"archive_name":"AlphaComplete-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21734","version":"1.00","vim_script_nr":4912},
 "LineComplete":{"archive_name":"LineComplete-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21733","version":"1.00","vim_script_nr":4911},
