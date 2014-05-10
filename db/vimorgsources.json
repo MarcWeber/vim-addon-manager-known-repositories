@@ -142,7 +142,7 @@
 "netgrep":{"archive_name":"netgrep-1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21178","version":"1.0","vim_script_nr":4792},
 "SwissCalc":{"archive_name":"SwissCalc.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21170","version":"1.0.0","vim_script_nr":4791},
 "gsl%4790":{"archive_name":"gsl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21167","version":"0.1","vim_script_nr":"4790"},
-"Vim-CtrlSpace":{"archive_name":"vim-ctrlspace.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21187","version":"3.2.4","vim_script_nr":4789},
+"Vim-CtrlSpace":{"archive_name":"vim-ctrlspace.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21876","version":"4.0.0","vim_script_nr":4789},
 "Vim-Kompleter":{"archive_name":"vim-kompleter.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21162","version":"0.1.8","vim_script_nr":4788},
 "vim-svngutter":{"archive_name":"vim-svngutter-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21158","version":"0.1","vim_script_nr":4787},
 "update-time":{"archive_name":"vim-update-time-0.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21153","version":"0.1.1","vim_script_nr":4786},
