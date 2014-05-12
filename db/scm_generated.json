@@ -3783,6 +3783,10 @@
     "type": "git",
     "url": "git://github.com/lord-garbage/tslime.vim"
   },
+  "4937": {
+    "type": "git",
+    "url": "git://github.com/xmisao/rubyjump.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

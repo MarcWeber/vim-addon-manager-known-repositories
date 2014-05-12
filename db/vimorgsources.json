@@ -1,4 +1,5 @@
 {
+"RubyJump":{"archive_name":"rubyjump.vim-0.9.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21879","version":"0.9.1","vim_script_nr":4937},
 "mrtg":{"archive_name":"mrtg.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21873","version":"7.3","vim_script_nr":4936},
 "Syntax_for_Clustal":{"archive_name":"clustal.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21871","version":"0.1","vim_script_nr":4935},
 "lite-dfm":{"archive_name":"lite-dfm.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21852","version":"1.0.0","vim_script_nr":4933},
