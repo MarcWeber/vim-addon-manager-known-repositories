@@ -19,6 +19,19 @@ and .. lovers).
 - maybe cerate a website which provides advanced features
 - setup standards for dependency management if possible.
 
+## FUTURE
+Marc Weber no longer thinks that it makes sense to create full
+distribution/dependency/... tools for all things out there.
+Instead he'll be working on a package manager managing multiple languages and
+operating systems. A lot of additional issues cannot be solved in VimL, eg
+supporting YouCompleteMe requires C/Python (thus Vim with Python support)
+and so one. The [YPM](https://github.com/code-once/ypm) will try to fix this
+all. Marc Weber will still maintain vim-pi and reply to requests.
+
+You might also watch [neovim](github.com/neovim/neovim) which will focus on
+lua. We have to wait to understand in which ways this will affect plugin
+management for that Vim fork.
+
 ## SUPPORT
 Open tickets, thanks
 
@@ -54,6 +67,9 @@ tracker](https://bitbucket.org/vimcommunity/vim-pi/issues).
   https://bitbucket.org/vimcommunity/vim-pi/issue/95
   goals: allow external tools to install plugins (parallelization etc)
 
+
+## projects using vim-pi
+http://vim-plugins.org/plugin/?page=1
 
 ## Older vim-addon-manager-known-repository README contents:
 
