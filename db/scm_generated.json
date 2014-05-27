@@ -3651,6 +3651,10 @@
     "type": "git",
     "url": "git://github.com/jcorbin/vim-searchmatch"
   },
+  "4871": {
+    "type": "git",
+    "url": "git://github.com/antoyo/vim-licenses"
+  },
   "4872": {
     "type": "git",
     "url": "git://github.com/stevensons/vim-decfile"
@@ -3790,6 +3794,18 @@
   "4937": {
     "type": "git",
     "url": "git://github.com/xmisao/rubyjump.vim"
+  },
+  "4941": {
+    "type": "git",
+    "url": "git://github.com/someboddy/vim-vebugger"
+  },
+  "4942": {
+    "type": "git",
+    "url": "git://github.com/amal-khailtash/vim-do-syntax"
+  },
+  "4943": {
+    "type": "git",
+    "url": "git://github.com/amal-khailtash/vim-ralf-syntax"
   },
   "521": {
     "type": "git",

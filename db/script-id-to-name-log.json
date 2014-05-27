@@ -15276,5 +15276,38 @@
    ],
    "4938" : [
       "cmake%4938"
+   ],
+   "4939" : [
+      "TWstack"
+   ],
+   "4940" : [
+      "BufLine"
+   ],
+   "4941" : [
+      "Vebugger"
+   ],
+   "4942" : [
+      "vim-do-syntax"
+   ],
+   "4943" : [
+      "vim-ralf-syntax"
+   ],
+   "4944" : [
+      "Switch_c_header_files"
+   ],
+   "4945" : [
+      "SemanticHL"
+   ],
+   "4946" : [
+      "Gtags_And_Man_Proto_GAMP"
+   ],
+   "4947" : [
+      "Find_in_Files_feature_like_Notepad"
+   ],
+   "4948" : [
+      "SearchSpecial"
+   ],
+   "4949" : [
+      "SearchRepeat"
    ]
 }

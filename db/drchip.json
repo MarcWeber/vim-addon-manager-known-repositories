@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v152e"
+    "version": "v153e"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -413,12 +413,6 @@
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/vis.vba.gz",
     "version": "v21c"
   },
-  "VisualBlockSorting@drchip": {
-    "homepage": "http://www.drchip.org/astronaut/vim/index.html",
-    "type": "archive",
-    "url": "http://www.drchip.org/astronaut/vim/vbafiles/vissort.vba.gz",
-    "version": "v4"
-  },
   "VisualCDeclarations@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
@@ -436,6 +430,12 @@
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/visswap.vba.gz",
     "version": "v4f"
+  },
+  "VisualSelectionBasedSorting@drchip": {
+    "homepage": "http://www.drchip.org/astronaut/vim/index.html",
+    "type": "archive",
+    "url": "http://www.drchip.org/astronaut/vim/vbafiles/vissort.vba.gz",
+    "version": "v4"
   },
   "WhereFrom@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
