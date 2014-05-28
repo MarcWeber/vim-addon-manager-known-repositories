@@ -81,7 +81,7 @@ let scm['lh-dev'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/dev
 let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/refactor/trunk'}
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
-let scm['vim-clang'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/vim-clang'}
+let scm['vim-clang@lh'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/vim-clang'}
 " system-tools are required for vim-spell.tar.gz (vimscript #135), which are 
 " part of misc. Cannot install using 'type':'archive': it won’t pull in 
 " documentation. Alternative: use cpp (vimscript #336, above) in place of a@lh
@@ -1164,7 +1164,7 @@ let scm['visdo'] = {'type': 'git', 'url': 'git://github.com/intuited/visdo'}
 let scm['vim-twig'] = {'type': 'git', 'url': 'git://github.com/beyondwords/vim-twig'}
 
 " Gunther Groenewege
-let scm['vim-less'] = {'type': 'git', 'url': 'git://github.com/groenewege/vim-less'}
+let scm['vim-less@groenwege'] = {'type': 'git', 'url': 'git://github.com/groenewege/vim-less'}
 
 " Daniel Hofstetter
 let scm['scss-syntax'] = {'type': 'git', 'url': 'git://github.com/cakebaker/scss-syntax.vim'}
