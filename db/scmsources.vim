@@ -149,6 +149,8 @@ let scm['vim-rvm'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-rvm'}
 let scm['markdown@tpope'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-markdown'}
 let scm['vim-fireplace'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-fireplace'}
 let scm['vim-classpath'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-classpath'}
+let scm['projectionist'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-projectionist'}
+let scm['vinegar'] = {'type': 'git', 'url': 'git://github.com/tpope/vim-vinegar'}
 " " The below plugin is present on vim.org, but does not belong to Tim Pope
 " let scmnr.1626 = {'type': 'git', 'url': 'git://github.com/tpope/vim-liquid'}
 
