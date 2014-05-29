@@ -1299,6 +1299,10 @@ let scm['vim-jsdoc'] = {'type': 'git', 'url': 'git://github.com/heavenshell/vim-
 " dartlang.org maintainers
 let scm['dart'] = {'type': 'git', 'url': 'git://github.com/dart-lang/dart-vim-plugin'}
 
+" osyo-mange
+let scm['vim-reunions'] = {'type': 'git', 'url': 'git://github.com/osyo-manga/vim-reunions', 'dependencies': {'vimproc': {}}}
+let scm['vim-marching'] = {'type': 'git', 'url': 'git://github.com/osyo-manga/vim-marching', 'dependencies': {'vimproc': {}, 'vim-reunions': {}}}
+
 
 
 "-----------------------------------------------------------------------------------------------------------------------
