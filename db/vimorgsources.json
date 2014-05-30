@@ -1,4 +1,5 @@
 {
+"Lua_Support_2":{"archive_name":"lua-support.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21963","version":"0.8","vim_script_nr":4950},
 "SearchRepeat":{"archive_name":"SearchRepeat-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21944","version":"1.00","vim_script_nr":4949},
 "SearchSpecial":{"archive_name":"SearchSpecial-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21935","version":"1.00","vim_script_nr":4948},
 "Find_in_Files_feature_like_Notepad":{"archive_name":"Find_in_Files.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21925","version":"0.0.01","vim_script_nr":4947},
@@ -15,7 +16,7 @@
 "mrtg":{"archive_name":"mrtg.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21873","version":"7.3","vim_script_nr":4936},
 "Syntax_for_Clustal":{"archive_name":"clustal.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21871","version":"0.1","vim_script_nr":4935},
 "lite-dfm":{"archive_name":"lite-dfm.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21852","version":"1.0.0","vim_script_nr":4933},
-"diffchar":{"archive_name":"diffchar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21958","version":"3.3","vim_script_nr":4932},
+"diffchar":{"archive_name":"diffchar.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21964","version":"3.4","vim_script_nr":4932},
 "tslime%4931":{"archive_name":"tslime.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21868","version":"1.3","vim_script_nr":"4931"},
 "EightHeader":{"archive_name":"eightheader.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21891","version":"1.0","vim_script_nr":4930},
 "unite-spell-suggest":{"archive_name":"unite-spell-suggest.vmb","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21882","version":"1.0.4","vim_script_nr":4929},
@@ -1846,7 +1847,7 @@
 "rename%3028":{"archive_name":"rename.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12710","version":"1.1","vim_script_nr":3028},
 "grsecurity%3027":{"archive_name":"grsecurity.vba","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12899","version":"2","vim_script_nr":"3027"},
 "PickAColor":{"archive_name":"PickAColor.vba.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=12692","version":"1.1","vim_script_nr":3026},
-"Command-T":{"archive_name":"command-t-1.9.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21938","version":"1.9","vim_script_nr":3025},
+"Command-T":{"archive_name":"command-t-1.9.1.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21965","version":"1.9.1","vim_script_nr":3025},
 "vimake":{"archive_name":"vimake-1.18.tar.gz","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15501","version":"1-18","vim_script_nr":3024},
 "tslime%3023":{"archive_name":"tslime.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14151","version":"0.2","vim_script_nr":3023},
 "Bookmarking":{"archive_name":"bookmarking.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17097","version":"2.3","vim_script_nr":3022},

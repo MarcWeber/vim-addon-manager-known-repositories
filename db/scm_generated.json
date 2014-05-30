@@ -3807,6 +3807,10 @@
     "type": "git",
     "url": "git://github.com/amal-khailtash/vim-ralf-syntax"
   },
+  "4950": {
+    "type": "git",
+    "url": "git://github.com/WolfgangMehner/lua-support"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
