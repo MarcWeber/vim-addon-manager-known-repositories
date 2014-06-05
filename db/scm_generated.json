@@ -2685,7 +2685,7 @@
   },
   "4434": {
     "type": "git",
-    "url": "git://github.com/someboddy/vim-erroneous"
+    "url": "git://github.com/idanarye/vim-erroneous"
   },
   "4436": {
     "type": "git",
@@ -3289,7 +3289,7 @@
   },
   "4719": {
     "type": "git",
-    "url": "git://github.com/someboddy/vim-yankitute"
+    "url": "git://github.com/idanarye/vim-yankitute"
   },
   "4720": {
     "type": "git",
@@ -3321,7 +3321,7 @@
   },
   "4732": {
     "type": "git",
-    "url": "git://github.com/someboddy/vim-integrake"
+    "url": "git://github.com/idanarye/vim-integrake"
   },
   "4733": {
     "type": "git",
@@ -3797,7 +3797,7 @@
   },
   "4941": {
     "type": "git",
-    "url": "git://github.com/someboddy/vim-vebugger"
+    "url": "git://github.com/idanarye/vim-vebugger"
   },
   "4942": {
     "type": "git",
@@ -3810,6 +3810,14 @@
   "4950": {
     "type": "git",
     "url": "git://github.com/WolfgangMehner/lua-support"
+  },
+  "4951": {
+    "type": "git",
+    "url": "git://github.com/zoeesilcock/vim-caniuse"
+  },
+  "4955": {
+    "type": "git",
+    "url": "git://github.com/idanarye/vim-merginal"
   },
   "521": {
     "type": "git",
