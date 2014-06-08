@@ -141,6 +141,9 @@ let scmnr.2736 = {'type': 'git', 'url': 'git://github.com/scrooloose/syntastic'}
 " Rene de Zwart
 let scmnr.1397 = {'type': 'git', 'url': 'git://github.com/othree/xml.vim'}
 
+" Dayle Rees
+let scm['color-schemes'] = {'type': 'git', 'url': 'git://github.com/daylerees/colour-schemes', 'addon-info': {'runtimepath': 'vim'}}
+
 " Tim Pope
 let scmnr.1433 = {'type': 'git', 'url': 'git://github.com/tpope/vim-haml'}
 let scmnr.2332 = {'type': 'git', 'url': 'git://github.com/tpope/vim-pathogen'}
