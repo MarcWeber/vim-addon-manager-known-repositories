@@ -3819,6 +3819,14 @@
     "type": "git",
     "url": "git://github.com/idanarye/vim-merginal"
   },
+  "4956": {
+    "type": "git",
+    "url": "git://github.com/ardagnir/shadowvim"
+  },
+  "4957": {
+    "type": "git",
+    "url": "git://github.com/KabbAmine/zeavim.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

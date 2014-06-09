@@ -1,4 +1,6 @@
 {
+"zeavim":{"archive_name":"zeavim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22003","version":"1.0","vim_script_nr":4957},
+"shadowvim":{"archive_name":"shadowvim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22002","version":"0.1","vim_script_nr":4956},
 "Merginal":{"archive_name":"merginal_v1.1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21992","version":"1.1.0","vim_script_nr":4955},
 "purpledrop":{"archive_name":"purpledrop.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21983","version":"1.0","vim_script_nr":4954},
 "dubs-green":{"archive_name":"dubs_green.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21980","version":"0.1","vim_script_nr":4953},
