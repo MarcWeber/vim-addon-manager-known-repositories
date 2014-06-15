@@ -15329,6 +15329,7 @@
       "Merginal"
    ],
    "4956" : [
+      "vimbed",
       "shadowvim"
    ],
    "4957" : [
@@ -15336,5 +15337,11 @@
    ],
    "4958" : [
       "AdvancedSorters"
+   ],
+   "4959" : [
+      "vimf90"
+   ],
+   "4960" : [
+      "Kerbal_Space_Program_Syntax"
    ]
 }
