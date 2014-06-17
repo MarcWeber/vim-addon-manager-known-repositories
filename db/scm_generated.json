@@ -3827,6 +3827,10 @@
     "type": "git",
     "url": "git://github.com/KabbAmine/zeavim.vim"
   },
+  "4961": {
+    "type": "git",
+    "url": "git@github.com:gagoar/SmartColumnColors.git"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
