@@ -1295,6 +1295,9 @@ let scm['rust'] = {'type': 'git', 'url': 'git://github.com/wting/rust.vim'}
 " Hisashi Nakamura, Shinya Ohynagi
 let scm['vim-jsdoc'] = {'type': 'git', 'url': 'git://github.com/heavenshell/vim-jsdoc'}
 
+" dartlang.org maintainers
+let scm['dart'] = {'type': 'git', 'url': 'git://github.com/dart-lang/dart-vim-plugin'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
