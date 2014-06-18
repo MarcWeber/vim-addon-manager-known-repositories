@@ -3831,6 +3831,10 @@
     "type": "git",
     "url": "git@github.com:gagoar/SmartColumnColors.git"
   },
+  "4962": {
+    "type": "git",
+    "url": "git://github.com/jeetsukumaran/vim-filebeagle"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
