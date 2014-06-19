@@ -307,6 +307,10 @@
     "type": "git",
     "url": "git://github.com/bogado/file-line"
   },
+  "2186": {
+    "type": "git",
+    "url": "git://github.com/motus/pig.vim"
+  },
   "2189": {
     "type": "git",
     "url": "git://github.com/lxmzhv/vim"
@@ -3834,6 +3838,10 @@
   "4962": {
     "type": "git",
     "url": "git://github.com/jeetsukumaran/vim-filebeagle"
+  },
+  "4964": {
+    "type": "git",
+    "url": "git://github.com/jeetsukumaran/vim-mochalatte"
   },
   "521": {
     "type": "git",
