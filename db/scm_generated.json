@@ -3843,6 +3843,14 @@
     "type": "git",
     "url": "git://github.com/jeetsukumaran/vim-mochalatte"
   },
+  "4966": {
+    "type": "git",
+    "url": "git://github.com/jeetsukumaran/vim-nefertiti"
+  },
+  "4967": {
+    "type": "git",
+    "url": "git://github.com/jeetsukumaran/vim-nefertiti"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
