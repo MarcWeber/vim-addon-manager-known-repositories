@@ -15354,6 +15354,7 @@
       "OCamlJump"
    ],
    "4964" : [
+      "DELETED",
       "MochaLatte"
    ],
    "4965" : [
@@ -15363,6 +15364,19 @@
       "Nefertiti%4966"
    ],
    "4967" : [
+      "Nefertiti",
       "Nefertiti%4967"
+   ],
+   "4968" : [
+      "CWDPattern"
+   ],
+   "4969" : [
+      "vim-fist"
+   ],
+   "4970" : [
+      "rdark-terminal2"
+   ],
+   "4971" : [
+      "SwapText"
    ]
 }

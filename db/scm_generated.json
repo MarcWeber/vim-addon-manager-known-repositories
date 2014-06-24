@@ -3851,6 +3851,10 @@
     "type": "git",
     "url": "git://github.com/jeetsukumaran/vim-nefertiti"
   },
+  "4969": {
+    "type": "git",
+    "url": "git://github.com/ajh17/vim-fist"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
