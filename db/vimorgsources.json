@@ -375,7 +375,7 @@
 "newt":{"archive_name":"newt.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20161","version":"0.1","vim_script_nr":4589},
 "vim-online-thesaurus":{"archive_name":"vim-online-thesaurus.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20979","version":"0.1.7","vim_script_nr":4588},
 "vim-neatstatus":{"archive_name":"neatstatus.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21603","version":"0.2","vim_script_nr":4587},
-"vim-colorscheme-switcher":{"archive_name":"colorscheme-switcher.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22069","version":"0.4","vim_script_nr":4586},
+"vim-colorscheme-switcher":{"archive_name":"colorscheme-switcher.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22096","version":"0.4.1","vim_script_nr":4586},
 "vim-bgimg":{"archive_name":"vim-bgimg.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20152","version":"1.0","vim_script_nr":4585},
 "mix":{"archive_name":"vim-mix.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20147","version":"0.10","vim_script_nr":4584},
 "DevLife":{"archive_name":"DevLife_10_STABLE.zip","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20133","version":"1.0","vim_script_nr":4583},
