@@ -193,6 +193,9 @@ let scm['toptions'] = {'type': 'git', 'url': 'git://github.com/tomtom/toptions_v
 let scm['worksheet'] = {'type': 'git', 'url': 'git://github.com/tomtom/worksheet_vim'}
 let scm['prototype'] = {'type': 'git', 'url': 'git://github.com/tomtom/prototype_vim'}
 
+" Tomoharu Saito
+let scm['w3m'] = {'type': 'git', 'url': 'git://github.com/yuratomo/w3m.vim'}
+
 " Yukihiro Nakadaira
 let scmnr.1939 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/autofmt'}
 let scmnr.2193 = {'type': 'svn', 'url': 'http://vim-soko.googlecode.com/svn/trunk/fpdf-vim'}
