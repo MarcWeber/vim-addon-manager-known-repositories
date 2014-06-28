@@ -1,4 +1,5 @@
 {
+"vim-fanfou":{"archive_name":"vim-fanfou-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22102","version":"0.1","vim_script_nr":4972},
 "SwapText":{"archive_name":"SwapText-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22091","version":"1.00","vim_script_nr":4971},
 "rdark-terminal2":{"archive_name":"rdark-terminal2.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22097","version":"0.2","vim_script_nr":4970},
 "Fist_of_Vim":{"archive_name":"vim-fist-1.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22094","version":"1.2","vim_script_nr":4969},
@@ -1566,7 +1567,7 @@
 "VimCalc":{"archive_name":"vimcalc-v1.3.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15317","version":"1.3","vim_script_nr":3329},
 "Blueshift":{"archive_name":"blueshift.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14274","version":"1.0","vim_script_nr":3328},
 "PyScratch":{"archive_name":"PyScratch-015.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14329","version":"0.15","vim_script_nr":3327},
-"stakeholders":{"archive_name":"stakeholders.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14348","version":"0.02","vim_script_nr":3326},
+"stakeholders":{"archive_name":"stakeholders.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22103","version":"0.03","vim_script_nr":3326},
 "vim-fileutils":{"archive_name":"vim-fileutils-0.7.8.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14553","version":"0.7.8","vim_script_nr":3325},
 "js-mask":{"archive_name":"js-mask-0.1.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14267","version":"0.1","vim_script_nr":3324},
 "lilypink":{"archive_name":"lilypink.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20978","version":"1.3","vim_script_nr":3323},
@@ -3719,7 +3720,7 @@
 "html_danish":{"archive_name":"html_da.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3723","version":"1.0","vim_script_nr":1163},
 "jexplorer":{"archive_name":"jexplorer.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3721","version":"0.5beta","vim_script_nr":1162},
 "foldcol":{"archive_name":"foldcol.vim.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3720","version":"2","vim_script_nr":1161},
-"tSkeleton":{"archive_name":"tskeleton.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22099","version":"5.01","vim_script_nr":1160},
+"tSkeleton":{"archive_name":"tskeleton.vba","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22104","version":"5.02","vim_script_nr":1160},
 "pagemaker6":{"archive_name":"pagemaker.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3712","version":"20010730","vim_script_nr":1159},
 "unhtml":{"archive_name":"unhtml.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3709","version":"0.1","vim_script_nr":1158},
 "txt2tags":{"archive_name":"txt2tags.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=3708","version":"20040714","vim_script_nr":1157},

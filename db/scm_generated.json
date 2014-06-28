@@ -3859,6 +3859,10 @@
     "type": "git",
     "url": "git://github.com/ajh17/vim-fist"
   },
+  "4972": {
+    "type": "git",
+    "url": "git://github.com/xiongjia/vim-fanfou"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
