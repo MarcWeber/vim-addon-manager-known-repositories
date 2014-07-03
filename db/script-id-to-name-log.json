@@ -15385,5 +15385,14 @@
    ],
    "4973" : [
       "erlang-motions"
+   ],
+   "4974" : [
+      "YAJS_Yet_Another_JavaScript_Syntax"
+   ],
+   "4975" : [
+      "unite-linephrase"
+   ],
+   "4976" : [
+      "vim-gista"
    ]
 }
