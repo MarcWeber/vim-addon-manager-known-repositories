@@ -3883,6 +3883,10 @@
     "type": "git",
     "url": "git://github.com/lambdalisue/vim-gista"
   },
+  "4977": {
+    "type": "git",
+    "url": "git://github.com/machakann/vim-textobj-delimited"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

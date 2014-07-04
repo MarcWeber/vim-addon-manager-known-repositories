@@ -15394,5 +15394,8 @@
    ],
    "4976" : [
       "vim-gista"
+   ],
+   "4977" : [
+      "textobj-delimited"
    ]
 }
