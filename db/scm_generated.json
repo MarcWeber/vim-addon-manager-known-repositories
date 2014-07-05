@@ -3887,6 +3887,10 @@
     "type": "git",
     "url": "git://github.com/machakann/vim-textobj-delimited"
   },
+  "4978": {
+    "type": "git",
+    "url": "https://tpo.pe/vim/fireplace.git"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
