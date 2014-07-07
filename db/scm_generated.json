@@ -3891,6 +3891,10 @@
     "type": "git",
     "url": "https://tpo.pe/vim/fireplace.git"
   },
+  "4979": {
+    "type": "git",
+    "url": "git://github.com/berdandy/AnsiEsc.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
