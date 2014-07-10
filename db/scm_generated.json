@@ -3895,6 +3895,10 @@
     "type": "git",
     "url": "git://github.com/berdandy/AnsiEsc.vim"
   },
+  "4980": {
+    "type": "git",
+    "url": "git://github.com/zhchang/quick_file"
+  },
   "4981": {
     "type": "git",
     "url": "git://github.com/sergey-vlasov/JustDo.vim"
