@@ -3903,6 +3903,10 @@
     "type": "git",
     "url": "git://github.com/sergey-vlasov/JustDo.vim"
   },
+  "4983": {
+    "type": "git",
+    "url": "git://github.com/bbchung/clighter"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

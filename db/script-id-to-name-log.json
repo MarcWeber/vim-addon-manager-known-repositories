@@ -15412,5 +15412,11 @@
    ],
    "4982" : [
       "Buddy_Challenge"
+   ],
+   "4983" : [
+      "Clighter"
+   ],
+   "4984" : [
+      "PHPSyntaxCheck"
    ]
 }
