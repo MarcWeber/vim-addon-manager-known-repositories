@@ -3907,6 +3907,14 @@
     "type": "git",
     "url": "git://github.com/bbchung/clighter"
   },
+  "4985": {
+    "type": "git",
+    "url": "git://github.com/chivalry/filemaker.vim"
+  },
+  "4986": {
+    "type": "git",
+    "url": "git://github.com/saihoooooooo/glowshi-ft.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
