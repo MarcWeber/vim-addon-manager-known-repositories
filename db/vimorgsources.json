@@ -459,7 +459,7 @@
 "conflicts":{"archive_name":"conflicts.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19765","version":"0.1.1","vim_script_nr":4507},
 "textobj-latex":{"archive_name":"vim-textobj-latex-v0.90.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19763","version":"0.90","vim_script_nr":4506},
 "autohide":{"archive_name":"autohide_v4.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20758","version":"4","vim_script_nr":4505},
-"dispatch":{"archive_name":"dispatch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21706","version":"1.1","vim_script_nr":4504},
+"dispatch":{"archive_name":"dispatch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22206","version":"1.2","vim_script_nr":4504},
 "vim-xkbswitch":{"archive_name":"vim-xkbswitch-0.10.1.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21598","version":"0.10.1","vim_script_nr":4503},
 "eighties":{"archive_name":"vim-eighties.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20992","version":"1.0.6","vim_script_nr":4502},
 "table-mode":{"archive_name":"table-mode.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19739","version":"2.2","vim_script_nr":4501},
