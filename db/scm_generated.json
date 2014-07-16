@@ -3915,6 +3915,10 @@
     "type": "git",
     "url": "git://github.com/saihoooooooo/glowshi-ft.vim"
   },
+  "4987": {
+    "type": "git",
+    "url": "git://github.com/manuel-colmenero/vim-simple-session"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
