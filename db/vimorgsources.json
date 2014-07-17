@@ -248,7 +248,7 @@
 "united-front":{"archive_name":"united-front.tar","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20863","version":"0.1","vim_script_nr":4734},
 "Sol":{"archive_name":"sol-term.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20860","version":"0.0.1","vim_script_nr":4733},
 "integrake":{"archive_name":"integrake.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21018","version":"1.0.1","vim_script_nr":4732},
-"cmake%4731":{"archive_name":"v0.1.9-1.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20855","version":"0.1.9-1","vim_script_nr":4731},
+"cmake%4731":{"archive_name":"v0.4.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22210","version":"0.4.2","vim_script_nr":4731},
 "pastek":{"archive_name":"pastek.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21494","version":"0.2.0","vim_script_nr":4730},
 "VerticalHelp":{"archive_name":"VerticalHelp.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20939","version":"1.02","vim_script_nr":4729},
 "Tags_Updater":{"archive_name":"tags_updater.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20861","version":"1.2","vim_script_nr":4728},
