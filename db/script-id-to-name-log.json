@@ -15427,5 +15427,8 @@
    ],
    "4987" : [
       "vim-simple-session"
+   ],
+   "4988" : [
+      "SpellLangIdentifier"
    ]
 }
