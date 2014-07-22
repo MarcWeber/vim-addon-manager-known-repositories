@@ -8356,6 +8356,7 @@
       "VOOF_-_Vim_Outliner_Of_Folds"
    ],
    "2658" : [
+      "Auto_Changing_color_script",
       "Changing_color_script",
       "Changing_colour_script"
    ],
@@ -15430,5 +15431,11 @@
    ],
    "4988" : [
       "SpellLangIdentifier"
+   ],
+   "4989" : [
+      "projectionist"
+   ],
+   "4990" : [
+      "srec%4990"
    ]
 }

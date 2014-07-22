@@ -673,7 +673,7 @@
   },
   "2805": {
     "type": "git",
-    "url": "git://github.com/alvan/assistant.vim"
+    "url": "git://github.com/alvan/vim-assistant"
   },
   "2809": {
     "type": "git",
@@ -3918,6 +3918,10 @@
   "4987": {
     "type": "git",
     "url": "git://github.com/manuel-colmenero/vim-simple-session"
+  },
+  "4989": {
+    "type": "git",
+    "url": "git://github.com/tpope/vim-projectionist"
   },
   "521": {
     "type": "git",
