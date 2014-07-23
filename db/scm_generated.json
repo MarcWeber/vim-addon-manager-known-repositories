@@ -3919,6 +3919,10 @@
     "type": "git",
     "url": "git://github.com/manuel-colmenero/vim-simple-session"
   },
+  "4988": {
+    "type": "git",
+    "url": "git://github.com/daaugusto/spelllangidentifier"
+  },
   "4989": {
     "type": "git",
     "url": "git://github.com/tpope/vim-projectionist"
