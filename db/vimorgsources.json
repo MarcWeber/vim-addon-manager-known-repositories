@@ -1,7 +1,7 @@
 {
 "srec%4990":{"archive_name":"srec.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22234","version":"1.0","vim_script_nr":"4990"},
 "projectionist":{"archive_name":"projectionist.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22231","version":"1.0","vim_script_nr":4989},
-"SpellLangIdentifier":{"archive_name":"sli-0.2.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22252","version":"0.2.0","vim_script_nr":4988},
+"SpellLangIdentifier":{"archive_name":"sli-0.3.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22259","version":"0.3.0","vim_script_nr":4988},
 "vim-simple-session":{"archive_name":"vim-simple-session.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22207","version":"1.0.0","vim_script_nr":4987},
 "glowshi-ft":{"archive_name":"glowshi-ft.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22205","version":"1.0.0","vim_script_nr":4986},
 "filemaker":{"archive_name":"filemaker.vim.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22201","version":"1.0","vim_script_nr":4985},
@@ -93,7 +93,7 @@
 "clone":{"archive_name":"clone-1.02.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22063","version":"1.02","vim_script_nr":4896},
 "Pterosaur":{"archive_name":"pterosaur.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21904","version":"0.6","vim_script_nr":4895},
 "Markology":{"archive_name":"vim-markology-v2.0.0.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21910","version":"2.0.0","vim_script_nr":4894},
-"vim-bookmarks":{"archive_name":"vim-bookmarks-1.1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21857","version":"1.1.0","vim_script_nr":4893},
+"vim-bookmarks":{"archive_name":"vim-bookmarks-1.2.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22260","version":"1.2.0","vim_script_nr":4893},
 "vim-less":{"archive_name":"vim-less.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22157","version":"1.50","vim_script_nr":4892},
 "nomad":{"archive_name":"vim-nomad.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21623","version":"0.1","vim_script_nr":4891},
 "quickfix-reflector":{"archive_name":"quickfix-reflector.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21620","version":"0.1","vim_script_nr":4890},
