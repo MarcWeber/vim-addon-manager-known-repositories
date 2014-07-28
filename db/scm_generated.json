@@ -3927,6 +3927,10 @@
     "type": "git",
     "url": "git://github.com/tpope/vim-projectionist"
   },
+  "4992": {
+    "type": "git",
+    "url": "git://github.com/lambdatoast/elm.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
