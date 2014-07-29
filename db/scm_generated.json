@@ -3931,6 +3931,14 @@
     "type": "git",
     "url": "git://github.com/lambdatoast/elm.vim"
   },
+  "4993": {
+    "type": "git",
+    "url": "git://github.com/parnmatt/vim-root"
+  },
+  "4994": {
+    "type": "git",
+    "url": "git://github.com/brookhong/cloudboard.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
