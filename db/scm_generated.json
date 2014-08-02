@@ -3939,6 +3939,10 @@
     "type": "git",
     "url": "git://github.com/brookhong/cloudboard.vim"
   },
+  "4995": {
+    "type": "git",
+    "url": "git://github.com/KabbAmine/vCoolor.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

@@ -1,4 +1,5 @@
 {
+"vCoolor":{"archive_name":"vCoolor.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22284","version":"0.1","vim_script_nr":4995},
 "cloudboard":{"archive_name":"cloudboard.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22273","version":"1.0","vim_script_nr":4994},
 "vim-root":{"archive_name":"vim-root_v1.0.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22269","version":"1.0.0","vim_script_nr":4993},
 "elm":{"archive_name":"elm.vim.tgz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22268","version":"0.4.1","vim_script_nr":4992},
@@ -468,7 +469,7 @@
 "textobj-latex":{"archive_name":"vim-textobj-latex-v0.90.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19763","version":"0.90","vim_script_nr":4506},
 "autohide":{"archive_name":"autohide_v4.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20758","version":"4","vim_script_nr":4505},
 "dispatch":{"archive_name":"dispatch.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22206","version":"1.2","vim_script_nr":4504},
-"vim-xkbswitch":{"archive_name":"vim-xkbswitch-0.10.1.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21598","version":"0.10.1","vim_script_nr":4503},
+"vim-xkbswitch":{"archive_name":"vim-xkbswitch-0.11.tgz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22282","version":"0.11","vim_script_nr":4503},
 "eighties":{"archive_name":"vim-eighties.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20992","version":"1.0.6","vim_script_nr":4502},
 "table-mode":{"archive_name":"table-mode.tar.bz2","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19739","version":"2.2","vim_script_nr":4501},
 "rebtags":{"archive_name":"rebtags-0.2.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19753","version":"0.2","vim_script_nr":4500},
