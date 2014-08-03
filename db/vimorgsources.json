@@ -376,7 +376,7 @@
 "racoon":{"archive_name":"racoon.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20288","version":"0.1","vim_script_nr":4611},
 "vim-c-cr":{"archive_name":"ccr.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20282","version":"1","vim_script_nr":4610},
 "Psearch":{"archive_name":"Psearch.zip","script-type":"patch","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20281","version":"Psearch","vim_script_nr":4609},
-"darknight256":{"archive_name":"darknight256.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20304","version":"0.2","vim_script_nr":4608},
+"darknight256":{"archive_name":"darknight256.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22285","version":"0.3","vim_script_nr":4608},
 "autoscroll%4607":{"archive_name":"autoscroll.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20257","version":"1.0","vim_script_nr":"4607"},
 "move_until_char_changes":{"archive_name":"move_until_char_changes.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20256","version":"1.0","vim_script_nr":4606},
 "seoul256":{"archive_name":"seoul256.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21307","version":"1.3.0","vim_script_nr":4605},
