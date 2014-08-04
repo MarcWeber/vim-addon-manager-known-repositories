@@ -1,5 +1,5 @@
 {
-"vCoolor":{"archive_name":"vCoolor.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22284","version":"0.1","vim_script_nr":4995},
+"vCoolor":{"archive_name":"vCoolor.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22286","version":"0.2","vim_script_nr":4995},
 "cloudboard":{"archive_name":"cloudboard.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22273","version":"1.0","vim_script_nr":4994},
 "vim-root":{"archive_name":"vim-root_v1.0.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22269","version":"1.0.0","vim_script_nr":4993},
 "elm":{"archive_name":"elm.vim.tgz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22268","version":"0.4.1","vim_script_nr":4992},
@@ -3112,7 +3112,7 @@
 "IndentHL%1800":{"archive_name":"indenthl.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15279","version":"1.3","vim_script_nr":"1800"},
 "polycfg":{"archive_name":"polycfg.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6745","version":"1.0","vim_script_nr":1799},
 "smarty":{"archive_name":"smarty.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6741","version":"2","vim_script_nr":1798},
-"svnvimdiff":{"archive_name":"svnvimdiff","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19777","version":"1.6","vim_script_nr":1797},
+"svnvimdiff":{"archive_name":"svnvimdiff","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22287","version":"1.7","vim_script_nr":1797},
 "SETL2":{"archive_name":"setl.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6724","version":"0.1","vim_script_nr":1796},
 "autoloadTemplate":{"archive_name":"autoloadTemplate-0.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=6723","version":"0.1","vim_script_nr":1795},
 "vibrantink":{"archive_name":"vibrantink.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=10117","version":"1.3","vim_script_nr":1794},
