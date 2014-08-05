@@ -1,4 +1,5 @@
 {
+"AdvancedDiffOptions":{"archive_name":"AdvancedDiffOptions-1.00.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22289","version":"1.00","vim_script_nr":4996},
 "vCoolor":{"archive_name":"vCoolor.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22286","version":"0.2","vim_script_nr":4995},
 "cloudboard":{"archive_name":"cloudboard.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22273","version":"1.0","vim_script_nr":4994},
 "vim-root":{"archive_name":"vim-root_v1.0.0.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22269","version":"1.0.0","vim_script_nr":4993},
@@ -1542,7 +1543,7 @@
 "vcslogdiff":{"archive_name":"vcslogdiff.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=20943","version":"0.2","vim_script_nr":3378},
 "Vimblr":{"archive_name":"vimblr.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14609","version":"1.0","vim_script_nr":3377},
 "FanVim":{"archive_name":"fanvim0.1-final.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14685","version":"0.1.1","vim_script_nr":3376},
-"notes":{"archive_name":"notes.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22147","version":"0.26","vim_script_nr":3375},
+"notes":{"archive_name":"notes.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22288","version":"0.26.1","vim_script_nr":3375},
 "ColorSelect":{"archive_name":"ColorSelect.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15042","version":"0.5","vim_script_nr":3374},
 "blockle":{"archive_name":"blockle.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=15538","version":"0.5","vim_script_nr":3373},
 "hdl_plugin%3371":{"archive_name":"hdl_plugin.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14648","version":"v2.1","vim_script_nr":3371},
