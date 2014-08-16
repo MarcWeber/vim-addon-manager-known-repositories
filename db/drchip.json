@@ -87,7 +87,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/Decho.vba.gz",
-    "version": "v21r"
+    "version": "v21s"
   },
   "DotFill@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -135,7 +135,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/tarfiles/gdbmgr.tar.gz",
-    "version": "v2b"
+    "version": "v30a"
   },
   "GetScript@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -255,7 +255,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/manpageview.vba.gz",
-    "version": "v25n"
+    "version": "v25o"
   },
   "MapleSyrup@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v153o"
+    "version": "v153q"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -387,7 +387,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/tar.vba.gz",
-    "version": "v29"
+    "version": "v30a"
   },
   "ToggleWindowLayout@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -405,7 +405,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/tarfiles/vimball.tar.gz",
-    "version": "v37b"
+    "version": "v30a"
   },
   "VisualBlockCommands@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",

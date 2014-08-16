@@ -2227,6 +2227,10 @@
     "type": "git",
     "url": "git://github.com/vimyum/viske"
   },
+  "4121": {
+    "type": "git",
+    "url": "https://bitbucket.org/gryf/kickass-syntax-vim"
+  },
   "4126": {
     "type": "git",
     "url": "git://github.com/alikins/vim-fix-git-diff-path"
@@ -3942,6 +3946,30 @@
   "4995": {
     "type": "git",
     "url": "git://github.com/KabbAmine/vCoolor.vim"
+  },
+  "4998": {
+    "type": "git",
+    "url": "git://github.com/Rykka/doctest.vim"
+  },
+  "4999": {
+    "type": "git",
+    "url": "git://github.com/Rykka/InstantRst"
+  },
+  "5000": {
+    "type": "git",
+    "url": "git://github.com/Rykka/clickable.vim"
+  },
+  "5002": {
+    "type": "git",
+    "url": "git://github.com/Ioannis-Kapoulas/vim-autoprefixer"
+  },
+  "5003": {
+    "type": "git",
+    "url": "git://github.com/idanarye/vim-dutyl"
+  },
+  "5004": {
+    "type": "git",
+    "url": "git://github.com/alexbel/vim-rubygems"
   },
   "521": {
     "type": "git",

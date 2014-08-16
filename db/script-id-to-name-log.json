@@ -13387,6 +13387,7 @@
       "vim-lesscss"
    ],
    "4311" : [
+      "doctest%4311",
       "doctest"
    ],
    "4312" : [
@@ -13755,6 +13756,7 @@
       "ingo-library"
    ],
    "4434" : [
+      "Erroneous",
       "erroneous"
    ],
    "4435" : [
@@ -14617,6 +14619,7 @@
       "SuperSub"
    ],
    "4719" : [
+      "Yankitute",
       "yankitute"
    ],
    "4720" : [
@@ -14656,6 +14659,7 @@
       "cmake%4731"
    ],
    "4732" : [
+      "Integrake",
       "integrake"
    ],
    "4733" : [
@@ -15094,6 +15098,7 @@
       "industry"
    ],
    "4876" : [
+      "twcmd",
       "TWCommand"
    ],
    "4877" : [
@@ -15370,6 +15375,7 @@
       "Nefertiti%4967"
    ],
    "4968" : [
+      "autocwd",
       "CWDPattern"
    ],
    "4969" : [
@@ -15456,5 +15462,29 @@
    ],
    "4996" : [
       "AdvancedDiffOptions"
+   ],
+   "4997" : [
+      "SearchInRange"
+   ],
+   "4998" : [
+      "doctest%4998"
+   ],
+   "4999" : [
+      "InstantRst"
+   ],
+   "5000" : [
+      "clickable"
+   ],
+   "5001" : [
+      "logstash"
+   ],
+   "5002" : [
+      "vim-autoprefixer"
+   ],
+   "5003" : [
+      "Dutyl"
+   ],
+   "5004" : [
+      "vim-rubygems"
    ]
 }
