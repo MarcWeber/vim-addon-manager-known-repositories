@@ -3971,6 +3971,10 @@
     "type": "git",
     "url": "git://github.com/alexbel/vim-rubygems"
   },
+  "5005": {
+    "type": "git",
+    "url": "git://github.com/xkdcc/Session-Viminfo-Management"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

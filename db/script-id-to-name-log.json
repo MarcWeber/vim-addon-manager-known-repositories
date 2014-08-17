@@ -15486,5 +15486,8 @@
    ],
    "5004" : [
       "vim-rubygems"
+   ],
+   "5005" : [
+      "Session-Viminfo-Management"
    ]
 }
