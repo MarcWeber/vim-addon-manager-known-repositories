@@ -15489,5 +15489,11 @@
    ],
    "5005" : [
       "Session-Viminfo-Management"
+   ],
+   "5006" : [
+      "Vim-EPUB"
+   ],
+   "5007" : [
+      "phpmanual"
    ]
 }
