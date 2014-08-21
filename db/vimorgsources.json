@@ -1,4 +1,5 @@
 {
+"256_darkdot":{"archive_name":"256_darkdot.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22354","version":"1.0","vim_script_nr":5009},
 "a_indent":{"archive_name":"a_indent.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22351","version":"1.0","vim_script_nr":5008},
 "phpmanual":{"archive_name":"phpmanual.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22346","version":"1.0","vim_script_nr":5007},
 "Vim-EPUB":{"archive_name":"vim-epub.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22344","version":"0.1","vim_script_nr":5006},
