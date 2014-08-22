@@ -3979,6 +3979,10 @@
     "type": "git",
     "url": "git://github.com/etnadji/vim-epub"
   },
+  "5010": {
+    "type": "git",
+    "url": "git://github.com/XadillaX/json-formatter.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
