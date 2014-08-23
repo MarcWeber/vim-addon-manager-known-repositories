@@ -50,7 +50,7 @@
 "Kerbal_Space_Program_Syntax":{"archive_name":"craft.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22113","version":"0.2","vim_script_nr":4960},
 "vimf90":{"archive_name":"vimf90.tar.gz","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22095","version":"1.0","vim_script_nr":4959},
 "AdvancedSorters":{"archive_name":"AdvancedSorters-1.01.vmb.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22181","version":"1.01","vim_script_nr":4958},
-"zeavim":{"archive_name":"zeavim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22281","version":"1.0.2","vim_script_nr":4957},
+"zeavim":{"archive_name":"zeavim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22358","version":"1.0.3","vim_script_nr":4957},
 "vimbed":{"archive_name":"vimbed.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22050","version":"0.2","vim_script_nr":4956},
 "Merginal":{"archive_name":"merginal_v1.3.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22314","version":"1.3.0","vim_script_nr":4955},
 "purpledrop":{"archive_name":"purpledrop.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21983","version":"1.0","vim_script_nr":4954},
