@@ -15504,5 +15504,8 @@
    ],
    "5010" : [
       "json-formatter"
+   ],
+   "5011" : [
+      "autorepeat"
    ]
 }

@@ -1,4 +1,5 @@
 {
+"autorepeat":{"archive_name":"autorepeat.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22361","version":"0.0.1","vim_script_nr":5011},
 "json-formatter":{"archive_name":"json-formatter.vim-master.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22355","version":"1.0.0","vim_script_nr":5010},
 "256_darkdot":{"archive_name":"256_darkdot.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22354","version":"1.0","vim_script_nr":5009},
 "a_indent":{"archive_name":"a_indent.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22351","version":"1.0","vim_script_nr":5008},
@@ -26,7 +27,7 @@
 "glowshi-ft":{"archive_name":"glowshi-ft.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22205","version":"1.0.0","vim_script_nr":4986},
 "filemaker":{"archive_name":"filemaker.vim.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22201","version":"1.0","vim_script_nr":4985},
 "PHPSyntaxCheck":{"archive_name":"phpcheck.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22312","version":"1.1","vim_script_nr":4984},
-"Clighter":{"archive_name":"clighter.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22352","version":"3.00","vim_script_nr":4983},
+"Clighter":{"archive_name":"clighter.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22362","version":"3.1.1","vim_script_nr":4983},
 "Buddy_Challenge":{"archive_name":"buddyChalWIN.vim","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22250","version":"1.9","vim_script_nr":4982},
 "JustDo":{"archive_name":"JustDo.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22174","version":"0.1","vim_script_nr":4981},
 "quick-file":{"archive_name":"quick_file.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22272","version":"0.1.2","vim_script_nr":4980},
