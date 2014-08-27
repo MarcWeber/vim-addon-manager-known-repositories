@@ -1306,6 +1306,9 @@ let scm['dart'] = {'type': 'git', 'url': 'git://github.com/dart-lang/dart-vim-pl
 let scm['vim-reunions'] = {'type': 'git', 'url': 'git://github.com/osyo-manga/vim-reunions', 'dependencies': {'vimproc': {}}}
 let scm['vim-marching'] = {'type': 'git', 'url': 'git://github.com/osyo-manga/vim-marching', 'dependencies': {'vimproc': {}, 'vim-reunions': {}}}
 
+" Dag Odenhall
+let scm['vim2hs'] = {'type': 'git', 'url': 'git://github.com/dag/vim2hs'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
