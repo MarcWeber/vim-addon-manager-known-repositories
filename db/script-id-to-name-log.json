@@ -15508,5 +15508,8 @@
    ],
    "5011" : [
       "autorepeat"
+   ],
+   "5012" : [
+      "Vim_Markdown_Preview"
    ]
 }

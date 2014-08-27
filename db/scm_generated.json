@@ -3983,6 +3983,10 @@
     "type": "git",
     "url": "git://github.com/XadillaX/json-formatter.vim"
   },
+  "5012": {
+    "type": "git",
+    "url": "git://github.com/JamshedVesuna/vim-markdown-preview"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
