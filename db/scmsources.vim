@@ -73,7 +73,7 @@ let scmnr.229 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/SiR/tru
 let scmnr.336 = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/cpp/trunk'}
 " The following plugins do not have a separate repository:
 let scmnr.83  = {'url': 'http://lh-vim.googlecode.com/svn/misc/trunk/plugin/let-modeline.vim', 'archive_name': 'let-modeline.vim', 'type': 'archive', 'script-type': 'utility'}
-let scmnr.727 = {'url': 'http://lh-vim.googlecode.com/svn/misc/trunk/plugin/local_vimrc.vim', 'archive_name': 'local_vimrc.vim', 'type': 'archive', 'script-type': 'utility'}
+let scmnr.727 = {'type': 'git', 'url': 'git://github.com/LucHermitte/local_vimrc', 'archive_name': 'local_vimrc.vim', 'type': 'archive', 'script-type': 'utility'}
 " let scm['lh-vim-lib']          = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/vim-lib/trunk'}
 let scm['build-tools-wrapper'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/BTW/trunk'}
 let scm['lh-tags'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/tags/trunk'}
@@ -82,6 +82,9 @@ let scm['lh-refactor'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/sv
 let scm['system-tools'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/system-tools/trunk'}
 let scm['UT'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/UT/trunk'}
 let scm['vim-clang@lh'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/vim-clang'}
+let scm['compil-hint'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/compil-hints/trunk'}
+let scm['lh-cmake'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/lh-cmake'}
+let scm['dirdiff-svn'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/dirdiff-svn'}
 " system-tools are required for vim-spell.tar.gz (vimscript #135), which are 
 " part of misc. Cannot install using 'type':'archive': it won’t pull in 
 " documentation. Alternative: use cpp (vimscript #336, above) in place of a@lh
