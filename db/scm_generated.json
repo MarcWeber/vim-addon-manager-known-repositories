@@ -3983,9 +3983,17 @@
     "type": "git",
     "url": "git://github.com/XadillaX/json-formatter.vim"
   },
+  "5011": {
+    "type": "git",
+    "url": "git://github.com/daisuzu/autorepeat.vim"
+  },
   "5012": {
     "type": "git",
     "url": "git://github.com/JamshedVesuna/vim-markdown-preview"
+  },
+  "5013": {
+    "type": "git",
+    "url": "git://github.com/Rykka/autotype.vim"
   },
   "521": {
     "type": "git",
