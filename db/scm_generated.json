@@ -3995,6 +3995,10 @@
     "type": "git",
     "url": "git://github.com/Rykka/autotype.vim"
   },
+  "5014": {
+    "type": "git",
+    "url": "git://github.com/aufgang001/vim-nerdtree_plugin_open"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
