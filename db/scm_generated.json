@@ -3629,7 +3629,7 @@
   },
   "4853": {
     "type": "git",
-    "url": "git://github.com/pavoljuhas/smart-change-directory"
+    "url": "git://github.com/pavoljuhas/scd.vim"
   },
   "4858": {
     "type": "git",
