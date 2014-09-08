@@ -135,7 +135,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/tarfiles/gdbmgr.tar.gz",
-    "version": "v30a"
+    "version": "v2b"
   },
   "GetScript@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -303,7 +303,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/netrw.vba.gz",
-    "version": "v153q"
+    "version": "v153r"
   },
   "PassWGenPasswordGenerator@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -405,7 +405,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/tarfiles/vimball.tar.gz",
-    "version": "v30a"
+    "version": "v37b"
   },
   "VisualBlockCommands@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
