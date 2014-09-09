@@ -1032,7 +1032,7 @@
 "taskmanagementvim":{"archive_name":"taskmanagementvim.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17404","version":"1.0","vim_script_nr":3923},
 "Gummybears":{"archive_name":"gummybears.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17472","version":"0.3","vim_script_nr":3922},
 "TagmaLast":{"archive_name":"TagmaLast.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17487","version":"0.2","vim_script_nr":3921},
-"WhiteWash":{"archive_name":"WhiteWash.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17373","version":"0.11","vim_script_nr":3920},
+"WhiteWash":{"archive_name":"WhiteWash.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22412","version":"1.2","vim_script_nr":3920},
 "pfldap":{"archive_name":"pfldap.vim","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17367","version":"0.1","vim_script_nr":3919},
 "cd-hook":{"archive_name":"cd-hook.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17366","version":"0.1","vim_script_nr":3918},
 "tagport":{"archive_name":"tagport.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=17376","version":"0.2","vim_script_nr":3917},
