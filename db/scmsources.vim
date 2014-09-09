@@ -1283,8 +1283,8 @@ let scm['jekyll'] = {'type': 'git', 'url': 'git://github.com/csexton/jekyll.vim'
 let scm['viceroy'] = {'type': 'git', 'url': 'git://github.com/csexton/viceroy'}
 
 " David Barnett
-let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/maktaba'}
-let scm['glaive'] = {'type': 'git', 'url': 'git://github.com/google/glaive'}
+let scm['maktaba'] = {'type': 'git', 'url': 'git://github.com/google/vim-maktaba'}
+let scm['glaive'] = {'type': 'git', 'url': 'git://github.com/google/vim-glaive'}
 
 " Charles Hogg
 let scm['vtd'] = {'type': 'git', 'url': 'git://github.com/chiphogg/vim-vtd'}
