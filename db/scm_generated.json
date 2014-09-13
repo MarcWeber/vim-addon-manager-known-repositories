@@ -3999,6 +3999,10 @@
     "type": "git",
     "url": "git://github.com/aufgang001/vim-nerdtree_plugin_open"
   },
+  "5016": {
+    "type": "git",
+    "url": "git://github.com/b4b4r07/vim-autocdls"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

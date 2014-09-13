@@ -1,4 +1,5 @@
 {
+"autocdls":{"archive_name":"autocdls.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22417","version":"1.0","vim_script_nr":5016},
 "C64":{"archive_name":"C64.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22394","version":"0.02","vim_script_nr":5015},
 "vim-nerdtree_plugin_open":{"archive_name":"vim-nerdtree_plugin_open.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22390","version":"1.0.0","vim_script_nr":5014},
 "autotype":{"archive_name":"autotype.vim-0.10.7.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22396","version":"0.10.7","vim_script_nr":5013},
@@ -11,7 +12,7 @@
 "Vim-EPUB":{"archive_name":"vim-epub.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22411","version":"0.4","vim_script_nr":5006},
 "Session-Viminfo-Management":{"archive_name":"Session-Viminfo-Management-1.0-git-042c94fbe8154a52fcfd89234ba7ca6a36f73057.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22339","version":"1.0","vim_script_nr":5005},
 "vim-rubygems":{"archive_name":"vim-rubygems.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22335","version":"0.0.1","vim_script_nr":5004},
-"Dutyl":{"archive_name":"dutyl_v1.1.0.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22404","version":"1.1.0","vim_script_nr":5003},
+"Dutyl":{"archive_name":"dutyl_v1.2.0.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22418","version":"1.2.0","vim_script_nr":5003},
 "vim-autoprefixer":{"archive_name":"vim-autoprefixer.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22334","version":"1.0.1","vim_script_nr":5002},
 "logstash":{"archive_name":"logstash.vim.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22309","version":"0.1","vim_script_nr":5001},
 "clickable":{"archive_name":"clickable.vim-0.6.6.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22371","version":"0.6.6","vim_script_nr":5000},
