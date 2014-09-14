@@ -4003,6 +4003,10 @@
     "type": "git",
     "url": "git://github.com/b4b4r07/vim-autocdls"
   },
+  "5017": {
+    "type": "git",
+    "url": "git://github.com/katono/rogue.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
