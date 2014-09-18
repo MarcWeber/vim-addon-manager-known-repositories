@@ -85,6 +85,7 @@ let scm['vim-clang@lh'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/v
 let scm['lh-compil-hints'] = {'type': 'svn', 'url': 'http://lh-vim.googlecode.com/svn/compil-hints/trunk'}
 let scm['lh-cmake'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/lh-cmake'}
 let scm['dirdiff-svn'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/dirdiff-svn'}
+let scm['VimFold4C'] = {'type': 'git', 'url': 'git://github.com/LucHermitte/VimFold4C'}
 " system-tools are required for vim-spell.tar.gz (vimscript #135), which are 
 " part of misc. Cannot install using 'type':'archive': it won’t pull in 
 " documentation. Alternative: use cpp (vimscript #336, above) in place of a@lh
