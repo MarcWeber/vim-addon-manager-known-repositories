@@ -1,4 +1,5 @@
 {
+"VIM_PHP_Refactoring_Toolbox":{"archive_name":"php-refactoring-toolbox.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22448","version":"1.0.0","vim_script_nr":5020},
 "oengsimple":{"archive_name":"oengsimple.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22447","version":"0.1","vim_script_nr":5019},
 "VullScreen":{"archive_name":"vullScreen.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22432","version":"0.1","vim_script_nr":5018},
 "rogue":{"archive_name":"rogue.vim-1.0.0.zip","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22425","version":"1.0.0","vim_script_nr":5017},
