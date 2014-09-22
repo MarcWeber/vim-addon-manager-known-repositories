@@ -392,6 +392,14 @@ let scm['undoclosewin'] = {'type': 'git', 'url': 'git://github.com/tyru/undoclos
 let scm['cmdwincomplete'] = {'type': 'git', 'url': 'git://github.com/tyru/cmdwincomplete.vim', 'addon-info': {'dependencies': {'%2620': {}}}}
 let scm['wim'] = {'type': 'git', 'url': 'git://github.com/tyru/wim', 'addon-info': {'dependencies': {'wwwrenderer-vim': {}, 'openbuf': {}}}}
 
+" noc7c9
+" https://github.com/noc7c9/vim-iced-coffee-script says "You will also need to install a vanilla coffeescript vim plugin, such as this one."
+" Thus if this default dependency hurts someone we'll remove it again
+let scm['vim-iced-coffe-script'] = {'type': 'git', 'url': 'git://github.com/noc7c9/vim-iced-coffee-script', 'addon-info': {'dependencies': {'vim-coffee-script': {}}}}
+
+" chikatoike
+let scm['sourcemap.vim'] = {'type': 'git', 'url': 'git://github.com/chikatoike/sourcemap.vim'}
+
 " Joe Stelmach
 let scmnr.2578 = {'type': 'git', 'url': 'git://github.com/joestelmach/lint.vim'}
 
