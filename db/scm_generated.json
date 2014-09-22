@@ -4011,6 +4011,10 @@
     "type": "git",
     "url": "git://github.com/KabbAmine/vullScreen.vim"
   },
+  "5021": {
+    "type": "git",
+    "url": "git://github.com/calebsmith/vim-lambdify"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

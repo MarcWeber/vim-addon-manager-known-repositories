@@ -15537,5 +15537,8 @@
    ],
    "5020" : [
       "VIM_PHP_Refactoring_Toolbox"
+   ],
+   "5021" : [
+      "vim-lamdify"
    ]
 }
