@@ -1,6 +1,6 @@
 {
-"cobalt":{"archive_name":"cobalt.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22453","version":"1.0","vim_script_nr":5022},
-"vim-lamdify":{"archive_name":"vim-lambdify.tar","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22452","version":"0.2","vim_script_nr":5021},
+"cobalt":{"archive_name":"cobalt.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22455","version":"1.1","vim_script_nr":5022},
+"vim-lamdify":{"archive_name":"vim-lambdify.tar","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22454","version":"0.3","vim_script_nr":5021},
 "VIM_PHP_Refactoring_Toolbox":{"archive_name":"php-refactoring-toolbox.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22448","version":"1.0.0","vim_script_nr":5020},
 "oengsimple":{"archive_name":"oengsimple.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22447","version":"0.1","vim_script_nr":5019},
 "VullScreen":{"archive_name":"vullScreen.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22432","version":"0.1","vim_script_nr":5018},
