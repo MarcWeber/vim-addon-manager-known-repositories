@@ -4015,6 +4015,10 @@
     "type": "git",
     "url": "git://github.com/calebsmith/vim-lambdify"
   },
+  "5023": {
+    "type": "git",
+    "url": "git://github.com/rargo/vim-line-jump"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
