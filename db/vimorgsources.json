@@ -1748,7 +1748,7 @@
 "vim-addon-ocaml":{"archive_name":"vim-addon-ocaml-initial-upload.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13574","version":"0.1","vim_script_nr":3199},
 "undofile":{"archive_name":"undofile.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13567","version":"0.2","vim_script_nr":3198},
 "current-func-info":{"archive_name":"cfi.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=14617","version":"0.0.5","vim_script_nr":3197},
-"gedim":{"archive_name":"gedim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13753","version":"1.2","vim_script_nr":3196},
+"gedim":{"archive_name":"gedim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22467","version":"1.2b","vim_script_nr":3196},
 "Starting_.vimrc":{"archive_name":".vimrc","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13544","version":"0.1","vim_script_nr":3195},
 "ovim":{"archive_name":"ovim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13534","version":"161","vim_script_nr":3194},
 "v4daemon":{"archive_name":"v4daemon.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=13600","version":"0.2","vim_script_nr":3193},
