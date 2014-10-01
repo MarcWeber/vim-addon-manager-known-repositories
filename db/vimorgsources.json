@@ -1,4 +1,6 @@
 {
+"vim-sjson":{"archive_name":"sjson.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22469","version":"0.1","vim_script_nr":5025},
+"vim-geeknote":{"archive_name":"vim-geeknote-master.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22471","version":"0.2","vim_script_nr":5024},
 "vim-line-jump":{"archive_name":"vim-line-jump.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22464","version":"1.0","vim_script_nr":5023},
 "cobalt":{"archive_name":"cobalt.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22455","version":"1.1","vim_script_nr":5022},
 "vim-lamdify":{"archive_name":"vim-lambdify.tar","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22454","version":"0.3","vim_script_nr":5021},
@@ -479,7 +481,7 @@
 "vim-latex-live-preview":{"archive_name":"vim-latex-live-preview-0.1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19825","version":"0.1.0","vim_script_nr":4524},
 "vim-multiple-cursors":{"archive_name":"vim-multiple-cursors.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19814","version":"1.0","vim_script_nr":4523},
 "VERun":{"archive_name":"verun-0.9.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19813","version":"0.9","vim_script_nr":4522},
-"vim-auto-save":{"archive_name":"vim-auto-save.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22430","version":"0.1.5","vim_script_nr":4521},
+"vim-auto-save":{"archive_name":"vim-auto-save.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22470","version":"0.1.6","vim_script_nr":4521},
 "vim-easy-align":{"archive_name":"vim-easy-align.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21888","version":"2.9.3","vim_script_nr":4520},
 "specta":{"archive_name":"specta.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19805","version":"0.1","vim_script_nr":4519},
 "translator":{"archive_name":"translator.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=19798","version":"1.0.1","vim_script_nr":4518},

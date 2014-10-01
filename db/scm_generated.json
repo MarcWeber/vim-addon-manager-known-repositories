@@ -4019,6 +4019,14 @@
     "type": "git",
     "url": "git://github.com/rargo/vim-line-jump"
   },
+  "5024": {
+    "type": "git",
+    "url": "git://github.com/neilagabriel/vim-geeknote"
+  },
+  "5025": {
+    "type": "git",
+    "url": "git://github.com/jpetrie/vim-sjson"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
