@@ -395,7 +395,7 @@ let scm['wim'] = {'type': 'git', 'url': 'git://github.com/tyru/wim', 'addon-info
 " noc7c9
 " https://github.com/noc7c9/vim-iced-coffee-script says "You will also need to install a vanilla coffeescript vim plugin, such as this one."
 " Thus if this default dependency hurts someone we'll remove it again
-let scm['vim-iced-coffe-script'] = {'type': 'git', 'url': 'git://github.com/noc7c9/vim-iced-coffee-script', 'addon-info': {'dependencies': {'vim-coffee-script': {}}}}
+let scm['vim-iced-coffee-script'] = {'type': 'git', 'url': 'git://github.com/noc7c9/vim-iced-coffee-script', 'addon-info': {'dependencies': {'vim-coffee-script': {}}}}
 
 " chikatoike
 let scm['sourcemap.vim'] = {'type': 'git', 'url': 'git://github.com/chikatoike/sourcemap.vim'}
