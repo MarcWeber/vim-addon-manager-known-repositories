@@ -1,5 +1,7 @@
 {
-"vim-sjson":{"archive_name":"sjson.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22469","version":"0.1","vim_script_nr":5025},
+"Open_Plugin_Page":{"archive_name":"open_plugin_page.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22477","version":"1.0","vim_script_nr":5027},
+"cascadia":{"archive_name":"cascadia.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22476","version":"1.1.0","vim_script_nr":5026},
+"vim-sjson":{"archive_name":"sjson.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22478","version":"0.2","vim_script_nr":5025},
 "vim-geeknote":{"archive_name":"vim-geeknote-master.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22471","version":"0.2","vim_script_nr":5024},
 "vim-line-jump":{"archive_name":"vim-line-jump.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22464","version":"1.0","vim_script_nr":5023},
 "cobalt":{"archive_name":"cobalt.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22455","version":"1.1","vim_script_nr":5022},
@@ -144,7 +146,7 @@
 "columnmove":{"archive_name":"columnmove-1.1.1.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22426","version":"1.1.1","vim_script_nr":4880},
 "vim-autoflake":{"archive_name":"vim-autoflake.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22444","version":"1.0.1","vim_script_nr":4879},
 "Abridge":{"archive_name":"abridge.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21555","version":"0.4","vim_script_nr":4878},
-"magnum":{"archive_name":"magnum-1.0.2.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22214","version":"1.0.2","vim_script_nr":4877},
+"magnum":{"archive_name":"magnum-1.1.0.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22479","version":"1.1.0","vim_script_nr":4877},
 "twcmd":{"archive_name":"twcmd.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22304","version":"1.2.0","vim_script_nr":4876},
 "industry":{"archive_name":"industry.zip","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21576","version":"1.01","vim_script_nr":4875},
 "LeaderF":{"archive_name":"LeaderF.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=21686","version":"1.0.3","vim_script_nr":4874},

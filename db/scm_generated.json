@@ -4027,6 +4027,10 @@
     "type": "git",
     "url": "git://github.com/jpetrie/vim-sjson"
   },
+  "5027": {
+    "type": "git",
+    "url": "git://github.com/xvadim/open_plugin_page"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

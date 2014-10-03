@@ -15552,5 +15552,11 @@
    ],
    "5025" : [
       "vim-sjson"
+   ],
+   "5026" : [
+      "cascadia"
+   ],
+   "5027" : [
+      "Open_Plugin_Page"
    ]
 }
