@@ -1,4 +1,5 @@
 {
+"ftcolor":{"archive_name":"ftcolor.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22489","version":"0.0.1","vim_script_nr":5028},
 "Open_Plugin_Page":{"archive_name":"open_plugin_page.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22477","version":"1.0","vim_script_nr":5027},
 "cascadia":{"archive_name":"cascadia.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22476","version":"1.1.0","vim_script_nr":5026},
 "vim-sjson":{"archive_name":"sjson.zip","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22478","version":"0.2","vim_script_nr":5025},

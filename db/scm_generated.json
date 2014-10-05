@@ -4031,6 +4031,10 @@
     "type": "git",
     "url": "git://github.com/xvadim/open_plugin_page"
   },
+  "5028": {
+    "type": "git",
+    "url": "git://github.com/caglartoklu/ftcolor.vim"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
