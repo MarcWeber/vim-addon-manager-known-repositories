@@ -4035,6 +4035,14 @@
     "type": "git",
     "url": "git://github.com/caglartoklu/ftcolor.vim"
   },
+  "5029": {
+    "type": "git",
+    "url": "git://github.com/b4b4r07/vim-shellutils"
+  },
+  "5031": {
+    "type": "git",
+    "url": "git://github.com/dantezhu/lua_indent"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"

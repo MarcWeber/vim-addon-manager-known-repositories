@@ -1,4 +1,7 @@
 {
+"lua_indent":{"archive_name":"lua.vim","script-type":"indent","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22493","version":"1.0.1","vim_script_nr":5031},
+"splunk":{"archive_name":"splunk.tar.gz","script-type":"syntax","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22491","version":"0.1","vim_script_nr":5030},
+"vim-shellutils":{"archive_name":"vim-shellutils.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22490","version":"1.0","vim_script_nr":5029},
 "ftcolor":{"archive_name":"ftcolor.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22489","version":"0.0.1","vim_script_nr":5028},
 "Open_Plugin_Page":{"archive_name":"open_plugin_page.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22477","version":"1.0","vim_script_nr":5027},
 "cascadia":{"archive_name":"cascadia.vim","script-type":"color scheme","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22476","version":"1.1.0","vim_script_nr":5026},
@@ -44,7 +47,7 @@
 "glowshi-ft":{"archive_name":"glowshi-ft.vim.zip","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22205","version":"1.0.0","vim_script_nr":4986},
 "filemaker":{"archive_name":"filemaker.vim.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22201","version":"1.0","vim_script_nr":4985},
 "PHPSyntaxCheck":{"archive_name":"phpcheck.vim","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22312","version":"1.1","vim_script_nr":4984},
-"Clighter":{"archive_name":"clighter.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22439","version":"3.1.6","vim_script_nr":4983},
+"Clighter":{"archive_name":"clighter.tar.gz","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22494","version":"3.5","vim_script_nr":4983},
 "Buddy_Challenge":{"archive_name":"buddyChalWIN.vim","script-type":"game","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22487","version":"2.4","vim_script_nr":4982},
 "JustDo":{"archive_name":"JustDo.vim","script-type":"utility","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22174","version":"0.1","vim_script_nr":4981},
 "quick-file":{"archive_name":"quick_file.zip","script-type":"ftplugin","type":"archive","url":"http://www.vim.org/scripts/download_script.php?src_id=22272","version":"0.1.2","vim_script_nr":4980},
