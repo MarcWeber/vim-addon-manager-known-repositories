@@ -21,7 +21,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/AnsiEsc.vba.gz",
-    "version": "v13e"
+    "version": "v13f"
   },
   "AsNeeded@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
@@ -219,7 +219,7 @@
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
     "type": "archive",
     "url": "http://www.drchip.org/astronaut/vim/vbafiles/texmaps.vba.gz",
-    "version": "v2h"
+    "version": "v2i"
   },
   "LaTeXMenus@drchip": {
     "homepage": "http://www.drchip.org/astronaut/vim/index.html",
