@@ -4043,6 +4043,10 @@
     "type": "git",
     "url": "git://github.com/dantezhu/lua_indent"
   },
+  "5032": {
+    "type": "git",
+    "url": "git://github.com/sergey-vlasov/ctrlp-hibuff"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
