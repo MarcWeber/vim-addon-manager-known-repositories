@@ -1324,6 +1324,9 @@ let scm['vim-marching'] = {'type': 'git', 'url': 'git://github.com/osyo-manga/vi
 " Dag Odenhall
 let scm['vim2hs'] = {'type': 'git', 'url': 'git://github.com/dag/vim2hs'}
 
+" Fatih Arslan
+let scm['vim-go'] = {'type': 'git', 'url': 'git://github.com/fatih/vim-go'}
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
