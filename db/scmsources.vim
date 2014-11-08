@@ -1325,6 +1325,10 @@ let scm['vim2hs'] = {'type': 'git', 'url': 'git://github.com/dag/vim2hs'}
 " Fatih Arslan
 let scm['vim-go'] = {'type': 'git', 'url': 'git://github.com/fatih/vim-go'}
 
+" Dario Sneidermanis
+let scm['YUNOcommit'] = {'type': 'git', 'url': 'git://github.com/esneide/YUNOcommit.vim'}
+
+
 "-----------------------------------------------------------------------------------------------------------------------
 
 " lei fw
