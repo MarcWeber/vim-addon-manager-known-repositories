@@ -536,6 +536,9 @@ let scmnr.3071 = {'type': 'git', 'url': 'git://github.com/wilhelmtell/reimin'}
 " Felipe Morales
 let scmnr.3101 = {'type': 'git', 'url': 'git://github.com/fmoralesc/Tumble'}
 
+" David Sanson and Felipe Morales
+let scm['vim-pandoc-syntax'] = {'type': 'git', 'url': 'git://github.com/vim-pandoc/vim-pandoc-syntax'}
+
 " David Munger
 let scmnr.3108 = {'type': 'bzr', 'url': 'lp:vim-gui-box'}
 let scmnr.3109 = {'type': 'git', 'url': 'git://github.com/LaTeX-Box-Team/LaTeX-Box'}
