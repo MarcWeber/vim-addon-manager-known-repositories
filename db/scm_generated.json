@@ -27,6 +27,10 @@
     "type": "git",
     "url": "git://github.com/ciaranm/detectindent"
   },
+  "1172": {
+    "type": "git",
+    "url": "git://github.com/ap/vim-templates"
+  },
   "1173": {
     "type": "git",
     "url": "git://github.com/tomtom/tcomment_vim"
@@ -358,6 +362,10 @@
   "2294": {
     "type": "git",
     "url": "git://github.com/mjbrownie/swapit"
+  },
+  "2302": {
+    "type": "hg",
+    "url": "https://bitbucket.org/embear/foldsearch"
   },
   "2335": {
     "type": "git",
@@ -730,6 +738,10 @@
   "2877": {
     "type": "hg",
     "url": "https://code.google.com/p/spinner-vim-plugin"
+  },
+  "2880": {
+    "type": "git",
+    "url": "git://github.com/weakish/rcshell.vim"
   },
   "2881": {
     "type": "git",
@@ -3665,11 +3677,15 @@
   },
   "4872": {
     "type": "git",
-    "url": "git://github.com/stevensons/vim-decfile"
+    "url": "git://github.com/srstevenson/vim-decfile"
   },
   "4874": {
     "type": "git",
     "url": "git://github.com/Yggdroot/LeaderF"
+  },
+  "4876": {
+    "type": "git",
+    "url": "git://github.com/yssl/twcmd.vim"
   },
   "4877": {
     "type": "git",
@@ -3863,6 +3879,10 @@
     "type": "git",
     "url": "git://github.com/jeetsukumaran/vim-nefertiti"
   },
+  "4968": {
+    "type": "git",
+    "url": "git://github.com/yssl/autocwd.vim"
+  },
   "4969": {
     "type": "git",
     "url": "git://github.com/ajh17/vim-fist"
@@ -4047,6 +4067,146 @@
     "type": "git",
     "url": "git://github.com/sergey-vlasov/ctrlp-hibuff"
   },
+  "5033": {
+    "type": "git",
+    "url": "git://github.com/JalaiAmitahl/maven-compiler.vim"
+  },
+  "5038": {
+    "type": "git",
+    "url": "git://github.com/haya14busa/incsearch.vim"
+  },
+  "5041": {
+    "type": "git",
+    "url": "git://github.com/nice/sweater"
+  },
+  "5042": {
+    "type": "git",
+    "url": "git://github.com/xvadim/vim-xblogger"
+  },
+  "5044": {
+    "type": "git",
+    "url": "git://github.com/c0r73x/vimdir.vim"
+  },
+  "5047": {
+    "type": "git",
+    "url": "git://github.com/yssl/VIntSearch"
+  },
+  "5049": {
+    "type": "git",
+    "url": "git://github.com/gi1242/vim-ab-prefix"
+  },
+  "5050": {
+    "type": "git",
+    "url": "git://github.com/b3niup/numbers.vim"
+  },
+  "5052": {
+    "type": "git",
+    "url": "git://github.com/deris/vim-shot-f"
+  },
+  "5053": {
+    "type": "git",
+    "url": "git://github.com/deris/vim-rengbang"
+  },
+  "5054": {
+    "type": "git",
+    "url": "git://github.com/gosukiwi/vim-atom-dark"
+  },
+  "5055": {
+    "type": "git",
+    "url": "git://github.com/waiting-for-dev/vim-www"
+  },
+  "5056": {
+    "type": "git",
+    "url": "git://github.com/ap/vim-css-color"
+  },
+  "5057": {
+    "type": "git",
+    "url": "git://github.com/ap/vim-buftabline"
+  },
+  "5058": {
+    "type": "git",
+    "url": "git://github.com/kyuhi/vim-emoji-complete"
+  },
+  "5060": {
+    "type": "git",
+    "url": "git://github.com/othree/jspc.vim"
+  },
+  "5061": {
+    "type": "git",
+    "url": "git://github.com/kyuhi/yoda.vim"
+  },
+  "5062": {
+    "type": "git",
+    "url": "git://github.com/FooSoft/vim-argwrap"
+  },
+  "5063": {
+    "type": "git",
+    "url": "git://github.com/idanarye/vim-casetrate"
+  },
+  "5064": {
+    "type": "git",
+    "url": "git://github.com/cosminadrianpopescu/filesync"
+  },
+  "5065": {
+    "type": "git",
+    "url": "git://github.com/aserebryakov/filestyle"
+  },
+  "5069": {
+    "type": "git",
+    "url": "git://github.com/pelodelfuego/vim-swoop"
+  },
+  "5070": {
+    "type": "git",
+    "url": "git://github.com/rargo/vim-tab"
+  },
+  "5071": {
+    "type": "git",
+    "url": "git://github.com/ajh17/Spacegray.vim"
+  },
+  "5075": {
+    "type": "git",
+    "url": "git://github.com/vishap/vim_scripts"
+  },
+  "5076": {
+    "type": "git",
+    "url": "git://github.com/gi1242/vim-tex-syntax"
+  },
+  "5077": {
+    "type": "git",
+    "url": "git://github.com/gradzikb/vim-abaqus"
+  },
+  "5078": {
+    "type": "git",
+    "url": "git://github.com/jlemetay/permut"
+  },
+  "5079": {
+    "type": "git",
+    "url": "git://github.com/blueshirts/darcula"
+  },
+  "5081": {
+    "type": "git",
+    "url": "git://github.com/cosminadrianpopescu/vim-sql-workbench"
+  },
+  "5082": {
+    "type": "git",
+    "url": "git://github.com/haya14busa/vital-string-interpolation"
+  },
+  "5083": {
+    "type": "git",
+    "url": "git://github.com/KabbAmine/yowish.vim"
+  },
+  "5086": {
+    "type": "git",
+    "url": "git://github.com/EinfachToll/DidYouMean"
+  },
+  "5089": {
+    "type": "git",
+    "url": "git://github.com/kopischke/vim-fetch"
+  },
+  "5090": {
+    "type": "git",
+    "url": "git://github.com/dietsche/vim-lastplace"
+  },
   "521": {
     "type": "git",
     "url": "git://github.com/yegappan/mru"
@@ -4070,6 +4230,10 @@
   "861": {
     "type": "git",
     "url": "git://github.com/tomtom/viki_vim"
+  },
+  "920": {
+    "type": "git",
+    "url": "git://github.com/gi1242/vim-tex-autoclose"
   },
   "957": {
     "type": "git",

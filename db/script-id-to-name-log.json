@@ -4066,6 +4066,7 @@
       "nightshade"
    ],
    "1295" : [
+      "removed%1295",
       "removed"
    ],
    "1296" : [
@@ -6555,6 +6556,7 @@
       "view_diff"
    ],
    "2091" : [
+      "verilog%2091",
       "verilog",
       "verilog2091"
    ],
@@ -6741,6 +6743,7 @@
       "ncss"
    ],
    "2150" : [
+      "css_color%2150",
       "css_color"
    ],
    "2151" : [
@@ -9050,6 +9053,7 @@
       "XPstatusline"
    ],
    "2880" : [
+      "rcshell",
       "rc"
    ],
    "2881" : [
@@ -12454,6 +12458,7 @@
       "portmon"
    ],
    "3997" : [
+      "removed%3997",
       "spacebox"
    ],
    "3998" : [
@@ -15303,6 +15308,7 @@
       "vim-ralf-syntax"
    ],
    "4944" : [
+      "Switch_cc_source_and_header_files",
       "Switch_c_header_files"
    ],
    "4945" : [
@@ -15573,5 +15579,182 @@
    ],
    "5032" : [
       "ctrlp-hibuff"
+   ],
+   "5033" : [
+      "Maven_Compiler"
+   ],
+   "5034" : [
+      "Dragon_Curve"
+   ],
+   "5035" : [
+      "whitespace_syntax_highlight"
+   ],
+   "5036" : [
+      "vim-chip8"
+   ],
+   "5037" : [
+      "Vim_SELinux_suite"
+   ],
+   "5038" : [
+      "incsearch"
+   ],
+   "5039" : [
+      "vi-clone"
+   ],
+   "5040" : [
+      "verilog%5040"
+   ],
+   "5041" : [
+      "Sweater"
+   ],
+   "5042" : [
+      "vim-xblogger"
+   ],
+   "5043" : [
+      "ShowWhiteSpace"
+   ],
+   "5044" : [
+      "vimdir"
+   ],
+   "5045" : [
+      "miv"
+   ],
+   "5046" : [
+      "ReplaceWithSameIndentRegister"
+   ],
+   "5047" : [
+      "VIntSearch"
+   ],
+   "5048" : [
+      "RootIgnore"
+   ],
+   "5049" : [
+      "ab-prefix"
+   ],
+   "5050" : [
+      "numbers"
+   ],
+   "5051" : [
+      "directionalWindowResizer"
+   ],
+   "5052" : [
+      "shot-f"
+   ],
+   "5053" : [
+      "rengbang"
+   ],
+   "5054" : [
+      "atom-dark"
+   ],
+   "5055" : [
+      "vim-www"
+   ],
+   "5056" : [
+      "css_color%5056"
+   ],
+   "5057" : [
+      "buftabline"
+   ],
+   "5058" : [
+      "emoji_complete"
+   ],
+   "5059" : [
+      "vim-asterisk"
+   ],
+   "5060" : [
+      "jspc"
+   ],
+   "5061" : [
+      "yoda"
+   ],
+   "5062" : [
+      "argwrap"
+   ],
+   "5063" : [
+      "Casetrate"
+   ],
+   "5064" : [
+      "FileSync"
+   ],
+   "5065" : [
+      "filestyle"
+   ],
+   "5066" : [
+      "Escape_Search"
+   ],
+   "5067" : [
+      "vim-packer"
+   ],
+   "5068" : [
+      "vim-terraform"
+   ],
+   "5069" : [
+      "Vim-Swoop"
+   ],
+   "5070" : [
+      "vim-tab"
+   ],
+   "5071" : [
+      "Spacegray"
+   ],
+   "5072" : [
+      "vim-nose"
+   ],
+   "5073" : [
+      "EntryComplete"
+   ],
+   "5074" : [
+      "grimoire"
+   ],
+   "5075" : [
+      "cf5-compile"
+   ],
+   "5076" : [
+      "tex-syntax"
+   ],
+   "5077" : [
+      "vim-abaqus"
+   ],
+   "5078" : [
+      "permut"
+   ],
+   "5079" : [
+      "Darcula_Color_Scheme"
+   ],
+   "5080" : [
+      "MacDict"
+   ],
+   "5081" : [
+      "Vim_SQL_Workbench"
+   ],
+   "5082" : [
+      "vital-string-interpolation"
+   ],
+   "5083" : [
+      "yowish"
+   ],
+   "5084" : [
+      "Falmouth"
+   ],
+   "5085" : [
+      "Boston"
+   ],
+   "5086" : [
+      "DidYouMean"
+   ],
+   "5088" : [
+      "vim-pandoc-bundle"
+   ],
+   "5089" : [
+      "vim-fetch"
+   ],
+   "5090" : [
+      "vim-lastplace"
+   ],
+   "5091" : [
+      "perline-diff"
+   ],
+   "5092" : [
+      "screensaver"
    ]
 }
